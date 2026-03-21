@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parts Agent Dashboard</title>
+<style>
+:root {
+  --accent: #1D9E75;
+  --accent-dim: #167a5b;
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --surface-alt: #f0f1f3;
+  --border: #e2e4e8;
+  --text: #1a1d23;
+  --text-dim: #6b7280;
+  --text-inv: #ffffff;
+  --danger: #dc3545;
+  --warn: #e8a317;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface-alt: #22252f;
+    --border: #2e313b;
+    --text: #e4e5e9;
+    --text-dim: #8b8f9a;
+    --text-inv: #ffffff;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left { display: flex; align-items: center; gap: 12px; }
+.header-left h1 { font-size: 18px; font-weight: 700; }
+.status-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--text-dim);
+  flex-shrink: 0;
+}
+.status-dot.ok { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
+.status-dot.err { background: var(--danger); }
+.header-right { font-size: 13px; color: var(--text-dim); }
+.header-right span { font-family: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; }
+
+/* Metric cards */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+.card-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); font-weight: 600; }
+.card-value { font-size: 32px; font-weight: 700; margin-top: 4px; font-family: "SF Mono", SFMono-Regular, Consolas, monospace; }
+.card-sub { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+.card-value.accent { color: var(--accent); }
+
+/* Two-column layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .main-grid { grid-template-columns: 1fr; }
+}
+
+/* Sidebar - run history */
+.sidebar .card { padding: 0; overflow: hidden; }
+.sidebar-title { padding: 14px 16px; font-weight: 700; font-size: 14px; border-bottom: 1px solid var(--border); }
+.run-list { max-height: 500px; overflow-y: auto; }
+.run-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.run-item:hover { background: var(--surface-alt); }
+.run-item.active { background: var(--accent); color: var(--text-inv); }
+.run-item.active .run-meta { color: rgba(255,255,255,0.75); }
+.run-date { font-size: 13px; font-weight: 600; }
+.run-meta { font-size: 11px; color: var(--text-dim); margin-top: 2px; display: flex; gap: 8px; }
+.run-meta .found { color: var(--accent); }
+.run-item.active .run-meta .found { color: rgba(255,255,255,0.9); }
+
+/* Content area */
+.content .card { padding: 0; overflow: hidden; }
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content-header h2 { font-size: 14px; font-weight: 700; }
+.toolbar { display: flex; gap: 8px; align-items: center; }
+.toolbar input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+  width: 200px;
+}
+.toolbar select {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+}
+.btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  background: var(--surface);
+  color: var(--text);
+  transition: background 0.15s;
+}
+.btn:hover { background: var(--surface-alt); }
+.btn-accent { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-accent:hover { background: var(--accent-dim); }
+
+/* Results table */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead { background: var(--surface-alt); }
+th {
+  text-align: left;
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+td { padding: 10px 12px; border-top: 1px solid var(--border); }
+tr:hover td { background: var(--surface-alt); }
+.mono { font-family: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 12px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.badge-found { background: #d1fae5; color: #065f46; }
+.badge-notfound { background: #fef3c7; color: #92400e; }
+.badge-error { background: #fee2e2; color: #991b1b; }
+.badge-qr { background: #fef3c7; color: #92400e; font-size: 10px; margin-left: 4px; }
+.badge-bin { background: #dbeafe; color: #1e40af; font-size: 10px; }
+@media (prefers-color-scheme: dark) {
+  .badge-found { background: #064e3b; color: #6ee7b7; }
+  .badge-notfound { background: #78350f; color: #fcd34d; }
+  .badge-error { background: #7f1d1d; color: #fca5a5; }
+  .badge-qr { background: #78350f; color: #fcd34d; }
+  .badge-bin { background: #1e3a5f; color: #93c5fd; }
+}
+
+/* Model lookup */
+.model-lookup {
+  margin: 24px 0;
+}
+.model-lookup h2 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.model-lookup-row { display: flex; gap: 8px; align-items: center; }
+.model-lookup-row input {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: "SF Mono", SFMono-Regular, Consolas, monospace;
+  width: 280px;
+}
+.model-result {
+  margin-top: 12px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  line-height: 1.6;
+  display: none;
+}
+.model-result.found { border-left: 4px solid var(--accent); }
+.model-result.notfound { border-left: 4px solid var(--warn); }
+.model-result .model-label { font-weight: 700; font-family: "SF Mono", SFMono-Regular, Consolas, monospace; }
+
+/* NetData status bar */
+.netdata-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  font-size: 12px;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+.netdata-bar .nd-pill {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: "SF Mono", SFMono-Regular, Consolas, monospace;
+}
+.netdata-bar .nd-pill.active { border-color: var(--accent); color: var(--accent); }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.page-btns { display: flex; gap: 4px; }
+.page-btns button {
+  width: 32px; height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+.page-btns button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.page-btns button:disabled { opacity: 0.4; cursor: default; }
+
+/* Savings calculator */
+.savings-section { margin: 24px 0 40px; }
+.savings-section h2 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.savings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.savings-input label { display: block; font-size: 12px; color: var(--text-dim); margin-bottom: 4px; font-weight: 600; }
+.savings-input input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: "SF Mono", SFMono-Regular, Consolas, monospace;
+}
+.savings-result {
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+.savings-stat .label { font-size: 12px; color: var(--text-dim); font-weight: 600; }
+.savings-stat .val { font-size: 24px; font-weight: 700; color: var(--accent); font-family: "SF Mono", SFMono-Regular, Consolas, monospace; }
+
+/* Empty state */
+.empty { padding: 60px 20px; text-align: center; color: var(--text-dim); }
+.empty p { margin-top: 8px; font-size: 14px; }
+
+/* Loading */
+.loading { padding: 40px; text-align: center; color: var(--text-dim); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="header-left">
+      <div class="status-dot" id="statusDot"></div>
+      <h1>Parts Agent Dashboard</h1>
+    </div>
+    <div class="header-right">
+      <span id="distName">—</span> &middot; <span id="userName">—</span> &middot; Auto-refresh <span id="countdown">30</span>s
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <!-- Metric cards -->
+  <div class="metrics" id="metrics">
+    <div class="card">
+      <div class="card-label">Parts Processed</div>
+      <div class="card-value" id="mTotal">—</div>
+      <div class="card-sub" id="mTotalSub">across all runs</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Success Rate</div>
+      <div class="card-value accent" id="mRate">—</div>
+      <div class="card-sub" id="mRateSub">found with pricing</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Time Saved</div>
+      <div class="card-value" id="mTime">—</div>
+      <div class="card-sub" id="mTimeSub">vs manual lookup</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Labor Saved</div>
+      <div class="card-value accent" id="mLabor">—</div>
+      <div class="card-sub" id="mLaborSub">at current rate</div>
+    </div>
+  </div>
+
+  <!-- NetData status bar -->
+  <div class="netdata-bar" id="netdataBar" style="display:none;">
+    <span>NetData:</span>
+    <span class="nd-pill" id="ndWh">— locations</span>
+    <span class="nd-pill" id="ndQr">— QR parts</span>
+    <span class="nd-pill" id="ndModels">— model recs</span>
+    <span class="nd-pill" id="ndVendors">— vendors</span>
+  </div>
+
+  <!-- Main layout -->
+  <div class="main-grid">
+    <div class="sidebar">
+      <div class="card">
+        <div class="sidebar-title">Run History</div>
+        <div class="run-list" id="runList">
+          <div class="loading">Loading runs...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <div class="content-header">
+          <h2 id="tableTitle">Results</h2>
+          <div class="toolbar">
+            <input type="text" id="searchBox" placeholder="Search parts..." oninput="applyFilters()">
+            <select id="statusFilter" onchange="applyFilters()">
+              <option value="">All statuses</option>
+              <option value="FOUND">Found</option>
+              <option value="NOT FOUND">Not Found</option>
+              <option value="ERROR">Error</option>
+            </select>
+            <button class="btn" onclick="exportCSV()">Export CSV</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Part #</th>
+                <th>Marcone Name</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Status</th>
+                <th>Bin</th>
+                <th>Job #</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr><td colspan="7" class="loading">Select a run to view results</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination" id="pagination" style="display:none;">
+          <div id="pageInfo">—</div>
+          <div class="page-btns" id="pageBtns"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Model Lookup -->
+  <div class="model-lookup" id="modelLookupSection" style="display:none;">
+    <h2>Model Lookup — Pre-Order Recommendations</h2>
+    <div class="model-lookup-row">
+      <input type="text" id="modelInput" placeholder="Enter appliance model number..." onkeydown="if(event.key==='Enter')lookupModel()">
+      <button class="btn btn-accent" onclick="lookupModel()">Look Up</button>
+    </div>
+    <div class="model-result" id="modelResult"></div>
+  </div>
+
+  <!-- Savings calculator -->
+  <div class="savings-section">
+    <h2>Savings Calculator</h2>
+    <div class="savings-grid">
+      <div class="savings-input">
+        <label>Minutes per manual lookup</label>
+        <input type="number" id="calcMinutes" value="3" min="0.5" step="0.5" oninput="calcSavings()">
+      </div>
+      <div class="savings-input">
+        <label>Hourly labor rate ($)</label>
+        <input type="number" id="calcRate" value="25" min="1" step="1" oninput="calcSavings()">
+      </div>
+      <div class="savings-input">
+        <label>Parts per month (est.)</label>
+        <input type="number" id="calcParts" value="500" min="1" step="10" oninput="calcSavings()">
+      </div>
+    </div>
+    <div class="savings-result" id="savingsResult">
+      <div class="savings-stat"><div class="label">Hours saved / month</div><div class="val" id="sHours">—</div></div>
+      <div class="savings-stat"><div class="label">$ saved / month</div><div class="val" id="sDollars">—</div></div>
+      <div class="savings-stat"><div class="label">$ saved / year</div><div class="val" id="sYear">—</div></div>
+      <div class="savings-stat"><div class="label">Agent time / part</div><div class="val" id="sAgent">—</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// State
+let allRuns = [];
+let currentRows = [];
+let filteredRows = [];
+let currentFilename = null;
+let currentPage = 1;
+const PAGE_SIZE = 25;
+let refreshTimer = null;
+let countdown = 30;
+
+let netdataAvailable = false;
+
+// Boot
+document.addEventListener("DOMContentLoaded", () => {
+  fetchConfig();
+  fetchNetData();
+  fetchRuns().then(() => {
+    if (allRuns.length > 0) loadRun(allRuns[0].filename);
+  });
+  calcSavings();
+  startAutoRefresh();
+});
+
+// API calls
+async function fetchJSON(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(res.statusText);
+  return res.json();
+}
+
+async function fetchConfig() {
+  try {
+    const cfg = await fetchJSON("/api/config");
+    document.getElementById("distName").textContent = cfg.distributor_name || cfg.distributor || "—";
+    document.getElementById("userName").textContent = cfg.username || "—";
+  } catch(e) { /* ignore */ }
+}
+
+async function fetchNetData() {
+  try {
+    const nd = await fetchJSON("/api/netdata");
+    if (nd.available) {
+      netdataAvailable = true;
+      const bar = document.getElementById("netdataBar");
+      bar.style.display = "flex";
+      const wh = document.getElementById("ndWh");
+      const qr = document.getElementById("ndQr");
+      const models = document.getElementById("ndModels");
+      const vendors = document.getElementById("ndVendors");
+      wh.textContent = (nd.warehouse_locations || 0).toLocaleString() + " locations";
+      qr.textContent = (nd.quality_return_parts || 0).toLocaleString() + " QR parts";
+      models.textContent = (nd.model_recommendations || 0) + " model recs";
+      vendors.textContent = ((nd.vendors || []).length) + " vendors";
+      if (nd.warehouse_locations > 0) wh.classList.add("active");
+      if (nd.quality_return_parts > 0) qr.classList.add("active");
+      if (nd.model_recommendations > 0) models.classList.add("active");
+      if ((nd.vendors || []).length > 0) vendors.classList.add("active");
+      document.getElementById("modelLookupSection").style.display = "block";
+    }
+  } catch(e) { /* ignore */ }
+}
+
+async function lookupModel() {
+  const model = document.getElementById("modelInput").value.trim();
+  if (!model) return;
+  const el = document.getElementById("modelResult");
+  el.style.display = "block";
+  el.className = "model-result";
+  el.innerHTML = "Looking up...";
+  try {
+    const data = await fetchJSON("/api/model/" + encodeURIComponent(model));
+    if (data.found) {
+      el.className = "model-result found";
+      el.innerHTML = '<span class="model-label">' + esc(model.toUpperCase()) + '</span><br>' + esc(data.recommendation);
+    } else {
+      el.className = "model-result notfound";
+      el.innerHTML = '<span class="model-label">' + esc(model.toUpperCase()) + '</span><br>No pre-order recommendation found for this model.';
+    }
+  } catch(e) {
+    el.className = "model-result notfound";
+    el.innerHTML = "Error looking up model.";
+  }
+}
+
+async function fetchRuns() {
+  try {
+    allRuns = await fetchJSON("/api/runs");
+    renderRunList();
+    updateMetrics();
+    setStatus(true);
+  } catch(e) {
+    setStatus(false);
+  }
+}
+
+async function loadRun(filename) {
+  currentFilename = filename;
+  document.getElementById("tableBody").innerHTML = '<tr><td colspan="7" class="loading">Loading...</td></tr>';
+
+  try {
+    const data = await fetchJSON("/api/run/" + encodeURIComponent(filename));
+    currentRows = data.rows || [];
+    document.getElementById("tableTitle").textContent = "Results — " + (data.summary?.display_time || filename);
+    highlightRun(filename);
+    applyFilters();
+  } catch(e) {
+    document.getElementById("tableBody").innerHTML = '<tr><td colspan="7" class="loading">Error loading run</td></tr>';
+  }
+}
+
+// Rendering
+function renderRunList() {
+  const el = document.getElementById("runList");
+  if (allRuns.length === 0) {
+    el.innerHTML = '<div class="empty"><p>No runs yet</p></div>';
+    return;
+  }
+  el.innerHTML = allRuns.map(r => `
+    <div class="run-item ${r.filename === currentFilename ? 'active' : ''}" onclick="loadRun('${r.filename}')">
+      <div class="run-date">${r.display_time}</div>
+      <div class="run-meta">
+        <span>${r.total} parts</span>
+        <span class="found">${r.found} found</span>
+        ${r.errors > 0 ? '<span style="color:var(--danger)">' + r.errors + ' err</span>' : ''}
+        ${r.not_found > 0 ? '<span>' + r.not_found + ' missing</span>' : ''}
+      </div>
+    </div>
+  `).join("");
+}
+
+function highlightRun(filename) {
+  document.querySelectorAll(".run-item").forEach(el => {
+    el.classList.toggle("active", el.onclick.toString().includes(filename));
+  });
+  // Re-render is simpler
+  renderRunList();
+}
+
+function updateMetrics() {
+  let totalParts = 0, totalFound = 0;
+  allRuns.forEach(r => { totalParts += r.total; totalFound += r.found; });
+
+  document.getElementById("mTotal").textContent = totalParts.toLocaleString();
+  document.getElementById("mTotalSub").textContent = allRuns.length + " run" + (allRuns.length !== 1 ? "s" : "");
+
+  const rate = totalParts > 0 ? ((totalFound / totalParts) * 100).toFixed(1) : "0";
+  document.getElementById("mRate").textContent = rate + "%";
+  document.getElementById("mRateSub").textContent = totalFound.toLocaleString() + " found with pricing";
+
+  // Time saved: assume 3 min manual vs ~14s agent per part
+  const manualMin = totalParts * 3;
+  const agentMin = totalParts * 0.23;
+  const savedMin = Math.max(0, manualMin - agentMin);
+  const savedHrs = savedMin / 60;
+  document.getElementById("mTime").textContent = savedHrs >= 1 ? savedHrs.toFixed(1) + "h" : Math.round(savedMin) + "m";
+  document.getElementById("mTimeSub").textContent = "vs " + Math.round(manualMin) + "m manual";
+
+  const laborSaved = savedHrs * 25;
+  document.getElementById("mLabor").textContent = "$" + Math.round(laborSaved).toLocaleString();
+  document.getElementById("mLaborSub").textContent = "at $25/hr";
+
+  calcSavings();
+}
+
+function applyFilters() {
+  const q = document.getElementById("searchBox").value.toLowerCase();
+  const status = document.getElementById("statusFilter").value;
+
+  filteredRows = currentRows.filter(r => {
+    if (status) {
+      if (status === "ERROR" && !r.status.includes("ERROR")) return false;
+      if (status !== "ERROR" && r.status !== status) return false;
+    }
+    if (q) {
+      const haystack = [r.part_number, r.marcone_name, r.wholesale_price, r.availability, r.original_description, r.original_job_number, r.warehouse_location || "", r.model_recommendation || "", r.original_model_number || ""].join(" ").toLowerCase();
+      if (!haystack.includes(q)) return false;
+    }
+    return true;
+  });
+
+  currentPage = 1;
+  renderTable();
+}
+
+function renderTable() {
+  const tbody = document.getElementById("tableBody");
+  const total = filteredRows.length;
+  const totalPages = Math.ceil(total / PAGE_SIZE);
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const page = filteredRows.slice(start, start + PAGE_SIZE);
+
+  if (page.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">No matching results</td></tr>';
+    document.getElementById("pagination").style.display = "none";
+    return;
+  }
+
+  tbody.innerHTML = page.map(r => {
+    let badgeClass = "badge-found";
+    if (r.status === "NOT FOUND") badgeClass = "badge-notfound";
+    else if (r.status.includes("ERROR")) badgeClass = "badge-error";
+
+    const qrBadge = r.quality_return === "YES" ? ' <span class="badge badge-qr" title="Whirlpool Quality Return">QR</span>' : '';
+    const binBadge = r.warehouse_location ? '<span class="badge badge-bin">' + esc(r.warehouse_location) + '</span>' : '';
+    const modelTip = r.model_recommendation ? ' title="' + esc(r.model_recommendation) + '"' : '';
+
+    return `<tr${modelTip}>
+      <td class="mono">${esc(r.part_number)}${qrBadge}</td>
+      <td>${esc(r.marcone_name)}</td>
+      <td class="mono">${esc(r.wholesale_price)}</td>
+      <td>${esc(r.availability)}</td>
+      <td><span class="badge ${badgeClass}">${esc(r.status)}</span></td>
+      <td>${binBadge}</td>
+      <td class="mono">${esc(r.original_job_number)}</td>
+    </tr>`;
+  }).join("");
+
+  // Pagination
+  const pagEl = document.getElementById("pagination");
+  if (totalPages <= 1) {
+    pagEl.style.display = "none";
+    return;
+  }
+  pagEl.style.display = "flex";
+  document.getElementById("pageInfo").textContent = `${start + 1}–${Math.min(start + PAGE_SIZE, total)} of ${total}`;
+
+  let btns = '';
+  btns += `<button ${currentPage <= 1 ? 'disabled' : ''} onclick="goPage(${currentPage - 1})">&lt;</button>`;
+  for (let i = 1; i <= totalPages && i <= 7; i++) {
+    btns += `<button class="${i === currentPage ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
+  }
+  if (totalPages > 7) btns += `<button disabled>...</button><button onclick="goPage(${totalPages})">${totalPages}</button>`;
+  btns += `<button ${currentPage >= totalPages ? 'disabled' : ''} onclick="goPage(${currentPage + 1})">&gt;</button>`;
+  document.getElementById("pageBtns").innerHTML = btns;
+}
+
+function goPage(n) { currentPage = n; renderTable(); }
+
+// Savings calculator
+function calcSavings() {
+  const minPer = parseFloat(document.getElementById("calcMinutes").value) || 3;
+  const rate = parseFloat(document.getElementById("calcRate").value) || 25;
+  const partsPerMonth = parseFloat(document.getElementById("calcParts").value) || 500;
+
+  const agentMinPer = 0.23; // ~14 seconds per part
+  const manualHrs = (partsPerMonth * minPer) / 60;
+  const agentHrs = (partsPerMonth * agentMinPer) / 60;
+  const savedHrs = Math.max(0, manualHrs - agentHrs);
+  const savedMonth = savedHrs * rate;
+  const savedYear = savedMonth * 12;
+
+  document.getElementById("sHours").textContent = savedHrs.toFixed(1);
+  document.getElementById("sDollars").textContent = "$" + Math.round(savedMonth).toLocaleString();
+  document.getElementById("sYear").textContent = "$" + Math.round(savedYear).toLocaleString();
+  document.getElementById("sAgent").textContent = Math.round(agentMinPer * 60) + "s";
+}
+
+// Export
+function exportCSV() {
+  if (filteredRows.length === 0) return;
+  const headers = Object.keys(filteredRows[0]);
+  const csv = [headers.join(",")].concat(filteredRows.map(r =>
+    headers.map(h => '"' + String(r[h] || "").replace(/"/g, '""') + '"').join(",")
+  )).join("\n");
+
+  const blob = new Blob([csv], { type: "text/csv" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = (currentFilename || "export") + ".csv";
+  a.click();
+}
+
+// Status dot
+function setStatus(ok) {
+  const dot = document.getElementById("statusDot");
+  dot.className = "status-dot " + (ok ? "ok" : "err");
+}
+
+// Auto-refresh
+function startAutoRefresh() {
+  countdown = 30;
+  if (refreshTimer) clearInterval(refreshTimer);
+  refreshTimer = setInterval(() => {
+    countdown--;
+    document.getElementById("countdown").textContent = countdown;
+    if (countdown <= 0) {
+      countdown = 30;
+      fetchRuns().then(() => {
+        if (currentFilename) loadRun(currentFilename);
+      });
+    }
+  }, 1000);
+}
+
+// Util
+function esc(s) {
+  if (!s) return "";
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+</script>
+</body>
+</html>

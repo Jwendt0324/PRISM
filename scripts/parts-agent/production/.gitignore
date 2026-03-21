@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+data/input/PrtsPrcs
+data/output/
+data/session/
+data/archive/
+logs/
+.progress_*

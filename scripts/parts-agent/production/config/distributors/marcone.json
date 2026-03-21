@@ -1,0 +1,70 @@
+{
+  "name": "Marcone",
+  "code": "MC",
+  "base_url": "https://my.marcone.com",
+  "login": {
+    "url": "https://my.marcone.com/UserLogin",
+    "selectors": {
+      "username_field": "#UserName",
+      "password_field": "#Password",
+      "submit_button": "#loginbtn"
+    },
+    "success_indicator": {
+      "type": "url_not_contains",
+      "value": "UserLogin"
+    }
+  },
+  "dashboard": {
+    "ready_selector": "#searchPartOrModel",
+    "ready_timeout_ms": 10000
+  },
+  "search": {
+    "input_selector": "#searchPartOrModel",
+    "submit_selector": "#mc-embedded-subscribe",
+    "submit_method": "click",
+    "js_fallback": "MyMarcone.Seach.RunSearchPartModelList(1);",
+    "wait_after_submit_seconds": 3
+  },
+  "results": {
+    "detail_page": {
+      "url_indicator": "Product/Detail",
+      "selectors": {
+        "name": "h4.cross",
+        "price": "td.priceblock_ourprice",
+        "availability": "span.a-color-success"
+      }
+    },
+    "search_page": {
+      "url_indicator": "RunSearchPartModelList",
+      "item_container": "li.searchResult_li_items",
+      "selectors": {
+        "part_link": "h4.cross11 a.cursor",
+        "brand": "span.spanBrand",
+        "description": "span.coad:not(.spanBrand):not(.spanInstock)",
+        "price": "span.spanPrice",
+        "availability": "span.spanInstock"
+      },
+      "name_format": "{brand} - {part_link} - {description}"
+    },
+    "no_results_indicators": [
+      "text='No results found'",
+      "text='no results'",
+      "text='No Result Found'",
+      "text='0 results'",
+      "text='did not match'",
+      "#dvSearchNoResult:visible"
+    ]
+  },
+  "timeouts": {
+    "login_redirect_ms": 15000,
+    "dashboard_load_ms": 10000,
+    "search_result_ms": 5000,
+    "page_load_ms": 30000
+  },
+  "browser": {
+    "viewport_width": 1280,
+    "viewport_height": 900,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "slow_mo_ms": 500
+  }
+}

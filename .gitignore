@@ -1,0 +1,26 @@
+# Personal identity layer — never shared
+.personal/
+personal/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Logs (generated per-user)
+logs/
+
+# Content pipeline outputs (generated per-user)
+content-pipeline/
+content-audit/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
