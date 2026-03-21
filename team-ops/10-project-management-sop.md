@@ -1,6 +1,6 @@
 ---
 title: "Project Management SOP — Knowledge Panel Sprint Lifecycle"
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
 version: 1.0
@@ -11,15 +11,15 @@ status: active
 
 ## Purpose
 
-This is the master workflow for every KP Sprint at {{COMPANY}}. Six stages, clear owners, hard deadlines. If you don't know where a project stands or who's responsible, this document answers it.
+This is the master workflow for every KP Sprint at [Your Agency]. Six stages, clear owners, hard deadlines. If you don't know where a project stands or who's responsible, this document answers it.
 
 ---
 
-## Stage 1: Sales ({{OWNER_NAME}} / {{ADVISOR_NAME}})
+## Stage 1: Sales ([Your Name] / [Your Mentor/Advisor])
 
-**Owner:** {{OWNER_NAME}} (R), {{ADVISOR_NAME}} (C)
+**Owner:** [Your Name] (R), [Your Mentor/Advisor] (C)
 
-{{OWNER_NAME}} or {{ADVISOR_NAME}} sources the lead. Before anyone spends time on a discovery call, the lead must pass the qualification gate:
+[Your Name] or [Your Mentor/Advisor] sources the lead. Before anyone spends time on a discovery call, the lead must pass the qualification gate:
 
 - **LSA category** — Must operate in a Local Services Ads-eligible vertical
 - **$100k+/mo revenue** — We don't Sprint for businesses that can't afford to compound
@@ -32,9 +32,9 @@ If the lead passes qualification, send the scheduling link for a discovery call.
 
 ## Stage 2: Intake (Day 0–2)
 
-**Owner:** {{OPS_ADMIN_NAME}} (R), {{OWNER_NAME}} (A)
+**Owner:** [Your Ops Admin] (R), [Your Name] (A)
 
-The clock starts the moment the deal closes. {{OPS_ADMIN_NAME}} has 48 hours to get the project scaffolded.
+The clock starts the moment the deal closes. [Your Ops Admin] has 48 hours to get the project scaffolded.
 
 1. Create Basecamp project from the Sprint template
 2. Assign RACI for every deliverable in the project
@@ -52,7 +52,7 @@ The clock starts the moment the deal closes. {{OPS_ADMIN_NAME}} has 48 hours to 
 
 ## Stage 3: Production (Day 3–20)
 
-**Owner:** {{OWNER_NAME}} (R for PM), delivery labor pool executes
+**Owner:** [Your Name] (R for PM), delivery labor pool executes
 
 This is where the Sprint deliverables get built. Every item has an owner and a Basecamp task.
 
@@ -78,7 +78,7 @@ This is where the Sprint deliverables get built. Every item has an owner and a B
 
 ## Stage 4: QA (Day 21–26)
 
-**Owner:** {{ADVISOR_NAME}} (R), {{OPS_PARTNER_NAME}} (C)
+**Owner:** [Your Mentor/Advisor] (R), [Your Ops Partner] (C)
 
 Every deliverable gets reviewed before it touches the client. This is not a rubber stamp — it's a real quality check.
 
@@ -94,7 +94,7 @@ Every deliverable gets reviewed before it touches the client. This is not a rubb
 
 ## Stage 5: Delivery (Day 27–30)
 
-**Owner:** {{OWNER_NAME}} (R)
+**Owner:** [Your Name] (R)
 
 This is the finish line. Make it clean.
 
@@ -102,13 +102,13 @@ This is the finish line. Make it clean.
 2. **Fixes applied** — Client feedback gets addressed. Reasonable revisions only — scope stays fixed.
 3. **Entity Health Snapshot** — Before/after comparison of the client's digital presence. This is the proof that the Sprint worked.
 4. **Next-step plan delivered** — Phase 2 recommendations, ongoing retainer options, or specific follow-up actions the client can take.
-5. **50% balance collected** — Final payment before project closes. {{OPS_ADMIN_NAME}} handles invoicing.
+5. **50% balance collected** — Final payment before project closes. [Your Ops Admin] handles invoicing.
 
 ---
 
 ## Stage 6: Case Study
 
-**Owner:** {{OWNER_NAME}} (R), {{ADVISOR_NAME}} (C)
+**Owner:** [Your Name] (R), [Your Mentor/Advisor] (C)
 
 **This is not optional.** If the case study isn't published, the Sprint isn't done. Period.
 
@@ -118,7 +118,7 @@ Every Sprint produces a case study that includes:
 - What was delivered
 - Before/after metrics (Entity Health Snapshot data)
 - Client testimonial or quote
-- Published on the {{COMPANY}} site and distributed through our channels
+- Published on the [Your Agency] site and distributed through our channels
 
 The case study is the fuel for the next sale. Skip it and you're burning revenue.
 

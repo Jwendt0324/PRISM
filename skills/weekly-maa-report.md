@@ -17,7 +17,7 @@ triangles: [MAA]
 
 ## Core Principle
 
-The MAA is analysis, not a task list. "We published 3 articles" is a task. "The 3 articles targeting long-tail hearing aid keywords drove 340 new organic sessions, up from 180 last week" is analysis. Dennis will push back on task-list-style reports every time.
+The MAA is analysis, not a task list. "We published 3 articles" is a task. "The 3 articles targeting long-tail hearing aid keywords drove 340 new organic sessions, up from 180 last week" is analysis. [Your Mentor/Advisor] will push back on task-list-style reports every time.
 
 ## Phase 1: Pull Metrics (Actual Numbers Only)
 
@@ -69,15 +69,15 @@ Before posting, verify:
 ## Phase 4: Post & Distribute
 
 1. Post the MAA to the **Basecamp Updates thread** (client-visible)
-2. Client and Dennis should see it without having to ask
+2. Client and [Your Mentor/Advisor] should see it without having to ask
 3. Due by **Friday EOD** every week for every active client
 
 ## Known Pitfalls
 
-- **Task list disguised as analysis.** The #1 failure. Dennis catches this every time. Connect output to outcomes.
+- **Task list disguised as analysis.** The #1 failure. [Your Mentor/Advisor] catches this every time. Connect output to outcomes.
 - **Missing a week without notice.** Post a note saying when the report will come. Going silent destroys trust faster than a bad report.
 - **Vague metrics.** "Traffic increased" is useless. Include the actual number and the comparison — always.
-- **Action items with no owner.** Every action needs a person's name and a date. "Improve SEO" is not an action item. "Publish 2 articles targeting [keyword] — Jack — by Wednesday" is.
+- **Action items with no owner.** Every action needs a person's name and a date. "Improve SEO" is not an action item. "Publish 2 articles targeting [keyword] — [Your Name] — by Wednesday" is.
 - **Ignoring the weakest area.** If organic traffic is flat but all your actions are about content, you are avoiding the problem. The Action section must address whatever is underperforming.
 
 ## Human Gates
@@ -85,5 +85,5 @@ Before posting, verify:
 - Analyst pulls metrics from native platforms (not automated dashboards alone)
 - Analysis section requires human judgment — connecting cause to effect
 - Action items require human assignment of owners and deadlines
-- Dennis reviews MAA quality and pushes back on task-list-style reports
-- Posted to Basecamp for client and Dennis visibility — human verifies content is client-appropriate
+- [Your Mentor/Advisor] reviews MAA quality and pushes back on task-list-style reports
+- Posted to Basecamp for client and [Your Mentor/Advisor] visibility — human verifies content is client-appropriate

@@ -60,11 +60,11 @@ One input (transcript, article, notes, recording) becomes 10-15 outputs across 5
 
 **Short-Form (60-90 seconds):** HOOK (text overlay, 3 sec max) > BODY (conversational) > CTA. For Reels/Shorts/TikTok. Include b-roll notes.
 
-**Long-Form Outline (5+ min, only if source supports):** Hook > context > 3-5 key points with examples > takeaway > CTA. Structure for Jack to speak naturally, not read.
+**Long-Form Outline (5+ min, only if source supports):** Hook > context > 3-5 key points with examples > takeaway > CTA. Structure for [Your Name] to speak naturally, not read.
 
 ### Tier 4 — Email & Nurture (1-2 pieces)
 
-**Email Snippet (200-400 words):** Compelling subject line, one insight, one story, one CTA. Written as Jack emailing a friend. Sign-off: "Love Always, Jack Wendt"
+**Email Snippet (200-400 words):** Compelling subject line, one insight, one story, one CTA. Written as [Your Name] emailing a friend. Sign-off: "Love Always, [Your Name]"
 
 **Lead Magnet Excerpt (if applicable):** Standalone tip/framework/checklist. Only if content has self-contained methodology.
 
@@ -84,7 +84,7 @@ One input (transcript, article, notes, recording) becomes 10-15 outputs across 5
 
 **Email:** Subject line compelling, body scannable, one clear CTA
 
-**ALL outputs:** Traces to real content, Jack's voice consistent, no sensitive content leaked, enough variety across outputs
+**ALL outputs:** Traces to real content, [Your Name]'s voice consistent, no sensitive content leaked, enough variety across outputs
 
 ## Step 4: OUTPUT
 
@@ -105,12 +105,12 @@ See `~/Documents/Claude/Mainframe/content-pipeline/HOW-TO-USE.md` for full pipel
 
 ## Step 5: DISTRIBUTION RECOMMENDATIONS
 
-1. **Platform assignments:** HRI channel vs Jack personal, LinkedIn vs Twitter, blog vs email
+1. **Platform assignments:** [Your Agency] channel vs [Your Name] personal, LinkedIn vs Twitter, blog vs email
 2. **Dollar-a-Day candidates:** 2-3 pieces most likely to perform in paid (strong hook, universal insight, emotional resonance)
-3. **Publishing sequence:** LinkedIn post first > article > email > video scripts as Jack films
+3. **Publishing sequence:** LinkedIn post first > article > email > video scripts as [Your Name] films
 4. **Cross-promotion:** How pieces link to each other
 
-## Jack's Voice (Apply to All Outputs)
+## [Your Name]'s Voice (Apply to All Outputs)
 
 - Direct. No hedging.
 - Confident but not arrogant. Backs claims with examples.
@@ -124,7 +124,7 @@ See `~/Documents/Claude/Mainframe/content-pipeline/HOW-TO-USE.md` for full pipel
 |---|---|
 | Viability check | Review — publishable? confidential? |
 | Topic Wheel positioning | Review — WHY/HOW/WHAT classification |
-| Voice/tone review (all outputs) | Review — "Would Jack actually say this?" |
+| Voice/tone review (all outputs) | Review — "Would [Your Name] actually say this?" |
 | E-E-A-T verification | Review — real stories trace to source |
 | Sensitive content screening | Review — meeting transcripts may contain internal info |
 | Platform assignment | Review — strategic judgment |

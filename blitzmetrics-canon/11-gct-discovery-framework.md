@@ -1,4 +1,4 @@
-# GCT Discovery Framework — BlitzMetrics Canon
+# GCT Discovery Framework — [Methodology Partner] Canon
 
 **Source:** 9 Triangles Framework (GCT triangle), Content Factory Process (Stage 0), Client Onboarding SOP, Human Requirements Canon
 **Version:** 1.0 | **Created:** 2026-03-20
@@ -9,7 +9,7 @@
 
 GCT (Goals, Content, Targeting) must be completed before any Content Factory work begins. The canon defines WHAT GCT is (see 01-nine-triangles.md), but not HOW to facilitate it. This document fills that gap.
 
-This is the implementation guide for GCT discovery — the step-by-step process for preparing, conducting, and documenting a GCT session with a client. A VA can follow this to prep for a GCT call. A senior team member (Jack or equivalent) must facilitate the actual discovery conversation.
+This is the implementation guide for GCT discovery — the step-by-step process for preparing, conducting, and documenting a GCT session with a client. A VA can follow this to prep for a GCT call. A senior team member ([Your Name] or equivalent) must facilitate the actual discovery conversation.
 
 ---
 
@@ -187,7 +187,7 @@ The completed GCT document is the deliverable from discovery. Every client must 
 ### NEXT STEPS
 - Recommended engagement: [retainer / KP Sprint / Dollar-a-Day / strategy session]
 - Starting stage: [Stage 0 / Stage 1 / Stage 2]
-- Immediate actions: [e.g., "1. Set up access via blitzmetrics.com/acl 2. Film WHY video 3. Export customer email list"]
+- Immediate actions: [e.g., "1. Set up access via [methodology-partner.com]/acl 2. Film WHY video 3. Export customer email list"]
 - Timeline: [when work begins, first deliverable target]
 ```
 
@@ -200,12 +200,12 @@ GCT discovery MUST be facilitated by a human. This is non-negotiable.
 | Step | Who | Why |
 |------|-----|-----|
 | Pre-call research | VA or AI | Fact-gathering is delegatable |
-| Discovery call facilitation | Jack or senior team member | Requires judgment, rapport, reading between the lines |
-| Follow-up questions | Jack or senior team member | Probing unclear answers requires human intuition |
+| Discovery call facilitation | [Your Name] or senior team member | Requires judgment, rapport, reading between the lines |
+| Follow-up questions | [Your Name] or senior team member | Probing unclear answers requires human intuition |
 | GCT document drafting | VA or AI | Structuring answers into the template is delegatable |
-| GCT document review | Jack | Final sign-off ensures nothing was missed or misinterpreted |
-| Scoping recommendation | Jack | Engagement type and pricing require business judgment |
-| Pricing discussion | Jack | No discounting without Jack's approval (see 08-human-requirements.md) |
+| GCT document review | [Your Name] | Final sign-off ensures nothing was missed or misinterpreted |
+| Scoping recommendation | [Your Name] | Engagement type and pricing require business judgment |
+| Pricing discussion | [Your Name] | No discounting without [Your Name]'s approval (see 08-human-requirements.md) |
 
 **What AI CAN do:**
 - Pre-call research (website audit, social scan, competitor analysis, PAA pulls)
@@ -227,7 +227,7 @@ GCT discovery MUST be facilitated by a human. This is non-negotiable.
 
 These rules prevent damage to the client relationship and downstream work quality.
 
-- **Never skip GCT.** No GCT = no Content Factory work. Period. If someone pushes to "just get started," escalate to Jack.
+- **Never skip GCT.** No GCT = no Content Factory work. Period. If someone pushes to "just get started," escalate to [Your Name].
 - **Never fabricate GCT answers.** If a question wasn't answered in discovery, mark it as "TBD — follow up required." Do not guess.
 - **Never start Content Factory stages without a completed GCT document.** The GCT doc gates Stage 0 (Plumbing) and everything after it.
 - **Never let a client skip the Goals section.** "Just run some ads" is not a goal. Push back respectfully and escalate if needed.

@@ -1,13 +1,13 @@
-# Where Humans Are Required — BlitzMetrics Canon
+# Where Humans Are Required — [Methodology Partner] Canon
 
-**Source:** All BlitzMetrics guides, Dennis Yu's feedback, operational reality
+**Source:** All [Methodology Partner] guides, [Your Mentor/Advisor]'s feedback, operational reality
 **Version:** 1.0 | **Extracted:** 2026-03-19
 
 ---
 
 ## Purpose
 
-Dennis's directive: "Consider whether this can operate without humans in the loop." This document explicitly defines where humans are REQUIRED in every process. AI and automation can assist but cannot replace human judgment in these areas.
+[Your Mentor/Advisor]'s directive: "Consider whether this can operate without humans in the loop." This document explicitly defines where humans are REQUIRED in every process. AI and automation can assist but cannot replace human judgment in these areas.
 
 ---
 
@@ -32,12 +32,12 @@ Dennis's directive: "Consider whether this can operate without humans in the loo
 |------|--------------------|
 | Watching source video before writing | Context, tone, intent not captured in transcript alone |
 | Name/brand spelling verification | AI can't verify against real-world spelling |
-| Voice and tone approval | "Would Jack actually say this?" |
+| Voice and tone approval | "Would [Your Name] actually say this?" |
 | E-E-A-T compliance review | Ensuring real stories, not fabricated ones |
 | AI language detection | Subtle AI patterns require trained eye |
 | Figurehead context | Understanding relationships between people mentioned |
 
-**Rule:** Dennis flagged AI language in Jackson's initial work. Every AI-assisted piece must be reviewed by a human who knows the client's voice.
+**Rule:** [Your Mentor/Advisor] flagged AI language in [Your Content Specialist]'s initial work. Every AI-assisted piece must be reviewed by a human who knows the client's voice.
 
 ---
 
@@ -66,7 +66,7 @@ Dennis's directive: "Consider whether this can operate without humans in the loo
 | Monthly review calls | Maintaining relationship, reading client satisfaction |
 | Qualification review (AI Apprentice) | Checking for AI language, assessing effort |
 
-**Rule:** Dennis's directive: "Clients first." Client relationships cannot be automated.
+**Rule:** [Your Mentor/Advisor]'s directive: "Clients first." Client relationships cannot be automated.
 
 ---
 
@@ -75,8 +75,8 @@ Dennis's directive: "Consider whether this can operate without humans in the loo
 | Task | Why Human Required |
 |------|--------------------|
 | Budget approval for ad scaling | Financial risk assessment |
-| P&L tracking and reporting | Accuracy, compliance, Dennis pushing for this |
-| Revenue distribution (BM/HRI split) | Legal agreement, judgment calls |
+| P&L tracking and reporting | Accuracy, compliance, [Your Mentor/Advisor] pushing for this |
+| Revenue distribution ([Methodology Partner]/[Your Agency] split) | Legal agreement, judgment calls |
 | Refund decisions | Case-by-case evaluation |
 | Pricing strategy | Market judgment, positioning |
 | Invoice review | Verification against deliverables |
@@ -89,14 +89,14 @@ Dennis's directive: "Consider whether this can operate without humans in the loo
 
 | Task | Why Human Required |
 |------|--------------------|
-| Methodology changes | Dennis's review required |
+| Methodology changes | [Your Mentor/Advisor]'s review required |
 | New service/product launches | Business judgment |
 | Team hiring/firing | Relationship, culture fit |
 | Partnership agreements | Legal, strategic alignment |
 | Content strategy pivots | Market awareness, client needs |
-| SOP changes that affect canon | Must verify against BlitzMetrics standards |
+| SOP changes that affect canon | Must verify against [Methodology Partner] standards |
 
-**Rule:** "Changes to methodology require Dennis's review."
+**Rule:** "Changes to methodology require [Your Mentor/Advisor]'s review."
 
 ---
 

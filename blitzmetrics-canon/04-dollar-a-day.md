@@ -1,6 +1,6 @@
-# Dollar-a-Day Strategy — BlitzMetrics Canon
+# Dollar-a-Day Strategy — [Methodology Partner] Canon
 
-**Source:** Dollar-a-Day Webinar Deck, Content Factory Guides, Dennis Yu training
+**Source:** Dollar-a-Day Webinar Deck, Content Factory Guides, [Your Mentor/Advisor] training
 **Version:** 1.0 | **Extracted:** 2026-03-19
 
 ---

@@ -1,6 +1,6 @@
 # CLAUDE MAINFRAME — MASTER INDEX
 
-**Owner:** Jack Wendt
+**Owner:** [Your Name]
 **Created:** 2026-03-18
 **Last Updated:** 2026-03-21 (Full overhaul: 5 new skills, 4 skills refined, Article QA consolidated, stale files cleaned, duplicates removed, routing updated)
 
@@ -22,7 +22,7 @@ Mainframe/
 │   ├── sop-router.md           ← Routes tasks to correct SOP/skill
 │   ├── content-factory.md      ← 6-stage Content Factory execution
 │   ├── article-writer.md       ← Batch article writing from transcripts
-│   ├── article-qa.md           ← BlitzMetrics 18-step quality gate
+│   ├── article-qa.md           ← [Methodology Partner] 18-step quality gate
 │   ├── dollar-a-day.md         ← 3-phase paid social campaigns
 │   ├── content-repurposing.md  ← Raw content to 10-15 multi-platform outputs
 │   ├── weekly-maa-report.md    ← Friday MAA reporting for all clients
@@ -38,11 +38,11 @@ Mainframe/
 ├── logs/                ← Auto-captured session logs from Claude Code
 │   └── YYYY-MM/         ← Organized by month
 ├── team-ops/            ← Team Operating System (onboarding, roles, processes, scaling)
-├── memory-bank/         ← Shared Memory Bank (Jack, HRI, clients, deals, relationships)
+├── memory-bank/         ← Shared Memory Bank ([Your Name], [Your Agency], clients, deals, relationships)
 │   └── refresh-protocol.md ← Defines how memory bank gets refreshed
 ├── content-pipeline/    ← Output from Content Repurposing Pipeline runs
 │   └── HOW-TO-USE.md    ← Instructions for running the pipeline
-├── blitzmetrics-canon/  ← Canonical BM frameworks (9 Triangles, CF Process, Article Guidelines, etc.)
+├── blitzmetrics-canon/  ← Canonical [Methodology Partner] frameworks (9 Triangles, CF Process, Article Guidelines, etc.)
 ├── content-audit/       ← Content inventory and gap analysis
 ├── claude-code/         ← Claude Code operating instructions and scheduled prompts
 ├── inbox/               ← Staging area for files being triaged
@@ -62,7 +62,7 @@ Mainframe/
 | YouTube Transcript Scraping | client-work | Active | 2026-03-20 | Yes |
 | Podcast Transcript Scraping | client-work | Active | 2026-03-20 | Yes |
 | Article Writing from Transcripts | client-work | Active | 2026-03-20 | Yes |
-| Article QA — BlitzMetrics 18-Step (consolidated) | client-work | Active | 2026-03-21 | Yes |
+| Article QA — [Methodology Partner] 18-Step (consolidated) | client-work | Active | 2026-03-21 | Yes |
 | Guest Appearance Research | client-work | Active | 2026-03-20 | Yes |
 | AI Apprentice Onboarding | client-work | Active | 2026-03-20 | Yes |
 | Client Onboarding | client-work | Active | 2026-03-20 | Yes |
@@ -71,8 +71,8 @@ Mainframe/
 | Weekly MAA Report | client-work | Active | 2026-03-20 | Yes |
 | KP Sprint Project Management | team-ops | Active | 2026-03-18 | Yes |
 | Client Communication | team-ops | Active | 2026-03-18 | Yes |
-| HRI Offer Ladder & GTM Blueprint | business-ops | Active | 2026-03-18 | Yes |
-| Event Planning (The Forge) | business-ops | Active | 2026-03-18 | Yes |
+| [Your Agency] Offer Ladder & GTM Blueprint | business-ops | Active | 2026-03-18 | Yes |
+| Event Planning ([Your Speaker Event]) | business-ops | Active | 2026-03-18 | Yes |
 | P&L Reporting | business-ops | Active | 2026-03-18 | Yes |
 | Refund & Escalation | business-ops | Active | 2026-03-18 | Yes |
 | University Speaking Outreach | business-ops | Active | 2026-03-18 | Yes |
@@ -82,7 +82,7 @@ Mainframe/
 | SOP Creation Template | templates | Active | 2026-03-18 | Yes |
 | Session Log Format | templates | Active | 2026-03-18 | Yes |
 | New Hire Onboarding SOP | team-ops | Active | 2026-03-18 | Yes |
-| Jackson Jerdee Onboarding Kit | team-ops | Active | 2026-03-18 | Yes |
+| [Your Content Specialist] Onboarding Kit | team-ops | Active | 2026-03-18 | Yes |
 | Escalation Playbook | team-ops | Active | 2026-03-18 | Yes |
 | Team Scaling Plan | team-ops | Active | 2026-03-18 | Yes |
 | Current Pain Points | team-ops | Active | 2026-03-18 | Yes |
@@ -93,7 +93,7 @@ Mainframe/
 
 Full team OS lives in `team-ops/`. See [team-ops/INDEX.md](team-ops/INDEX.md) for the master index.
 
-Key documents: Team directory, communication protocols, decision rights matrix, meeting cadence, delegation framework, onboarding SOPs (generic + Jackson-specific), role scorecards, tool stack, project management SOP, client communication SOP, escalation playbook, scaling plan, pain points analysis. Plus ready-to-send Jackson welcome email and team announcement.
+Key documents: Team directory, communication protocols, decision rights matrix, meeting cadence, delegation framework, onboarding SOPs (generic + [Your Content Specialist]-specific), role scorecards, tool stack, project management SOP, client communication SOP, escalation playbook, scaling plan, pain points analysis. Plus ready-to-send [Your Content Specialist] welcome email and team announcement.
 
 ---
 
@@ -108,7 +108,7 @@ Key documents: Team directory, communication protocols, decision rights matrix, 
 | Stop Hook | Every response | `~/.claude/settings.json` | **ACTIVE** | Injects systemMessage prompting Claude to write a session log |
 | SessionEnd Hook | Every session end | `~/.claude/settings.json` | **ACTIVE** | Calls `scripts/parse-session.py` to generate structured session logs |
 | Daily Mainframe Sync | Mon-Fri 6:27 AM | launchd (`com.jack.memory-refresh`) | **ACTIVE** | Reviews session logs, updates memory bank from local data, flags stale items. No Gmail. |
-| Weekly Briefing | Monday 8:17 AM | launchd (`com.jack.weekly-briefing`) | **ACTIVE** | Full state-of-business snapshot. Emailed to {{USER_EMAIL}} via Apple Mail. |
+| Weekly Briefing | Monday 8:17 AM | launchd (`com.jack.weekly-briefing`) | **ACTIVE** | Full state-of-business snapshot. Emailed to [your-email@your-agency.com] via Apple Mail. |
 | Weekly SOP Health Check | Friday 7:07 AM | launchd (`com.jack.sop-health-check`) | **ACTIVE** | Reviews session logs for SOP usage, checks freshness, identifies new SOP candidates. |
 | File Organizer | Nightly 11:47 PM | launchd (`com.jack.organize-files`) | **ACTIVE** | Organizes Downloads/Desktop/Documents by file type. |
 | Monthly Log Rotation | 1st of month, 3:07 AM | launchd (`com.jack.log-rotation`) | **ACTIVE** | Rotates large logs, archives old monthly dirs, cleans up old backups. |
@@ -131,7 +131,7 @@ Key documents: Team directory, communication protocols, decision rights matrix, 
 
 ## How to Use This System
 
-**As Jack (human):**
+**As [Your Name] (human):**
 - Drop files into `inbox/` when you want them triaged
 - Read SOPs in `sops/` to see how your systems work
 - Check `INDEX.md` for an overview of everything
@@ -149,9 +149,9 @@ Key documents: Team directory, communication protocols, decision rights matrix, 
 
 The Shared Memory Bank lives in `memory-bank/`. See [memory-bank/INDEX.md](memory-bank/INDEX.md) for the master index.
 
-**14 files** covering: Jack Wendt's personal profile, HRI company overview, BlitzMetrics relationship, team directory (30+ people), client directory (13 engagements), vendor/partner map, deal history ($50K+ revenue), relationship map, communication patterns, project history (15 projects), financial context, content assets, strategic context, and Gmail insights.
+**14 files** covering: [Your Name]'s personal profile, [Your Agency] company overview, [Methodology Partner] relationship, team directory (30+ people), client directory (13 engagements), vendor/partner map, deal history ($50K+ revenue), relationship map, communication patterns, project history (15 projects), financial context, content assets, strategic context, and Gmail insights.
 
-**Built from:** Full Gmail scan of {{USER_EMAIL}} (9,693 messages / 4,061 threads), all Mainframe SOPs, operating documents, and PDFs.
+**Built from:** Full Gmail scan of [your-email@your-agency.com] (9,693 messages / 4,061 threads), all Mainframe SOPs, operating documents, and PDFs.
 
 **Refresh Protocol:** `memory-bank/refresh-protocol.md` — defines how the memory bank gets updated weekly. Last refresh: 2026-03-18.
 
@@ -159,13 +159,13 @@ The Shared Memory Bank lives in `memory-bank/`. See [memory-bank/INDEX.md](memor
 
 ---
 
-## BlitzMetrics Canon
+## [Methodology Partner] Canon
 
-The canonical BlitzMetrics frameworks live in `blitzmetrics-canon/`. These are the SOURCE OF TRUTH for all methodology. If a Mainframe SOP contradicts a canon file, the SOP is wrong.
+The canonical [Methodology Partner] frameworks live in `blitzmetrics-canon/`. These are the SOURCE OF TRUTH for all methodology. If a Mainframe SOP contradicts a canon file, the SOP is wrong.
 
 | File | Description |
 |------|-------------|
-| 00-drive-index.md | Master index of BlitzMetrics Shared Drive documents |
+| 00-drive-index.md | Master index of [Methodology Partner] Shared Drive documents |
 | 01-nine-triangles.md | The complete 9 Triangles framework (WHY/HOW/WHAT tiers) |
 | 02-content-factory-process.md | The canonical 6-stage Content Factory process |
 | 03-article-guidelines.md | 18-step article quality checklist |
@@ -181,7 +181,7 @@ The canonical BlitzMetrics frameworks live in `blitzmetrics-canon/`. These are t
 | honest-assessment.md | Brutally honest Mainframe self-assessment |
 | sop-audit-report.md | Full audit of every SOP against the canon |
 
-**Built from:** Full ingestion of BlitzMetrics Shared Drive documents, Master Content Factory Guides (v9.9, v1.2, v1.7, v1.9), Course Builder Guide v9.1, Operations Guide v12.5, Video Editing Guide v1.5, Dollar-a-Day materials, and blitzmetrics.com/blog-posting-guidelines/.
+**Built from:** Full ingestion of [Methodology Partner] Shared Drive documents, Master Content Factory Guides (v9.9, v1.2, v1.7, v1.9), Course Builder Guide v9.1, Operations Guide v12.5, Video Editing Guide v1.5, Dollar-a-Day materials, and [methodology-partner.com]/blog-posting-guidelines/.
 
 ---
 

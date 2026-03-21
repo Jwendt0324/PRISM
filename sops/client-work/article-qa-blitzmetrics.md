@@ -1,5 +1,5 @@
 ---
-description: Full BlitzMetrics 18-step article quality gate with PASS/PARTIAL/FAIL scoring and meta-article generation
+description: Full [Methodology Partner] 18-step article quality gate with PASS/PARTIAL/FAIL scoring and meta-article generation
 category: client-work
 created: 2026-03-19
 last_updated: 2026-03-21
@@ -9,11 +9,11 @@ triangles: CCS (checklist implementation), MAA (quality measurement), LDT (meta-
 canon_sources: [03-article-guidelines.md, 07-quality-standards.md, 10-anti-vandalism-checklist.md]
 ---
 
-# Article QA — BlitzMetrics 18-Step Quality Gate
+# Article QA — [Methodology Partner] 18-Step Quality Gate
 
 ## Purpose
 
-Every article produced by the Content Engine, Content Repurposing Pipeline, or any Claude session must pass this quality gate before being marked "done." This SOP implements the FULL BlitzMetrics 18-step article quality checklist as documented in ~/Documents/Claude/Mainframe/blitzmetrics-canon/03-article-guidelines.md.
+Every article produced by the Content Engine, Content Repurposing Pipeline, or any Claude session must pass this quality gate before being marked "done." This SOP implements the FULL [Methodology Partner] 18-step article quality checklist as documented in ~/Documents/Claude/Mainframe/blitzmetrics-canon/03-article-guidelines.md.
 
 ## When to Use
 
@@ -24,7 +24,7 @@ Every article produced by the Content Engine, Content Repurposing Pipeline, or a
 
 ## Canon Reference
 
-This SOP implements the canonical article guidelines from blitzmetrics.com/blog-posting-guidelines/ and the BlitzMetrics Master Content Factory Guides. Every check traces to a canonical source.
+This SOP implements the canonical article guidelines from [methodology-partner.com]/blog-posting-guidelines/ and the [Methodology Partner] Master Content Factory Guides. Every check traces to a canonical source.
 
 ## Automated Mechanical Checks (Pre-QA)
 
@@ -90,7 +90,7 @@ Repeat until the audit returns 0 violations. Log the final scorecard.
 
 ### Mechanical Check Pitfalls
 
-- **Contraction scripts break compound words.** "does nothing" → "doesn'thing." Always run a post-contraction artifact scan. This happened on 59 instances in the Ryan D. Lee project.
+- **Contraction scripts break compound words.** "does nothing" → "doesn'thing." Always run a post-contraction artifact scan. This happened on 59 instances in the [KP Sprint Client] project.
 - **"Not because X, but because Y" is the stealthiest pattern.** It reads naturally so writers (human and AI) default to it. Appeared in 10/54 articles even with explicit instructions to avoid it.
 - **"Limited time" false positives.** "I don't have unlimited time" contains "limited time" as a substring but is legitimate. Check the full sentence context before flagging.
 - **Contraction of "you have" creates British English.** "You've got" is fine. "You've a pile" sounds British and wrong for American voice profiles.
@@ -292,7 +292,7 @@ For each article, produce a scorecard:
 
 ---
 
-## Meta-Article Generation (Dennis's Concept)
+## Meta-Article Generation ([Your Mentor/Advisor]'s Concept)
 
 After every article passes QA, generate a companion meta-article documenting:
 
@@ -306,7 +306,7 @@ After every article passes QA, generate a companion meta-article documenting:
 
 Save meta-articles to: ~/Documents/Claude/Mainframe/content-pipeline/meta/[client]/[article-slug]-meta.md
 
-This implements Dennis's LDT principle: each article teaches the next person how to create one.
+This implements [Your Mentor/Advisor]'s LDT principle: each article teaches the next person how to create one.
 
 ---
 
@@ -345,7 +345,7 @@ This implements Dennis's LDT principle: each article teaches the next person how
 
 ## Learnings Log
 
-- **2026-03-18 (Ryan D. Lee):** First audit found 27 violations across 54 articles. After two repair rounds: 0. Most common: "not because X, but because Y" (10 articles), word count under 1200 (11 articles).
+- **2026-03-18 ([KP Sprint Client]):** First audit found 27 violations across 54 articles. After two repair rounds: 0. Most common: "not because X, but because Y" (10 articles), word count under 1200 (11 articles).
 - **2026-03-18:** Mechanical fixes (contractions + banned words) should always be done first as a Python script. Pattern and editorial fixes require agent-level reasoning. Don't try to automate pattern rewrites with regex replacement.
 - **2026-03-18:** Running the QA audit as a Python script (not asking Claude to read each article) is 100x faster and catches everything. Build the script once, reuse across clients.
 - **2026-03-21:** Merged article-qa-compliance.md (mechanical checks SOP) into this file as the "Automated Mechanical Checks (Pre-QA)" section. Single source of truth for all article QA.

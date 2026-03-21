@@ -1,5 +1,5 @@
 """
-RDP File Fetcher — Copies PrtsPrcs from Rossware server via RDP drive mapping.
+RDP File Fetcher — Copies PrtsPrcs from [Field Service Platform] server via RDP drive mapping.
 
 On Windows Server, uses mstsc.exe with an .rdp file that:
 1. Maps the local agent data folder as a drive on the remote session
@@ -24,12 +24,12 @@ from pathlib import Path
 
 
 class RDPFetcher:
-    """Fetches PrtsPrcs from Rossware server via RDP drive redirection."""
+    """Fetches PrtsPrcs from [Field Service Platform] server via RDP drive redirection."""
 
     def __init__(self, config, log_fn, project_root):
         """
         Args:
-            config: dict with rossware connection details
+            config: dict with field service platform connection details
             log_fn: logging function
             project_root: Path to the production/ directory
         """
@@ -40,7 +40,7 @@ class RDPFetcher:
         self.input_dir.mkdir(parents=True, exist_ok=True)
 
     def fetch(self, timeout_seconds=120):
-        """Fetch PrtsPrcs from Rossware server.
+        """Fetch PrtsPrcs from [Field Service Platform] server.
 
         Returns:
             Path to the local PrtsPrcs file, or None if failed.

@@ -1,4 +1,4 @@
-# The Content Factory Process — BlitzMetrics Canon
+# The Content Factory Process — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guide v1.7 (2024), Workbook v1.9 (2025), CoachYu Guide v9.9
 **Version:** 1.0 | **Extracted:** 2026-03-19
@@ -40,11 +40,11 @@ The Content Factory has evolved across versions:
 - Remarketing pixels — Facebook, Google, cross-channel
 - Website — fast loading, proper structure, schema.org markup
 - Social profiles — consistent branding across all platforms
-- Access Checklist (blitzmetrics.com/acl) — all platforms granted and documented
+- Access Checklist ([methodology-partner.com]/acl) — all platforms granted and documented
 - CRM integration — data flows between tools
 - Call tracking — connected to analytics
 
-**Quality gate:** All items on the Digital Plumbing Checklist completed. All access granted via blitzmetrics.com/acl. Analytics firing correctly. Remarketing audiences building.
+**Quality gate:** All items on the Digital Plumbing Checklist completed. All access granted via [methodology-partner.com]/acl. Analytics firing correctly. Remarketing audiences building.
 
 **Human required:** Client must provide business information. Team sets up access.
 
@@ -190,7 +190,7 @@ The Content Factory has evolved across versions:
 
 **The continuous loop:** Perform feeds back into Process. Winners get repurposed. Losers get analyzed. The cycle compounds.
 
-**Human required:** Analysis requires human judgment. Dennis reviews and pushes back on poor quality. Strategic pivots are human decisions.
+**Human required:** Analysis requires human judgment. [Your Mentor/Advisor] reviews and pushes back on poor quality. Strategic pivots are human decisions.
 
 ---
 

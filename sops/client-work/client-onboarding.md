@@ -1,5 +1,5 @@
 ---
-description: End-to-end process for onboarding a new client into the HRI/BlitzMetrics system
+description: End-to-end process for onboarding a new client into the [Your Agency]/[Methodology Partner] system
 category: client-work
 created: 2026-03-18
 last_updated: 2026-03-20
@@ -16,7 +16,7 @@ canon_sources: [02-content-factory-process.md, 11-gct-discovery-framework.md]
 Ensure every new client is fully set up across all systems within the first week, with no gaps in access, communication, or reporting cadence.
 
 ## When to Use
-- A new client signs an engagement with HRI or BlitzMetrics
+- A new client signs an engagement with [Your Agency] or [Methodology Partner]
 - A client re-engages after a pause and needs systems re-provisioned
 - Transitioning a prospect to active client status after payment
 
@@ -24,9 +24,9 @@ Ensure every new client is fully set up across all systems within the first week
 
 1. **Have the client fill out the GCT (Goal, Content, Targeting) form.** This captures their business goals, existing content assets, and target audience. Do not proceed until GCT is complete — it drives everything downstream.
 
-2. **Set up access permissions via `blitzmetrics.com/acl`.** Grant team members appropriate access to the client's ad accounts, analytics, social pages, and any other platforms. Document all access in the Basecamp Access thread (Step 4).
+2. **Set up access permissions via `[methodology-partner.com]/acl`.** [Your Repurposing Specialist] team members appropriate access to the client's ad accounts, analytics, social pages, and any other platforms. Document all access in the Basecamp Access thread (Step 4).
 
-3. **Create a shared Google Drive folder.** Follow the process at `blitzmetrics.com/share`. Structure the folder with subfolders for: Content, Analytics, Creative Assets, Reports. Share with the client and all assigned team members.
+3. **Create a shared Google Drive folder.** Follow the process at `[methodology-partner.com]/share`. Structure the folder with subfolders for: Content, Analytics, Creative Assets, Reports. Share with the client and all assigned team members.
 
 4. **Create a Basecamp project with standard threads:**
    a. **Updates** — Client-visible. Weekly MAA reports go here.
@@ -52,7 +52,7 @@ Ensure every new client is fully set up across all systems within the first week
 ## Common Pitfalls
 - **Forgetting the Internal thread.** Every Basecamp project needs a team-only Internal thread. If you skip it, sensitive strategy discussions end up in client-visible threads or get lost in Slack/DMs.
 - **Not setting the MAA cadence from day 1.** If you wait until "things settle in" to start reporting, weeks slip. Set the Friday cadence during onboarding and deliver the first MAA within 7 days.
-- **Client chasing for updates.** If the client has to ask "what's happening?" you've already failed. The Ryan D. Lee lesson: proactive communication prevents client anxiety. Post updates before they ask.
+- **Client chasing for updates.** If the client has to ask "what's happening?" you've already failed. The [KP Sprint Client] lesson: proactive communication prevents client anxiety. Post updates before they ask.
 
 ## Human Gates
 | Step | Gate Type | Reason |
@@ -74,8 +74,8 @@ Ensure every new client is fully set up across all systems within the first week
 - **Canon source:** 02-content-factory-process.md (Stage 0: Plumbing) — client onboarding IS the plumbing stage: setting up access, systems, and reporting before any content production begins
 - **Triangles served:** GCT (first step) — the GCT form IS Step 1 of the process, capturing Goals, Content inventory, and Targeting before anything else; CID — the entire process is Communicate (Basecamp threads, welcome emails), Iterate (initial analysis feeds first MAA), Delegate (access permissions, team assignments)
 - **Human checkpoints:** Client fills out GCT form personally; team access permissions verified by human; client invited to Basecamp and confirmed visible; first MAA delivered and reviewed within 1 week
-- **Anti-vandalism:** GCT form gates all downstream work (no form = no progress); Internal thread separated from client-visible threads prevents accidental exposure; MAA cadence set from Day 1 prevents reporting gaps; proactive communication prevents client anxiety (Ryan D. Lee lesson)
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Anti-vandalism:** GCT form gates all downstream work (no form = no progress); Internal thread separated from client-visible threads prevents accidental exposure; MAA cadence set from Day 1 prevents reporting gaps; proactive communication prevents client anxiety ([KP Sprint Client] lesson)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on HRI/BlitzMetrics onboarding patterns and documented lessons from Ryan D. Lee engagement.
+- *2026-03-18* — SOP created based on [Your Agency]/[Methodology Partner] onboarding patterns and documented lessons from [KP Sprint Client] engagement.

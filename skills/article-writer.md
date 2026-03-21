@@ -1,7 +1,7 @@
 ---
 name: Article Writer
 version: 1.1
-description: Write batches of SEO-optimized articles from transcripts using the HRI Content Engine v5 pipeline
+description: Write batches of SEO-optimized articles from transcripts using the [Your Agency] Content Engine v5 pipeline
 triggers:
   - write articles
   - batch articles

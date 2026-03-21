@@ -1,7 +1,7 @@
 """
-Production Agent — Main orchestrator for D3S Service parts pricing.
+Production Agent — Main orchestrator for [Client — Appliance Repair] parts pricing.
 
-Reads PrtsPrcs binary file → looks up parts on Marcone → saves results
+Reads PrtsPrcs binary file → looks up parts on [Parts Distributor] → saves results
 to CSV + JSON → serves dashboard on port 8050.
 """
 
@@ -19,7 +19,7 @@ from .resume_engine import ResumeEngine
 
 
 class ProductionAgent:
-    """Orchestrates the full PrtsPrcs → Marcone lookup pipeline."""
+    """Orchestrates the full PrtsPrcs → [Parts Distributor] lookup pipeline."""
 
     # Output columns
     OUTPUT_COLUMNS = [
@@ -102,7 +102,7 @@ class ProductionAgent:
         start_time = time.time()
 
         self.log("=" * 60)
-        self.log("D3S PARTS PRICING AGENT — PRODUCTION")
+        self.log("[Client — Appliance Repair] PARTS PRICING AGENT — PRODUCTION")
         self.log(f"Distributor: {self.distributor['name']}")
         self.log(f"PrtsPrcs: {self.prtsprcs_path}")
         self.log(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -148,7 +148,7 @@ class ProductionAgent:
                 remaining = unique_parts
 
             # Estimate time
-            est_seconds = len(remaining) * (self.config.get("delay_between_searches_seconds", 2) + 5)
+            est_seconds = len(remaining) * (self.config.get("[google-doc-id]", 2) + 5)
             est_minutes = est_seconds / 60
             self.log(f"Parts to process: {len(remaining)} (estimated {est_minutes:.0f} minutes)")
             self.log("-" * 60)
@@ -165,7 +165,7 @@ class ProductionAgent:
 
             # Step 4: Get authenticated browser session
             self.log("")
-            self.log("STEP 3: Logging into Marcone...")
+            self.log("STEP 3: Logging into [Parts Distributor]...")
             page = self.session_manager.get_authenticated_page()
 
             # Step 5: Process each part

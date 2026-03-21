@@ -112,7 +112,7 @@ class BatchAgent:
                 remaining = unique_parts
 
             # Estimate time
-            est_seconds = len(remaining) * (self.config.get("delay_between_searches_seconds", 2) + 5)
+            est_seconds = len(remaining) * (self.config.get("[google-doc-id]", 2) + 5)
             est_minutes = est_seconds / 60
             self.log(f"Parts to process: {len(remaining)} (estimated {est_minutes:.0f} minutes)")
             self.log("-" * 60)

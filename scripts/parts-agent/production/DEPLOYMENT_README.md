@@ -1,4 +1,4 @@
-# D3S Parts Agent - Windows Deployment Guide
+# [Client — Appliance Repair] Parts Agent - Windows Deployment Guide
 
 ## Overview
 
@@ -22,7 +22,7 @@ Two main deployment scripts have been created:
 - Copies the 7 large files that cannot fit in PowerShell script:
   - agent.py (main orchestrator)
   - dashboard.py (web server)
-  - rss_key.py (Rossware auth)
+  - rss_key.py ([Field Service Platform] auth)
   - rdp_fetch.py (file transfer)
   - run.py (entry point)
   - fetch_and_run.py (pipeline)
@@ -88,8 +88,8 @@ Edit `C:\HRIAutomation\parts-agent\config\config.json`:
     },
     ...
   },
-  "rossware": {
-    "host": "d3s.rosswarehosting.com",
+  "field_service_platform": {
+    "host": "[client-server.example.com]",
     "username": "YOUR_RDP_USERNAME",    // Change this
     "password": "YOUR_RDP_PASSWORD",    // Change this
     ...
@@ -137,7 +137,7 @@ python fetch_and_run.py
 This runs:
 1. RSS Key authentication (whitelists your IP)
 2. RDP fetch of PrtsPrcs file
-3. Parts pricing lookups on Marcone
+3. Parts pricing lookups on [Parts Distributor]
 4. Dashboard serving results
 
 ### Individual Operations
@@ -169,7 +169,7 @@ After running, check these directories:
 ```
 C:\HRIAutomation\parts-agent\data\
 ├── input\
-│   └── PrtsPrcs          (binary file from Rossware)
+│   └── PrtsPrcs          (binary file from [Field Service Platform])
 ├── output\
 │   ├── results_YYYYMMDD_HHMMSS.csv   (results in CSV)
 │   ├── results_YYYYMMDD_HHMMSS.json  (results in JSON)
@@ -215,7 +215,7 @@ If browser doesn't install:
 python -m playwright install chromium --with-deps
 ```
 
-### Connection Issues to Marcone
+### Connection Issues to [Parts Distributor]
 
 Check that:
 - Internet connectivity is available
@@ -226,7 +226,7 @@ Check that:
 ### RDP Connection Issues
 
 Check that:
-- Rossware host is reachable: `ping d3s.rosswarehosting.com`
+- [Field Service Platform] host is reachable: `ping [client-server.example.com]`
 - RSS Key credentials are correct
 - You have RDP client installed (comes with Windows)
 - Admin access may be required for cmdkey/mstsc

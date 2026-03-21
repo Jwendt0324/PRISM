@@ -1,13 +1,13 @@
-# Anti-Vandalism Checklist — BlitzMetrics Canon
+# Anti-Vandalism Checklist — [Methodology Partner] Canon
 
-**Source:** Dennis Yu's feedback ("watch for accidental vandalism"), Operations Guide, Article Guidelines
+**Source:** [Your Mentor/Advisor]'s feedback ("watch for accidental vandalism"), Operations Guide, Article Guidelines
 **Version:** 1.0 | **Extracted:** 2026-03-19
 
 ---
 
 ## What Is "Unintentional Well-Meaning Vandalism"?
 
-Dennis warned: "Watch for accidental vandalism; this document contains many assumptions that contradict what we teach."
+[Your Mentor/Advisor] warned: "Watch for accidental vandalism; this document contains many assumptions that contradict what we teach."
 
 Vandalism in this context is NOT malicious. It's well-intentioned actions that cause harm because they:
 - Contradict established methodology
@@ -33,7 +33,7 @@ Before creating any new content, article, page, or document:
 - When in doubt, update the existing page rather than creating a new one
 
 ### Rule 3: SOPs Must Reference the Canonical Source
-- Every SOP must trace back to a specific BlitzMetrics guide or framework
+- Every SOP must trace back to a specific [Methodology Partner] guide or framework
 - Approximations of frameworks are dangerous — use the exact terminology and steps
 - If an SOP describes a process differently than the canon, the SOP is wrong
 - Reference the specific guide version and page number when possible
@@ -44,10 +44,10 @@ Before creating any new content, article, page, or document:
 - No orphan pages (pages with no internal links to or from them)
 - Category structure must mirror Topic Wheel
 
-### Rule 5: Changes to Methodology Require Dennis's Review
-- Any change to the Content Factory process, 9 Triangles interpretation, or framework application must be reviewed by Dennis
+### Rule 5: Changes to Methodology Require [Your Mentor/Advisor]'s Review
+- Any change to the Content Factory process, 9 Triangles interpretation, or framework application must be reviewed by [Your Mentor/Advisor]
 - The Mainframe should flag potential methodology changes rather than implementing them automatically
-- "I protect you from these misguided SEO 'experts'" — Dennis's standards exist for a reason
+- "I protect you from these misguided SEO 'experts'" — [Your Mentor/Advisor]'s standards exist for a reason
 
 ### Rule 6: Agent Output Must Be QA'd Before Publishing
 - No AI-generated content goes live without human review
@@ -85,7 +85,7 @@ Run this check before any major change to content or process:
 
 - [ ] Did I search for existing content on this topic?
 - [ ] Will this new content compete with existing pages for the same keywords?
-- [ ] Does this SOP/process match the canonical BlitzMetrics framework?
+- [ ] Does this SOP/process match the canonical [Methodology Partner] framework?
 - [ ] Is the content tree structure maintained (proper internal linking)?
 - [ ] Has a human reviewed any AI-generated output?
 - [ ] Are all systems (site, social, Basecamp, Content Library) still consistent?
@@ -110,7 +110,7 @@ Run this check before any major change to content or process:
 
 Basecamp-specific anti-vandalism:
 - Clear GCT for each to-do
-- Include Dennis and team leads in every thread
+- Include [Your Mentor/Advisor] and team leads in every thread
 - Include "TimeCamp (DON'T REMOVE REQUIRED FOR TIME TRACKING)" for time tracking
 - For creating new to-do's, add them to relevant lists (don't create new lists without approval)
 - Link to Basecamp threads, not individual documents (documents change, threads have context)

@@ -16,8 +16,8 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 
 ## When to Use
 - A client's own channel transcripts have been exhausted
-- Jack wants guest appearance articles for SEO/authority building
-- Building out the "Ryan D. Lee on [Podcast Name]" style recap articles
+- [Your Name] wants guest appearance articles for SEO/authority building
+- Building out the "[KP Sprint Client] on [Podcast Name]" style recap articles
 - Searching for third-party proof points and quotes for existing articles
 
 ## Process
@@ -52,7 +52,7 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 6. **Pull transcripts** using the same yt-dlp method from the YouTube Transcript Scraping SOP. Use the `fetch_transcript()` function with `cookiesfrombrowser: ("chrome",)`.
 
 7. **Write articles from guest transcripts.** These articles have a different angle than own-channel articles:
-   - Frame as "Ryan D. Lee on [Podcast Name]: [Key Insight]"
+   - Frame as "[KP Sprint Client] on [Podcast Name]: [Key Insight]"
    - Emphasize what the host asked and what the client revealed
    - Include the host's reactions and follow-up questions as social proof
    - Link to both the client's site AND the host's platform
@@ -67,18 +67,18 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 
 ## Common Pitfalls
 
-- **Clients have fewer guest appearances than expected.** Ryan D. Lee had only 4 YouTube guest appearances across 6 search queries. Most creators publish primarily on their own channels. Don't promise a specific number before searching.
-- **Some podcast appearances exist only on Spotify/Buzzsprout with no YouTube version.** The Erik Korem (Blueprint Podcast) and Ken Joslin (As The Leader Grows) episodes with Ryan D. Lee were audio-only. Flag these and offer to scrape audio via RSS if the client wants them.
+- **Clients have fewer guest appearances than expected.** [KP Sprint Client] had only 4 YouTube guest appearances across 6 search queries. Most creators publish primarily on their own channels. Don't promise a specific number before searching.
+- **Some podcast appearances exist only on Spotify/Buzzsprout with no YouTube version.** The [Guest Appearance Host] (Blueprint Podcast) and [Guest Appearance Host] (As The Leader Grows) episodes with [KP Sprint Client] were audio-only. Flag these and offer to scrape audio via RSS if the client wants them.
 - **YouTube search results change with VPN.** Different VPN servers return different results. Run searches both with and without VPN for maximum coverage.
 - **Browser automation can trigger dialog boxes.** Avoid clicking anything that might trigger a JavaScript alert. Use `navigate` and `javascript_tool` instead of `computer` clicks when possible.
 
 ## Human Gates
 | Step | Gate Type | Reason |
 |------|-----------|--------|
-| Search scope definition | Execute | Jack specifies client name and search parameters |
+| Search scope definition | Execute | [Your Name] specifies client name and search parameters |
 | Filtering out client's own channels (Step 3) | Review | Distinguishing own vs. guest channels requires human judgment |
 | Article angle for guest appearances (Step 7) | Review | Guest articles need different framing than own-channel content — editorial direction required |
-| Audio-only episode decision | Approve | Jack decides whether to invest time scraping audio-only appearances |
+| Audio-only episode decision | Approve | [Your Name] decides whether to invest time scraping audio-only appearances |
 
 ## Anti-Vandalism Checks
 - [ ] URL list saved with channel names for attribution audit
@@ -90,11 +90,11 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 
 - **Canon source:** 06-topic-wheel.md — guest appearances build authority around the client's Topic Wheel themes through third-party association
 - **Triangles served:** ACC (authority building) — guest appearances create Awareness (third-party audience exposure), build Consideration (E-E-A-T signals from host endorsement), and support Conversion (backlinks and social proof driving site traffic)
-- **Human checkpoints:** Jack initiates research by specifying client name and search scope; filtering out client's own channels requires human judgment; article angle for guest appearances differs from own-channel content and needs human editorial direction
+- **Human checkpoints:** [Your Name] initiates research by specifying client name and search scope; filtering out client's own channels requires human judgment; article angle for guest appearances differs from own-channel content and needs human editorial direction
 - **Anti-vandalism:** URL list saved with channel names for attribution audit; every appearance must have a transcript or documented failure reason; guest articles require different framing than own-channel articles to prevent generic output
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 
-- **2026-03-18 (Ryan D. Lee):** Found 4 guest appearances: Limitless Grit, Bryan Dulaney, Richardson Law Offices, Kim D. H. Butler. All 4 transcripts pulled successfully via yt-dlp with Chrome cookies.
+- **2026-03-18 ([KP Sprint Client]):** Found 4 guest appearances: Limitless Grit, [Guest Appearance Host], Richardson Law Offices, [Guest Appearance Host]. All 4 transcripts pulled successfully via yt-dlp with Chrome cookies.
 - **2026-03-18:** Browser automation for YouTube search works but is slow (6 queries took ~5 minutes with waits). Web search (`WebSearch` tool) is faster for initial discovery, then confirm with direct YouTube URL checks.

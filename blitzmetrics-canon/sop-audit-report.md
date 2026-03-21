@@ -1,4 +1,4 @@
-# SOP Audit Report — BlitzMetrics Canon Compliance
+# SOP Audit Report — [Methodology Partner] Canon Compliance
 
 **Audit Date:** 2026-03-19
 **Auditor:** Claude Mainframe (overnight alignment run)
@@ -14,13 +14,13 @@ The canon alignment sprint on 2026-03-20 addressed the majority of findings in t
 
 **Resolved findings:** 9 Triangles integrated into all SOPs, LDT/CCS frameworks added, GCT enforcement expanded, Content Factory stages standardized to 6, human-required steps defined in all SOPs, anti-vandalism protections added, Canon Compliance sections added, checklist format updated.
 
-**Remaining risks:** Content tree mapping not yet implemented, Dennis review of canon files still needed, no visibility into published content for cannibalization checks.
+**Remaining risks:** Content tree mapping not yet implemented, [Your Mentor/Advisor] review of canon files still needed, no visibility into published content for cannibalization checks.
 
 ---
 
 ## Executive Summary
 
-**Overall finding at time of audit (2026-03-19): SIGNIFICANT GAPS.** The Mainframe SOPs were built before the canonical BlitzMetrics materials were ingested. While the SOPs capture reasonable approximations of the Content Factory methodology, they contain multiple framework omissions, inconsistent stage naming, and insufficient quality gates compared to the canonical standards.
+**Overall finding at time of audit (2026-03-19): SIGNIFICANT GAPS.** The Mainframe SOPs were built before the canonical [Methodology Partner] materials were ingested. While the SOPs capture reasonable approximations of the Content Factory methodology, they contain multiple framework omissions, inconsistent stage naming, and insufficient quality gates compared to the canonical standards.
 
 **Post-alignment status (2026-03-20): GAPS ADDRESSED.** The alignment sprint rewrote and updated all SOPs to comply with canonical standards.
 
@@ -113,7 +113,7 @@ The canon alignment sprint on 2026-03-20 addressed the majority of findings in t
 - **Quality Gates:** ✅ Comprehensive banned word/pattern checking
 - **Anti-Vandalism:** ✅ This IS the enforcement SOP
 - **CRITICAL GAP:** Only checks mechanical quality (banned words, patterns). Does NOT check strategic quality (E-E-A-T, Topic Wheel alignment, content tree, keyword cannibalization, source video watching, internal linking quality).
-- **Fix Required:** Upgrade to full 18-step BlitzMetrics quality gate per article-qa-blitzmetrics.md. Add human review requirement. Add trend tracking.
+- **Fix Required:** Upgrade to full 18-step [Methodology Partner] quality gate per article-qa-blitzmetrics.md. Add human review requirement. Add trend tracking.
 - **Status:** NEEDS MAJOR UPGRADE — superseded by article-qa-blitzmetrics.md
 
 #### 9. guest-appearance-research.md
@@ -165,22 +165,22 @@ The canon alignment sprint on 2026-03-20 addressed the majority of findings in t
 - **9 Triangles:** ❌ Not referenced
 - **Topic Wheel:** ✅ Used for positioning
 - **MAA Loop:** ❌ No pipeline performance measurement
-- **Human Checkpoints:** ✅ Jack approves tone, films scripts
+- **Human Checkpoints:** ✅ [Your Name] approves tone, films scripts
 - **Anti-Vandalism:** ✅ No fabrication rules
-- **Fix Required:** Add 9 Triangles, mandatory BlitzMetrics QA gate (article-qa-blitzmetrics.md), meta-article step, anti-vandalism content tree check, MAA for pipeline performance
+- **Fix Required:** Add 9 Triangles, mandatory [Methodology Partner] QA gate (article-qa-blitzmetrics.md), meta-article step, anti-vandalism content tree check, MAA for pipeline performance
 - **Status:** NEEDS UPDATE — missing QA gate integration
 
 ### Business Ops SOPs
 
 #### 16-20. event-planning, hri-offer-ladder, pl-reporting, refund-escalation, university-speaking
 - **9 Triangles:** ❌ None referenced in any
-- **Common gap:** No connection to BlitzMetrics methodology (these are HRI-specific business processes)
+- **Common gap:** No connection to [Methodology Partner] methodology (these are [Your Agency]-specific business processes)
 - **Fix Required:** Add 9 Triangles where applicable (offer ladder → ACC funnel, P&L → MOF triangle), canon compliance sections
 - **Status:** MINOR UPDATES
 
 ### Team Ops SOPs
 
-#### 21-25. New hire onboarding, Jackson kit, escalation playbook, team scaling, communication, KP sprint PM
+#### 21-25. New hire onboarding, [Your Content Specialist] kit, escalation playbook, team scaling, communication, KP sprint PM
 - **9 Triangles:** ❌ None referenced
 - **LDT:** ❌ Not referenced despite being directly relevant to team development
 - **Fix Required:** Add LDT framework to onboarding (learn → do → teach progression), 9 Triangles orientation for new hires, canon compliance
@@ -257,5 +257,5 @@ The canon alignment sprint on 2026-03-20 addressed the majority of findings in t
 
 1. ~~**SOPs not yet rewritten**~~ RESOLVED 2026-03-20 — all critical rewrites completed in the alignment sprint.
 2. ~~**Canon interpretation**~~ RESOLVED — 6-stage model standardized across all SOPs.
-3. **Dennis review needed** — STILL OPEN. This audit represents Claude's interpretation of the canon. Dennis should review the canon files and confirm alignment.
-4. **Content tree unknown** — STILL OPEN. We don't have visibility into what's published on client sites, so we can't verify if the 378 Acoustic Shoppe articles have keyword cannibalization issues.
+3. **[Your Mentor/Advisor] review needed** — STILL OPEN. This audit represents Claude's interpretation of the canon. [Your Mentor/Advisor] should review the canon files and confirm alignment.
+4. **Content tree unknown** — STILL OPEN. We don't have visibility into what's published on client sites, so we can't verify if the 378 [Client — Local Retail Business] articles have keyword cannibalization issues.

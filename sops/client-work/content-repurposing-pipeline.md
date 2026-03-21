@@ -19,7 +19,7 @@ Transform any piece of raw content into a complete suite of multi-platform outpu
 
 - A new transcript is ready for repurposing (YouTube, podcast, Zoom, interview)
 - An existing article or blog post needs to be expanded into other formats
-- Jack records a new video or podcast episode
+- [Your Name] records a new video or podcast episode
 - A meeting or call produces content worth publishing
 - Raw notes or a brain dump needs to be structured into publishable content
 - A client's content needs to be run through the Content Factory
@@ -48,12 +48,12 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 - Structure: hook (first sentence under 10 words), key insights with H2 subheadings (verb-first), actionable takeaways, CTA
 - Must pass Article QA & Compliance checks: zero banned words, zero em dashes, zero banned AI patterns, 15+ contractions, 2+ internal links
 - Bold key phrases inline. Include `[IMAGE: description]` placeholders where relevant
-- Link to highriseinfluence.net/academy where natural
+- Link to [your-agency.com]/academy where natural
 
 **Blog Post (800-1,200 words)**
 - Lighter, more conversational version of the authority article
 - Different angle on the same topic — not just a shorter version
-- Designed for highriseinfluence.net/blog
+- Designed for [your-agency.com]/blog
 - More personal voice, less SEO structure
 - Can use first-person stories and casual language
 
@@ -62,7 +62,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 **LinkedIn Post (150-300 words)**
 - Format: Hook line → story → lesson → CTA question
 - Hook must stop the scroll — use a bold or contrarian opening
-- Written in Jack's voice: confident, real, grounded, not arrogant
+- Written in [Your Name]'s voice: confident, real, grounded, not arrogant
 - End with an engagement question ("What's the last squirrel you chased?")
 - No hashtags in the body. 3-5 relevant hashtags at the very end only
 
@@ -95,7 +95,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 - Structure: hook → context → 3-5 key points with examples → takeaway → CTA
 - Include timestamp estimates for each section
 - Note b-roll suggestions, screen share moments, and visual aids
-- This is an outline, not a word-for-word script — Jack speaks naturally from structure
+- This is an outline, not a word-for-word script — [Your Name] speaks naturally from structure
 
 ### Tier 4 — Email & Nurture (1-2 pieces)
 
@@ -104,8 +104,8 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 - Preview text: extends the subject line, adds context
 - Body: one insight, one story, one CTA
 - Keep it scannable — short paragraphs, bold key phrases
-- CTA links to highriseinfluence.net/academy or relevant content
-- Written as if Jack is emailing a friend, not a list
+- CTA links to [your-agency.com]/academy or relevant content
+- Written as if [Your Name] is emailing a friend, not a list
 
 **Lead Magnet Excerpt (if applicable)**
 - Standalone tip, framework, or checklist that could be gated
@@ -129,7 +129,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 3. **Check viability:**
    - Is this content publishable? (Not confidential, not internal-only, not someone else's copyrighted material)
    - Check the content audit viability table at `~/Documents/Claude/Mainframe/content-audit/00-executive-summary.md` for any flagged files
-   - If marked "No" or "Needs clarification" — skip or ask Jack
+   - If marked "No" or "Needs clarification" — skip or ask [Your Name]
 4. **Extract core elements:**
    - Speaker(s) and their roles
    - Core topic / unique angle
@@ -138,9 +138,9 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
    - Actionable advice (what can the reader DO?)
    - Stories and anecdotes (specific, named, dated if possible)
 5. **Determine Topic Wheel position:**
-   - **WHY** — Personal story, origin, values, mission (Jack's perspective)
+   - **WHY** — Personal story, origin, values, mission ([Your Name]'s perspective)
    - **HOW** — Expertise, methodology, process, framework (Content Factory, Dollar-a-Day, KP Sprints)
-   - **WHAT** — Product/service, offer, pricing, features (HRI offerings)
+   - **WHAT** — Product/service, offer, pricing, features ([Your Agency] offerings)
 6. **Rate content richness:**
    - **RICH** (supports all 5 tiers): Substantial transcript with multiple insights, stories, and actionable advice
    - **MODERATE** (supports Tiers 1-3): Good depth but limited stories or examples
@@ -161,20 +161,20 @@ Generate outputs starting with Tier 1 and working down:
    - Instagram: visual, save-worthy
 3. **Write Tier 3** (video scripts). These are performance pieces — they need energy and hooks.
    - Short-form scripts: the first 3 seconds determine everything
-   - Long-form outlines: structure for Jack to speak naturally, not read
+   - Long-form outlines: structure for [Your Name] to speak naturally, not read
 4. **Write Tier 4** (email). Pick the single most compelling insight for the email.
    - Subject line is 80% of the work — test multiple options
 5. **Write Tier 5** (SOP recommendation). Only if the content reveals operational insights.
 
 ### Voice Requirements (All Outputs)
 
-Jack's voice is:
+[Your Name]'s voice is:
 - **Direct.** Says what he means without hedging
 - **Confident but not arrogant.** Backs claims with examples, not bluster
 - **Grounded.** Real stories, real numbers, real people
 - **Young but serious.** No "fellow kids" energy, but not corporate either
-- **Sign-off:** "Love Always, Jack Wendt" on emails only
-- **Signature phrases:** Reference Dennis Yu by name when quoting him. Reference Content Factory methodology where relevant.
+- **Sign-off:** "Love Always, [Your Name]" on emails only
+- **Signature phrases:** Reference [Your Mentor/Advisor] by name when quoting him. Reference Content Factory methodology where relevant.
 - **Anti-patterns:** No jargon. No hype. No "in today's fast-paced world." No "let's dive in." No "at the end of the day."
 
 ### Step 3: QUALITY CHECK
@@ -188,12 +188,12 @@ Run every output through these checks:
 - [ ] Clear takeaway the reader can act on
 - [ ] First sentence under 10 words
 - [ ] 15+ contractions for natural voice
-- [ ] 2+ internal links to highriseinfluence.net
+- [ ] 2+ internal links to [your-agency.com]
 
 **Video Scripts:**
 - [ ] Hook in the first 3 seconds (as text overlay)
 - [ ] CTA is clear and specific
-- [ ] Would sound natural if Jack read it out loud
+- [ ] Would sound natural if [Your Name] read it out loud
 - [ ] 60-90 second scripts are actually 60-90 seconds (roughly 150-225 words)
 
 **LinkedIn Posts:**
@@ -208,14 +208,14 @@ Run every output through these checks:
 - [ ] 5-8 tweets total
 
 **Email Snippets:**
-- [ ] Subject line is compelling (would Jack open this?)
+- [ ] Subject line is compelling (would [Your Name] open this?)
 - [ ] Body is scannable (short paragraphs, bold phrases)
 - [ ] One clear CTA
-- [ ] Would Jack actually send this? (tone check)
+- [ ] Would [Your Name] actually send this? (tone check)
 
 **All Outputs:**
-- [ ] Traces back to real content Jack or Dennis actually said/wrote
-- [ ] Jack's voice is consistent
+- [ ] Traces back to real content [Your Name] or [Your Mentor/Advisor] actually said/wrote
+- [ ] [Your Name]'s voice is consistent
 - [ ] No sensitive/internal content leaked into public-facing outputs
 - [ ] CTAs are appropriate for the platform
 - [ ] Enough variety that the same insight doesn't feel repetitive across outputs
@@ -259,9 +259,9 @@ Save all outputs to a structured folder:
 
 | # | Type | Title | File | Status | Platform Target |
 |---|------|-------|------|--------|-----------------|
-| 1 | Authority Article | [title] | articles/authority-article.md | draft | highriseinfluence.net/blog |
-| 2 | Blog Post | [title] | articles/blog-post.md | draft | highriseinfluence.net/blog |
-| 3 | LinkedIn Post | [title] | social-posts/linkedin-post.md | draft | LinkedIn (Jack personal) |
+| 1 | Authority Article | [title] | articles/authority-article.md | draft | [your-agency.com]/blog |
+| 2 | Blog Post | [title] | articles/blog-post.md | draft | [your-agency.com]/blog |
+| 3 | LinkedIn Post | [title] | social-posts/linkedin-post.md | draft | LinkedIn ([Your Name] personal) |
 | ... | ... | ... | ... | ... | ... |
 
 ## Dollar-a-Day Candidates
@@ -276,14 +276,14 @@ Save all outputs to a structured folder:
 
 For each batch of content, include:
 
-1. **Platform assignments:** Which piece goes where (HRI channel vs Jack personal, LinkedIn vs Twitter, blog vs email)
+1. **Platform assignments:** Which piece goes where ([Your Agency] channel vs [Your Name] personal, LinkedIn vs Twitter, blog vs email)
 2. **Dollar-a-Day test candidates:** Which 2-3 pieces are most likely to perform in paid? (Look for: strong hook, universal insight, emotional resonance)
-3. **Publishing sequence:** What order maximizes reach? (Typically: LinkedIn post first → article → email → video scripts as Jack films)
+3. **Publishing sequence:** What order maximizes reach? (Typically: LinkedIn post first → article → email → video scripts as [Your Name] films)
 4. **Cross-promotion:** How pieces link to each other (article references video, email links to article, etc.)
 
-## BlitzMetrics QA Gate (MANDATORY)
+## [Methodology Partner] QA Gate (MANDATORY)
 
-Before any article output is marked "done," it MUST pass the full BlitzMetrics 18-step quality gate:
+Before any article output is marked "done," it MUST pass the full [Methodology Partner] 18-step quality gate:
 - **SOP:** ~/Documents/Claude/Mainframe/sops/client-work/article-qa-blitzmetrics.md
 - **Scorecard:** ~/Documents/Claude/Mainframe/sops/templates/qa-scorecard-template.md
 - **Canon reference:** ~/Documents/Claude/Mainframe/blitzmetrics-canon/03-article-guidelines.md
@@ -292,7 +292,7 @@ Steps:
 1. Run article through the 18-step checklist
 2. Score each step as PASS / PARTIAL / FAIL / NEEDS HUMAN
 3. Fix all FAIL items before proceeding
-4. Route NEEDS HUMAN items to Jack for completion
+4. Route NEEDS HUMAN items to [Your Name] for completion
 5. Generate meta-article (see article-qa-blitzmetrics.md for format)
 
 **Anti-Vandalism Check:**
@@ -307,7 +307,7 @@ Before publishing any new article, verify against existing content tree:
 |------|-----------|--------|
 | Intake: Viability check (Step 1.3) | Review | Determining if content is publishable requires judgment on confidentiality and copyright |
 | Intake: Topic Wheel positioning (Step 1.5) | Review | WHY/HOW/WHAT classification requires understanding of client's strategy |
-| Produce: Voice/tone review (all outputs) | Review | "Would Jack actually say this?" — every output must pass voice check |
+| Produce: Voice/tone review (all outputs) | Review | "Would [Your Name] actually say this?" — every output must pass voice check |
 | Quality Check: E-E-A-T verification | Review | Ensuring real stories and quotes trace back to source material |
 | Quality Check: Sensitive content screening | Review | Meeting transcripts may contain internal financials, conflicts, or confidential strategy |
 | Output: Platform assignment decisions | Review | Which piece goes where requires strategic judgment |
@@ -323,8 +323,8 @@ Before publishing any new article, verify against existing content tree:
 
 ## Quality Checks (Pipeline-Level)
 
-- [ ] Every piece traces back to real content Jack or Dennis actually said/wrote
-- [ ] Jack's voice is consistent across all outputs
+- [ ] Every piece traces back to real content [Your Name] or [Your Mentor/Advisor] actually said/wrote
+- [ ] [Your Name]'s voice is consistent across all outputs
 - [ ] CTAs are appropriate for each platform
 - [ ] Enough variety that the same insight doesn't feel repetitive across outputs
 - [ ] Topic Wheel position matches the content
@@ -335,7 +335,7 @@ Before publishing any new article, verify against existing content tree:
 ## Common Pitfalls
 
 - **Turning every transcript into an article without checking richness.** Short transcripts (under 500 words of substantive content) can't support Tier 1. Classify as LIGHT and produce Tiers 2-3 only.
-- **Generic LinkedIn posts.** "Here's why focus matters" could be from anyone. Make them Jack's voice with specific stories, names, and numbers.
+- **Generic LinkedIn posts.** "Here's why focus matters" could be from anyone. Make them [Your Name]'s voice with specific stories, names, and numbers.
 - **Video scripts without hooks.** The first 3 seconds determine everything. If your hook is "Hey guys, today I want to talk about..." you've already lost.
 - **Email snippets that are too long.** Keep them scannable. If it's over 400 words, cut it.
 - **Forgetting to check for sensitive content.** Before publishing anything from a meeting transcript, verify it doesn't contain internal financials, team conflicts, client disputes, or confidential strategy.
@@ -346,5 +346,5 @@ Before publishing any new article, verify against existing content tree:
 
 ## Learnings Log
 
-- **2026-03-18:** Pipeline SOP created. Initial test run on Jan 2025 Zoom transcript produced 13 pieces (3 articles, 5 video scripts, 3 LinkedIn posts, 2 email snippets). All sourced from a single conversation with Dennis Yu about business focus, testimonials vs stories, and landing pages.
+- **2026-03-18:** Pipeline SOP created. Initial test run on Jan 2025 Zoom transcript produced 13 pieces (3 articles, 5 video scripts, 3 LinkedIn posts, 2 email snippets). All sourced from a single conversation with [Your Mentor/Advisor] about business focus, testimonials vs stories, and landing pages.
 - **2026-03-18:** Key insight from test run — a single rich transcript (136 KB, ~45 min conversation) can support full Tier 1-4 output. Lighter transcripts should be batched (combine 2-3 related short transcripts into one pipeline run).

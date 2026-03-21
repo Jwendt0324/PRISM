@@ -28,7 +28,7 @@ $6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery
 | Reviews | 100+ five-star Google reviews |
 | Willingness to film | Confirmed |
 
-**If they don't qualify:** Route to LSS $300 tier. Do not start a Sprint for unqualified clients.
+**If they don't qualify:** Route to [Partner Platform] $300 tier. Do not start a Sprint for unqualified clients.
 
 ## 5 Fixed Deliverables
 
@@ -67,8 +67,8 @@ $6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery
 
 | Role | % | Amount | Notes |
 |------|---|--------|-------|
-| Sales Commission (Closer) | 15% | $900 | Requires CRM evidence. Dennis is default closer |
-| Delivery Lead (PM) | 10% | $600 | Paid on on-time delivery (<=30 days). Sam McLeod is default |
+| Sales Commission (Closer) | 15% | $900 | Requires CRM evidence. [Your Mentor/Advisor] is default closer |
+| Delivery Lead (PM) | 10% | $600 | Paid on on-time delivery (<=30 days). [Your AgentBuilder Partner] is default |
 | Delivery Labor Pool | 35% | $2,100 | Writers, editors, designers, VAs. Paid by task per rate card |
 | QA/On-Time Bonus | 5% | $300 | Released ONLY if on-time + zero critical defects |
 | Company Retained | 35% | $2,100 | Ops, software, R&D, runway |
@@ -102,5 +102,5 @@ $6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery
 - Client approval of all written content before publishing
 - Technical QA passes (schema, citations, site validated by human)
 - Client sign-off on all deliverables at handoff
-- Dennis approves any compensation exceptions
+- [Your Mentor/Advisor] approves any compensation exceptions
 - Case study publication (human writes and publishes)

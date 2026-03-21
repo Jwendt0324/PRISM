@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-optimizer.py — Route optimization engine for D3S Service.
+optimizer.py — Route optimization engine for [Client — Appliance Repair].
 
 Uses nearest-neighbor heuristic with 2-opt improvement.
 Accounts for: zone constraints, time windows, job durations,

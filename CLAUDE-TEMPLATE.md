@@ -49,7 +49,7 @@ All paths relative to `{{MAINFRAME_PATH}}/`. **Skills are preferred** (condensed
 | Podcast transcript scraping | `sops/client-work/podcast-transcript-scraping.md` |
 | Guest appearance research, podcast guesting | `sops/client-work/guest-appearance-research.md` |
 | AI Apprentice onboarding, new apprentice | `sops/client-work/ai-apprentice-onboarding.md` |
-| Event planning, The Forge, speaker event | `sops/business-ops/event-planning.md` |
+| Event planning, [Your Speaker Event], speaker event | `sops/business-ops/event-planning.md` |
 | P&L, financials, revenue reporting | `sops/business-ops/pl-reporting.md` |
 | Refund, payment dispute, chargeback | `sops/business-ops/refund-escalation.md` |
 | File organization, naming, folder structure | `sops/file-management/file-organization-rules.md` |
@@ -67,7 +67,7 @@ These rules apply to ALL content and SOP work. Full canon: `{{MAINFRAME_PATH}}/b
 2. **GCT before work:** Goals, Content, Targeting must be defined before starting any Content Factory work.
 3. **Human gates are mandatory:** AI output must be reviewed by a human before publishing.
 4. **Anti-vandalism:** Always check what exists before creating new content. Never duplicate or cannibalize.
-5. **18-step Article QA:** Every article passes the BlitzMetrics quality gate. No shortcuts.
+5. **18-step Article QA:** Every article passes the [Methodology Partner] quality gate. No shortcuts.
 6. **Canon overrides SOPs:** If an SOP contradicts a canon file in `blitzmetrics-canon/`, the canon is correct.
 
 ---

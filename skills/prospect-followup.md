@@ -1,7 +1,7 @@
 ---
 name: Prospect Follow-Up
 version: 1.0
-description: Structured follow-up process from first contact through qualification, price objection handling, and Dennis handoff
+description: Structured follow-up process from first contact through qualification, price objection handling, and [Your Mentor/Advisor] handoff
 triggers:
   - prospect follow-up
   - discovery call
@@ -17,7 +17,7 @@ triangles: [ACC, GCT]
 
 ## Core Principle
 
-No qualified prospect goes cold due to missed follow-ups. Every prospect is either converted, handed off to Dennis, or cleanly closed within two weeks. Speed and qualification prevent the two known failure modes: the Russell case (no follow-up = lost deal) and the Jeremy Maher lesson (unqualified prospect on Dennis's calendar = wasted time and confusion).
+No qualified prospect goes cold due to missed follow-ups. Every prospect is either converted, handed off to [Your Mentor/Advisor], or cleanly closed within two weeks. Speed and qualification prevent the two known failure modes: the [Prospect Name] case (no follow-up = lost deal) and the [Churned Client] lesson (unqualified prospect on [Your Mentor/Advisor]'s calendar = wasted time and confusion).
 
 ## Step 1: Log Immediately (Within 24 Hours)
 
@@ -29,7 +29,7 @@ Record in Basecamp or prospect tracking system:
 
 ## Step 2: Initial Response (Within 24 Hours)
 
-Send a human-written acknowledgment. Confirm next steps. Ask qualifying questions if not already answered. **Speed builds trust — the Russell case happened because nobody followed up after the initial conversation.**
+Send a human-written acknowledgment. Confirm next steps. Ask qualifying questions if not already answered. **Speed builds trust — the [Prospect Name] case happened because nobody followed up after the initial conversation.**
 
 ## Step 3: Qualify Against Service Criteria
 
@@ -41,7 +41,7 @@ Send a human-written acknowledgment. Confirm next steps. Ask qualifying question
 | Reviews | 100+ five-star Google reviews |
 | Willing to film | Confirmed |
 
-If qualified, proceed to Step 5. If not, route to LSS $300 tier.
+If qualified, proceed to Step 5. If not, route to [Partner Platform] $300 tier.
 
 ### AI Apprenticeship Prospects
 - Must complete qualification task (see `sops/client-work/ai-apprentice-onboarding.md`)
@@ -63,7 +63,7 @@ Discounting sets a precedent that kills margins. Give alternatives, not discount
 
 ## Step 5: Schedule Discovery Call
 
-- **KP prospects:** Use HRI Knowledge Panel Package Calendly link
+- **KP prospects:** Use [Your Agency] Knowledge Panel Package Calendly link
 - **Apprenticeship prospects:** Use AI Apprenticeship Audit Calendly link
 - Schedule within the first interaction if possible
 
@@ -77,28 +77,28 @@ Discounting sets a precedent that kills margins. Give alternatives, not discount
 
 Set reminders for each touchpoint. Each message must be human-written and personalized — not templates.
 
-## Step 7: Dennis Handoff (Qualified Prospects Only)
+## Step 7: [Your Mentor/Advisor] Handoff (Qualified Prospects Only)
 
-Provide Dennis with:
+Provide [Your Mentor/Advisor] with:
 1. Prospect name, business, contact info
 2. Service interest and qualification status
 3. Any objections or concerns raised
 4. Recommended approach
-5. **All prior pricing discussions** — Dennis must know what was quoted to avoid conflicting offers (the Jeremy Maher lesson: conflicting pricing undermines trust)
+5. **All prior pricing discussions** — [Your Mentor/Advisor] must know what was quoted to avoid conflicting offers (the [Churned Client] lesson: conflicting pricing undermines trust)
 
 ## Quality Checks
 
 - [ ] All prospects logged within 24 hours of first contact
 - [ ] No prospect more than 48 hours without a response at any stage
 - [ ] Discovery calls scheduled within 1 week for qualified prospects
-- [ ] Qualification criteria verified before scheduling Dennis's time
+- [ ] Qualification criteria verified before scheduling [Your Mentor/Advisor]'s time
 - [ ] Price objection handling uses alternatives path (DIY or Quick Audit) — never discounting
 
 ## Known Pitfalls
 
-- **The Russell case.** A qualified prospect disappeared because nobody followed up. The cadence (24h, 48h, 1 week, 2 weeks) exists to prevent this. Set reminders.
-- **The Jeremy Maher lesson.** Scheduling a discovery call with an unqualified prospect wastes Dennis's time and creates awkward conversations. Qualify first, call second.
-- **Dennis offering conflicting pricing.** If you quote one thing and Dennis offers another, trust breaks. Always brief Dennis on what has been discussed before the handoff.
+- **The [Prospect Name] case.** A qualified prospect disappeared because nobody followed up. The cadence (24h, 48h, 1 week, 2 weeks) exists to prevent this. Set reminders.
+- **The [Churned Client] lesson.** Scheduling a discovery call with an unqualified prospect wastes [Your Mentor/Advisor]'s time and creates awkward conversations. Qualify first, call second.
+- **[Your Mentor/Advisor] offering conflicting pricing.** If you quote one thing and [Your Mentor/Advisor] offers another, trust breaks. Always brief [Your Mentor/Advisor] on what has been discussed before the handoff.
 - **Discounting instead of offering alternatives.** Never reduce the KP Sprint price. The Quick Audit ($297) and free DIY path exist for a reason.
 
 ## Human Gates
@@ -107,5 +107,5 @@ Provide Dennis with:
 - Qualification assessment against service-specific criteria
 - Price objection handling (alternatives require human judgment)
 - Discovery call scheduling (Calendly link depends on service interest)
-- Dennis briefing before handoff (must include prior pricing discussions)
+- [Your Mentor/Advisor] briefing before handoff (must include prior pricing discussions)
 - Every follow-up touchpoint (human-written, personalized, value-adding)

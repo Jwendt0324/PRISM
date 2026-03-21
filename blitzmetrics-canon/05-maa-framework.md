@@ -1,4 +1,4 @@
-# MAA Framework — BlitzMetrics Canon
+# MAA Framework — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guide v1.7, Operations Guide, Weekly MAA templates
 **Version:** 1.0 | **Extracted:** 2026-03-19
@@ -29,7 +29,7 @@ MAA (Metrics, Analysis, Action) is the performance measurement framework that ru
 - Connect cause to effect ("Video views dropped 23% because we didn't post new content this week")
 - Call out the WEAKEST area specifically
 - This is NOT a task list — it requires human insight and judgment
-- Dennis's test: "If your Analysis section reads like a list of what you did, it's wrong"
+- [Your Mentor/Advisor]'s test: "If your Analysis section reads like a list of what you did, it's wrong"
 
 ### Action
 - Minimum 3 specific action items

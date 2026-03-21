@@ -1,28 +1,28 @@
 ---
 document: Decision Rights Matrix
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 version: 1.0
 created: 2026-03-18
 last_updated: 2026-03-18
 status: active
 ---
 
-# Decision Rights Matrix — {{COMPANY_NAME}}
+# Decision Rights Matrix — [Your Agency Name]
 
 Who decides what. No ambiguity.
 
-This is the operating authority for every recurring decision at {{COMPANY}}. If a decision isn't listed here, it escalates to {{OWNER_NAME}}.
+This is the operating authority for every recurring decision at [Your Agency]. If a decision isn't listed here, it escalates to [Your Name].
 
 ---
 
 ## Governance Context
 
-- **{{OWNER_NAME}}** — 85% owner. Full operational and managerial control per Cross-Equity Agreement. Final say on everything.
-- **{{ADVISOR_NAME}}** — 10% equity (vesting). NO management or voting rights unless {{OWNER_NAME}} grants them. Strategic advisor role.
-- **{{OPS_PARTNER_NAME}}** — 5% equity (vesting). NO management or voting rights. Operations role.
-- **Revenue share** — {{COMPANY}} pays LSS 20% of gross revenue.
+- **[Your Name]** — [Majority Owner]. Full operational and managerial control per Cross-Equity Agreement. Final say on everything.
+- **[Your Mentor/Advisor]** — [Advisor Equity %] (vesting). NO management or voting rights unless [Your Name] grants them. Strategic advisor role.
+- **[Your Ops Partner]** — [Ops Partner Equity %] (vesting). NO management or voting rights. Operations role.
+- **Revenue share** — [Your Agency] pays [Partner Platform] 20% of gross revenue.
 
-Equity does not equal authority. {{OWNER_NAME}} holds sole decision-making power. {{ADVISOR_NAME}} advises. {{OPS_PARTNER_NAME}} executes operations. That's the structure.
+Equity does not equal authority. [Your Name] holds sole decision-making power. [Your Mentor/Advisor] advises. [Your Ops Partner] executes operations. That's the structure.
 
 ---
 
@@ -43,42 +43,42 @@ Equity does not equal authority. {{OWNER_NAME}} holds sole decision-making power
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{ADVISOR_NAME}} | R | Qualifies leads. Enforces the gate: $100k+/mo revenue, 100+ reviews, willing to film. |
-| {{OWNER_NAME}} | A | Final accept/reject. No client enters without {{OWNER_NAME}}'s agreement. |
-| {{OPS_PARTNER_NAME}} | I | Informed when a new client is accepted for onboarding prep. |
-| {{OPS_ADMIN_NAME}} (LSS) | I | Informed for resource planning. |
+| [Your Mentor/Advisor] | R | Qualifies leads. Enforces the gate: $100k+/mo revenue, 100+ reviews, willing to film. |
+| [Your Name] | A | Final accept/reject. No client enters without [Your Name]'s agreement. |
+| [Your Ops Partner] | I | Informed when a new client is accepted for onboarding prep. |
+| [Your Ops Admin] ([Partner Platform]) | I | Informed for resource planning. |
 
 ### 2. Pricing Exceptions
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OWNER_NAME}} | A | Standard pricing: $6,000/Sprint, $2,500 certification. Any deviation is {{OWNER_NAME}}'s call. |
-| {{ADVISOR_NAME}} | C | Advises on pricing strategy. Does not set or approve prices. |
-| {{OPS_PARTNER_NAME}} | I | Informed for invoicing and tracking. |
+| [Your Name] | A | Standard pricing: $6,000/Sprint, $2,500 certification. Any deviation is [Your Name]'s call. |
+| [Your Mentor/Advisor] | C | Advises on pricing strategy. Does not set or approve prices. |
+| [Your Ops Partner] | I | Informed for invoicing and tracking. |
 
 ### 3. Scope Changes Mid-Sprint
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{ADVISOR_NAME}} | R | Enforces the rule: no custom work inside a Sprint. Custom requests go to Phase 2. |
-| {{OWNER_NAME}} | A | Final call if a client pushes back or an exception is warranted. |
-| {{OPS_PARTNER_NAME}} | C | Consulted on operational feasibility. |
+| [Your Mentor/Advisor] | R | Enforces the rule: no custom work inside a Sprint. Custom requests go to Phase 2. |
+| [Your Name] | A | Final call if a client pushes back or an exception is warranted. |
+| [Your Ops Partner] | C | Consulted on operational feasibility. |
 
 ### 4. Hiring Decisions
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OWNER_NAME}} | A | Hires who he wants. Sole authority. |
-| {{ADVISOR_NAME}} | C | Can advise on qualifications and standards. Advisory only — no veto power. |
-| {{OPS_PARTNER_NAME}} | C | Consulted on ops capacity and team fit. |
+| [Your Name] | A | Hires who he wants. Sole authority. |
+| [Your Mentor/Advisor] | C | Can advise on qualifications and standards. Advisory only — no veto power. |
+| [Your Ops Partner] | C | Consulted on ops capacity and team fit. |
 
 ### 5. Content Publishing
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R | Manages content pipeline and scheduling. |
-| {{ADVISOR_NAME}} | C | Reviews content. Flags AI language, quality issues, brand consistency. |
-| {{OWNER_NAME}} | A | Final approval authority. Can override any publish/hold decision. |
+| [Your Ops Partner] | R | Manages content pipeline and scheduling. |
+| [Your Mentor/Advisor] | C | Reviews content. Flags AI language, quality issues, brand consistency. |
+| [Your Name] | A | Final approval authority. Can override any publish/hold decision. |
 
 ### 6. Budget & Spending
 
@@ -86,96 +86,96 @@ Equity does not equal authority. {{OWNER_NAME}} holds sole decision-making power
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R, A | Can approve and execute. No escalation needed. |
-| {{OWNER_NAME}} | I | Informed in regular reporting. |
+| [Your Ops Partner] | R, A | Can approve and execute. No escalation needed. |
+| [Your Name] | I | Informed in regular reporting. |
 
 #### $500 – $2,000
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R | Prepares the request and justification. |
-| {{OWNER_NAME}} | A | Approves or rejects. |
-| {{ADVISOR_NAME}} | I | Informed if it affects LSS-subsidized operations. |
+| [Your Ops Partner] | R | Prepares the request and justification. |
+| [Your Name] | A | Approves or rejects. |
+| [Your Mentor/Advisor] | I | Informed if it affects [Partner Platform]-subsidized operations. |
 
 #### Over $2,000
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OWNER_NAME}} | A | Must approve. No exceptions. |
-| {{ADVISOR_NAME}} | C | Consulted if it involves LSS resources or shared costs. |
-| {{OPS_PARTNER_NAME}} | R | Executes after approval. |
-| {{OPS_ADMIN_NAME}} (LSS) | C | Consulted if it hits the LSS budget. |
+| [Your Name] | A | Must approve. No exceptions. |
+| [Your Mentor/Advisor] | C | Consulted if it involves [Partner Platform] resources or shared costs. |
+| [Your Ops Partner] | R | Executes after approval. |
+| [Your Ops Admin] ([Partner Platform]) | C | Consulted if it hits the [Partner Platform] budget. |
 
 ### 7. Client Escalations
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{ADVISOR_NAME}} | R | Handles client escalations directly (e.g., Ryan D. Lee, Acoustic Shoppe). First responder. |
-| {{OWNER_NAME}} | A | Informed immediately. Steps in if the situation requires owner-level authority. |
-| {{OPS_PARTNER_NAME}} | I | Informed for operational awareness. |
+| [Your Mentor/Advisor] | R | Handles client escalations directly (e.g., [KP Sprint Client], [Client — Local Retail Business]). First responder. |
+| [Your Name] | A | Informed immediately. Steps in if the situation requires owner-level authority. |
+| [Your Ops Partner] | I | Informed for operational awareness. |
 
 ### 8. SOP Changes
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R | Drafts and maintains SOPs. |
-| {{OWNER_NAME}} | A | Approves changes to any SOP that affects client delivery or revenue. |
-| {{ADVISOR_NAME}} | C | Consulted on methodology SOPs (Content Factory, Dollar-a-Day, Topic Wheel). |
+| [Your Ops Partner] | R | Drafts and maintains SOPs. |
+| [Your Name] | A | Approves changes to any SOP that affects client delivery or revenue. |
+| [Your Mentor/Advisor] | C | Consulted on methodology SOPs (Content Factory, Dollar-a-Day, Topic Wheel). |
 
 ### 9. Tool Purchases
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R | Identifies need, researches options. |
-| {{OWNER_NAME}} | A | Approves {{COMPANY}} tool purchases. |
-| {{OPS_ADMIN_NAME}} (LSS) | R, A | Controls LSS tool budget. Limited budget — operates independently within his allocation. |
-| {{ADVISOR_NAME}} | I | Informed on major tool decisions. |
+| [Your Ops Partner] | R | Identifies need, researches options. |
+| [Your Name] | A | Approves [Your Agency] tool purchases. |
+| [Your Ops Admin] ([Partner Platform]) | R, A | Controls [Partner Platform] tool budget. Limited budget — operates independently within his allocation. |
+| [Your Mentor/Advisor] | I | Informed on major tool decisions. |
 
 ### 10. AI Apprentice Admissions
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{ADVISOR_NAME}} | R | Runs the qualification process. Sets standards. |
-| {{OWNER_NAME}} | A | Final approval on admissions. {{COMPANY}} co-owns the program. |
-| {{OPS_PARTNER_NAME}} | I | Informed for operational planning. |
+| [Your Mentor/Advisor] | R | Runs the qualification process. Sets standards. |
+| [Your Name] | A | Final approval on admissions. [Your Agency] co-owns the program. |
+| [Your Ops Partner] | I | Informed for operational planning. |
 
 ### 11. Revenue Distribution
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OWNER_NAME}} | A | Sole authority. Governed by Cross-Equity Agreement. |
-| {{ADVISOR_NAME}} | C | Consulted on LSS revenue share (20% of {{COMPANY}} gross). |
-| {{OPS_PARTNER_NAME}} | I | Informed on compensation-related decisions. |
+| [Your Name] | A | Sole authority. Governed by Cross-Equity Agreement. |
+| [Your Mentor/Advisor] | C | Consulted on [Partner Platform] revenue share (20% of [Your Agency] gross). |
+| [Your Ops Partner] | I | Informed on compensation-related decisions. |
 
 ### 12. Partnership & Equity Decisions
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OWNER_NAME}} | A | 85% owner. Sole decision-maker on equity, vesting, and partnership terms. |
-| {{ADVISOR_NAME}} | C | Consulted as 10% equity holder. Advisory only — no voting rights. |
-| {{OPS_PARTNER_NAME}} | I | Informed as 5% equity holder. No voting rights. |
+| [Your Name] | A | [Majority Owner]. Sole decision-maker on equity, vesting, and partnership terms. |
+| [Your Mentor/Advisor] | C | Consulted as [Advisor Equity %] holder. Advisory only — no voting rights. |
+| [Your Ops Partner] | I | Informed as [Ops Partner Equity %] holder. No voting rights. |
 
-### 13. Event Planning (The Forge, DigiMarCon)
+### 13. Event Planning ([Your Speaker Event], [Industry Conference])
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R | Logistics, scheduling, coordination. |
-| {{OWNER_NAME}} | A | Approves budget, attendees, and commitments. |
-| {{ADVISOR_NAME}} | C | Consulted on speaking opportunities, strategic value, and co-hosted events. |
+| [Your Ops Partner] | R | Logistics, scheduling, coordination. |
+| [Your Name] | A | Approves budget, attendees, and commitments. |
+| [Your Mentor/Advisor] | C | Consulted on speaking opportunities, strategic value, and co-hosted events. |
 
 ### 14. Case Study Publishing
 
 | Role | RACI | Notes |
 |------|------|-------|
-| {{OPS_PARTNER_NAME}} | R | Drafts the case study. Manages client approval process. |
-| {{ADVISOR_NAME}} | C | Reviews for accuracy, methodology alignment, and quality. |
-| {{OWNER_NAME}} | A | Final approval before anything goes public. |
+| [Your Ops Partner] | R | Drafts the case study. Manages client approval process. |
+| [Your Mentor/Advisor] | C | Reviews for accuracy, methodology alignment, and quality. |
+| [Your Name] | A | Final approval before anything goes public. |
 
 ---
 
 ## Summary Table
 
-| # | Decision | {{OWNER_NAME}} | {{ADVISOR_NAME}} | {{OPS_PARTNER_NAME}} | {{OPS_ADMIN_NAME}} |
+| # | Decision | [Your Name] | [Your Mentor/Advisor] | [Your Ops Partner] | [Your Ops Admin] |
 |---|----------|------|--------|-------|---------|
 | 1 | New client acceptance | **A** | R | I | I |
 | 2 | Pricing exceptions | **A** | C | I | — |
@@ -187,8 +187,8 @@ Equity does not equal authority. {{OWNER_NAME}} holds sole decision-making power
 | 6c | Budget over $2,000 | **A** | C | R | C |
 | 7 | Client escalations | **A** | R | I | — |
 | 8 | SOP changes | **A** | C | R | — |
-| 9 | Tool purchases ({{COMPANY}}) | **A** | I | R | — |
-| 9 | Tool purchases (LSS) | I | I | — | **R/A** |
+| 9 | Tool purchases ([Your Agency]) | **A** | I | R | — |
+| 9 | Tool purchases ([Partner Platform]) | I | I | — | **R/A** |
 | 10 | AI Apprentice admissions | **A** | R | I | — |
 | 11 | Revenue distribution | **A** | C | I | — |
 | 12 | Partnership/equity | **A** | C | I | — |
@@ -202,21 +202,21 @@ Equity does not equal authority. {{OWNER_NAME}} holds sole decision-making power
 When something falls outside normal operating boundaries or someone is unsure, follow this path:
 
 ```
-Level 1: {{OPS_PARTNER_NAME}} handles it
+Level 1: [Your Ops Partner] handles it
          ↓ (if outside authority, over budget threshold, or unclear)
-Level 2: {{OWNER_NAME}} decides
-         ↓ (if it involves LSS resources, methodology, or {{ADVISOR_NAME}}'s network)
-Level 3: {{OWNER_NAME}} + {{ADVISOR_NAME}} discuss, {{OWNER_NAME}} decides
+Level 2: [Your Name] decides
+         ↓ (if it involves [Partner Platform] resources, methodology, or [Your Mentor/Advisor]'s network)
+Level 3: [Your Name] + [Your Mentor/Advisor] discuss, [Your Name] decides
 ```
 
 ### Escalation Rules
 
-1. **Default authority is {{OWNER_NAME}}'s.** If a decision isn't in this matrix, it's {{OWNER_NAME}}'s call.
-2. **{{ADVISOR_NAME}} advises, {{OWNER_NAME}} decides.** {{ADVISOR_NAME}} has deep expertise and should always be consulted on strategy, methodology, and client relationships. But advisory input is not approval authority.
-3. **{{OPS_PARTNER_NAME}} executes within guardrails.** Spending under $500, day-to-day ops, and content pipeline management don't need escalation unless something is off.
-4. **{{OPS_ADMIN_NAME}} operates independently on LSS tools and budget.** He manages his own allocation. If it crosses into {{COMPANY}} spending, it escalates to {{OWNER_NAME}}.
-5. **Client emergencies skip the ladder.** If a client is about to churn or there's a reputation risk, {{ADVISOR_NAME}} and {{OWNER_NAME}} both get looped in immediately. Handle it, then document it.
-6. **Equity and legal decisions never delegate.** These are {{OWNER_NAME}}'s alone. Period.
+1. **Default authority is [Your Name]'s.** If a decision isn't in this matrix, it's [Your Name]'s call.
+2. **[Your Mentor/Advisor] advises, [Your Name] decides.** [Your Mentor/Advisor] has deep expertise and should always be consulted on strategy, methodology, and client relationships. But advisory input is not approval authority.
+3. **[Your Ops Partner] executes within guardrails.** Spending under $500, day-to-day ops, and content pipeline management don't need escalation unless something is off.
+4. **[Your Ops Admin] operates independently on [Partner Platform] tools and budget.** He manages his own allocation. If it crosses into [Your Agency] spending, it escalates to [Your Name].
+5. **Client emergencies skip the ladder.** If a client is about to churn or there's a reputation risk, [Your Mentor/Advisor] and [Your Name] both get looped in immediately. Handle it, then document it.
+6. **Equity and legal decisions never delegate.** These are [Your Name]'s alone. Period.
 
 ---
 

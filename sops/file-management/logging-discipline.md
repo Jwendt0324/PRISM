@@ -113,7 +113,7 @@ If something goes wrong, trace the issue:
 
 - **Canon source:** `~/Documents/Claude/Mainframe/blitzmetrics-canon/05-maa-framework.md`
 - **Triangles served:** MAA — Session logs are the Mainframe's measurement system. Metrics = what was done, Analysis = what was learned, Action = SOP updates flagged. Without disciplined logging, the Mainframe has no MAA loop and cannot improve.
-- **Human checkpoints:** Jack reviews weekly retrospective output, which is derived from session logs. No human gate on individual log creation.
+- **Human checkpoints:** [Your Name] reviews weekly retrospective output, which is derived from session logs. No human gate on individual log creation.
 - **Anti-vandalism:** Minimum file size (500 bytes) prevents stubs. Required sections prevent incomplete logs. Monthly maintenance catches any that slip through. Absolute path requirement prevents broken references.
 - **Last audited:** 2026-03-20
 

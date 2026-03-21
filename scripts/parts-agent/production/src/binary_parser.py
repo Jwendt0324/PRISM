@@ -1,5 +1,5 @@
 """
-Binary Parser — Reads PrtsPrcs binary files from Rossware ServiceDesk.
+Binary Parser — Reads PrtsPrcs binary files from [Field Service Platform] ServiceDesk.
 
 PrtsPrcs is a fixed-width binary file with 256-byte records containing
 parts queue data. The record layout (discovered through hex analysis):

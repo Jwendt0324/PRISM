@@ -242,7 +242,7 @@ class NetData:
         """Return list of alternate vendor names, excluding the current distributor.
 
         Args:
-            exclude_code: vendor abbreviation to exclude (default "MA" for Marcone).
+            exclude_code: vendor abbreviation to exclude (default "MA" for [Parts Distributor]).
 
         Returns:
             list of vendor name strings.

@@ -65,7 +65,7 @@ def _min_to_time(minutes):
 def run_full_pipeline():
     """Execute full parse → optimize → metrics pipeline."""
     print("=" * 60)
-    print("  D3S SERVICE SCHEDULING AGENT")
+    print("  [Client — Appliance Repair] SERVICE SCHEDULING AGENT")
     print("=" * 60)
     print()
 

@@ -26,13 +26,13 @@ The operating instructions that Claude Code loads every session live at `~/.clau
 
 Before starting any non-trivial task:
 
-1. Read `~/Documents/Claude/Mainframe/CONTEXT.md` — this is a compressed snapshot (~4,000 words) of Jack, his business, team, clients, strategy, canon frameworks, and available SOPs. This single file gives you 90% of the context you need.
+1. Read `~/Documents/Claude/Mainframe/CONTEXT.md` — this is a compressed snapshot (~4,000 words) of [Your Name], his business, team, clients, strategy, canon frameworks, and available SOPs. This single file gives you 90% of the context you need.
 2. Match the task to a **skill** or **SOP** using the routing table in `~/.claude/CLAUDE.md`
 3. If a skill exists in `~/Documents/Claude/Mainframe/skills/`, load and follow it (skills are condensed, action-oriented)
 4. If no skill exists, check `~/Documents/Claude/Mainframe/INDEX.md` for the full SOP list and load the relevant SOP
 5. If no SOP exists: execute the task normally, then consider creating one
 
-For deep dives into specific areas, read the detailed files in `~/Documents/Claude/Mainframe/memory-bank/` (16 intelligence files covering Jack, HRI, clients, deals, team, relationships, strategy, Gmail insights, plus refresh protocols).
+For deep dives into specific areas, read the detailed files in `~/Documents/Claude/Mainframe/memory-bank/` (16 intelligence files covering [Your Name], [Your Agency], clients, deals, team, relationships, strategy, Gmail insights, plus refresh protocols).
 
 ### 2. Write a Session Log After Every Task
 
@@ -101,7 +101,7 @@ SOPs are stored as markdown files in `~/Documents/Claude/Mainframe/sops/` with S
 
 ### Canon Is Source of Truth
 
-The canonical BlitzMetrics frameworks live in `~/Documents/Claude/Mainframe/blitzmetrics-canon/` (15 canon files). These are the SOURCE OF TRUTH for all methodology. If a Mainframe SOP contradicts a canon file, the SOP is wrong and must be corrected.
+The canonical [Methodology Partner] frameworks live in `~/Documents/Claude/Mainframe/blitzmetrics-canon/` (15 canon files). These are the SOURCE OF TRUTH for all methodology. If a Mainframe SOP contradicts a canon file, the SOP is wrong and must be corrected.
 
 ### Log Everything
 
@@ -141,7 +141,7 @@ You can't improve what you don't measure. Logging tells you:
 | `INDEX.md` | Master index of all SOPs, skills, automation status, and architecture. |
 | `~/.claude/CLAUDE.md` | Operating instructions loaded automatically by Claude Code. Contains the skill/SOP router. |
 | `skills/*.md` | Callable skill files (7 total). Condensed, action-oriented versions of the top SOPs. |
-| `memory-bank/*.md` | Deep context files (16 total). Jack, HRI, clients, deals, team, relationships, strategy. |
+| `memory-bank/*.md` | Deep context files (16 total). [Your Name], [Your Agency], clients, deals, team, relationships, strategy. |
 | `blitzmetrics-canon/*.md` | Canonical frameworks (15 total). Source of truth for all methodology. |
 | `sops/templates/sop-creation-template.md` | Template for creating new SOPs. |
 | `sops/templates/session-log-format.md` | Template for session logs. |

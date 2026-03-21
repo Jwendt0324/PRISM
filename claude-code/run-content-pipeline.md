@@ -22,7 +22,7 @@ Read the source content in full. Do not skim.
 ### Step 3: Check Viability
 - Is this content publishable? (Not confidential, not internal-only, not someone else's copyrighted material)
 - Check `~/Documents/Claude/Mainframe/content-audit/00-executive-summary.md` for any flagged files
-- If marked "No" or "Needs clarification" — skip or ask Jack
+- If marked "No" or "Needs clarification" — skip or ask [Your Name]
 
 ### Step 4: Run the Pipeline
 Follow the pipeline SOP process steps:
@@ -39,9 +39,9 @@ Write manifest.md listing all pieces with status, type, title, file path, and pl
 Write source.md linking to the original content location.
 
 ### Voice Requirements
-- Jack's voice: direct, confident, grounded, not arrogant
+- [Your Name]'s voice: direct, confident, grounded, not arrogant
 - Sign-off: Use the sign-off defined in .personal/CONTEXT.md
-- Reference {{ADVISOR_NAME}} by name when quoting him
+- Reference [Your Mentor/Advisor] by name when quoting him
 - Reference Content Factory methodology where relevant
 - Anti-patterns: No jargon, no hype, no "in today's fast-paced world," no "let's dive in"
 

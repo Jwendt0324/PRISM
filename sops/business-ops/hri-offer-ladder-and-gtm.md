@@ -1,5 +1,5 @@
 ---
-description: HRI offer ladder, pricing, team roles, GTM plan, publishing calendar, and revenue model. The strategic operating blueprint for High Rise Influence.
+description: [Your Agency] offer ladder, pricing, team roles, GTM plan, publishing calendar, and revenue model. The strategic operating blueprint for [Your Agency Name].
 category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
@@ -10,31 +10,31 @@ canon_sources: [01-nine-triangles.md, 04-dollar-a-day.md]
 source: "Operating Documents/High-Rise Influence — Standalone Plan (Academy, DFY, & Connections).pdf"
 ---
 
-# HRI Offer Ladder & GTM Blueprint
+# [Your Agency] Offer Ladder & GTM Blueprint
 
 ## Purpose
 
-This SOP defines what High Rise Influence sells, how it's priced, who does what, and how we go to market. Claude should reference this whenever writing proposals, creating sales materials, planning content, onboarding clients, or making strategic decisions about HRI.
+This SOP defines what [Your Agency Name] sells, how it's priced, who does what, and how we go to market. Claude should reference this whenever writing proposals, creating sales materials, planning content, onboarding clients, or making strategic decisions about [Your Agency].
 
 ## When to Use
 
-- Writing or reviewing any HRI sales material, proposal, or one-pager
+- Writing or reviewing any [Your Agency] sales material, proposal, or one-pager
 - Planning content calendars or publishing schedules
-- Answering questions about HRI pricing, offers, or positioning
+- Answering questions about [Your Agency] pricing, offers, or positioning
 - Creating materials for webinars, events, or ad campaigns
 - Onboarding new team members or apprentices
 - Building financial projections or revenue models
 
 ## Brand Positioning
 
-- HRI IS: A practical alternative to college for young adults + a credibility engine for qualified local-service owners
-- HRI IS NOT: An agency or a marketplace (those live with partner agencies and Local Service Spotlight)
-- HRI runs on Your Content Factory (YCF) rails and feeds talent + proof assets into Local Service Spotlight (LSS)
+- [Your Agency] IS: A practical alternative to college for young adults + a credibility engine for qualified local-service owners
+- [Your Agency] IS NOT: An agency or a marketplace (those live with partner agencies and [Partner Platform])
+- [Your Agency] runs on Your Content Factory (YCF) rails and feeds talent + proof assets into [Partner Platform] ([Partner Platform])
 
 ## The Offer Ladder
 
 ### Tier 1: Free Courses
-- Location: highriseinfluence.net/academy
+- Location: [your-agency.com]/academy
 - Open access, no human support
 - Purpose: top of funnel, build trust, demonstrate value
 
@@ -42,7 +42,7 @@ This SOP defines what High Rise Influence sells, how it's priced, who does what,
 - Cohort-based + live Office Hours
 - Parent + student tracks with graded assignments
 - Outcome bar: Core 10 at >=90% QC, 2+ MAAs, SLA >=90%, mentor rating >=4.5 stars
-- Unlocks LSS task eligibility (guardrails apply)
+- Unlocks [Partner Platform] task eligibility (guardrails apply)
 - Payment options: $2,500 PIF / $1,350x2 / $700x4 (admin fee on extended)
 - Refunds: 7-day cooling off; performance-based grace if no assignments started
 
@@ -59,11 +59,11 @@ This SOP defines what High Rise Influence sells, how it's priced, who does what,
 
 ## Team Roles & Governance
 
-- Jack Wendt — Figurehead/Host: content, interviews, webinars, sales
-- Dennis Yu — Architect/Instructor: curriculum, standards, proofs
-- Dylan Haugen — Platform Engineering: SSO/cohorts/analytics
-- Sam McLeod — Automation/provisioning
-- Muzamil Babar — Operations & PM: monthly P&L, finance/admin, cohort scheduling, light support
+- [Your Name] — Figurehead/Host: content, interviews, webinars, sales
+- [Your Mentor/Advisor] — Architect/Instructor: curriculum, standards, proofs
+- [Your Ops Partner] — Platform Engineering: SSO/cohorts/analytics
+- [Your AgentBuilder Partner] — Automation/provisioning
+- [Your Ops Admin] — Operations & PM: monthly P&L, finance/admin, cohort scheduling, light support
 
 ### Revenue Share
 - YCF receives 20% of tuition monthly for platform infrastructure (SSO, LMS, marketing automation, hosting, dashboards, Basecamp)
@@ -82,7 +82,7 @@ AI-first updates: Descript workflows, transcript-to-shorts/articles, DARIN-assis
 ## GTM Plan
 
 ### Core Challenge
-Jack currently has low public footprint despite substantial created content. Priority: process and publish the existing backlog.
+[Your Name] currently has low public footprint despite substantial created content. Priority: process and publish the existing backlog.
 
 ### Channels
 - Events: DigimarCon regional + World (Las Vegas, Nov 2-5)
@@ -93,8 +93,8 @@ Jack currently has low public footprint despite substantial created content. Pri
 - Paid: $20/day always-on boosts for top clips, geo-targeted by upcoming event cities
 
 ### YouTube Strategy
-- HRI brand channel: flagship explainers, webinar replays, DFY case studies, cohort promos
-- Jack Wendt personal channel: behind-the-scenes, travel vlogs, interviews, opinion pieces
+- [Your Agency] brand channel: flagship explainers, webinar replays, DFY case studies, cohort promos
+- [Your Name] personal channel: behind-the-scenes, travel vlogs, interviews, opinion pieces
 - Cadence: 3-5 shorts/week + 1 long-form/week per channel
 - End cards to Academy, playlists per curriculum module, community posts for AMAs
 
@@ -111,7 +111,7 @@ Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY K
 - Tuition: 62 x $2,500 = $155,000
 - PAL: $300 x (1+2+...+12) = $23,400
 - DFY Knowledge Panel: 12 x $6,000 = $72,000
-- Gross HRI revenue (Year 1): ~$250,400
+- Gross [Your Agency] revenue (Year 1): ~$250,400
 - YCF rev-share: 20% x $155,000 = $31,000
 - Lean marketing costs: ~$2,000/mo (editor $1,200 + boosts $600 + tools $200)
 
@@ -132,30 +132,30 @@ Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY K
 ## Publishing Roadmap
 
 ### Books
-- "Ultimate Guide to Google Knowledge Panels" — co-authors Dennis Yu, Dylan Haugen, Jack Wendt. Pipeline: outline → sample chapter → ARC team → Amazon KDP
-- "Shitbaggers Rule the World" — Jack Wendt solo. Contrarian career/ops companion
+- "Ultimate Guide to Google Knowledge Panels" — co-authors [Your Mentor/Advisor], [Your Ops Partner], [Your Name]. Pipeline: outline → sample chapter → ARC team → Amazon KDP
+- "[Working Book Title]" — [Your Name] solo. Contrarian career/ops companion
 
 ### Podcast
 - High-Rise Influence Podcast: weekly interviews with educators & local-service leaders
-- Pull shorts/articles into HRI channels; syndicate widely
+- Pull shorts/articles into [Your Agency] channels; syndicate widely
 
 ### Personal Brand Sites
 - JackWendt.com: Spotlight-style profile with entity markup, cross-links to podcast, books, Knowledge Panel sources
-- DennisYu.com & DylanHaugen.com: similar treatment
+- [advisor-website.com] & [ops-partner-website.com]: similar treatment
 
 ## Quality Checks
 
 - Does any sales material match the offer ladder exactly? No made-up tiers or pricing
 - Does content map to the Topic Wheel structure (WHY → HOW → WHAT)?
-- Are all URLs using highriseinfluence.net/academy as canonical?
+- Are all URLs using [your-agency.com]/academy as canonical?
 - Does the content calendar match the cadence targets (3-5 shorts/wk, 1 long-form/wk)?
 - Are KPIs being tracked against the targets above?
 
 ## Common Pitfalls
 
-- Mixing HRI and LSS brands in client-facing materials — keep them separate
+- Mixing [Your Agency] and [Partner Platform] brands in client-facing materials — keep them separate
 - Offering custom work inside a Sprint — custom = Phase 2 after delivery
-- Making job guarantees to certification students — HRI is not LSS
+- Making job guarantees to certification students — [Your Agency] is not [Partner Platform]
 - Skipping the qualification gate on DFY KP clients — enforce $100k+/mo, 100+ reviews, willing to film
 - Publishing content without processing through Content Factory stages
 
@@ -163,9 +163,9 @@ Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY K
 
 - **Canon source:** 01-nine-triangles.md, 04-dollar-a-day.md
 - **Triangles served:** ACC (authority content via publishing and podcast), SBP (personal brand sites and Knowledge Panels), MOF (revenue model, P&L, financial projections)
-- **Human checkpoints:** Qualification gate enforcement for DFY KP clients (Step: $100k+/mo, 100+ reviews, willing to film); Jack + Dennis approval on pricing changes; governance standup (weekly Tuesdays)
+- **Human checkpoints:** Qualification gate enforcement for DFY KP clients (Step: $100k+/mo, 100+ reviews, willing to film); [Your Name] + [Your Mentor/Advisor] approval on pricing changes; governance standup (weekly Tuesdays)
 - **Anti-vandalism:** Offer ladder pricing locked to documented tiers only; no custom work inside a Sprint; no job guarantees to certification students; qualification gate enforced before DFY KP onboarding
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

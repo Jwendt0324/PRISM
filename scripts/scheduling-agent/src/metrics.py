@@ -139,7 +139,7 @@ def print_summary(comparison):
     s = comparison["summary"]
     print()
     print("=" * 60)
-    print("  D3S SERVICE — SCHEDULE OPTIMIZATION RESULTS")
+    print("  [Client — Appliance Repair] SERVICE — SCHEDULE OPTIMIZATION RESULTS")
     print("=" * 60)
     print()
     print(f"  Total Jobs:           {s['original_jobs']} → {s['optimized_jobs']}")

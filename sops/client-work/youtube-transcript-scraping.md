@@ -16,7 +16,7 @@ Extract transcripts from YouTube channels in bulk, organized by view count, for 
 
 ## When to Use
 - A new client needs articles written from their YouTube content
-- Jack says "pull transcripts from [channel name]"
+- [Your Name] says "pull transcripts from [channel name]"
 - A new batch of videos needs to be scraped from an existing client's channel
 - Guest appearances on other channels need to be found and scraped
 
@@ -60,13 +60,13 @@ Extract transcripts from YouTube channels in bulk, organized by view count, for 
    Video ID: [id]
    URL: https://youtube.com/watch?v=[id]
    Source: [manual|auto-generated]
-   ------------------------------------------------------------
+   [google-doc-id]
    [transcript text]
    ```
 
 7. **Build resume support.** Save progress to a JSON log file after every video. On restart, skip videos already in the log with status `manual` or `auto-generated`.
 
-8. **Apply word count minimums** when specified. If Jack says "at least 2000 words," check `len(text.split())` before saving and log short transcripts as `too_short`.
+8. **Apply word count minimums** when specified. If [Your Name] says "at least 2000 words," check `len(text.split())` before saving and log short transcripts as `too_short`.
 
 9. **Run in background.** Use `run_in_background` so there is no timeout. Check progress via the log file: `python3 -c "import json; d=json.load(open('log.json')); print(f'Done: {sum(1 for v in d.values() if v[\"status\"] in (\"manual\",\"auto-generated\"))}')"`.
 
@@ -80,19 +80,19 @@ Extract transcripts from YouTube channels in bulk, organized by view count, for 
 
 ## Common Pitfalls
 
-- **youtube-transcript-api gets IP-blocked fast.** Do not use it for bulk scraping. Use yt-dlp's subtitle download instead. This was learned the hard way on the Acoustic Shoppe project (190/200 blocked).
+- **youtube-transcript-api gets IP-blocked fast.** Do not use it for bulk scraping. Use yt-dlp's subtitle download instead. This was learned the hard way on the [Client — Local Retail Business] project (190/200 blocked).
 - **yt-dlp CLI command not found on Mac.** Always use `import yt_dlp` as a Python library, never `subprocess.run(["yt-dlp", ...])`. The CLI binary doesn't install to PATH reliably.
 - **SSL certificate errors behind VPN.** Add `import ssl; ssl._create_default_https_context = ssl._create_unverified_context` at the top of the script if ProtonVPN is active.
 - **"Requested format is not available" error.** Add `"ignore_no_formats_error": True` to ydl_opts. This happens on music/performance videos with no standard formats but the subtitles are still downloadable.
-- **YouTube 429 rate limiting.** If blocked, tell Jack to switch VPN IP. The script's resume support means no work is lost. Use 2-second delay between requests (`DELAY_SEC = 2`).
+- **YouTube 429 rate limiting.** If blocked, tell [Your Name] to switch VPN IP. The script's resume support means no work is lost. Use 2-second delay between requests (`DELAY_SEC = 2`).
 - **`extract_flat: True` returns channel tabs, not videos.** Use `"extract_flat": "in_playlist"` and target `CHANNEL_URL + "/videos"` to get individual video entries.
 - **ffmpeg required for Whisper.** If transcribing audio (Podbean/podcast), install via `brew install ffmpeg` before running Whisper.
 
 ## Human Gates
 | Step | Gate Type | Reason |
 |------|-----------|--------|
-| Initiation — Jack specifies channel and batch parameters | Execute | Human decides which channel, batch size, and rank range to scrape |
-| VPN IP switching when rate-limited | Execute | Jack manually switches ProtonVPN IP — script resumes automatically |
+| Initiation — [Your Name] specifies channel and batch parameters | Execute | Human decides which channel, batch size, and rank range to scrape |
+| VPN IP switching when rate-limited | Execute | [Your Name] manually switches ProtonVPN IP — script resumes automatically |
 | Word count minimum definition | Execute | Human sets per-project threshold (e.g., 2000 words for article-quality transcripts) |
 
 ## Anti-Vandalism Checks
@@ -106,12 +106,12 @@ Extract transcripts from YouTube channels in bulk, organized by view count, for 
 
 - **Canon source:** 02-content-factory-process.md (Stage 2: Process) — transcript scraping is the first step in processing raw video content into written articles
 - **Triangles served:** CCS — this SOP is a pure checklist/software process: Content (YouTube videos as raw input), Checklist (10-step scraping process with quality gates), Software (yt-dlp, Python, VPN tooling)
-- **Human checkpoints:** Jack initiates scraping by specifying channel and batch parameters; Jack switches VPN IP when rate-limited; word count minimums are human-defined per project
+- **Human checkpoints:** [Your Name] initiates scraping by specifying channel and batch parameters; [Your Name] switches VPN IP when rate-limited; word count minimums are human-defined per project
 - **Anti-vandalism:** Resume support via JSON log prevents data loss on interruption; 6-line header on every transcript ensures traceability; separate folders per batch prevent mixing; log file tracks every video status for audit
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 
-- **2026-03-18:** youtube-transcript-api is unreliable for bulk. Switched entirely to yt-dlp subtitle download with Chrome cookies. Zero blocks on 400 Acoustic Shoppe videos.
-- **2026-03-18:** VPN rotation is the fastest fix for 429s. Jack can switch IPs in ProtonVPN and the resume-supported script picks up instantly.
-- **2026-03-18:** Batch 3 (Acoustic Shoppe ranks 401+) added a 2000-word minimum filter. This is a good default for article-quality transcripts. Performance/jam videos produce transcripts under 500 words that can't become real articles.
+- **2026-03-18:** youtube-transcript-api is unreliable for bulk. Switched entirely to yt-dlp subtitle download with Chrome cookies. Zero blocks on 400 [Client — Local Retail Business] videos.
+- **2026-03-18:** VPN rotation is the fastest fix for 429s. [Your Name] can switch IPs in ProtonVPN and the resume-supported script picks up instantly.
+- **2026-03-18:** Batch 3 ([Client — Local Retail Business] ranks 401+) added a 2000-word minimum filter. This is a good default for article-quality transcripts. Performance/jam videos produce transcripts under 500 words that can't become real articles.

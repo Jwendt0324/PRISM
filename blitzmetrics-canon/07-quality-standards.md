@@ -1,4 +1,4 @@
-# Quality Standards — BlitzMetrics Canon
+# Quality Standards — [Methodology Partner] Canon
 
 **Source:** All Master Guides, Article Guidelines, Video Editing Guide, Operations Guide
 **Version:** 1.0 | **Extracted:** 2026-03-19
@@ -59,7 +59,7 @@ From the Master Video Editing Process Guide:
 
 ## Site Build Quality Standards
 
-- WordPress with BlitzMetrics builder/theme
+- WordPress with [Methodology Partner] builder/theme
 - Schema.org markup (validated via Google Rich Results Test)
 - Mobile responsive
 - Fast loading (Core Web Vitals passing)
@@ -79,7 +79,7 @@ From the Master Video Editing Process Guide:
 - All project communication via Basecamp (not email)
 - Basecamp projects have 4 threads: Updates, Access, Meetings, Internal
 - Internal thread is team-only (never visible to client)
-- Dennis and team leads included in every thread
+- [Your Mentor/Advisor] and team leads included in every thread
 - Never go dark — if metrics are incomplete, post anyway with explanation
 - Response time: within 24 hours for client messages
 - Monthly client check-in call (15 minutes minimum)
@@ -127,9 +127,9 @@ Each checklist item must be:
 
 ## Access Audit Standards
 
-- Use blitzmetrics.com/acl process
+- Use [methodology-partner.com]/acl process
 - All platforms documented
-- Shared via blitzmetrics.com/share
+- Shared via [methodology-partner.com]/share
 - Access granted to correct team members only
 - Reviewed during onboarding
 - Updated when team members change

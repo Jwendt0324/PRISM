@@ -108,26 +108,26 @@ Role-based. Paid on collected cash.
 ### Sales Commission (Closer): 15% — $900
 - Paid to the person who sourced AND closed the deal
 - Requires CRM evidence: lead source, call notes, proposal sent, signature
-- Dennis is default closer unless another closer is recorded
+- [Your Mentor/Advisor] is default closer unless another closer is recorded
 
 ### Delivery Lead (PM): 10% — $600
 - Paid on on-time delivery (<=30 days)
 - If late due to documented client delay, still payable
-- Sam McLeod is default; assigned PM earns this if Sam is not on the project
+- [Your AgentBuilder Partner] is default; assigned PM earns this if [Your AgentBuilder Partner] is not on the project
 
 ### Delivery Labor Pool: 35% — $2,100
 - Budget for writers, editors, designers, VAs
 - Paid by task per SOP rate card (per article, per clip, per citation block)
-- Sam allocates; Dennis approves exceptions
+- [Your AgentBuilder Partner] allocates; [Your Mentor/Advisor] approves exceptions
 
 ### QA/On-Time Bonus Pool: 5% — $300
 - Released ONLY if project ships on time with zero critical defects
 - Split among team members who passed QA on their tasks
 
 ### Company Retained Margin: 35% — $2,100
-- Covers ops, software, R&D (LSS), runway
+- Covers ops, software, R&D ([Partner Platform]), runway
 
-## BD KPI Gate (Jack or anyone in BD role)
+## BD KPI Gate ([Your Name] or anyone in BD role)
 
 - Minimum activity: 10 qualified intros/week OR 4 closes/month AND >=70% show rate
 - Miss two consecutive months → BD role paused (no commissions) until re-approved
@@ -166,7 +166,7 @@ Role-based. Paid on collected cash.
 
 ## Common Pitfalls
 
-- Accepting clients who don't meet qualification gate → enforce $100k+/mo, 100+ reviews, willing to film. Misfits go to LSS $300 tier
+- Accepting clients who don't meet qualification gate → enforce $100k+/mo, 100+ reviews, willing to film. Misfits go to [Partner Platform] $300 tier
 - Scope creep inside the Sprint → all custom requests go to Phase 2 list. No exceptions
 - Client delays killing the 30-day timeline → document delays immediately, pause clock with written notice
 - Skipping the case study → "If it's not published, it's not done." Build case study creation into Day 27-30
@@ -181,7 +181,7 @@ Role-based. Paid on collected cash.
 | Client approval of copy (Day 21-26) | Approve | Client signs off on all written content before publishing |
 | Technical QA passes (Day 21-26) | Review | Schema, citations, site validated by human |
 | Client sign-off on all deliverables (Day 27-30) | Approve | Final handoff requires explicit client approval |
-| Dennis approves compensation exceptions | Approve | Any deviation from standard comp requires Dennis's sign-off |
+| [Your Mentor/Advisor] approves compensation exceptions | Approve | Any deviation from standard comp requires [Your Mentor/Advisor]'s sign-off |
 | Case study publication | Execute | Every Sprint must produce a published case study — human writes and publishes |
 
 ## Anti-Vandalism Checks
@@ -196,9 +196,9 @@ Role-based. Paid on collected cash.
 
 - **Canon source:** 02-content-factory-process.md (Sprint compresses the full Content Factory into 30 days: interview = Produce, articles/videos = Process, distribution plan = Promote); 06-topic-wheel.md (entity-first site architecture maps to Topic Wheel structure)
 - **Triangles served:** CCS — the Sprint IS a fixed checklist with defined software stack (WordPress, schema.org, Dollar-a-Day); ACC — deliverables span Awareness (citations, entity foundations), Consideration (authority articles, short-form videos), Conversion (personal brand site with CTAs, distribution plan); GCT — qualification gate defines Goals ($100k+/mo revenue), Content (willing to film), Targeting (LSA category business)
-- **Human checkpoints:** Qualification gate (human reviews revenue, reviews, willingness to film); client interview (60 min recorded); client approval of copy; client sign-off on all deliverables; Dennis approves compensation exceptions; QA passes before handoff
+- **Human checkpoints:** Qualification gate (human reviews revenue, reviews, willingness to film); client interview (60 min recorded); client approval of copy; client sign-off on all deliverables; [Your Mentor/Advisor] approves compensation exceptions; QA passes before handoff
 - **Anti-vandalism:** Fixed scope with zero custom detours (extras go to Phase 2 list); qualification gate prevents misfits; 50/50 payment terms protect cash flow; QA/On-Time Bonus Pool only released with zero critical defects; CRM evidence required for sales commission; every Sprint must produce a published case study
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

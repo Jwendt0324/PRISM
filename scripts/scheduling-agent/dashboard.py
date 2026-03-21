@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-dashboard.py — Web dashboard for D3S Service scheduling agent.
+dashboard.py — Web dashboard for [Client — Appliance Repair] scheduling agent.
 Python standard library only (http.server). Serves on localhost:8051.
 Leaflet map with real tech data, routes, before/after comparison.
 """
@@ -69,7 +69,7 @@ def build_html(data):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D3S Service — Scheduling Agent</title>
+<title>[Client — Appliance Repair] — Scheduling Agent</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
@@ -187,7 +187,7 @@ tbody tr.late td {{ color: #E24B4A; }}
 <!-- HEADER -->
 <div class="header">
   <div class="header-left">
-    <h1>D3S Service — Scheduling Agent</h1>
+    <h1>[Client — Appliance Repair] — Scheduling Agent</h1>
     <div class="subtitle">31 Technicians &middot; 58 Zones &middot; East Texas + Oklahoma</div>
   </div>
   <div class="header-right">

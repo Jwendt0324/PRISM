@@ -1,5 +1,5 @@
 ---
-description: Structured follow-up process for HRI prospects from first contact through qualification and discovery call
+description: Structured follow-up process for [Your Agency] prospects from first contact through qualification and discovery call
 category: client-work
 created: 2026-03-18
 last_updated: 2026-03-20
@@ -13,11 +13,11 @@ canon_sources: [04-dollar-a-day.md]
 # Prospect Follow-Up SOP
 
 ## Purpose
-Ensure no qualified prospect goes cold due to missed follow-ups, and every prospect is either converted, handed off to Dennis, or cleanly closed within two weeks.
+Ensure no qualified prospect goes cold due to missed follow-ups, and every prospect is either converted, handed off to [Your Mentor/Advisor], or cleanly closed within two weeks.
 
 ## When to Use
 - A new lead comes in from any channel (website, referral, DM, event, cold outreach response)
-- A prospect expresses interest in any HRI service (Knowledge Panel Sprint, AI Apprenticeship, Content Factory)
+- A prospect expresses interest in any [Your Agency] service (Knowledge Panel Sprint, AI Apprenticeship, Content Factory)
 - Re-engaging a prospect who previously went cold
 
 ## Process
@@ -31,7 +31,7 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
    - Source (referral, website, event, cold outreach, etc.)
    - Date of first contact
 
-2. **Send an initial response within 24 hours.** Acknowledge their interest, confirm next steps, and ask any qualifying questions if not already answered. Speed matters — the Russell case: prospect went cold because no one followed up.
+2. **Send an initial response within 24 hours.** Acknowledge their interest, confirm next steps, and ask any qualifying questions if not already answered. Speed matters — the [Prospect Name] case: prospect went cold because no one followed up.
 
 ### Qualification
 
@@ -59,7 +59,7 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
 ### Follow-Up Cadence
 
 5. **Schedule a discovery call via Calendly** within the first interaction if possible.
-   - Use the **HRI Knowledge Panel Package** Calendly link for KP prospects.
+   - Use the **[Your Agency] Knowledge Panel Package** Calendly link for KP prospects.
    - Use the **AI Apprenticeship Audit** Calendly link for apprenticeship prospects.
 
 6. **If no response after initial contact, follow up at these intervals:**
@@ -67,24 +67,24 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
    - **1 week:** Add value — share a relevant case study, article, or resource. Restate the next step.
    - **2 weeks (final):** Direct message. "Wanted to follow up one last time. If timing isn't right, no problem — happy to reconnect when it makes sense." Close the loop cleanly.
 
-7. **If qualified, hand off to Dennis for the discovery call.** Provide Dennis with:
+7. **If qualified, hand off to [Your Mentor/Advisor] for the discovery call.** Provide [Your Mentor/Advisor] with:
    - Prospect name, business, and contact info
    - Service interest and qualification status
    - Any objections or concerns raised
    - Recommended approach
-   - **Important:** Brief Dennis on any pricing discussions to avoid conflicting offers. The Jeremy Maher lesson: unqualified prospects on discovery calls waste Dennis's time and create confusion.
+   - **Important:** Brief [Your Mentor/Advisor] on any pricing discussions to avoid conflicting offers. The [Churned Client] lesson: unqualified prospects on discovery calls waste [Your Mentor/Advisor]'s time and create confusion.
 
 ## Quality Checks
 - [ ] All prospects logged in tracking system within 24 hours of first contact
 - [ ] No prospect more than 48 hours without a response at any stage
 - [ ] Discovery calls scheduled within 1 week for qualified prospects
-- [ ] Qualification criteria checked before scheduling Dennis's time
+- [ ] Qualification criteria checked before scheduling [Your Mentor/Advisor]'s time
 - [ ] Price objection handling follows the alternatives path (DIY or Quick Audit), not discounting
 
 ## Common Pitfalls
-- **Prospects going cold due to no follow-up.** The Russell case: a qualified prospect disappeared because nobody followed up after the initial conversation. The follow-up cadence (24h, 48h, 1 week, 2 weeks) exists to prevent this. Set reminders.
-- **Dennis offering conflicting pricing or alternatives.** If you quote one thing and Dennis offers another on the call, it undermines trust. Always brief Dennis on what has been discussed before the handoff.
-- **Not qualifying before the discovery call.** The Jeremy Maher lesson: scheduling a discovery call with an unqualified prospect wastes Dennis's time and creates awkward conversations. Qualify first, call second.
+- **Prospects going cold due to no follow-up.** The [Prospect Name] case: a qualified prospect disappeared because nobody followed up after the initial conversation. The follow-up cadence (24h, 48h, 1 week, 2 weeks) exists to prevent this. Set reminders.
+- **[Your Mentor/Advisor] offering conflicting pricing or alternatives.** If you quote one thing and [Your Mentor/Advisor] offers another on the call, it undermines trust. Always brief [Your Mentor/Advisor] on what has been discussed before the handoff.
+- **Not qualifying before the discovery call.** The [Churned Client] lesson: scheduling a discovery call with an unqualified prospect wastes [Your Mentor/Advisor]'s time and creates awkward conversations. Qualify first, call second.
 - **Discounting instead of offering alternatives.** Never reduce the KP Sprint price. Offer the free DIY path (Marketing Mechanic ep. 5) or the Quick Audit ($297) instead. Discounting sets a precedent that kills margins.
 
 ## Human Gates
@@ -94,16 +94,16 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
 | Qualification assessment (Step 3) | Review | Human evaluates prospect against service-specific criteria |
 | Price objection handling (Step 4) | Execute | Offering alternatives (not discounts) requires human judgment |
 | Discovery call scheduling (Step 5) | Execute | Calendly link selection depends on service interest |
-| Dennis briefing before handoff (Step 7) | Execute | Must brief Dennis on prior pricing discussions to avoid conflicts |
+| [Your Mentor/Advisor] briefing before handoff (Step 7) | Execute | Must brief [Your Mentor/Advisor] on prior pricing discussions to avoid conflicts |
 | Follow-up cadence execution (Step 6) | Execute | Each touchpoint must be human-written, personalized, and value-adding |
 
 ## Canon Compliance
 
 - **Canon source:** 04-dollar-a-day.md — the follow-up cadence mirrors Dollar-a-Day's testing discipline: small investments of attention, qualify before scaling commitment, clear kill/keep rules
 - **Triangles served:** ACC (qualification funnel) — prospect moves through Awareness (initial contact), Consideration (qualification criteria, value-add follow-ups), Conversion (discovery call, payment); GCT — qualification checks Goals (business revenue, review count), Content (willingness to film), Targeting (LSA category fit)
-- **Human checkpoints:** Initial response within 24 hours (human-written); qualification assessment against criteria; Dennis briefing before handoff; discovery call is human-to-human; price objection handling requires judgment (alternatives, not discounts)
-- **Anti-vandalism:** Qualification gate prevents unqualified prospects from reaching Dennis; follow-up cadence with hard deadlines (24h, 48h, 1 week, 2 weeks) prevents prospects going cold; no discounting policy protects margins; all prospects logged in tracking system for audit trail
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Human checkpoints:** Initial response within 24 hours (human-written); qualification assessment against criteria; [Your Mentor/Advisor] briefing before handoff; discovery call is human-to-human; price objection handling requires judgment (alternatives, not discounts)
+- **Anti-vandalism:** Qualification gate prevents unqualified prospects from reaching [Your Mentor/Advisor]; follow-up cadence with hard deadlines (24h, 48h, 1 week, 2 weeks) prevents prospects going cold; no discounting policy protects margins; all prospects logged in tracking system for audit trail
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on HRI prospect management patterns, Russell follow-up failure, Jeremy Maher qualification lesson, and Dennis pricing alignment issues.
+- *2026-03-18* — SOP created based on [Your Agency] prospect management patterns, [Prospect Name] follow-up failure, [Churned Client] qualification lesson, and [Your Mentor/Advisor] pricing alignment issues.

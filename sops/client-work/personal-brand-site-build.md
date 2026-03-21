@@ -1,5 +1,5 @@
 ---
-description: Build personal brand websites using WordPress-based BlitzMetrics site builder with Topic Wheel integration for SEO and authority positioning
+description: Build personal brand websites using WordPress-based [Methodology Partner] site builder with Topic Wheel integration for SEO and authority positioning
 category: client-work
 created: 2026-03-18
 last_updated: 2026-03-20
@@ -12,7 +12,7 @@ canon_sources: [06-topic-wheel.md, 02-content-factory-process.md]
 # Personal Brand Site Build
 
 ## Purpose
-The personal brand website is the hub of a founder's online authority. Unlike corporate websites, personal brand sites showcase expertise, thought leadership, and accessibility. This SOP covers building professional, SEO-optimized personal brand websites using BlitzMetrics' WordPress-based builder, integrated with Topic Wheel framework for content organization and E-E-A-T positioning.
+The personal brand website is the hub of a founder's online authority. Unlike corporate websites, personal brand sites showcase expertise, thought leadership, and accessibility. This SOP covers building professional, SEO-optimized personal brand websites using [Methodology Partner]' WordPress-based builder, integrated with Topic Wheel framework for content organization and E-E-A-T positioning.
 
 ## When to Use
 - At project start when client has no professional website
@@ -116,17 +116,17 @@ Home
 - Case studies: `/case-studies` (grouped)
 - Newsletter: `/subscribe` (clear CTA)
 
-### Phase 1: Technical Setup (BlitzMetrics WordPress Builder)
+### Phase 1: Technical Setup ([Methodology Partner] WordPress Builder)
 
 **Step 1: Domain & Hosting**
 1. Domain: Use client's name (firstname.com, firstname-lastname.com) or personal brand
    - Avoid: Using company domain (too temporary); overly clever domains (hard to remember/spell)
-2. Hosting: Use BlitzMetrics managed WordPress hosting or high-quality provider (WP Engine, Kinsta)
+2. Hosting: Use [Methodology Partner] managed WordPress hosting or high-quality provider (WP Engine, Kinsta)
 3. SSL certificate: Enable HTTPS (non-negotiable for 2024+)
 4. DNS: Point domain to hosting provider
 
 **Step 2: WordPress Installation & Theme**
-1. Use BlitzMetrics' proprietary WordPress theme (optimized for personal brands)
+1. Use [Methodology Partner]' proprietary WordPress theme (optimized for personal brands)
    - Alternative: Neve Pro, Astra Pro (clean, conversion-focused)
    - Avoid: Heavy templates with excessive animations (slow, unprofessional)
 2. Install essential plugins:
@@ -616,7 +616,7 @@ Google prioritizes E-E-A-T (Experience, Expertise, Authoritativeness, Trustworth
 - **Triangles served:** CCS — the entire build process IS a checklist (launch checklist, SEO checklist, post-launch monitoring); GCT — Phase 0 starts with defining goals (positioning), content (Topic Wheel audit), and targeting (audience segments)
 - **Human checkpoints:** Client interview for Topic Wheel definition (Step 1); client approval of site architecture before build; client review of all content before launch; post-launch client sign-off
 - **Anti-vandalism:** Before-launch checklist with 25+ verification points; post-launch daily/weekly/monthly monitoring cadence; SEO validation via Google Search Console; structured data validation via Google Rich Results Test
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

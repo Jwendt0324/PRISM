@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-run.py — Entry point for D3S Service Scheduling Agent.
+run.py — Entry point for [Client — Appliance Repair] Scheduling Agent.
 Parses data, runs optimizer, launches dashboard.
 
 Usage:

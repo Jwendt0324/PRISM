@@ -355,7 +355,7 @@ At initial kickoff, establish a 6-month roadmap with quarterly milestones.
 - **Triangles served:** MAA (core) — the entire report card is a Metrics-Analysis-Action cycle applied to founder authority; ACC — grading axes map to Awareness (social, speaking), Consideration (publishing, podcasting), and Conversion (web presence driving leads)
 - **Human checkpoints:** Client review call (monthly 15-minute check-in); analyst grades validated against rubric (not subjective); client feedback captured and action items adjusted
 - **Anti-vandalism:** Grading rubric with objective thresholds prevents grade inflation; data must come from native platform analytics (not estimates); 6-month blueprint reviewed quarterly to prevent drift
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

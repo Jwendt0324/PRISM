@@ -76,7 +76,7 @@ Things that go wrong and how to avoid them:
 - Be direct: "People forget X. Don't. Always check Y first."
 
 ### 6. Canon Compliance (Summary)
-Map this SOP to the BlitzMetrics canon:
+Map this SOP to the [Methodology Partner] canon:
 - **Canon source:** Which blitzmetrics-canon files this SOP aligns with
 - **Triangles served:** Which of the 9 Triangles (GCT, MAA, ACC, CCS, LDT, SBP, DDD, CID, MOF) with brief explanation
 - **Human checkpoints:** Where humans are required in this process
@@ -99,12 +99,12 @@ List the checks this SOP performs to prevent unintentional well-meaning vandalis
 - **Verify internal link structure:** Ensure no orphan pages are created and all new content links to and from related existing content.
 - **Confirm no keyword cannibalization:** Check that new content does not target the same keywords as existing ranking pages.
 - **Preserve what's working:** Do not remove processes or content that are currently producing results.
-- **Reference canonical source:** Ensure all process descriptions match the BlitzMetrics canon exactly — no approximations.
+- **Reference canonical source:** Ensure all process descriptions match the [Methodology Partner] canon exactly — no approximations.
 
 Add any SOP-specific anti-vandalism checks beyond these minimums.
 
 ### 9. Canon Compliance
-Map this SOP to the BlitzMetrics canon:
+Map this SOP to the [Methodology Partner] canon:
 
 - **Content Factory stage(s):** Which of the 6 stages does this SOP cover? (Plumbing, Produce, Process, Post, Promote, Perform)
 - **9 Triangles served:** Which triangles does this SOP serve? (GCT, MAA, ACC, CCS, LDT, SBP, DDD, CID, MOF) — explain why for each.
@@ -119,7 +119,7 @@ Living section for discoveries:
 
 ## Writing Style Requirements
 
-- **Voice:** Direct, confident, real. Match Jack's tone: grounded, no fluff, actionable.
+- **Voice:** Direct, confident, real. Match [Your Name]'s tone: grounded, no fluff, actionable.
 - **Tense:** Imperative (Use X, Check Y, Do Z)
 - **Length:** Process section ideally 5-12 steps. Longer = break into sub-SOPs.
 - **Specificity:** Always include file paths, exact commands, tool names. "Open the project file at ~/Documents/Projects/Acme/design-system/" not "Open the file."

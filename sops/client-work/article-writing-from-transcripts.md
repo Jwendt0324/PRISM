@@ -1,5 +1,5 @@
 ---
-description: Write batches of SEO-optimized articles from YouTube/podcast transcripts using the HRI Content Engine v5 pipeline, with full BlitzMetrics quality gates, human review checkpoints, and E-E-A-T compliance
+description: Write batches of SEO-optimized articles from YouTube/podcast transcripts using the [Your Agency] Content Engine v5 pipeline, with full [Methodology Partner] quality gates, human review checkpoints, and E-E-A-T compliance
 category: client-work
 created: 2026-03-18
 last_updated: 2026-03-20
@@ -16,17 +16,17 @@ canon_sources: [03-article-guidelines.md, 07-quality-standards.md, 08-human-requ
 
 ## Purpose
 
-Transform raw video/podcast transcripts into publication-ready .docx articles that pass all HRI Content Engine v5 quality gates AND the BlitzMetrics 18-step QA gate, formatted for Google Docs import and WordPress publishing. Every article must be reviewed by a human before publishing — no fully automated pipeline.
+Transform raw video/podcast transcripts into publication-ready .docx articles that pass all [Your Agency] Content Engine v5 quality gates AND the [Methodology Partner] 18-step QA gate, formatted for Google Docs import and WordPress publishing. Every article must be reviewed by a human before publishing — no fully automated pipeline.
 
 ## When to Use
 
-- Transcripts have been pulled and Jack says "write articles" or "batch [N]"
+- Transcripts have been pulled and [Your Name] says "write articles" or "batch [N]"
 - A new client's transcripts are ready for article production
 - Existing articles need to be rewritten to comply with v5 spec
 
 ## Canon Compliance
 
-This SOP implements requirements from the following BlitzMetrics Canon documents:
+This SOP implements requirements from the following [Methodology Partner] Canon documents:
 
 | Canon Document | What It Governs |
 |----------------|-----------------|
@@ -47,14 +47,14 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
 
 | Step | Why Human Required | Who |
 |------|--------------------|-----|
-| Voice/tone approval | "Would the client actually say this?" | Jack or trained reviewer |
-| E-E-A-T compliance review | Ensuring real stories, not fabricated ones | Jack or trained reviewer |
-| AI language detection | Subtle AI patterns require trained eye | Jack or trained reviewer |
-| Featured image selection | Must be real, relevant photo (not stock) | Jack, VA, or client |
-| WordPress publishing | Credentials, featured image upload, RankMath | Jack or VA |
-| Category/tag selection | Must align with client's Topic Wheel | Jack |
-| Content tree verification | Ensuring no keyword cannibalization | Jack or trained reviewer |
-| Final publish approval | Strategic judgment on timing and positioning | Jack |
+| Voice/tone approval | "Would the client actually say this?" | [Your Name] or trained reviewer |
+| E-E-A-T compliance review | Ensuring real stories, not fabricated ones | [Your Name] or trained reviewer |
+| AI language detection | Subtle AI patterns require trained eye | [Your Name] or trained reviewer |
+| Featured image selection | Must be real, relevant photo (not stock) | [Your Name], VA, or client |
+| WordPress publishing | Credentials, featured image upload, RankMath | [Your Name] or VA |
+| Category/tag selection | Must align with client's Topic Wheel | [Your Name] |
+| Content tree verification | Ensuring no keyword cannibalization | [Your Name] or trained reviewer |
+| Final publish approval | Strategic judgment on timing and positioning | [Your Name] |
 
 ## Process
 
@@ -139,9 +139,9 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
    - Salesy language: replace with conversational phrasing
    - Missing E-E-A-T signals: go back to transcript and extract real stories/names
 
-### Phase 4: BlitzMetrics 18-Step QA Gate (Step 9)
+### Phase 4: [Methodology Partner] 18-Step QA Gate (Step 9)
 
-9. **Run the full BlitzMetrics 18-step QA gate.** Every article must pass ALL steps in `article-qa-blitzmetrics.md` before being marked as ready for human review. This gate covers:
+9. **Run the full [Methodology Partner] 18-step QA gate.** Every article must pass ALL steps in `article-qa-blitzmetrics.md` before being marked as ready for human review. This gate covers:
    - Pre-writing phase (steps 1-4): requirements, transcription, video review, research
    - Writing phase (steps 5-10): article quality, titles, hooks, multimedia, links, video embed
    - QA phase (steps 11-13): proofread, WordPress prep, categorization
@@ -169,7 +169,7 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
     - [ ] Topic Wheel category assignment is correct
     - [ ] No cannibalization with existing published content
     - [ ] Figurehead context is accurate (relationships between people mentioned)
-    - [ ] Overall quality — would Jack be comfortable with his name on this?
+    - [ ] Overall quality — would [Your Name] be comfortable with his name on this?
 
     **Reviewer marks each article:** APPROVED / NEEDS REVISION / REJECT
     - APPROVED: Proceeds to WordPress publishing
@@ -187,7 +187,7 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
 
 ### Phase 7: Meta-Article Generation (Step 13)
 
-13. **Generate meta-article for each batch.** Dennis's concept: document HOW each article was created so the process itself becomes teachable content.
+13. **Generate meta-article for each batch.** [Your Mentor/Advisor]'s concept: document HOW each article was created so the process itself becomes teachable content.
 
     Save as `META-[client]-batch-[N].md` in the same folder. Include:
     - How many transcripts were processed
@@ -262,7 +262,7 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
 - [ ] Category/tag alignment with Topic Wheel confirmed
 - [ ] Featured images selected (real photos, not stock)
 
-### BlitzMetrics Canon
+### [Methodology Partner] Canon
 - [ ] Full 18-step QA gate passed (per `article-qa-blitzmetrics.md`)
 - [ ] Anti-vandalism rules satisfied (per `10-anti-vandalism-checklist.md`)
 - [ ] Human requirements honored (per `08-human-requirements.md`)
@@ -270,19 +270,19 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
 
 ## Common Pitfalls
 
-- **Automated contraction scripts create broken words.** "you have" → "you've" can produce "you've a pile" (British-sounding) or "doesn'thing" (broken). Always audit contraction replacements and fix artifacts. The Ryan D. Lee project had 59 broken contractions from the automated fix.
-- **"Not because X, but because Y" slips through constantly.** This is the most common banned AI pattern. It appeared in 10 of 54 Ryan D. Lee articles despite explicit instructions. Add it to every QA audit.
-- **Duplicate opening sentences across articles.** Ryan D. Lee articles 5 and 50 both opened with "My father built our house by hand." Always check for duplicates across the full batch.
+- **Automated contraction scripts create broken words.** "you have" → "you've" can produce "you've a pile" (British-sounding) or "doesn'thing" (broken). Always audit contraction replacements and fix artifacts. The [KP Sprint Client] project had 59 broken contractions from the automated fix.
+- **"Not because X, but because Y" slips through constantly.** This is the most common banned AI pattern. It appeared in 10 of 54 [KP Sprint Client] articles despite explicit instructions. Add it to every QA audit.
+- **Duplicate opening sentences across articles.** [KP Sprint Client] articles 5 and 50 both opened with "My father built our house by hand." Always check for duplicates across the full batch.
 - **Agents use inconsistent file naming.** Different parallel agents may name files differently (e.g., `article-203-v5.docx` vs `203.docx` vs `article-203-slug.docx`). Run a normalization pass after all agents complete.
 - **Word count target vs. transcript length.** Short transcripts (under 500 words) cannot become 1,500-word articles without fabricating content. Classify these as RED tier and give them brief framing pieces, or archive them entirely. Fabricating content to hit word count violates E-E-A-T.
-- **Podbean episodes often duplicate YouTube content.** Cross-reference before writing. On the Ryan D. Lee project, 44 of 45 Podbean episodes were duplicates.
+- **Podbean episodes often duplicate YouTube content.** Cross-reference before writing. On the [KP Sprint Client] project, 44 of 45 Podbean episodes were duplicates.
 - **Skipping human review "because automated QA passed."** Automated QA catches mechanical issues (banned words, word count, links). It CANNOT catch voice authenticity, fabricated stories, or strategic misalignment. The human gate is mandatory per canon.
 - **Creating new articles on topics that already have published content.** Always run content tree verification first. Enhancing an existing article is better than cannibalizing it with a new one.
 - **E-E-A-T fabrication under pressure.** When a transcript is thin, agents may invent stories or credentials to fill space. This is worse than a short article. Archive the transcript or write a brief framing piece instead.
 
 ## Learnings Log
 
-- **2026-03-18 (Ryan D. Lee):** 54 articles written (50 YouTube + 4 guest appearances). 10 parallel agents produced all 50 YouTube articles simultaneously. QA audit caught 27 violations in first pass, reduced to 0 after two repair rounds.
-- **2026-03-18 (Acoustic Shoppe):** 378 articles from 400 transcripts. 98 archived for being under 750 words (all from performance/jam videos with minimal dialogue). Voice profile captured the brother dynamic (John sets up tech detail, Jeremy delivers opinion).
+- **2026-03-18 ([KP Sprint Client]):** 54 articles written (50 YouTube + 4 guest appearances). 10 parallel agents produced all 50 YouTube articles simultaneously. QA audit caught 27 violations in first pass, reduced to 0 after two repair rounds.
+- **2026-03-18 ([Client — Local Retail Business]):** 378 articles from 400 transcripts. 98 archived for being under 750 words (all from performance/jam videos with minimal dialogue). Voice profile captured the brother dynamic (John sets up tech detail, Jeremy delivers opinion).
 - **2026-03-18:** The biggest QA issue is always banned AI patterns, not banned words. Words are easy to grep for. Patterns require sentence-level analysis. Build the QA script with regex patterns for every banned construction.
-- **2026-03-20 (v2.0 upgrade):** Added mandatory human review gate, BlitzMetrics 18-step QA integration, E-E-A-T compliance requirements, content tree verification, meta-article generation, 9 Triangles mapping, Topic Wheel positioning, and MAA tracking feedback loop per SOP audit findings. Previous versions had a fully automated pipeline with no human checkpoint — this was a canon violation.
+- **2026-03-20 (v2.0 upgrade):** Added mandatory human review gate, [Methodology Partner] 18-step QA integration, E-E-A-T compliance requirements, content tree verification, meta-article generation, 9 Triangles mapping, Topic Wheel positioning, and MAA tracking feedback loop per SOP audit findings. Previous versions had a fully automated pipeline with no human checkpoint — this was a canon violation.

@@ -1,21 +1,21 @@
 ---
 title: "Team Operating System — Master Overview"
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
 version: 1.0
 status: active
 ---
 
-# {{COMPANY_NAME}} — Team Operating System
+# [Your Agency Name] — Team Operating System
 
-Welcome to {{COMPANY}}. This document tells you how we operate. Read it top to bottom before your first day of real work. Then reference the linked docs for the specifics.
+Welcome to [Your Agency]. This document tells you how we operate. Read it top to bottom before your first day of real work. Then reference the linked docs for the specifics.
 
 ---
 
 ## Who We Are
 
-{{COMPANY_NAME}} helps founder-led businesses build influence. Not vanity metrics. Not "brand awareness." Influence — the kind that shows up in Google Knowledge Panels, earns media placements, and compounds over years.
+[Your Agency Name] helps founder-led businesses build influence. Not vanity metrics. Not "brand awareness." Influence — the kind that shows up in Google Knowledge Panels, earns media placements, and compounds over years.
 
 We do this through four interlocking systems:
 
@@ -30,7 +30,7 @@ We are not a creative agency. We are an influence engine. Everything we build is
 
 ## Where We Are Right Now
 
-- **Revenue since July 2025:** ~$50k and growing
+- **Revenue since July 2025:** [~$Total Revenue] and growing
 - **Active clients:** Multiple, across different verticals
 - **Stage:** Early growth. Systems are being locked in. The playbook works — now we're scaling the team and delivery capacity to match demand
 - **Trajectory:** Every Sprint we deliver creates a case study. Every case study feeds the next sale. The flywheel is turning.
@@ -58,7 +58,7 @@ See: [04-kp-sprint-playbook.md](./04-kp-sprint-playbook.md) for the full deliver
 
 ### 2. AI Apprentice Program — $2,500
 
-A cohort-based certification program co-founded with {{ADVISOR_NAME}}. Students learn the Content Factory methodology, Dollar-a-Day, and AI-powered content workflows.
+A cohort-based certification program co-founded with [Your Mentor/Advisor]. Students learn the Content Factory methodology, Dollar-a-Day, and AI-powered content workflows.
 
 **What students get:**
 - Hands-on training in our exact delivery methods
@@ -98,22 +98,22 @@ This is the engine. Every hire, every process, every system we build should make
 
 | Name | Role | Ownership | Responsibilities |
 |------|------|-----------|-----------------|
-| **{{OWNER_NAME}}** | CEO | 85% | Strategy, sales, client relationships, final QA, company direction |
-| **{{ADVISOR_NAME}}** | Architect / Advisor | 10% equity | Methodology, thought leadership, sales support, AI Apprentice co-lead |
-| **{{OPS_PARTNER_NAME}}** | Operations | 5% equity | Operational systems, process improvement, team coordination |
-| **{{OPS_ADMIN_NAME}}** | Ops / Finance / Admin | — (Pakistan-based) | Basecamp project setup, RACI assignment, invoicing, admin, intake coordination |
-| **{{TEAM_MEMBER_NAME}}** | Content Specialist | — (reports to {{OWNER_NAME}}) | Content production, article writing, Content Factory execution |
+| **[Your Name]** | CEO | [Majority %] | Strategy, sales, client relationships, final QA, company direction |
+| **[Your Mentor/Advisor]** | Architect / Advisor | [Advisor Equity %] | Methodology, thought leadership, sales support, AI Apprentice co-lead |
+| **[Your Ops Partner]** | Operations | [Ops Partner Equity %] | Operational systems, process improvement, team coordination |
+| **[Your Ops Admin]** | Ops / Finance / Admin | — (Pakistan-based) | Basecamp project setup, RACI assignment, invoicing, admin, intake coordination |
+| **[Your Content Specialist]** | Content Specialist | — (reports to [Your Name]) | Content production, article writing, Content Factory execution |
 
-### Extended BlitzMetrics Team
+### Extended [Methodology Partner] Team
 
-These team members operate within the broader BlitzMetrics ecosystem and contribute to {{COMPANY}} projects:
+These team members operate within the broader [Methodology Partner] ecosystem and contribute to [Your Agency] projects:
 
-- **Luke Crowson**
-- **{{SITE_ADMIN_NAME}}**
-- **Hezekiah Orteza**
-- **Henry Holm**
-- **Daniel Goodrich**
-- **Grant Haugen**
+- **[Your Local Agency Partner]**
+- **[Your Site Admin]**
+- **[Your Automation Lead]**
+- **[Your Content Monitor]**
+- **[Your Team Member]**
+- **[Your Repurposing Specialist]**
 
 See: [02-team-roster.md](./02-team-roster.md) for full contact info, roles, and availability.
 See: [03-raci-matrix.md](./03-raci-matrix.md) for who owns what on every project type.
@@ -124,13 +124,13 @@ See: [03-raci-matrix.md](./03-raci-matrix.md) for who owns what on every project
 
 Every client engagement follows the same pipeline. No exceptions.
 
-### 1. Sales ({{OWNER_NAME}} / {{ADVISOR_NAME}})
+### 1. Sales ([Your Name] / [Your Mentor/Advisor])
 - Lead comes in through outreach, referral, or inbound
-- {{OWNER_NAME}} or {{ADVISOR_NAME}} runs the sales conversation
+- [Your Name] or [Your Mentor/Advisor] runs the sales conversation
 - Deal closes on KP Sprint ($6k) or AI Apprentice ($2.5k)
 
-### 2. Intake ({{OPS_ADMIN_NAME}})
-- {{OPS_ADMIN_NAME}} creates a Basecamp project from the Sprint template
+### 2. Intake ([Your Ops Admin])
+- [Your Ops Admin] creates a Basecamp project from the Sprint template
 - RACI is assigned for every deliverable
 - Client onboarding questionnaire is sent
 - 30-day clock starts when onboarding materials are received
@@ -141,7 +141,7 @@ Every client engagement follows the same pipeline. No exceptions.
 - Daily progress tracked in Basecamp
 - EOD reports submitted by every team member working on the project
 
-### 4. QA ({{OWNER_NAME}})
+### 4. QA ([Your Name])
 - All deliverables reviewed against quality standards before client delivery
 - Influence Report Card generated (before/after comparison)
 - No deliverable goes out without QA sign-off
@@ -201,7 +201,7 @@ Everything we do follows this cycle. You learn a skill. You execute it on real w
 
 ### CCS — Content, Checklist, Software
 
-Every process at {{COMPANY}} lives in one of three forms:
+Every process at [Your Agency] lives in one of three forms:
 - **Content** — An article, video, or training that explains the concept
 - **Checklist** — A step-by-step list that ensures consistent execution
 - **Software** — A tool or automation that removes manual steps
@@ -234,14 +234,14 @@ This Team OS is a system of linked documents. Here's the full map:
 | [03-raci-matrix.md](./03-raci-matrix.md) | RACI Matrix | Responsibility assignments for every project type |
 | [04-kp-sprint-playbook.md](./04-kp-sprint-playbook.md) | KP Sprint Playbook | Step-by-step Sprint delivery process |
 | [05-ai-apprentice-program.md](./05-ai-apprentice-program.md) | AI Apprentice Program | Cohort operations, curriculum, certification |
-| [05-delegation-framework.md](./05-delegation-framework.md) | Delegation Framework | What {{OWNER_NAME}} does vs. delegates, handoff protocols, self-audit |
+| [05-delegation-framework.md](./05-delegation-framework.md) | Delegation Framework | What [Your Name] does vs. delegates, handoff protocols, self-audit |
 | [06-client-intake-process.md](./06-client-intake-process.md) | Client Intake Process | From closed deal to active project |
 | [07-qa-standards.md](./07-qa-standards.md) | QA Standards | Quality requirements for every deliverable |
 | [08-communication-guide.md](./08-communication-guide.md) | Communication Guide | Tools, norms, escalation paths |
 | [09-reporting-templates.md](./09-reporting-templates.md) | Reporting Templates | EOD, MAA, and Sprint report formats |
 | [10-tools-and-access.md](./10-tools-and-access.md) | Tools & Access | Software stack, login procedures, permissions |
 | [06-new-hire-onboarding-sop.md](./06-new-hire-onboarding-sop.md) | New Hire Onboarding SOP | Complete onboarding process for any new hire |
-| [07-jackson-onboarding-kit.md](./07-jackson-onboarding-kit.md) | {{TEAM_MEMBER_NAME}} Onboarding Kit | Role-specific onboarding for {{OWNER_NAME}}son |
+| [07-jackson-onboarding-kit.md](./07-jackson-onboarding-kit.md) | [Your Content Specialist] Onboarding Kit | Role-specific onboarding for [Your Content Specialist] |
 | [11-onboarding-checklist.md](./11-onboarding-checklist.md) | Onboarding Checklist | New team member setup, first-week tasks |
 | [12-sales-playbook.md](./12-sales-playbook.md) | Sales Playbook | How deals get closed |
 | [13-case-study-template.md](./13-case-study-template.md) | Case Study Template | Standard format for Sprint case studies |
@@ -265,4 +265,4 @@ If you're new here:
 
 If you have questions, ask them in Basecamp. If something in these docs is wrong or outdated, flag it. These are living documents — they get better every time someone uses them.
 
-Welcome to {{COMPANY}}. Now let's build something that compounds.
+Welcome to [Your Agency]. Now let's build something that compounds.

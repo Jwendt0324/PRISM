@@ -1,5 +1,5 @@
 ---
-description: Plan and execute in-person events (The Forge format) with full content capture and post-event processing
+description: Plan and execute in-person events ([Your Speaker Event] format) with full content capture and post-event processing
 category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
@@ -13,11 +13,11 @@ canon_sources: [02-content-factory-process.md]
 # Event Planning SOP
 
 ## Purpose
-Run professional in-person events in The Forge format — half-day, TED Talk-style, with full content capture — and systematically turn every event into months of content output.
+Run professional in-person events in [Your Speaker Event] format — half-day, TED Talk-style, with full content capture — and systematically turn every event into months of content output.
 
 ## When to Use
 - Planning a new Forge event or similar in-person gathering
-- Dennis requests a recurring event series
+- [Your Mentor/Advisor] requests a recurring event series
 - An opportunity arises for a multi-speaker, content-rich event
 - Preparing post-event content processing pipeline
 
@@ -28,7 +28,7 @@ Run professional in-person events in The Forge format — half-day, TED Talk-sty
 2. **Secure the venue.** Requirements: capacity for audience + crew, AV equipment (projector, screen, mics), access to or proximity to a podcast studio, green screen studio if possible. Confirm venue availability and book with deposit.
 
 3. **Send speaker invitations.** Email each speaker with:
-   - What The Forge is (half-day event, 9 speakers, TED Talk format)
+   - What [Your Speaker Event] is (half-day event, 9 speakers, TED Talk format)
    - What they'll present (their topic, 20-minute slot)
    - Logistics (date, time, location, travel details)
    - What they get (professional recording, content package, exposure)
@@ -67,7 +67,7 @@ Run professional in-person events in The Forge format — half-day, TED Talk-sty
 
 10. **Boost content via Dollar-a-Day.** Run $1/day campaigns on the best-performing clips. Tag speakers. Cross-promote across all channels. See `dollar-a-day-campaign.md` for the full process.
 
-11. **Document learnings for next event.** Within one week of the event, write a debrief: what worked, what didn't, what to change. Update this SOP with findings. Dennis wants this recurring — every event should be better than the last.
+11. **Document learnings for next event.** Within one week of the event, write a debrief: what worked, what didn't, what to change. Update this SOP with findings. [Your Mentor/Advisor] wants this recurring — every event should be better than the last.
 
 ## Quality Checks
 - [ ] All speakers confirmed with bios, headshots, and talk titles
@@ -89,7 +89,7 @@ Run professional in-person events in The Forge format — half-day, TED Talk-sty
 - **Triangles served:** ACC (content from events), CCS (process checklist for event execution)
 - **Human checkpoints:** Speaker confirmation (Step 4), AV check before doors open (Step 7), post-event debrief (Step 11)
 - **Anti-vandalism:** Backup speaker list maintained; backup AV equipment required; content processing plan required before event day; post-event debrief within one week
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- 2026-03-18: SOP created for The Forge (April 8, 2026) — first in-person event since COVID. 9 speakers, 20 min each, half-day format. Dennis wants this recurring.
+- 2026-03-18: SOP created for [Your Speaker Event] (April 8, 2026) — first in-person event since COVID. 9 speakers, 20 min each, half-day format. [Your Mentor/Advisor] wants this recurring.

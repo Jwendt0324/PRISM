@@ -1,6 +1,6 @@
 # Parts Lookup Agent v2
 
-Automated batch processing engine that looks up appliance part numbers on distributor websites (currently Marcone), scrapes pricing and availability, and writes ServiceDesk-compatible CSV output.
+Automated batch processing engine that looks up appliance part numbers on distributor websites (currently [Parts Distributor]), scrapes pricing and availability, and writes ServiceDesk-compatible CSV output.
 
 Handles 500+ parts per run with zero human interaction. Logs in once, reuses the session, retries failures with exponential backoff, and can resume crashed runs from where they left off.
 
@@ -27,7 +27,7 @@ parts-agent/
 │   ├── config.json              # Credentials and run settings
 │   ├── config.example.json      # Template (no real credentials)
 │   └── distributors/
-│       └── marcone.json         # All Marcone-specific selectors and URLs
+│       └── marcone.json         # All [Parts Distributor]-specific selectors and URLs
 ├── data/
 │   ├── input/                   # Drop CSV files here to be processed
 │   ├── output/                  # Results land here (timestamped)
@@ -76,8 +76,8 @@ Results are written to `data/output/results_[timestamp].csv`:
 | Column | Description |
 |---|---|
 | part_number | What you searched |
-| marcone_part_number | Marcone's internal part number |
-| marcone_name | Product name on Marcone |
+| marcone_part_number | [Parts Distributor]'s internal part number |
+| marcone_name | Product name on [Parts Distributor] |
 | wholesale_price | Your dealer cost |
 | availability | Stock status and quantity |
 | vendor | "MC" (for ServiceDesk import) |
@@ -111,7 +111,7 @@ Completed parts are skipped. The agent picks up at the next unfinished part.
 
 ## Adding a new distributor
 
-The system is distributor-agnostic. Marcone is just the first one. To add another:
+The system is distributor-agnostic. [Parts Distributor] is just the first one. To add another:
 
 1. Create `config/distributors/newdistributor.json` with the site's selectors, URLs, and timeouts (use `marcone.json` as a template)
 2. Update `config/config.json`: set `"distributor": "newdistributor"`
@@ -125,7 +125,7 @@ The system is distributor-agnostic. Marcone is just the first one. To add anothe
 |---|---|---|
 | distributor | marcone | Which distributor config to load |
 | headless | false | Run without visible browser |
-| delay_between_searches_seconds | 2 | Pause between searches |
+| [google-doc-id] | 2 | Pause between searches |
 | max_retries | 4 | Retry attempts per failed part |
 | error_abort_threshold_pct | 50 | Abort run if error rate exceeds this |
 | rate_limit_pause_minutes | 5 | How long to pause if rate limited |
@@ -140,7 +140,7 @@ Drop a CSV file with a `part_number` column into `data/input/`.
 Check credentials in `config/config.json`. Check `logs/runs/` for the exact error.
 
 **Search works but data is empty**
-Marcone may have changed their page layout. Inspect the page and update selectors in `config/distributors/marcone.json`.
+[Parts Distributor] may have changed their page layout. Inspect the page and update selectors in `config/distributors/marcone.json`.
 
 **Run aborted — error rate too high**
 Something is fundamentally broken (session expired, site down, selectors changed). Check the error log in `logs/errors/` and fix the root cause.

@@ -7,7 +7,7 @@
 ## 1. Who You Are
 
 **Name:** {{FULL_NAME}}
-**Role:** {{ROLE_TITLE}} at {{COMPANY}}
+**Role:** {{ROLE_TITLE}} at [Your Agency]
 **Email:** {{EMAIL}}
 **Location:** {{LOCATION}}
 **Sign-off:** {{SIGN_OFF}}
@@ -20,7 +20,7 @@
 
 ## 2. The Business
 
-**Company:** {{COMPANY}}
+**Company:** [Your Agency]
 **Mission:** {{MISSION}}
 **Industry:** {{INDUSTRY}}
 

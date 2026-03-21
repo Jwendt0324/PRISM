@@ -1,13 +1,13 @@
-# The 9 Triangles Framework — BlitzMetrics Canon
+# The 9 Triangles Framework — [Methodology Partner] Canon
 
-**Source:** Master Content Factory Guide, Course Builder Guide v9.1, Dennis Yu's training materials
+**Source:** Master Content Factory Guide, Course Builder Guide v9.1, [Your Mentor/Advisor]'s training materials
 **Version:** 1.0 | **Extracted:** 2026-03-19
 
 ---
 
 ## Overview
 
-The 9 Triangles is BlitzMetrics' master framework. Every business problem maps to one or more triangles. Every SOP, process, and deliverable must trace back to a triangle. The triangles are organized into three tiers: WHY (strategic), HOW (tactical), and WHAT (operational).
+The 9 Triangles is [Methodology Partner]' master framework. Every business problem maps to one or more triangles. Every SOP, process, and deliverable must trace back to a triangle. The triangles are organized into three tiers: WHY (strategic), HOW (tactical), and WHAT (operational).
 
 ---
 
@@ -42,7 +42,7 @@ The 9 Triangles is BlitzMetrics' master framework. Every business problem maps t
 - **Metrics:** Specific numbers with week-over-week comparisons. Pull from native platform analytics (not third-party tools). Must include actual data, not placeholders.
 - **Analysis:** Explain WHY the numbers are what they are. Connect cause to effect. Call out the weakest area. This is NOT a task list — it's insight.
 - **Action:** Owner + deadline for each item. At least one action targets the weakest metric. Minimum 3 action items. Each must be specific and accountable.
-- **Application:** MAA runs at EVERY stage of the Content Factory (per Workbook v1.9). Weekly MAA reports posted to Basecamp Updates thread by Friday EOD. Dennis will push back on task-list-style reports. Never skip a week silently.
+- **Application:** MAA runs at EVERY stage of the Content Factory (per Workbook v1.9). Weekly MAA reports posted to Basecamp Updates thread by Friday EOD. [Your Mentor/Advisor] will push back on task-list-style reports. Never skip a week silently.
 - **Common violation:** Writing Analysis as a list of tasks done rather than insights about what's working/not working. Skipping MAA weeks without explanation.
 
 ### LDT — Learn, Do, Teach
@@ -71,7 +71,7 @@ The 9 Triangles is BlitzMetrics' master framework. Every business problem maps t
 - **Common violation:** Doing everything yourself. Delegating without checklists (leading to inconsistent results). Not deleting low-value activities.
 
 ### CID — Communicate, Iterate, Delegate
-- **Communicate:** Always communicate in Basecamp threads, not email. Link to Basecamp threads, not documents directly (versions change). Include Dennis and team leads in every thread.
+- **Communicate:** Always communicate in Basecamp threads, not email. Link to Basecamp threads, not documents directly (versions change). Include [Your Mentor/Advisor] and team leads in every thread.
 - **Iterate:** Constantly improve materials. New versions frequently. Iterate in Basecamp so you don't spawn separate email threads doing the same thing in parallel.
 - **Delegate:** Use RACI (Responsible, Accountable, Consulted, Informed) for clear ownership.
 - **Application:** All project communication flows through Basecamp. SOPs and guides are living documents that iterate constantly. No document is ever "final."

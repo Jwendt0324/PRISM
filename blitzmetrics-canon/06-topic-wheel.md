@@ -1,4 +1,4 @@
-# Topic Wheel Methodology — BlitzMetrics Canon
+# Topic Wheel Methodology — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guides, Video Editing Guide, Course Builder Guide
 **Version:** 1.0 | **Extracted:** 2026-03-19
@@ -73,6 +73,6 @@ Score every piece of content on a 30-point scale:
 
 The most authoritative person saying the most authoritative content on the most authoritative property = maximum leverage.
 
-Example: Dennis Yu on CNN discussing Facebook data (10+10+10 = 30) vs. unknown person on personal blog about same topic (5+2+2 = 9).
+Example: [Your Mentor/Advisor] on CNN discussing Facebook data (10+10+10 = 30) vs. unknown person on personal blog about same topic (5+2+2 = 9).
 
 Track authority scores in Content Library. Boost highest-scoring content via Dollar-a-Day.

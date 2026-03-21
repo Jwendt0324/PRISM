@@ -252,7 +252,7 @@ Use log to track:
 - **Triangles served:** CCS (process checklist — systematic file routing, naming conventions, and folder structure enforcement)
 - **Human checkpoints:** Manual review of unknown/ folder items before deletion (30-day rule); manual-review/ folder requires human decision within 5 days; client identification for ambiguous files
 - **Anti-vandalism:** Organizing log tracks every move with timestamp and destination; no files deleted without log entry; archives always extracted and examined before deletion; prior folder contents verified empty before moving on; 7-day and 3-day automated cleanup thresholds prevent accumulation
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

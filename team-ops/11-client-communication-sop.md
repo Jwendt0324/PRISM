@@ -1,6 +1,6 @@
 ---
 title: "Client Communication SOP — How We Talk to Clients at Every Stage"
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
 version: 1.0
@@ -17,9 +17,9 @@ Every client touchpoint follows a pattern. This SOP defines what gets said, by w
 
 ## Stage 1: Initial Outreach / Qualification
 
-**Owner:** {{OWNER_NAME}} or {{ADVISOR_NAME}}
+**Owner:** [Your Name] or [Your Mentor/Advisor]
 
-{{OWNER_NAME}} or {{ADVISOR_NAME}} initiates contact with qualified leads. This is not a team activity — only {{OWNER_NAME}} or {{ADVISOR_NAME}} makes first contact.
+[Your Name] or [Your Mentor/Advisor] initiates contact with qualified leads. This is not a team activity — only [Your Name] or [Your Mentor/Advisor] makes first contact.
 
 - Use the **scheduling link** for discovery calls. No manual time coordination.
 - Qualification happens before the call, not during it. Don't waste a call on a lead that doesn't pass the gate (LSA category, $100k+/mo revenue, 100+ reviews, willing to film).
@@ -29,21 +29,21 @@ Every client touchpoint follows a pattern. This SOP defines what gets said, by w
 
 ## Stage 2: Proposal and Close
 
-**Owner:** {{ADVISOR_NAME}} (default closer), unless another closer is recorded
+**Owner:** [Your Mentor/Advisor] (default closer), unless another closer is recorded
 
-{{ADVISOR_NAME}} handles proposals and closing unless {{OWNER_NAME}} or another team member is explicitly assigned as closer for a specific deal.
+[Your Mentor/Advisor] handles proposals and closing unless [Your Name] or another team member is explicitly assigned as closer for a specific deal.
 
 - Every closed deal must have **CRM evidence** — the deal record, proposal sent, and agreement signed. If it's not in the CRM, it didn't happen.
 - Proposal format follows the standard Sprint scope. No custom proposals inside Sprint pricing.
-- Once the deal closes, {{ADVISOR_NAME}} (or the assigned closer) hands off to {{OPS_ADMIN_NAME}} for intake. The handoff includes: client name, contact info, scope confirmed, payment terms, and any special notes from the sales conversation.
+- Once the deal closes, [Your Mentor/Advisor] (or the assigned closer) hands off to [Your Ops Admin] for intake. The handoff includes: client name, contact info, scope confirmed, payment terms, and any special notes from the sales conversation.
 
 ---
 
 ## Stage 3: Onboarding (Intake)
 
-**Owner:** {{OPS_ADMIN_NAME}}
+**Owner:** [Your Ops Admin]
 
-{{OPS_ADMIN_NAME}} sends the onboarding email within 24 hours of deal close. This is the client's first operational touchpoint with {{COMPANY}} — make it clean.
+[Your Ops Admin] sends the onboarding email within 24 hours of deal close. This is the client's first operational touchpoint with [Your Agency] — make it clean.
 
 1. **Basecamp project created** from Sprint template with RACI assigned
 2. **Client added to public threads** in Basecamp — they see project-level updates, task completions, and deliverable previews
@@ -58,7 +58,7 @@ Every client touchpoint follows a pattern. This SOP defines what gets said, by w
 
 ## Stage 4: Weekly Updates During Sprint
 
-**Owner:** Whoever is R on the project (typically {{OWNER_NAME}} for PM)
+**Owner:** Whoever is R on the project (typically [Your Name] for PM)
 
 Every Friday, post a weekly update in Basecamp using the **MAA format**:
 
@@ -100,7 +100,7 @@ Do not negotiate scope mid-Sprint. Do not squeeze in "one small thing." The Spri
 
 ## Stage 6: Delivery and Handoff
 
-**Owner:** {{OWNER_NAME}}
+**Owner:** [Your Name]
 
 When deliverables are ready (post-QA):
 
@@ -114,7 +114,7 @@ When deliverables are ready (post-QA):
 
 ## Stage 7: Post-Delivery Follow-Up
 
-**Owner:** {{OWNER_NAME}} (R), {{ADVISOR_NAME}} (C)
+**Owner:** [Your Name] (R), [Your Mentor/Advisor] (C)
 
 After delivery is complete:
 
@@ -125,16 +125,16 @@ After delivery is complete:
 
 ---
 
-## Stage 8: When to Escalate to {{ADVISOR_NAME}}
+## Stage 8: When to Escalate to [Your Mentor/Advisor]
 
 Escalate immediately — don't try to handle these solo:
 
-- **Client is unhappy** — About deliverable quality, timeline, communication, anything. {{ADVISOR_NAME}} gets looped in before it festers.
-- **Scope disputes** — Client claims something was promised that isn't in the Sprint. {{ADVISOR_NAME}} was on the sales call — he has context.
-- **Quality concerns** — If QA flags something significant, {{ADVISOR_NAME}} reviews before it goes to the client.
-- **EEAT issues** — Anything related to Experience, Expertise, Authoritativeness, Trustworthiness that could affect the client's digital presence or our methodology. {{ADVISOR_NAME}} owns the methodology.
+- **Client is unhappy** — About deliverable quality, timeline, communication, anything. [Your Mentor/Advisor] gets looped in before it festers.
+- **Scope disputes** — Client claims something was promised that isn't in the Sprint. [Your Mentor/Advisor] was on the sales call — he has context.
+- **Quality concerns** — If QA flags something significant, [Your Mentor/Advisor] reviews before it goes to the client.
+- **EEAT issues** — Anything related to Experience, Expertise, Authoritativeness, Trustworthiness that could affect the client's digital presence or our methodology. [Your Mentor/Advisor] owns the methodology.
 
-When escalating: send {{ADVISOR_NAME}} a Basecamp message (not email, not text) with the project URL, a summary of the issue, and what you've tried so far.
+When escalating: send [Your Mentor/Advisor] a Basecamp message (not email, not text) with the project URL, a summary of the issue, and what you've tried so far.
 
 ---
 
@@ -174,5 +174,5 @@ Before any client-facing communication goes out:
 - **@mentioning clients in Basecamp.** Everyone does it once. The duplicate notification email confuses the client and clutters their inbox. Use public threads — they'll see it.
 - **Letting the client drive scope mid-Sprint.** Being responsive is good. Saying yes to everything is bad. Phase 2 list exists for a reason.
 - **Sending updates without the MAA format.** Freeform updates are hard to parse and easy to misread. Metrics, Analysis, Action. Every time.
-- **Escalating to {{ADVISOR_NAME}} via email or text.** He's managing multiple projects. If it's not in Basecamp, it gets lost. Use Basecamp for escalations.
+- **Escalating to [Your Mentor/Advisor] via email or text.** He's managing multiple projects. If it's not in Basecamp, it gets lost. Use Basecamp for escalations.
 - **Forgetting the post-delivery follow-up.** The Sprint ends. Everyone moves on. Then we have no case study, no testimonial, and no Phase 2 proposal. Set a calendar reminder for the 30-day check-in.

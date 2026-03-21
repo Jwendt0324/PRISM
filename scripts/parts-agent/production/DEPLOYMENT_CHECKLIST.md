@@ -1,4 +1,4 @@
-# D3S Parts Agent - Deployment Checklist
+# [Client — Appliance Repair] Parts Agent - Deployment Checklist
 
 ## Generated Files
 
@@ -76,7 +76,7 @@ C:\HRIAutomation\parts-agent\
 - [ ] `C:\HRIAutomation\` directory exists or can be created
 - [ ] PowerShell execution policy allows scripts (`RemoteSigned` or higher)
 - [ ] Python 3.9+ installed and in PATH
-- [ ] Network access to internet (for Marcone and dependencies)
+- [ ] Network access to internet (for [Parts Distributor] and dependencies)
 
 ## Deployment Execution Steps
 
@@ -102,9 +102,9 @@ C:\HRIAutomation\parts-agent\
 ### Phase 3: Configure Credentials
 
 - [ ] Edit `C:\HRIAutomation\parts-agent\config\config.json`
-- [ ] Update `username` and `password` for Marcone
+- [ ] Update `username` and `password` for [Parts Distributor]
 - [ ] Update `marcone_accounts.d3s` credentials
-- [ ] Update `rossware` host/username/password for RDP
+- [ ] Update `field_service_platform` host/username/password for RDP
 - [ ] Update `rss_key` username/password
 - [ ] Save file (UTF-8 encoding required)
 
@@ -199,8 +199,8 @@ production/
 | PowerShell won't run | Execution policy | `Set-ExecutionPolicy RemoteSigned` |
 | Python not found | PATH variable | Install Python or add to PATH |
 | Playwright fails | Browser installed | `python -m playwright install chromium` |
-| Marcone login fails | Credentials | Verify username/password in config.json |
-| RDP connection fails | Network access | Check firewall, test `ping d3s.rosswarehosting.com` |
+| [Parts Distributor] login fails | Credentials | Verify username/password in config.json |
+| RDP connection fails | Network access | Check firewall, test `ping [client-server.example.com]` |
 | Files not copied | Permissions | Ensure write access to C:\HRIAutomation\ |
 
 ## Next Steps After Deployment

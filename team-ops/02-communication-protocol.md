@@ -5,10 +5,10 @@ version: 1.0
 created: 2026-03-18
 last_updated: 2026-03-18
 status: active
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 ---
 
-# Communication Protocol — {{COMPANY_NAME}}
+# Communication Protocol — [Your Agency Name]
 
 This is how we communicate. No ambiguity. If you're unsure where something goes, default to Basecamp. Email gets lost. Basecamp doesn't.
 
@@ -41,9 +41,9 @@ Email is for direct coordination that doesn't belong in a project thread.
 - Direct 1:1 coordination between team members
 - External contacts (prospects, vendors, partners)
 - Sensitive matters (compensation, legal, contracts)
-- Tool access and credentials ({{OPS_ADMIN_NAME}} handles onboarding assets)
+- Tool access and credentials ([Your Ops Admin] handles onboarding assets)
 - Forwarding tasks with context to specific people
-- {{ADVISOR_NAME}}'s strategic direction and high-level decisions
+- [Your Mentor/Advisor]'s strategic direction and high-level decisions
 
 **Rule:** If you CC more than 2 people on an email about project work, it should be a Basecamp thread.
 
@@ -60,7 +60,7 @@ Do not text about project work. Do not call about deliverables.
 **What is NOT an emergency:**
 - A question that can wait until tomorrow
 - A deliverable that's behind schedule (put it in Basecamp)
-- Something {{ADVISOR_NAME}} asked about (he operates at all hours — match his energy in Basecamp, not via text)
+- Something [Your Mentor/Advisor] asked about (he operates at all hours — match his energy in Basecamp, not via text)
 
 ### Zoom — Scheduled Meetings Only
 
@@ -86,13 +86,13 @@ Do not text about project work. Do not call about deliverables.
 
 The team spans multiple time zones. Know them. Respect them.
 
-- **{{ADVISOR_NAME}}:** Las Vegas (PST) — travels extensively, emails at all hours. Do not assume a 2 AM email requires a 2 AM response. Respond during your business hours.
-- **{{OWNER_NAME}}:** CST
-- **{{OPS_PARTNER_NAME}}:** CST
-- **{{OPS_ADMIN_NAME}}:** Pakistan (UTC+5) — overnight US time. His morning is your evening. Plan handoffs accordingly.
-- **{{OWNER_NAME}}son:** Receives forwarded tasks from {{OWNER_NAME}} via email with context
+- **[Your Mentor/Advisor]:** Las Vegas (PST) — travels extensively, emails at all hours. Do not assume a 2 AM email requires a 2 AM response. Respond during your business hours.
+- **[Your Name]:** CST
+- **[Your Ops Partner]:** CST
+- **[Your Ops Admin]:** Pakistan (UTC+5) — overnight US time. His morning is your evening. Plan handoffs accordingly.
+- **[Your Content Specialist]:** Receives forwarded tasks from [Your Name] via email with context
 
-**Handoff rule:** If you need something from {{OPS_ADMIN_NAME}}, post it before end of US business day so he sees it when his day starts. If you need something from US team, {{OPS_ADMIN_NAME}} should post before his end of day so it's waiting when US wakes up.
+**Handoff rule:** If you need something from [Your Ops Admin], post it before end of US business day so he sees it when his day starts. If you need something from US team, [Your Ops Admin] should post before his end of day so it's waiting when US wakes up.
 
 ---
 
@@ -101,19 +101,19 @@ The team spans multiple time zones. Know them. Respect them.
 Don't over-CC. Don't under-CC. Here's who gets looped on what.
 
 ### Client Projects
-- **Always looped:** {{ADVISOR_NAME}}, {{OWNER_NAME}}
-- **QA / quality:** {{OPS_PARTNER_NAME}}
-- **Ops / tools / access:** {{OPS_ADMIN_NAME}}
+- **Always looped:** [Your Mentor/Advisor], [Your Name]
+- **QA / quality:** [Your Ops Partner]
+- **Ops / tools / access:** [Your Ops Admin]
 
 ### AI Apprentice Projects
-- **Always looped:** {{ADVISOR_NAME}}, {{OWNER_NAME}}, {{OPS_ADMIN_NAME}}
+- **Always looped:** [Your Mentor/Advisor], [Your Name], [Your Ops Admin]
 
 ### Financial / Compensation
-- **Always looped:** {{OWNER_NAME}}, {{ADVISOR_NAME}}, {{OPS_PARTNER_NAME}}, {{OPS_ADMIN_NAME}}
+- **Always looped:** [Your Name], [Your Mentor/Advisor], [Your Ops Partner], [Your Ops Admin]
 
 ### New Hire / Onboarding
-- **Always looped:** {{OWNER_NAME}}, {{OPS_PARTNER_NAME}}, {{OPS_ADMIN_NAME}}
-- **{{OPS_ADMIN_NAME}} owns:** Tool access, credentials, onboarding asset delivery
+- **Always looped:** [Your Name], [Your Ops Partner], [Your Ops Admin]
+- **[Your Ops Admin] owns:** Tool access, credentials, onboarding asset delivery
 
 ### Rule of Thumb
 If you're not sure whether to loop someone, loop them. It's easier to mute a thread than to catch up on one you missed.
@@ -172,15 +172,15 @@ From the KP Sprint playbook — these rules exist because burnout kills output.
 
 | Situation | Channel | Who to Loop |
 |-----------|---------|-------------|
-| Client deliverable update | Basecamp (public) | {{ADVISOR_NAME}}, {{OWNER_NAME}}, {{OPS_PARTNER_NAME}} |
+| Client deliverable update | Basecamp (public) | [Your Mentor/Advisor], [Your Name], [Your Ops Partner] |
 | Internal project discussion | Basecamp (private) | Relevant team members |
-| Tool access / credentials | Email | {{OPS_ADMIN_NAME}} |
-| Forwarding a task with context | Email | Recipient + {{OWNER_NAME}} |
-| Strategic direction from {{ADVISOR_NAME}} | Email or Basecamp | {{OWNER_NAME}} |
-| Client is unhappy or escalating | Basecamp (private) + text {{OWNER_NAME}} | {{ADVISOR_NAME}}, {{OWNER_NAME}} |
-| New hire needs access | Email | {{OWNER_NAME}}, {{OPS_PARTNER_NAME}}, {{OPS_ADMIN_NAME}} |
-| Campaign budget / billing | Basecamp (private) | {{OWNER_NAME}}, {{ADVISOR_NAME}}, {{OPS_PARTNER_NAME}}, {{OPS_ADMIN_NAME}} |
-| Something is on fire | Text + Basecamp | {{ADVISOR_NAME}}, {{OWNER_NAME}} |
+| Tool access / credentials | Email | [Your Ops Admin] |
+| Forwarding a task with context | Email | Recipient + [Your Name] |
+| Strategic direction from [Your Mentor/Advisor] | Email or Basecamp | [Your Name] |
+| Client is unhappy or escalating | Basecamp (private) + text [Your Name] | [Your Mentor/Advisor], [Your Name] |
+| New hire needs access | Email | [Your Name], [Your Ops Partner], [Your Ops Admin] |
+| Campaign budget / billing | Basecamp (private) | [Your Name], [Your Mentor/Advisor], [Your Ops Partner], [Your Ops Admin] |
+| Something is on fire | Text + Basecamp | [Your Mentor/Advisor], [Your Name] |
 
 ---
 
@@ -188,4 +188,4 @@ From the KP Sprint playbook — these rules exist because burnout kills output.
 
 _Updated as patterns emerge. If you notice a communication breakdown, log it here so we fix the system, not just the symptom._
 
-- **2026-03-18 (v1.0):** Initial protocol written based on observed Gmail and Basecamp patterns. Key insight: {{ADVISOR_NAME}}'s "let's iterate in Basecamp" preference is the right call — email threads with 4+ people die fast. Codified as default behavior.
+- **2026-03-18 (v1.0):** Initial protocol written based on observed Gmail and Basecamp patterns. Key insight: [Your Mentor/Advisor]'s "let's iterate in Basecamp" preference is the right call — email threads with 4+ people die fast. Codified as default behavior.

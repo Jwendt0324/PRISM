@@ -28,7 +28,7 @@ This is the master team directory template. Fill in your team's information afte
 
 ---
 
-### {{TEAM_MEMBER_NAME}} — {{ROLE}}
+### [Your Content Specialist] — {{ROLE}}
 
 | Field | Details |
 |---|---|

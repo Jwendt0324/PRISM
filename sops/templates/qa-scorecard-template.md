@@ -1,5 +1,5 @@
 ---
-description: Scorecard template for the BlitzMetrics 18-step article quality gate
+description: Scorecard template for the [Methodology Partner] 18-step article quality gate
 category: templates
 created: 2026-03-19
 last_updated: 2026-03-19
@@ -91,7 +91,7 @@ version: 1.0
 
 ## Canon Compliance
 
-This scorecard implements the BlitzMetrics 18-step article quality checklist.
+This scorecard implements the [Methodology Partner] 18-step article quality checklist.
 - **Canon source:** ~/Documents/Claude/Mainframe/blitzmetrics-canon/03-article-guidelines.md
 - **SOP:** ~/Documents/Claude/Mainframe/sops/client-work/article-qa-blitzmetrics.md
 - **Triangles served:** CCS (checklist), MAA (measurement), LDT (meta-article teaching)

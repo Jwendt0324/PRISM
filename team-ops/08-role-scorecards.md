@@ -1,15 +1,15 @@
 ---
 title: "Role Scorecards"
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 version: 1.0
 created: 2026-03-18
 last_updated: 2026-03-18
 status: active
 ---
 
-# Role Scorecards â€” {{COMPANY_NAME}}
+# Role Scorecards â€” [Your Agency Name]
 
-Every role at {{COMPANY}} has a scorecard. This is how we know if someone is winning or losing. No ambiguity. No vibes. Numbers.
+Every role at [Your Agency] has a scorecard. This is how we know if someone is winning or losing. No ambiguity. No vibes. Numbers.
 
 If you're on this team, you should be able to look at your scorecard any week and know exactly where you stand. If your leading indicators are green, the lagging indicators will follow. If your leading indicators are red for two weeks straight, something needs to change before the month ends.
 
@@ -31,9 +31,9 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 1. {{OWNER_NAME}} â€” CEO / BD Lead
+## 1. [Your Name] â€” CEO / BD Lead
 
-**One-liner:** Owns the revenue, owns the relationships, owns the outcome. Everything at {{COMPANY}} flows through or from {{OWNER_NAME}}.
+**One-liner:** Owns the revenue, owns the relationships, owns the outcome. Everything at [Your Agency] flows through or from [Your Name].
 
 ### Key Results
 
@@ -66,8 +66,8 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 ### Compensation Triggers
 
 - **Sales commission:** 15% ($900) per Sprint closed. Requires CRM evidence from qualified intro through signed contract.
-- **Company retained:** 35% per Sprint stays in the business. {{OWNER_NAME}} draws from company profit after all obligations.
-- **QA bonus pool access:** As final QA approver, {{OWNER_NAME}}'s sign-off is what releases or withholds the $300 bonus pool.
+- **Company retained:** 35% per Sprint stays in the business. [Your Name] draws from company profit after all obligations.
+- **QA bonus pool access:** As final QA approver, [Your Name]'s sign-off is what releases or withholds the $300 bonus pool.
 
 ### Red Flags
 
@@ -80,9 +80,9 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 2. {{TEAM_MEMBER_NAME}} â€” Content Specialist
+## 2. [Your Content Specialist] â€” Content Specialist
 
-**One-liner:** Turns raw material into polished content. If {{OWNER_NAME}} is the engine, {{OWNER_NAME}}son is the assembly line.
+**One-liner:** Turns raw material into polished content. If [Your Name] is the engine, [Your Content Specialist] is the assembly line.
 
 ### Key Results
 
@@ -116,7 +116,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 - **Delivery labor pool:** Paid by task per SOP rate card (draws from the 35% / $2,100 pool per Sprint)
 - **QA/On-Time bonus:** Eligible for share of the 5% / $300 pool when Sprint delivers on time with zero critical defects
-- **Note:** {{OWNER_NAME}}son is currently paid from {{OWNER_NAME}}'s compensation â€” as volume scales, {{OWNER_NAME}}son transitions to drawing from the delivery labor pool directly
+- **Note:** [Your Content Specialist] is currently paid from [Your Name]'s compensation â€” as volume scales, [Your Content Specialist] transitions to drawing from the delivery labor pool directly
 
 ### Red Flags
 
@@ -129,7 +129,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 3. {{ADVISOR_NAME}} â€” Strategic Advisor
+## 3. [Your Mentor/Advisor] â€” Strategic Advisor
 
 **One-liner:** The architect. Brings the methodology, the network, and the credibility. Advises â€” does not operate.
 
@@ -147,7 +147,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 |----------|--------|--------------|
 | Sprint methodology reviews | All active Sprints reviewed | Basecamp comments |
 | Apprentice program engagement | >=2 touchpoints/week with cohort | Program platform |
-| Warm intros provided to {{OWNER_NAME}} | >=2/week | CRM/email |
+| Warm intros provided to [Your Name] | >=2/week | CRM/email |
 | Content published (thought leadership) | >=2 pieces/week | Publishing platforms |
 | Basecamp thread responses | Same-day response on tagged items | Basecamp |
 
@@ -163,10 +163,10 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ### Compensation Triggers
 
-- **Equity:** 10% {{COMPANY}} equity on 4-year vest, 1-year cliff
-- **Revenue share:** {{COMPANY}} pays LSS 20% of gross revenue ({{ADVISOR_NAME}} benefits through the LSS structure)
+- **Equity:** 10% [Your Agency] equity on 4-year vest, 1-year cliff
+- **Revenue share:** [Your Agency] pays [Partner Platform] 20% of gross revenue ([Your Mentor/Advisor] benefits through the [Partner Platform] structure)
 - **AI Apprentice revenue:** Split per program agreement ($2,500/seat)
-- **No per-Sprint commission** â€” {{ADVISOR_NAME}}'s value is strategic and structural, not per-task
+- **No per-Sprint commission** â€” [Your Mentor/Advisor]'s value is strategic and structural, not per-task
 
 ### Red Flags
 
@@ -178,13 +178,13 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 4. {{OPS_PARTNER_NAME}} â€” Operations Manager
+## 4. [Your Ops Partner] â€” Operations Manager
 
-**One-liner:** Makes the machine run. If a process exists at {{COMPANY}}, {{OPS_PARTNER_NAME}} owns making sure it actually works.
+**One-liner:** Makes the machine run. If a process exists at [Your Agency], [Your Ops Partner] owns making sure it actually works.
 
 ### Key Results
 
-1. **>=90% of all Sprints delivered on time** ({{OPS_PARTNER_NAME}} owns the operational infrastructure that makes this happen)
+1. **>=90% of all Sprints delivered on time** ([Your Ops Partner] owns the operational infrastructure that makes this happen)
 2. **All SOPs current and reviewed** â€” no SOP older than 90 days without a review
 3. **MAA reports delivered weekly** with actionable insights, not just data
 4. **Content pipeline maintains >=2 week buffer** (never scrambling for content)
@@ -197,7 +197,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 | Sprint status checks | All active Sprints reviewed | Basecamp |
 | MAA report submitted | Every Friday | Basecamp |
 | EOD report submitted | 5/5 workdays | Basecamp |
-| Blocker escalations (proactive) | Same-day flag to {{OWNER_NAME}} | Basecamp/email |
+| Blocker escalations (proactive) | Same-day flag to [Your Name] | Basecamp/email |
 | SOP reviews completed | >=1 SOP reviewed/week | Mainframe logs |
 | Content pipeline status check | Weekly | Content calendar |
 
@@ -213,9 +213,9 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ### Compensation Triggers
 
-- **Equity:** 5% {{COMPANY}} equity on 4-year vest, 1-year cliff
+- **Equity:** 5% [Your Agency] equity on 4-year vest, 1-year cliff
 - **Delivery Lead (PM) pool:** Eligible for 10% ($600) per Sprint when acting as Delivery PM on a Sprint â€” paid only on on-time delivery (<=30 days)
-- **QA/On-Time bonus:** Eligible for share of the 5% pool on Sprints {{OPS_PARTNER_NAME}} PMs
+- **QA/On-Time bonus:** Eligible for share of the 5% pool on Sprints [Your Ops Partner] PMs
 - **Spending authority:** Can approve and execute under $500 without escalation
 
 ### Red Flags
@@ -225,13 +225,13 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 - Blockers surface after they've already impacted delivery (reactive instead of proactive)
 - SOPs go stale â€” 3+ SOPs untouched for 90+ days
 - Team members report confusion about priorities or assignments (means communication is breaking down)
-- Spending decisions made above $500 threshold without {{OWNER_NAME}}'s approval
+- Spending decisions made above $500 threshold without [Your Name]'s approval
 
 ---
 
-## 5. {{OPS_ADMIN_NAME}} â€” Operations / Finance / Admin
+## 5. [Your Ops Admin] â€” Operations / Finance / Admin
 
-**One-liner:** The back office. Keeps the lights on, the projects set up, and the money tracked. If {{OPS_ADMIN_NAME}} stops, admin stops.
+**One-liner:** The back office. Keeps the lights on, the projects set up, and the money tracked. If [Your Ops Admin] stops, admin stops.
 
 ### Key Results
 
@@ -263,9 +263,9 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ### Compensation Triggers
 
-- **Contracted through LSS** â€” compensation follows LSS structure, not {{COMPANY}} Sprint pools
-- **Delivery labor pool eligibility:** When {{OPS_ADMIN_NAME}} performs Sprint-specific admin tasks (project setup, RACI assignment, intake coordination), those tasks draw from the 35% delivery labor pool at SOP rate card rates
-- **Budget note:** LSS budget constraints are real. Do not route unplanned tool costs through {{OPS_ADMIN_NAME}} without prior discussion.
+- **Contracted through [Partner Platform]** â€” compensation follows [Partner Platform] structure, not [Your Agency] Sprint pools
+- **Delivery labor pool eligibility:** When [Your Ops Admin] performs Sprint-specific admin tasks (project setup, RACI assignment, intake coordination), those tasks draw from the 35% delivery labor pool at SOP rate card rates
+- **Budget note:** [Partner Platform] budget constraints are real. Do not route unplanned tool costs through [Your Ops Admin] without prior discussion.
 
 ### Red Flags
 
@@ -280,7 +280,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ## 6. Future: Delivery PM
 
-**One-liner:** Owns Sprint delivery end-to-end. The person who makes sure every Sprint ships on time, on budget, and at quality. Hired when Sprint volume exceeds what {{OPS_PARTNER_NAME}} can PM alongside ops.
+**One-liner:** Owns Sprint delivery end-to-end. The person who makes sure every Sprint ships on time, on budget, and at quality. Hired when Sprint volume exceeds what [Your Ops Partner] can PM alongside ops.
 
 ### Key Results
 
@@ -329,15 +329,15 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ## 7. Future: Sales / BD Rep
 
-**One-liner:** Fills {{OWNER_NAME}}'s pipeline so {{OWNER_NAME}} can focus on closing and delivery. Owns the top of funnel â€” qualified intros, booked calls, and show rates.
+**One-liner:** Fills [Your Name]'s pipeline so [Your Name] can focus on closing and delivery. Owns the top of funnel â€” qualified intros, booked calls, and show rates.
 
 ### Key Results
 
-1. **>=10 qualified intros per week** into {{OWNER_NAME}}'s pipeline
+1. **>=10 qualified intros per week** into [Your Name]'s pipeline
 2. **>=70% show rate** on booked discovery calls
 3. **Pipeline supports >=4 closes per month** (sufficient volume at the top)
 4. **CRM hygiene maintained** â€” every lead tracked, every touchpoint logged
-5. **Outreach messaging aligned with {{COMPANY}} positioning** (no off-brand pitches)
+5. **Outreach messaging aligned with [Your Agency] positioning** (no off-brand pitches)
 
 ### Leading Indicators (Weekly)
 
@@ -356,13 +356,13 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 | Qualified intros delivered | >=40/month | CRM |
 | Discovery calls booked | >=20/month | Calendly |
 | Calls that resulted in proposal | >=8/month | CRM |
-| Contribution to closed deals | >=4/month (with {{OWNER_NAME}} closing) | CRM |
+| Contribution to closed deals | >=4/month (with [Your Name] closing) | CRM |
 | Pipeline value | >=3x monthly target | CRM |
 
 ### Compensation Triggers
 
 - **Sales commission:** 15% ($900) per Sprint closed from their sourced leads. Requires CRM evidence from intro through close.
-- **Commission split:** If BD rep sources the lead AND {{OWNER_NAME}} closes, the $900 commission may split per agreement (e.g., 10% BD / 5% closer, or full 15% to BD if they run the full cycle). Define at hire.
+- **Commission split:** If BD rep sources the lead AND [Your Name] closes, the $900 commission may split per agreement (e.g., 10% BD / 5% closer, or full 15% to BD if they run the full cycle). Define at hire.
 - **No base salary initially** â€” commission-only until pipeline proves out. Revisit at 90 days.
 
 ### Red Flags
@@ -372,7 +372,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 - Miss 2 consecutive months of the 4-closes/month target â€” BD role gets paused per the BD KPI gate
 - Vacation >7 consecutive business days without reassigning owned opportunities
 - CRM not maintained â€” if it's not in the CRM, it didn't happen
-- Off-brand outreach that damages {{COMPANY}}'s positioning (one strike conversation, two strikes termination)
+- Off-brand outreach that damages [Your Agency]'s positioning (one strike conversation, two strikes termination)
 
 ---
 
@@ -381,9 +381,9 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 | Review | Frequency | Who | What Happens |
 |--------|-----------|-----|--------------|
 | **Self-check** | Weekly | Everyone | Review your own leading indicators. Flag anything red. |
-| **1:1 with {{OWNER_NAME}}** | Biweekly | Each team member | Review scorecard. Celebrate green, diagnose red, adjust targets if needed. |
+| **1:1 with [Your Name]** | Biweekly | Each team member | Review scorecard. Celebrate green, diagnose red, adjust targets if needed. |
 | **Team scorecard review** | Monthly | Core team | All scorecards on the table. Identify systemic issues. Adjust roles if needed. |
-| **Quarterly reset** | Every 90 days | {{OWNER_NAME}} + {{ADVISOR_NAME}} | Evaluate targets. Are they still right? Adjust for growth stage. |
+| **Quarterly reset** | Every 90 days | [Your Name] + [Your Mentor/Advisor] | Evaluate targets. Are they still right? Adjust for growth stage. |
 
 ---
 
@@ -393,7 +393,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 2. **Leading indicators are your early warning system.** By the time lagging indicators go red, it's too late to course-correct for that month. Watch the weekly numbers.
 3. **Compensation triggers are binary.** You hit the trigger or you don't. No partial credit. No "but I was close." This keeps the system clean.
 4. **Red flags are not accusations.** They're diagnostic tools. If you see a red flag on your own scorecard, raise it before someone else does. That's professionalism.
-5. **Scorecards evolve.** As {{COMPANY}} grows, targets will change. What's aggressive today might be baseline in six months. We'll adjust quarterly.
+5. **Scorecards evolve.** As [Your Agency] grows, targets will change. What's aggressive today might be baseline in six months. We'll adjust quarterly.
 
 ---
 

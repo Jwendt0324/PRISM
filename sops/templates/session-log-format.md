@@ -30,7 +30,7 @@ version: 2.0
 # Session Log: [Task Name]
 
 ## Task Summary
-1-2 sentences describing what was accomplished. Be specific — "Created 12 articles from Acoustic Shoppe transcripts" not "Did content work."
+1-2 sentences describing what was accomplished. Be specific — "Created 12 articles from [Client — Local Retail Business] transcripts" not "Did content work."
 
 ## Tool Usage Breakdown
 [Auto-captured: tool name and count]
@@ -138,4 +138,4 @@ This enables quick scanning of what's been done without opening each file.
 - **Triangles served:** MAA (learning measurement — every session log captures discoveries, insights, and actions that compound over time)
 - **Human checkpoints:** Task summary reviewed for accuracy; learnings reviewed for SOP update candidates; related SOPs list verified for completeness
 - **Anti-vandalism:** Structured format enforces completeness (date, category, summary, actions, learnings all required); index file maintains audit trail; time estimates enable drift detection; "What Was Learned" section is never empty
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)

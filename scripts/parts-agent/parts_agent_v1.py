@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Parts Lookup Agent for Marcone.com
+Parts Lookup Agent for [Parts Distributor].com
 Reads part numbers from parts_list.csv, searches each on marcone.com,
 and writes pricing/availability results to parts_results.csv.
 """
@@ -148,7 +148,7 @@ def search_part(page, config, part_number):
     search_selectors = config.get("search_selectors", {})
     search_input_sel = search_selectors.get("search_input", "#searchPartOrModel")
     go_button_sel = search_selectors.get("go_button", "#mc-embedded-subscribe")
-    js_function = search_selectors.get("js_search_function", "MyMarcone.Seach.RunSearchPartModelList(1);")
+    js_function = search_selectors.get("js_search_function", "My[Parts Distributor].Seach.RunSearchPartModelList(1);")
 
     try:
         search_input = page.locator(search_input_sel)
@@ -286,7 +286,7 @@ def main():
     # Step 1: Load config
     config = load_config()
     log(f"Config loaded. Target site: {config['marcone_url']}")
-    delay = config.get("delay_between_searches_seconds", 3)
+    delay = config.get("[google-doc-id]", 3)
 
     # Step 2: Load parts list
     parts = load_parts_list()

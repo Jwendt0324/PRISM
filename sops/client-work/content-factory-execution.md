@@ -14,7 +14,7 @@ canon_sources: [02-content-factory-process.md, 05-maa-framework.md, 06-topic-whe
 ## Purpose
 The Content Factory is a systematized 6-stage process to capture, process, distribute, and amplify content across all client channels. Raw material comes from the client's existing activities (speaking, meetings, calls) — the owner produces 1%, the system handles the other 99%.
 
-This SOP follows the canonical BlitzMetrics 6-stage model: **Plumbing → Produce → Process → Post → Promote → Perform**. After initial setup, stages 2-6 run as a continuous loop, with Perform feeding insights back into Process.
+This SOP follows the canonical [Methodology Partner] 6-stage model: **Plumbing → Produce → Process → Post → Promote → Perform**. After initial setup, stages 2-6 run as a continuous loop, with Perform feeding insights back into Process.
 
 ## Canon Compliance
 
@@ -493,7 +493,7 @@ This SOP follows the canonical BlitzMetrics 6-stage model: **Plumbing → Produc
 - Analysis requires human judgment — AI can pull metrics, humans interpret them
 - Strategic pivots are human decisions
 - Client communication about performance and direction
-- Dennis/team lead reviews and pushes back on poor-quality MAA reports
+- [Your Mentor/Advisor]/team lead reviews and pushes back on poor-quality MAA reports
 
 ---
 
@@ -526,7 +526,7 @@ This SOP follows the canonical BlitzMetrics 6-stage model: **Plumbing → Produc
 
 The Content Factory process follows the LDT triangle for team development:
 
-**Learn:** New team members study this SOP and the canon sources. They observe experienced team members executing each stage. They complete the BlitzMetrics MICRO courses relevant to their role.
+**Learn:** New team members study this SOP and the canon sources. They observe experienced team members executing each stage. They complete the [Methodology Partner] MICRO courses relevant to their role.
 
 **Do:** Team members execute each stage under supervision. Minimum 3 successful executions of a stage before they are considered competent. Proof through direct execution — not just understanding.
 

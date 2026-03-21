@@ -1,6 +1,6 @@
-# D3S Service Scheduling Agent
+# [Client — Appliance Repair] Scheduling Agent
 
-Route optimization and scheduling engine for D3S Service (appliance repair).
+Route optimization and scheduling engine for [Client — Appliance Repair] (appliance repair).
 31 technicians, 58 zones, covering East Texas + Oklahoma.
 
 ## Data Sources (ServiceDesk exports)

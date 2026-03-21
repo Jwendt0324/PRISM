@@ -1,4 +1,4 @@
-# Learn, Do, Teach — Implementation Guide (BlitzMetrics Canon)
+# Learn, Do, Teach — Implementation Guide ([Methodology Partner] Canon)
 
 **Source:** 9 Triangles Framework (01-nine-triangles.md), Quality Standards, Human Requirements, Role Scorecards, Onboarding SOPs, AI Apprentice Program
 **Version:** 1.0 | **Created:** 2026-03-20
@@ -7,11 +7,11 @@
 
 ## 1. Purpose
 
-LDT is the BlitzMetrics model for skill development. Every team member and apprentice progresses through Learn, Do, Teach for each skill they acquire. The 9 Triangles canon defines LDT as a triangle but does not explain HOW to implement it. This document fills that gap.
+LDT is the [Methodology Partner] model for skill development. Every team member and apprentice progresses through Learn, Do, Teach for each skill they acquire. The 9 Triangles canon defines LDT as a triangle but does not explain HOW to implement it. This document fills that gap.
 
 A team lead should be able to use this guide to design a training plan for any new skill — from article writing to Dollar-a-Day campaign management to client onboarding.
 
-LDT is not optional. It is how competency is built and verified. Skipping phases is the single most common reason people claim expertise they do not have. Dennis's rule: "You can't teach what you haven't done. You can't do what you haven't learned."
+LDT is not optional. It is how competency is built and verified. Skipping phases is the single most common reason people claim expertise they do not have. [Your Mentor/Advisor]'s rule: "You can't teach what you haven't done. You can't do what you haven't learned."
 
 ---
 
@@ -44,7 +44,7 @@ LDT is not optional. It is how competency is built and verified. Skipping phases
 
 **Format:** Execute the skill with supervision.
 
-**Minimum Reps:** 3 successful executions before advancing. This is the BlitzMetrics standard — proven through the checklist validation rule: "Proven by at least 3 people executing successfully 3 times each."
+**Minimum Reps:** 3 successful executions before advancing. This is the [Methodology Partner] standard — proven through the checklist validation rule: "Proven by at least 3 people executing successfully 3 times each."
 
 **Supervision Model:**
 - **First attempt:** Reviewed in detail by the supervisor. Line-by-line feedback. Every error is a teaching moment.
@@ -57,7 +57,7 @@ LDT is not optional. It is how competency is built and verified. Skipping phases
 
 **Output:** A portfolio of 3+ completed work samples that passed QA. These become reference examples for future learners.
 
-**Example:** Jackson writing his first 3 articles from transcripts. Jack and Dennis reviewed article 1 in detail (caught AI language). Article 2 was spot-checked. Article 3 was reviewed for consistency against the first two. Only after 3 clean articles did he move to independent production.
+**Example:** [Your Content Specialist] writing his first 3 articles from transcripts. [Your Name] and [Your Mentor/Advisor] reviewed article 1 in detail (caught AI language). Article 2 was spot-checked. Article 3 was reviewed for consistency against the first two. Only after 3 clean articles did he move to independent production.
 
 ---
 
@@ -80,7 +80,7 @@ LDT is not optional. It is how competency is built and verified. Skipping phases
 
 **CCS Progression:** This is where LDT and CCS intersect. The teaching output starts as Content (a written explanation or video), gets refined into a Checklist (step-by-step execution guide), and eventually becomes Software (an automated workflow or tool). Not every skill will reach the Software stage, but every skill should reach Checklist.
 
-**Example:** After mastering article writing, Jackson writes an updated version of the Article Writing SOP that includes the pitfalls he discovered and the shortcuts he found. That SOP becomes the Learn material for the next Content Specialist.
+**Example:** After mastering article writing, [Your Content Specialist] writes an updated version of the Article Writing SOP that includes the pitfalls he discovered and the shortcuts he found. That SOP becomes the Learn material for the next Content Specialist.
 
 ---
 
@@ -93,7 +93,7 @@ LDT maps directly to the SBP triangle. Completing LDT cycles is how people advan
 - Has completed LDT for 1-3 specific tasks
 - Can execute reliably from checklists
 - Needs supervision on new task types
-- Typical: new VA, apprentice in first 60 days, Jackson in his first month
+- Typical: new VA, apprentice in first 60 days, [Your Content Specialist] in his first month
 - Course format: MICRO courses — task-specific, checklist-heavy
 
 ### Business (Level 2)
@@ -109,10 +109,10 @@ LDT maps directly to the SBP triangle. Completing LDT cycles is how people advan
 - Has completed LDT for multiple workflows AND has taught others successfully
 - Can design new processes and improve existing ones
 - Can onboard and train new team members
-- Typical: senior team member, leadership track, Dylan-level operations ownership
+- Typical: senior team member, leadership track, [Your Ops Partner]-level operations ownership
 - Course format: Strategy-level courses — case-study based, includes teaching methodology
 
-**Advancement Rule:** Level advancement requires approval from Jack or Dennis. Self-assessment is not sufficient. The Role Scorecards define the quantitative metrics; LDT level defines the qualitative competency.
+**Advancement Rule:** Level advancement requires approval from [Your Name] or [Your Mentor/Advisor]. Self-assessment is not sufficient. The Role Scorecards define the quantitative metrics; LDT level defines the qualitative competency.
 
 ---
 
@@ -128,7 +128,7 @@ Create a simple matrix for each team member. Rows are skills, columns are L/D/T 
 | Article Writing        | done  | done (5/3)| SOP written    | Business   |
 | Dollar-a-Day           | done  | 2/3       | --             | Specialist |
 | Client Onboarding      | done  | done (3/3)| --             | Specialist |
-| MAA Reporting          | done  | done (4/3)| Mentored Dylan | Business   |
+| MAA Reporting          | done  | done (4/3)| Mentored [Your Ops Partner] | Business   |
 | Content Factory (full) | done  | done (3/3)| Course module  | Partner    |
 ```
 
@@ -188,18 +188,18 @@ Every phase of LDT has a mandatory human gate. AI can assist throughout, but the
 
 | Phase | Gate | Who | What They Check |
 |-------|------|-----|-----------------|
-| **LEARN** | Comprehension verification | Direct manager (Jack, Dylan) | Does the person actually understand, or did they just read/watch passively? Can they explain WHY, not just WHAT? |
+| **LEARN** | Comprehension verification | Direct manager ([Your Name], [Your Ops Partner]) | Does the person actually understand, or did they just read/watch passively? Can they explain WHY, not just WHAT? |
 | **DO** | Output quality review | Direct manager + QA reviewer | Do the 3 reps meet quality standards? Are they consistent? Would you publish this without changes? |
-| **TEACH** | Teaching material validation | Jack or Dennis | Is the teaching artifact accurate? Complete? Good enough for someone else to Learn from? Does it match the canon? |
-| **Level advancement** | Promotion approval | Jack or Dennis | Has the person earned the next level through demonstrated LDT completion across sufficient skills? |
+| **TEACH** | Teaching material validation | [Your Name] or [Your Mentor/Advisor] | Is the teaching artifact accurate? Complete? Good enough for someone else to Learn from? Does it match the canon? |
+| **Level advancement** | Promotion approval | [Your Name] or [Your Mentor/Advisor] | Has the person earned the next level through demonstrated LDT completion across sufficient skills? |
 
-**Why humans, not AI:** AI can check mechanical quality (formatting, spelling, structure). It cannot assess true comprehension, voice authenticity, strategic judgment, or teaching effectiveness. These are the exact areas where Dennis has pushed back hardest — the Jackson AI language incident proved that automated checks miss what a trained human eye catches.
+**Why humans, not AI:** AI can check mechanical quality (formatting, spelling, structure). It cannot assess true comprehension, voice authenticity, strategic judgment, or teaching effectiveness. These are the exact areas where [Your Mentor/Advisor] has pushed back hardest — the [Your Content Specialist] AI language incident proved that automated checks miss what a trained human eye catches.
 
 ---
 
 ## 7. Canon Compliance
 
-This document maps to the following BlitzMetrics triangles:
+This document maps to the following [Methodology Partner] triangles:
 
 | Triangle | How It Maps |
 |----------|-------------|

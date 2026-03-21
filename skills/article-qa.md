@@ -1,7 +1,7 @@
 ---
 name: Article QA
 version: 1.1
-description: Run the BlitzMetrics 18-step article quality gate on any article
+description: Run the [Methodology Partner] 18-step article quality gate on any article
 triggers:
   - article QA
   - article quality check
@@ -9,7 +9,7 @@ triggers:
   - 18-step gate
   - proofread article
   - article review
-  - Dennis review
+  - [Your Mentor/Advisor] review
 canon_source: blitzmetrics-canon/03-article-guidelines.md
 full_sop: sops/client-work/article-qa-blitzmetrics.md
 triangles: [CCS, MAA, LDT]
@@ -94,7 +94,7 @@ Publication Decision:
 - 18/18 PASS = Ready to publish
 - Any PARTIAL = Fix before publishing
 - Any FAIL = Must fix, cannot publish
-- NEEDS HUMAN = Route to Jack
+- NEEDS HUMAN = Route to [Your Name]
 ```
 
 ## Meta-Article (Generate After QA)

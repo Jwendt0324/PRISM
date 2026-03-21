@@ -1,5 +1,5 @@
 {
-  "name": "Marcone",
+  "name": "[Parts Distributor]",
   "code": "MC",
   "base_url": "https://my.marcone.com",
   "login": {
@@ -22,7 +22,7 @@
     "input_selector": "#searchPartOrModel",
     "submit_selector": "#mc-embedded-subscribe",
     "submit_method": "click",
-    "js_fallback": "MyMarcone.Seach.RunSearchPartModelList(1);",
+    "js_fallback": "My[Parts Distributor].Seach.RunSearchPartModelList(1);",
     "wait_after_submit_seconds": 3
   },
   "results": {

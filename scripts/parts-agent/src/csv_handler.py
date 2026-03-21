@@ -44,7 +44,7 @@ class CSVHandler:
         Args:
             log_fn: callable for logging
             project_root: Path to parts-agent/
-            vendor_code: distributor code for output (e.g. "MC" for Marcone)
+            vendor_code: distributor code for output (e.g. "MC" for [Parts Distributor])
         """
         self.log = log_fn
         self.project_root = Path(project_root)

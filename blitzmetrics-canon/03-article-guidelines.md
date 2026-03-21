@@ -1,13 +1,13 @@
-# Article Quality Guidelines — BlitzMetrics Canon
+# Article Quality Guidelines — [Methodology Partner] Canon
 
-**Source:** blitzmetrics.com/blog-posting-guidelines/, Master Content Factory Guides, Article QA processes
+**Source:** [methodology-partner.com]/blog-posting-guidelines/, Master Content Factory Guides, Article QA processes
 **Version:** 1.0 | **Extracted:** 2026-03-19
 
 ---
 
 ## Overview
 
-Every article produced must pass this quality checklist before being marked "done." This is the canonical standard from BlitzMetrics, adapted for use with AI-assisted content creation.
+Every article produced must pass this quality checklist before being marked "done." This is the canonical standard from [Methodology Partner], adapted for use with AI-assisted content creation.
 
 ---
 

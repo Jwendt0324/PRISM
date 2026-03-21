@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-D3S Parts Pricing Agent — Production Entry Point
+[Client — Appliance Repair] Parts Pricing Agent — Production Entry Point
 
 Usage:
     python3 run.py                          # Process all active parts from PrtsPrcs
@@ -33,7 +33,7 @@ from src.binary_parser import BinaryParser
 
 def main():
     parser = argparse.ArgumentParser(
-        description="D3S Parts Pricing Agent — Production"
+        description="[Client — Appliance Repair] Parts Pricing Agent — Production"
     )
     parser.add_argument(
         "--test", type=int, metavar="N",
@@ -65,7 +65,7 @@ def main():
     )
     parser.add_argument(
         "--parse-only", action="store_true",
-        help="Only parse PrtsPrcs and save CSV, don't do Marcone lookups"
+        help="Only parse PrtsPrcs and save CSV, don't do [Parts Distributor] lookups"
     )
     parser.add_argument(
         "--port", type=int, default=8050,

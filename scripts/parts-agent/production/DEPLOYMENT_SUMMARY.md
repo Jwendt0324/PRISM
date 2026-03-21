@@ -1,4 +1,4 @@
-# D3S Parts Agent Deployment Summary
+# [Client — Appliance Repair] Parts Agent Deployment Summary
 
 ## Status: PARTIALLY COMPLETE
 
@@ -9,10 +9,10 @@ A PowerShell deployment script has been generated with the first 8 files fully i
 The script `/sessions/kind-practical-sagan/mnt/scripts/parts-agent/production/deploy_files.ps1` includes:
 
 1. ✓ `config/config.json` - Main configuration
-2. ✓ `config/distributors/marcone.json` - Marcone distributor settings
+2. ✓ `config/distributors/marcone.json` - [Parts Distributor] distributor settings
 3. ✓ `src/__init__.py` - Empty module init
 4. ✓ `src/binary_parser.py` - PrtsPrcs binary file parser (303 lines)
-5. ✓ `src/scraper.py` - Web scraper for Marcone (211 lines)
+5. ✓ `src/scraper.py` - Web scraper for [Parts Distributor] (211 lines)
 6. ✓ `src/session_manager.py` - Browser session management (212 lines)
 7. ✓ `src/rate_limiter.py` - Rate limiting and retry logic (120 lines)
 8. ✓ `src/resume_engine.py` - Crash recovery engine (123 lines)
@@ -27,7 +27,7 @@ These larger files should be copied directly or generated separately:
 10. **src/dashboard.py** (260 lines) - HTTP dashboard server
     - Source: `/sessions/kind-practical-sagan/mnt/scripts/parts-agent/production/src/dashboard.py`
 
-11. **src/rss_key.py** (160 lines) - RSS Key authentication for Rossware
+11. **src/rss_key.py** (160 lines) - RSS Key authentication for [Field Service Platform]
     - Source: `/sessions/kind-practical-sagan/mnt/scripts/parts-agent/production/src/rss_key.py`
 
 12. **src/rdp_fetch.py** (238 lines) - RDP file fetcher for PrtsPrcs

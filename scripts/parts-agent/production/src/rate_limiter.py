@@ -24,7 +24,7 @@ class RateLimiter:
 
     def __init__(self, config, log_fn):
         self.log = log_fn
-        self.delay = config.get("delay_between_searches_seconds", 2)
+        self.delay = config.get("[google-doc-id]", 2)
         self.max_retries = config.get("max_retries", 4)
         self.abort_threshold_pct = config.get("error_abort_threshold_pct", 50)
         self.rate_limit_pause_minutes = config.get("rate_limit_pause_minutes", 5)

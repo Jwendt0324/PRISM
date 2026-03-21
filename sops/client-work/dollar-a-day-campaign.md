@@ -607,7 +607,7 @@ This keeps audience fresh while maintaining proven winners.
 - **Triangles served:** ACC — three phases map directly to Awareness (Phase 1 testing reach), Consideration (Phase 2 scaling engagement), Conversion (Phase 3 evergreen lead generation); MAA — daily/weekly metrics tracking, analysis of CPC/CTR/CPA trends, action decisions (kill/keep/scale); GCT — Phase 0 starts with goals (organic success metrics), content (asset selection), targeting (audience setup)
 - **Human checkpoints:** Content selection requires human judgment on organic performance; daily kill/keep decisions on ad variations; Phase 2 to Phase 3 promotion decision; monthly evergreen review and rotation decisions; sentiment monitoring in comments
 - **Anti-vandalism:** Hard kill rules (CPC > $2.50, CTR < 1.5%) prevent emotional spend decisions; organic performance thresholds gate entry to paid promotion; monthly ROAS review prevents budget creep; 7-day minimum test windows prevent premature kills
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

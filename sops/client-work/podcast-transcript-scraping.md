@@ -16,7 +16,7 @@ Download and transcribe podcast episodes from RSS feeds when YouTube transcripts
 
 ## When to Use
 - Client has a podcast on Podbean that needs transcripts pulled
-- Jack says "pull transcripts from [podcast name] on Podbean"
+- [Your Name] says "pull transcripts from [podcast name] on Podbean"
 - YouTube channel has already been scraped and podcast episodes contain unique content not on YouTube
 
 ## Process
@@ -61,18 +61,18 @@ Download and transcribe podcast episodes from RSS feeds when YouTube transcripts
 
 ## Common Pitfalls
 
-- **ffmpeg not installed.** Whisper silently fails or throws opaque errors without it. Always `brew install ffmpeg` first. This cost 45 minutes of debugging on the Ryan D. Lee project.
+- **ffmpeg not installed.** Whisper silently fails or throws opaque errors without it. Always `brew install ffmpeg` first. This cost 45 minutes of debugging on the [KP Sprint Client] project.
 - **Whisper FP16 warning on CPU.** "FP16 is not supported on CPU; using FP32 instead" is normal and harmless. It just means slower processing. Ignore it.
 - **SSL cert errors behind VPN.** Add the `ssl._create_unverified_context` fix. This blocked the initial run of the Passive Income Machine scraper.
 - **RSS feed pagination.** Some Podbean feeds only return 20-50 episodes. Check if there are `<link rel="next">` pagination links. The Passive Income Machine feed returned all 45 episodes without pagination.
-- **Most podcast episodes duplicate YouTube content.** On the Ryan D. Lee project, 44 of 45 Podbean episodes matched existing YouTube video transcripts. Always cross-reference before writing articles to avoid SEO cannibalization.
+- **Most podcast episodes duplicate YouTube content.** On the [KP Sprint Client] project, 44 of 45 Podbean episodes matched existing YouTube video transcripts. Always cross-reference before writing articles to avoid SEO cannibalization.
 
 ## Human Gates
 | Step | Gate Type | Reason |
 |------|-----------|--------|
-| Initiation — Jack specifies podcast and platform | Execute | Human decides which podcast to scrape and scope of work |
+| Initiation — [Your Name] specifies podcast and platform | Execute | Human decides which podcast to scrape and scope of work |
 | Cross-reference against YouTube (Step 9) | Review | Determining duplicate vs. unique content requires human judgment |
-| Article writing decisions from overlap analysis | Approve | Jack decides which unique episodes are worth writing about |
+| Article writing decisions from overlap analysis | Approve | [Your Name] decides which unique episodes are worth writing about |
 
 ## Anti-Vandalism Checks
 - [ ] Cross-reference podcast episodes against existing YouTube transcripts before writing articles
@@ -84,9 +84,9 @@ Download and transcribe podcast episodes from RSS feeds when YouTube transcripts
 
 - **Canon source:** 02-content-factory-process.md (Stage 2: Process) — podcast transcription is parallel to YouTube transcript scraping as a content processing step
 - **Triangles served:** CCS — Content (podcast audio as raw input), Checklist (9-step process with cross-reference validation), Software (Whisper, ffmpeg, RSS parsing)
-- **Human checkpoints:** Jack initiates scraping by specifying podcast and platform; cross-referencing against YouTube transcripts requires human judgment on duplicate vs. unique content; article writing decisions based on overlap analysis
+- **Human checkpoints:** [Your Name] initiates scraping by specifying podcast and platform; cross-referencing against YouTube transcripts requires human judgment on duplicate vs. unique content; article writing decisions based on overlap analysis
 - **Anti-vandalism:** Progress file prevents re-processing on restart; 5-line header on every transcript ensures traceability; cross-reference step against YouTube prevents duplicate article creation and SEO cannibalization
-- **Last audited:** 2026-03-20 (BlitzMetrics Canon Alignment run)
+- **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
 

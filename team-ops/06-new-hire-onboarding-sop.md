@@ -1,19 +1,19 @@
 ---
-description: Standard onboarding process for every new hire at {{COMPANY_NAME}}, from pre-arrival through 60-day evaluation
+description: Standard onboarding process for every new hire at [Your Agency Name], from pre-arrival through 60-day evaluation
 title: "New Hire Onboarding SOP"
-owner: {{OWNER_NAME}}
+owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
 version: 1.0
 status: active
 category: team-ops
-applies_to: All new hires at {{COMPANY_NAME}}
+applies_to: All new hires at [Your Agency Name]
 skill_linked: Yes
 ---
 
-# New Hire Onboarding SOP — {{COMPANY_NAME}}
+# New Hire Onboarding SOP — [Your Agency Name]
 
-This is the standard onboarding process for every person who joins {{COMPANY}}. No shortcuts. No "we'll get to it later." Every step here exists because skipping it costs more time than doing it.
+This is the standard onboarding process for every person who joins [Your Agency]. No shortcuts. No "we'll get to it later." Every step here exists because skipping it costs more time than doing it.
 
 Based on real onboarding experience. Improved where it needed improving.
 
@@ -23,26 +23,26 @@ Based on real onboarding experience. Improved where it needed improving.
 
 **Timeline:** Complete at least 2 business days before the new hire's start date.
 
-### {{OWNER_NAME}}'s Responsibilities
+### [Your Name]'s Responsibilities
 
-- [ ] Notify {{OPS_ADMIN_NAME}} and {{OPS_PARTNER_NAME}} that a new hire is joining. Include:
+- [ ] Notify [Your Ops Admin] and [Your Ops Partner] that a new hire is joining. Include:
   - Name
   - Start date
   - Role (Content Specialist, Operations, Sales/BD)
-  - Email address to provision (firstname@{{COMPANY_DOMAIN}})
+  - Email address to provision (firstname@[your-agency.com])
   - Which tools they need (see Tool Access Checklist below — check all that apply to the role)
 - [ ] Write a welcome message (see Day 1 below) and have it ready to send on Day 1
 - [ ] Create a Basecamp project or thread for the new hire's onboarding — track their progress there, not in email
 - [ ] Assign a "first deliverable" task so they have real work waiting on Day 2
 
-### {{OPS_ADMIN_NAME}}'s Responsibilities
+### [Your Ops Admin]'s Responsibilities
 
 - [ ] Provision all tool access from the checklist (see below)
 - [ ] Prepare a single credentials email with ALL access in one message — not scattered across five separate emails
 - [ ] Add new hire to the Team Roster spreadsheet
-- [ ] Confirm everything is provisioned and reply to {{OWNER_NAME}} with "Access ready" before Day 1
+- [ ] Confirm everything is provisioned and reply to [Your Name] with "Access ready" before Day 1
 
-### {{OPS_PARTNER_NAME}}'s Responsibilities
+### [Your Ops Partner]'s Responsibilities
 
 - [ ] Review the role and flag any process documentation that needs updating before the new hire starts reading it
 - [ ] Prepare the first MAA template for the new hire so they know the format from Week 1
@@ -55,29 +55,29 @@ Based on real onboarding experience. Improved where it needed improving.
 
 ### Morning
 
-1. **{{OWNER_NAME}} sends the welcome email.** One message. Contains:
-   - Welcome message (personal, not corporate — see {{OWNER_NAME}}son's kit for an example)
+1. **[Your Name] sends the welcome email.** One message. Contains:
+   - Welcome message (personal, not corporate — see [Your Content Specialist]'s kit for an example)
    - Their role and what they own
-   - Who to contact for what ({{OWNER_NAME}} for work, {{OPS_ADMIN_NAME}} for access, {{OPS_PARTNER_NAME}} for process, {{ADVISOR_NAME}} for quality)
+   - Who to contact for what ([Your Name] for work, [Your Ops Admin] for access, [Your Ops Partner] for process, [Your Mentor/Advisor] for quality)
    - Link to the Team OS Overview (00-team-os-overview.md)
    - Link to this onboarding SOP so they can track their own progress
 
-2. **{{OPS_ADMIN_NAME}} sends the credentials email.** One message. Contains:
+2. **[Your Ops Admin] sends the credentials email.** One message. Contains:
    - Every tool login, organized in a clean list (see Tool Access Checklist)
    - Instructions for changing passwords on first login
    - Who to contact if any access doesn't work
 
-3. **New hire confirms all tool access works.** They log into every tool and confirm in Basecamp. If something is broken, {{OPS_ADMIN_NAME}} fixes it same-day.
+3. **New hire confirms all tool access works.** They log into every tool and confirm in Basecamp. If something is broken, [Your Ops Admin] fixes it same-day.
 
 ### Afternoon
 
-4. **Basecamp orientation.** {{OWNER_NAME}} or {{OPS_PARTNER_NAME}} walks the new hire through:
+4. **Basecamp orientation.** [Your Name] or [Your Ops Partner] walks the new hire through:
    - How Basecamp projects are structured
    - Where to post EOD reports
    - Where to find their assigned tasks
    - How to search for existing threads and docs
 
-5. **Meet the team introductions.** {{OWNER_NAME}} sends a Basecamp message introducing the new hire to the team. New hire posts a brief intro (who they are, what they're excited about, one thing people should know about them).
+5. **Meet the team introductions.** [Your Name] sends a Basecamp message introducing the new hire to the team. New hire posts a brief intro (who they are, what they're excited about, one thing people should know about them).
 
 6. **Required reading assigned.** Based on role type (see Required Reading section below). New hire is expected to complete all reading by end of Day 3.
 
@@ -85,10 +85,10 @@ Based on real onboarding experience. Improved where it needed improving.
 
 ## Day 2-3
 
-**Goal:** New hire understands how {{COMPANY}} operates and has started their first task.
+**Goal:** New hire understands how [Your Agency] operates and has started their first task.
 
 - [ ] Complete all required reading (SOPs, Team OS docs, Communication Protocol)
-- [ ] Shadow {{OWNER_NAME}} on a client call or working session (content production, client check-in, or Sprint work — whatever is happening that day)
+- [ ] Shadow [Your Name] on a client call or working session (content production, client check-in, or Sprint work — whatever is happening that day)
 - [ ] First small task assigned and started:
   - Content Specialist: Write one article from a transcript
   - Operations: Set up one process tracker or audit an existing checklist
@@ -101,11 +101,11 @@ Based on real onboarding experience. Improved where it needed improving.
 
 **Goal:** First deliverable submitted for review. New hire is in the rhythm.
 
-- [ ] Complete first deliverable and submit for QA review ({{OWNER_NAME}} reviews, {{ADVISOR_NAME}} reviews if content)
+- [ ] Complete first deliverable and submit for QA review ([Your Name] reviews, [Your Mentor/Advisor] reviews if content)
 - [ ] Receive feedback and revise — this is a learning loop, not a pass/fail test
 - [ ] Attend weekly standup (Tuesday, 30 min)
 - [ ] Attend AI Apprentice Office Hours (Thursday, 2:00 PM PST) — even if not in the Apprentice program, this is required for culture and methodology exposure
-- [ ] Submit first MAA report (Friday) using the template {{OPS_PARTNER_NAME}} provides
+- [ ] Submit first MAA report (Friday) using the template [Your Ops Partner] provides
 - [ ] Post EOD reports every day without being reminded
 
 ---
@@ -114,9 +114,9 @@ Based on real onboarding experience. Improved where it needed improving.
 
 **Goal:** First independent deliverable. Feedback loop tightens.
 
-- [ ] Produce first deliverable without hand-holding — {{OWNER_NAME}} reviews but shouldn't need to rewrite
+- [ ] Produce first deliverable without hand-holding — [Your Name] reviews but shouldn't need to rewrite
 - [ ] Attend all scheduled meetings (standup, Office Hours)
-- [ ] Feedback session with {{OWNER_NAME}} (15-30 min, 1:1):
+- [ ] Feedback session with [Your Name] (15-30 min, 1:1):
   - What's working
   - What's confusing
   - What tools or processes need clarification
@@ -132,7 +132,7 @@ Based on real onboarding experience. Improved where it needed improving.
 
 - [ ] Carrying a full task load appropriate to the role
 - [ ] Producing deliverables that pass QA with minimal revision
-- [ ] Proactively picking up work from the pipeline — not waiting for {{OWNER_NAME}} to assign everything
+- [ ] Proactively picking up work from the pipeline — not waiting for [Your Name] to assign everything
 - [ ] Familiar with all relevant SOPs and following them without reminders
 - [ ] Attending all meetings and submitting all reports on time
 
@@ -140,7 +140,7 @@ Based on real onboarding experience. Improved where it needed improving.
 
 ## 30-Day Check-In
 
-{{OWNER_NAME}} conducts a 30-minute 1:1 with the new hire. Use this template:
+[Your Name] conducts a 30-minute 1:1 with the new hire. Use this template:
 
 ### 30-Day Check-In Template
 
@@ -166,7 +166,7 @@ Based on real onboarding experience. Improved where it needed improving.
 **4. New Hire's Questions / Concerns**
 - (Let them talk. Write down what they say.)
 
-**5. {{OWNER_NAME}}'s Feedback**
+**5. [Your Name]'s Feedback**
 - What's going well:
 - What needs to improve:
 - Adjusted expectations for Days 31-60:
@@ -184,8 +184,8 @@ At 60 days, the new hire should meet ALL of the following. If they don't, it's a
 
 ### Content Specialist
 - [ ] Produces articles independently — no revision cycles longer than 1 round
-- [ ] No AI-generated language detected by {{ADVISOR_NAME}} or {{OPS_PARTNER_NAME}} in any deliverable
-- [ ] Manages a content calendar without daily direction from {{OWNER_NAME}}
+- [ ] No AI-generated language detected by [Your Mentor/Advisor] or [Your Ops Partner] in any deliverable
+- [ ] Manages a content calendar without daily direction from [Your Name]
 - [ ] Produces 10+ content pieces per week (articles, videos, social posts combined)
 - [ ] Submits EOD and MAA reports 100% of the time
 - [ ] Can explain the Content Factory methodology to someone else
@@ -194,13 +194,13 @@ At 60 days, the new hire should meet ALL of the following. If they don't, it's a
 - [ ] Manages project timelines independently in Basecamp
 - [ ] Has improved at least one process or SOP based on direct experience
 - [ ] Handles client intake without errors
-- [ ] Coordinates cross-timezone handoffs smoothly (especially with {{OPS_ADMIN_NAME}})
+- [ ] Coordinates cross-timezone handoffs smoothly (especially with [Your Ops Admin])
 - [ ] Submits all reports on time
 
 ### Sales/BD
 - [ ] Has generated qualified leads using the KP Sprint framework
-- [ ] Can deliver the {{COMPANY}} pitch without a script
-- [ ] Manages prospect pipeline in whatever system {{OWNER_NAME}} designates
+- [ ] Can deliver the [Your Agency] pitch without a script
+- [ ] Manages prospect pipeline in whatever system [Your Name] designates
 - [ ] Follows up on leads within 24 hours, every time
 - [ ] Submits all reports on time
 
@@ -212,24 +212,24 @@ Every tool, who grants access, and which roles need it.
 
 | Tool | Who Grants Access | Content | Ops | Sales | Notes |
 |------|-------------------|---------|-----|-------|-------|
-| **Basecamp** | {{OPS_ADMIN_NAME}} | Yes | Yes | Yes | System of record. Everyone gets this. |
-| **Google Workspace email** (firstname@{{COMPANY_DOMAIN}}) | {{OWNER_NAME}} requests, {{OPS_ADMIN_NAME}} provisions | Yes | Yes | Yes | Primary work email. |
-| **Shared Google Drive** | {{OPS_ADMIN_NAME}} provides link | Yes | Yes | Yes | All shared files, templates, client assets. |
-| **Descript** (shared account: access@{{PLATFORM_DOMAIN}}) | {{OPS_ADMIN_NAME}} provides credentials | Yes | No | No | Video/audio editing and transcription. |
-| **WP Engine / WP Admin** (highriseinfluence.net) | {{OPS_ADMIN_NAME}} | Yes | Yes | No | Website management. |
-| **WP Admin** (localservicespotlight.com) | {{OPS_ADMIN_NAME}} | Yes | Yes | No | LSS site management. |
-| **YouTube channels** | {{OPS_ADMIN_NAME}} grants channel access | Yes | No | No | Publishing and analytics. |
-| **Facebook group** (facebook.com/groups/highriseacademy) | {{OPS_ADMIN_NAME}} adds as member | Yes | Yes | Yes | Community engagement. |
-| **Content Factory Academy** (academy.yourcontentfactory.com) | {{OPS_ADMIN_NAME}} | Yes | No | No | Training and methodology resources. |
-| **Team Roster spreadsheet** | {{OPS_ADMIN_NAME}} provides link | Yes | Yes | Yes | Team contact info and roles. |
-| **Access email** (access@{{PLATFORM_DOMAIN}}) | {{OPS_ADMIN_NAME}} provides credentials | Yes | Yes | No | Shared access for various tools. |
-| **EOD Submission link** | {{OPS_ADMIN_NAME}} provides | Yes | Yes | Yes | Daily report submission. |
+| **Basecamp** | [Your Ops Admin] | Yes | Yes | Yes | System of record. Everyone gets this. |
+| **Google Workspace email** (firstname@[your-agency.com]) | [Your Name] requests, [Your Ops Admin] provisions | Yes | Yes | Yes | Primary work email. |
+| **Shared Google Drive** | [Your Ops Admin] provides link | Yes | Yes | Yes | All shared files, templates, client assets. |
+| **Descript** (shared account: access@[partner-platform.com]) | [Your Ops Admin] provides credentials | Yes | No | No | Video/audio editing and transcription. |
+| **WP Engine / WP Admin** ([your-agency.com]) | [Your Ops Admin] | Yes | Yes | No | Website management. |
+| **WP Admin** ([partner-platform.com]) | [Your Ops Admin] | Yes | Yes | No | [Partner Platform] site management. |
+| **YouTube channels** | [Your Ops Admin] grants channel access | Yes | No | No | Publishing and analytics. |
+| **Facebook group** (facebook.com/groups/highriseacademy) | [Your Ops Admin] adds as member | Yes | Yes | Yes | Community engagement. |
+| **Content Factory Academy** (academy.[content-platform.com]) | [Your Ops Admin] | Yes | No | No | Training and methodology resources. |
+| **Team Roster spreadsheet** | [Your Ops Admin] provides link | Yes | Yes | Yes | Team contact info and roles. |
+| **Access email** (access@[partner-platform.com]) | [Your Ops Admin] provides credentials | Yes | Yes | No | Shared access for various tools. |
+| **EOD Submission link** | [Your Ops Admin] provides | Yes | Yes | Yes | Daily report submission. |
 
 ### Access Delivery Rules
 
-1. **One email, all credentials.** {{OPS_ADMIN_NAME}} sends a single organized email — not five separate messages over three days.
+1. **One email, all credentials.** [Your Ops Admin] sends a single organized email — not five separate messages over three days.
 2. **Confirmation required.** New hire must log into every tool and confirm it works in Basecamp on Day 1.
-3. **Broken access = same-day fix.** If a login doesn't work, {{OPS_ADMIN_NAME}} resolves it within the same business day.
+3. **Broken access = same-day fix.** If a login doesn't work, [Your Ops Admin] resolves it within the same business day.
 4. **Passwords changed on first login.** Any shared credentials should be updated by the new hire immediately. Don't leave default passwords active.
 
 ---
@@ -250,7 +250,7 @@ Assign on Day 1. Due by end of Day 3. New hire confirms completion in Basecamp.
 1. Team OS Overview (00-team-os-overview.md)
 2. Communication Protocol (02-communication-protocol.md)
 3. Knowledge Panel Sprint SOP
-4. {{COMPANY}} Offer Ladder & GTM Blueprint
+4. [Your Agency] Offer Ladder & GTM Blueprint
 5. File Organization Rules
 6. Client Intake Process (when available)
 
@@ -258,7 +258,7 @@ Assign on Day 1. Due by end of Day 3. New hire confirms completion in Basecamp.
 1. Team OS Overview (00-team-os-overview.md)
 2. Communication Protocol (02-communication-protocol.md)
 3. Knowledge Panel Sprint SOP
-4. {{COMPANY}} Offer Ladder & GTM Blueprint
+4. [Your Agency] Offer Ladder & GTM Blueprint
 5. Influence Report Card SOP (understand what we deliver)
 6. Dollar-a-Day Campaign SOP
 
@@ -270,12 +270,12 @@ These are real patterns. Not theoretical.
 
 | Failure | Prevention |
 |---------|-----------|
-| Tool access delivered piecemeal over a week | {{OPS_ADMIN_NAME}} sends ALL access in one email, pre-Day 1 |
+| Tool access delivered piecemeal over a week | [Your Ops Admin] sends ALL access in one email, pre-Day 1 |
 | New hire doesn't know who to ask for what | Welcome email explicitly maps person to function |
-| First deliverable has no feedback for 3+ days | {{OWNER_NAME}} commits to reviewing first deliverable within 24 hours |
+| First deliverable has no feedback for 3+ days | [Your Name] commits to reviewing first deliverable within 24 hours |
 | New hire reads docs but never gets real work | First task assigned on Day 1, due by Day 3 |
-| EOD reports start strong then stop | {{OWNER_NAME}} checks for missing EODs daily during first 2 weeks and follows up immediately |
-| New hire uses AI-generated language | Article QA SOP is required reading; {{ADVISOR_NAME}} and {{OPS_PARTNER_NAME}} review early work |
+| EOD reports start strong then stop | [Your Name] checks for missing EODs daily during first 2 weeks and follows up immediately |
+| New hire uses AI-generated language | Article QA SOP is required reading; [Your Mentor/Advisor] and [Your Ops Partner] review early work |
 | Communication happens in email instead of Basecamp | Redirect to Basecamp every single time until the habit sticks |
 
 ---
@@ -284,4 +284,4 @@ These are real patterns. Not theoretical.
 
 _Updated as each onboarding teaches us something new._
 
-- **2026-03-18 (v1.0):** Initial SOP written based on {{TEAM_MEMBER_NAME}}'s onboarding (started Feb 25, 2026). {{OPS_ADMIN_NAME}}'s credentials email on Mar 6 was comprehensive but came 9 days after start date. Key improvement: all access must be provisioned BEFORE Day 1, not after. Also: one consolidated email beats multiple scattered messages.
+- **2026-03-18 (v1.0):** Initial SOP written based on [Your Content Specialist]'s onboarding (started Feb 25, 2026). [Your Ops Admin]'s credentials email on Mar 6 was comprehensive but came 9 days after start date. Key improvement: all access must be provisioned BEFORE Day 1, not after. Also: one consolidated email beats multiple scattered messages.

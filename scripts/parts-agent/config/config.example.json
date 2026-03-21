@@ -3,7 +3,7 @@
   "username": "YOUR_USERNAME_HERE",
   "password": "YOUR_PASSWORD_HERE",
   "headless": false,
-  "delay_between_searches_seconds": 2,
+  "[google-doc-id]": 2,
   "max_retries": 4,
   "error_abort_threshold_pct": 50,
   "rate_limit_pause_minutes": 5,

@@ -1,9 +1,9 @@
 """
-RSS Key Authenticator — Authenticates with Rossware's RSS Key service.
+RSS Key Authenticator — Authenticates with [Field Service Platform]'s RSS Key service.
 
-The RSS Key (key.rossware.com) is Rossware's IP-based access control.
+The RSS Key ([auth-server.example.com]) is [Field Service Platform]'s IP-based access control.
 When you authenticate, it whitelists your current IP address so you
-can RDP into the Rossware hosting server.
+can RDP into the [Field Service Platform] hosting server.
 
 Auth flow (reverse-engineered from the React SPA):
 1. GET /v3/getbusinesstoken?business_id=X&business_password=Y&no_expire=true
@@ -20,11 +20,11 @@ import urllib.parse
 import urllib.error
 
 
-API_BASE = "https://api.rossware.com"
+API_BASE = "https://api.[field-service-platform.com]"
 
 
 class RSSKeyAuth:
-    """Handles RSS Key authentication to whitelist IP for Rossware RDP."""
+    """Handles RSS Key authentication to whitelist IP for [Field Service Platform] RDP."""
 
     def __init__(self, config, log_fn):
         """
@@ -63,7 +63,7 @@ class RSSKeyAuth:
         return success
 
     def _get_business_token(self):
-        """Get a bearer token from the Rossware API.
+        """Get a bearer token from the [Field Service Platform] API.
 
         GET /v3/getbusinesstoken?business_id=X&business_password=Y&no_expire=true
         """

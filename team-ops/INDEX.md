@@ -1,6 +1,6 @@
 # Team Operating System — Master Index
 
-**Owner:** {{OWNER_NAME}}
+**Owner:** [Your Name]
 **Created:** 2026-03-18
 **Last Updated:** 2026-03-18
 
@@ -8,7 +8,7 @@
 
 ## What This Is
 
-The Team OS is {{COMPANY}}'s operating manual. If you're new, start with 00 and read sequentially. If you need something specific, use this index.
+The Team OS is [Your Agency]'s operating manual. If you're new, start with 00 and read sequentially. If you need something specific, use this index.
 
 ---
 
@@ -16,14 +16,14 @@ The Team OS is {{COMPANY}}'s operating manual. If you're new, start with 00 and 
 
 | # | Document | What It Covers |
 |---|----------|---------------|
-| 00 | [team-os-overview.md](00-team-os-overview.md) | Master doc — how {{COMPANY}} operates, mission, team structure, work flow |
+| 00 | [team-os-overview.md](00-team-os-overview.md) | Master doc — how [Your Agency] operates, mission, team structure, work flow |
 | 01 | [team-directory.md](01-team-directory.md) | Every person, role, contact info, KPIs |
 | 02 | [communication-protocol.md](02-communication-protocol.md) | Channels, response times, who gets looped on what |
 | 03 | [decision-rights-matrix.md](03-decision-rights-matrix.md) | RACI — who approves what, escalation paths |
 | 04 | [meeting-cadence.md](04-meeting-cadence.md) | All recurring meetings, agendas, templates |
-| 05 | [delegation-framework.md](05-delegation-framework.md) | What {{OWNER_NAME}} owns vs delegates, handoff protocols |
+| 05 | [delegation-framework.md](05-delegation-framework.md) | What [Your Name] owns vs delegates, handoff protocols |
 | 06 | [new-hire-onboarding-sop.md](06-new-hire-onboarding-sop.md) | Generic onboarding SOP for any new hire |
-| 07 | [jackson-onboarding-kit.md](07-jackson-onboarding-kit.md) | {{TEAM_MEMBER_NAME}}'s specific onboarding package |
+| 07 | [jackson-onboarding-kit.md](07-jackson-onboarding-kit.md) | [Your Content Specialist]'s specific onboarding package |
 | 08 | [role-scorecards.md](08-role-scorecards.md) | KPIs and success metrics for every role |
 | 09 | [tool-stack-and-access.md](09-tool-stack-and-access.md) | Every tool, who has access, how to get access |
 | 10 | [project-management-sop.md](10-project-management-sop.md) | KP Sprint delivery from intake to case study |
@@ -36,8 +36,8 @@ The Team OS is {{COMPANY}}'s operating manual. If you're new, start with 00 and 
 
 | Document | Purpose |
 |----------|---------|
-| [jackson-welcome-email.md](jackson-welcome-email.md) | Welcome email for {{OWNER_NAME}}son — ready to send |
-| [jackson-team-announcement.md](jackson-team-announcement.md) | Team announcement for {{OWNER_NAME}}son — ready to send |
+| [jackson-welcome-email.md](jackson-welcome-email.md) | Welcome email for [Your Content Specialist] — ready to send |
+| [jackson-team-announcement.md](jackson-team-announcement.md) | Team announcement for [Your Content Specialist] — ready to send |
 
 ## Cross-Reference
 
@@ -51,9 +51,9 @@ The Team OS is {{COMPANY}}'s operating manual. If you're new, start with 00 and 
 
 **New team member:** Read 00 → 01 → 02 → your role in 08 → relevant SOPs in 10/11.
 
-**{{OWNER_NAME}} (daily):** Reference 05 (delegation) and 03 (decisions) when assigning work.
+**[Your Name] (daily):** Reference 05 (delegation) and 03 (decisions) when assigning work.
 
-**Hiring someone:** Follow 06 (generic onboarding) and customize like 07 ({{OWNER_NAME}}son's kit).
+**Hiring someone:** Follow 06 (generic onboarding) and customize like 07 ([Your Content Specialist]'s kit).
 
 **Something broke:** Go to 12 (escalation playbook).
 
