@@ -24,3 +24,5 @@ content-audit/
 .idea/
 *.swp
 *.swo
+scripts/scrub-pii.py
+scripts/scrub-pass2.py

@@ -12,7 +12,7 @@ canon_sources: [06-topic-wheel.md, 02-content-factory-process.md]
 # Personal Brand Site Build
 
 ## Purpose
-The personal brand website is the hub of a founder's online authority. Unlike corporate websites, personal brand sites showcase expertise, thought leadership, and accessibility. This SOP covers building professional, SEO-optimized personal brand websites using [Methodology Partner]' WordPress-based builder, integrated with Topic Wheel framework for content organization and E-E-A-T positioning.
+The personal brand website is the hub of a founder's online authority. Unlike corporate websites, personal brand sites showcase expertise, thought leadership, and accessibility. This SOP covers building professional, SEO-optimized personal brand websites using [Methodology Partner]' WordPress-based builder, integrated with [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] framework for content organization and E-E-A-T positioning.
 
 ## When to Use
 - At project start when client has no professional website
@@ -26,7 +26,7 @@ The personal brand website is the hub of a founder's online authority. Unlike co
 ### Phase 0: Strategy & Planning (Before Build)
 
 **Step 1: Define Positioning & Topic Wheel (2-3 hours)**
-Before designing anything, establish the Topic Wheel that will organize site content.
+Before designing anything, establish the [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] that will organize site content.
 
 **Topic Wheel Structure: Why → How → What**
 
@@ -666,3 +666,21 @@ Google prioritizes E-E-A-T (Experience, Expertise, Authoritativeness, Trustworth
 [ ] Post-launch monitoring plan set (daily Week 1, weekly Month 1, monthly ongoing)
 ```
 
+
+---
+
+## Related
+
+- [Knowledge Panel Sprint SOP](knowledge-panel-sprint.md)
+- [Content Factory SOP](content-factory-execution.md)
+- [Canon: GCT Discovery](../../blitzmetrics-canon/11-gct-discovery-framework.md)
+- [Skill: Personal Brand Site](../../skills/personal-brand-site.md)
+
+## See Also
+
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/11-gct-discovery-framework|GCT Discovery]]
+- [[skills/personal-brand-site|Personal Brand Site Skill]]
+- [[skills/kp-sprint|KP Sprint]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism]]

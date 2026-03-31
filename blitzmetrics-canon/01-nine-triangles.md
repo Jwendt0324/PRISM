@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/all
+  - type/canon
+---
+
 # The 9 Triangles Framework — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guide, Course Builder Guide v9.1, [Your Mentor/Advisor]'s training materials
@@ -42,7 +49,7 @@ The 9 Triangles is [Methodology Partner]' master framework. Every business probl
 - **Metrics:** Specific numbers with week-over-week comparisons. Pull from native platform analytics (not third-party tools). Must include actual data, not placeholders.
 - **Analysis:** Explain WHY the numbers are what they are. Connect cause to effect. Call out the weakest area. This is NOT a task list — it's insight.
 - **Action:** Owner + deadline for each item. At least one action targets the weakest metric. Minimum 3 action items. Each must be specific and accountable.
-- **Application:** MAA runs at EVERY stage of the Content Factory (per Workbook v1.9). Weekly MAA reports posted to Basecamp Updates thread by Friday EOD. [Your Mentor/Advisor] will push back on task-list-style reports. Never skip a week silently.
+- **Application:** MAA runs at EVERY stage of the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] (per Workbook v1.9). Weekly [[skills/weekly-maa-report|MAA reports]] posted to Basecamp Updates thread by Friday EOD. [Your Mentor/Advisor] will push back on task-list-style reports. Never skip a week silently.
 - **Common violation:** Writing Analysis as a list of tasks done rather than insights about what's working/not working. Skipping MAA weeks without explanation.
 
 ### LDT — Learn, Do, Teach
@@ -56,7 +63,7 @@ The 9 Triangles is [Methodology Partner]' master framework. Every business probl
 - **Content:** Powerful content is a product of direct execution. It's unique and reinforces personal branding while elevating clients.
 - **Checklist:** Simplifies step-by-step execution AND communication of that execution. Refined through practice and client/employee suggestions. Three types: Qualifying (prerequisites), Execution (steps), Verification (validation).
 - **Software:** Automation of manual efforts that have been proven through checklists. Only automate what you've validated works manually first.
-- **Application:** Every process follows this progression: first create content proving it works, then formalize into a checklist, then automate with software. Never skip steps. "Before you automate any of this, you have to know it works."
+- **Application:** Every process follows this progression: first create content proving it works, then formalize into a checklist, then automate with software. Never skip steps. "Before you automate any of this, you have to know it works." See [[blitzmetrics-canon/12-ldt-implementation-guide|LDT Implementation Guide]] for how CCS and LDT intersect.
 - **Common violation:** Building software/automation before validating the process manually via checklists. Skipping the content (proof of execution) step entirely.
 
 ---
@@ -96,7 +103,7 @@ The 9 Triangles are not isolated — they interlock:
 - **DDD** maps to **SBP** (specialists do, partners delegate, business owners decide what to delete)
 - **MOF** spans all triangles (marketing = GCT+ACC, operations = CCS+CID, finance = MAA for money)
 
-Every SOP in the Mainframe should reference which triangle(s) it serves.
+Every SOP in the PRISM should reference which triangle(s) it serves.
 
 ---
 
@@ -112,3 +119,22 @@ Each module's content is tagged by:
 - Which of the 9 Triangles it fits
 - Level (strategic > tactical > tasks)
 - Access level (public, gated free, course-specific, internal)
+
+---
+## See Also
+- [[skills/content-factory|Content Factory Skill]]
+- [[skills/article-qa|Article QA Skill]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[skills/kp-sprint|KP Sprint Skill]]
+- [[skills/influence-report-card|Influence Report Card Skill]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day Strategy]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel Methodology]]
+- [[blitzmetrics-canon/07-quality-standards|Quality Standards]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[blitzmetrics-canon/09-data-connections-needed|Data Connections Needed]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism Checklist]]
+- [[blitzmetrics-canon/11-gct-discovery-framework|GCT Discovery Framework]]
+- [[blitzmetrics-canon/12-ldt-implementation-guide|LDT Implementation Guide]]

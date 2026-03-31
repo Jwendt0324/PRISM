@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/GCT
+  - type/canon
+---
+
 # GCT Discovery Framework — [Methodology Partner] Canon
 
 **Source:** 9 Triangles Framework (GCT triangle), Content Factory Process (Stage 0), Client Onboarding SOP, Human Requirements Canon
@@ -7,7 +14,7 @@
 
 ## Purpose
 
-GCT (Goals, Content, Targeting) must be completed before any Content Factory work begins. The canon defines WHAT GCT is (see 01-nine-triangles.md), but not HOW to facilitate it. This document fills that gap.
+GCT (Goals, Content, Targeting) must be completed before any [[blitzmetrics-canon/02-content-factory-process|Content Factory]] work begins. The canon defines WHAT GCT is (see [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]]), but not HOW to facilitate it. This document fills that gap.
 
 This is the implementation guide for GCT discovery — the step-by-step process for preparing, conducting, and documenting a GCT session with a client. A VA can follow this to prep for a GCT call. A senior team member ([Your Name] or equivalent) must facilitate the actual discovery conversation.
 
@@ -249,3 +256,12 @@ These rules prevent damage to the client relationship and downstream work qualit
 | Anti-vandalism | 10-anti-vandalism-checklist.md — never skip prerequisite steps |
 
 **Triangles served:** GCT (primary), ACC (targeting informs funnel strategy), SBP (discovery is scoped for Business audience)
+
+---
+## See Also
+- [[skills/prospect-followup|Prospect Follow-Up Skill]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[sops/client-work/client-onboarding|Client Onboarding SOP]]
+- [[skills/kp-sprint|KP Sprint Skill]]

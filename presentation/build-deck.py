@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Mainframe — Onboarding Presentation Deck Builder
+Claude PRISM — Onboarding Presentation Deck Builder
 Generates a professional .pptx presentation for team/client onboarding.
 """
 
@@ -98,7 +98,7 @@ add_shape(slide, Inches(0), Inches(0), W, Inches(0.08), ACCENT_BLUE)
 
 # Title
 add_text(slide, Inches(1), Inches(1.8), Inches(11), Inches(1.5),
-         "THE CLAUDE MAINFRAME", size=54, color=WHITE, bold=True)
+         "THE CLAUDE PRISM", size=54, color=WHITE, bold=True)
 
 # Subtitle
 add_text(slide, Inches(1), Inches(3.2), Inches(10), Inches(0.8),
@@ -158,7 +158,7 @@ add_text(slide, Inches(1), Inches(0.5), Inches(10), Inches(0.6),
          "THE SOLUTION", size=14, color=ACCENT_TEAL, bold=True)
 
 add_text(slide, Inches(1), Inches(1.2), Inches(11), Inches(1),
-         "The Mainframe gives Claude a brain before the conversation starts.",
+         "The PRISM gives Claude a brain before the conversation starts.",
          size=34, color=WHITE, bold=True)
 
 solutions = [
@@ -293,12 +293,12 @@ add_shape(slide, Inches(1), Inches(3.2), Inches(11), Inches(2.5),
           RGBColor(0x0D, 0x11, 0x17))
 
 code_lines = [
-    "# Clone the Mainframe",
-    "git clone https://github.com/Jwendt0324/mainframe.git \\",
-    "    ~/Documents/Claude/Mainframe",
+    "# Clone the PRISM",
+    "git clone https://github.com/[YourGitHubUsername]/PRISM.git \\",
+    "    ~/Documents/Claude/PRISM",
     "",
     "# Run the one-time setup",
-    "cd ~/Documents/Claude/Mainframe",
+    "cd ~/Documents/Claude/PRISM",
     "chmod +x setup.sh && ./setup.sh",
 ]
 
@@ -373,14 +373,14 @@ add_text(slide, Inches(1), Inches(0.5), Inches(10), Inches(0.6),
          "STEP 3 OF 3", size=14, color=ACCENT_TEAL, bold=True)
 
 add_text(slide, Inches(1), Inches(1.2), Inches(11), Inches(0.8),
-         "Just Use Claude Code. The Mainframe Does the Rest.",
+         "Just Use Claude Code. The PRISM Does the Rest.",
          size=34, color=WHITE, bold=True)
 
 # Flow diagram
 steps = [
     ("You open Claude Code", MEDIUM_GRAY),
     ("→", ACCENT_TEAL),
-    ("Mainframe loads your context", ACCENT_BLUE),
+    ("PRISM loads your context", ACCENT_BLUE),
     ("→", ACCENT_TEAL),
     ("You give a task", MEDIUM_GRAY),
     ("→", ACCENT_TEAL),
@@ -402,7 +402,7 @@ for text, color in steps:
 
 # Example tasks
 add_text(slide, Inches(1), Inches(3.8), Inches(10), Inches(0.4),
-         "Example tasks the Mainframe handles:", size=18, color=WHITE, bold=True)
+         "Example tasks the PRISM handles:", size=18, color=WHITE, bold=True)
 
 examples = [
     ('"Write an article from this transcript"', '→  article-writer.md skill  →  18-step QA gate'),
@@ -446,7 +446,7 @@ skills = [
     ("Personal Brand Site", "WordPress site build for KP clients"),
     ("Prospect Follow-up", "Discovery call prep and qualification"),
     ("SOP Router", "Auto-matches tasks to the right SOP"),
-    ("Mainframe Core", "System operating instructions"),
+    ("PRISM Core", "System operating instructions"),
 ]
 
 for i, (name, desc) in enumerate(skills):
@@ -570,7 +570,7 @@ add_text(slide, Inches(1), Inches(0.5), Inches(10), Inches(0.6),
          "COMPOUND, DON'T CAMPAIGN", size=14, color=ACCENT_TEAL, bold=True)
 
 add_text(slide, Inches(1), Inches(1.2), Inches(11), Inches(0.8),
-         "Every Session Makes the Mainframe Smarter", size=36,
+         "Every Session Makes the PRISM Smarter", size=36,
          color=WHITE, bold=True)
 
 # Timeline
@@ -680,7 +680,7 @@ for i, (num, title, desc, time, color) in enumerate(step_data):
 add_shape(slide, Inches(3), Inches(6.2), Inches(7), Inches(0.7),
           RGBColor(0x0D, 0x11, 0x17))
 add_text(slide, Inches(3), Inches(6.3), Inches(7), Inches(0.5),
-         "github.com/Jwendt0324/mainframe", size=22, color=GREEN,
+         "github.com/[YourGitHubUsername]/PRISM", size=22, color=GREEN,
          bold=True, align=PP_ALIGN.CENTER, font_name="Courier New")
 
 
@@ -696,18 +696,18 @@ add_text(slide, Inches(1), Inches(2.2), Inches(11), Inches(1.2),
          color=WHITE, bold=True, align=PP_ALIGN.CENTER)
 
 add_text(slide, Inches(1), Inches(4.0), Inches(11), Inches(0.6),
-         "Let the Mainframe do it for you.", size=28,
+         "Let the PRISM do it for you.", size=28,
          color=ACCENT_TEAL, align=PP_ALIGN.CENTER)
 
 add_shape(slide, Inches(0), Inches(6.9), W, Inches(0.08), ACCENT_TEAL)
 add_text(slide, Inches(1), Inches(7.0), Inches(11), Inches(0.4),
-         "[Your Agency Name]  ×  [Methodology Partner]  |  github.com/Jwendt0324/mainframe",
+         "[Your Agency Name]  ×  [Methodology Partner]  |  github.com/[YourGitHubUsername]/PRISM",
          size=12, color=MEDIUM_GRAY, align=PP_ALIGN.CENTER)
 
 
 # ── Save ──
 output_dir = os.path.dirname(os.path.abspath(__file__))
-output_path = os.path.join(output_dir, "Claude-Mainframe-Onboarding.pptx")
+output_path = os.path.join(output_dir, "Claude-PRISM-Onboarding.pptx")
 prs.save(output_path)
 print(f"Deck saved to: {output_path}")
 print(f"Slides: {len(prs.slides)}")

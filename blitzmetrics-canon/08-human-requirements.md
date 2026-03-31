@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/PPP
+  - type/canon
+---
+
 # Where Humans Are Required — [Methodology Partner] Canon
 
 **Source:** All [Methodology Partner] guides, [Your Mentor/Advisor]'s feedback, operational reality
@@ -26,7 +33,7 @@
 
 ---
 
-## Content Quality (Stage 2: Process)
+## Content Quality (Stage 2: Process — [[blitzmetrics-canon/02-content-factory-process|Content Factory]])
 
 | Task | Why Human Required |
 |------|--------------------|
@@ -46,10 +53,10 @@
 | Task | Why Human Required |
 |------|--------------------|
 | WordPress login and publishing | Credentials, featured image upload, RankMath settings |
-| Category/tag selection | Must align with client's Topic Wheel strategy |
+| Category/tag selection | Must align with client's [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] strategy |
 | Featured image selection | Must be real, relevant photo (not stock) |
 | Schema.org validation | Technical verification |
-| Content tree verification | Ensuring no keyword cannibalization (anti-vandalism) |
+| Content tree verification | Ensuring no keyword cannibalization ([[blitzmetrics-canon/10-anti-vandalism-checklist|anti-vandalism]]) |
 
 **Rule:** No article should auto-publish without human review and approval.
 
@@ -134,3 +141,15 @@
 | Financial decisions | | | ✅ |
 | MAA Analysis | | | ✅ |
 | Discovery calls | | | ✅ |
+
+---
+## See Also
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]]
+- [[blitzmetrics-canon/07-quality-standards|Quality Standards]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism Checklist]]
+- [[sops/client-work/client-onboarding|Client Onboarding SOP]]
+- [[sops/client-work/content-factory-execution|Content Factory SOP]]
+- [[sops/client-work/article-qa-blitzmetrics|Article QA SOP]]
+- [[sops/templates/team-ops/12-escalation-playbook|Escalation Playbook]]
+- [[sops/templates/team-ops/11-client-communication-sop|Client Communication SOP]]

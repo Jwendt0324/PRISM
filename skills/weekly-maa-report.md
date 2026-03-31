@@ -1,7 +1,8 @@
 ---
 name: Weekly MAA Report
-version: 1.0
-description: Produce the weekly Metrics-Analysis-Action report for active clients every Friday
+version: 1
+description: Produce the weekly Metrics-Analysis-Action report for active
+  clients every Friday
 triggers:
   - weekly report
   - Friday report
@@ -10,14 +11,19 @@ triggers:
   - client status update
 canon_source: blitzmetrics-canon/05-maa-framework.md
 full_sop: sops/client-work/weekly-maa-report.md
-triangles: [MAA]
+triangles:
+  - MAA
+tags:
+  - status/active
+  - triangle/MAA
+  - type/skill
 ---
 
 # Weekly MAA Report — Executable Skill
 
 ## Core Principle
 
-The MAA is analysis, not a task list. "We published 3 articles" is a task. "The 3 articles targeting long-tail hearing aid keywords drove 340 new organic sessions, up from 180 last week" is analysis. [Your Mentor/Advisor] will push back on task-list-style reports every time.
+The MAA is analysis, not a task list. It implements the [[blitzmetrics-canon/05-maa-framework|MAA Framework]] and connects to the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]. "We published 3 articles" is a task. "The 3 articles targeting long-tail hearing aid keywords drove 340 new organic sessions, up from 180 last week" is analysis. [Your Mentor/Advisor] will push back on task-list-style reports every time.
 
 ## Phase 1: Pull Metrics (Actual Numbers Only)
 
@@ -87,3 +93,22 @@ Before posting, verify:
 - Action items require human assignment of owners and deadlines
 - [Your Mentor/Advisor] reviews MAA quality and pushes back on task-list-style reports
 - Posted to Basecamp for client and [Your Mentor/Advisor] visibility — human verifies content is client-appropriate
+
+---
+
+## Connected
+
+- [Canon: MAA Framework](../blitzmetrics-canon/05-maa-framework.md)
+- [Full SOP: Weekly MAA Report](../sops/client-work/weekly-maa-report.md)
+- [Influence Report Card Skill](influence-report-card.md)
+- [Content Factory Skill](content-factory.md)
+- [Dollar-a-Day Skill](dollar-a-day.md)
+- [Client Directory](../memory-bank/04-client-directory.md)
+- [Basecamp Status](../memory-bank/15-basecamp-status.md)
+
+## See Also
+
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[skills/content-factory|Content Factory Skill]]
+- [[memory-bank/04-client-directory|Client Directory]]

@@ -1,14 +1,19 @@
 ---
-description: Standard onboarding process for every new hire at [Your Agency Name], from pre-arrival through 60-day evaluation
-title: "New Hire Onboarding SOP"
+description: Standard onboarding process for every new hire at High Rise
+  Influence, from pre-arrival through 60-day evaluation
+title: New Hire Onboarding SOP
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 status: active
 category: team-ops
 applies_to: All new hires at [Your Agency Name]
 skill_linked: Yes
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # New Hire Onboarding SOP — [Your Agency Name]
@@ -29,7 +34,7 @@ Based on real onboarding experience. Improved where it needed improving.
   - Name
   - Start date
   - Role (Content Specialist, Operations, Sales/BD)
-  - Email address to provision (firstname@[your-agency.com])
+  - Email address to provision (firstname@[your-agency-domain.com])
   - Which tools they need (see Tool Access Checklist below — check all that apply to the role)
 - [ ] Write a welcome message (see Day 1 below) and have it ready to send on Day 1
 - [ ] Create a Basecamp project or thread for the new hire's onboarding — track their progress there, not in email
@@ -213,13 +218,13 @@ Every tool, who grants access, and which roles need it.
 | Tool | Who Grants Access | Content | Ops | Sales | Notes |
 |------|-------------------|---------|-----|-------|-------|
 | **Basecamp** | [Your Ops Admin] | Yes | Yes | Yes | System of record. Everyone gets this. |
-| **Google Workspace email** (firstname@[your-agency.com]) | [Your Name] requests, [Your Ops Admin] provisions | Yes | Yes | Yes | Primary work email. |
+| **Google Workspace email** (firstname@[your-agency-domain.com]) | [Your Name] requests, [Your Ops Admin] provisions | Yes | Yes | Yes | Primary work email. |
 | **Shared Google Drive** | [Your Ops Admin] provides link | Yes | Yes | Yes | All shared files, templates, client assets. |
-| **Descript** (shared account: access@[partner-platform.com]) | [Your Ops Admin] provides credentials | Yes | No | No | Video/audio editing and transcription. |
-| **WP Engine / WP Admin** ([your-agency.com]) | [Your Ops Admin] | Yes | Yes | No | Website management. |
+| **Descript** (shared account: [shared-access@content-platform.com]) | [Your Ops Admin] provides credentials | Yes | No | No | Video/audio editing and transcription. |
+| **WP Engine / WP Admin** ([your-agency-domain.com]) | [Your Ops Admin] | Yes | Yes | No | Website management. |
 | **WP Admin** ([partner-platform.com]) | [Your Ops Admin] | Yes | Yes | No | [Partner Platform] site management. |
 | **YouTube channels** | [Your Ops Admin] grants channel access | Yes | No | No | Publishing and analytics. |
-| **Facebook group** (facebook.com/groups/highriseacademy) | [Your Ops Admin] adds as member | Yes | Yes | Yes | Community engagement. |
+| **Facebook group** ([your-facebook-group-url]) | [Your Ops Admin] adds as member | Yes | Yes | Yes | Community engagement. |
 | **Content Factory Academy** (academy.[content-platform.com]) | [Your Ops Admin] | Yes | No | No | Training and methodology resources. |
 | **Team Roster spreadsheet** | [Your Ops Admin] provides link | Yes | Yes | Yes | Team contact info and roles. |
 | **Access email** (access@[partner-platform.com]) | [Your Ops Admin] provides credentials | Yes | Yes | No | Shared access for various tools. |
@@ -284,4 +289,14 @@ These are real patterns. Not theoretical.
 
 _Updated as each onboarding teaches us something new._
 
-- **2026-03-18 (v1.0):** Initial SOP written based on [Your Content Specialist]'s onboarding (started Feb 25, 2026). [Your Ops Admin]'s credentials email on Mar 6 was comprehensive but came 9 days after start date. Key improvement: all access must be provisioned BEFORE Day 1, not after. Also: one consolidated email beats multiple scattered messages.
+- **2026-03-18 (v1.0):** Initial SOP written based on [Your Content Specialist] [Last Name]'s onboarding (started Feb 25, 2026). [Your Ops Admin]'s credentials email on Mar 6 was comprehensive but came 9 days after start date. Key improvement: all access must be provisioned BEFORE Day 1, not after. Also: one consolidated email beats multiple scattered messages.
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/09-tool-stack-and-access|Tool Stack & Access]]
+- [[sops/templates/team-ops/08-role-scorecards|Role Scorecards]]
+- [[sops/templates/team-ops/07-jackson-onboarding-kit|[Your Content Specialist] Onboarding Kit]]
+- [[memory-bank/05-team-and-roles|Team and Roles]]
+- [[blitzmetrics-canon/08-delegation-framework|Canon: Delegation Framework]]

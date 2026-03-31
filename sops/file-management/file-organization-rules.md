@@ -1,12 +1,18 @@
 ---
-description: Define file type routing, naming conventions, and folder structures for organizing all files consistently
+description: Define file type routing, naming conventions, and folder structures
+  for organizing all files consistently
 category: file-management
 created: 2026-03-18
-last_updated: 2026-03-20
-version: 1.2
+last_updated: 2026-03-21
+version: 1.3
 canon_compliance: 07-quality-standards.md
 triangles: CCS
-canon_sources: [07-quality-standards.md]
+canon_sources:
+  - 07-quality-standards.md
+tags:
+  - domain/filemanagement
+  - status/active
+  - type/sop
 ---
 
 # File Organization Rules SOP
@@ -262,4 +268,19 @@ Use log to track:
   - Google Drive-mounted directories (Desktop, Downloads) have cross-mount permission restrictions. `mv` copies the file but cannot remove the source. Workaround: copy to destination, log originals for manual deletion.
   - Desktop accumulates organizational folders (PDFs/, Videos/, etc.) that duplicate Documents structure. SOP should clarify: desktop folder cleanup is separate from file cleanup — folders should be consolidated during manual triage, not automated runs.
   - Downloads had pre-existing organizational subfolders from a previous manual sort. Automated runs should skip files already inside categorized subfolders and only target loose files at Downloads root.
-  - New client folder created: Ryan-D-Lee (Knowledge Panel project). Multiple related docs identified across Downloads.
+  - New client folder created: [Client-Name] (Knowledge Panel project). Multiple related docs identified across Downloads.
+- **2026-03-21:** Second automated run. Key learnings:
+  - Cross-mount leftovers accumulate between runs. Previous run's originals (3 [Client Name] files) were still in Downloads because [Your Name] hadn't manually deleted them yet. Automated runs should detect and skip these rather than re-copying.
+  - Desktop accumulates AI-generated .md files (meeting notes, drafts, reports, EODs) from Claude sessions. These are active work products and should not be moved prematurely. The 3-day threshold works well — most become stale within that window.
+  - Multiple duplicate downloads are common (e.g., 3 copies of CapCut installer, 4 copies of Claude PRISM guide). When organizing, copy only one to destination and flag all originals for manual deletion.
+  - Large video files (500MB+) should be logged for manual triage rather than copied across mounts — doubling disk usage and copy time isn't worth it for files that need human context to route properly.
+
+---
+
+## See Also
+
+- [[sops/file-management/logging-discipline|Logging Discipline]]
+- [[sops/file-management/mcp-tool-integration|MCP Tool Integration]]
+- [[sops/templates/team-ops/09-tool-stack-and-access|Tool Stack & Access]]
+- [[blitzmetrics-canon/07-quality-standards|Canon: Quality Standards]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Canon: Anti-Vandalism]]

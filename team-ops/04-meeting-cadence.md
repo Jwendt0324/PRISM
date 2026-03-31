@@ -1,11 +1,15 @@
 ---
-title: "Meeting Cadence"
+title: Meeting Cadence
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 status: active
 category: team-ops
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # [Your Agency Name] — Meeting Cadence
@@ -60,7 +64,7 @@ No meeting is optional for required attendees unless you've cleared it with [You
 | **Day/Time** | Thursdays, 2:00 PM PST / 4:00 PM CST |
 | **Duration** | 60 minutes |
 | **Frequency** | Weekly |
-| **Location** | Zoom — [Your Zoom Meeting Link] |
+| **Location** | Zoom — https://us02web.zoom.us/s/89548847054 |
 
 **Required Attendees:** [Your Name], [Your Mentor/Advisor]
 **Optional:** [Your Ops Partner], current cohort apprentices, prospective students
@@ -276,7 +280,19 @@ These apply to every meeting listed above.
 
 ## Related Documents
 
-- [00-team-os-overview.md](./00-team-os-overview.md) — Team OS master overview
-- [01-team-directory.md](./01-team-directory.md) — Full team roster and contact info
+- [00-team-os-overview.md](00-team-os-overview.md) — Team OS master overview
+- [01-team-directory.md](01-team-directory.md) — Full team roster and contact info
 - [03-raci-matrix.md](./03-raci-matrix.md) — Who owns what
 - [09-reporting-templates.md](./09-reporting-templates.md) — EOD and MAA report formats
+- [02-communication-protocol.md](02-communication-protocol.md) — Channels, response times, who gets looped on what
+- [03-decision-rights-matrix.md](03-decision-rights-matrix.md) — RACI — who approves what
+- [Meeting Capture SOP](../../business-ops/meeting-capture-and-actions.md) — How to capture and process meeting notes
+- [Communication Patterns](../../../memory-bank/08-communication-patterns.md) — How [Your Name], [Your Mentor/Advisor], [Your Ops Admin] communicate
+
+## See Also
+
+- [[sops/templates/team-ops/02-communication-protocol|Communication Protocol]]
+- [[sops/templates/team-ops/03-decision-rights-matrix|Decision Rights Matrix]]
+- [[sops/templates/team-ops/00-team-os-overview|Team OS Overview]]
+- [[memory-bank/08-communication-patterns|Communication Patterns]]
+- [[blitzmetrics-canon/05-maa-framework|Canon: MAA Framework]]

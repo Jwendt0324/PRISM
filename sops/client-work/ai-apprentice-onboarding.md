@@ -8,6 +8,12 @@ skill_linked: Yes
 canon_compliance: 01-nine-triangles.md
 triangles: LDT, SBP, GCT
 canon_sources: [01-nine-triangles.md, 11-gct-discovery-framework.md, 12-ldt-implementation-guide.md]
+tags:
+  - type/sop
+  - status/active
+  - domain/client-work
+  - topic/onboarding
+  - topic/ai-apprentice
 ---
 
 # AI Apprentice Onboarding SOP
@@ -54,23 +60,23 @@ Ensure every new AI Apprentice is properly qualified, provisioned across all sys
 
 7. **Invite the apprentice to the weekly Thursday session.**
    - Time: **2pm PST every Thursday**
-   - Zoom ID: **[Your Zoom ID]**
+   - Zoom ID: **895 4884 7054**
    - Add them to the calendar invite or recurring Zoom registration.
 
-8. **Set the first MAA deadline.** The apprentice's first MAA report is due **within 1 week of onboarding**. Communicate this clearly — it is their first accountability checkpoint. See `~/Documents/Claude/Mainframe/sops/client-work/weekly-maa-report.md` for MAA format.
+8. **Set the first MAA deadline.** The apprentice's first [[blitzmetrics-canon/05-maa-framework|MAA]] report is due **within 1 week of onboarding**. Communicate this clearly — it is their first accountability checkpoint. See `~/Documents/Claude/PRISM/sops/client-work/weekly-maa-report.md` for MAA format.
 
 ### Engagement Monitoring (Ongoing)
 
 9. **Monitor MAA submissions weekly.** Track whether each apprentice is submitting their Friday MAA:
    - **1 week missed:** Ops team sends a follow-up message. Ask if they need help, identify blockers.
    - **2 weeks missed:** Escalate to [Your Name] or [Your Mentor/Advisor]. Direct outreach to the apprentice.
-   - **3+ months inactive:** Contact the apprentice's parent or sponsor if applicable. The [Returning Apprentice] case: long-inactive apprentices do not self-recover — someone else needs to intervene.
+   - **3+ months inactive:** Contact the apprentice's parent or sponsor if applicable. The Morgan Gopaul case: long-inactive apprentices do not self-recover — someone else needs to intervene.
 
 ## Quality Checks
 - [ ] Qualification task completed with all 3 deliverables (article, video, Facebook post) — no exceptions
 - [ ] Basecamp project created with 6 standard sections
 - [ ] Academy access confirmed at `academy.[content-platform.com]`
-- [ ] Apprentice added to Thursday Zoom (2pm PST, ID: [Your Zoom ID])
+- [ ] Apprentice added to Thursday Zoom (2pm PST, ID: 895 4884 7054)
 - [ ] First MAA submitted within 1 week of onboarding
 - [ ] Engagement monitoring active (weekly MAA check)
 
@@ -96,11 +102,31 @@ Ensure every new AI Apprentice is properly qualified, provisioned across all sys
 
 ## Canon Compliance
 
-- **Canon source:** 01-nine-triangles.md — the apprentice program embodies Learn-Do-Teach as its core pedagogy
+- **Canon source:** 01-nine-triangles.md — the apprentice program embodies [[blitzmetrics-canon/12-ldt-implementation-guide|Learn-Do-Teach]] as its core pedagogy
 - **Triangles served:** LDT — apprentices Learn via Marketing Mechanic video repurposing, Do via qualification task execution and weekly MAA reports, Teach via content creation and community contribution; SBP — program scoped to Specialist (apprentices learning the craft), with pathway to Business and Partner tiers; GCT — qualification task tests all three: Goals (can they identify the key points?), Content (can they create an article and video?), Targeting (can they post to the right audience in the Facebook group?)
 - **Human checkpoints:** Qualification review — human must assess article for AI language patterns; [Your Mentor/Advisor] approval required before admission (the [Your Content Specialist] lesson); weekly MAA review by ops team; escalation ladder at 1 week, 2 weeks, 3+ months inactive
 - **Anti-vandalism:** Three-deliverable qualification gate (article + video + Facebook post) prevents unqualified admissions; Zapier automation verified manually after every payment; weekly MAA submission tracking catches disengagement at 1 week, not 3 months
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on AI Apprentice Program operations, [Your Content Specialist] qualification incident, and [Returning Apprentice] engagement recovery case.
+- *2026-03-18* — SOP created based on AI Apprentice Program operations, [Your Content Specialist] qualification incident, and Morgan Gopaul engagement recovery case.
+
+---
+
+## Related
+
+- [Client Onboarding SOP](client-onboarding.md)
+- [Weekly MAA Report SOP](weekly-maa-report.md)
+- [Canon: LDT Implementation](../../blitzmetrics-canon/12-ldt-implementation-guide.md)
+- [Canon: Human Requirements](../../blitzmetrics-canon/08-human-requirements.md)
+- [Team Directory](../../memory-bank/03-team-directory.md)
+
+## See Also
+
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/12-ldt-implementation-guide|LDT Guide]]
+- [[blitzmetrics-canon/11-gct-discovery-framework|GCT Discovery]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[memory-bank/04-client-directory|Client Directory]]

@@ -1,10 +1,14 @@
 ---
-title: "Role Scorecards"
+title: Role Scorecards
 owner: [Your Name]
-version: 1.0
+version: 1
 created: 2026-03-18
 last_updated: 2026-03-18
 status: active
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # Role Scorecards â€” [Your Agency Name]
@@ -80,7 +84,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 2. [Your Content Specialist] â€” Content Specialist
+## 2. [Your Content Specialist] [Last Name] â€” Content Specialist
 
 **One-liner:** Turns raw material into polished content. If [Your Name] is the engine, [Your Content Specialist] is the assembly line.
 
@@ -178,7 +182,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 4. [Your Ops Partner] â€” Operations Manager
+## 4. [Your Ops Partner] [Last Name] â€” Operations Manager
 
 **One-liner:** Makes the machine run. If a process exists at [Your Agency], [Your Ops Partner] owns making sure it actually works.
 
@@ -198,7 +202,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 | MAA report submitted | Every Friday | Basecamp |
 | EOD report submitted | 5/5 workdays | Basecamp |
 | Blocker escalations (proactive) | Same-day flag to [Your Name] | Basecamp/email |
-| SOP reviews completed | >=1 SOP reviewed/week | Mainframe logs |
+| SOP reviews completed | >=1 SOP reviewed/week | PRISM logs |
 | Content pipeline status check | Weekly | Content calendar |
 
 ### Lagging Indicators (Monthly)
@@ -206,7 +210,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 | Metric | Target | Source |
 |--------|--------|--------|
 | Sprint on-time rate | >=90% | Basecamp |
-| SOPs updated/reviewed | All active SOPs current | Mainframe INDEX |
+| SOPs updated/reviewed | All active SOPs current | PRISM INDEX |
 | Operational incidents | <=1 per month | Incident log |
 | Team utilization | No one idle, no one overloaded | Capacity tracker |
 | Case study drafts completed | >=1/month from completed Sprints | Publishing pipeline |
@@ -229,7 +233,7 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 
 ---
 
-## 5. [Your Ops Admin] â€” Operations / Finance / Admin
+## 5. [Your Ops Admin] [Last Name] â€” Operations / Finance / Admin
 
 **One-liner:** The back office. Keeps the lights on, the projects set up, and the money tracked. If [Your Ops Admin] stops, admin stops.
 
@@ -404,3 +408,13 @@ Miss your trigger, miss your pay. The bonus pool is not a participation trophy â
 - KPI targets are adjusted in quarterly review
 - A role's responsibilities shift significantly
 - Sprint pricing changes (recalculate all dollar amounts)
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/01-team-directory|Team Directory]]
+- [[sops/templates/team-ops/05-delegation-framework|Delegation Framework]]
+- [[sops/templates/team-ops/13-team-scaling-plan|Team Scaling Plan]]
+- [[memory-bank/05-team-and-roles|Team and Roles]]
+- [[blitzmetrics-canon/05-maa-framework|Canon: MAA Framework]]

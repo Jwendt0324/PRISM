@@ -1,25 +1,25 @@
 #!/bin/bash
 # ============================================================
-# CLAUDE MAINFRAME — INSTALLER
-# Wires the Mainframe into Claude Code so it runs automatically.
+# CLAUDE PRISM — INSTALLER
+# Wires PRISM into Claude Code so it runs automatically.
 #
 # What this does:
 # 1. Installs CLAUDE.md as global instructions (loaded every session)
 # 2. Merges hook configuration into Claude Code settings
 # 3. Verifies everything is connected
 #
-# Run this once: bash ~/Documents/Claude/Mainframe/claude-code/install.sh
+# Run this once: bash ~/Documents/Claude/PRISM/claude-code/install.sh
 # ============================================================
 
 set -e
 
-MAINFRAME_DIR="$HOME/Documents/Claude/Mainframe"
+PRISM_DIR="$HOME/Documents/Claude/PRISM"
 CLAUDE_DIR="$HOME/.claude"
 CLAUDE_MD="$CLAUDE_DIR/CLAUDE.md"
 SETTINGS="$CLAUDE_DIR/settings.json"
 
 echo "=========================================="
-echo "  CLAUDE MAINFRAME — INSTALLER"
+echo "  CLAUDE PRISM — INSTALLER"
 echo "=========================================="
 echo ""
 
@@ -34,26 +34,26 @@ if [ -f "$CLAUDE_MD" ]; then
     cp "$CLAUDE_MD" "$BACKUP"
     echo "[2/4] Backed up existing CLAUDE.md to $(basename $BACKUP)"
 
-    # Check if Mainframe instructions already present
-    if grep -q "CLAUDE MAINFRAME" "$CLAUDE_MD" 2>/dev/null; then
-        echo "      Mainframe instructions already in CLAUDE.md — replacing..."
-        # Remove old mainframe block and replace
-        # Simple approach: prepend mainframe, then append non-mainframe content
-        EXISTING_NON_MAINFRAME=$(sed '/# CLAUDE MAINFRAME/,/^# [^C]/{ /^# [^C]/!d; }' "$CLAUDE_MD" 2>/dev/null || cat "$CLAUDE_MD")
+    # Check if PRISM instructions already present
+    if grep -q "CLAUDE PRISM" "$CLAUDE_MD" 2>/dev/null; then
+        echo "      PRISM instructions already in CLAUDE.md — replacing..."
+        # Remove old PRISM block and replace
+        # Simple approach: prepend PRISM, then append non-PRISM content
+        EXISTING_NON_PRISM=$(sed '/# CLAUDE PRISM/,/^# [^C]/{ /^# [^C]/!d; }' "$CLAUDE_MD" 2>/dev/null || cat "$CLAUDE_MD")
     fi
 
-    # Prepend Mainframe instructions to existing content
-    cat "$MAINFRAME_DIR/claude-code/CLAUDE.md" > "$CLAUDE_MD.tmp"
+    # Prepend PRISM instructions to existing content
+    cat "$PRISM_DIR/claude-code/CLAUDE.md" > "$CLAUDE_MD.tmp"
     echo "" >> "$CLAUDE_MD.tmp"
     echo "---" >> "$CLAUDE_MD.tmp"
     echo "" >> "$CLAUDE_MD.tmp"
-    echo "# PREVIOUS INSTRUCTIONS (preserved from before Mainframe install)" >> "$CLAUDE_MD.tmp"
+    echo "# PREVIOUS INSTRUCTIONS (preserved from before PRISM install)" >> "$CLAUDE_MD.tmp"
     echo "" >> "$CLAUDE_MD.tmp"
     cat "$BACKUP" >> "$CLAUDE_MD.tmp"
     mv "$CLAUDE_MD.tmp" "$CLAUDE_MD"
-    echo "      Mainframe instructions prepended (old instructions preserved)"
+    echo "      PRISM instructions prepended (old instructions preserved)"
 else
-    cp "$MAINFRAME_DIR/claude-code/CLAUDE.md" "$CLAUDE_MD"
+    cp "$PRISM_DIR/claude-code/CLAUDE.md" "$CLAUDE_MD"
     echo "[2/4] Installed CLAUDE.md (fresh install)"
 fi
 
@@ -64,18 +64,18 @@ if [ -f "$SETTINGS" ]; then
     cp "$SETTINGS" "$SETTINGS_BACKUP"
     echo "[3/4] Backed up existing settings.json to $(basename $SETTINGS_BACKUP)"
 
-    # Merge hooks — use jq to combine existing settings with Mainframe hooks
+    # Merge hooks — use jq to combine existing settings with PRISM hooks
     if command -v jq &> /dev/null; then
-        # Deep merge: existing settings + mainframe hooks
-        jq -s '.[0] * .[1]' "$SETTINGS_BACKUP" "$MAINFRAME_DIR/claude-code/settings.json" > "$SETTINGS"
+        # Deep merge: existing settings + PRISM hooks
+        jq -s '.[0] * .[1]' "$SETTINGS_BACKUP" "$PRISM_DIR/claude-code/settings.json" > "$SETTINGS"
         echo "      Hooks merged into existing settings"
     else
         echo "      WARNING: jq not installed. Manually merge hooks from:"
-        echo "      $MAINFRAME_DIR/claude-code/settings.json"
+        echo "      $PRISM_DIR/claude-code/settings.json"
         echo "      into: $SETTINGS"
     fi
 else
-    cp "$MAINFRAME_DIR/claude-code/settings.json" "$SETTINGS"
+    cp "$PRISM_DIR/claude-code/settings.json" "$SETTINGS"
     echo "[3/4] Installed settings.json (fresh install)"
 fi
 
@@ -85,10 +85,10 @@ echo ""
 
 PASS=true
 
-if [ -f "$CLAUDE_MD" ] && grep -q "CLAUDE MAINFRAME" "$CLAUDE_MD"; then
-    echo "  ✓ CLAUDE.md installed with Mainframe instructions"
+if [ -f "$CLAUDE_MD" ] && grep -q "CLAUDE PRISM" "$CLAUDE_MD"; then
+    echo "  ✓ CLAUDE.md installed with PRISM instructions"
 else
-    echo "  ✗ CLAUDE.md missing Mainframe instructions"
+    echo "  ✗ CLAUDE.md missing PRISM instructions"
     PASS=false
 fi
 
@@ -114,7 +114,7 @@ else
 fi
 
 for HOOK in session-start.sh session-end.sh post-tool.sh; do
-    if [ -x "$MAINFRAME_DIR/claude-code/hooks/$HOOK" ]; then
+    if [ -x "$PRISM_DIR/claude-code/hooks/$HOOK" ]; then
         echo "  ✓ Hook script $HOOK is executable"
     else
         echo "  ✗ Hook script $HOOK missing or not executable"
@@ -122,14 +122,14 @@ for HOOK in session-start.sh session-end.sh post-tool.sh; do
     fi
 done
 
-if [ -d "$MAINFRAME_DIR/logs" ]; then
+if [ -d "$PRISM_DIR/logs" ]; then
     echo "  ✓ Logs directory exists"
 else
     echo "  ✗ Logs directory missing"
     PASS=false
 fi
 
-if [ -f "$MAINFRAME_DIR/INDEX.md" ]; then
+if [ -f "$PRISM_DIR/INDEX.md" ]; then
     echo "  ✓ INDEX.md exists"
 else
     echo "  ✗ INDEX.md missing"
@@ -139,11 +139,11 @@ fi
 echo ""
 if $PASS; then
     echo "=========================================="
-    echo "  MAINFRAME INSTALLED SUCCESSFULLY"
+    echo "  PRISM INSTALLED SUCCESSFULLY"
     echo "=========================================="
     echo ""
     echo "  What happens now:"
-    echo "  • Every Claude Code session auto-loads Mainframe instructions"
+    echo "  • Every Claude Code session auto-loads PRISM instructions"
     echo "  • Every session auto-checks SOPs before starting work"
     echo "  • Every session auto-logs what was done when it ends"
     echo "  • Tool usage is tracked for pattern detection"

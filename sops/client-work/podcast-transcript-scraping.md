@@ -12,7 +12,7 @@ canon_sources: [02-content-factory-process.md]
 # Podcast Transcript Scraping (Podbean/RSS)
 
 ## Purpose
-Download and transcribe podcast episodes from RSS feeds when YouTube transcripts are unavailable or when the client publishes audio-only content on Podbean.
+Download and transcribe podcast episodes from RSS feeds as part of the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] Process stage when YouTube transcripts are unavailable or when the client publishes audio-only content on Podbean.
 
 ## When to Use
 - Client has a podcast on Podbean that needs transcripts pulled
@@ -61,11 +61,11 @@ Download and transcribe podcast episodes from RSS feeds when YouTube transcripts
 
 ## Common Pitfalls
 
-- **ffmpeg not installed.** Whisper silently fails or throws opaque errors without it. Always `brew install ffmpeg` first. This cost 45 minutes of debugging on the [KP Sprint Client] project.
+- **ffmpeg not installed.** Whisper silently fails or throws opaque errors without it. Always `brew install ffmpeg` first. This cost 45 minutes of debugging on the Ryan D. Lee project.
 - **Whisper FP16 warning on CPU.** "FP16 is not supported on CPU; using FP32 instead" is normal and harmless. It just means slower processing. Ignore it.
-- **SSL cert errors behind VPN.** Add the `ssl._create_unverified_context` fix. This blocked the initial run of the Passive Income Machine scraper.
-- **RSS feed pagination.** Some Podbean feeds only return 20-50 episodes. Check if there are `<link rel="next">` pagination links. The Passive Income Machine feed returned all 45 episodes without pagination.
-- **Most podcast episodes duplicate YouTube content.** On the [KP Sprint Client] project, 44 of 45 Podbean episodes matched existing YouTube video transcripts. Always cross-reference before writing articles to avoid SEO cannibalization.
+- **SSL cert errors behind VPN.** Add the `ssl._create_unverified_context` fix. This blocked the initial run of the [Client Podcast] scraper.
+- **RSS feed pagination.** Some Podbean feeds only return 20-50 episodes. Check if there are `<link rel="next">` pagination links. The [Client Podcast] feed returned all 45 episodes without pagination.
+- **Most podcast episodes duplicate YouTube content.** On the Ryan D. Lee project, 44 of 45 Podbean episodes matched existing YouTube video transcripts. Always cross-reference before writing articles to avoid SEO cannibalization.
 
 ## Human Gates
 | Step | Gate Type | Reason |
@@ -91,4 +91,21 @@ Download and transcribe podcast episodes from RSS feeds when YouTube transcripts
 ## Learnings Log
 
 - **2026-03-18:** Whisper base model on CPU processes ~1 episode per minute for 30-minute episodes. Total time for 45 episodes was ~45 minutes.
-- **2026-03-18:** The Passive Income Machine podcast (45 episodes) had 44/45 overlap with YouTube content. Only 1 unique episode ("How to Create Tax-Free Income for Life") had material not already covered. Always check overlap before committing to article writing.
+- **2026-03-18:** The [Client Podcast] podcast (45 episodes) had 44/45 overlap with YouTube content. Only 1 unique episode ("How to Create Tax-Free Income for Life") had material not already covered. Always check overlap before committing to article writing.
+
+---
+
+## Related
+
+- [Article Writing SOP](article-writing-from-transcripts.md)
+- [Transcription Pipeline SOP](transcription-pipeline.md)
+- [YouTube Transcript SOP](youtube-transcript-scraping.md)
+- [Guest Appearance Research SOP](guest-appearance-research.md)
+- [Canon: Content Factory Process](../../blitzmetrics-canon/02-content-factory-process.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism]]
+- [[skills/article-writer|Article Writer]]
+- [[skills/content-factory|Content Factory Skill]]

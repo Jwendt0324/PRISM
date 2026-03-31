@@ -1,10 +1,10 @@
-# Claude Mainframe
+# Claude PRISM
 
 A plug-and-play operating system for Claude Code. SOPs, skills, frameworks, and automation — personalized to you through an identity scan.
 
 ## What This Is
 
-The Mainframe gives Claude Code:
+The PRISM gives Claude Code:
 - **Skills** — action-oriented prompts for common tasks (article writing, content repurposing, QA, etc.)
 - **SOPs** — step-by-step procedures for business operations
 - **Canon** — source-of-truth frameworks (Content Factory, Topic Wheel, Dollar-a-Day, etc.)
@@ -14,19 +14,19 @@ The Mainframe gives Claude Code:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Jwendt0324/mainframe.git ~/Documents/Claude/Mainframe
+git clone https://github.com/Jwendt0324/PRISM.git ~/Documents/Claude/PRISM
 
 # 2. Run setup
-cd ~/Documents/Claude/Mainframe
+cd ~/Documents/Claude/PRISM
 chmod +x setup.sh
 ./setup.sh
 
-# 3. Start Claude Code — it will find and use the Mainframe automatically
+# 3. Start Claude Code — it will find and use the PRISM automatically
 ```
 
 The setup script will:
 1. Create your personal identity folder
-2. Generate a CLAUDE.md that tells Claude Code how to use the Mainframe
+2. Generate a CLAUDE.md that tells Claude Code how to use the PRISM
 3. Prompt you to run the identity scan (optional but recommended)
 
 ## Identity Scan
@@ -45,14 +45,14 @@ The identity scan builds your personal context by reading sources you choose:
 
 To run the identity scan later:
 ```
-Open Claude Code in ~/Documents/Claude/Mainframe
+Open Claude Code in ~/Documents/Claude/PRISM
 Then say: "Run the identity scan" or paste the contents of identity-scan.md
 ```
 
 ## Structure
 
 ```
-mainframe/
+PRISM/
 ├── skills/              ← Claude-loadable action prompts (shared)
 ├── sops/                ← Step-by-step procedures (shared)
 │   ├── client-work/

@@ -1,3 +1,9 @@
+---
+tags:
+  - status/active
+  - type/canon
+---
+
 # Anti-Vandalism Checklist — [Methodology Partner] Canon
 
 **Source:** [Your Mentor/Advisor]'s feedback ("watch for accidental vandalism"), Operations Guide, Article Guidelines
@@ -46,13 +52,13 @@ Before creating any new content, article, page, or document:
 
 ### Rule 5: Changes to Methodology Require [Your Mentor/Advisor]'s Review
 - Any change to the Content Factory process, 9 Triangles interpretation, or framework application must be reviewed by [Your Mentor/Advisor]
-- The Mainframe should flag potential methodology changes rather than implementing them automatically
+- The PRISM should flag potential methodology changes rather than implementing them automatically
 - "I protect you from these misguided SEO 'experts'" — [Your Mentor/Advisor]'s standards exist for a reason
 
 ### Rule 6: Agent Output Must Be QA'd Before Publishing
 - No AI-generated content goes live without human review
 - QA must check: banned words, AI patterns, voice consistency, factual accuracy, E-E-A-T compliance
-- See 03-article-guidelines.md for complete QA checklist
+- See [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]] for complete QA checklist
 
 ### Rule 7: Preserve What's Working
 When updating SOPs or processes:
@@ -67,7 +73,7 @@ When updating SOPs or processes:
 - Inconsistency confuses Google's Knowledge Graph and weakens SEO signals
 
 ### Rule 9: Don't Automate Human-Required Steps
-- See 08-human-requirements.md for the full list
+- See [[blitzmetrics-canon/08-human-requirements|Human Requirements]] for the full list
 - Just because a task CAN be automated doesn't mean it SHOULD be
 - Client relationships, financial decisions, content approval, and strategic pivots require humans
 
@@ -102,7 +108,7 @@ Run this check before any major change to content or process:
 | Writing an SOP that describes Dollar-a-Day differently than the canon | Updating the SOP to match the canonical Dollar-a-Day phases |
 | Auto-publishing AI-generated articles without QA | Using AI to draft, then running through full 18-step QA |
 | Removing a process step because it seems unnecessary | Flagging the step for review while keeping it active |
-| Using approximations ("roughly 3 stages") instead of exact framework ("6 stages: Plumbing→Produce→Process→Post→Promote→Perform") | Using exact terminology and referencing the source guide |
+| Using approximations ("roughly 3 stages") instead of exact framework ("6 stages: Plumbing→Produce→Process→Post→Promote→Perform" per [[blitzmetrics-canon/02-content-factory-process|Content Factory]]) | Using exact terminology and referencing the source guide |
 
 ---
 
@@ -114,3 +120,12 @@ Basecamp-specific anti-vandalism:
 - Include "TimeCamp (DON'T REMOVE REQUIRED FOR TIME TRACKING)" for time tracking
 - For creating new to-do's, add them to relevant lists (don't create new lists without approval)
 - Link to Basecamp threads, not individual documents (documents change, threads have context)
+
+---
+## See Also
+- [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]]
+- [[blitzmetrics-canon/07-quality-standards|Quality Standards]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[sops/client-work/content-factory-execution|Content Factory SOP]]
+- [[sops/file-management/file-organization-rules|File Organization Rules]]
+- [[sops/client-work/article-qa-blitzmetrics|Article QA SOP]]

@@ -12,7 +12,7 @@ canon_sources: [02-content-factory-process.md]
 # YouTube Transcript Scraping
 
 ## Purpose
-Extract transcripts from YouTube channels in bulk, organized by view count, for use as source material in the article writing pipeline.
+Extract transcripts from YouTube channels in bulk, organized by view count, for use as source material in the [[skills/article-writer|article writing]] pipeline. This is a core step in the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] Process stage.
 
 ## When to Use
 - A new client needs articles written from their YouTube content
@@ -115,3 +115,19 @@ Extract transcripts from YouTube channels in bulk, organized by view count, for 
 - **2026-03-18:** youtube-transcript-api is unreliable for bulk. Switched entirely to yt-dlp subtitle download with Chrome cookies. Zero blocks on 400 [Client — Local Retail Business] videos.
 - **2026-03-18:** VPN rotation is the fastest fix for 429s. [Your Name] can switch IPs in ProtonVPN and the resume-supported script picks up instantly.
 - **2026-03-18:** Batch 3 ([Client — Local Retail Business] ranks 401+) added a 2000-word minimum filter. This is a good default for article-quality transcripts. Performance/jam videos produce transcripts under 500 words that can't become real articles.
+
+---
+
+## Related
+
+- [Article Writing SOP](article-writing-from-transcripts.md)
+- [Transcription Pipeline SOP](transcription-pipeline.md)
+- [Podcast Transcript SOP](podcast-transcript-scraping.md)
+- [Canon: Content Factory Process](../../blitzmetrics-canon/02-content-factory-process.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism]]
+- [[skills/article-writer|Article Writer]]
+- [[skills/content-factory|Content Factory Skill]]

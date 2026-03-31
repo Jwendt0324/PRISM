@@ -2,9 +2,13 @@
 date: 2026-03-19
 phase: 4
 type: honest-assessment
-source: "[Your Mentor/Advisor] directive — 'Ask Claude what you might be missing or what you might not want to hear.'"
+source: [Your Mentor/Advisor] directive — 'Ask Claude what you might be missing or what you
+  might not want to hear.'
 version: 1.1
 last_updated: 2026-03-21
+tags:
+  - status/active
+  - type/canon
 ---
 
 ## Status: Partially Resolved (2026-03-21)
@@ -26,12 +30,12 @@ last_updated: 2026-03-21
 - No WordPress API for content verification
 - No real-time client health monitoring
 - No content tree mapping / keyword cannibalization prevention
-- Revenue math unchanged -- Mainframe sophistication does not change the [$X/mo take-home]
+- Revenue math unchanged -- PRISM sophistication does not change the $1,875/mo take-home
 - Personal brand content gap (378 client articles vs ~15-20 for [Your Name])
 
 ---
 
-# Honest Assessment of the Claude Mainframe
+# Honest Assessment of the Claude PRISM
 
 This document exists because [Your Mentor/Advisor] told [Your Name]: "Ask Claude what you might be missing or what you might not want to hear."
 
@@ -39,11 +43,11 @@ This is not diplomacy. This is not a progress report. This is a mirror.
 
 ---
 
-## 1. What the Mainframe Does Well
+## 1. What the PRISM Does Well
 
 Credit where it's due — this is impressive infrastructure for a solo founder one day into building it:
 
-- **Content pipeline produced real output.** 378 articles for [Client — Local Retail Business], 54 for [KP Sprint Client]. These are not hypothetical — they exist.
+- **Content pipeline produced real output.** 378 articles for [Client — Local Retail Business], 54 for Ryan D. Lee. These are not hypothetical — they exist.
 - **Self-improving SOP system with session logging.** Every session leaves the system smarter. SOPs get versioned, updated, and cross-referenced.
 - **Memory bank provides continuity across sessions.** 14 memory files mean Claude doesn't start from zero every conversation. Context compounds.
 - **Automated task scheduling shows operational thinking.** File organizer, weekly retrospective, Google Drive sync, memory bank refresh, Basecamp scan, weekly briefing — these are the habits of someone who thinks in systems.
@@ -55,14 +59,14 @@ Here's the bad news.
 
 ---
 
-## 2. What the Mainframe Gets Wrong
+## 2. What the PRISM Gets Wrong
 
 The SOPs were built WITHOUT reading the canonical [Methodology Partner] guides first. Every single one is an approximation — [Your Name]'s best guess at how the Content Factory works, not an implementation of how [Your Mentor/Advisor] designed it to work.
 
 Specific failures:
 
 - **NONE of the 15 client SOPs reference the 9 Triangles framework.** The 9 Triangles (Goals, Content, Targeting) is the foundation of everything [Methodology Partner] does. It's absent from every SOP. This is like building a house without a foundation and wondering why the walls crack.
-- **LDT and CCS frameworks are completely absent from all SOPs.** Learn-Do-Teach is [Your Mentor/Advisor]'s core methodology for skill development and team training. Checklists-Courses-SOPs is how [Methodology Partner] scales knowledge. Neither exists in the Mainframe.
+- **LDT and CCS frameworks are completely absent from all SOPs.** Learn-Do-Teach is [Your Mentor/Advisor]'s core methodology for skill development and team training. Checklists-Courses-SOPs is how [Methodology Partner] scales knowledge. Neither exists in the PRISM.
 - **GCT is only in 1 SOP despite being foundational to EVERYTHING.** Goals-Content-Targeting should be the first thing referenced in every client-facing SOP. It appears once.
 - **Only 5 of 15 SOPs define human-required steps.** [Your Mentor/Advisor] specifically asked about this — where does the human need to be involved? 10 SOPs don't answer that question. That's not automation, it's ambiguity.
 - **The Content Factory stages are inconsistent across SOPs.** Some say 4 stages. Some say 5. The [Methodology Partner] canon says 6. If the SOPs can't agree on how many stages exist, they're not implementing the Content Factory — they're improvising.
@@ -72,24 +76,24 @@ Specific failures:
 
 ## 3. What's Missing
 
-The Mainframe has no connections to the systems that actually measure whether the work is working:
+The PRISM has no connections to the systems that actually measure whether the work is working:
 
-- **No data connections to analytics platforms.** GA, GSC, YouTube Analytics, Facebook Ads — none of these feed into the Mainframe. The system produces content but has no way to measure its impact.
-- **No Stripe integration for P&L.** This is [Your Mentor/Advisor]'s #1 operational concern. Revenue, expenses, margin — none of it is tracked. The Mainframe can tell you how many articles were produced but not whether they're profitable.
+- **No data connections to analytics platforms.** GA, GSC, YouTube Analytics, Facebook Ads — none of these feed into the PRISM. The system produces content but has no way to measure its impact.
+- **No Stripe integration for P&L.** This is [Your Mentor/Advisor]'s #1 operational concern. Revenue, expenses, margin — none of it is tracked. The PRISM can tell you how many articles were produced but not whether they're profitable.
 - **No Basecamp direct API.** The system relies on email scanning to interact with Basecamp. This is fragile, incomplete, and misses threaded context.
-- **No WordPress API for content verification.** 378 articles were produced. Were they all published? The Mainframe can't answer that question.
+- **No WordPress API for content verification.** 378 articles were produced. Were they all published? The PRISM can't answer that question.
 - **No real-time client health monitoring.** No way to detect a client going quiet, traffic dropping, or campaigns underperforming until a human notices.
 - **No content tree mapping.** No way to prevent keyword cannibalization across hundreds of articles. At 378 articles for a single client, this is a real risk.
 - **No Dollar-a-Day campaign tracking.** One of [Methodology Partner]' signature strategies has zero presence in the system.
 - **No Knowledge Graph monitoring.** No tracking of whether content is building entity authority in Google's Knowledge Graph.
 
-The Mainframe knows what it produced. It has no idea whether any of it worked.
+The PRISM knows what it produced. It has no idea whether any of it worked.
 
 ---
 
 ## 4. Where Humans Are Still Essential
 
-The Mainframe cannot replace humans in these areas, and any SOP that implies otherwise is lying:
+The PRISM cannot replace humans in these areas, and any SOP that implies otherwise is lying:
 
 - **Content production.** Filming, photography, interviews — the raw material of the Content Factory requires a human with a camera in a room with the client. No AI changes this.
 - **WordPress publishing.** Requires human login, visual verification, and judgment calls on formatting, images, and internal linking. Every article needs human eyes before it goes live.
@@ -104,7 +108,7 @@ The Mainframe cannot replace humans in these areas, and any SOP that implies oth
 
 ### Risk #1: Scale Without Quality
 
-The Mainframe produced 378 articles for [Client — Local Retail Business]. But:
+The PRISM produced 378 articles for [Client — Local Retail Business]. But:
 
 - Were they all published?
 - Were they all high quality?
@@ -120,7 +124,7 @@ Building infrastructure is satisfying. SOPs feel productive. Memory banks feel s
 
 None of it closes deals. None of it increases client revenue. None of it puts money in the bank.
 
-The Mainframe creates the feeling of forward motion. Whether that motion is in the right direction is an open question.
+The PRISM creates the feeling of forward motion. Whether that motion is in the right direction is an open question.
 
 ---
 
@@ -128,26 +132,26 @@ The Mainframe creates the feeling of forward motion. Whether that motion is in t
 
 This section is the reason this document exists. [Your Mentor/Advisor] asked for it. Here it is.
 
-**The Mainframe is primarily serving [Your Name]'s desire to build systems, not his clients' desire for results.** There is a difference between building a machine that does the work and actually doing the work. The Mainframe is the machine. The work is still waiting.
+**The PRISM is primarily serving [Your Name]'s desire to build systems, not his clients' desire for results.** There is a difference between building a machine that does the work and actually doing the work. The PRISM is the machine. The work is still waiting.
 
-**The revenue math hasn't changed.** ~$6,250/mo average with [Methodology Partner] taking 70% means [Your Name]'s take-home is approximately [$X/mo]. The Mainframe — no matter how sophisticated — does not change this number. An elegant system that produces [$X/mo] is still a [$X/mo] business.
+**The revenue math hasn't changed.** ~$6,250/mo average with [Methodology Partner] taking 70% means [Your Name]'s take-home is approximately $1,875/mo. The PRISM — no matter how sophisticated — does not change this number. An elegant system that produces $1,875/mo is still a $1,875/mo business.
 
-**Time spent building the Mainframe is time NOT spent on:**
+**Time spent building the PRISM is time NOT spent on:**
 - Client delivery that generates referrals
 - Prospect follow-up that closes deals
 - The KP book [Your Mentor/Advisor] keeps pushing for
 - [Your Speaker Event] preparation
 - P&L setup [Your Mentor/Advisor] keeps asking for
 
-Every hour invested in the Mainframe has an opportunity cost. That cost is measured in the things that didn't get done.
+Every hour invested in the PRISM has an opportunity cost. That cost is measured in the things that didn't get done.
 
-**[Your Mentor/Advisor]'s feedback wasn't about improving the system.** Read his messages again carefully. He wasn't saying "make the Mainframe better." He was asking: "Is the Mainframe the right priority?" Those are fundamentally different questions.
+**[Your Mentor/Advisor]'s feedback wasn't about improving the system.** Read his messages again carefully. He wasn't saying "make the PRISM better." He was asking: "Is the PRISM the right priority?" Those are fundamentally different questions.
 
 **378 articles for clients. ~15-20 for [Your Name].** The Content Factory isn't being applied to the person who needs it most. [Your Name] is building the pipeline for others while his own personal brand — the thing that generates inbound leads, speaking invitations, and authority — remains underdeveloped. [Your Mentor/Advisor] has a thousand articles. [Your Name] has twenty.
 
 **The automated tasks generate zero revenue.** The weekly briefing, memory bank refresh, file organizer, and automated scans are impressive engineering. They are also overhead. They consume compute, require maintenance, and produce internal documents that no client will ever see or pay for.
 
-**[Methodology Partner] is functionally subsidizing [Your Agency].** [Your Mentor/Advisor] has said expenses exceed the 70% share. [Your Name] hasn't set up the P&L tracking [Your Mentor/Advisor] has been pushing for. This isn't a future problem — it's a current one. And building a better Mainframe instead of setting up a Stripe dashboard is a choice that speaks louder than any SOP.
+**[Methodology Partner] is functionally subsidizing [Your Agency].** [Your Mentor/Advisor] has said expenses exceed the 70% share. [Your Name] hasn't set up the P&L tracking [Your Mentor/Advisor] has been pushing for. This isn't a future problem — it's a current one. And building a better PRISM instead of setting up a Stripe dashboard is a choice that speaks louder than any SOP.
 
 ---
 
@@ -164,11 +168,11 @@ This is LDT in action:
 - **Do:** Create the article
 - **Teach:** Document how it was done so the next person can replicate it
 
-The Mainframe skips the Teach step entirely. It produces articles but doesn't document the creation process. There's no meta-article. There's no learning artifact. The 378 articles for [Client — Local Retail Business] exist, but there's no document explaining how they were made, what worked, what didn't, and how to do it better next time.
+The PRISM skips the Teach step entirely. It produces articles but doesn't document the creation process. There's no meta-article. There's no learning artifact. The 378 articles for [Client — Local Retail Business] exist, but there's no document explaining how they were made, what worked, what didn't, and how to do it better next time.
 
 [Your Mentor/Advisor]'s meta-article approach creates **training material that compounds.** Each article teaches the next person — human or AI — how to create the next article. The knowledge grows.
 
-The Mainframe approach creates **output but not learning material.** The articles exist. The knowledge of how to make them lives only in SOPs that, as established in Section 2, don't accurately reflect the [Methodology Partner] methodology.
+The PRISM approach creates **output but not learning material.** The articles exist. The knowledge of how to make them lives only in SOPs that, as established in Section 2, don't accurately reflect the [Methodology Partner] methodology.
 
 [Your Name] should adopt the meta-article concept for every batch of content. Not just "here are 50 articles" but "here are 50 articles, here's how they were made, here's what the AI did well, here's where it struggled, here's what a human had to fix."
 
@@ -178,7 +182,7 @@ The Mainframe approach creates **output but not learning material.** The article
 
 [Your Mentor/Advisor]'s key message: "Shift from idea to execution."
 
-The Mainframe is an idea executed beautifully. But it's an idea about HOW to execute, not execution itself. It's a system for doing work, not the work being done.
+The PRISM is an idea executed beautifully. But it's an idea about HOW to execute, not execution itself. It's a system for doing work, not the work being done.
 
 **Real execution looks like:**
 - Articles published on client sites with verified traffic increases
@@ -189,13 +193,13 @@ The Mainframe is an idea executed beautifully. But it's an idea about HOW to exe
 - Dollar-a-Day campaigns running with documented results
 - New clients signed from inbound leads generated by [Your Name]'s personal brand
 
-**The Mainframe compounds Claude's knowledge. It doesn't compound [Your Name]'s revenue.**
+**The PRISM compounds Claude's knowledge. It doesn't compound [Your Name]'s revenue.**
 
-Hard truth: If the Mainframe disappeared tomorrow, would any client notice? Would revenue change?
+Hard truth: If the PRISM disappeared tomorrow, would any client notice? Would revenue change?
 
 The answer [Your Name] needs to sit with: probably not yet.
 
-That doesn't mean the Mainframe is worthless. The infrastructure is real. The SOPs, even imperfect, are more than most agencies have. The content pipeline has proven it can produce volume. The memory system works.
+That doesn't mean the PRISM is worthless. The infrastructure is real. The SOPs, even imperfect, are more than most agencies have. The content pipeline has proven it can produce volume. The memory system works.
 
 But infrastructure without execution is potential energy. It's a loaded spring that hasn't been released. The value isn't in having the system — it's in what the system produces for clients who pay money.
 
@@ -211,4 +215,11 @@ The next phase isn't building a better engine. It's pointing the engine at reven
 
 ## The Bottom Line
 
-The Mainframe is a powerful engine. But an engine without wheels doesn't go anywhere. The next phase isn't building a better engine — it's putting the wheels on and driving.
+The PRISM is a powerful engine. But an engine without wheels doesn't go anywhere. The next phase isn't building a better engine — it's putting the wheels on and driving.
+
+---
+
+## See Also
+- [[sop-audit-report|SOP Audit Report]]
+- [[memory-bank/12-strategic-context|Strategic Context]]
+- [[10-anti-vandalism-checklist|Canon: Anti-Vandalism]]

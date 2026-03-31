@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/LDT
+  - type/canon
+---
+
 # Learn, Do, Teach — Implementation Guide ([Methodology Partner] Canon)
 
 **Source:** 9 Triangles Framework (01-nine-triangles.md), Quality Standards, Human Requirements, Role Scorecards, Onboarding SOPs, AI Apprentice Program
@@ -7,9 +14,9 @@
 
 ## 1. Purpose
 
-LDT is the [Methodology Partner] model for skill development. Every team member and apprentice progresses through Learn, Do, Teach for each skill they acquire. The 9 Triangles canon defines LDT as a triangle but does not explain HOW to implement it. This document fills that gap.
+LDT is the [Methodology Partner] model for skill development. Every team member and apprentice progresses through Learn, Do, Teach for each skill they acquire. The [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]] canon defines LDT as a triangle but does not explain HOW to implement it. This document fills that gap.
 
-A team lead should be able to use this guide to design a training plan for any new skill — from article writing to Dollar-a-Day campaign management to client onboarding.
+A team lead should be able to use this guide to design a training plan for any new skill — from article writing to [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]] campaign management to client onboarding.
 
 LDT is not optional. It is how competency is built and verified. Skipping phases is the single most common reason people claim expertise they do not have. [Your Mentor/Advisor]'s rule: "You can't teach what you haven't done. You can't do what you haven't learned."
 
@@ -76,7 +83,7 @@ LDT is not optional. It is how competency is built and verified. Skipping phases
 
 **AI Role:** AI can help structure teaching content — outlines, formatting, organizing steps. Human must validate accuracy and completeness. Teaching materials that contain errors propagate those errors to every future learner.
 
-**Output:** A published teaching artifact — an SOP in the Mainframe, a video in the Academy, a course module, or a documented mentorship session.
+**Output:** A published teaching artifact — an SOP in the PRISM, a video in the Academy, a course module, or a documented mentorship session.
 
 **CCS Progression:** This is where LDT and CCS intersect. The teaching output starts as Content (a written explanation or video), gets refined into a Checklist (step-by-step execution guide), and eventually becomes Software (an automated workflow or tool). Not every skill will reach the Software stage, but every skill should reach Checklist.
 
@@ -139,7 +146,7 @@ Create a simple matrix for each team member. Rows are skills, columns are L/D/T 
 - **Teach:** Record what teaching artifact was created. "SOP written," "Video recorded," "Mentored [name]," etc.
 - **Level:** Determined by the breadth of completed LDT cycles, per the SBP definitions above
 - **Update frequency:** Weekly during onboarding (first 60 days), monthly for established team members
-- **Storage:** Each team member's LDT matrix lives in their Basecamp project or in the Mainframe under `team-ops/`
+- **Storage:** Each team member's LDT matrix lives in their Basecamp project or in the PRISM under `team-ops/`
 
 ---
 
@@ -206,8 +213,8 @@ This document maps to the following [Methodology Partner] triangles:
 | **LDT** (primary) | This IS the implementation guide for the LDT triangle. Every section operationalizes Learn, Do, Teach. |
 | **CCS** | Teaching output follows the CCS progression: Content (first teaching artifact) to Checklist (refined SOP) to Software (automated training). |
 | **SBP** | Skill levels map directly to Specialist/Business/Partner. LDT completion is the mechanism for SBP advancement. |
-| **Content Factory** | Skills in the LDT matrix map to Content Factory stages. A Specialist might own Stage 2 (Process). A Business-level person owns Stages 1-4. A Partner owns the full pipeline. |
-| **MAA** | LDT progress is measured via MAA — the weekly report tracks what was Learned, Done, and Taught that week. Rep counts and quality metrics feed into the Metrics section. |
+| **[[blitzmetrics-canon/02-content-factory-process|Content Factory]]** | Skills in the LDT matrix map to Content Factory stages. A Specialist might own Stage 2 (Process). A Business-level person owns Stages 1-4. A Partner owns the full pipeline. |
+| **[[blitzmetrics-canon/05-maa-framework|MAA]]** | LDT progress is measured via MAA — the weekly report tracks what was Learned, Done, and Taught that week. Rep counts and quality metrics feed into the Metrics section. |
 | **GCT** | Every LDT cycle starts with Goals (what skill, what level), Content (what materials exist to learn from), Targeting (who is the learner, what's their current level). |
 
 ### Cross-References
@@ -233,3 +240,11 @@ Use this checklist when setting up LDT for a new skill:
 6. **Build the tracking row.** Add the skill to the team member's LDT matrix.
 7. **Set the timeline.** When should each phase be complete? Use the duration guidelines from the Learn phase section.
 8. **Start.** Do not over-plan. The person should be in the Learn phase within 24 hours of the plan being created.
+
+---
+## See Also
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[sops/client-work/ai-apprentice-onboarding|AI Apprentice Onboarding SOP]]
+- [[skills/article-writer|Article Writer Skill]]

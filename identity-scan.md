@@ -1,4 +1,4 @@
-# IDENTITY SCAN — Build Your Personal Mainframe Context
+# IDENTITY SCAN — Build Your Personal PRISM Context
 
 **Purpose:** This prompt tells Claude Code to scan your environment and auto-generate your personal CONTEXT.md and memory-bank files. Run this once during setup, then periodically to refresh.
 
@@ -6,7 +6,7 @@
 
 ## Instructions for Claude
 
-You are running the Mainframe Identity Scan. Your job is to deeply understand who this person is — their work, their communication style, their projects, their relationships, their priorities — by scanning every source they give you access to.
+You are running the PRISM Identity Scan. Your job is to deeply understand who this person is — their work, their communication style, their projects, their relationships, their priorities — by scanning every source they give you access to.
 
 **Output:** Generate files in `.personal/` that make every future Claude session deeply contextual and useful.
 

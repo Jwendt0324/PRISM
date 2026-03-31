@@ -1,10 +1,14 @@
 ---
-title: "Delegation Framework — What [Your Name] Touches vs. What [Your Name] Hands Off"
+title: Delegation Framework — What [Your Name] Touches vs. What [Your Name] Hands Off
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 status: active
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # Delegation Framework
@@ -72,7 +76,7 @@ These are the things that require my face, my voice, my relationships, or my jud
 
 ## DELEGATE — Who Handles What
 
-### [Your Ops Admin] — All Admin and Operations
+### [Your Ops Admin] [Last Name] — All Admin and Operations
 
 [Your Ops Admin] already runs Basecamp, tool access, onboarding, and finance. The gap is that I'm still doing admin work he should own.
 
@@ -84,13 +88,13 @@ These are the things that require my face, my voice, my relationships, or my jud
 | Invoicing and payments | [Your Ops Admin] does this | No change |
 | Calendly and scheduling logistics | [Your Ops Admin] does this | No change |
 | Onboarding new team/apprentice accounts | [Your Ops Admin] does this | No change |
-| Zapier automations | Goes through Zek/[Your Ops Admin] | No change |
+| Zapier automations | Goes through [Your Automation Lead]/[Your Ops Admin] | No change |
 
 **New rule:** If it involves a login, a tool, an account, or an admin panel — [Your Ops Admin] handles it. I don't touch it.
 
 ---
 
-### [Your Site Admin] — All Technical Work
+### [Your Site Admin] [Last Name] — All Technical Work
 
 | Task | Current State | New State |
 |------|---------------|-----------|
@@ -103,7 +107,7 @@ These are the things that require my face, my voice, my relationships, or my jud
 
 ---
 
-### [Your Ops Partner] — Reporting and Operational Oversight
+### [Your Ops Partner] [Last Name] — Reporting and Operational Oversight
 
 | Task | Current State | New State |
 |------|---------------|-----------|
@@ -114,7 +118,7 @@ These are the things that require my face, my voice, my relationships, or my jud
 
 ---
 
-### [Your Content Specialist] — All Content Production
+### [Your Content Specialist] [Last Name] — All Content Production
 
 This is the big one. [Your Content Specialist] is my content arm. Every piece of raw content I create should flow to him for repurposing. No exceptions.
 
@@ -255,9 +259,9 @@ If the answer is yes, stop. Write a Basecamp brief. Hand it off. Go talk to a cl
 |------------------------|---------------|
 | Writing, editing, design, video | **[Your Content Specialist]** |
 | Admin, accounts, tools, access | **[Your Ops Admin]** |
-| DNS, hosting, site technical work | **[Your Site Admin]** |
+| DNS, hosting, site technical work | **[Your Site Admin] [Last Name]** |
 | Reports, metrics, quality oversight | **[Your Ops Partner]** |
-| Onboarding automations, Zapier | **Zek / [Your Ops Admin]** |
+| Onboarding automations, Zapier | **[Your Automation Lead] / [Your Ops Admin]** |
 | Strategy, methodology, quality bar | **[Your Mentor/Advisor]** (advisor) |
 | Sales, clients, content creation, big decisions | **Me** |
 
@@ -274,3 +278,13 @@ If the answer is yes, stop. Write a Basecamp brief. Hand it off. Go talk to a cl
 ---
 
 *Revenue comes from clients. Clients come from relationships. Relationships come from me showing up. Everything else has a name next to it that isn't mine.*
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/03-decision-rights-matrix|Decision Rights Matrix]]
+- [[sops/templates/team-ops/08-role-scorecards|Role Scorecards]]
+- [[sops/templates/team-ops/10-project-management-sop|Project Management SOP]]
+- [[memory-bank/05-team-and-roles|Team and Roles]]
+- [[blitzmetrics-canon/08-delegation-framework|Canon: Delegation Framework]]

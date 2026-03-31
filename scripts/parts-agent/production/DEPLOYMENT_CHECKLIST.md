@@ -103,7 +103,7 @@ C:\HRIAutomation\parts-agent\
 
 - [ ] Edit `C:\HRIAutomation\parts-agent\config\config.json`
 - [ ] Update `username` and `password` for [Parts Distributor]
-- [ ] Update `marcone_accounts.d3s` credentials
+- [ ] Update `marcone_accounts.[client-id]` credentials
 - [ ] Update `field_service_platform` host/username/password for RDP
 - [ ] Update `rss_key` username/password
 - [ ] Save file (UTF-8 encoding required)

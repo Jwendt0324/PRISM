@@ -1,17 +1,21 @@
 ---
-title: "Client Communication SOP — How We Talk to Clients at Every Stage"
+title: Client Communication SOP — How We Talk to Clients at Every Stage
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 status: active
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # Client Communication SOP
 
 ## Purpose
 
-Every client touchpoint follows a pattern. This SOP defines what gets said, by whom, and through which channel at every stage of a KP Sprint engagement. No improvising. No orphaned threads. No confusion about who's talking to the client.
+Every client touchpoint follows a pattern per [[memory-bank/08-communication-patterns|Communication Patterns]]. This SOP defines what gets said, by whom, and through which channel at every stage of a KP Sprint engagement. No improvising. No orphaned threads. No confusion about who's talking to the client.
 
 ---
 
@@ -176,3 +180,13 @@ Before any client-facing communication goes out:
 - **Sending updates without the MAA format.** Freeform updates are hard to parse and easy to misread. Metrics, Analysis, Action. Every time.
 - **Escalating to [Your Mentor/Advisor] via email or text.** He's managing multiple projects. If it's not in Basecamp, it gets lost. Use Basecamp for escalations.
 - **Forgetting the post-delivery follow-up.** The Sprint ends. Everyone moves on. Then we have no case study, no testimonial, and no Phase 2 proposal. Set a calendar reminder for the 30-day check-in.
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/02-communication-protocol|Communication Protocol]]
+- [[sops/templates/team-ops/12-escalation-playbook|Escalation Playbook]]
+- [[sops/templates/team-ops/10-project-management-sop|Project Management SOP]]
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[blitzmetrics-canon/08-human-requirements|Canon: Human Requirements]]

@@ -1,10 +1,15 @@
 ---
-description: Documented friction points and systemic issues at [Your Agency] with root cause analysis and fixes
+description: Documented friction points and systemic issues at [Your Agency] with root
+  cause analysis and fixes
 category: team-ops
 created: 2026-03-18
 last_updated: 2026-03-21
 version: 1.1
 skill_linked: Yes
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # 14 — Current Pain Points
@@ -75,9 +80,9 @@ Last updated: 2026-03-18
 
 ---
 
-## 7. Refund Request ([Refunded Client])
+## 7. Refund Request (Ed Strachar)
 
-**What happened:** [Refunded Client] emailed asking about a $1,500 refund. [Your Ops Admin] looped the team.
+**What happened:** Ed Strachar emailed asking about a $1,500 refund. [Your Ops Admin] looped the team.
 
 **Root cause:** The specifics vary, but the bigger issue is that we need clear, documented refund policy enforcement so these don't become ad hoc decisions every time.
 
@@ -91,7 +96,7 @@ Last updated: 2026-03-18
 
 **Root cause:** Multiple priorities pulling in different directions — military service obligations, onboarding [Your Content Specialist], building systems, personal matters. Spread thin across too many things, executing on too few.
 
-**Fix:** The delegation framework is the answer. [Your Content Specialist] handles content production. [Your Ops Admin] handles admin. The Mainframe handles systems documentation. My time allocation should be: 60% client delivery, 20% sales, 20% strategic. Everything else gets delegated or deferred.
+**Fix:** The delegation framework is the answer. [Your Content Specialist] handles content production. [Your Ops Admin] handles admin. The PRISM handles systems documentation. My time allocation should be: 60% client delivery, 20% sales, 20% strategic. Everything else gets delegated or deferred.
 
 ---
 
@@ -107,7 +112,7 @@ Last updated: 2026-03-18
 
 ## 10. Shared Tool Access Fragility
 
-**What happened:** The [Social Media Tool] dashboard had an unknown admin. Nobody on the team could identify who set it up. The entire team did a "not me" email chain — nobody claimed it.
+**What happened:** The Jumper Media dashboard had an unknown admin. Nobody on the team could identify who set it up. The entire team did a "not me" email chain — nobody claimed it.
 
 **Root cause:** No centralized documentation of who owns what tool, who has admin access, and what credentials exist. When tools are set up ad hoc and people leave or forget, access becomes a mystery.
 
@@ -160,3 +165,13 @@ Fix these three things and 80% of the friction disappears.
 ---
 
 *Note: SOP-specific recommendations previously tracked in memory-bank/sop-recommendations.md were largely resolved during the 2026-03-20 canon alignment sprint. Remaining operational gaps have been merged into this document (items 11-13 above). The sop-recommendations file has been retired.*
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/13-team-scaling-plan|Team Scaling Plan]]
+- [[sops/templates/team-ops/sop-recommendations|SOP Recommendations]]
+- [[sops/templates/team-ops/00-team-os-overview|Team OS Overview]]
+- [[memory-bank/12-strategic-context|Strategic Context]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Canon: Anti-Vandalism]]

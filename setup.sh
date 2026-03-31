@@ -1,16 +1,16 @@
 #!/bin/bash
-# Mainframe Setup — One-time onboarding for new users
+# PRISM Setup — One-time onboarding for new users
 # Usage: ./setup.sh
 
 set -e
 
-MAINFRAME_DIR="$(cd "$(dirname "$0")" && pwd)"
-PERSONAL_DIR="$MAINFRAME_DIR/.personal"
+PRISM_DIR="$(cd "$(dirname "$0")" && pwd)"
+PERSONAL_DIR="$PRISM_DIR/.personal"
 CLAUDE_DIR="$HOME/.claude"
 
 echo ""
 echo "========================================"
-echo "  CLAUDE MAINFRAME — SETUP"
+echo "  CLAUDE PRISM — SETUP"
 echo "========================================"
 echo ""
 
@@ -27,7 +27,7 @@ fi
 if [ -f "$PERSONAL_DIR/CONTEXT.md" ]; then
     echo "[OK] CONTEXT.md already exists — skipping template copy"
 else
-    cp "$MAINFRAME_DIR/CONTEXT-TEMPLATE.md" "$PERSONAL_DIR/CONTEXT.md"
+    cp "$PRISM_DIR/CONTEXT-TEMPLATE.md" "$PERSONAL_DIR/CONTEXT.md"
     echo "[OK] Created .personal/CONTEXT.md from template"
 fi
 
@@ -39,8 +39,8 @@ if [ -f "$CLAUDE_DIR/CLAUDE.md" ]; then
     echo ""
     echo "[!] You already have a CLAUDE.md at ~/.claude/CLAUDE.md"
     echo "    Options:"
-    echo "    1) Replace it with the Mainframe CLAUDE.md (backup saved)"
-    echo "    2) Append Mainframe instructions to existing CLAUDE.md"
+    echo "    1) Replace it with the PRISM CLAUDE.md (backup saved)"
+    echo "    2) Append PRISM instructions to existing CLAUDE.md"
     echo "    3) Skip — I'll set it up manually"
     echo ""
     read -p "    Choice [1/2/3]: " claude_choice
@@ -48,20 +48,20 @@ if [ -f "$CLAUDE_DIR/CLAUDE.md" ]; then
     case $claude_choice in
         1)
             cp "$CLAUDE_DIR/CLAUDE.md" "$CLAUDE_DIR/CLAUDE.md.backup.$(date +%Y%m%d)"
-            cp "$MAINFRAME_DIR/CLAUDE-TEMPLATE.md" "$CLAUDE_DIR/CLAUDE.md"
+            cp "$PRISM_DIR/CLAUDE-TEMPLATE.md" "$CLAUDE_DIR/CLAUDE.md"
             # Replace placeholder with actual path
-            sed -i '' "s|{{MAINFRAME_PATH}}|$MAINFRAME_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
-            sed -i "s|{{MAINFRAME_PATH}}|$MAINFRAME_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
+            sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
+            sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
             echo "[OK] CLAUDE.md replaced (backup saved)"
             ;;
         2)
             echo "" >> "$CLAUDE_DIR/CLAUDE.md"
-            echo "# --- MAINFRAME INSTRUCTIONS (appended by setup) ---" >> "$CLAUDE_DIR/CLAUDE.md"
+            echo "# --- PRISM INSTRUCTIONS (appended by setup) ---" >> "$CLAUDE_DIR/CLAUDE.md"
             echo "" >> "$CLAUDE_DIR/CLAUDE.md"
-            cat "$MAINFRAME_DIR/CLAUDE-TEMPLATE.md" >> "$CLAUDE_DIR/CLAUDE.md"
-            sed -i '' "s|{{MAINFRAME_PATH}}|$MAINFRAME_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
-            sed -i "s|{{MAINFRAME_PATH}}|$MAINFRAME_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
-            echo "[OK] Mainframe instructions appended to existing CLAUDE.md"
+            cat "$PRISM_DIR/CLAUDE-TEMPLATE.md" >> "$CLAUDE_DIR/CLAUDE.md"
+            sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
+            sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
+            echo "[OK] PRISM instructions appended to existing CLAUDE.md"
             ;;
         3)
             echo "[SKIP] Manual setup — copy CLAUDE-TEMPLATE.md to ~/.claude/CLAUDE.md"
@@ -69,14 +69,14 @@ if [ -f "$CLAUDE_DIR/CLAUDE.md" ]; then
     esac
 else
     mkdir -p "$CLAUDE_DIR"
-    cp "$MAINFRAME_DIR/CLAUDE-TEMPLATE.md" "$CLAUDE_DIR/CLAUDE.md"
-    sed -i '' "s|{{MAINFRAME_PATH}}|$MAINFRAME_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
-    sed -i "s|{{MAINFRAME_PATH}}|$MAINFRAME_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
+    cp "$PRISM_DIR/CLAUDE-TEMPLATE.md" "$CLAUDE_DIR/CLAUDE.md"
+    sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
+    sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
     echo "[OK] Created ~/.claude/CLAUDE.md"
 fi
 
 # Step 4: Create logs directory
-mkdir -p "$MAINFRAME_DIR/logs/sessions" "$MAINFRAME_DIR/logs/actions" "$MAINFRAME_DIR/logs/reports"
+mkdir -p "$PRISM_DIR/logs/sessions" "$PRISM_DIR/logs/actions" "$PRISM_DIR/logs/reports"
 echo "[OK] Logs directories ready"
 
 # Step 5: Summary
@@ -85,7 +85,7 @@ echo "========================================"
 echo "  SETUP COMPLETE"
 echo "========================================"
 echo ""
-echo "  Mainframe: $MAINFRAME_DIR"
+echo "  PRISM: $PRISM_DIR"
 echo "  Personal:  $PERSONAL_DIR"
 echo "  CLAUDE.md: $CLAUDE_DIR/CLAUDE.md"
 echo ""

@@ -13,7 +13,7 @@ canon_sources: [05-maa-framework.md]
 # Weekly MAA Report SOP
 
 ## Purpose
-Deliver a consistent, numbers-driven weekly report that shows clients (and [Your Mentor/Advisor]) what happened, what it means, and what happens next — in under 5 minutes.
+Deliver a consistent, numbers-driven weekly [[blitzmetrics-canon/05-maa-framework|MAA]] report that shows clients (and [Your Mentor/Advisor]) what happened, what it means, and what happens next — in under 5 minutes.
 
 ## When to Use
 - Every Friday for every active client engagement
@@ -99,3 +99,23 @@ Deliver a consistent, numbers-driven weekly report that shows clients (and [Your
 
 ## Learnings Log
 - *2026-03-18* — SOP created based on [Methodology Partner] MAA standards and [Your Mentor/Advisor]'s feedback patterns. The 3-5 minute benchmark assumes metrics are tracked consistently throughout the week — if you wait until Friday to pull everything, it takes much longer.
+
+---
+
+## Related
+
+- [Content Factory SOP](content-factory-execution.md)
+- [Influence Report Card SOP](influence-report-card.md)
+- [Dollar-a-Day SOP](dollar-a-day-campaign.md)
+- [Canon: MAA Framework](../../blitzmetrics-canon/05-maa-framework.md)
+- [Skill: Weekly MAA Report](../../skills/weekly-maa-report.md)
+- [Client Directory](../../memory-bank/04-client-directory.md)
+
+## See Also
+
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[skills/influence-report-card|Influence Report Card]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[memory-bank/04-client-directory|Client Directory]]

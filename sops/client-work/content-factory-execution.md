@@ -14,7 +14,7 @@ canon_sources: [02-content-factory-process.md, 05-maa-framework.md, 06-topic-whe
 ## Purpose
 The Content Factory is a systematized 6-stage process to capture, process, distribute, and amplify content across all client channels. Raw material comes from the client's existing activities (speaking, meetings, calls) — the owner produces 1%, the system handles the other 99%.
 
-This SOP follows the canonical [Methodology Partner] 6-stage model: **Plumbing → Produce → Process → Post → Promote → Perform**. After initial setup, stages 2-6 run as a continuous loop, with Perform feeding insights back into Process.
+This SOP follows the canonical [[blitzmetrics-canon/02-content-factory-process|[Methodology Partner] 6-stage model]]: **Plumbing → Produce → Process → Post → Promote → Perform**. After initial setup, stages 2-6 run as a continuous loop, with Perform feeding insights back into Process.
 
 ## Canon Compliance
 
@@ -342,7 +342,7 @@ This SOP follows the canonical [Methodology Partner] 6-stage model: **Plumbing �
 
 ## Stage 4: Promote (Amplify with Dollar-a-Day)
 
-**Purpose:** Amplify best content using Dollar-a-Day and Thank You Machine. Only boost content that has proven organic engagement first.
+**Purpose:** Amplify best content using [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]] and Thank You Machine. Only boost content that has proven organic engagement first.
 
 **Triangle context:** ACC — promote content at every funnel stage. GCT targeting drives audience selection. Never skip organic proof.
 
@@ -639,3 +639,31 @@ The Content Factory process follows the LDT triangle for team development:
 - **What didn't**: [Document failures and root causes]
 - **Client-specific findings**: [Document unique voice/content that resonated]
 - **Next iteration**: [What to change for next cycle]
+
+---
+
+## Related
+
+- [Content Repurposing SOP](content-repurposing-pipeline.md)
+- [Article Writing SOP](article-writing-from-transcripts.md)
+- [Knowledge Panel Sprint SOP](knowledge-panel-sprint.md)
+- [Dollar-a-Day SOP](dollar-a-day-campaign.md)
+- [Weekly MAA Report SOP](weekly-maa-report.md)
+- [Canon: Content Factory Process](../../blitzmetrics-canon/02-content-factory-process.md)
+- [Canon: Topic Wheel](../../blitzmetrics-canon/06-topic-wheel.md)
+- [Skill: Content Factory](../../skills/content-factory.md)
+- [Client Directory](../../memory-bank/04-client-directory.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[blitzmetrics-canon/12-ldt-implementation-guide|LDT Guide]]
+- [[skills/content-factory|Content Factory Skill]]
+- [[skills/dollar-a-day|Dollar-a-Day Skill]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[skills/content-repurposing|Content Repurposing]]
+- [[memory-bank/04-client-directory|Client Directory]]

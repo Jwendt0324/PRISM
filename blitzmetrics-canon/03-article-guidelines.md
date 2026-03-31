@@ -1,47 +1,69 @@
+---
+tags:
+  - status/active
+  - triangle/CCS
+  - triangle/MAA
+  - type/canon
+---
+
 # Article Quality Guidelines — [Methodology Partner] Canon
 
 **Source:** [methodology-partner.com]/blog-posting-guidelines/, Master Content Factory Guides, Article QA processes
-**Version:** 1.0 | **Extracted:** 2026-03-19
+**Version:** 2.0 | **Extracted:** 2026-03-19 | **Updated:** 2026-03-30
 
 ---
 
 ## Overview
 
-Every article produced must pass this quality checklist before being marked "done." This is the canonical standard from [Methodology Partner], adapted for use with AI-assisted content creation.
+Every article produced must pass this quality gate before being marked "done." This is the canonical standard from [Methodology Partner], adapted for use with AI-assisted content creation.
+
+Articles should read like a knowledgeable person wrote them. The gate catches two failure modes: **AI slop** (generic, pattern-heavy, disconnected from source) and **vandalism** (duplicate content, keyword cannibalization, broken linking). It does not exist to enforce arbitrary mechanical rules that flatten human voice.
+
+---
+
+## Severity Tiers
+
+Every check falls into one of three tiers:
+
+| Tier | Meaning | Action |
+|------|---------|--------|
+| **BLOCK** | Real problem. Always wrong. No exceptions. | Must fix before publishing. |
+| **WARN** | Likely a problem. Usually needs fixing. | Fix, or document why it's intentional. |
+| **STYLE** | Judgment call. Depends on voice and context. | Author's discretion. Not scored. |
+
+**Publication rule:** 0 BLOCK violations required. WARN violations should be resolved or documented.
 
 ---
 
 ## Pre-Writing Phase
 
-### Step 1: Gather Requirements
+### Step 1: Gather Requirements — BLOCK
 - Obtain client's GCT (Goals, Content, Targeting)
 - Secure raw video file as pillar content
-- Confirm access to text editor and Descript
+- Confirm access to text editor and tools
 - **PASS:** All three items confirmed
 - **FAIL:** Missing video source or GCT
 
-### Step 2: Transcribe Video
-- Upload video to Google Drive and Descript
-- Use white-glove transcription for high-authority content
-- Review transcript, correct blue-underlined words
+### Step 2: Transcribe Video — BLOCK
+- Upload video to Drive and transcribe (Whisper, Descript, YouTube captions)
+- Review transcript, correct names, brands, technical terms
 - Export finalized text to shared drive
 - **PASS:** Clean transcript with corrections applied
 - **FAIL:** Unreviewed raw transcript used as-is
 
-### Step 3: Watch Complete Video
-- Verify Descript accuracy against actual video
+### Step 3: Watch Complete Video — BLOCK
+- Verify transcript accuracy against actual video
 - Correct spelling of names, brands, tools
 - Remove filler words ("uh," "like," "you know")
 - Identify core message and key takeaways
 - **PASS:** Video watched, names verified, core message identified
-- **PARTIAL:** Transcript reviewed but video not watched
-- **FAIL:** Neither done — article written from raw transcript only
-- **NEEDS HUMAN:** Name spellings, brand references, context
+- **FAIL:** Neither video watched nor transcript thoroughly reviewed
+- **NEEDS HUMAN:** YES — watching video is a human task. AI cannot watch video. Non-negotiable.
 
-### Step 4: Research & Prepare
+### Step 4: Research & Prepare — BLOCK
 - Search Google and internal blog for existing content on topic
-- **CRITICAL: If article exists, ENHANCE rather than duplicate** (anti-vandalism)
-- Identify 6-12 meaningful sub-topics from video
+- **CRITICAL: If article exists, ENHANCE rather than duplicate** ([[blitzmetrics-canon/10-anti-vandalism-checklist|anti-vandalism]])
+- Identify 6-12 meaningful sub-topics from video (3-5 for short-form)
 - Gather multimedia: photos, clips, headshots
 - **PASS:** Research done, no duplication, subtopics identified
 - **FAIL:** No research, potential keyword cannibalization
@@ -50,61 +72,70 @@ Every article produced must pass this quality checklist before being marked "don
 
 ## Writing Phase
 
-### Step 5: Write Article from Transcript
+### Step 5: Write Article from Transcript — BLOCK
 - Minimum 200 words; adjust for topic depth
 - Match point-of-view to website type:
   - First-person for personal brand sites
   - Third-person for agency/company sites
-- Avoid specific dates and limited-time promotions (evergreen)
-- Use the speaker's actual words and stories (E-E-A-T)
+- Evergreen content (no specific dates or limited-time references unless inherently time-bound)
+- Use the speaker's actual words, stories, and credentials (E-E-A-T)
+- Not generic — a reader should be able to tell which video this came from
+- See [[blitzmetrics-canon/07-quality-standards|Quality Standards]] and [[blitzmetrics-canon/08-human-requirements|Human Requirements]] for review gates
 - **PASS:** Article uses transcript content with proper POV and length
 - **FAIL:** Generic AI-generated content disconnected from transcript
 
-### Step 6: Craft Title & Headings
-- Start with main keyword
-- Make titles specific, sharp, searchable
+### Step 6: Craft Title & Headings — WARN
+- Lead with or prominently feature the main keyword
+- Make titles specific, sharp, searchable (not clever-but-vague)
 - Single H1 (auto-generated by WordPress)
 - H2s for main sections, H3s for subsections
-- Avoid heading abuse (not every 3-4 lines)
+- Headings mark genuine section breaks — not every 3-4 lines
 - **PASS:** SEO-friendly title, proper heading hierarchy
 - **FAIL:** Vague title, heading every paragraph
 
-### Step 7: Write Engaging Hook
-- First line must grab attention
-- Explain video context: who's featured, how connected, event
-- If featuring figurehead, explain why they're worth listening to
-- Answer the central question in first paragraph
+### Step 7: Write Strong Opening — WARN
+The opening should make someone want to keep reading. How it does that is flexible.
+
+- First paragraph establishes what the article is about and why it matters
+- Context provided: who's featured, what their credentials are, what the source is
+- No banned opening patterns ("In today's...", "In the world of...")
+
+**What works:**
+- Start with a striking fact or number: "$3 million. That's the portfolio you need..."
+- Start with a bold claim: "Five myths still dominate the fitness industry."
+- Start with a short, punchy sentence that sets the frame
+
+**What doesn't work:**
+- Generic preambles that could apply to any article on the topic
+- Throat-clearing ("In this article, we'll explore...")
+- Buried ledes where the interesting thing is in paragraph 3
+
 - **PASS:** Hook grabs attention, context set within first paragraph
-- **PARTIAL:** Good hook but missing context
-- **FAIL:** Generic opening ("In today's digital landscape...")
+- **FAIL:** Generic opening or buried lede
 - **NEEDS HUMAN:** Verifying relationship context between people
 
-### Step 8: Include Multimedia
+### Step 8: Include Multimedia — WARN
 - Featured image directly related to topic (required)
-- Video screenshots to illustrate concepts
-- Real photos from Google Photos or Amazon Photos (not stock)
+- Real photos from Google Photos or event archives (not stock)
 - Upload via WordPress Media Library (not paste)
-- Captions and alt text on ALL images
-- Colored highlight boxes: green (positive), red (negative)
+- Alt text on ALL images
 - **PASS:** Featured image + 2+ inline images with alt text
 - **PARTIAL:** Featured image only
 - **FAIL:** No images
 - **NEEDS HUMAN:** Selecting real photos, uploading to WordPress
 
-### Step 9: Link to Relevant Content
-- Link internally to related content on company sites
+### Step 9: Link to Relevant Content — WARN
+- 2+ internal links to related content on company sites
 - Anchor text: 3-6 words, specific, descriptive
 - NEVER use "click here" or generic anchor text
 - NEVER repeat the same link in an article
 - Only link to web pages (not PDFs or video files)
-- Avoid excessive self-promotional linking
 - **PASS:** 2+ internal links with descriptive anchor text
 - **FAIL:** No internal links, or "click here" anchors
 
-### Step 10: Embed Source Video
-- Place source video at top of article
+### Step 10: Embed Source Video — WARN
+- Place source video at or near top of article
 - Add context explaining video origin and relevance
-- Submit unedited videos to processing first
 - **PASS:** Video embedded with context
 - **PARTIAL:** Video linked but not embedded
 - **FAIL:** No video reference
@@ -114,43 +145,70 @@ Every article produced must pass this quality checklist before being marked "don
 
 ## Quality Assurance Phase
 
-### Step 11: Proofread Thoroughly
-- Use Grammarly or ChatGPT for initial QA
-- Eliminate fluff and vague statements
-- Remove repetition from spoken content
-- Paragraphs 3-5 lines maximum
-- Active voice exclusively
-- **BANNED WORDS:** delve, landscape, realm, paradigm, synergy, game-changer, revolutionize, cutting-edge, harness, utilize, facilitate, leverage (as verb), streamline, robust, foster, spearhead, holistic, ecosystem, empower, pivot, disrupt, beacon
-- **BANNED AI PATTERNS:** "In today's [noun]...", "It's important to note...", "Whether you're a... or a...", "At the end of the day...", "In the world of...", "[Topic] is not just about...", "When it comes to...", "In conclusion...", "As we navigate..."
-- **BANNED SALESY LANGUAGE:** "Don't miss out!", "Act now!", "Limited time!", "You won't believe...", "Secret to..."
-- Never end sentences with prepositions
-- No rhetorical questions or weasel words
-- **PASS:** Zero banned words/patterns, active voice, tight paragraphs
-- **FAIL:** Any banned word or AI pattern present
+### Step 11: Language Quality — BLOCK / WARN / STYLE
 
-### Step 12: Post on WordPress
-- Follow internal WordPress posting guide
+This is the most nuanced step. Three tiers apply:
+
+#### BLOCK — Zero Tolerance
+
+**Banned words (22):** delve, landscape, realm, paradigm, synergy, game-changer, revolutionize, cutting-edge, harness, utilize, facilitate, leverage (as verb), streamline, robust, foster, spearhead, holistic, ecosystem, empower, pivot, disrupt, beacon
+
+**Banned AI patterns (13):**
+- "In today's [noun]..."
+- "It's important to note..."
+- "Whether you're a... or a..."
+- "At the end of the day..."
+- "In the world of..."
+- "[Topic] is not just about..."
+- "When it comes to..."
+- "In conclusion..."
+- "As we navigate..."
+- "Not because X, but because Y"
+- "This is where X comes in"
+- "Let that sink in"
+- "Full stop." (as sentence-ending emphasis)
+
+**Banned salesy language:** "limited time", "what are you waiting for", "act now", "don't miss out", "sign up today"
+
+#### WARN — Fix Unless Intentional
+
+- **Walls of text:** Paragraphs over 8 lines with no break
+- **Zero contractions** in 500+ words (sounds robotic)
+- **Stacked rhetorical questions:** 2+ in a row is an AI tell
+- **Em dashes:** Zero allowed unless client voice profile explicitly permits them
+- **Generic filler:** Sentences that add no information
+
+#### STYLE — Author's Judgment (Not Scored)
+
+- **Paragraph rhythm.** Vary it. One-sentence paragraphs for emphasis are a legitimate writing technique. Longer paragraphs for complex explanations. Don't flatten everything to uniform length.
+- **Single rhetorical questions.** One well-placed question can be the strongest line in the piece. "Is that number enough?" works. Three questions in a row doesn't.
+- **Passive voice.** Active voice is the default, but passive has legitimate uses. "The store was founded in 1985" is better than contorting the sentence when the founder isn't the point.
+- **Sentence-ending prepositions.** Not a real grammar rule. Write naturally.
+- **Contraction density.** Use contractions the way the speaker would talk. Match the voice, don't count them.
+
+### Step 12: Post on WordPress — BLOCK
 - Add title, body, featured image, metadata
 - Save drafts and preview before publishing
+- URL slug is clean and keyword-rich
 - **PASS:** Published correctly with all elements
-- **NEEDS HUMAN:** WordPress login, featured image upload, RankMath SEO settings
+- **NEEDS HUMAN:** WordPress login, featured image upload, visual preview, publish decision
 
-### Step 13: Categorize & Add Keywords
-- Use WordPress category system aligned to Topic Wheel
-- Add relevant tags (not excessive)
-- Set RankMath/Yoast focus keyword
+### Step 13: Categorize & Add Keywords — WARN
+- WordPress category aligned to [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] (WHY / HOW / WHAT)
+- Relevant tags added (3-7, not excessive)
+- RankMath/Yoast focus keyword set
 - Meta description written (not auto-generated)
 - **PASS:** Categorized, tagged, meta description set
-- **PARTIAL:** Categorized but missing meta description
 - **NEEDS HUMAN:** Category selection aligned to client's Topic Wheel
 
 ---
 
 ## Publishing Phase
 
+Steps 14-18 happen AFTER publishing. They do NOT block publication. Track separately.
+
 ### Step 14: Cross-Post to Social Channels
-- Share on Facebook (profile + page), LinkedIn, Twitter
-- Use broetry style for LinkedIn (each sentence = own paragraph)
+- Share on Facebook (profile + page), LinkedIn, Twitter/X
 - Tag relevant people mentioned in article
 - Track in Content Library
 - **PASS:** Cross-posted to 3+ platforms with proper formatting
@@ -166,7 +224,6 @@ Every article produced must pass this quality checklist before being marked "don
 - Minimum thresholds: 1,000 organic views OR 100+ engagements
 - If qualifies, add to Dollar-a-Day testing queue
 - **PASS:** Evaluated and queued if qualified
-- **PARTIAL:** Not yet evaluated
 
 ### Step 17: Monitor Performance (MAA)
 - Track page views, time on page, bounce rate, rankings
@@ -176,9 +233,10 @@ Every article produced must pass this quality checklist before being marked "don
 
 ### Step 18: Iterate Based on Results
 - If underperforming: update title, add multimedia, improve internal linking
-- If performing well: repurpose into additional formats (video script, LinkedIn post, email)
-- Feed back into Content Factory loop (Perform → Process)
+- If performing well: repurpose into additional formats
+- Feed back into [[blitzmetrics-canon/02-content-factory-process|Content Factory]] loop (Perform → Process)
 - **PASS:** Action taken based on performance data
+- **NEEDS HUMAN:** Strategic judgment on iteration approach
 
 ---
 
@@ -204,11 +262,11 @@ Every article produced must pass this quality checklist before being marked "don
 | 4. Research | Yes | Judgment on duplication |
 | 5. Write Article | Yes (AI) | Voice/tone review |
 | 6. Title & Headings | Yes | SEO judgment |
-| 7. Hook | Yes (AI) | Context verification |
+| 7. Strong Opening | Yes (AI) | Context verification |
 | 8. Multimedia | No | Photo selection, upload |
 | 9. Internal Links | Partial | Link strategy |
 | 10. Embed Video | No | YouTube upload, WP embed |
-| 11. Proofread | Yes | Final review |
+| 11. Language Quality | Partial (BLOCK automated, STYLE human) | Final review |
 | 12. Post on WordPress | No | Login, publish |
 | 13. Categorize | No | Topic Wheel alignment |
 | 14. Cross-Post | Partial | Platform formatting |
@@ -216,3 +274,15 @@ Every article produced must pass this quality checklist before being marked "don
 | 16. Dollar-a-Day | No | Budget decisions |
 | 17. Monitor (MAA) | Partial | Analysis |
 | 18. Iterate | No | Strategic decisions |
+
+---
+## See Also
+- [[skills/article-qa|Article QA Skill]]
+- [[skills/article-writer|Article Writer Skill]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel Methodology]]
+- [[blitzmetrics-canon/07-quality-standards|Quality Standards]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism Checklist]]
+- [[sops/client-work/article-qa-blitzmetrics|Article QA SOP]]
+- [[sops/templates/qa-scorecard-template|QA Scorecard Template]]

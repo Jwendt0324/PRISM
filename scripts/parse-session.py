@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Mainframe — Session Transcript Parser v3
+Claude PRISM — Session Transcript Parser v3
 Produces two outputs per session:
   1. logs/sessions/YYYY-MM/session-{session_id}.jsonl  (machine-readable audit trail)
   2. logs/sessions/YYYY-MM/session-{session_id}.md     (human-readable summary)
@@ -17,11 +17,11 @@ Key changes from v2:
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from collections import Counter
 
-MAINFRAME_DIR = os.path.expanduser("~/Documents/Claude/Mainframe")
+PRISM_DIR = os.path.expanduser("~/Documents/Claude/PRISM")
 
 
 def parse_hook_input():
@@ -41,7 +41,7 @@ def is_noise(text):
         return True
     noise_patterns = [
         "Last login:",
-        "jackwendt@",
+        "[your-username]@",
         "<task-notification>",
         "Claude Code v",
         "Opus 4",
@@ -167,7 +167,7 @@ def parse_transcript(transcript_path):
     # First meaningful assistant response
     first_response = ""
     for text in assistant_texts:
-        if len(text) > 50 and not text.startswith("MAINFRAME"):
+        if len(text) > 50 and not text.startswith("PRISM"):
             first_response = text[:500]
             break
 
@@ -214,7 +214,7 @@ def determine_category(data):
         return "dev"
     if ".py" in all_files_str or ".js" in all_files_str or ".sh" in all_files_str:
         return "dev"
-    if "mainframe" in task_str or "hook" in task_str or "log" in task_str:
+    if "PRISM" in task_str or "hook" in task_str or "log" in task_str:
         return "system"
     return "general"
 
@@ -234,14 +234,13 @@ def is_trivial_session(data):
 
 def enrich_from_actions_log(session_id):
     """Pull additional action data from the daily JSONL actions log."""
-    actions_dir = os.path.join(MAINFRAME_DIR, "logs", "actions")
+    actions_dir = os.path.join(PRISM_DIR, "logs", "actions")
     if not os.path.isdir(actions_dir):
         return []
 
     actions = []
     # Check today's and yesterday's logs (session might span midnight)
     for days_back in range(2):
-        from datetime import timedelta
         check_date = datetime.now(timezone.utc) - timedelta(days=days_back)
         log_file = os.path.join(actions_dir, check_date.strftime("%Y-%m-%d") + ".jsonl")
         if not os.path.exists(log_file):
@@ -267,7 +266,7 @@ def enrich_from_actions_log(session_id):
 def write_session_jsonl(session_id, hook_data, transcript_data, actions, category):
     """Write machine-readable session data as JSONL."""
     now = datetime.now(timezone.utc)
-    log_dir = os.path.join(MAINFRAME_DIR, "logs", "sessions", now.strftime("%Y-%m"))
+    log_dir = os.path.join(PRISM_DIR, "logs", "sessions", now.strftime("%Y-%m"))
     os.makedirs(log_dir, exist_ok=True)
 
     # Use short session_id for filename (first 8 chars)
@@ -308,7 +307,7 @@ def write_session_markdown(session_id, hook_data, transcript_data, category):
     """Write human-readable session summary."""
     now = datetime.now(timezone.utc)
     date_slug = now.strftime("%Y%m%d-%H%M%S")
-    log_dir = os.path.join(MAINFRAME_DIR, "logs", "sessions", now.strftime("%Y-%m"))
+    log_dir = os.path.join(PRISM_DIR, "logs", "sessions", now.strftime("%Y-%m"))
     os.makedirs(log_dir, exist_ok=True)
 
     short_id = session_id[:8] if len(session_id) > 8 else session_id
@@ -417,7 +416,7 @@ If Claude didn't fill this in, a human should review the transcript and extract 
 def log_session_event(session_id, cwd, transcript_data):
     """Write session end event to session-events.jsonl."""
     now = datetime.now(timezone.utc)
-    events_log = os.path.join(MAINFRAME_DIR, "logs", "session-events.jsonl")
+    events_log = os.path.join(PRISM_DIR, "logs", "session-events.jsonl")
 
     event = {
         "ts": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -435,14 +434,88 @@ def log_session_event(session_id, cwd, transcript_data):
         f.write(json.dumps(event, ensure_ascii=False) + "\n")
 
 
+def find_transcript(session_id):
+    """Try to find the transcript file for a session.
+    Claude Code stores transcripts in ~/.claude/projects/*/conversations/
+    or similar locations. Search common paths."""
+    import glob
+
+    # Claude Code stores transcripts as {session_id}.jsonl in project dirs
+    search_paths = [
+        os.path.expanduser(f"~/.claude/projects/-Users-[your-username]/{session_id}.jsonl"),
+        os.path.expanduser(f"~/.claude/projects/*/{session_id}.jsonl"),
+    ]
+
+    # Direct match by session_id filename
+    for pattern in search_paths:
+        matches = glob.glob(pattern)
+        if matches:
+            return matches[0]
+
+    # Fallback: search all project JSONL files for most recent
+    fallback_patterns = [
+        os.path.expanduser("~/.claude/projects/-Users-[your-username]/*.jsonl"),
+        os.path.expanduser("~/.claude/projects/-sessions-*/*.jsonl"),
+    ]
+
+    candidates = []
+    for pattern in fallback_patterns:
+        for f in glob.glob(pattern):
+            # Skip subagent files
+            if "/subagents/" in f:
+                continue
+            candidates.append(f)
+
+    if not candidates:
+        return None
+
+    # Return most recently modified transcript
+    candidates.sort(key=os.path.getmtime, reverse=True)
+    return candidates[0]
+
+
 def main():
     hook_data = parse_hook_input()
     session_id = hook_data.get("session_id", "unknown")
     cwd = hook_data.get("cwd", "unknown")
 
-    # Parse transcript
+    # Parse transcript — try hook data first, then search for it
     transcript_path = hook_data.get("transcript_path", "")
+    if not transcript_path:
+        transcript_path = find_transcript(session_id)
     transcript_data = parse_transcript(transcript_path) if transcript_path else None
+
+    # Build synthetic transcript_data from actions log if no transcript found
+    actions = None
+    if transcript_data is None:
+        actions = enrich_from_actions_log(session_id)
+        if actions:
+            # Build minimal transcript_data from action log entries
+            tool_counts = Counter(a.get("tool", "unknown") for a in actions)
+            files_created = sorted(set(a.get("file", "") for a in actions if a.get("tool") == "Write" and a.get("file")))
+            files_modified = sorted(set(a.get("file", "") for a in actions if a.get("tool") == "Edit" and a.get("file")))
+            files_read = sorted(set(a.get("file", "") for a in actions if a.get("tool") == "Read" and a.get("file")))
+            bash_commands = [a.get("command", "")[:200] for a in actions if a.get("tool") == "Bash" and a.get("command")]
+
+            transcript_data = {
+                "user_prompts_raw": [],
+                "user_prompts_clean": [],
+                "tool_counts": dict(tool_counts),
+                "total_tool_uses": len(actions),
+                "files_created": files_created[:50],
+                "files_modified": files_modified[:50],
+                "files_read": files_read[:50],
+                "bash_commands": bash_commands[:30],
+                "web_searches": [],
+                "web_fetches": [],
+                "agent_tasks": [],
+                "task_description": f"[Reconstructed from {len(actions)} action log entries]",
+                "first_response": "",
+                "message_count": len(actions),
+                "user_message_count": 0,
+                "user_message_count_clean": 0,
+                "assistant_response_count": 0,
+            }
 
     # Always log the session event
     log_session_event(session_id, cwd, transcript_data)
@@ -453,8 +526,9 @@ def main():
 
     category = determine_category(transcript_data)
 
-    # Enrich from daily actions log
-    actions = enrich_from_actions_log(session_id)
+    # Enrich from daily actions log (reuse if already called above)
+    if actions is None:
+        actions = enrich_from_actions_log(session_id)
 
     # Write both outputs
     write_session_jsonl(session_id, hook_data, transcript_data, actions, category)

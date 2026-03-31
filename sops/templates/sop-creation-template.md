@@ -1,14 +1,31 @@
 ---
-description: Meta-SOP for creating and updating Standard Operating Procedures in the Mainframe
+description: Meta-SOP for creating and updating Standard Operating Procedures in
+  the PRISM
 category: system
 created: 2026-03-18
 last_updated: 2026-03-20
 version: 1.2
 canon_compliance: required-field
 triangles: required-field
-triangles_served: [list which of the 9 triangles — GCT, MAA, ACC, CCS, LDT, SBP, DDD, CID, MOF — this SOP serves]
+triangles_served:
+  - list which of the 9 triangles — GCT
+  - MAA
+  - ACC
+  - CCS
+  - LDT
+  - SBP
+  - DDD
+  - CID
+  - MOF — this SOP serves
 human_gates: yes/no
-canon_sources: [list of canon files this SOP derives from, e.g. 01-nine-triangles.md, 08-human-requirements.md]
+canon_sources:
+  - list of canon files this SOP derives from
+  - e.g. 01-nine-triangles.md
+  - 08-human-requirements.md
+tags:
+  - domain/templates
+  - status/active
+  - type/template
 ---
 
 # SOP Creation Template
@@ -84,7 +101,7 @@ Map this SOP to the [Methodology Partner] canon:
 - **Last audited:** Date of last canon alignment audit
 
 ### 7. Human Gates
-List every step in this SOP where a human must review, approve, or perform the action. Reference `~/Documents/Claude/Mainframe/blitzmetrics-canon/08-human-requirements.md` for guidance on which tasks require human involvement. Format as a table:
+List every step in this SOP where a human must review, approve, or perform the action. Reference `~/Documents/Claude/PRISM/blitzmetrics-canon/08-human-requirements.md` for guidance on which tasks require human involvement. Format as a table:
 
 | Step | Gate Type (Review/Approve/Execute) | Reason |
 |------|------------------------------------|--------|
@@ -93,7 +110,7 @@ List every step in this SOP where a human must review, approve, or perform the a
 If this SOP has NO human gates, state that explicitly and explain why full automation is safe.
 
 ### 8. Anti-Vandalism Checks
-List the checks this SOP performs to prevent unintentional well-meaning vandalism. Reference `~/Documents/Claude/Mainframe/blitzmetrics-canon/10-anti-vandalism-checklist.md` for the full framework. At minimum, every SOP must address:
+List the checks this SOP performs to prevent unintentional well-meaning vandalism. Reference `~/Documents/Claude/PRISM/blitzmetrics-canon/10-anti-vandalism-checklist.md` for the full framework. At minimum, every SOP must address:
 
 - **Check what already exists:** Before creating new content, articles, pages, or documents, search for existing material on the same topic. Enhance rather than duplicate.
 - **Verify internal link structure:** Ensure no orphan pages are created and all new content links to and from related existing content.
@@ -125,7 +142,7 @@ Living section for discoveries:
 - **Specificity:** Always include file paths, exact commands, tool names. "Open the project file at ~/Documents/Projects/Acme/design-system/" not "Open the file."
 - **Format:** Use backticks for file paths, command syntax, and exact inputs. Use **bold** for emphasis on critical words.
 
-Example: "Navigate to **~/Documents/Claude/Mainframe/sops/** and open **INDEX.md**"
+Example: "Navigate to **~/Documents/Claude/PRISM/sops/** and open **INDEX.md**"
 
 > **Path format rule:** All file paths in SOPs must be absolute, starting with `~/`. Never use session-specific or container paths.
 
@@ -145,7 +162,7 @@ This means:
 
 When you create or update an SOP:
 
-1. Open `~/Documents/Claude/Mainframe/sops/INDEX.md`
+1. Open `~/Documents/Claude/PRISM/INDEX.md`
 2. Add/update the entry in the relevant category section
 3. Format: `- [SOP Name](./category/filename.md) — Brief description`
 4. Keep entries alphabetical within each category
@@ -199,3 +216,13 @@ Ensure all files end up in the correct location based on type and context, reduc
 - [ ] File paths use backticks and are absolute
 - [ ] INDEX.md updated with new/updated entry
 - [ ] Filename matches category/hyphenated-sop-name.md pattern
+
+---
+
+## See Also
+
+- [[sops/templates/session-log-format|Session Log Format]]
+- [[sops/templates/qa-scorecard-template|QA Scorecard Template]]
+- [[sops/file-management/logging-discipline|Logging Discipline]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Canon: Anti-Vandalism]]
+- [[blitzmetrics-canon/08-human-requirements|Canon: Human Requirements]]

@@ -1,17 +1,21 @@
 ---
-title: "Project Management SOP — Knowledge Panel Sprint Lifecycle"
+title: Project Management SOP — Knowledge Panel Sprint Lifecycle
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 status: active
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # Project Management SOP — How a Knowledge Panel Sprint Moves Through the System
 
 ## Purpose
 
-This is the master workflow for every KP Sprint at [Your Agency]. Six stages, clear owners, hard deadlines. If you don't know where a project stands or who's responsible, this document answers it.
+This is the master workflow for every KP Sprint at [Your Agency]. Six stages, clear owners, hard deadlines. Follows the [[blitzmetrics-canon/05-maa-framework|MAA Framework]] for reporting. If you don't know where a project stands or who's responsible, this document answers it.
 
 ---
 
@@ -166,3 +170,13 @@ Before marking any Sprint complete, verify:
 - **Waiting until Day 25 to start QA.** QA starts Day 21. Build the buffer. You'll need it.
 - **Skipping the case study.** It feels like extra work after delivery. It's not extra — it's the whole point. The case study sells the next Sprint.
 - **Not documenting client delays in writing.** Verbal agreements about paused clocks don't hold up. Put it in Basecamp.
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/05-delegation-framework|Delegation Framework]]
+- [[sops/templates/team-ops/04-meeting-cadence|Meeting Cadence]]
+- [[sops/templates/team-ops/11-client-communication-sop|Client Communication SOP]]
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[blitzmetrics-canon/05-maa-framework|Canon: MAA Framework]]

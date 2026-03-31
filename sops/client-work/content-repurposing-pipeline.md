@@ -13,7 +13,7 @@ canon_sources: [02-content-factory-process.md, 03-article-guidelines.md, 10-anti
 
 ## Purpose
 
-Transform any piece of raw content into a complete suite of multi-platform outputs. One input becomes 10-15 outputs across articles, social posts, video scripts, and email snippets. This pipeline works for transcripts, articles, audio notes, meeting recordings, presentations, and brain dumps.
+Transform any piece of raw content into a complete suite of multi-platform outputs as part of the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] Process stage. One input becomes 10-15 outputs across articles, social posts, video scripts, and email snippets. This pipeline works for transcripts, articles, audio notes, meeting recordings, presentations, and brain dumps.
 
 ## When to Use
 
@@ -48,12 +48,12 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 - Structure: hook (first sentence under 10 words), key insights with H2 subheadings (verb-first), actionable takeaways, CTA
 - Must pass Article QA & Compliance checks: zero banned words, zero em dashes, zero banned AI patterns, 15+ contractions, 2+ internal links
 - Bold key phrases inline. Include `[IMAGE: description]` placeholders where relevant
-- Link to [your-agency.com]/academy where natural
+- Link to [your-agency-domain.com]/academy where natural
 
 **Blog Post (800-1,200 words)**
 - Lighter, more conversational version of the authority article
 - Different angle on the same topic — not just a shorter version
-- Designed for [your-agency.com]/blog
+- Designed for [your-agency-domain.com]/blog
 - More personal voice, less SEO structure
 - Can use first-person stories and casual language
 
@@ -104,7 +104,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 - Preview text: extends the subject line, adds context
 - Body: one insight, one story, one CTA
 - Keep it scannable — short paragraphs, bold key phrases
-- CTA links to [your-agency.com]/academy or relevant content
+- CTA links to [your-agency-domain.com]/academy or relevant content
 - Written as if [Your Name] is emailing a friend, not a list
 
 **Lead Magnet Excerpt (if applicable)**
@@ -115,7 +115,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 ### Tier 5 — Internal/Operational (1 piece)
 
 **SOP Update Recommendation**
-- If the content reveals a process, technique, or lesson that should be captured in the Mainframe
+- If the content reveals a process, technique, or lesson that should be captured in the PRISM
 - Note which SOP should be updated and with what specific addition
 - If no SOP exists for the topic, flag it as a candidate for a new SOP
 - This output is internal only — never published
@@ -128,7 +128,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
 2. **Identify the source type** from the Input Types table above.
 3. **Check viability:**
    - Is this content publishable? (Not confidential, not internal-only, not someone else's copyrighted material)
-   - Check the content audit viability table at `~/Documents/Claude/Mainframe/content-audit/00-executive-summary.md` for any flagged files
+   - Check the content audit viability table at `~/Documents/Claude/PRISM/content-audit/00-executive-summary.md` for any flagged files
    - If marked "No" or "Needs clarification" — skip or ask [Your Name]
 4. **Extract core elements:**
    - Speaker(s) and their roles
@@ -137,7 +137,7 @@ For EVERY viable input, the pipeline produces outputs across 5 tiers:
    - Memorable quotes (exact words, not paraphrased)
    - Actionable advice (what can the reader DO?)
    - Stories and anecdotes (specific, named, dated if possible)
-5. **Determine Topic Wheel position:**
+5. **Determine [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] position:**
    - **WHY** — Personal story, origin, values, mission ([Your Name]'s perspective)
    - **HOW** — Expertise, methodology, process, framework (Content Factory, Dollar-a-Day, KP Sprints)
    - **WHAT** — Product/service, offer, pricing, features ([Your Agency] offerings)
@@ -188,7 +188,7 @@ Run every output through these checks:
 - [ ] Clear takeaway the reader can act on
 - [ ] First sentence under 10 words
 - [ ] 15+ contractions for natural voice
-- [ ] 2+ internal links to [your-agency.com]
+- [ ] 2+ internal links to [your-agency-domain.com]
 
 **Video Scripts:**
 - [ ] Hook in the first 3 seconds (as text overlay)
@@ -225,7 +225,7 @@ Run every output through these checks:
 Save all outputs to a structured folder:
 
 ```
-~/Documents/Claude/Mainframe/content-pipeline/[YYYY-MM-DD]-[topic-slug]/
+~/Documents/Claude/PRISM/content-pipeline/[YYYY-MM-DD]-[topic-slug]/
 ├── source.md          (original transcript/content for reference, or link to source file)
 ├── manifest.md        (lists all pieces with status: draft/ready/published)
 ├── articles/
@@ -253,14 +253,14 @@ Save all outputs to a structured folder:
 **Topic Wheel Position:** [WHY / HOW / WHAT]
 **Content Richness:** [RICH / MODERATE / LIGHT]
 **Date Produced:** [YYYY-MM-DD]
-**Produced By:** Claude Mainframe Content Pipeline v1.0
+**Produced By:** Claude PRISM Content Pipeline v1.0
 
 ## Pieces
 
 | # | Type | Title | File | Status | Platform Target |
 |---|------|-------|------|--------|-----------------|
-| 1 | Authority Article | [title] | articles/authority-article.md | draft | [your-agency.com]/blog |
-| 2 | Blog Post | [title] | articles/blog-post.md | draft | [your-agency.com]/blog |
+| 1 | Authority Article | [title] | articles/authority-article.md | draft | [your-agency-domain.com]/blog |
+| 2 | Blog Post | [title] | articles/blog-post.md | draft | [your-agency-domain.com]/blog |
 | 3 | LinkedIn Post | [title] | social-posts/linkedin-post.md | draft | LinkedIn ([Your Name] personal) |
 | ... | ... | ... | ... | ... | ... |
 
@@ -284,9 +284,9 @@ For each batch of content, include:
 ## [Methodology Partner] QA Gate (MANDATORY)
 
 Before any article output is marked "done," it MUST pass the full [Methodology Partner] 18-step quality gate:
-- **SOP:** ~/Documents/Claude/Mainframe/sops/client-work/article-qa-blitzmetrics.md
-- **Scorecard:** ~/Documents/Claude/Mainframe/sops/templates/qa-scorecard-template.md
-- **Canon reference:** ~/Documents/Claude/Mainframe/blitzmetrics-canon/03-article-guidelines.md
+- **SOP:** ~/Documents/Claude/PRISM/sops/client-work/article-qa-blitzmetrics.md
+- **Scorecard:** ~/Documents/Claude/PRISM/sops/templates/qa-scorecard-template.md
+- **Canon reference:** ~/Documents/Claude/PRISM/blitzmetrics-canon/03-article-guidelines.md
 
 Steps:
 1. Run article through the 18-step checklist
@@ -300,7 +300,7 @@ Before publishing any new article, verify against existing content tree:
 - Search client's site for similar content (Google: target keyword + site:domain.com)
 - If existing content ranks for same keyword: UPDATE existing article, don't create new
 - Verify Topic Wheel position doesn't conflict with existing content
-- See ~/Documents/Claude/Mainframe/blitzmetrics-canon/10-anti-vandalism-checklist.md
+- See ~/Documents/Claude/PRISM/blitzmetrics-canon/10-anti-vandalism-checklist.md
 
 ## Human Gates
 | Step | Gate Type | Reason |
@@ -348,3 +348,24 @@ Before publishing any new article, verify against existing content tree:
 
 - **2026-03-18:** Pipeline SOP created. Initial test run on Jan 2025 Zoom transcript produced 13 pieces (3 articles, 5 video scripts, 3 LinkedIn posts, 2 email snippets). All sourced from a single conversation with [Your Mentor/Advisor] about business focus, testimonials vs stories, and landing pages.
 - **2026-03-18:** Key insight from test run — a single rich transcript (136 KB, ~45 min conversation) can support full Tier 1-4 output. Lighter transcripts should be batched (combine 2-3 related short transcripts into one pipeline run).
+
+---
+
+## Related
+
+- [Article QA SOP](article-qa-blitzmetrics.md)
+- [Content Factory SOP](content-factory-execution.md)
+- [Dollar-a-Day SOP](dollar-a-day-campaign.md)
+- [Canon: Content Factory Process](../../blitzmetrics-canon/02-content-factory-process.md)
+- [Skill: Content Repurposing](../../skills/content-repurposing.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/03-article-guidelines|Article Guidelines]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]]
+- [[skills/content-repurposing|Content Repurposing Skill]]
+- [[skills/article-qa|Article QA]]
+- [[skills/content-factory|Content Factory Skill]]

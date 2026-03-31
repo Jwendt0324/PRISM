@@ -1,10 +1,8 @@
 #!/bin/bash
-# Claude Mainframe — Post Tool Use Hook v3
+# Claude PRISM — Post Tool Use Hook v3
 # Writes one JSONL line per tool call to logs/actions/YYYY-MM-DD.jsonl
 # Captures action metadata WITHOUT content (no tool_response, no file contents)
 # Target: <100ms execution time, ~150 bytes per event
-
-set -euo pipefail
 
 INPUT=""
 if [ ! -t 0 ]; then
@@ -14,7 +12,7 @@ fi
 
 TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 TODAY=$(date -u +"%Y-%m-%d")
-LOG_DIR="$HOME/Documents/Claude/Mainframe/logs/actions"
+LOG_DIR="$HOME/Documents/Claude/PRISM/logs/actions"
 mkdir -p "$LOG_DIR"
 
 # Use jq for fast JSON parsing
@@ -67,8 +65,8 @@ case "$TOOL" in
         ;;
 esac
 
-# Sanitize target for JSON — escape quotes, remove newlines
-SAFE_TARGET=$(printf '%s' "$TARGET" | tr '"' "'" | tr '\n' ' ' | tr '\r' ' ')
+# Sanitize target for JSON — escape quotes, backslashes, remove newlines
+SAFE_TARGET=$(printf '%s' "$TARGET" | sed 's/\\/\\\\/g' | tr '"' "'" | tr '\n' ' ' | tr '\r' ' ')
 
 # Write single JSONL line — compact, no content
 printf '{"ts":"%s","sid":"%s","tool":"%s","target":"%s","cwd":"%s"}\n' \

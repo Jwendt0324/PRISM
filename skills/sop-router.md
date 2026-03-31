@@ -1,14 +1,19 @@
 ---
-description: Routes Claude to the correct skill or SOP based on task type. Read this at session start to know which skill/SOP applies.
+description: Routes Claude to the correct skill or SOP based on task type. Read
+  this at session start to know which skill/SOP applies.
 category: system
 created: 2026-03-18
 last_updated: 2026-03-21
-version: 3.0
+version: 3
+tags:
+  - status/active
+  - type/skill
+  - type/system
 ---
 
 # SOP Router
 
-When starting a task, match it against these triggers. **Load the SKILL first if one exists** — skills are condensed, action-oriented versions optimized for execution. Fall back to the full SOP only when you need detailed reference or edge-case guidance.
+When starting a task, match it against these triggers. **Load the SKILL first if one exists** — skills are condensed, action-oriented versions optimized for execution. For system internals see [[skills/PRISM-core|PRISM Core]]. For the full file index see [[INDEX]]. For the main dashboard see [[_Dashboard]]. Fall back to the full SOP only when you need detailed reference or edge-case guidance.
 
 ## Skills (Preferred Execution Path)
 
@@ -52,7 +57,7 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 | Trigger | SOP | Path |
 |---------|-----|------|
 | New hire, onboarding a team member, tool provisioning, Day 1 setup | New Hire Onboarding SOP | team-ops/06-new-hire-onboarding-sop.md |
-| [Your Content Specialist] onboarding, [Your Content Specialist]'s tasks, [Your Content Specialist] success metrics | [Your Content Specialist] Onboarding Kit | team-ops/07-jackson-onboarding-kit.md |
+| [Your Content Specialist] onboarding, [Your Content Specialist]'s tasks, [Your Content Specialist] success metrics | [Your Content Specialist] [Last Name] Onboarding Kit | team-ops/07-jackson-onboarding-kit.md |
 | KP Sprint project management, Sprint timeline, red/amber/green status | KP Sprint Project Management | team-ops/10-project-management-sop.md |
 | Client communication, Basecamp updates, client-facing messages | Client Communication | team-ops/11-client-communication-sop.md |
 | Escalation, client unhappy, late deliverable, team unresponsive, scope creep, quality issue | Escalation Playbook | team-ops/12-escalation-playbook.md |
@@ -88,4 +93,18 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 - **SOPs** (in `sops/`) are the detailed reference documents with full context, learnings logs, common pitfalls, and edge cases. They are the source of truth.
 - When in doubt, start with the skill. Escalate to the SOP if you hit a situation the skill doesn't cover.
 
-All paths are relative to `~/Documents/Claude/Mainframe/`.
+All paths are relative to `~/Documents/Claude/PRISM/`.
+
+---
+
+## Connected
+
+- [PRISM Core Skill](PRISM-core.md)
+- [INDEX.md](../INDEX.md)
+- [Canon: Nine Triangles](../blitzmetrics-canon/01-nine-triangles.md)
+
+## See Also
+
+- [[_Dashboard]]
+- [[INDEX]]
+- [[skills/PRISM-core|PRISM Core]]

@@ -14,7 +14,7 @@ canon_sources: [02-content-factory-process.md, 06-topic-wheel.md]
 
 ## Purpose
 
-This SOP defines exactly how we deliver a Knowledge Panel Sprint: what's included, what's not, who does what, how they're paid, and what "done" looks like. Claude should reference this for any Sprint-related work — client onboarding, project management, content production, QA, or team coordination.
+This SOP defines exactly how we deliver a [[skills/kp-sprint|Knowledge Panel Sprint]]: what's included, what's not, who does what, how they're paid, and what "done" looks like. Claude should reference this for any Sprint-related work — client onboarding, project management, content production, QA, or team coordination.
 
 ## When to Use
 
@@ -57,7 +57,7 @@ Knowledge Panel Sprint — $6,000, 30 days, fixed scope, zero custom detours.
 - 6 short-form videos (subtitled, branded, hooks + CTAs)
 
 ### 4. Distribution Mini-Plan
-- Posting plan + Dollar-a-Day starter plan and budget map
+- Posting plan + [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]] starter plan and budget map
 
 ### 5. Entity Health Snapshot
 - "Panel likelihood" score + checklist of next moves
@@ -113,7 +113,7 @@ Role-based. Paid on collected cash.
 ### Delivery Lead (PM): 10% — $600
 - Paid on on-time delivery (<=30 days)
 - If late due to documented client delay, still payable
-- [Your AgentBuilder Partner] is default; assigned PM earns this if [Your AgentBuilder Partner] is not on the project
+- [Your AgentBuilder Partner] McLeod is default; assigned PM earns this if [Your AgentBuilder Partner] is not on the project
 
 ### Delivery Labor Pool: 35% — $2,100
 - Budget for writers, editors, designers, VAs
@@ -203,3 +203,25 @@ Role-based. Paid on collected cash.
 ## Learnings Log
 
 [Empty — gets populated as Claude learns from execution]
+
+---
+
+## Related
+
+- [Personal Brand Site SOP](personal-brand-site-build.md)
+- [Content Factory SOP](content-factory-execution.md)
+- [Dollar-a-Day SOP](dollar-a-day-campaign.md)
+- [Influence Report Card SOP](influence-report-card.md)
+- [Canon: Nine Triangles](../../blitzmetrics-canon/01-nine-triangles.md)
+- [Skill: KP Sprint](../../skills/kp-sprint.md)
+
+## See Also
+
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[skills/kp-sprint|KP Sprint Skill]]
+- [[skills/personal-brand-site|Personal Brand Site]]
+- [[skills/influence-report-card|Influence Report Card]]
+- [[skills/dollar-a-day|Dollar-a-Day Skill]]

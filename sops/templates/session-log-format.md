@@ -3,9 +3,13 @@ description: Standard format for session logs written by Claude Code after each 
 category: system
 created: 2026-03-18
 last_updated: 2026-03-21
-version: 2.0
+version: 2
 canon_compliance: 05-maa-framework.md
 triangles: MAA
+tags:
+  - domain/templates
+  - status/active
+  - type/template
 ---
 
 # Session Log Format
@@ -85,7 +89,7 @@ Example:
 - Task Summary must be a real summary, not a copy of the user's first message
 
 ### What Was Learned — THE COMPOUNDING ENGINE
-- **This is the most valuable section.** It's what makes the Mainframe smarter over time.
+- **This is the most valuable section.** It's what makes the PRISM smarter over time.
 - **NEVER write `[To be extracted during retrospective]` or any placeholder.** If you can't write learnings now, don't create the log.
 - Include both tactical (how to do X) and strategic (why Y is important)
 - Reference specific file paths or line numbers if relevant
@@ -107,11 +111,11 @@ Example:
 - **After every task** Claude Code completes
 - **Even if the task took 10 minutes**—the log captures learning and pattern
 - **Especially after problem-solving**—the learnings prevent future issues
-- Store the log in: `~/Documents/Claude/Mainframe/logs/YYYY-MM/session-YYYYMMDD-HHMMSS.md`
+- Store the log in: `~/Documents/Claude/PRISM/logs/YYYY-MM/session-YYYYMMDD-HHMMSS.md`
 
 ## Session Log Index
 
-Maintain a master index at `~/Documents/Claude/Mainframe/logs/YYYY-MM/INDEX.md` that lists:
+Maintain a master index at `~/Documents/Claude/PRISM/logs/YYYY-MM/INDEX.md` that lists:
 - Date
 - Task name
 - Category
@@ -128,7 +132,7 @@ This enables quick scanning of what's been done without opening each file.
 - [ ] What Was Learned has 2+ real learnings (3+ for complex sessions) — NO PLACEHOLDERS
 - [ ] Related SOPs section lists all consulted SOPs with update flags
 - [ ] Time Estimate is present
-- [ ] File saved to: `~/Documents/Claude/Mainframe/logs/YYYY-MM/session-YYYYMMDD-HHMMSS.md`
+- [ ] File saved to: `~/Documents/Claude/PRISM/logs/YYYY-MM/session-YYYYMMDD-HHMMSS.md`
 - [ ] Monthly INDEX.md updated
 - [ ] No raw terminal output, task notifications, or login banners in any section
 
@@ -139,3 +143,13 @@ This enables quick scanning of what's been done without opening each file.
 - **Human checkpoints:** Task summary reviewed for accuracy; learnings reviewed for SOP update candidates; related SOPs list verified for completeness
 - **Anti-vandalism:** Structured format enforces completeness (date, category, summary, actions, learnings all required); index file maintains audit trail; time estimates enable drift detection; "What Was Learned" section is never empty
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
+
+---
+
+## See Also
+
+- [[sops/file-management/logging-discipline|Logging Discipline]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]
+- [[sops/templates/qa-scorecard-template|QA Scorecard Template]]
+- [[blitzmetrics-canon/05-maa-framework|Canon: MAA Framework]]
+- [[memory-bank/05-team-and-roles|Team and Roles]]

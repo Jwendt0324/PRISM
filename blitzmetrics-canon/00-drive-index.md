@@ -1,6 +1,12 @@
+---
+tags:
+  - status/active
+  - type/canon
+---
+
 # [Methodology Partner] Shared Drive — Master Document Index
 
-**Drive Location:** `[Your Google Drive Path]`
+**Drive Location:** `~/Library/CloudStorage/GoogleDrive-[your-email@your-agency.com]/Shared drives/[Methodology Partner] Drive/`
 **Indexed:** 2026-03-19
 **Total document files found:** ~3,800+ (many are versioned iterations of the same guide)
 **Google-native files (.gdoc/.gsheet/.gslides):** Contain JSON stubs with `doc_id` — open via `https://docs.google.com/document/d/{doc_id}` (or /spreadsheets/d/ or /presentation/d/)
@@ -193,12 +199,12 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 
 | File | Type | Path | Description |
 |------|------|------|-------------|
-| WordPress Guide.gdoc | GDOC | `2- Team/[Your Content Ops Lead]/` | WordPress guide |
-| WordPress Guide.pdf | PDF | `2- Team/[Your Content Ops Lead]/` | WordPress guide PDF |
-| WordPress Guide for Personal Brand Authority & SEO.gdoc | GDOC | `2- Team/[Your Content Ops Lead]/` | WordPress for personal brand & SEO |
-| Personal Brand Site Audit.gdoc | GDOC | `2- Team/[Your Content Ops Lead]/` | Personal brand site audit guide |
-| Building a Brand That Sells Itself with Jonathan Mast.gdoc | GDOC | `2- Team/[Your Content Ops Lead]/` | Brand building article |
-| Digital PR That Actually Moves the Needle - with Craig Campbell.gdoc | GDOC | `2- Team/[Your Content Ops Lead]/` | Digital PR guide |
+| WordPress Guide.gdoc | GDOC | `2- Team/[Your Content Ops Lead] Nyongesa/` | WordPress guide |
+| WordPress Guide.pdf | PDF | `2- Team/[Your Content Ops Lead] Nyongesa/` | WordPress guide PDF |
+| WordPress Guide for Personal Brand Authority & SEO.gdoc | GDOC | `2- Team/[Your Content Ops Lead] Nyongesa/` | WordPress for personal brand & SEO |
+| Personal Brand Site Audit.gdoc | GDOC | `2- Team/[Your Content Ops Lead] Nyongesa/` | Personal brand site audit guide |
+| Building a Brand That Sells Itself with Jonathan Mast.gdoc | GDOC | `2- Team/[Your Content Ops Lead] Nyongesa/` | Brand building article |
+| Digital PR That Actually Moves the Needle - with Craig Campbell.gdoc | GDOC | `2- Team/[Your Content Ops Lead] Nyongesa/` | Digital PR guide |
 
 ---
 
@@ -233,7 +239,7 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 | [Client Name] Content Library - Positive Mentions.gsheet | GSHEET | `/` | [Client Name] content library |
 | [Client Name] Content Library - Positive Mentions.gsheet | GSHEET | `/` | [Client Name] content library |
 | [Client Name] Content Library - Positive Mentions.gsheet | GSHEET | `/` | [Client Name] content library |
-| Sandi Rocco: Content Library.gsheet | GSHEET | `/` | Sandi Rocco content library |
+| [Client Name]: Content Library.gsheet | GSHEET | `/` | [Client Name] content library |
 | [Client Name]_ Content Library.gsheet | GSHEET | `/` | [Client Name] content library |
 | [Client Name] Content Library.gsheet | GSHEET | `[Client Name]/` | [Client Name] content library |
 
@@ -243,7 +249,7 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 |------|------|------|-------------|
 | [Client Name]_Quick Audit.gslides | GSLIDES | `/` | [Client Name] quick audit |
 | [Client Name]_Quick Audit.gslides | GSLIDES | `/` | [Client Name] quick audit |
-| Sandi Rocco_Quick Audit.gslides | GSLIDES | `/` | Sandi Rocco quick audit |
+| [Client Name]_Quick Audit.gslides | GSLIDES | `/` | [Client Name] quick audit |
 | AYG Quick Audit For Auto Locators of Texas.pdf | PDF | `/` | Auto Locators quick audit |
 | Blog-Nicole Cowley Website Audit - Quick Audit.docx | DOCX | `/` | Nicole Cowley quick audit |
 
@@ -331,7 +337,7 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 | :star: Master Content Engine Package Service Offering - CoachYu.gslides | GSLIDES | `/` | Content Engine service offering deck (doc_id: [google-doc-id]) |
 | Content Engine Retainer -[Client Business].gslides | GSLIDES | `/` | [Client Business] content engine retainer |
 | _Presentation for [Client Name].pptx.pdf | PDF | `/` | [Client Name] presentation |
-| Isaacs & Isaacs_personalbrandmanager_v1_2022_1117.pdf | PDF | `/` | Isaacs & Isaacs PBM |
+| [Client Business]_personalbrandmanager_v1_2022_1117.pdf | PDF | `/` | [Client Business] PBM |
 | [advisor-brand]_personalbrandmanager.pptx | PPTX | `/` | [Your Mentor/Advisor] personal brand manager deck |
 | conquerlocal_agencymanagement_2020_0424_presentation_version_v1.6.pdf | PDF | `/` | Conquer Local presentation |
 | Copy of Facebook Mastery Sales Sheet.gsheet | GSHEET | `/` | Facebook Mastery sales sheet |
@@ -371,7 +377,7 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 ### Client Personal Brand Managers ([Methodology Partner] Clients & Partners/Client PBM'S)
 
 Over 20 individual PBM documents for clients including:
-- [Industry Speaker], [Industry Speaker], [Industry Speaker], [Your Former Mentor], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Contact], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker], [Industry Speaker]
+- Brad Lea, Ted McGrath, Susan Sly, [Your Former Mentor] Guilliams, George Leith, Jordan Paris, Glenn Vo, Barry Habib, Jeff Hunter, Phil Randazzo, Mitch Miller, Eric Mitchell, David Dinsmore, Matthew Januszek, Chris Quiocho, Balazs Kardos, Roxanne Ross, [Client Team Contact] Young, Mike Arce, Mark Wagner, Paul Halme, [Your Team Member] Herman, Welton Hong
 
 ---
 
@@ -381,15 +387,15 @@ Over 20 individual PBM documents for clients including:
 
 | File | Type | Path | Description |
 |------|------|------|-------------|
-| SOW - Tommy Mello's Projects.gdoc | GDOC | `/` | Tommy Mello SOW |
-| Isaacs & Isaacs- SOW .gdoc | GDOC | `/` | Isaacs & Isaacs SOW |
-| Updated_ Isaacs & Isaacs- SOW .gdoc | GDOC | `/` | Updated Isaacs & Isaacs SOW |
-| Copy of Richard Leger SOW.gdoc | GDOC | `/` | Richard Leger SOW |
+| SOW - [Client Name]'s Projects.gdoc | GDOC | `/` | [Client Name] SOW |
+| [Client Business]- SOW .gdoc | GDOC | `/` | [Client Business] SOW |
+| Updated_ [Client Business]- SOW .gdoc | GDOC | `/` | Updated [Client Business] SOW |
+| Copy of [Client Name] SOW.gdoc | GDOC | `/` | [Client Name] SOW |
 | Golden West SOW.gdoc | GDOC | `/` | Golden West SOW |
-| IsZo Website Management SOW.gdoc | GDOC | `/` | IsZo website management SOW |
-| Liquivida Lounge SOW.docx | DOCX | `/` | Liquivida Lounge SOW |
-| Liquivida Lounge: PR Statement of Work.gdoc | GDOC | `/` | Liquivida PR SOW |
-| Questus_Wyndham TikTok SOW.gdoc | GDOC | `/` | Questus/Wyndham TikTok SOW |
+| [Client Business] Website Management SOW.gdoc | GDOC | `/` | [Client Business] website management SOW |
+| [Client Business] SOW.docx | DOCX | `/` | [Client Business] SOW |
+| [Client Business]: PR Statement of Work.gdoc | GDOC | `/` | Liquivida PR SOW |
+| [Client Business]_[Client Business] TikTok SOW.gdoc | GDOC | `/` | [Client Business]/[Client Business] TikTok SOW |
 | New Standard Operating Agreement.gdoc | GDOC | `/` | Standard operating agreement template |
 | [google-doc-id] Australia_v1.0_2023_0202.gdoc | GDOC | `/` | [Client Business] Australia content retainer |
 
@@ -397,11 +403,11 @@ Over 20 individual PBM documents for clients including:
 
 | File | Type | Path | Description |
 |------|------|------|-------------|
-| Ben Fisher Revshare Agreement.gdoc | GDOC | `/` | Ben Fisher rev share |
-| Jeremy Ducheny Revshare Agreement.gdoc | GDOC | `/` | Jeremy Ducheny rev share |
-| Niklas Revshare Agreement.gdoc | GDOC | `/` | Niklas rev share |
-| Niklas SOL Revshare Agreement.gdoc | GDOC | `/` | Niklas SOL rev share |
-| RevShare MadazMoney.com.gdoc | GDOC | `/` | MadazMoney rev share |
+| [Partner Name] Revshare Agreement.gdoc | GDOC | `/` | [Partner Name] rev share |
+| [Partner Name] Revshare Agreement.gdoc | GDOC | `/` | [Partner Name] rev share |
+| [Partner Name] Revshare Agreement.gdoc | GDOC | `/` | [Partner Name] rev share |
+| [Partner Name] SOL Revshare Agreement.gdoc | GDOC | `/` | [Partner Name] SOL rev share |
+| RevShare [Client Business].com.gdoc | GDOC | `/` | [Client Business] rev share |
 
 ### Legal Documents
 
@@ -410,10 +416,10 @@ Over 20 individual PBM documents for clients including:
 | YOUR CONTENT FACTORY (YCF) LLC - Articles of Organization.pdf | PDF | `/` | YCF LLC articles of organization |
 | Registration Proof - [Methodology Partner].pdf | PDF | `/` | [Methodology Partner] registration proof |
 | Registration Proof - Your Content Factory.pdf | PDF | `/` | YCF registration proof |
-| Shrink-Wrap License Agreement - Allegiant Pilots Association.gdoc | GDOC | `/` | Allegiant Pilots license agreement |
-| Lance Bachmann - Terms and Conditions.gdoc | GDOC | `/` | Lance Bachmann T&C |
-| Response to PayPal Dispute - Case ID PP-R-IVE-531923769.gdoc | GDOC | `/` | PayPal dispute response |
-| Who Pays When Blue Ridge Community College Cancels Last Minute?.gdoc | GDOC | `/` | Blue Ridge cancellation dispute |
+| Shrink-Wrap License Agreement - [Client Organization].gdoc | GDOC | `/` | Allegiant Pilots license agreement |
+| [Client Name] - Terms and Conditions.gdoc | GDOC | `/` | [Client Name] T&C |
+| Response to PayPal Dispute - Case ID [PayPal-Case-ID].gdoc | GDOC | `/` | PayPal dispute response |
+| Who Pays When [University Name] Cancels Last Minute?.gdoc | GDOC | `/` | Blue Ridge cancellation dispute |
 | [Methodology Partner] and Yatter Agreement.gdoc | GDOC | `[Methodology Partner] Legal & Biz Dev/` | [Methodology Partner]-Yatter agreement |
 | [Methodology Partner] Mutual NDA.gdoc | GDOC | `[Methodology Partner] Legal & Biz Dev/Releases and NDAs/` | Mutual NDA template |
 | Friends of The Underline - 2025 Acknowledgment Letter - [Your Mentor/Advisor].pdf | PDF | `/` | 2025 acknowledgment letter |
@@ -450,12 +456,12 @@ Over 20 individual PBM documents for clients including:
 |------|------|------|-------------|
 | VA Hiring.gdoc | GDOC | `/` | VA hiring guide (doc_id: [google-doc-id]) |
 | VA Onboarding.gdoc | GDOC | `/` | VA onboarding guide (doc_id: [google-doc-id]) |
-| Cedrick Von De-Otay 1st Interview - Operations VA.gdoc | GDOC | `/` | VA interview example |
-| Reynaldo Lepasana VA 1st Interview - Operations VA.gdoc | GDOC | `/` | VA interview example |
-| Tony Rickett - Onboarding Checklist Call .gdoc | GDOC | `/` | Onboarding call checklist |
+| [Client Name] 1st Interview - Operations VA.gdoc | GDOC | `/` | VA interview example |
+| [Client Name] VA 1st Interview - Operations VA.gdoc | GDOC | `/` | VA interview example |
+| [Client Name] - Onboarding Checklist Call .gdoc | GDOC | `/` | Onboarding call checklist |
 | 1. Vendor Setup Request Form (VSRF) Updated May 2014.docx | DOCX | `/` | Vendor setup form |
 | 2. DIRECT CREDIT AUTHORIZATION FORM_[Methodology Partner].docx | DOCX | `/` | Direct credit authorization |
-| Employment Application - [Your Ops Partner].docx | DOCX | `2- Team/[Your Ops Partner]/` | Employment application example |
+| Employment Application - [Your Ops Partner] [Last Name].docx | DOCX | `2- Team/[Your Ops Partner] [Last Name]/` | Employment application example |
 
 ### Operations Guides
 
@@ -465,7 +471,7 @@ Over 20 individual PBM documents for clients including:
 | Client's PPC Compaigns.gdoc | GDOC | `/` | PPC campaigns guide |
 | Amazon Ads.docx | DOCX | `/` | Amazon Ads guide |
 | Jerneja's Performance.gdoc | GDOC | `/` | Performance review example |
-| Justen Martin - Bio v1.gdoc | GDOC | `/` | Bio writing example |
+| [Client Name] - Bio v1.gdoc | GDOC | `/` | Bio writing example |
 | How to Set up a Site with Rankmath.gdoc | GDOC | `[Methodology Partner] Assets & Processes/1. Plumbing/` | Rankmath setup guide |
 | Asset creation process.gdoc | GDOC | `[Methodology Partner] Assets & Processes/1. Plumbing/` | Asset creation process |
 | Ascension Ladder Guide.gdoc | GDOC | `[Methodology Partner] Assets & Processes/6. Optimization/` | Ascension ladder guide |
@@ -474,12 +480,12 @@ Over 20 individual PBM documents for clients including:
 
 | File | Type | Path | Description |
 |------|------|------|-------------|
-| Isaacs&Isaacs_Affinity_Analysis.gsheet | GSHEET | `/` | Isaacs & Isaacs affinity analysis |
+| [Client Business]_Affinity_Analysis.gsheet | GSHEET | `/` | [Client Business] affinity analysis |
 
 ### Client Meeting Transcripts (Client Meetings/)
 
 14 client meeting chat transcripts from 2024, including:
-- [Client — Home Services], [Client — Home Services], [Client — Home Services], [Client — Home Services], [Client — Home Services], [Client — Home Services], [Client — Home Services], [Client — Home Services], [Client — Home Services]
+- Plumbing Pros PA, Flow Bros Plumbing, Star Heating & Cooling, Peachstate Refrigeration, Agape Built Pools, Caliber Gutters, Showcase Remodels, Crown Restoration, Pure Team Squad
 
 ### Landing Pages & Misc
 
@@ -495,11 +501,11 @@ Over 20 individual PBM documents for clients including:
 ## Notable Client Folders (Media-Heavy, Limited Documents)
 
 These folders primarily contain video/media files with few or no document files:
-- `[Client — Local Retail Business] - [Client Contact]/`
-- `[Client — Home Services] - [Client Contact]/`
-- `Arnett Mechanical (Anton Arnett)/`
-- `Brandon Cody - Geeky Clean/`
-- `Tommy Mello album/`
+- `[Client — Local Retail Business] - Jeremy Chapman/`
+- `American Classic Painters - Nick Schirliu/`
+- `[Client Business] ([Client Name])/`
+- `[Client Name] - [Client Business]/`
+- `[Client Name] album/`
 - `[Your Name] album/`
 - `[Your Mentor/Advisor] (Vimeo)/`
 - `Coach Yu Show/`
@@ -545,3 +551,10 @@ The following directories contain extensive version histories (dozens of iterati
 ---
 
 *This index covers all readable document files (.pdf, .docx, .doc, .txt, .md, .gdoc, .gsheet, .gslides) on the [Methodology Partner] Shared Drive. Media files (.mp4, .mov, .mp3, .jpg, .png, etc.) are excluded. Files marked with :star: are the top training materials, master guides, and framework documents most relevant to the Content Factory / [Methodology Partner] methodology.*
+
+---
+
+## See Also
+- [[01-nine-triangles|Canon: Nine Triangles]]
+- [[02-content-factory-process|Canon: Content Factory]]
+- [[memory-bank/02-blitzmetrics-overview|[Methodology Partner] Overview]]

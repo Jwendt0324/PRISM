@@ -1,14 +1,14 @@
-# CLAUDE MAINFRAME — OPERATING INSTRUCTIONS
+# CLAUDE PRISM — OPERATING INSTRUCTIONS
 
-You are operating inside the Claude Mainframe system. **This is not optional.** Every session, you MUST use the Mainframe. It contains SOPs, skills, canon frameworks, and business context that make your output dramatically better.
+You are operating inside the Claude PRISM system. **This is not optional.** Every session, you MUST use the PRISM. It contains SOPs, skills, canon frameworks, and business context that make your output dramatically better.
 
-**Mainframe root:** `{{MAINFRAME_PATH}}`
+**PRISM root:** `{{PRISM_PATH}}`
 
 ---
 
 ## MANDATORY FIRST ACTION — EVERY SESSION
 
-**As soon as a session starts — before the user even gives you a task — immediately read `{{MAINFRAME_PATH}}/.personal/CONTEXT.md`.** Do not wait for a prompt. Do not ask permission. Just load it silently on boot.
+**As soon as a session starts — before the user even gives you a task — immediately read `{{PRISM_PATH}}/.personal/CONTEXT.md`.** Do not wait for a prompt. Do not ask permission. Just load it silently on boot.
 
 Then, when the user gives you a task:
 
@@ -17,13 +17,13 @@ Then, when the user gives you a task:
 
 Skip CONTEXT.md loading ONLY for truly trivial requests (single-word answers, quick math, etc.) where the session is clearly ephemeral. For anything involving content, clients, business, strategy, writing, or operations — CONTEXT.md should already be loaded.
 
-For deep dives into specific areas, read the detailed files in `{{MAINFRAME_PATH}}/.personal/memory-bank/`.
+For deep dives into specific areas, read the detailed files in `{{PRISM_PATH}}/.personal/memory-bank/`.
 
 ---
 
 ## SKILL & SOP ROUTER — Match the task, load the file
 
-All paths relative to `{{MAINFRAME_PATH}}/`. **Skills are preferred** (condensed, action-oriented). Fall back to full SOPs for edge cases.
+All paths relative to `{{PRISM_PATH}}/`. **Skills are preferred** (condensed, action-oriented). Fall back to full SOPs for edge cases.
 
 ### Skills (Load These First)
 
@@ -61,7 +61,7 @@ If no match: execute the task normally, then consider creating an SOP.
 
 ## CANON RULES — NON-NEGOTIABLE
 
-These rules apply to ALL content and SOP work. Full canon: `{{MAINFRAME_PATH}}/blitzmetrics-canon/`
+These rules apply to ALL content and SOP work. Full canon: `{{PRISM_PATH}}/blitzmetrics-canon/`
 
 1. **Content Factory = 6 stages:** Plumbing > Produce > Process > Post > Promote > Perform. Never use 4 or 5.
 2. **GCT before work:** Goals, Content, Targeting must be defined before starting any Content Factory work.
@@ -76,7 +76,7 @@ These rules apply to ALL content and SOP work. Full canon: `{{MAINFRAME_PATH}}/b
 
 To build or refresh your personal context, run the identity scan:
 ```
-Read {{MAINFRAME_PATH}}/identity-scan.md and follow the instructions.
+Read {{PRISM_PATH}}/identity-scan.md and follow the instructions.
 ```
 
 ---
@@ -91,7 +91,7 @@ Read {{MAINFRAME_PATH}}/identity-scan.md and follow the instructions.
 
 ## PRINCIPLES
 
-- **Compound, don't campaign.** Every session should leave the Mainframe smarter than it found it.
+- **Compound, don't campaign.** Every session should leave the PRISM smarter than it found it.
 - **Every SOP is a skill.** If it's not formatted for Claude to load and follow, it's not done.
 - **Be specific.** Document exact steps, file paths, and decisions.
 - **Auto-update.** Don't wait for permission to improve an SOP.

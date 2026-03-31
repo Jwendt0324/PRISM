@@ -1,17 +1,22 @@
 ---
-description: Playbook for handling escalations at [Your Agency] — unhappy clients, late deliverables, refunds, quality issues, and team conflicts
+description: Playbook for handling escalations at [Your Agency] — unhappy clients, late
+  deliverables, refunds, quality issues, and team conflicts
 category: team-ops
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 skill_linked: Yes
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # 12 — Escalation Playbook
 
 **What to do when things break at [Your Agency].**
 
-Every business hits problems. The difference is whether you have a system for handling them or you're scrambling every time. This is the system.
+Every business hits problems. The difference is whether you have a system for handling them or you're scrambling every time. Reference [[memory-bank/04-client-directory|Client Directory]] for client contact details during escalations. This is the system.
 
 ---
 
@@ -131,3 +136,13 @@ Do not negotiate scope mid-Sprint. Do not add "one more thing." The Sprint is th
 - **Document everything in Basecamp.** Email escalations create silos. Basecamp keeps the whole team informed.
 - **Fix systems, not symptoms.** Every escalation should result in a process improvement, not just a one-time fix.
 - **No blame, just solutions.** We're a small team. Pointing fingers wastes time. Find the fix, implement it, move on.
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/11-client-communication-sop|Client Communication SOP]]
+- [[sops/templates/team-ops/03-decision-rights-matrix|Decision Rights Matrix]]
+- [[sops/templates/team-ops/02-communication-protocol|Communication Protocol]]
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[blitzmetrics-canon/08-human-requirements|Canon: Human Requirements]]

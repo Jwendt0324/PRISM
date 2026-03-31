@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/CCS
+  - type/canon
+---
+
 # Topic Wheel Methodology — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guides, Video Editing Guide, Course Builder Guide
@@ -75,4 +82,14 @@ The most authoritative person saying the most authoritative content on the most 
 
 Example: [Your Mentor/Advisor] on CNN discussing Facebook data (10+10+10 = 30) vs. unknown person on personal blog about same topic (5+2+2 = 9).
 
-Track authority scores in Content Library. Boost highest-scoring content via Dollar-a-Day.
+Track authority scores in Content Library. Boost highest-scoring content via [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]].
+
+---
+## See Also
+- [[skills/content-factory|Content Factory Skill]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]]
+- [[sops/client-work/content-factory-execution|Content Factory SOP]]
+- [[skills/kp-sprint|KP Sprint Skill]]
+- [[sops/client-work/knowledge-panel-sprint|KP Sprint SOP]]

@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/PPP
+  - type/canon
+---
+
 # Data Connections Needed — [Methodology Partner] Canon
 
 **Source:** [Your Mentor/Advisor] feedback point #4, Operations Guide, Digital Plumbing course
@@ -7,7 +14,7 @@
 
 ## Purpose
 
-[Your Mentor/Advisor]'s directive: "You'd need to connect other data systems and tools." This document maps what data systems the Mainframe should connect to, what data they provide, and the current connection status.
+[Your Mentor/Advisor]'s directive: "You'd need to connect other data systems and tools." This document maps what data systems the PRISM should connect to, what data they provide, and the current connection status.
 
 ---
 
@@ -25,7 +32,7 @@
 - **Status:** CONNECTED — Synced to ~/Library/CloudStorage/
 - **Value:** Canonical framework source, client deliverables
 
-### Basecamp ([your-basecamp-url.com/project-id])
+### Basecamp (basecamp.com/4057320)
 - **Data:** Project threads, to-dos, client updates, MAA reports, team communication
 - **Access:** Basecamp email notifications → Gmail scan
 - **Status:** PARTIAL — Scanning email notifications, not direct API
@@ -40,8 +47,8 @@
 - **Data:** Website traffic, user behavior, conversion tracking, audience demographics
 - **Access:** GA4 API (requires service account)
 - **Status:** NOT CONNECTED
-- **Needed:** API credentials for client sites ([Client — Local Retail Business], [your-personal-site.com], [client-niche-advisory.com])
-- **Value:** Automated Metrics section of MAA reports
+- **Needed:** API credentials for client sites ([Client — Local Retail Business], [your-username].com, funeralhomeexit.com)
+- **Value:** Automated Metrics section of [[blitzmetrics-canon/05-maa-framework|MAA]] reports
 - **Complexity:** Medium — API setup + per-site configuration
 
 ### Google Search Console
@@ -77,7 +84,7 @@
 - **Access:** Stripe API
 - **Status:** NOT CONNECTED
 - **Needed:** API keys (restricted to read-only)
-- **Value:** Automated P&L tracking, revenue reporting (addressing [Your Mentor/Advisor]'s financial transparency push)
+- **Value:** Automated P&L tracking, revenue reporting (addressing [Your Mentor/Advisor]'s financial transparency push). Feeds into [[blitzmetrics-canon/02-content-factory-process|Content Factory]] performance tracking.
 - **Complexity:** Low — well-documented API
 
 ### WordPress (Client Sites)
@@ -127,3 +134,11 @@
 4. **Basecamp direct API** — Replaces email scanning with real-time data
 5. **WordPress API** — Enables content publishing verification and anti-vandalism
 6. **Facebook Ads** — Save for when Dollar-a-Day campaigns are actively running at scale
+
+---
+## See Also
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[memory-bank/05-vendor-and-partner-map|Vendor and Partner Map]]
+- [[sops/templates/team-ops/09-tool-stack-and-access|Tool Stack & Access]]
+- [[sops/business-ops/api-security-and-access|API Security SOP]]

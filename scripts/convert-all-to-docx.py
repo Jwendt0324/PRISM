@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Mainframe Full DOCX Converter
-Converts ALL markdown files in the Mainframe to readable .docx files.
-Outputs to ~/Desktop/Mainframe Docs/ organized by section.
+PRISM Full DOCX Converter
+Converts ALL markdown files in the PRISM to readable .docx files.
+Outputs to ~/Desktop/PRISM Docs/ organized by section.
 Skips session logs (internal) unless --include-logs is passed.
 """
 
@@ -16,10 +16,10 @@ from docx.shared import Pt, Inches, RGBColor, Emu
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.style import WD_STYLE_TYPE
 
-MAINFRAME_DIR = os.environ.get("MAINFRAME_DIR", os.path.expanduser("~/Documents/Claude/Mainframe"))
-OUTPUT_DIR = os.environ.get("OUTPUT_DIR", os.path.expanduser("~/Desktop/Mainframe Docs"))
+PRISM_DIR = os.environ.get("PRISM_DIR", os.path.expanduser("~/Documents/Claude/PRISM"))
+OUTPUT_DIR = os.environ.get("OUTPUT_DIR", os.path.expanduser("~/Desktop/PRISM Docs"))
 
-# Map Mainframe subfolders to human-readable output folder names
+# Map PRISM subfolders to human-readable output folder names
 FOLDER_MAP = {
     "sops/client-work": "SOPs — Client Work",
     "sops/business-ops": "SOPs — Business Ops",
@@ -144,9 +144,13 @@ def md_to_docx(md_text, output_path, source_path=""):
                     run.font.name = "Courier New"
                     run.font.size = Pt(9)
                     run.font.color.rgb = RGBColor(0x33, 0x33, 0x33)
-                    # Add light gray shading
+                    # Add light gray shading to code blocks
                     from docx.oxml.ns import qn
-                    shading = run._element.get_or_add_rPr()
+                    from docx.oxml import OxmlElement
+                    shd = OxmlElement('w:shd')
+                    shd.set(qn('w:fill'), 'F0F0F0')
+                    shd.set(qn('w:val'), 'clear')
+                    run._element.get_or_add_rPr().append(shd)
                 code_lines = []
                 in_code_block = False
             else:
@@ -182,7 +186,8 @@ def md_to_docx(md_text, output_path, source_path=""):
                                     cell = table.rows[ri].cells[ci]
                                     cell.text = cell_text
                                     for p in cell.paragraphs:
-                                        p.style.font.size = Pt(9)
+                                        for run in p.runs:
+                                            run.font.size = Pt(9)
                     except Exception:
                         # Fallback: render as text
                         for row_data in table_rows:
@@ -276,7 +281,7 @@ def md_to_docx(md_text, output_path, source_path=""):
     run.font.size = Pt(8)
 
     p = doc.add_paragraph()
-    run = p.add_run(f"Auto-generated from Claude Mainframe — {source_path}")
+    run = p.add_run(f"Auto-generated from Claude PRISM — {source_path}")
     run.font.size = Pt(8)
     run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
     run.italic = True
@@ -319,10 +324,10 @@ def main():
     skipped = 0
     errors = 0
 
-    mainframe_path = Path(MAINFRAME_DIR)
+    PRISM_path = Path(PRISM_DIR)
 
-    for md_file in sorted(mainframe_path.rglob("*.md")):
-        rel_path = md_file.relative_to(mainframe_path)
+    for md_file in sorted(PRISM_path.rglob("*.md")):
+        rel_path = md_file.relative_to(PRISM_path)
 
         if should_skip(rel_path):
             skipped += 1

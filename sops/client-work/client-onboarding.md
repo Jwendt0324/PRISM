@@ -8,6 +8,12 @@ skill_linked: Yes
 canon_compliance: 02-content-factory-process.md (Stage 0: Plumbing)
 triangles: GCT, CID
 canon_sources: [02-content-factory-process.md, 11-gct-discovery-framework.md]
+tags:
+  - type/sop
+  - status/active
+  - domain/client-work
+  - topic/onboarding
+  - topic/client-setup
 ---
 
 # Client Onboarding SOP
@@ -22,7 +28,7 @@ Ensure every new client is fully set up across all systems within the first week
 
 ## Process
 
-1. **Have the client fill out the GCT (Goal, Content, Targeting) form.** This captures their business goals, existing content assets, and target audience. Do not proceed until GCT is complete — it drives everything downstream.
+1. **Have the client fill out the [[blitzmetrics-canon/11-gct-discovery-framework|GCT]] (Goal, Content, Targeting) form.** This captures their business goals, existing content assets, and target audience. Do not proceed until GCT is complete — it drives everything downstream.
 
 2. **Set up access permissions via `[methodology-partner.com]/acl`.** [Your Repurposing Specialist] team members appropriate access to the client's ad accounts, analytics, social pages, and any other platforms. Document all access in the Basecamp Access thread (Step 4).
 
@@ -37,7 +43,7 @@ Ensure every new client is fully set up across all systems within the first week
 
 5. **Run an initial SEO/YouTube/content inventory analysis.** Audit current rankings, YouTube channel performance (if applicable), existing content library, and social presence. Document findings in the Internal thread and summarize key points for the client in Updates.
 
-6. **Set up the weekly MAA cadence.** MAA reports are due every **Friday**. Add a recurring reminder. See `~/Documents/Claude/Mainframe/sops/client-work/weekly-maa-report.md` for MAA format.
+6. **Set up the weekly [[blitzmetrics-canon/05-maa-framework|MAA]] cadence.** MAA reports are due every **Friday**. Add a recurring reminder. See `~/Documents/Claude/PRISM/sops/client-work/weekly-maa-report.md` for MAA format.
 
 7. **Deliver the first MAA report within 1 week of onboarding.** This establishes the reporting rhythm immediately and sets expectations. Do not let the first week pass without a report — even if it is primarily baseline metrics.
 
@@ -52,7 +58,7 @@ Ensure every new client is fully set up across all systems within the first week
 ## Common Pitfalls
 - **Forgetting the Internal thread.** Every Basecamp project needs a team-only Internal thread. If you skip it, sensitive strategy discussions end up in client-visible threads or get lost in Slack/DMs.
 - **Not setting the MAA cadence from day 1.** If you wait until "things settle in" to start reporting, weeks slip. Set the Friday cadence during onboarding and deliver the first MAA within 7 days.
-- **Client chasing for updates.** If the client has to ask "what's happening?" you've already failed. The [KP Sprint Client] lesson: proactive communication prevents client anxiety. Post updates before they ask.
+- **Client chasing for updates.** If the client has to ask "what's happening?" you've already failed. The Ryan D. Lee lesson: proactive communication prevents client anxiety. Post updates before they ask.
 
 ## Human Gates
 | Step | Gate Type | Reason |
@@ -74,8 +80,31 @@ Ensure every new client is fully set up across all systems within the first week
 - **Canon source:** 02-content-factory-process.md (Stage 0: Plumbing) — client onboarding IS the plumbing stage: setting up access, systems, and reporting before any content production begins
 - **Triangles served:** GCT (first step) — the GCT form IS Step 1 of the process, capturing Goals, Content inventory, and Targeting before anything else; CID — the entire process is Communicate (Basecamp threads, welcome emails), Iterate (initial analysis feeds first MAA), Delegate (access permissions, team assignments)
 - **Human checkpoints:** Client fills out GCT form personally; team access permissions verified by human; client invited to Basecamp and confirmed visible; first MAA delivered and reviewed within 1 week
-- **Anti-vandalism:** GCT form gates all downstream work (no form = no progress); Internal thread separated from client-visible threads prevents accidental exposure; MAA cadence set from Day 1 prevents reporting gaps; proactive communication prevents client anxiety ([KP Sprint Client] lesson)
+- **Anti-vandalism:** GCT form gates all downstream work (no form = no progress); Internal thread separated from client-visible threads prevents accidental exposure; MAA cadence set from Day 1 prevents reporting gaps; proactive communication prevents client anxiety (Ryan D. Lee lesson)
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on [Your Agency]/[Methodology Partner] onboarding patterns and documented lessons from [KP Sprint Client] engagement.
+- *2026-03-18* — SOP created based on [Your Agency]/[Methodology Partner] onboarding patterns and documented lessons from Ryan D. Lee engagement.
+
+---
+
+## Related
+
+- [Weekly MAA Report SOP](weekly-maa-report.md)
+- [Content Factory SOP](content-factory-execution.md)
+- [Prospect Follow-Up SOP](prospect-followup.md)
+- [Canon: GCT Discovery](../../blitzmetrics-canon/11-gct-discovery-framework.md)
+- [Canon: Human Requirements](../../blitzmetrics-canon/08-human-requirements.md)
+- [Team: New Hire Onboarding](../templates/team-ops/06-new-hire-onboarding-sop.md)
+- [Client Directory](../../memory-bank/04-client-directory.md)
+- [Tool Stack](../templates/team-ops/09-tool-stack-and-access.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/11-gct-discovery-framework|GCT Discovery]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[skills/prospect-followup|Prospect Follow-Up]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[memory-bank/04-client-directory|Client Directory]]

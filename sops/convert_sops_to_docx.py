@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Converts all .md SOPs in the Mainframe to readable .docx files.
+Converts all .md SOPs in the PRISM to readable .docx files.
 The .md files stay for Claude. The .docx files are for [Your Name].
 Output: sops/_readable/ folder with .docx versions.
 """

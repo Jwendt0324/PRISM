@@ -1,7 +1,8 @@
 ---
 name: Personal Brand Site
-version: 1.0
-description: Build WordPress personal brand sites with Topic Wheel integration, schema markup, and E-E-A-T optimization
+version: 1
+description: Build WordPress personal brand sites with Topic Wheel integration,
+  schema markup, and E-E-A-T optimization
 triggers:
   - personal brand site
   - WordPress site
@@ -10,12 +11,21 @@ triggers:
   - personal website
 canon_source: blitzmetrics-canon/06-topic-wheel.md
 full_sop: sops/client-work/personal-brand-site-build.md
-triangles: [CCS, GCT]
+triangles:
+  - CCS
+  - GCT
+tags:
+  - status/active
+  - triangle/CCS
+  - triangle/GCT
+  - type/skill
 ---
 
 # Personal Brand Site — Executable Skill
 
 ## Phase 0: Strategy (Before Touching WordPress)
+
+This site is a core deliverable of the [[skills/kp-sprint|KP Sprint]] and follows the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] methodology.
 
 ### Step 1: Define Topic Wheel (2-3 hours)
 Interview client to build the Why-How-What framework:
@@ -129,4 +139,19 @@ URL strategy: `/about`, `/blog`, `/topic/how-systems`, `/services`, `/case-studi
 - WordPress publishing and technical setup (plugin install, theme config)
 - Real photo selection (not stock)
 - Post-launch client sign-off
-- Monthly content review and updates based on analytics
+- Monthly content review and updates based on analytics (track via [[skills/influence-report-card|Influence Report Card]])
+
+---
+
+## Connected
+
+- [Canon: GCT Discovery](../blitzmetrics-canon/11-gct-discovery-framework.md)
+- [Full SOP: Personal Brand Site Build](../sops/client-work/personal-brand-site-build.md)
+- [KP Sprint Skill](kp-sprint.md)
+- [Content Factory Skill](content-factory.md)
+
+## See Also
+
+- [[skills/kp-sprint|KP Sprint]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[skills/influence-report-card|Influence Report Card]]

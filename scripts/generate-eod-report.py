@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Mainframe — EOD Report Generator
+Claude PRISM — EOD Report Generator
 Aggregates daily action logs and session data into a human-readable EOD report.
 
 Usage:
@@ -15,12 +15,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from collections import Counter
 
-MAINFRAME_DIR = os.path.expanduser("~/Documents/Claude/Mainframe")
+PRISM_DIR = os.path.expanduser("~/Documents/Claude/PRISM")
 
 
 def load_actions(date_str):
     """Load all actions from the daily JSONL log."""
-    actions_file = os.path.join(MAINFRAME_DIR, "logs", "actions", f"{date_str}.jsonl")
+    actions_file = os.path.join(PRISM_DIR, "logs", "actions", f"{date_str}.jsonl")
     if not os.path.exists(actions_file):
         return []
     actions = []
@@ -38,7 +38,7 @@ def load_actions(date_str):
 
 def load_session_events(date_str):
     """Load session start/end events for the given date."""
-    events_file = os.path.join(MAINFRAME_DIR, "logs", "session-events.jsonl")
+    events_file = os.path.join(PRISM_DIR, "logs", "session-events.jsonl")
     if not os.path.exists(events_file):
         return []
     events = []
@@ -59,7 +59,7 @@ def load_session_events(date_str):
 def load_session_summaries(date_str):
     """Load session JSONL summaries for the date's month."""
     year_month = date_str[:7]  # "2026-03"
-    sessions_dir = os.path.join(MAINFRAME_DIR, "logs", "sessions", year_month)
+    sessions_dir = os.path.join(PRISM_DIR, "logs", "sessions", year_month)
     if not os.path.isdir(sessions_dir):
         return []
 
@@ -83,7 +83,7 @@ def load_session_summaries(date_str):
 def check_learnings_status(date_str):
     """Check which session markdown files still need learnings."""
     year_month = date_str[:7]
-    sessions_dir = os.path.join(MAINFRAME_DIR, "logs", "sessions", year_month)
+    sessions_dir = os.path.join(PRISM_DIR, "logs", "sessions", year_month)
     if not os.path.isdir(sessions_dir):
         return [], []
 
@@ -97,6 +97,18 @@ def check_learnings_status(date_str):
         try:
             with open(filepath, "r") as fh:
                 content = fh.read()
+                # Only include sessions from the target date
+                # Check frontmatter date field or file modification date
+                file_date = None
+                if content.startswith("---"):
+                    for line in content.split("\n")[1:20]:
+                        if line.startswith("---"):
+                            break
+                        if line.startswith("date:"):
+                            file_date = line.split(":", 1)[1].strip()[:10]
+                            break
+                if file_date and file_date != date_str:
+                    continue
                 if "[NEEDS LEARNINGS]" in content:
                     needs_learnings.append(f)
                 elif "## What Was Learned" in content:
@@ -122,7 +134,7 @@ def generate_report(date_str):
     for action in actions:
         sessions_seen.add(action.get("sid", ""))
         tool_counts[action.get("tool", "")] += 1
-        target = action.get("target", "")
+        target = action.get("target", "") or action.get("file", "")
         if target and action.get("tool") in ("Write", "Edit", "Read"):
             files_touched.add(target)
 
@@ -187,7 +199,7 @@ def generate_report(date_str):
     report += f"\n---\n*Generated {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}*\n"
 
     # Write report
-    reports_dir = os.path.join(MAINFRAME_DIR, "logs", "reports")
+    reports_dir = os.path.join(PRISM_DIR, "logs", "reports")
     os.makedirs(reports_dir, exist_ok=True)
     report_file = os.path.join(reports_dir, f"eod-{date_str}.md")
 

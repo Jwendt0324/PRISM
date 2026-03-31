@@ -10,13 +10,19 @@ triangles:
   ACC: "Produce (transcript) → Process (article) → Post (WordPress) → Amplify (Dollar-a-Day)"
   GCT: "Goals: authority content at scale. Content: transcript-based articles. Targeting: Topic Wheel categories"
 canon_sources: [03-article-guidelines.md, 07-quality-standards.md, 08-human-requirements.md, 10-anti-vandalism-checklist.md]
+tags:
+  - type/sop
+  - status/active
+  - domain/client-work
+  - topic/article-writing
+  - topic/transcripts
 ---
 
 # Article Writing from Transcripts
 
 ## Purpose
 
-Transform raw video/podcast transcripts into publication-ready .docx articles that pass all [Your Agency] Content Engine v5 quality gates AND the [Methodology Partner] 18-step QA gate, formatted for Google Docs import and WordPress publishing. Every article must be reviewed by a human before publishing — no fully automated pipeline.
+Transform raw video/podcast transcripts into publication-ready .docx articles that pass all [Your Agency] Content Engine v5 quality gates AND the [[skills/article-qa|[Methodology Partner] 18-step QA gate]], formatted for Google Docs import and WordPress publishing. Every article must be reviewed by a human before publishing — no fully automated pipeline.
 
 ## When to Use
 
@@ -74,7 +80,7 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
    - Existing top content (to avoid cannibalization)
    - Target audience, industry, competitors
    - Default article length (typically 1,200-1,500 words)
-   - **Topic Wheel categories** — map all content pillars so each article can be tagged to a category
+   - **[[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] categories** — map all content pillars so each article can be tagged to a category
 
 3. **Create the .docx generator script.** Use `python-docx` to produce properly formatted docs:
    - SOURCE VIDEO block at top (title + YouTube URL)
@@ -84,7 +90,7 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
    - Body text (11pt, 1.15 line spacing)
    - Bold key phrases inline
    - `[IMAGE: description]` placeholders where relevant
-   Save script to `~/ryandlee-articles-v2/create_docx.py` (or client equivalent).
+   Save script to `~/[client-name]-articles-v2/create_docx.py` (or client equivalent).
 
 ### Phase 2: Content Tree Verification & Topic Mapping (Steps 4-5)
 
@@ -270,19 +276,42 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
 
 ## Common Pitfalls
 
-- **Automated contraction scripts create broken words.** "you have" → "you've" can produce "you've a pile" (British-sounding) or "doesn'thing" (broken). Always audit contraction replacements and fix artifacts. The [KP Sprint Client] project had 59 broken contractions from the automated fix.
-- **"Not because X, but because Y" slips through constantly.** This is the most common banned AI pattern. It appeared in 10 of 54 [KP Sprint Client] articles despite explicit instructions. Add it to every QA audit.
-- **Duplicate opening sentences across articles.** [KP Sprint Client] articles 5 and 50 both opened with "My father built our house by hand." Always check for duplicates across the full batch.
+- **Automated contraction scripts create broken words.** "you have" → "you've" can produce "you've a pile" (British-sounding) or "doesn'thing" (broken). Always audit contraction replacements and fix artifacts. The Ryan D. Lee project had 59 broken contractions from the automated fix.
+- **"Not because X, but because Y" slips through constantly.** This is the most common banned AI pattern. It appeared in 10 of 54 Ryan D. Lee articles despite explicit instructions. Add it to every QA audit.
+- **Duplicate opening sentences across articles.** Ryan D. Lee articles 5 and 50 both opened with "My father built our house by hand." Always check for duplicates across the full batch.
 - **Agents use inconsistent file naming.** Different parallel agents may name files differently (e.g., `article-203-v5.docx` vs `203.docx` vs `article-203-slug.docx`). Run a normalization pass after all agents complete.
 - **Word count target vs. transcript length.** Short transcripts (under 500 words) cannot become 1,500-word articles without fabricating content. Classify these as RED tier and give them brief framing pieces, or archive them entirely. Fabricating content to hit word count violates E-E-A-T.
-- **Podbean episodes often duplicate YouTube content.** Cross-reference before writing. On the [KP Sprint Client] project, 44 of 45 Podbean episodes were duplicates.
+- **Podbean episodes often duplicate YouTube content.** Cross-reference before writing. On the Ryan D. Lee project, 44 of 45 Podbean episodes were duplicates.
 - **Skipping human review "because automated QA passed."** Automated QA catches mechanical issues (banned words, word count, links). It CANNOT catch voice authenticity, fabricated stories, or strategic misalignment. The human gate is mandatory per canon.
 - **Creating new articles on topics that already have published content.** Always run content tree verification first. Enhancing an existing article is better than cannibalizing it with a new one.
 - **E-E-A-T fabrication under pressure.** When a transcript is thin, agents may invent stories or credentials to fill space. This is worse than a short article. Archive the transcript or write a brief framing piece instead.
 
 ## Learnings Log
 
-- **2026-03-18 ([KP Sprint Client]):** 54 articles written (50 YouTube + 4 guest appearances). 10 parallel agents produced all 50 YouTube articles simultaneously. QA audit caught 27 violations in first pass, reduced to 0 after two repair rounds.
+- **2026-03-18 (Ryan D. Lee):** 54 articles written (50 YouTube + 4 guest appearances). 10 parallel agents produced all 50 YouTube articles simultaneously. QA audit caught 27 violations in first pass, reduced to 0 after two repair rounds.
 - **2026-03-18 ([Client — Local Retail Business]):** 378 articles from 400 transcripts. 98 archived for being under 750 words (all from performance/jam videos with minimal dialogue). Voice profile captured the brother dynamic (John sets up tech detail, Jeremy delivers opinion).
 - **2026-03-18:** The biggest QA issue is always banned AI patterns, not banned words. Words are easy to grep for. Patterns require sentence-level analysis. Build the QA script with regex patterns for every banned construction.
 - **2026-03-20 (v2.0 upgrade):** Added mandatory human review gate, [Methodology Partner] 18-step QA integration, E-E-A-T compliance requirements, content tree verification, meta-article generation, 9 Triangles mapping, Topic Wheel positioning, and MAA tracking feedback loop per SOP audit findings. Previous versions had a fully automated pipeline with no human checkpoint — this was a canon violation.
+
+---
+
+## Related
+
+- [Article QA SOP](article-qa-blitzmetrics.md)
+- [Transcription Pipeline SOP](transcription-pipeline.md)
+- [YouTube Transcript SOP](youtube-transcript-scraping.md)
+- [Podcast Transcript SOP](podcast-transcript-scraping.md)
+- [Canon: Article Guidelines](../../blitzmetrics-canon/03-article-guidelines.md)
+- [Skill: Article Writer](../../skills/article-writer.md)
+
+## See Also
+
+- [[blitzmetrics-canon/03-article-guidelines|Article Guidelines]]
+- [[blitzmetrics-canon/07-quality-standards|Quality Standards]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[skills/article-writer|Article Writer]]
+- [[skills/article-qa|Article QA]]
+- [[skills/content-factory|Content Factory Skill]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]

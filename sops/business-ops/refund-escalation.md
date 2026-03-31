@@ -4,6 +4,12 @@ category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
 version: 1.1
+tags:
+  - type/sop
+  - status/active
+  - domain/business-ops
+  - domain/finance
+  - domain/client-ops
 skill_linked: Yes
 canon_compliance: 08-human-requirements.md
 triangles: MOF, CID
@@ -23,7 +29,7 @@ Ensure every refund request is handled quickly, documented properly, and analyze
 
 ## Process
 
-1. **Acknowledge the refund request within 24 hours.** Reply to the client confirming you received the request and are reviewing it. Do not leave them waiting.
+1. **Acknowledge the refund request within 24 hours.** Reply to the client (check [[memory-bank/04-client-directory|Client Directory]] for contact details) confirming you received the request and are reviewing it. Do not leave them waiting.
 
 2. **Log the request immediately.** Record: date received, client name, amount, reason for refund, original payment method, and who submitted the request. Use a Basecamp thread or shared tracker.
 
@@ -55,8 +61,8 @@ Ensure every refund request is handled quickly, documented properly, and analyze
 - [ ] Root cause documented and process improvement identified
 
 ## Common Pitfalls
-- **Delay kills trust.** [Refunded Client] had to ask "what happened to my refund?" — that should never happen. Acknowledge immediately, even if you can't process immediately.
-- **Insufficient account balance.** [Partner Platform] had no money when the [Refunded Client] refund was needed. [Your Mentor/Advisor] personally Zelle'd [$X — refund amount]. Always check the balance **before** promising a timeline.
+- **Delay kills trust.** Ed Strachar had to ask "what happened to my refund?" — that should never happen. Acknowledge immediately, even if you can't process immediately.
+- **Insufficient account balance.** [Partner Platform] had no money when the Ed Strachar refund was needed. [Your Mentor/Advisor] personally Zelle'd $1,494. Always check the balance **before** promising a timeline.
 - **SPP/Stripe disconnect.** Transactions sometimes don't sync between SPP and Stripe. Check both systems to get the full picture.
 - **Not offering service recovery.** A refund is a failure. Offering to deliver the service anyway turns a negative into a potential save. Always offer.
 - **Forgetting to log it as an expense.** Every refund must appear in the monthly P&L report (see `pl-reporting.md`).
@@ -70,4 +76,20 @@ Ensure every refund request is handled quickly, documented properly, and analyze
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- 2026-03-18: SOP created based on [Refunded Client] [$X — refund amount] refund incident. Key lesson: ad hoc handling creates confusion and delays. Formalize immediately.
+- 2026-03-18: SOP created based on Ed Strachar $1,494 refund incident. Key lesson: ad hoc handling creates confusion and delays. Formalize immediately.
+
+---
+
+## Related
+
+- [Client Communication SOP](../templates/team-ops/11-client-communication-sop.md)
+- [Escalation Playbook](../templates/team-ops/12-escalation-playbook.md)
+- [Canon: Human Requirements](../../blitzmetrics-canon/08-human-requirements.md)
+
+## See Also
+
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[sops/business-ops/pl-reporting|P&L Reporting]]
+- [[sops/templates/team-ops/12-escalation-playbook|Escalation Playbook]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]

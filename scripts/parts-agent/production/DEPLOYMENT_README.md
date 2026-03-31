@@ -82,7 +82,7 @@ Edit `C:\HRIAutomation\parts-agent\config\config.json`:
   "headless": true,
   ...
   "marcone_accounts": {
-    "d3s": {
+    "[client-id]": {
       "username": "YOUR_ID",
       "password": "YOUR_PASSWORD"
     },

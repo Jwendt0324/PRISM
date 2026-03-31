@@ -13,21 +13,29 @@ triggers:
   - content suite
 canon_source: blitzmetrics-canon/02-content-factory-process.md
 full_sop: sops/client-work/content-repurposing-pipeline.md
-triangles: [CCS, ACC, GCT]
+triangles:
+  - CCS
+  - ACC
+  - GCT
+tags:
+  - status/active
+  - triangle/CCS
+  - triangle/MAA
+  - type/skill
 ---
 
 # Content Repurposing — Executable Skill
 
 ## What This Does
 
-One input (transcript, article, notes, recording) becomes 10-15 outputs across 5 tiers. This is the multiplication engine of the Content Factory.
+One input (transcript, article, notes, recording) becomes 10-15 outputs across 5 tiers. This is the multiplication engine of the [[blitzmetrics-canon/02-content-factory-process|Content Factory]].
 
 ## Step 1: INTAKE
 
 1. Read raw content in full (do not skim)
 2. Check viability: publishable? Not confidential? Not copyrighted?
 3. Extract: speaker(s), core topic, 3-5 key insights, memorable quotes (exact words), actionable advice, stories/anecdotes
-4. Determine Topic Wheel position: WHY (personal story) / HOW (methodology) / WHAT (product/service)
+4. Determine [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] position: WHY (personal story) / HOW (methodology) / WHAT (product/service)
 5. Rate richness:
    - **RICH** (all 5 tiers): Substantial, multiple insights, stories, actionable advice
    - **MODERATE** (Tiers 1-3): Good depth, limited stories
@@ -39,7 +47,7 @@ One input (transcript, article, notes, recording) becomes 10-15 outputs across 5
 ### Tier 1 — Long-Form (1-2 pieces)
 
 **Authority Article (1,200-1,800 words)**
-- Follow Article Writer skill exactly
+- Follow [[skills/article-writer|Article Writer]] skill exactly
 - Hook (first sentence under 10 words) > H2 subheadings (verb-first) > actionable takeaways > CTA
 - Must pass Article QA skill before marking done
 - Bold key phrases, `[IMAGE: description]` placeholders, 2+ internal links
@@ -70,7 +78,7 @@ One input (transcript, article, notes, recording) becomes 10-15 outputs across 5
 
 ### Tier 5 — Internal (1 piece)
 
-**SOP Update Recommendation:** If content reveals a process/lesson for the Mainframe. Note which SOP to update and with what. Never published.
+**SOP Update Recommendation:** If content reveals a process/lesson for the PRISM. Note which SOP to update and with what. Never published.
 
 ## Step 3: QUALITY CHECK
 
@@ -90,7 +98,7 @@ One input (transcript, article, notes, recording) becomes 10-15 outputs across 5
 
 Save to structured folder:
 ```
-~/Documents/Claude/Mainframe/content-pipeline/[YYYY-MM-DD]-[topic-slug]/
+~/Documents/Claude/PRISM/content-pipeline/[YYYY-MM-DD]-[topic-slug]/
 ├── source.md
 ├── manifest.md
 ├── articles/
@@ -101,7 +109,7 @@ Save to structured folder:
 
 Generate manifest with: source, topic, Topic Wheel position, richness rating, all pieces with status, Dollar-a-Day candidates, publishing sequence.
 
-See `~/Documents/Claude/Mainframe/content-pipeline/HOW-TO-USE.md` for full pipeline folder structure and delivery conventions.
+See `~/Documents/Claude/PRISM/content-pipeline/HOW-TO-USE.md` for full pipeline folder structure and delivery conventions.
 
 ## Step 5: DISTRIBUTION RECOMMENDATIONS
 
@@ -129,6 +137,33 @@ See `~/Documents/Claude/Mainframe/content-pipeline/HOW-TO-USE.md` for full pipel
 | Sensitive content screening | Review — meeting transcripts may contain internal info |
 | Platform assignment | Review — strategic judgment |
 | Dollar-a-Day candidate selection | Review — experience with paid performance |
+
+## Connected Skills
+
+| Step | Skill | Purpose |
+|------|-------|---------|
+| QA articles | `/article-quality-gate` | 18-step [Methodology Partner] gate |
+| Social posts | `/social-content` | Platform-specific optimization |
+| WordPress prep | `/wp-publisher` | Meta, schema, RankMath brief |
+| AI optimization | `/geo-optimizer` | AI citability and entity signals |
+| Dollar-a-Day eval | Dollar-a-Day (PRISM) | Phase 0 assessment for paid |
+| Content calendar | `/content-calendar` | Scheduling and Topic Wheel mapping |
+| Batch production | `/batch-content` | Parallel article production |
+
+### Cross-References
+
+- [Canon: Content Factory Process](../blitzmetrics-canon/02-content-factory-process.md)
+- [Full SOP: Content Repurposing Pipeline](../sops/client-work/content-repurposing-pipeline.md)
+- [Article QA Skill](article-qa.md)
+- [Content Factory Skill](content-factory.md)
+- [Dollar-a-Day Skill](dollar-a-day.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[skills/article-writer|Article Writer]]
+- [[skills/content-factory|Content Factory Skill]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
 
 ## Key Pitfall
 

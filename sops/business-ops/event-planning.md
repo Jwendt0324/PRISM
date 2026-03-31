@@ -4,6 +4,11 @@ category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
 version: 1.1
+tags:
+  - type/sop
+  - status/active
+  - domain/business-ops
+  - domain/events
 skill_linked: Yes
 canon_compliance: 02-content-factory-process.md
 triangles: ACC, CCS
@@ -23,7 +28,7 @@ Run professional in-person events in [Your Speaker Event] format — half-day, T
 
 ## Process
 
-1. **Define the event.** Lock down: date, city, venue, format (half-day TED Talk-style), target audience, number of speakers (9 standard), and talk duration (20 minutes each). Document everything in a Basecamp project.
+1. **Define the event.** Lock down: date, city, venue, format (half-day TED Talk-style), target audience, number of speakers (9 standard), and talk duration (20 minutes each). Document everything in a Basecamp project. Coordinate speaker invitations using the [[memory-bank/07-relationship-map|Relationship Map]].
 
 2. **Secure the venue.** Requirements: capacity for audience + crew, AV equipment (projector, screen, mics), access to or proximity to a podcast studio, green screen studio if possible. Confirm venue availability and book with deposit.
 
@@ -93,3 +98,20 @@ Run professional in-person events in [Your Speaker Event] format — half-day, T
 
 ## Learnings Log
 - 2026-03-18: SOP created for [Your Speaker Event] (April 8, 2026) — first in-person event since COVID. 9 speakers, 20 min each, half-day format. [Your Mentor/Advisor] wants this recurring.
+
+---
+
+## Related
+
+- [University Speaking SOP](university-speaking-outreach.md)
+- [Content Factory SOP](../client-work/content-factory-execution.md)
+- [Content Assets](../../memory-bank/11-content-assets.md)
+
+## See Also
+
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[memory-bank/07-relationship-map|Relationship Map]]
+- [[memory-bank/11-content-assets|Content Assets]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]

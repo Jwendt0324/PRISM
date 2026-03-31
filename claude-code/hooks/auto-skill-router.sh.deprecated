@@ -1,0 +1,160 @@
+#!/bin/bash
+# Claude Mainframe — Auto Skill Router v1.0
+# UserPromptSubmit hook that analyzes every prompt and injects skill-loading directives.
+# Stdout → injected into Claude's context alongside the prompt.
+# This makes skills fire AUTOMATICALLY without [Your Name] typing slash commands.
+
+# Skip entirely when ralph-loop is active — the loop prompt handles its own routing
+# Check multiple possible marker locations for the ralph-loop plugin
+if [ -f "$HOME/.claude/ralph-loop.local.md" ] || \
+   [ -f "$HOME/.claude/plugins/ralph-loop/ralph-loop.local.md" ] || \
+   [ -n "$RALPH_LOOP_ACTIVE" ]; then
+    exit 0
+fi
+
+INPUT=""
+if [ ! -t 0 ]; then
+    INPUT=$(cat 2>/dev/null || true)
+fi
+[ -z "$INPUT" ] && exit 0
+
+if ! command -v jq &>/dev/null; then
+    exit 0
+fi
+
+PROMPT=$(echo "$INPUT" | jq -r '.prompt // empty' 2>/dev/null)
+[ -z "$PROMPT" ] && exit 0
+
+# Lowercase for matching
+P=$(echo "$PROMPT" | tr '[:upper:]' '[:lower:]')
+
+SKILLS=""
+
+# === SEO / KP Sprint skills ===
+if echo "$P" | grep -qE '(schema|json-ld|structured data|markup)'; then
+    SKILLS="${SKILLS}Load /schema-markup skill. "
+fi
+
+if echo "$P" | grep -qE '(seo audit|site audit|technical seo|crawl|core web vitals)'; then
+    SKILLS="${SKILLS}Load /seo-audit skill. "
+fi
+
+if echo "$P" | grep -qE '(geo |aeo|ai overview|ai search|citab|perplexity|chatgpt citation)'; then
+    SKILLS="${SKILLS}Load /geo-optimizer skill. "
+fi
+
+if echo "$P" | grep -qE '(entity|kgmid|knowledge graph|knowledge panel|kp sprint)'; then
+    SKILLS="${SKILLS}Load /entity-builder skill. "
+fi
+
+if echo "$P" | grep -qE '(keyword|backlink|ahrefs|domain authority|content gap)'; then
+    SKILLS="${SKILLS}Load /keyword-research skill. "
+fi
+
+if echo "$P" | grep -qE '(search console|gsc|ranking|ctr|impressions|indexing)'; then
+    SKILLS="${SKILLS}Load /gsc-insights skill. "
+fi
+
+if echo "$P" | grep -qE '(competitor|competitive|rival|compare.*site|market position)'; then
+    SKILLS="${SKILLS}Load /competitor-intel skill. "
+fi
+
+# === Content Production skills ===
+if echo "$P" | grep -qE '(article qa|quality gate|18.step|proofread|check.*article)'; then
+    SKILLS="${SKILLS}Load /article-quality-gate skill. "
+fi
+
+if echo "$P" | grep -qE '(batch.*article|write.*[0-9]+.*article|parallel.*content|mass produc)'; then
+    SKILLS="${SKILLS}Load /batch-content skill. "
+fi
+
+if echo "$P" | grep -qE '(transcript|youtube.*article|whisper|video.*to.*article|podcast.*to)'; then
+    SKILLS="${SKILLS}Load /transcript-pipeline skill. "
+fi
+
+if echo "$P" | grep -qE '(content calendar|editorial|monthly.*plan|quarterly.*content|topic wheel.*plan)'; then
+    SKILLS="${SKILLS}Load /content-calendar skill. "
+fi
+
+if echo "$P" | grep -qE '(social media|linkedin.*post|facebook.*post|instagram|tweet|social.*content)'; then
+    SKILLS="${SKILLS}Load /social-content skill. "
+fi
+
+if echo "$P" | grep -qE '(wordpress|wp.*publish|rankmath|meta.*description|publish.*article)'; then
+    SKILLS="${SKILLS}Load /wp-publisher skill. "
+fi
+
+# === Business Operations skills ===
+if echo "$P" | grep -qE '(basecamp|to.do|project update|post.*update.*basecamp)'; then
+    SKILLS="${SKILLS}Load /basecamp-ops skill. "
+fi
+
+if echo "$P" | grep -qE '(inbox|email.*triage|check.*email|unread|what.*needs.*attention)'; then
+    SKILLS="${SKILLS}Load /inbox-triage skill. "
+fi
+
+if echo "$P" | grep -qE '(meeting.*note|action.*item|call.*summary|zoom.*transcript|meeting.*transcript)'; then
+    SKILLS="${SKILLS}Load /meeting-capture skill. "
+fi
+
+if echo "$P" | grep -qE '(client.*report|maa.*report|monthly.*review|kp.*progress|weekly.*report.*client)'; then
+    SKILLS="${SKILLS}Load /client-report skill. "
+fi
+
+if echo "$P" | grep -qE '(outreach|cold.*email|prospect.*sequence|follow.*up.*email|nurture)'; then
+    SKILLS="${SKILLS}Load /outreach-sequence skill. "
+fi
+
+if echo "$P" | grep -qE '(client.*status|client.*snapshot|what.*happening.*with|how.*is.*client)'; then
+    SKILLS="${SKILLS}Load /client-snapshot skill. "
+fi
+
+if echo "$P" | grep -qE '(content.*pipeline|production.*status|what.*in.*pipeline|content.*status)'; then
+    SKILLS="${SKILLS}Load /content-pipeline-status skill. "
+fi
+
+# === Meta-article skill ===
+if echo "$P" | grep -qE '(meta.article|document.*what.*did|how we built|process article|write.*meta)'; then
+    SKILLS="${SKILLS}Load /meta-article skill. "
+fi
+
+# === Definitive article skill ===
+if echo "$P" | grep -qE '(definitive article|canonical article|pillar content|hub article|consolidate.*article)'; then
+    SKILLS="${SKILLS}Load /definitive-article skill. "
+fi
+
+# === Mainframe skills (from ~/Documents/Claude/Mainframe/skills/) ===
+if echo "$P" | grep -qE '(write.*article|article.*from.*transcript|batch.*write)'; then
+    SKILLS="${SKILLS}Load article-writer Mainframe skill from ~/Documents/Claude/Mainframe/skills/article-writer.md. "
+fi
+
+if echo "$P" | grep -qE '(content factory|6.*stage|plumbing.*produce|produce.*process)'; then
+    SKILLS="${SKILLS}Load content-factory Mainframe skill from ~/Documents/Claude/Mainframe/skills/content-factory.md. "
+fi
+
+if echo "$P" | grep -qE '(dollar.*day|\$1.*day|boost.*content|paid.*social|promote.*stage)'; then
+    SKILLS="${SKILLS}Load dollar-a-day Mainframe skill from ~/Documents/Claude/Mainframe/skills/dollar-a-day.md. "
+fi
+
+if echo "$P" | grep -qE '(influence.*report|authority.*score|quick.*audit|presence.*audit)'; then
+    SKILLS="${SKILLS}Load influence-report-card Mainframe skill from ~/Documents/Claude/Mainframe/skills/influence-report-card.md. "
+fi
+
+if echo "$P" | grep -qE '(repurpos|long.*form.*to.*short|multi.*platform|turn.*into.*posts)'; then
+    SKILLS="${SKILLS}Load content-repurposing Mainframe skill from ~/Documents/Claude/Mainframe/skills/content-repurposing.md. "
+fi
+
+if echo "$P" | grep -qE '(personal.*brand.*site|wordpress.*build|kp.*site)'; then
+    SKILLS="${SKILLS}Load personal-brand-site Mainframe skill from ~/Documents/Claude/Mainframe/skills/personal-brand-site.md. "
+fi
+
+if echo "$P" | grep -qE '(prospect|discovery.*call|qualify.*lead|new.*lead|follow.*up.*prospect)'; then
+    SKILLS="${SKILLS}Load prospect-followup Mainframe skill from ~/Documents/Claude/Mainframe/skills/prospect-followup.md. "
+fi
+
+# Only output if skills were matched
+if [ -n "$SKILLS" ]; then
+    echo "[MAINFRAME AUTO-ROUTER: ${SKILLS}Follow the skill instructions exactly. Use good-examples from ~/Documents/Claude/Mainframe/skills/good-examples/ if available for this content type.]"
+fi
+
+exit 0

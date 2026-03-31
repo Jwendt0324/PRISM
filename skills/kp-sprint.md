@@ -1,7 +1,8 @@
 ---
 name: KP Sprint
-version: 1.0
-description: Deliver a Knowledge Panel Sprint — $6,000, 30 days, fixed scope, 5 deliverable categories
+version: 1
+description: Deliver a Knowledge Panel Sprint — $6,000, 30 days, fixed scope, 5
+  deliverable categories
 triggers:
   - Knowledge Panel
   - KP Sprint
@@ -10,14 +11,23 @@ triggers:
   - knowledge panel sprint
 canon_source: blitzmetrics-canon/02-content-factory-process.md
 full_sop: sops/client-work/knowledge-panel-sprint.md
-triangles: [CCS, ACC, GCT]
+triangles:
+  - CCS
+  - ACC
+  - GCT
+tags:
+  - status/active
+  - triangle/ACC
+  - triangle/GCT
+  - triangle/MAA
+  - type/skill
 ---
 
 # KP Sprint — Executable Skill
 
 ## The Product
 
-$6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery. Clock pauses if client blocks prerequisites. Extra wants go to Phase 2 list — no exceptions.
+$6,000. 30 days. Fixed scope. Zero custom detours. Grounded in the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]] and the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] methodology. 50% to start, 50% on delivery. Clock pauses if client blocks prerequisites. Extra wants go to Phase 2 list — no exceptions.
 
 ## Qualification Gate (MUST Pass Before Starting)
 
@@ -33,7 +43,7 @@ $6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery
 ## 5 Fixed Deliverables
 
 ### 1. Personal Brand Site
-- Entity-first architecture: Home, About, Media/Press, Speaking, Services, Contact
+- Entity-first architecture (see [[skills/personal-brand-site|Personal Brand Site]]): Home, About, Media/Press, Speaking, Services, Contact
 - schema.org Person/Organization + social/knowledge graph linking
 - Citation hub with outbound links to verified profiles and press
 
@@ -68,7 +78,7 @@ $6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery
 | Role | % | Amount | Notes |
 |------|---|--------|-------|
 | Sales Commission (Closer) | 15% | $900 | Requires CRM evidence. [Your Mentor/Advisor] is default closer |
-| Delivery Lead (PM) | 10% | $600 | Paid on on-time delivery (<=30 days). [Your AgentBuilder Partner] is default |
+| Delivery Lead (PM) | 10% | $600 | Paid on on-time delivery (<=30 days). [Your AgentBuilder Partner] McLeod is default |
 | Delivery Labor Pool | 35% | $2,100 | Writers, editors, designers, VAs. Paid by task per rate card |
 | QA/On-Time Bonus | 5% | $300 | Released ONLY if on-time + zero critical defects |
 | Company Retained | 35% | $2,100 | Ops, software, R&D, runway |
@@ -94,6 +104,38 @@ $6,000. 30 days. Fixed scope. Zero custom detours. 50% to start, 50% on delivery
 - **Skipping the case study.** "If it's not published, it's not done." Build case study creation into Day 27-30.
 - **Paying comp without CRM evidence.** Require lead source, call notes, proposal, signature before releasing sales commission.
 - **QA bonus released despite defects.** Zero critical defects means zero. Hold the standard.
+
+## Connected Skills (Personal Skills in ~/.claude/skills/)
+
+Use these skills at each phase of the Sprint:
+
+| Phase | Skills to Use |
+|-------|--------------|
+| Intake | `/entity-builder` (entity audit), `/competitor-intel` (market positioning) |
+| Foundation | `/schema-markup` (Person/Org schema), `/seo-audit` (site baseline) |
+| Production | `/article-quality-gate` (18-step QA), `/keyword-research` (content targeting), `/batch-content` (parallel articles) |
+| Distribution | `/content-calendar` (posting plan), `/social-content` (social posts from articles) |
+| QA | `/geo-optimizer` (AI citability check), `/gsc-insights` (indexing verification) |
+| Handoff | `/client-report` (Entity Health Snapshot), `/basecamp-ops` (status update) |
+
+### Cross-References
+
+- [Canon: Nine Triangles](../blitzmetrics-canon/01-nine-triangles.md)
+- [Canon: GCT Discovery](../blitzmetrics-canon/11-gct-discovery-framework.md)
+- [Canon: Topic Wheel](../blitzmetrics-canon/06-topic-wheel.md)
+- [Full SOP: Knowledge Panel Sprint](../sops/client-work/knowledge-panel-sprint.md)
+- [Personal Brand Site Skill](personal-brand-site.md)
+- [Content Factory Skill](content-factory.md)
+- [Influence Report Card Skill](influence-report-card.md)
+
+## See Also
+
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[skills/influence-report-card|Influence Report Card]]
+- [[skills/personal-brand-site|Personal Brand Site]]
+- [[skills/article-writer|Article Writer]]
+- [[memory-bank/04-client-directory|Client Directory]]
 
 ## Human Gates
 

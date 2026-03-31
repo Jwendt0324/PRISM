@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/CCS
+  - type/canon
+---
+
 # The Content Factory Process — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guide v1.7 (2024), Workbook v1.9 (2025), CoachYu Guide v9.9
@@ -106,7 +113,7 @@ The Content Factory has evolved across versions:
 - Active listening skills applied when processing transcripts
 - Every processed piece tracked in Content Library
 
-**Human required:** QA review of AI-processed content. Voice/tone approval. E-E-A-T compliance check.
+**Human required:** QA review of AI-processed content. Voice/tone approval. E-E-A-T compliance check. See [[blitzmetrics-canon/08-human-requirements|Human Requirements]] and [[blitzmetrics-canon/07-quality-standards|Quality Standards]].
 
 ---
 
@@ -115,7 +122,7 @@ The Content Factory has evolved across versions:
 **Purpose:** Distribute processed content across all channels and platforms.
 
 **Distribution channels:**
-- Company website (WordPress — organized by Topic Wheel)
+- Company website (WordPress — organized by [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]])
 - YouTube (long-form and shorts)
 - Facebook (profile + public figure page — both, for different reach)
 - LinkedIn (broetry style, 10 engagements in first hour = algorithm boost)
@@ -127,7 +134,7 @@ The Content Factory has evolved across versions:
 **Quality standards:**
 - All content cross-posted to Content Library with URLs
 - Consistent branding across platforms
-- Blog posts follow article posting guidelines (see 03-article-guidelines.md)
+- Blog posts follow article posting guidelines (see [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]])
 - Featured images for every post
 - Schema.org markup on website content
 - Internal linking between related content
@@ -145,7 +152,7 @@ The Content Factory has evolved across versions:
 - Phase 1: Test at $1-5/day for 7 days
 - Phase 2: Scale winners to $5-20/day for 30 days
 - Phase 3: Evergreen "Greatest Hits" rotation at $20-50/day
-- See 04-dollar-a-day.md for full detail
+- See [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day Strategy]] for full detail
 
 **Thank You Machine:**
 - Track positive mentions (mention.com or native monitoring)
@@ -171,7 +178,7 @@ The Content Factory has evolved across versions:
 
 ## Stage 5: Perform (MAA)
 
-**Purpose:** Measure, analyze, and optimize everything using the MAA framework.
+**Purpose:** Measure, analyze, and optimize everything using the [[blitzmetrics-canon/05-maa-framework|MAA framework]].
 
 **MAA cycle:**
 1. **Metrics:** Pull actual numbers from native platforms. Week-over-week comparisons. Key metrics per ACC funnel stage.
@@ -231,3 +238,21 @@ Every piece of content must demonstrate:
 - **Trust:** Consistent information across all platforms, verified by Google's Knowledge Graph
 
 **"AI doesn't have your stories because it's not human. When you're able to tell stories about your experiences, Google can recognize that your content is authentic and deserves to rank."**
+
+---
+## See Also
+- [[skills/content-factory|Content Factory Skill]]
+- [[skills/article-writer|Article Writer Skill]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]]
+- [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day Strategy]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel Methodology]]
+- [[blitzmetrics-canon/07-quality-standards|Quality Standards]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[skills/content-repurposing|Content Repurposing Skill]]
+- [[sops/client-work/content-repurposing-pipeline|Content Repurposing SOP]]
+- [[sops/client-work/article-writing-from-transcripts|Article Writing SOP]]
+- [[sops/client-work/youtube-transcript-scraping|YouTube Transcript SOP]]
+- [[sops/client-work/podcast-transcript-scraping|Podcast Transcript SOP]]
+- [[sops/client-work/transcription-pipeline|Transcription Pipeline SOP]]

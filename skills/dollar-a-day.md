@@ -13,14 +13,22 @@ triggers:
   - promote content
 canon_source: blitzmetrics-canon/04-dollar-a-day.md
 full_sop: sops/client-work/dollar-a-day-campaign.md
-triangles: [ACC, MAA, GCT]
+triangles:
+  - ACC
+  - MAA
+  - GCT
+tags:
+  - status/active
+  - triangle/DDD
+  - triangle/MAA
+  - type/skill
 ---
 
 # Dollar-a-Day — Executable Skill
 
 ## Core Principle
 
-Test small ($1-5/day) > Scale winners ($5-20/day) > Rotate evergreen ($20-50/day). Never promote content that hasn't proven itself organically first.
+Test small ($1-5/day) > Scale winners ($5-20/day) > Rotate evergreen ($20-50/day). Never promote content that hasn't proven itself organically first. This skill follows the [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day Canon]] and ties into the [[blitzmetrics-canon/05-maa-framework|MAA Framework]] for performance tracking.
 
 ## Phase 0: Pre-Campaign Assessment
 
@@ -130,8 +138,35 @@ Track overall: total spend vs budget, total conversions, avg CPA, avg ROAS, fati
 - Monthly ROAS review mandatory (prevent budget creep with declining returns)
 - If ROAS < 1.5:1, reduce budget immediately
 
+## Automation Opportunities (2026)
+
+When ready to automate Dollar-a-Day execution:
+- **adspirer-ads-agent plugin** — Cross-platform ad creation (Google, Meta, TikTok, LinkedIn). Install: `/plugin install adspirer-ads-agent@claude-plugins-official`
+- **Pipeboard MCP** — Connect ad platform data to Claude for real-time performance monitoring
+- **Auto-kill script pattern:** Pull yesterday's ROAS via API, auto-pause ad sets below threshold
+
+**Canon reminder:** Human gates still required for budget scaling, Phase promotion, and kill decisions. Automation handles data pull and reporting; humans make the calls.
+
 ## Three Ways Dollar-a-Day Fails
 
 1. **Impatience:** Scaling before Phase 1 learning is clear
 2. **Unclear thresholds:** No kill rules, hope-based decisions
 3. **Set-and-forget:** No monthly review or rotation
+
+---
+
+## Connected
+
+- [Canon: Dollar-a-Day](../blitzmetrics-canon/04-dollar-a-day.md)
+- [Canon: MAA Framework](../blitzmetrics-canon/05-maa-framework.md)
+- [Full SOP: Dollar-a-Day Campaign](../sops/client-work/dollar-a-day-campaign.md)
+- [Content Factory Skill](content-factory.md)
+- [Content Repurposing Skill](content-repurposing.md)
+- [Weekly MAA Report Skill](weekly-maa-report.md)
+
+## See Also
+
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day Canon]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[skills/weekly-maa-report|Weekly MAA Report]]

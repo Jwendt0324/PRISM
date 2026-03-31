@@ -100,11 +100,11 @@ class RSSKeyAuth:
         """Sync the RSS key to whitelist the current IP.
 
         Tries port 3389 first (direct), falls back to port 443 (standard HTTPS).
-        GET /v4/syncrsskey?friendly_name=hri-worker&force=true
+        GET /v4/syncrsskey?friendly_name=[agency-worker]&force=true
         Authorization: Bearer {token}
         """
         params = urllib.parse.urlencode({
-            "friendly_name": "hri-worker-01",
+            "friendly_name": "[agency-worker]-01",
             "force": "true",
         })
 

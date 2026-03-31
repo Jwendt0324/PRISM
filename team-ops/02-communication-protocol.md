@@ -1,16 +1,20 @@
 ---
 title: Communication Protocol
 category: team-ops
-version: 1.0
+version: 1
 created: 2026-03-18
 last_updated: 2026-03-18
 status: active
 owner: [Your Name]
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # Communication Protocol — [Your Agency Name]
 
-This is how we communicate. No ambiguity. If you're unsure where something goes, default to Basecamp. Email gets lost. Basecamp doesn't.
+This is how we communicate at [[memory-bank/01-hri-overview|[Your Agency]]]. No ambiguity. If you're unsure where something goes, default to Basecamp. Email gets lost. Basecamp doesn't.
 
 ---
 
@@ -189,3 +193,13 @@ From the KP Sprint playbook — these rules exist because burnout kills output.
 _Updated as patterns emerge. If you notice a communication breakdown, log it here so we fix the system, not just the symptom._
 
 - **2026-03-18 (v1.0):** Initial protocol written based on observed Gmail and Basecamp patterns. Key insight: [Your Mentor/Advisor]'s "let's iterate in Basecamp" preference is the right call — email threads with 4+ people die fast. Codified as default behavior.
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/04-meeting-cadence|Meeting Cadence]]
+- [[sops/templates/team-ops/11-client-communication-sop|Client Communication SOP]]
+- [[sops/templates/team-ops/12-escalation-playbook|Escalation Playbook]]
+- [[memory-bank/08-communication-patterns|Communication Patterns]]
+- [[blitzmetrics-canon/01-nine-triangles|Canon: Nine Triangles]]

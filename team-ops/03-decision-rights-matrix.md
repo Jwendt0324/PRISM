@@ -1,15 +1,19 @@
 ---
 document: Decision Rights Matrix
 owner: [Your Name]
-version: 1.0
+version: 1
 created: 2026-03-18
 last_updated: 2026-03-18
 status: active
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # Decision Rights Matrix — [Your Agency Name]
 
-Who decides what. No ambiguity.
+Who decides what. No ambiguity. Aligns with [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]] governance principles.
 
 This is the operating authority for every recurring decision at [Your Agency]. If a decision isn't listed here, it escalates to [Your Name].
 
@@ -17,9 +21,9 @@ This is the operating authority for every recurring decision at [Your Agency]. I
 
 ## Governance Context
 
-- **[Your Name]** — [Majority Owner]. Full operational and managerial control per Cross-Equity Agreement. Final say on everything.
-- **[Your Mentor/Advisor]** — [Advisor Equity %] (vesting). NO management or voting rights unless [Your Name] grants them. Strategic advisor role.
-- **[Your Ops Partner]** — [Ops Partner Equity %] (vesting). NO management or voting rights. Operations role.
+- **[Your Name]** — 85% owner. Full operational and managerial control per Cross-Equity Agreement. Final say on everything.
+- **[Your Mentor/Advisor]** — 10% equity (vesting). NO management or voting rights unless [Your Name] grants them. Strategic advisor role.
+- **[Your Ops Partner] [Last Name]** — 5% equity (vesting). NO management or voting rights. Operations role.
 - **Revenue share** — [Your Agency] pays [Partner Platform] 20% of gross revenue.
 
 Equity does not equal authority. [Your Name] holds sole decision-making power. [Your Mentor/Advisor] advises. [Your Ops Partner] executes operations. That's the structure.
@@ -45,7 +49,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Mentor/Advisor] | R | Qualifies leads. Enforces the gate: $100k+/mo revenue, 100+ reviews, willing to film. |
 | [Your Name] | A | Final accept/reject. No client enters without [Your Name]'s agreement. |
-| [Your Ops Partner] | I | Informed when a new client is accepted for onboarding prep. |
+| [Your Ops Partner] [Last Name] | I | Informed when a new client is accepted for onboarding prep. |
 | [Your Ops Admin] ([Partner Platform]) | I | Informed for resource planning. |
 
 ### 2. Pricing Exceptions
@@ -54,7 +58,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Name] | A | Standard pricing: $6,000/Sprint, $2,500 certification. Any deviation is [Your Name]'s call. |
 | [Your Mentor/Advisor] | C | Advises on pricing strategy. Does not set or approve prices. |
-| [Your Ops Partner] | I | Informed for invoicing and tracking. |
+| [Your Ops Partner] [Last Name] | I | Informed for invoicing and tracking. |
 
 ### 3. Scope Changes Mid-Sprint
 
@@ -62,7 +66,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Mentor/Advisor] | R | Enforces the rule: no custom work inside a Sprint. Custom requests go to Phase 2. |
 | [Your Name] | A | Final call if a client pushes back or an exception is warranted. |
-| [Your Ops Partner] | C | Consulted on operational feasibility. |
+| [Your Ops Partner] [Last Name] | C | Consulted on operational feasibility. |
 
 ### 4. Hiring Decisions
 
@@ -70,13 +74,13 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Name] | A | Hires who he wants. Sole authority. |
 | [Your Mentor/Advisor] | C | Can advise on qualifications and standards. Advisory only — no veto power. |
-| [Your Ops Partner] | C | Consulted on ops capacity and team fit. |
+| [Your Ops Partner] [Last Name] | C | Consulted on ops capacity and team fit. |
 
 ### 5. Content Publishing
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R | Manages content pipeline and scheduling. |
+| [Your Ops Partner] [Last Name] | R | Manages content pipeline and scheduling. |
 | [Your Mentor/Advisor] | C | Reviews content. Flags AI language, quality issues, brand consistency. |
 | [Your Name] | A | Final approval authority. Can override any publish/hold decision. |
 
@@ -86,14 +90,14 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R, A | Can approve and execute. No escalation needed. |
+| [Your Ops Partner] [Last Name] | R, A | Can approve and execute. No escalation needed. |
 | [Your Name] | I | Informed in regular reporting. |
 
 #### $500 – $2,000
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R | Prepares the request and justification. |
+| [Your Ops Partner] [Last Name] | R | Prepares the request and justification. |
 | [Your Name] | A | Approves or rejects. |
 | [Your Mentor/Advisor] | I | Informed if it affects [Partner Platform]-subsidized operations. |
 
@@ -103,22 +107,22 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Name] | A | Must approve. No exceptions. |
 | [Your Mentor/Advisor] | C | Consulted if it involves [Partner Platform] resources or shared costs. |
-| [Your Ops Partner] | R | Executes after approval. |
+| [Your Ops Partner] [Last Name] | R | Executes after approval. |
 | [Your Ops Admin] ([Partner Platform]) | C | Consulted if it hits the [Partner Platform] budget. |
 
 ### 7. Client Escalations
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Mentor/Advisor] | R | Handles client escalations directly (e.g., [KP Sprint Client], [Client — Local Retail Business]). First responder. |
+| [Your Mentor/Advisor] | R | Handles client escalations directly (e.g., Ryan D. Lee, [Client — Local Retail Business]). First responder. |
 | [Your Name] | A | Informed immediately. Steps in if the situation requires owner-level authority. |
-| [Your Ops Partner] | I | Informed for operational awareness. |
+| [Your Ops Partner] [Last Name] | I | Informed for operational awareness. |
 
 ### 8. SOP Changes
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R | Drafts and maintains SOPs. |
+| [Your Ops Partner] [Last Name] | R | Drafts and maintains SOPs. |
 | [Your Name] | A | Approves changes to any SOP that affects client delivery or revenue. |
 | [Your Mentor/Advisor] | C | Consulted on methodology SOPs (Content Factory, Dollar-a-Day, Topic Wheel). |
 
@@ -126,7 +130,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R | Identifies need, researches options. |
+| [Your Ops Partner] [Last Name] | R | Identifies need, researches options. |
 | [Your Name] | A | Approves [Your Agency] tool purchases. |
 | [Your Ops Admin] ([Partner Platform]) | R, A | Controls [Partner Platform] tool budget. Limited budget — operates independently within his allocation. |
 | [Your Mentor/Advisor] | I | Informed on major tool decisions. |
@@ -137,7 +141,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Mentor/Advisor] | R | Runs the qualification process. Sets standards. |
 | [Your Name] | A | Final approval on admissions. [Your Agency] co-owns the program. |
-| [Your Ops Partner] | I | Informed for operational planning. |
+| [Your Ops Partner] [Last Name] | I | Informed for operational planning. |
 
 ### 11. Revenue Distribution
 
@@ -145,21 +149,21 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 |------|------|-------|
 | [Your Name] | A | Sole authority. Governed by Cross-Equity Agreement. |
 | [Your Mentor/Advisor] | C | Consulted on [Partner Platform] revenue share (20% of [Your Agency] gross). |
-| [Your Ops Partner] | I | Informed on compensation-related decisions. |
+| [Your Ops Partner] [Last Name] | I | Informed on compensation-related decisions. |
 
 ### 12. Partnership & Equity Decisions
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Name] | A | [Majority Owner]. Sole decision-maker on equity, vesting, and partnership terms. |
-| [Your Mentor/Advisor] | C | Consulted as [Advisor Equity %] holder. Advisory only — no voting rights. |
-| [Your Ops Partner] | I | Informed as [Ops Partner Equity %] holder. No voting rights. |
+| [Your Name] | A | 85% owner. Sole decision-maker on equity, vesting, and partnership terms. |
+| [Your Mentor/Advisor] | C | Consulted as 10% equity holder. Advisory only — no voting rights. |
+| [Your Ops Partner] [Last Name] | I | Informed as 5% equity holder. No voting rights. |
 
 ### 13. Event Planning ([Your Speaker Event], [Industry Conference])
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R | Logistics, scheduling, coordination. |
+| [Your Ops Partner] [Last Name] | R | Logistics, scheduling, coordination. |
 | [Your Name] | A | Approves budget, attendees, and commitments. |
 | [Your Mentor/Advisor] | C | Consulted on speaking opportunities, strategic value, and co-hosted events. |
 
@@ -167,7 +171,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Ops Partner] | R | Drafts the case study. Manages client approval process. |
+| [Your Ops Partner] [Last Name] | R | Drafts the case study. Manages client approval process. |
 | [Your Mentor/Advisor] | C | Reviews for accuracy, methodology alignment, and quality. |
 | [Your Name] | A | Final approval before anything goes public. |
 
@@ -226,3 +230,13 @@ Level 3: [Your Name] + [Your Mentor/Advisor] discuss, [Your Name] decides
 - A role changes significantly
 - A recurring decision keeps causing confusion about who owns it
 - The Cross-Equity Agreement is amended
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/01-team-directory|Team Directory]]
+- [[sops/templates/team-ops/05-delegation-framework|Delegation Framework]]
+- [[sops/templates/team-ops/12-escalation-playbook|Escalation Playbook]]
+- [[memory-bank/05-team-and-roles|Team and Roles]]
+- [[blitzmetrics-canon/01-nine-triangles|Canon: Nine Triangles]]

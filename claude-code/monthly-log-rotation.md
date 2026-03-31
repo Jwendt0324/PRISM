@@ -6,19 +6,19 @@
 
 ## Prompt
 
-You are running the Monthly Log Rotation for the Claude Mainframe. This keeps log files from growing unbounded.
+You are running the Monthly Log Rotation for the Claude PRISM. This keeps log files from growing unbounded.
 
 ### Step 1: Rotate Large Logs
 
 Check these files and rotate if they exceed thresholds:
 
-1. `~/Documents/Claude/Mainframe/logs/hook-debug.log` — If over 10MB, move to `hook-debug-YYYYMM.log.bak` and create a fresh empty file
-2. `~/Documents/Claude/Mainframe/logs/tool-usage.log` — If over 5MB, move to `tool-usage-YYYYMM.log.bak` and create a fresh empty file
-3. `~/Documents/Claude/Mainframe/logs/session-events.log` — If over 2MB, move to `session-events-YYYYMM.log.bak` and create a fresh empty file
+1. `~/Documents/Claude/PRISM/logs/hook-debug.log` — If over 10MB, move to `hook-debug-YYYYMM.log.bak` and create a fresh empty file
+2. `~/Documents/Claude/PRISM/logs/tool-usage.log` — If over 5MB, move to `tool-usage-YYYYMM.log.bak` and create a fresh empty file
+3. `~/Documents/Claude/PRISM/logs/session-events.log` — If over 2MB, move to `session-events-YYYYMM.log.bak` and create a fresh empty file
 
 Use Bash commands like:
 ```bash
-LOG="$HOME/Documents/Claude/Mainframe/logs/hook-debug.log"
+LOG="$HOME/Documents/Claude/PRISM/logs/hook-debug.log"
 SIZE=$(stat -f%z "$LOG" 2>/dev/null || echo 0)
 if [ "$SIZE" -gt 10485760 ]; then
     mv "$LOG" "${LOG%.log}-$(date +%Y%m).log.bak"
@@ -39,7 +39,7 @@ Delete any `.log.bak` files older than 6 months.
 
 ### Step 4: Write Rotation Log
 
-Append to `~/Documents/Claude/Mainframe/logs/maintenance.log`:
+Append to `~/Documents/Claude/PRISM/logs/maintenance.log`:
 ```
 YYYY-MM-DD | LOG_ROTATION | Files rotated: [list] | Directories archived: [list] | Space freed: [estimate]
 ```
@@ -50,3 +50,11 @@ YYYY-MM-DD | LOG_ROTATION | Files rotated: [list] | Directories archived: [list]
 - **Frequency:** 1st of each month, 3:07 AM
 - **Duration:** Under 1 minute
 - **Gmail required:** NO
+
+---
+
+## See Also
+- [[skills/PRISM-core|PRISM Core]]
+- [[sops/file-management/logging-discipline|Logging Discipline SOP]]
+- [[sops/templates/session-log-format|Session Log Format]]
+- [[claude-code/AUTOMATION-STATUS|Automation Status]]

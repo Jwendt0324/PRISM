@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Mainframe — Weekly Report Generator
+Claude PRISM — Weekly Report Generator
 Aggregates 7 days of action logs and session data into a weekly rollup.
 
 Usage:
@@ -15,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from collections import Counter
 
-MAINFRAME_DIR = os.path.expanduser("~/Documents/Claude/Mainframe")
+PRISM_DIR = os.path.expanduser("~/Documents/Claude/PRISM")
 
 
 def get_week_dates(start_date_str=None):
@@ -33,7 +33,7 @@ def load_all_actions(dates):
     """Load actions across multiple dates."""
     all_actions = []
     for date_str in dates:
-        actions_file = os.path.join(MAINFRAME_DIR, "logs", "actions", f"{date_str}.jsonl")
+        actions_file = os.path.join(PRISM_DIR, "logs", "actions", f"{date_str}.jsonl")
         if not os.path.exists(actions_file):
             # Check for compressed version
             gz_file = actions_file + ".gz"
@@ -71,7 +71,7 @@ def load_all_sessions(dates):
 
     all_sessions = []
     for month in months_seen:
-        sessions_dir = os.path.join(MAINFRAME_DIR, "logs", "sessions", month)
+        sessions_dir = os.path.join(PRISM_DIR, "logs", "sessions", month)
         if not os.path.isdir(sessions_dir):
             continue
         for f in sorted(os.listdir(sessions_dir)):
@@ -99,7 +99,7 @@ def load_learnings(dates):
 
     learnings = []
     for month in months_seen:
-        sessions_dir = os.path.join(MAINFRAME_DIR, "logs", "sessions", month)
+        sessions_dir = os.path.join(PRISM_DIR, "logs", "sessions", month)
         if not os.path.isdir(sessions_dir):
             continue
         for f in sorted(os.listdir(sessions_dir)):
@@ -199,7 +199,7 @@ def generate_report(start_date_str=None):
     if all_files_created:
         report += "\n## Key Deliverables\n"
         # Group by directory
-        from collections import defaultdict
+        from collections import defaultdict  # TODO: move to top-level import
         by_dir = defaultdict(list)
         for f in all_files_created:
             parts = f.rsplit("/", 1)
@@ -230,7 +230,7 @@ def generate_report(start_date_str=None):
     report += f"\n---\n*Generated {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}*\n"
 
     # Write report
-    reports_dir = os.path.join(MAINFRAME_DIR, "logs", "reports")
+    reports_dir = os.path.join(PRISM_DIR, "logs", "reports")
     os.makedirs(reports_dir, exist_ok=True)
     report_file = os.path.join(reports_dir, f"weekly-{week_start[:4]}-W{week_num:02d}.md")
 

@@ -1,7 +1,8 @@
 ---
 name: Influence Report Card
-version: 1.0
-description: Assess and track founder authority across 5 axes using the MAA model with monthly cadence and 6-month blueprint
+version: 1
+description: Assess and track founder authority across 5 axes using the MAA
+  model with monthly cadence and 6-month blueprint
 triggers:
   - Influence Report Card
   - authority score
@@ -10,14 +11,20 @@ triggers:
   - influence assessment
 canon_source: blitzmetrics-canon/05-maa-framework.md
 full_sop: sops/client-work/influence-report-card.md
-triangles: [MAA, ACC]
+triangles:
+  - MAA
+  - ACC
+tags:
+  - status/active
+  - triangle/ACC
+  - type/skill
 ---
 
 # Influence Report Card — Executable Skill
 
 ## Core Principle
 
-Grade founder authority across 5 axes using objective rubrics and native platform data — not estimates, not feelings. Monthly 15-minute check-ins track progress against a 6-month blueprint. The entire report is an MAA cycle: Metrics (pull data), Analysis (explain why), Action (prioritized next steps).
+Grade founder authority across 5 axes using objective rubrics and native platform data — not estimates, not feelings. Built on the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]] framework. Monthly 15-minute check-ins track progress against a 6-month blueprint. The entire report is an MAA cycle: Metrics (pull data), Analysis (explain why), Action (prioritized next steps).
 
 ## The 5 Axes
 
@@ -94,7 +101,7 @@ Review blueprint quarterly. Adjust targets based on actual progress. Keep it vis
 
 | Pattern | Diagnosis | Actions |
 |---------|-----------|---------|
-| Strong Web, Weak Social | Authority exists but not visible | Repurpose blog to LinkedIn, Dollar-a-Day on blog posts |
+| Strong Web, Weak Social | Authority exists but not visible | Repurpose blog to LinkedIn, Dollar-a-Day on blog posts. Consider a [[skills/kp-sprint|KP Sprint]]. |
 | Speaking Active, Publishing Dormant | Content Factory not running | Convert speaking audio to articles, set publishing as non-negotiable |
 | Strong Social, Weak Web | Visibility but not owned | Drive social to website with CTAs, improve SEO, convert posts to blog |
 | Stalled everywhere | Execution gap or unclear priorities | Pick ONE axis, create micro-goals, automate/outsource |
@@ -115,3 +122,21 @@ Review blueprint quarterly. Adjust targets based on actual progress. Keep it vis
 - Monthly 15-minute client review call (maintains relationship, captures feedback)
 - 6-month blueprint quarterly review (adjusting targets based on progress)
 - Action item prioritization (limiting to top 3, ranking by impact/effort)
+
+---
+
+## Connected
+
+- [Canon: Nine Triangles](../blitzmetrics-canon/01-nine-triangles.md)
+- [Canon: MAA Framework](../blitzmetrics-canon/05-maa-framework.md)
+- [Full SOP: Influence Report Card](../sops/client-work/influence-report-card.md)
+- [KP Sprint Skill](kp-sprint.md)
+- [Weekly MAA Report Skill](weekly-maa-report.md)
+- [Client Directory](../memory-bank/04-client-directory.md)
+
+## See Also
+
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[skills/kp-sprint|KP Sprint]]
+- [[memory-bank/04-client-directory|Client Directory]]
+- [[skills/prospect-followup|Prospect Follow-Up]]

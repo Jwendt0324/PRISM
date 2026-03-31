@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/CCS
+  - type/canon
+---
+
 # Quality Standards — [Methodology Partner] Canon
 
 **Source:** All Master Guides, Article Guidelines, Video Editing Guide, Operations Guide
@@ -7,21 +14,35 @@
 
 ## Article Quality Standards
 
-See 03-article-guidelines.md for full 18-step checklist. Key standards:
+See [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]] for full quality gate with severity tiers. Key standards:
 
-- Minimum 200 words
-- E-E-A-T compliant (real stories, real photos, real expertise)
-- No banned words (delve, landscape, realm, paradigm, etc.)
-- No banned AI patterns ("In today's...", "It's important to note...")
-- Active voice only
-- 3-5 line paragraphs
-- SEO-friendly titles starting with main keyword
+**BLOCK (zero tolerance):**
+- No banned words (22 words — see canon 03)
+- No banned AI patterns (13 patterns — see canon 03)
+- No banned salesy language
+- E-E-A-T compliant (real stories, real photos, real expertise — not fabricated)
+- Minimum 200 words, sourced from real transcript/video
+- Source video watched by a human before writing
+
+**WARN (fix or document):**
+- SEO-friendly titles leading with main keyword
 - Proper heading hierarchy (H1 > H2 > H3)
 - 2+ internal links with descriptive anchor text
 - Featured image + inline images with alt text
 - Source video embedded
 - Categorized by Topic Wheel
 - Meta description written (not auto-generated)
+- No text walls (8+ line paragraphs)
+- No stacked rhetorical questions (2+ in a row)
+- No em dashes (unless voice profile permits)
+- Contractions used naturally (flag if zero in 500+ words)
+
+**STYLE (author judgment — not scored):**
+- Paragraph rhythm should vary (one-liners for punch, longer for complexity)
+- Single rhetorical questions are a legitimate technique
+- Passive voice is fine when the subject isn't the point
+- Active voice is the default, not an absolute
+- Contraction density matches the speaker's natural voice
 
 ---
 
@@ -92,7 +113,7 @@ From the Master Video Editing Process Guide:
 - Actual numbers with week-over-week comparisons
 - Analysis section shows insight, not task lists
 - Actions have owner + deadline
-- MAA format followed exactly (see 05-maa-framework.md)
+- MAA format followed exactly (see [[blitzmetrics-canon/05-maa-framework|MAA Framework]])
 - Reports posted to Basecamp Updates thread
 
 ---
@@ -133,3 +154,11 @@ Each checklist item must be:
 - Access granted to correct team members only
 - Reviewed during onboarding
 - Updated when team members change
+
+---
+## See Also
+- [[skills/article-qa|Article QA Skill]]
+- [[blitzmetrics-canon/03-article-guidelines|Article Quality Guidelines]]
+- [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism Checklist]]
+- [[sops/client-work/article-qa-blitzmetrics|Article QA SOP]]

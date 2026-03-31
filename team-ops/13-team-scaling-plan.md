@@ -1,15 +1,20 @@
 ---
-description: [Your Agency] team scaling plan from 5 to 10 people with revenue triggers, hire priorities, and org structure
+description: [Your Agency] team scaling plan from 5 to 10 people with revenue triggers,
+  hire priorities, and org structure
 category: team-ops
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 skill_linked: Yes
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # 13 — Team Scaling Plan
 
-**How [Your Agency] grows from 5 people to 10 — and when to pull each trigger.**
+**How [[memory-bank/01-hri-overview|[Your Agency]]] grows from 5 people to 10 — and when to pull each trigger.**
 
 ---
 
@@ -140,3 +145,13 @@ At 10 people and 10 Sprints/month:
 - **Zero single points of failure** in delivery — every function has backup
 - **Apprentice pipeline** creates a self-replenishing talent pool
 - **Path to $250k Year 1** becomes conservative, not aspirational
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/08-role-scorecards|Role Scorecards]]
+- [[sops/templates/team-ops/06-new-hire-onboarding-sop|New Hire Onboarding SOP]]
+- [[sops/templates/team-ops/05-delegation-framework|Delegation Framework]]
+- [[memory-bank/12-strategic-context|Strategic Context]]
+- [[blitzmetrics-canon/01-nine-triangles|Canon: Nine Triangles]]

@@ -4,6 +4,11 @@ category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
 version: 1.1
+tags:
+  - type/sop
+  - status/active
+  - domain/business-ops
+  - domain/finance
 skill_linked: Yes
 canon_compliance: 09-data-connections-needed.md
 triangles: MOF
@@ -23,11 +28,11 @@ Establish consistent monthly P&L tracking so [Your Mentor/Advisor], [Your Ops Pa
 
 ## Process
 
-1. **Pull monthly revenue from Stripe.** Log into the [Your Agency] Stripe dashboard. Export all transactions for the prior month. Note gross revenue before fees.
+1. **Pull monthly revenue from Stripe.** See [[memory-bank/10-financial-context|Financial Context]] for historical baselines. Log into the [Your Agency] Stripe dashboard. Export all transactions for the prior month. Note gross revenue before fees.
 
 2. **Categorize expenses into three buckets:**
    - **Tools:** ChatGPT (~$2,325/mo), Claude (~$200/mo), Descript, WP Engine, Basecamp, and any other active subscriptions. Check credit card statements — subscriptions creep.
-   - **Team:** [Your Ops Admin] ([$X/week = ~$X/mo]), [Your Content Specialist] (paid from [Your Name]'s comp), [Your Automation Lead] (per-invoice). Pull exact amounts from payment records.
+   - **Team:** [Your Ops Admin] ($674/week = ~$2,696/mo), [Your Content Specialist] (paid from [Your Name]'s comp), [Your Automation Lead] (per-invoice). Pull exact amounts from payment records.
    - **Platform:** 20% [Partner Platform] revenue-share on applicable revenue.
 
 3. **Calculate gross profit.** Gross profit = Monthly revenue - All direct expenses (tools + team + platform).
@@ -47,10 +52,10 @@ Establish consistent monthly P&L tracking so [Your Mentor/Advisor], [Your Ops Pa
 - [ ] No missing months in the running spreadsheet/thread
 
 ## Common Pitfalls
-- **Tool subscriptions add up fast.** ChatGPT alone was [$X over 6 months]. Audit the full tool stack monthly — don't assume last month's number is still right.
-- **Refunds are expenses.** The [Refunded Client] [$X — refund amount] refund must appear as an expense in the month it was processed, not hidden or netted against revenue.
+- **Tool subscriptions add up fast.** ChatGPT alone was $13,947 over 6 months. Audit the full tool stack monthly — don't assume last month's number is still right.
+- **Refunds are expenses.** The Ed Strachar $1,494 refund must appear as an expense in the month it was processed, not hidden or netted against revenue.
 - **Mixing personal and business expenses.** Keep [Your Agency] expenses on the [Your Agency] card/account. If a personal card was used, log it immediately or it gets lost.
-- **[Your Ops Admin]'s cost is weekly, not monthly.** [$X/week] x number of weeks in the month. Some months have 5 pay periods.
+- **[Your Ops Admin]'s cost is weekly, not monthly.** $674/week x number of weeks in the month. Some months have 5 pay periods.
 - **[Partner Platform] is functionally bankrupt.** Do not assume [Partner Platform] account balances cover obligations. Track [Partner Platform]-related revenue and expenses separately so the picture is clear.
 
 ## Canon Compliance
@@ -62,4 +67,21 @@ Establish consistent monthly P&L tracking so [Your Mentor/Advisor], [Your Ops Pa
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- 2026-03-18: SOP created. [Your Agency] revenue since Jul 2025 is [~$Total Revenue] total. [Your Mentor/Advisor] has repeatedly requested formal P&L tracking — this formalizes the process.
+- 2026-03-18: SOP created. [Your Agency] revenue since Jul 2025 is ~$50K total. [Your Mentor/Advisor] has repeatedly requested formal P&L tracking — this formalizes the process.
+
+---
+
+## Related
+
+- [Business Health Analysis SOP](business-health-analysis.md)
+- [Financial Context](../../memory-bank/10-financial-context.md)
+- [Deal History](../../memory-bank/06-deal-history.md)
+
+## See Also
+
+- [[memory-bank/10-financial-context|Financial Context]]
+- [[memory-bank/06-deal-history|Deal History]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[skills/weekly-maa-report|Weekly MAA Report]]
+- [[blitzmetrics-canon/09-data-connections-needed|Data Connections]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]

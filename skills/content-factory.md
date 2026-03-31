@@ -13,12 +13,26 @@ triggers:
   - content capture
 canon_source: blitzmetrics-canon/02-content-factory-process.md
 full_sop: sops/client-work/content-factory-execution.md
-triangles: [GCT, ACC, MAA, LDT, CCS, DDD]
+triangles:
+  - GCT
+  - ACC
+  - MAA
+  - LDT
+  - CCS
+  - DDD
+tags:
+  - status/active
+  - triangle/CCS
+  - triangle/GCT
+  - triangle/MAA
+  - type/skill
 ---
 
 # Content Factory — Executable Skill
 
 ## Quick Decision: Which Stage?
+
+This skill executes the [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]] built on the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]] framework.
 
 - **New client, no tracking?** Start at Stage 0 (Plumbing)
 - **Client ready to record?** Stage 1 (Produce)
@@ -38,7 +52,7 @@ triangles: [GCT, ACC, MAA, LDT, CCS, DDD]
 
 ## Stage 1: Produce (Capture Raw Material)
 
-1. Create Topic Wheel for client (content themes by expertise area)
+1. Create [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]] for client (content themes by expertise area)
 2. Capture: Zoom calls, speaking events, podcasts, geotagged photos, one-minute videos
 3. One-minute video formula: Hook (0-3s) > Ignite (3-15s) > Solution (15-50s) > CTA (50-60s)
 4. Transcribe all video/audio within 48 hours
@@ -98,3 +112,26 @@ triangles: [GCT, ACC, MAA, LDT, CCS, DDD]
 - Never remove the Content Library requirement
 - Never remove human-required designations
 - Verify content tree before creating new articles (no cannibalization)
+
+---
+
+## Connected
+
+- [Canon: Content Factory Process](../blitzmetrics-canon/02-content-factory-process.md)
+- [Canon: Topic Wheel](../blitzmetrics-canon/06-topic-wheel.md)
+- [Canon: Nine Triangles](../blitzmetrics-canon/01-nine-triangles.md)
+- [Full SOP: Content Factory Execution](../sops/client-work/content-factory-execution.md)
+- [Article Writer Skill](article-writer.md)
+- [Content Repurposing Skill](content-repurposing.md)
+- [Dollar-a-Day Skill](dollar-a-day.md)
+- [Weekly MAA Report Skill](weekly-maa-report.md)
+- [Client Directory](../memory-bank/04-client-directory.md)
+
+## See Also
+
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[skills/article-writer|Article Writer]]
+- [[skills/dollar-a-day|Dollar-a-Day]]
+- [[skills/weekly-maa-report|Weekly MAA Report]]

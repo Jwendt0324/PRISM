@@ -4,10 +4,16 @@ category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
 version: 1.1
+tags:
+  - type/sop
+  - status/active
+  - domain/business-ops
+  - domain/strategy
+  - domain/sales
 canon_compliance: 01-nine-triangles.md, 04-dollar-a-day.md
 triangles: ACC, SBP, MOF
 canon_sources: [01-nine-triangles.md, 04-dollar-a-day.md]
-source: "Operating Documents/High-Rise Influence — Standalone Plan (Academy, DFY, & Connections).pdf"
+source: "Operating Documents/[Your Agency Name] — Standalone Plan (Academy, DFY, & Connections).pdf"
 ---
 
 # [Your Agency] Offer Ladder & GTM Blueprint
@@ -27,14 +33,14 @@ This SOP defines what [Your Agency Name] sells, how it's priced, who does what, 
 
 ## Brand Positioning
 
-- [Your Agency] IS: A practical alternative to college for young adults + a credibility engine for qualified local-service owners
-- [Your Agency] IS NOT: An agency or a marketplace (those live with partner agencies and [Partner Platform])
-- [Your Agency] runs on Your Content Factory (YCF) rails and feeds talent + proof assets into [Partner Platform] ([Partner Platform])
+- [Your Agency] IS: A practical alternative to college for young adults + a credibility engine for qualified local-service owners (see [[memory-bank/01-hri-overview|[Your Agency] Overview]] for full positioning)
+- [Your Agency] IS NOT: An agency or a marketplace (those live with partner agencies and Local Service Spotlight)
+- [Your Agency] runs on Your Content Factory (YCF) rails and feeds talent + proof assets into Local Service Spotlight ([Partner Platform])
 
 ## The Offer Ladder
 
 ### Tier 1: Free Courses
-- Location: [your-agency.com]/academy
+- Location: [your-agency-domain.com]/academy
 - Open access, no human support
 - Purpose: top of funnel, build trust, demonstrate value
 
@@ -61,9 +67,9 @@ This SOP defines what [Your Agency Name] sells, how it's priced, who does what, 
 
 - [Your Name] — Figurehead/Host: content, interviews, webinars, sales
 - [Your Mentor/Advisor] — Architect/Instructor: curriculum, standards, proofs
-- [Your Ops Partner] — Platform Engineering: SSO/cohorts/analytics
-- [Your AgentBuilder Partner] — Automation/provisioning
-- [Your Ops Admin] — Operations & PM: monthly P&L, finance/admin, cohort scheduling, light support
+- [Your Ops Partner] [Last Name] — Platform Engineering: SSO/cohorts/analytics
+- [Your AgentBuilder Partner] McLeod — Automation/provisioning
+- [Your Ops Admin] [Last Name] — Operations & PM: monthly P&L, finance/admin, cohort scheduling, light support
 
 ### Revenue Share
 - YCF receives 20% of tuition monthly for platform infrastructure (SSO, LMS, marketing automation, hosting, dashboards, Basecamp)
@@ -87,7 +93,7 @@ AI-first updates: Descript workflows, transcript-to-shorts/articles, DARIN-assis
 ### Channels
 - Events: DigimarCon regional + World (Las Vegas, Nov 2-5)
 - Webinars: "Fund your $2,500 certification with your first client" (bi-weekly)
-- Podcast: High-Rise Influence Podcast — educators & local-service leaders
+- Podcast: [Your Agency Name] Podcast — educators & local-service leaders
 - Proof: University teaching (Johns Hopkins), case studies, testimonials
 - Creative: Parent-first LP, student-first LP, DFY KP one-pager + qualification quiz
 - Paid: $20/day always-on boosts for top clips, geo-targeted by upcoming event cities
@@ -105,6 +111,8 @@ AI-first updates: Descript workflows, transcript-to-shorts/articles, DARIN-assis
 - Retargeting: 30-day video viewers → webinar; attendees → checkout; quiz finishers → consult
 
 ## 12-Month Revenue Projection (Nov 2025 → Oct 2026)
+
+> Full financial context and historical data: [[memory-bank/10-financial-context|Financial Context]]
 
 Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY KP/mo @ $6,000
 
@@ -132,22 +140,22 @@ Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY K
 ## Publishing Roadmap
 
 ### Books
-- "Ultimate Guide to Google Knowledge Panels" — co-authors [Your Mentor/Advisor], [Your Ops Partner], [Your Name]. Pipeline: outline → sample chapter → ARC team → Amazon KDP
-- "[Working Book Title]" — [Your Name] solo. Contrarian career/ops companion
+- "Ultimate Guide to Google Knowledge Panels" — co-authors [Your Mentor/Advisor], [Your Ops Partner] [Last Name], [Your Name]. Pipeline: outline → sample chapter → ARC team → Amazon KDP
+- "Shitbaggers Rule the World" — [Your Name] solo. Contrarian career/ops companion
 
 ### Podcast
-- High-Rise Influence Podcast: weekly interviews with educators & local-service leaders
+- [Your Agency Name] Podcast: weekly interviews with educators & local-service leaders
 - Pull shorts/articles into [Your Agency] channels; syndicate widely
 
 ### Personal Brand Sites
-- JackWendt.com: Spotlight-style profile with entity markup, cross-links to podcast, books, Knowledge Panel sources
+- [YourName].com: Spotlight-style profile with entity markup, cross-links to podcast, books, Knowledge Panel sources
 - [advisor-website.com] & [ops-partner-website.com]: similar treatment
 
 ## Quality Checks
 
 - Does any sales material match the offer ladder exactly? No made-up tiers or pricing
 - Does content map to the Topic Wheel structure (WHY → HOW → WHAT)?
-- Are all URLs using [your-agency.com]/academy as canonical?
+- Are all URLs using [your-agency-domain.com]/academy as canonical?
 - Does the content calendar match the cadence targets (3-5 shorts/wk, 1 long-form/wk)?
 - Are KPIs being tracked against the targets above?
 
@@ -170,3 +178,22 @@ Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY K
 ## Learnings Log
 
 [Empty — gets populated as Claude learns from execution]
+
+---
+
+## Related
+
+- [Prospect Follow-Up SOP](../client-work/prospect-followup.md)
+- [Client Onboarding SOP](../client-work/client-onboarding.md)
+- [Financial Context](../../memory-bank/10-financial-context.md)
+- [Deal History](../../memory-bank/06-deal-history.md)
+- [[Your Agency] Overview](../../memory-bank/01-hri-overview.md)
+
+## See Also
+
+- [[memory-bank/01-hri-overview|[Your Agency] Overview]]
+- [[memory-bank/10-financial-context|Financial Context]]
+- [[memory-bank/06-deal-history|Deal History]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]

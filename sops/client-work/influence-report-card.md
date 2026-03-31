@@ -12,7 +12,7 @@ canon_sources: [05-maa-framework.md]
 # Influence Report Card (MAA Model)
 
 ## Purpose
-The Influence Report Card is a systematic assessment of a founder's public authority and presence across five key axes. It provides both baseline measurement and ongoing progress tracking within a 6-month strategic influence blueprint. The MAA (Metrics, Analysis, Action) model combines quantitative data with qualitative insights and prioritized action items.
+The [[skills/influence-report-card|Influence Report Card]] is a systematic assessment of a founder's public authority and presence across five key axes. It provides both baseline measurement and ongoing progress tracking within a 6-month strategic influence blueprint. The MAA (Metrics, Analysis, Action) model combines quantitative data with qualitative insights and prioritized action items.
 
 ## When to Use
 - At project kickoff to establish baseline authority
@@ -147,7 +147,7 @@ Update grade for each axis using current metrics and rubric. Grade should move u
 - Assess trajectory: accelerating, stable, or declining?
 
 **Step 3: Create MAA Summary (5 minutes)**
-Format the report using the MAA model:
+Format the report using the [[blitzmetrics-canon/05-maa-framework|MAA]] model:
 
 ```
 # [Client Name] Influence Report Card — [Month/Year]
@@ -408,3 +408,22 @@ At initial kickoff, establish a 6-month roadmap with quarterly milestones.
 **Next Check-In**: [Date]
 ```
 
+
+---
+
+## Related
+
+- [Knowledge Panel Sprint SOP](knowledge-panel-sprint.md)
+- [Weekly MAA Report SOP](weekly-maa-report.md)
+- [Canon: Nine Triangles](../../blitzmetrics-canon/01-nine-triangles.md)
+- [Canon: MAA Framework](../../blitzmetrics-canon/05-maa-framework.md)
+- [Skill: Influence Report Card](../../skills/influence-report-card.md)
+
+## See Also
+
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[skills/influence-report-card|Influence Report Card Skill]]
+- [[skills/kp-sprint|KP Sprint]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory]]

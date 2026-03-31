@@ -1,4 +1,4 @@
-# CLAUDE MAINFRAME — MASTER INDEX
+# CLAUDE PRISM — MASTER INDEX
 
 **Owner:** [Your Name]
 **Created:** 2026-03-18
@@ -8,17 +8,17 @@
 
 ## What This Is
 
-The Mainframe is a self-improving knowledge system. Every task Claude executes generates session logs. Those logs feed into living SOPs. Those SOPs are formatted as Claude skills, which means Claude automatically loads and follows them on future tasks. The system compounds — Claude gets better at your work every time it works for you.
+The PRISM is a self-improving knowledge system. Every task Claude executes generates session logs. Those logs feed into living SOPs. Those SOPs are formatted as Claude skills, which means Claude automatically loads and follows them on future tasks. The system compounds — Claude gets better at your work every time it works for you.
 
 ---
 
 ## Architecture
 
 ```
-Mainframe/
+PRISM/
 ├── CONTEXT.md           ← Compressed context file (all memory bank + SOPs in <5K words)
 ├── skills/              ← Active SKILL.md files Claude loads automatically (12 files)
-│   ├── mainframe-core.md       ← System operations, logging, SOP management
+│   ├── PRISM-core.md       ← System operations, logging, SOP management
 │   ├── sop-router.md           ← Routes tasks to correct SOP/skill
 │   ├── content-factory.md      ← 6-stage Content Factory execution
 │   ├── article-writer.md       ← Batch article writing from transcripts
@@ -107,11 +107,11 @@ Key documents: Team directory, communication protocols, decision rights matrix, 
 | PostToolUse Hook | Every tool use | `~/.claude/settings.json` | **ACTIVE** | Logs tool name + session ID to `logs/tool-usage.log` |
 | Stop Hook | Every response | `~/.claude/settings.json` | **ACTIVE** | Injects systemMessage prompting Claude to write a session log |
 | SessionEnd Hook | Every session end | `~/.claude/settings.json` | **ACTIVE** | Calls `scripts/parse-session.py` to generate structured session logs |
-| Daily Mainframe Sync | Mon-Fri 6:27 AM | launchd (`com.jack.memory-refresh`) | **ACTIVE** | Reviews session logs, updates memory bank from local data, flags stale items. No Gmail. |
-| Weekly Briefing | Monday 8:17 AM | launchd (`com.jack.weekly-briefing`) | **ACTIVE** | Full state-of-business snapshot. Emailed to [your-email@your-agency.com] via Apple Mail. |
-| Weekly SOP Health Check | Friday 7:07 AM | launchd (`com.jack.sop-health-check`) | **ACTIVE** | Reviews session logs for SOP usage, checks freshness, identifies new SOP candidates. |
-| File Organizer | Nightly 11:47 PM | launchd (`com.jack.organize-files`) | **ACTIVE** | Organizes Downloads/Desktop/Documents by file type. |
-| Monthly Log Rotation | 1st of month, 3:07 AM | launchd (`com.jack.log-rotation`) | **ACTIVE** | Rotates large logs, archives old monthly dirs, cleans up old backups. |
+| Daily PRISM Sync | Mon-Fri 6:27 AM | launchd (`com.user.memory-refresh`) | **ACTIVE** | Reviews session logs, updates memory bank from local data, flags stale items. No Gmail. |
+| Weekly Briefing | Monday 8:17 AM | launchd (`com.user.weekly-briefing`) | **ACTIVE** | Full state-of-business snapshot. Emailed to [your-email@your-agency.com] via Apple Mail. |
+| Weekly SOP Health Check | Friday 7:07 AM | launchd (`com.user.sop-health-check`) | **ACTIVE** | Reviews session logs for SOP usage, checks freshness, identifies new SOP candidates. |
+| File Organizer | Nightly 11:47 PM | launchd (`com.user.organize-files`) | **ACTIVE** | Organizes Downloads/Desktop/Documents by file type. |
+| Monthly Log Rotation | 1st of month, 3:07 AM | launchd (`com.user.log-rotation`) | **ACTIVE** | Rotates large logs, archives old monthly dirs, cleans up old backups. |
 | Gmail Memory Refresh | Manual | Prompt at `claude-code/scheduled-memory-refresh.md` | **MANUAL** | Full Gmail scan — requires interactive session. Say "refresh the memory bank" 2-3x/week. |
 | Google Drive Sync | Not implemented | `scripts/convert-all-to-docx.py` exists | **NOT IMPLEMENTED** | Script ready but not scheduled. |
 | Basecamp Scan | Not implemented | No prompt file exists | **NOT IMPLEMENTED** | Requires Basecamp API integration. |
@@ -151,7 +151,7 @@ The Shared Memory Bank lives in `memory-bank/`. See [memory-bank/INDEX.md](memor
 
 **14 files** covering: [Your Name]'s personal profile, [Your Agency] company overview, [Methodology Partner] relationship, team directory (30+ people), client directory (13 engagements), vendor/partner map, deal history ($50K+ revenue), relationship map, communication patterns, project history (15 projects), financial context, content assets, strategic context, and Gmail insights.
 
-**Built from:** Full Gmail scan of [your-email@your-agency.com] (9,693 messages / 4,061 threads), all Mainframe SOPs, operating documents, and PDFs.
+**Built from:** Full Gmail scan of [your-email@your-agency.com] (9,693 messages / 4,061 threads), all PRISM SOPs, operating documents, and PDFs.
 
 **Refresh Protocol:** `memory-bank/refresh-protocol.md` — defines how the memory bank gets updated weekly. Last refresh: 2026-03-18.
 
@@ -161,7 +161,7 @@ The Shared Memory Bank lives in `memory-bank/`. See [memory-bank/INDEX.md](memor
 
 ## [Methodology Partner] Canon
 
-The canonical [Methodology Partner] frameworks live in `blitzmetrics-canon/`. These are the SOURCE OF TRUTH for all methodology. If a Mainframe SOP contradicts a canon file, the SOP is wrong.
+The canonical [Methodology Partner] frameworks live in `blitzmetrics-canon/`. These are the SOURCE OF TRUTH for all methodology. If a PRISM SOP contradicts a canon file, the SOP is wrong.
 
 | File | Description |
 |------|-------------|
@@ -178,7 +178,7 @@ The canonical [Methodology Partner] frameworks live in `blitzmetrics-canon/`. Th
 | 10-anti-vandalism-checklist.md | Rules to prevent unintentional damage |
 | 11-gct-discovery-framework.md | GCT implementation guide — how to facilitate discovery, question sets, scoping matrix, output template |
 | 12-ldt-implementation-guide.md | Learn, Do, Teach implementation guide — phases, skill levels, tracking, MICRO courses, human gates |
-| honest-assessment.md | Brutally honest Mainframe self-assessment |
+| honest-assessment.md | Brutally honest PRISM self-assessment |
 | sop-audit-report.md | Full audit of every SOP against the canon |
 
 **Built from:** Full ingestion of [Methodology Partner] Shared Drive documents, Master Content Factory Guides (v9.9, v1.2, v1.7, v1.9), Course Builder Guide v9.1, Operations Guide v12.5, Video Editing Guide v1.5, Dollar-a-Day materials, and [methodology-partner.com]/blog-posting-guidelines/.

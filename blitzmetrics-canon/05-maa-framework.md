@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/MAA
+  - type/canon
+---
+
 # MAA Framework — [Methodology Partner] Canon
 
 **Source:** Master Content Factory Guide v1.7, Operations Guide, Weekly MAA templates
@@ -7,7 +14,7 @@
 
 ## Overview
 
-MAA (Metrics, Analysis, Action) is the performance measurement framework that runs at EVERY stage of the Content Factory. It is the "Perform" stage made systematic.
+MAA (Metrics, Analysis, Action) is the performance measurement framework that runs at EVERY stage of the [[blitzmetrics-canon/02-content-factory-process|Content Factory]]. It is the "Perform" stage made systematic. It maps to the MAA triangle in the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]].
 
 "In digital marketing, there is no penalty for taking many shots on the goal. We learn quickly and iterate constantly. We expect failure 90% of the time."
 
@@ -96,3 +103,13 @@ MAA (Metrics, Analysis, Action) is the performance measurement framework that ru
 4. **No action targeting weakest area** — Actions all focus on strengths
 5. **Skipping weeks silently** — If metrics are incomplete, post anyway with explanation
 6. **Using third-party tool data** — Always use native platform analytics
+
+---
+## See Also
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles Framework]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[sops/client-work/weekly-maa-report|Weekly MAA Report SOP]]
+- [[skills/influence-report-card|Influence Report Card Skill]]
+- [[sops/client-work/influence-report-card|Influence Report Card SOP]]
+- [[sops/business-ops/business-health-analysis|Business Health Analysis SOP]]

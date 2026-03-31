@@ -1,10 +1,14 @@
 ---
-title: "Team Operating System — Master Overview"
+title: Team Operating System — Master Overview
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
-version: 1.0
+version: 1
 status: active
+tags:
+  - domain/teamops
+  - status/active
+  - type/sop
 ---
 
 # [Your Agency Name] — Team Operating System
@@ -15,7 +19,7 @@ Welcome to [Your Agency]. This document tells you how we operate. Read it top to
 
 ## Who We Are
 
-[Your Agency Name] helps founder-led businesses build influence. Not vanity metrics. Not "brand awareness." Influence — the kind that shows up in Google Knowledge Panels, earns media placements, and compounds over years.
+[[memory-bank/01-hri-overview|[Your Agency Name]]] helps founder-led businesses build influence. Not vanity metrics. Not "brand awareness." Influence — the kind that shows up in Google Knowledge Panels, earns media placements, and compounds over years.
 
 We do this through four interlocking systems:
 
@@ -30,7 +34,7 @@ We are not a creative agency. We are an influence engine. Everything we build is
 
 ## Where We Are Right Now
 
-- **Revenue since July 2025:** [~$Total Revenue] and growing
+- **Revenue since July 2025:** ~$50k and growing
 - **Active clients:** Multiple, across different verticals
 - **Stage:** Early growth. Systems are being locked in. The playbook works — now we're scaling the team and delivery capacity to match demand
 - **Trajectory:** Every Sprint we deliver creates a case study. Every case study feeds the next sale. The flywheel is turning.
@@ -98,22 +102,22 @@ This is the engine. Every hire, every process, every system we build should make
 
 | Name | Role | Ownership | Responsibilities |
 |------|------|-----------|-----------------|
-| **[Your Name]** | CEO | [Majority %] | Strategy, sales, client relationships, final QA, company direction |
-| **[Your Mentor/Advisor]** | Architect / Advisor | [Advisor Equity %] | Methodology, thought leadership, sales support, AI Apprentice co-lead |
-| **[Your Ops Partner]** | Operations | [Ops Partner Equity %] | Operational systems, process improvement, team coordination |
-| **[Your Ops Admin]** | Ops / Finance / Admin | — (Pakistan-based) | Basecamp project setup, RACI assignment, invoicing, admin, intake coordination |
-| **[Your Content Specialist]** | Content Specialist | — (reports to [Your Name]) | Content production, article writing, Content Factory execution |
+| **[Your Name]** | CEO | 85% | Strategy, sales, client relationships, final QA, company direction |
+| **[Your Mentor/Advisor]** | Architect / Advisor | 10% equity | Methodology, thought leadership, sales support, AI Apprentice co-lead |
+| **[Your Ops Partner] [Last Name]** | Operations | 5% equity | Operational systems, process improvement, team coordination |
+| **[Your Ops Admin] [Last Name]** | Ops / Finance / Admin | — (Pakistan-based) | Basecamp project setup, RACI assignment, invoicing, admin, intake coordination |
+| **[Your Content Specialist] [Last Name]** | Content Specialist | — (reports to [Your Name]) | Content production, article writing, Content Factory execution |
 
 ### Extended [Methodology Partner] Team
 
 These team members operate within the broader [Methodology Partner] ecosystem and contribute to [Your Agency] projects:
 
-- **[Your Local Agency Partner]**
-- **[Your Site Admin]**
-- **[Your Automation Lead]**
-- **[Your Content Monitor]**
-- **[Your Team Member]**
-- **[Your Repurposing Specialist]**
+- **[Your Local Agency Partner] Crowson**
+- **[Your Site Admin] [Last Name]**
+- **[Your Automation Lead] [Last Name]**
+- **[Your Content Monitor] [Last Name]**
+- **[Your Team Member] Goodrich**
+- **[Your Repurposing Specialist] [Last Name]**
 
 See: [02-team-roster.md](./02-team-roster.md) for full contact info, roles, and availability.
 See: [03-raci-matrix.md](./03-raci-matrix.md) for who owns what on every project type.
@@ -157,7 +161,7 @@ Every client engagement follows the same pipeline. No exceptions.
 - Case study feeds sales pipeline
 
 See: [04-kp-sprint-playbook.md](./04-kp-sprint-playbook.md) for the detailed Sprint execution checklist.
-See: [06-client-intake-process.md](./06-client-intake-process.md) for the intake workflow.
+See: [06-new-hire-onboarding-sop.md](06-new-hire-onboarding-sop.md) for the intake workflow.
 See: [07-qa-standards.md](./07-qa-standards.md) for quality requirements.
 
 ---
@@ -228,27 +232,27 @@ This Team OS is a system of linked documents. Here's the full map:
 
 | Doc | Title | What It Covers |
 |-----|-------|---------------|
-| [00-team-os-overview.md](./00-team-os-overview.md) | Team OS Overview | This document. The master overview. |
+| [00-team-os-overview.md](00-team-os-overview.md) | Team OS Overview | This document. The master overview. |
 | [01-company-overview.md](./01-company-overview.md) | Company Overview | Mission, history, positioning, competitive landscape |
 | [02-team-roster.md](./02-team-roster.md) | Team Roster | Full team directory with roles, contacts, time zones |
 | [03-raci-matrix.md](./03-raci-matrix.md) | RACI Matrix | Responsibility assignments for every project type |
 | [04-kp-sprint-playbook.md](./04-kp-sprint-playbook.md) | KP Sprint Playbook | Step-by-step Sprint delivery process |
 | [05-ai-apprentice-program.md](./05-ai-apprentice-program.md) | AI Apprentice Program | Cohort operations, curriculum, certification |
-| [05-delegation-framework.md](./05-delegation-framework.md) | Delegation Framework | What [Your Name] does vs. delegates, handoff protocols, self-audit |
-| [06-client-intake-process.md](./06-client-intake-process.md) | Client Intake Process | From closed deal to active project |
+| [05-delegation-framework.md](05-delegation-framework.md) | Delegation Framework | What [Your Name] does vs. delegates, handoff protocols, self-audit |
+| [06-new-hire-onboarding-sop.md](06-new-hire-onboarding-sop.md) | Client Intake Process | From closed deal to active project |
 | [07-qa-standards.md](./07-qa-standards.md) | QA Standards | Quality requirements for every deliverable |
 | [08-communication-guide.md](./08-communication-guide.md) | Communication Guide | Tools, norms, escalation paths |
 | [09-reporting-templates.md](./09-reporting-templates.md) | Reporting Templates | EOD, MAA, and Sprint report formats |
 | [10-tools-and-access.md](./10-tools-and-access.md) | Tools & Access | Software stack, login procedures, permissions |
-| [06-new-hire-onboarding-sop.md](./06-new-hire-onboarding-sop.md) | New Hire Onboarding SOP | Complete onboarding process for any new hire |
-| [07-jackson-onboarding-kit.md](./07-jackson-onboarding-kit.md) | [Your Content Specialist] Onboarding Kit | Role-specific onboarding for [Your Content Specialist] |
+| [06-new-hire-onboarding-sop.md](06-new-hire-onboarding-sop.md) | New Hire Onboarding SOP | Complete onboarding process for any new hire |
+| [07-jackson-onboarding-kit.md](07-jackson-onboarding-kit.md) | [Your Content Specialist] [Last Name] Onboarding Kit | Role-specific onboarding for [Your Content Specialist] |
 | [11-onboarding-checklist.md](./11-onboarding-checklist.md) | Onboarding Checklist | New team member setup, first-week tasks |
 | [12-sales-playbook.md](./12-sales-playbook.md) | Sales Playbook | How deals get closed |
 | [13-case-study-template.md](./13-case-study-template.md) | Case Study Template | Standard format for Sprint case studies |
 | [14-financial-operations.md](./14-financial-operations.md) | Financial Operations | Invoicing, payments, contractor management |
-| [10-project-management-sop.md](./10-project-management-sop.md) | Project Management SOP | KP Sprint lifecycle — stages, owners, gates, status tracking |
-| [11-client-communication-sop.md](./11-client-communication-sop.md) | Client Communication SOP | How we talk to clients at every stage, channel rules, escalation |
-| [INDEX.md](../INDEX.md) | Mainframe Index | Master index for all Claude Mainframe SOPs and systems |
+| [10-project-management-sop.md](10-project-management-sop.md) | Project Management SOP | KP Sprint lifecycle — stages, owners, gates, status tracking |
+| [11-client-communication-sop.md](11-client-communication-sop.md) | Client Communication SOP | How we talk to clients at every stage, channel rules, escalation |
+| [INDEX.md](../../../INDEX.md) | PRISM Index | Master index for all Claude PRISM SOPs and systems |
 
 ---
 
@@ -266,3 +270,13 @@ If you're new here:
 If you have questions, ask them in Basecamp. If something in these docs is wrong or outdated, flag it. These are living documents — they get better every time someone uses them.
 
 Welcome to [Your Agency]. Now let's build something that compounds.
+
+---
+
+## See Also
+
+- [[sops/templates/team-ops/01-team-directory|Team Directory]]
+- [[sops/templates/team-ops/02-communication-protocol|Communication Protocol]]
+- [[sops/templates/team-ops/08-role-scorecards|Role Scorecards]]
+- [[memory-bank/01-hri-overview|[Your Agency] Overview]]
+- [[blitzmetrics-canon/01-nine-triangles|Canon: Nine Triangles]]

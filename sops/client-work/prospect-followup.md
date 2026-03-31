@@ -13,7 +13,7 @@ canon_sources: [04-dollar-a-day.md]
 # Prospect Follow-Up SOP
 
 ## Purpose
-Ensure no qualified prospect goes cold due to missed follow-ups, and every prospect is either converted, handed off to [Your Mentor/Advisor], or cleanly closed within two weeks.
+Ensure no qualified prospect goes cold due to missed follow-ups per the [[blitzmetrics-canon/11-gct-discovery-framework|GCT]] qualification framework, and every prospect is either converted, handed off to [Your Mentor/Advisor], or cleanly closed within two weeks.
 
 ## When to Use
 - A new lead comes in from any channel (website, referral, DM, event, cold outreach response)
@@ -37,7 +37,7 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
 
 3. **Qualify the prospect against the relevant criteria.**
 
-   **For Knowledge Panel Sprint prospects:**
+   **For [[skills/kp-sprint|Knowledge Panel Sprint]] prospects:**
    - LSA (Local Service Ad) category business
    - $100k+/month revenue
    - 100+ Google reviews
@@ -45,7 +45,7 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
    - If they meet criteria, proceed to Step 5.
 
    **For AI Apprenticeship prospects:**
-   - Willingness to complete the qualification task (see `~/Documents/Claude/Mainframe/sops/client-work/ai-apprentice-onboarding.md`)
+   - Willingness to complete the qualification task (see `~/Documents/Claude/PRISM/sops/client-work/ai-apprentice-onboarding.md`)
    - Proceed to apprentice onboarding flow if qualified.
 
    **For all other services:**
@@ -72,7 +72,7 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
    - Service interest and qualification status
    - Any objections or concerns raised
    - Recommended approach
-   - **Important:** Brief [Your Mentor/Advisor] on any pricing discussions to avoid conflicting offers. The [Churned Client] lesson: unqualified prospects on discovery calls waste [Your Mentor/Advisor]'s time and create confusion.
+   - **Important:** Brief [Your Mentor/Advisor] on any pricing discussions to avoid conflicting offers. The Jeremy Maher lesson: unqualified prospects on discovery calls waste [Your Mentor/Advisor]'s time and create confusion.
 
 ## Quality Checks
 - [ ] All prospects logged in tracking system within 24 hours of first contact
@@ -84,7 +84,7 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
 ## Common Pitfalls
 - **Prospects going cold due to no follow-up.** The [Prospect Name] case: a qualified prospect disappeared because nobody followed up after the initial conversation. The follow-up cadence (24h, 48h, 1 week, 2 weeks) exists to prevent this. Set reminders.
 - **[Your Mentor/Advisor] offering conflicting pricing or alternatives.** If you quote one thing and [Your Mentor/Advisor] offers another on the call, it undermines trust. Always brief [Your Mentor/Advisor] on what has been discussed before the handoff.
-- **Not qualifying before the discovery call.** The [Churned Client] lesson: scheduling a discovery call with an unqualified prospect wastes [Your Mentor/Advisor]'s time and creates awkward conversations. Qualify first, call second.
+- **Not qualifying before the discovery call.** The Jeremy Maher lesson: scheduling a discovery call with an unqualified prospect wastes [Your Mentor/Advisor]'s time and creates awkward conversations. Qualify first, call second.
 - **Discounting instead of offering alternatives.** Never reduce the KP Sprint price. Offer the free DIY path (Marketing Mechanic ep. 5) or the Quick Audit ($297) instead. Discounting sets a precedent that kills margins.
 
 ## Human Gates
@@ -106,4 +106,22 @@ Ensure no qualified prospect goes cold due to missed follow-ups, and every prosp
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on [Your Agency] prospect management patterns, [Prospect Name] follow-up failure, [Churned Client] qualification lesson, and [Your Mentor/Advisor] pricing alignment issues.
+- *2026-03-18* — SOP created based on [Your Agency] prospect management patterns, [Prospect Name] follow-up failure, Jeremy Maher qualification lesson, and [Your Mentor/Advisor] pricing alignment issues.
+
+---
+
+## Related
+
+- [Client Onboarding SOP](client-onboarding.md)
+- [AI Apprentice Onboarding SOP](ai-apprentice-onboarding.md)
+- [Canon: GCT Discovery](../../blitzmetrics-canon/11-gct-discovery-framework.md)
+- [Skill: Prospect Follow-Up](../../skills/prospect-followup.md)
+- [Deal History](../../memory-bank/06-deal-history.md)
+
+## See Also
+
+- [[blitzmetrics-canon/11-gct-discovery-framework|GCT Discovery]]
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]]
+- [[skills/prospect-followup|Prospect Follow-Up Skill]]
+- [[skills/kp-sprint|KP Sprint]]
+- [[memory-bank/04-client-directory|Client Directory]]

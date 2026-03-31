@@ -6,25 +6,25 @@
 
 ## Prompt
 
-You are running the Weekly SOP Health Check for the Claude Mainframe. This ensures the SOP system stays healthy and identifies improvement opportunities from the week's work.
+You are running the Weekly SOP Health Check for the Claude PRISM. This ensures the SOP system stays healthy and identifies improvement opportunities from the week's work.
 
 ### Step 1: Read Session Logs from This Week
 
-Read all session logs from `~/Documents/Claude/Mainframe/logs/` for the past 7 days. For each session, note:
+Read all session logs from `~/Documents/Claude/PRISM/logs/` for the past 7 days. For each session, note:
 - What SOPs were used (look for file paths containing `sops/`)
 - What tasks were done that don't have SOPs
 - Any errors or workarounds that suggest an SOP needs updating
 
 ### Step 2: Check SOP Freshness
 
-Read `~/Documents/Claude/Mainframe/INDEX.md` and check the "Last Updated" column. Flag any SOPs that:
+Read `~/Documents/Claude/PRISM/INDEX.md` and check the "Last Updated" column. Flag any SOPs that:
 - Haven't been updated in 30+ days AND were used this week
 - Are marked as "Superseded" but still appear in routing tables
 - Have empty Learnings Logs despite being used multiple times
 
 ### Step 3: Check Skill-SOP Alignment
 
-Read `~/Documents/Claude/Mainframe/skills/sop-router.md`. Verify:
+Read `~/Documents/Claude/PRISM/skills/sop-router.md`. Verify:
 - Every skill file referenced actually exists in `skills/`
 - Every SOP referenced actually exists in `sops/`
 - No broken paths
@@ -38,7 +38,7 @@ From the session logs, identify any task patterns that:
 
 ### Step 5: Write Health Report
 
-Save to `~/Documents/Claude/Mainframe/logs/YYYY-MM/sop-health-YYYYMMDD.md`:
+Save to `~/Documents/Claude/PRISM/logs/YYYY-MM/sop-health-YYYYMMDD.md`:
 
 ```markdown
 ---
@@ -71,3 +71,12 @@ task_type: sop-health-check
 - **Frequency:** Fridays 7:07 AM
 - **Duration:** 1-3 minutes
 - **Gmail required:** NO
+
+---
+
+## See Also
+- [[INDEX|Master Index]]
+- [[skills/PRISM-core|PRISM Core]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]
+- [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism Checklist]]
+- [[claude-code/weekly-retrospective|Weekly Retrospective]]

@@ -1,9 +1,14 @@
 ---
-description: Scorecard template for the [Methodology Partner] 18-step article quality gate
+description: Scorecard template for the [Methodology Partner] article quality gate with
+  severity-tiered scoring
 category: templates
 created: 2026-03-19
-last_updated: 2026-03-19
-version: 1.0
+last_updated: 2026-03-30
+version: 2
+tags:
+  - domain/templates
+  - status/active
+  - type/template
 ---
 
 # Article QA Scorecard
@@ -16,55 +21,71 @@ version: 1.0
 - **Source:** [Video URL or transcript reference]
 - **Date:** [YYYY-MM-DD]
 - **Topic Wheel Position:** [WHY / HOW / WHAT — specific topic]
+- **Voice Profile:** [Client voice profile used, or "default"]
 
 ---
 
-## 18-Step Quality Gate
+## Pre-Publish Gate (Steps 1-13)
+
+| # | Step | Tier | Status | Notes |
+|---|------|------|--------|-------|
+| 1 | Requirements Gathered | BLOCK | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 2 | Transcription Complete | BLOCK | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 3 | Source Video Watched | BLOCK | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 4 | Research & Anti-Vandalism | BLOCK | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 5 | Written from Source | BLOCK | ⬜ PASS / ⬜ FAIL | |
+| 6 | Title & Headings | WARN | ⬜ PASS / ⬜ FAIL | |
+| 7 | Strong Opening | WARN | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 8 | Multimedia Elements | WARN | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 9 | Internal Linking | WARN | ⬜ PASS / ⬜ FAIL | |
+| 10 | Source Video Embedded | WARN | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 11 | Language Quality | BLOCK/WARN | ⬜ PASS / ⬜ FAIL | |
+| 12 | WordPress Post | BLOCK | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 13 | Categorized & Tagged | WARN | ⬜ PASS / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+
+## Post-Publish Workflow (Steps 14-18)
+
+Track separately. These do NOT block publication.
 
 | # | Step | Status | Notes |
 |---|------|--------|-------|
-| 1 | Requirements Gathered | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 2 | Transcription Complete | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 3 | Source Video Watched | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 4 | Research & Anti-Vandalism | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 5 | Article Written from Source | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 6 | Title & Headings | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 7 | Engaging Hook | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 8 | Multimedia Elements | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 9 | Internal Linking | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 10 | Source Video Embedded | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 11 | Language Quality (Proofread) | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 12 | Posted to WordPress | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 13 | Categorized & Tagged | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 14 | Cross-Posted to Social | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 15 | Added to Content Library | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 16 | Dollar-a-Day Evaluation | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 17 | MAA Tracking | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
-| 18 | Iterate | ⬜ PASS / ⬜ PARTIAL / ⬜ FAIL / ⬜ NEEDS HUMAN | |
+| 14 | Cross-Posted to Social | ⬜ DONE / ⬜ PENDING / ⬜ NEEDS HUMAN | |
+| 15 | Added to Content Library | ⬜ DONE / ⬜ PENDING | |
+| 16 | Dollar-a-Day Evaluation | ⬜ DONE / ⬜ PENDING / ⬜ NEEDS HUMAN | |
+| 17 | MAA Tracking | ⬜ DONE / ⬜ PENDING | |
+| 18 | Iterate (2-week review) | ⬜ DONE / ⬜ PENDING / ⬜ NEEDS HUMAN | |
 
 ---
 
 ## Summary
 
-- **PASS:** _/18
-- **PARTIAL:** _/18
-- **FAIL:** _/18
-- **NEEDS HUMAN:** _/18
+**Pre-Publish:**
+- **BLOCK violations:** _ → [list each]
+- **WARN violations:** _ → [list each]
+- **STYLE notes:** _ → [informational only]
+- **NEEDS HUMAN:** _ steps → [list each]
 
-**Publication Decision:** ⬜ Ready / ⬜ Fix Required / ⬜ Cannot Publish / ⬜ Route to Human
+**Publication Decision:**
+- ⬜ **Publish** — 0 BLOCK, 0 WARN (or WARN documented)
+- ⬜ **Fix Required** — WARN violations to address
+- ⬜ **Cannot Publish** — BLOCK violations present
+- ⬜ **Route to Human** — Human gates pending
 
 ---
 
 ## Detailed Findings
 
-### Violations Found
-- [List any banned words, AI patterns, or structural issues]
+### BLOCK Violations
+- [Banned words, banned AI patterns, salesy language, missing source, etc.]
+
+### WARN Violations
+- [Text walls, zero contractions, stacked rhetorical questions, missing links, etc.]
+
+### STYLE Notes (Informational)
+- [Paragraph rhythm, single rhetorical questions, passive voice usage, etc.]
 
 ### Strengths
-- [What the article does well]
-
-### Required Fixes
-- [Specific fixes needed before publication]
+- [What the article does well — E-E-A-T signals, strong opening, real stories, etc.]
 
 ---
 
@@ -76,7 +97,7 @@ version: 1.0
 
 ### Creation Process
 - Method: [AI-assisted / manual / hybrid]
-- Time spent: [estimate]
+- Voice profile: [which profile used]
 
 ### Decisions Made
 - [Why this angle, title, structure]
@@ -89,9 +110,16 @@ version: 1.0
 
 ---
 
-## Canon Compliance
+## References
 
-This scorecard implements the [Methodology Partner] 18-step article quality checklist.
-- **Canon source:** ~/Documents/Claude/Mainframe/blitzmetrics-canon/03-article-guidelines.md
-- **SOP:** ~/Documents/Claude/Mainframe/sops/client-work/article-qa-blitzmetrics.md
-- **Triangles served:** CCS (checklist), MAA (measurement), LDT (meta-article teaching)
+- **SOP:** [Article QA — [Methodology Partner] Quality Gate](../client-work/article-qa-blitzmetrics.md)
+- **Skill:** [Article QA](../../skills/article-qa.md)
+- **Canon:** [Article Guidelines](../../blitzmetrics-canon/03-article-guidelines.md)
+
+## See Also
+
+- [[sops/templates/sop-creation-template|SOP Creation Template]]
+- [[sops/templates/session-log-format|Session Log Format]]
+- [[blitzmetrics-canon/03-article-guidelines|Canon: Article Guidelines]]
+- [[blitzmetrics-canon/07-quality-standards|Canon: Quality Standards]]
+- [[memory-bank/04-client-directory|Client Directory]]

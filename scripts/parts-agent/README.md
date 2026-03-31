@@ -7,7 +7,7 @@ Handles 500+ parts per run with zero human interaction. Logs in once, reuses the
 ## Quick start
 
 ```bash
-cd ~/Documents/Claude/Mainframe/scripts/parts-agent
+cd ~/Documents/Claude/PRISM/scripts/parts-agent
 
 # 1. Drop a CSV into data/input/ (needs a "part_number" column at minimum)
 # 2. Run:

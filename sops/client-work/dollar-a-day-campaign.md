@@ -12,7 +12,7 @@ canon_sources: [04-dollar-a-day.md]
 # Dollar-a-Day Campaign
 
 ## Purpose
-Dollar-a-Day is a systematic testing and scaling framework for paid social promotion. Rather than spending large budgets on untested content, Dollar-a-Day identifies organic winners with minimal spend ($1-5/day), tests them at scale ($5-20/day), and rotates evergreen winners into a permanent, profitable promotional machine. This SOP ensures consistent application of the three-phase model.
+[[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]] is a systematic testing and scaling framework for paid social promotion. Rather than spending large budgets on untested content, Dollar-a-Day identifies organic winners with minimal spend ($1-5/day), tests them at scale ($5-20/day), and rotates evergreen winners into a permanent, profitable promotional machine. This SOP ensures consistent application of the three-phase model.
 
 ## When to Use
 - After content has proven organic traction (1,000+ views, 100+ engagements)
@@ -673,3 +673,21 @@ This keeps audience fresh while maintaining proven winners.
 - Scaling Phase 2 winners 2-3x over Phase 1 without losing efficiency
 - Evergreen campaign maintains 2+ ROAS with monthly refresh
 
+
+---
+
+## Related
+
+- [Content Repurposing SOP](content-repurposing-pipeline.md)
+- [Weekly MAA Report SOP](weekly-maa-report.md)
+- [Canon: Dollar-a-Day](../../blitzmetrics-canon/04-dollar-a-day.md)
+- [Skill: Dollar-a-Day](../../skills/dollar-a-day.md)
+
+## See Also
+
+- [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[blitzmetrics-canon/11-gct-discovery-framework|GCT Discovery]]
+- [[skills/dollar-a-day|Dollar-a-Day Skill]]
+- [[skills/weekly-maa-report|Weekly MAA Report Skill]]
+- [[skills/content-repurposing|Content Repurposing]]

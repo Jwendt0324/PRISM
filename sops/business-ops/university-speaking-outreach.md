@@ -4,6 +4,12 @@ category: business-ops
 created: 2026-03-18
 last_updated: 2026-03-20
 version: 1.1
+tags:
+  - type/sop
+  - status/active
+  - domain/business-ops
+  - domain/outreach
+  - domain/speaking
 skill_linked: Yes
 canon_compliance: 06-topic-wheel.md
 triangles: ACC, LDT
@@ -25,13 +31,13 @@ Systematically land and deliver university speaking engagements that build [Your
 
 1. **Identify target university and department.** Focus on: marketing, business, communications, PR, or entrepreneurship departments. Prioritize schools where [Your Agency] has a warm connection.
 
-2. **Get a warm intro.** Cold outreach to professors is low-conversion. Use network contacts:
-   - [Your University Contact] for CU Boulder connections
+2. **Get a warm intro.** Cold outreach to professors is low-conversion. Use network contacts from the [[memory-bank/07-relationship-map|Relationship Map]]:
+   - George Paladichuk for CU Boulder connections
    - [Your Mentor/Advisor]'s academic network
    - Existing professor relationships
    - Never cold-email a professor without exhausting warm intro options first.
 
-3. **Share the speaking page.** Send the professor or department contact the [Your Agency] University Speaking page: **[your-agency.com]/university-speaking-and-guest-lectures**. This establishes credibility and shows exactly what [Your Agency] offers.
+3. **Share the speaking page.** Send the professor or department contact the [Your Agency] University Speaking page: **[your-agency-domain.com]/university-speaking-and-guest-lectures**. This establishes credibility and shows exactly what [Your Agency] offers.
 
 4. **Propose a specific session.** Don't be vague. Offer one of:
    - Single guest lecture (60-90 min on a specific topic)
@@ -59,13 +65,13 @@ Systematically land and deliver university speaking engagements that build [Your
 
 ## Quality Checks
 - [ ] Warm intro secured before any cold outreach attempted
-- [ ] Speaking page ([your-agency.com]/[google-doc-id]) shared with contact
+- [ ] Speaking page ([your-agency-domain.com]/[google-doc-id]) shared with contact
 - [ ] Basecamp thread created with all engagement details
 - [ ] Follow-up sent within 48 hours of the session
 - [ ] Recording repurposed into at least 2 content pieces
 
 ## Common Pitfalls
-- **Promising deliverables then going dark.** [University Professor Contact] was "quite frustrated" about delayed deliverables. If you promise materials, a recording, or follow-up — deliver on time or communicate the delay **before** the deadline passes. This is the #1 reputation risk.
+- **Promising deliverables then going dark.** Dr. Flax was "quite frustrated" about delayed deliverables. If you promise materials, a recording, or follow-up — deliver on time or communicate the delay **before** the deadline passes. This is the #1 reputation risk.
 - **Not recording the session.** A university lecture is high-quality, long-form content. If you don't capture it, you lose hours of expert-level material. Always ask permission to record. Bring your own equipment as backup.
 - **No follow-up for testimonial.** A professor's testimonial is gold for the speaking page and future outreach. Ask within 48 hours while the experience is fresh.
 - **Treating it as a one-off.** One lecture should lead to a recurring relationship: next semester's class, a different department, a faculty workshop, a conference invitation. Always propose next steps.
@@ -80,4 +86,20 @@ Systematically land and deliver university speaking engagements that build [Your
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- 2026-03-18: SOP created. Active engagements: CU Boulder ([Your University Contact] opening doors), UC Berkeley (pro bono). Key lesson from [University Professor Contact]: never let deliverables slip without proactive communication.
+- 2026-03-18: SOP created. Active engagements: CU Boulder (George Paladichuk opening doors), UC Berkeley (pro bono). Key lesson from Dr. Flax: never let deliverables slip without proactive communication.
+
+---
+
+## Related
+
+- [Event Planning SOP](event-planning.md)
+- [Content Assets](../../memory-bank/11-content-assets.md)
+- [Relationship Map](../../memory-bank/07-relationship-map.md)
+
+## See Also
+
+- [[memory-bank/07-relationship-map|Relationship Map]]
+- [[memory-bank/11-content-assets|Content Assets]]
+- [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
+- [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
+- [[sops/templates/sop-creation-template|SOP Creation Template]]

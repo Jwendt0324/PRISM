@@ -1,8 +1,14 @@
+---
+tags:
+  - status/active
+  - type/canon
+---
+
 # SOP Audit Report — [Methodology Partner] Canon Compliance
 
 **Audit Date:** 2026-03-19
-**Auditor:** Claude Mainframe (overnight alignment run)
-**Canon Source:** ~/Documents/Claude/Mainframe/blitzmetrics-canon/
+**Auditor:** Claude PRISM (overnight alignment run)
+**Canon Source:** ~/Documents/Claude/PRISM/blitzmetrics-canon/
 **SOPs Audited:** 25+ across client-work, business-ops, team-ops, file-management, templates
 **Last Updated:** 2026-03-21
 
@@ -20,7 +26,7 @@ The canon alignment sprint on 2026-03-20 addressed the majority of findings in t
 
 ## Executive Summary
 
-**Overall finding at time of audit (2026-03-19): SIGNIFICANT GAPS.** The Mainframe SOPs were built before the canonical [Methodology Partner] materials were ingested. While the SOPs capture reasonable approximations of the Content Factory methodology, they contain multiple framework omissions, inconsistent stage naming, and insufficient quality gates compared to the canonical standards.
+**Overall finding at time of audit (2026-03-19): SIGNIFICANT GAPS.** The PRISM SOPs were built before the canonical [Methodology Partner] materials were ingested. While the SOPs capture reasonable approximations of the Content Factory methodology, they contain multiple framework omissions, inconsistent stage naming, and insufficient quality gates compared to the canonical standards.
 
 **Post-alignment status (2026-03-20): GAPS ADDRESSED.** The alignment sprint rewrote and updated all SOPs to comply with canonical standards.
 
@@ -259,3 +265,10 @@ The canon alignment sprint on 2026-03-20 addressed the majority of findings in t
 2. ~~**Canon interpretation**~~ RESOLVED — 6-stage model standardized across all SOPs.
 3. **[Your Mentor/Advisor] review needed** — STILL OPEN. This audit represents Claude's interpretation of the canon. [Your Mentor/Advisor] should review the canon files and confirm alignment.
 4. **Content tree unknown** — STILL OPEN. We don't have visibility into what's published on client sites, so we can't verify if the 378 [Client — Local Retail Business] articles have keyword cannibalization issues.
+
+---
+
+## See Also
+- [[honest-assessment|Honest Assessment]]
+- [[INDEX|INDEX.md]]
+- [[claude-code/weekly-sop-health-check|SOP Health Check]]

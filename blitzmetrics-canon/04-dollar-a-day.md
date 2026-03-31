@@ -1,3 +1,10 @@
+---
+tags:
+  - status/active
+  - triangle/DDD
+  - type/canon
+---
+
 # Dollar-a-Day Strategy — [Methodology Partner] Canon
 
 **Source:** Dollar-a-Day Webinar Deck, Content Factory Guides, [Your Mentor/Advisor] training
@@ -15,7 +22,7 @@ Dollar-a-Day is NOT about spending $1/day forever. It's a systematic testing met
 
 ## Prerequisites (Before Any Ad Spend)
 
-1. Organic content must exist and be performing (Content Factory Stages 1-4 complete)
+1. Organic content must exist and be performing ([[blitzmetrics-canon/02-content-factory-process|Content Factory]] Stages 1-4 complete)
 2. Minimum organic thresholds: 1,000 views OR 100+ engagements on video
 3. Facebook Pixel / tracking installed and firing (Plumbing complete)
 4. Custom audiences built (email lists, website visitors, video viewers)
@@ -76,7 +83,7 @@ Dollar-a-Day is NOT about spending $1/day forever. It's a systematic testing met
 - Audience performance comparison
 - Sentiment analysis (positive/negative comments)
 - ROAS calculation
-- Recommendations for next month
+- Recommendations for next month — feed into [[blitzmetrics-canon/05-maa-framework|MAA reports]]
 
 ---
 
@@ -88,3 +95,11 @@ Dollar-a-Day is NOT about spending $1/day forever. It's a systematic testing met
 4. Running ads without proper Plumbing (no pixel, no tracking)
 5. Not refreshing creatives (ad fatigue)
 6. Using Dollar-a-Day for brand new products with no existing funnel
+
+---
+## See Also
+- [[skills/dollar-a-day|Dollar-a-Day Skill]]
+- [[blitzmetrics-canon/02-content-factory-process|Content Factory Process]]
+- [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
+- [[sops/client-work/dollar-a-day-campaign|Dollar-a-Day SOP]]
+- [[skills/prospect-followup|Prospect Follow-Up Skill]]
