@@ -54,9 +54,9 @@ fi
 
 if [ -n "$user_email" ]; then
     find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
-        if grep -q '[your-email@your-agency.com]' "$file" 2>/dev/null; then
-            sed -i '' "s|[your-email@your-agency.com]|$user_email|g" "$file" 2>/dev/null || \
-            sed -i "s|[your-email@your-agency.com]|$user_email|g" "$file"
+        if grep -q '\[your-email@your-agency.com\]' "$file" 2>/dev/null; then
+            sed -i '' "s|\[your-email@your-agency.com\]|$user_email|g" "$file" 2>/dev/null || \
+            sed -i "s|\[your-email@your-agency.com\]|$user_email|g" "$file"
         fi
     done
     echo "[OK] Set USER_EMAIL to: $user_email"

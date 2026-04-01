@@ -220,7 +220,7 @@ class DashboardServer:
         with open(config_path, "r") as f:
             self.config = json.load(f)
 
-        dist_name = self.config.get("distributor", "marcone")
+        dist_name = self.config.get("distributor", "distributor")
         dist_path = self.project_root / "config" / "distributors" / f"{dist_name}.json"
         with open(dist_path, "r") as f:
             self.distributor = json.load(f)

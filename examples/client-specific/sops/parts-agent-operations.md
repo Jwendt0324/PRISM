@@ -28,7 +28,7 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 
 ## Related SOPs
 
-- **`sops/client-work/rossware-parts-inquiry.md`** — The manual process this agent automates. Read that SOP first to understand what the agent replaces.
+- **`sops/client-work/field-service-parts-inquiry.md`** — The manual process this agent automates. Read that SOP first to understand what the agent replaces.
 - **`sops/business-ops/api-security-and-access.md`** — Credential management for [Parts Distributor], SmartSheet, [Field Service Platform].
 
 ---
@@ -39,7 +39,7 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 ┌─────────────┐     ┌──────────────┐     ┌───────────────────┐     ┌───────────────┐
 │  [Field Service Platform]    │     │  Binary      │     │  Warehouse Check  │     │  [Parts Distributor]       │
 │  PrtsPrcs    │────▶│  Parser      │────▶│  (PartsHotList)   │────▶│  Lookup        │
-│  (RDP pull)  │     │              │     │                   │     │  (marcone.com) │
+│  (RDP pull)  │     │              │     │                   │     │  ([parts-distributor-url.com]) │
 └─────────────┘     └──────────────┘     └───────────────────┘     └───────┬───────┘
                                                                            │
                     ┌──────────────┐     ┌───────────────────┐             │
@@ -66,7 +66,7 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 | Entry point | `~/Documents/parts-agent-v3/run.py` |
 | Pipeline orchestrator | `~/Documents/parts-agent-v3/src/pipeline.py` |
 | Binary parser | `~/Documents/parts-agent-v3/src/binary_parser.py` |
-| [Parts Distributor] client | `~/Documents/parts-agent-v3/src/marcone_client.py` |
+| [Parts Distributor] client | `~/Documents/parts-agent-v3/src/distributor_client.py` |
 | Warehouse checker | `~/Documents/parts-agent-v3/src/warehouse_checker.py` |
 | Markup engine | `~/Documents/parts-agent-v3/src/markup.py` |
 | SmartSheet client | `~/Documents/parts-agent-v3/src/smartsheet_client.py` |
@@ -79,7 +79,7 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 | Dashboard (Flask) | `~/Documents/parts-agent-v3/src/dashboard.py` |
 | Client config | `~/Documents/parts-agent-v3/config/clients.json` |
 | Agent config | `~/Documents/parts-agent-v3/config/config.json` |
-| [Parts Distributor] config | `~/Documents/parts-agent-v3/config/marcone.json` |
+| [Parts Distributor] config | `~/Documents/parts-agent-v3/config/distributor.json` |
 | Tests (17 files) | `~/Documents/parts-agent-v3/tests/` |
 | Vultr deploy package | `~/Documents/parts-agent-vultr-deploy/` |
 | [Your Content Specialist]'s setup guide | `~/Desktop/Parts Agent - Vultr Setup Guide for [Your Content Specialist].docx` |
@@ -99,9 +99,9 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 | CSV import dir | `C:\SD\Import` |
 | RSS Key business_id | `1696` |
 | [Parts Distributor] account | `[account-number-1]` |
-| [Parts Distributor] password | **BLOCKED** — waiting on Scott |
+| [Parts Distributor] password | **BLOCKED** — waiting on [Client Contact] |
 | Warehouse file | `PartsHotList.csv` |
-| SmartSheet API token | **BLOCKED** — waiting on Scott |
+| SmartSheet API token | **BLOCKED** — waiting on [Client Contact] |
 | Vendor routing | In-stock = MA, Warehouse = [Client-ID], OOS = WCI |
 | Default hold_loc | OR |
 | SmartSheet static: phone | 832-804-8980 |
@@ -122,12 +122,12 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 
 ### Phase 1: Understand the Pipeline (Reference)
 
-The agent automates 22 of 26 steps from the manual parts inquiry process (`rossware-parts-inquiry.md`). Here is what each module does:
+The agent automates 22 of 26 steps from the manual parts inquiry process (`field-service-parts-inquiry.md`). Here is what each module does:
 
 1. **`rdp_transfer.py`** connects to the [Field Service Platform] server via RDP/SCP and downloads the `PrtsPrcs` binary file to local storage.
 2. **`binary_parser.py`** parses the [Field Service Platform] PrtsPrcs binary format into structured part records (ticket number, part number, quantity, current vendor, cost, etc.).
 3. **`warehouse_checker.py`** checks each part against the local `PartsHotList.csv` file. If found with qty > 0, the part is flagged as warehouse-available with its bin location.
-4. **`marcone_client.py`** logs into marcone.com using `session_manager.py` for cookie/session persistence and `rate_limiter.py` to avoid getting blocked. Looks up each non-warehouse part for price and availability.
+4. **`distributor_client.py`** logs into [parts-distributor-url.com] using `session_manager.py` for cookie/session persistence and `rate_limiter.py` to avoid getting blocked. Looks up each non-warehouse part for price and availability.
 5. **`pipeline.py`** applies vendor routing logic (see below) and calls the **`markup.py`** engine for tiered sell-price calculation.
 6. **`smartsheet_client.py`** submits warranty requests for OOS parts to SmartSheet via API, populating all 12+ required fields.
 7. **`csv_exporter.py`** generates a [Field Service Platform]-compatible CSV for Shift+F8 bulk import (columns: part_number, vendor, cost, sell_for, hold_loc, etc.).
@@ -137,7 +137,7 @@ The agent automates 22 of 26 steps from the manual parts inquiry process (`rossw
 
 ### Phase 2: Vendor Routing Logic
 
-Apply this decision tree for each part (derived from Scott's employee training video):
+Apply this decision tree for each part (derived from [Client Contact]'s employee training video):
 
 1. **Part found in warehouse** (PartsHotList, qty > 0):
    - `vendor` = [Client-ID] (or client vendor code)
@@ -233,9 +233,9 @@ All 12+ fields submitted for OOS parts:
 
 ## Common Pitfalls
 
-- **[Parts Distributor] session expiry.** Sessions time out after ~30 minutes of inactivity. The `session_manager.py` handles re-authentication, but if the [Parts Distributor] password is wrong or expired, every lookup fails silently with "not found." Check `marcone.json` credentials first.
+- **[Parts Distributor] session expiry.** Sessions time out after ~30 minutes of inactivity. The `session_manager.py` handles re-authentication, but if the [Parts Distributor] password is wrong or expired, every lookup fails silently with "not found." Check `distributor.json` credentials first.
 - **PrtsPrcs binary format changes.** [Field Service Platform] updates occasionally change the binary layout. If the parser starts returning garbage data (wrong part numbers, nonsensical costs), compare the raw binary against the expected format in `test_binary_parser.py` fixtures.
-- **Wrong [Parts Distributor] account.** [Client-ID] uses account `[account-number-1]`, Sloan uses `[account-number-2]`. If parts come back with unexpected pricing, verify `clients.json` has the right account for the client.
+- **Wrong [Parts Distributor] account.** [Client-ID] uses account `[account-number-1]`, [Client-B] uses `[account-number-2]`. If parts come back with unexpected pricing, verify `clients.json` has the right account for the client.
 - **CSV column order.** [Field Service Platform]'s Shift+F8 import expects a specific column order. If someone edits `csv_exporter.py`, verify the output matches the expected import format. One misaligned column corrupts the entire import.
 - **SmartSheet missing data.** The agent populates what it can from PrtsPrcs, but `customer_name`, `model_number`, and `serial_number` are frequently blank in the source data. These must be filled manually before the warranty claim is accepted.
 - **RDP connection failures.** The [Field Service Platform] hosting server (`[client-id].[field-service-hosting.com]`) occasionally drops RDP connections. The `resume_engine.py` handles this, but persistent failures mean the hosting server is down — contact [Field Service Platform] support.
@@ -248,11 +248,11 @@ All 12+ fields submitted for OOS parts:
 
 | Symptom | Likely Cause | Fix |
 |---------|-------------|-----|
-| All [Parts Distributor] lookups return "not found" | Session expired or wrong password | Check `config/marcone.json`, test login manually at marcone.com |
+| All [Parts Distributor] lookups return "not found" | Session expired or wrong password | Check `config/distributor.json`, test login manually at [parts-distributor-url.com] |
 | CSV has 0 rows | PrtsPrcs file is empty or parser failed | Check `data/` for downloaded PrtsPrcs file, run parser standalone |
 | Dashboard won't start | Port 5050 in use or Flask not installed | `netstat -an | findstr 5050`, kill conflicting process |
-| RDP transfer fails | [Field Service Platform] server down or creds changed | Test RDP manually, check `config/clients.json` rossware block |
-| SmartSheet returns 401 | API token expired or revoked | Get new token from Scott, update `clients.json` |
+| RDP transfer fails | [Field Service Platform] server down or creds changed | Test RDP manually, check `config/clients.json` field service platform block |
+| SmartSheet returns 401 | API token expired or revoked | Get new token from [Client Contact], update `clients.json` |
 | Parts show wrong prices | Markup table misconfigured | Check `src/markup.py` tiered pricing logic |
 | Resume engine creates duplicates | Corrupted resume state file | Delete `data/resume_state.json` and re-run |
 | Rate limiter too aggressive | [Parts Distributor] blocking requests | Increase delay in `config/config.json`, check for IP bans |
@@ -263,9 +263,9 @@ All 12+ fields submitted for OOS parts:
 
 | Blocker | Owner | Status |
 |---------|-------|--------|
-| [Parts Distributor] password for account [account-number-1] | [Client Name] | Waiting — need real password to replace PLACEHOLDER |
-| SmartSheet API token | [Client Name] | Waiting — required for warranty submission automation |
-| [Client — Appliance Repair] [Field Service Platform] host + credentials | [Client Name] | Not started — need full config before activating second client |
+| [Parts Distributor] password for account [account-number-1] | [Client Contact] | Waiting — need real password to replace PLACEHOLDER |
+| SmartSheet API token | [Client Contact] | Waiting — required for warranty submission automation |
+| [Client — Appliance Repair] [Field Service Platform] host + credentials | [Client Contact] | Not started — need full config before activating second client |
 
 ---
 
@@ -276,8 +276,8 @@ All 12+ fields submitted for OOS parts:
 | 17 — Dry-run review | Review | Verify CSV output looks correct before going live |
 | 28 — Shift+F8 bulk import | Execute | Human must review CSV and trigger import in [Field Service Platform] — agent cannot press Shift+F8 |
 | 29 — SmartSheet data gaps | Execute | customer_name, model#, serial# frequently missing — human must fill before manufacturer accepts warranty claim |
-| [Parts Distributor] password entry | Execute | Credential must come from Scott — never hardcode in git |
-| SmartSheet API token entry | Execute | Token must come from Scott — never hardcode in git |
+| [Parts Distributor] password entry | Execute | Credential must come from [Client Contact] — never hardcode in git |
+| SmartSheet API token entry | Execute | Token must come from [Client Contact] — never hardcode in git |
 | Part number verification (edge cases) | Review | Techs sometimes enter wrong numbers; [Parts Distributor] catches most via NOT FOUND, but edge cases need human judgment |
 
 ---
@@ -288,7 +288,7 @@ All 12+ fields submitted for OOS parts:
 - **Verify internal link structure:** N/A — this is a backend automation, not content.
 - **Confirm no keyword cannibalization:** N/A — not content production.
 - **Preserve what's working:** Never overwrite a working `clients.json` on the server without backing it up first. Never update the binary parser without running the full test suite (`python -m pytest tests/test_binary_parser.py`).
-- **Reference canonical source:** The vendor routing logic is derived from Scott's employee training video. Any changes to routing must be approved by Scott or validated against the video.
+- **Reference canonical source:** The vendor routing logic is derived from [Client Contact]'s employee training video. Any changes to routing must be approved by [Client Contact] or validated against the video.
 - **SOP-specific: Credential safety.** Never commit real passwords, API tokens, or [Parts Distributor] credentials to git. The `clients.json` on the deploy server has real credentials; the repo version has PLACEHOLDERs. Verify this before every push.
 - **SOP-specific: Test before deploy.** Every code change must pass all 103+ tests before deploying to the Vultr server. Run `python -m pytest` from `~/Documents/parts-agent-v3/` and verify 0 failures.
 
@@ -298,7 +298,7 @@ All 12+ fields submitted for OOS parts:
 
 - **Content Factory stage(s):** N/A — this is an operational automation SOP, not content production. The parts agent is a client service automation tool.
 - **9 Triangles served:** **DDD** (Do-Do-Do) — this SOP serves operational execution for [Client — Appliance Repair]. The agent automates repetitive doing-work (parts pricing) so the team can focus on higher-value tasks.
-- **Canon documents (source of truth):** None directly — this is a client-specific operational procedure outside the [Methodology Partner] content canon. The manual process is documented in `sops/client-work/rossware-parts-inquiry.md`.
+- **Canon documents (source of truth):** None directly — this is a client-specific operational procedure outside the [Methodology Partner] content canon. The manual process is documented in `sops/client-work/field-service-parts-inquiry.md`.
 - **Last canon audit:** 2026-03-30
 
 ---
@@ -315,11 +315,11 @@ All 12+ fields submitted for OOS parts:
 | Dashboard | Flask on port 5050 |
 | Schedule target | Every 4 hours via Windows Task Scheduler |
 | Server cost | $56/month (Vultr Windows Server 2022) |
-| Blocking | [Parts Distributor] password + SmartSheet API token from Scott |
+| Blocking | [Parts Distributor] password + SmartSheet API token from [Client Contact] |
 
 ---
 
 ## Learnings Log
 
-- **2026-03-30:** Initial SOP created. v3 codebase has 16 modules and 103 passing tests. Vultr deploy package ready but blocked on two credentials from Scott. The manual SOP (`rossware-parts-inquiry.md`) documents the human process this agent replaces — read it for full context on what each automated step is doing.
-- **2026-03-30:** Address discrepancy noted: SmartSheet config says "32702 1-A Creek Road" but manual SOP says "32702 Walnut Creek Road." Verify correct address with Scott before first live SmartSheet submission.
+- **2026-03-30:** Initial SOP created. v3 codebase has 16 modules and 103 passing tests. Vultr deploy package ready but blocked on two credentials from [Client Contact]. The manual SOP (`field-service-parts-inquiry.md`) documents the human process this agent replaces — read it for full context on what each automated step is doing.
+- **2026-03-30:** Address discrepancy noted: SmartSheet config says "32702 1-A Creek Road" but manual SOP says "32702 Walnut Creek Road." Verify correct address with [Client Contact] before first live SmartSheet submission.

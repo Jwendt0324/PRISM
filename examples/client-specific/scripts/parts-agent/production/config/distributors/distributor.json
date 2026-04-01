@@ -1,9 +1,9 @@
 {
   "name": "[Parts Distributor]",
   "code": "MC",
-  "base_url": "https://my.marcone.com",
+  "base_url": "https://[parts-distributor-url.com]",
   "login": {
-    "url": "https://my.marcone.com/UserLogin",
+    "url": "https://[parts-distributor-url.com]/UserLogin",
     "selectors": {
       "username_field": "#UserName",
       "password_field": "#Password",
@@ -64,7 +64,7 @@
   "browser": {
     "viewport_width": 1280,
     "viewport_height": 900,
-    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "slow_mo_ms": 500
   }
 }

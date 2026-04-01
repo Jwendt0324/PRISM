@@ -118,7 +118,7 @@ class Scraper:
         if avail_el and avail_el.count() > 0:
             result["availability"] = avail_el.first.inner_text().strip()
 
-        # Extract marcone part number from URL if present
+        # Extract distributor part number from URL if present
         url = page.url
         if "Part=" in url:
             part_param = url.split("Part=")[1].split("&")[0]

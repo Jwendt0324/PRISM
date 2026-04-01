@@ -48,7 +48,7 @@ class BatchAgent:
         if headless is not None:
             self.config["headless"] = headless
 
-        distributor_name = self.config.get("distributor", "marcone")
+        distributor_name = self.config.get("distributor", "distributor")
         self.distributor = self._load_json(
             self.project_root / "config" / "distributors" / f"{distributor_name}.json"
         )

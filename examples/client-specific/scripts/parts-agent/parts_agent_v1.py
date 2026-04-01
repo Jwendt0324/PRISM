@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Parts Lookup Agent for [Parts Distributor].com
-Reads part numbers from parts_list.csv, searches each on marcone.com,
+Reads part numbers from parts_list.csv, searches each on [parts-distributor-url.com],
 and writes pricing/availability results to parts_results.csv.
 """
 
@@ -45,7 +45,7 @@ def load_config():
     with open(CONFIG_PATH, "r") as f:
         config = json.load(f)
     # Validate required fields
-    for field in ["marcone_url", "username", "password"]:
+    for field in ["distributor_url", "username", "password"]:
         if not config.get(field) or config[field].startswith("YOUR_"):
             log(f"WARNING: config.json field '{field}' is not set. Update it with real values before running against the live site.")
     return config
@@ -85,14 +85,14 @@ def write_result(part_number, description, marcone_name, price, availability, st
         ])
 
 
-def login_to_marcone(page, config):
-    """Navigate to my.marcone.com login page and authenticate."""
-    login_url = config.get("login_url", "https://my.marcone.com/UserLogin")
+def login_to_distributor(page, config):
+    """Navigate to [parts-distributor-url.com] login page and authenticate."""
+    login_url = config.get("login_url", "https://[parts-distributor-url.com]/UserLogin")
     log(f"Navigating to login page: {login_url}")
     page.goto(login_url, wait_until="domcontentloaded", timeout=30000)
     log(f"Page loaded: {page.title()}")
 
-    # Use exact selectors from config (discovered by inspecting my.marcone.com)
+    # Use exact selectors from config (discovered by inspecting [parts-distributor-url.com])
     selectors = config.get("login_selectors", {})
     username_sel = selectors.get("username_field", "#UserName")
     password_sel = selectors.get("password_field", "#Password")
@@ -137,7 +137,7 @@ def login_to_marcone(page, config):
 
 
 def search_part(page, config, part_number):
-    """Search for a single part number on my.marcone.com and return results."""
+    """Search for a single part number on [parts-distributor-url.com] and return results."""
     result = {
         "marcone_name": "",
         "price": "",
@@ -285,7 +285,7 @@ def main():
 
     # Step 1: Load config
     config = load_config()
-    log(f"Config loaded. Target site: {config['marcone_url']}")
+    log(f"Config loaded. Target site: {config['distributor_url']}")
     delay = config.get("[google-doc-id]", 3)
 
     # Step 2: Load parts list
@@ -298,7 +298,7 @@ def main():
         return
 
     # Step 3: Show what we're about to do
-    log(f"Plan: Search {total} part numbers on {config['marcone_url']}")
+    log(f"Plan: Search {total} part numbers on {config['distributor_url']}")
     log(f"Delay between searches: {delay} seconds")
     log(f"Results will be written to: {OUTPUT_CSV}")
     log("-" * 60)
@@ -321,7 +321,7 @@ def main():
         page = context.new_page()
 
         # Step 6: Login
-        login_to_marcone(page, config)
+        login_to_distributor(page, config)
 
         # Step 7: Search each part
         for i, part in enumerate(parts, 1):

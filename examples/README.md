@@ -8,7 +8,7 @@ These files are from a real agency's PRISM deployment. They show what filled-in 
 
 ### Client-Specific SOPs
 - `sops/parts-agent-operations.md` — Automated parts pricing agent for an appliance repair client
-- `sops/rossware-parts-inquiry.md` — Manual parts inquiry process using a field service platform
+- `sops/field-service-parts-inquiry.md` — Manual parts inquiry process using a field service platform
 
 ### Client-Specific Scripts  
 - `scripts/parts-agent/` — Python automation for parts pricing lookups

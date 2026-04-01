@@ -48,7 +48,7 @@ Standardize how [Client — Appliance Repair] processes parts inquiry tickets in
 
 ### Phase 3: Price Parts in [Parts Distributor]
 
-12. **Open [Parts Distributor]** (marcone.com) in the browser.
+12. **Open [Parts Distributor]** ([parts-distributor-url.com]) in the browser.
 13. **Search each verified part number** in [Parts Distributor]:
     - If **in stock** → record the price in the **Cost box** in [Field Service Platform], set **Vendor = [Parts Distributor]**.
     - If [Parts Distributor] **substitutes** a new part number → copy the substituted number back into [Field Service Platform]'s part number field, then record the price.
@@ -139,7 +139,7 @@ Standardize how [Client — Appliance Repair] processes parts inquiry tickets in
 | [Client-ID] Parts Email | parts@[client-id]service.com |
 | [Client-ID] Office Phone | 832-804-8980 |
 | Smartsheet URL | app.smartsheet.com (warranty part request form) |
-| [Parts Distributor] | marcone.com |
+| [Parts Distributor] | [parts-distributor-url.com] |
 | Electrolux Parts Lookup | Electrolux Service Tips |
 
 ## Learnings Log

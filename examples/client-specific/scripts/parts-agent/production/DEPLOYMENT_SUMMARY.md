@@ -9,7 +9,7 @@ A PowerShell deployment script has been generated with the first 8 files fully i
 The script `/sessions/kind-practical-sagan/mnt/scripts/parts-agent/production/deploy_files.ps1` includes:
 
 1. ✓ `config/config.json` - Main configuration
-2. ✓ `config/distributors/marcone.json` - [Parts Distributor] distributor settings
+2. ✓ `config/distributors/distributor.json` - [Parts Distributor] distributor settings
 3. ✓ `src/__init__.py` - Empty module init
 4. ✓ `src/binary_parser.py` - PrtsPrcs binary file parser (303 lines)
 5. ✓ `src/scraper.py` - Web scraper for [Parts Distributor] (211 lines)
@@ -49,7 +49,7 @@ C:\HRIAutomation\parts-agent\
 ├── config\
 │   ├── config.json
 │   └── distributors\
-│       └── marcone.json
+│       └── distributor.json
 ├── src\
 │   ├── __init__.py
 │   ├── binary_parser.py

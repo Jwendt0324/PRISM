@@ -27,7 +27,7 @@ parts-agent/
 │   ├── config.json              # Credentials and run settings
 │   ├── config.example.json      # Template (no real credentials)
 │   └── distributors/
-│       └── marcone.json         # All [Parts Distributor]-specific selectors and URLs
+│       └── distributor.json     # All [Parts Distributor]-specific selectors and URLs
 ├── data/
 │   ├── input/                   # Drop CSV files here to be processed
 │   ├── output/                  # Results land here (timestamped)
@@ -92,7 +92,7 @@ Edit `config/config.json`:
 
 ```json
 {
-  "distributor": "marcone",
+  "distributor": "distributor",
   "username": "YOUR_ACCOUNT_NUMBER",
   "password": "YOUR_PASSWORD"
 }
@@ -113,7 +113,7 @@ Completed parts are skipped. The agent picks up at the next unfinished part.
 
 The system is distributor-agnostic. [Parts Distributor] is just the first one. To add another:
 
-1. Create `config/distributors/newdistributor.json` with the site's selectors, URLs, and timeouts (use `marcone.json` as a template)
+1. Create `config/distributors/newdistributor.json` with the site's selectors, URLs, and timeouts (use `distributor.json` as a template)
 2. Update `config/config.json`: set `"distributor": "newdistributor"`
 3. If the new site's page structure is very different, extend `src/scraper.py`
 
@@ -123,7 +123,7 @@ The system is distributor-agnostic. [Parts Distributor] is just the first one. T
 
 | Setting | Default | What it does |
 |---|---|---|
-| distributor | marcone | Which distributor config to load |
+| distributor | distributor | Which distributor config to load |
 | headless | false | Run without visible browser |
 | [google-doc-id] | 2 | Pause between searches |
 | max_retries | 4 | Retry attempts per failed part |
@@ -140,7 +140,7 @@ Drop a CSV file with a `part_number` column into `data/input/`.
 Check credentials in `config/config.json`. Check `logs/runs/` for the exact error.
 
 **Search works but data is empty**
-[Parts Distributor] may have changed their page layout. Inspect the page and update selectors in `config/distributors/marcone.json`.
+[Parts Distributor] may have changed their page layout. Inspect the page and update selectors in `config/distributors/distributor.json`.
 
 **Run aborted — error rate too high**
 Something is fundamentally broken (session expired, site down, selectors changed). Check the error log in `logs/errors/` and fix the root cause.

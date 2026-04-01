@@ -12,7 +12,7 @@
 
 **Configuration**
 - [x] config/config.json (32 lines)
-- [x] config/distributors/marcone.json (71 lines)
+- [x] config/distributors/distributor.json (71 lines)
 
 **Python Modules**
 - [x] src/__init__.py (1 line - empty)
@@ -44,7 +44,7 @@ C:\HRIAutomation\parts-agent\
 ├── config\
 │   ├── config.json                    ← Edit credentials here
 │   └── distributors\
-│       └── marcone.json
+│       └── distributor.json
 ├── src\
 │   ├── __init__.py
 │   ├── binary_parser.py
@@ -103,7 +103,7 @@ C:\HRIAutomation\parts-agent\
 
 - [ ] Edit `C:\HRIAutomation\parts-agent\config\config.json`
 - [ ] Update `username` and `password` for [Parts Distributor]
-- [ ] Update `marcone_accounts.[client-id]` credentials
+- [ ] Update `distributor_accounts.[client-id]` credentials
 - [ ] Update `field_service_platform` host/username/password for RDP
 - [ ] Update `rss_key` username/password
 - [ ] Save file (UTF-8 encoding required)
@@ -171,7 +171,7 @@ Structure in source:
 production/
 ├── config/
 │   ├── config.json
-│   └── distributors/marcone.json
+│   └── distributors/distributor.json
 ├── src/
 │   ├── __init__.py
 │   ├── agent.py

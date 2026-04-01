@@ -11,7 +11,7 @@ Two main deployment scripts have been created:
 ### 1. `deploy_files.ps1` (PowerShell)
 - Creates all 9 directories
 - Deploys files 1-8 using PowerShell here-strings:
-  - Configuration files (config.json, marcone.json)
+  - Configuration files (config.json, distributor.json)
   - 6 core Python modules (binary_parser, scraper, session_manager, rate_limiter, resume_engine)
   - Empty __init__.py
 
@@ -76,12 +76,12 @@ Edit `C:\HRIAutomation\parts-agent\config\config.json`:
 
 ```json
 {
-  "distributor": "marcone",
-  "username": "YOUR_MARCONE_ID",        // Change this
-  "password": "YOUR_MARCONE_PASSWORD",  // Change this
+  "distributor": "distributor",
+  "username": "YOUR_DISTRIBUTOR_ID",        // Change this
+  "password": "YOUR_DISTRIBUTOR_PASSWORD",  // Change this
   "headless": true,
   ...
-  "marcone_accounts": {
+  "distributor_accounts": {
     "[client-id]": {
       "username": "YOUR_ID",
       "password": "YOUR_PASSWORD"
@@ -175,7 +175,7 @@ C:\HRIAutomation\parts-agent\data\
 │   ├── results_YYYYMMDD_HHMMSS.json  (results in JSON)
 │   └── parsed_parts_queue.csv        (parsed parts)
 └── session\
-    └── marcone_session.json          (saved cookies)
+    └── distributor_session.json          (saved cookies)
 
 logs\
 ├── runs\
@@ -221,7 +221,7 @@ Check that:
 - Internet connectivity is available
 - Firewall allows HTTPS (port 443)
 - Credentials in config.json are correct
-- Session file is not corrupted: delete `data\session\marcone_session.json`
+- Session file is not corrupted: delete `data\session\distributor_session.json`
 
 ### RDP Connection Issues
 
@@ -237,7 +237,7 @@ Total: 15 files across 3 categories
 
 **Configuration (2 files)**
 - config/config.json
-- config/distributors/marcone.json
+- config/distributors/distributor.json
 
 **Python Modules (11 files)**
 - src/__init__.py
