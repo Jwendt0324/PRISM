@@ -6,7 +6,7 @@ Copy everything below the line into Claude Code and let it run overnight.
 
 ---
 
-You are running three major upgrades to [Your Name]'s Claude PRISM in a single overnight session. Complete them in order — each one builds on the last.
+You are running three major upgrades to {{USER_NAME}}'s Claude PRISM in a single overnight session. Complete them in order — each one builds on the last.
 
 **CRITICAL: Only scan the Gmail account [your-email@your-agency.com]. Do NOT access, read, or search any other Gmail account.**
 
@@ -116,7 +116,7 @@ For EVERY input, the pipeline produces:
 - Blog Post (800-1,200 words): Lighter version, more conversational, designed for [your-agency-domain.com]/blog
 
 **Tier 2 — Short-form (3-5 pieces)**
-- LinkedIn Post: Hook + story + lesson + CTA format. 150-300 words. Written in [Your Name]'s voice.
+- LinkedIn Post: Hook + story + lesson + CTA format. 150-300 words. Written in {{USER_NAME}}'s voice.
 - Twitter/X Thread: 5-8 tweets breaking down the core insight. First tweet is the hook.
 - Instagram Caption: Shorter, punchier. Includes relevant hashtags.
 
@@ -143,7 +143,7 @@ Step 1: INTAKE
 Step 2: PRODUCE
 - Generate all outputs the source supports, starting with Tier 1 and working down
 - Each output follows its format requirements above
-- All outputs written in [Your Name]'s voice: confident, real, grounded, not arrogant
+- All outputs written in {{USER_NAME}}'s voice: confident, real, grounded, not arrogant
 - All outputs reference the Content Factory methodology where relevant
 - Articles follow the Article Writing from Transcripts SOP
 - Articles pass the Article QA & Compliance SOP
@@ -152,7 +152,7 @@ Step 3: QUALITY CHECK
 - Every article: Does it pass E-E-A-T? Is it original (not just transcript reformatted)? Does it have a clear takeaway?
 - Every video script: Does it have a hook in the first 3 seconds? Is the CTA clear?
 - Every LinkedIn post: Does it tell a story, not just share an opinion? Is there a lesson?
-- Every email: Is the subject line compelling? Would [Your Name] actually send this?
+- Every email: Is the subject line compelling? Would {{USER_NAME}} actually send this?
 
 Step 4: OUTPUT
 - Save all outputs to a structured folder:
@@ -172,15 +172,15 @@ Step 5: DISTRIBUTION RECOMMENDATIONS
 - Suggest posting sequence (what order maximizes reach?)
 
 ### Quality Checks
-- Does every piece trace back to real content [Your Name] or [Your Mentor/Advisor] actually said/wrote?
-- Is [Your Name]'s voice consistent across all outputs?
+- Does every piece trace back to real content {{USER_NAME}} or [Your Mentor/Advisor] actually said/wrote?
+- Is {{USER_NAME}}'s voice consistent across all outputs?
 - Are CTAs appropriate for each platform?
 - Is there enough variety that the same insight doesn't feel repetitive across outputs?
 - Does the Topic Wheel position match the content?
 
 ### Common Pitfalls
 - Turning every transcript into an article without checking if the content is rich enough
-- Generic LinkedIn posts that could be from anyone (make them [Your Name]'s voice with specific stories)
+- Generic LinkedIn posts that could be from anyone (make them {{USER_NAME}}'s voice with specific stories)
 - Video scripts without hooks — the first 3 seconds determine everything
 - Email snippets that are too long — keep them scannable
 - Forgetting to check if sensitive/internal content leaked into public-facing outputs
@@ -223,7 +223,7 @@ Build a single file that gives any Claude session instant full-context loading. 
 
 Create ~/Documents/Claude/PRISM/CONTEXT.md — a single file (target: 3,000-5,000 words) that contains:
 
-### Section 1: Who [Your Name] Is (200 words max)
+### Section 1: Who {{USER_NAME}} Is (200 words max)
 Compressed from memory-bank/00-[your-username].md. Key facts only: name, age, location, military service, founding story, strengths, voice/style, current focus.
 
 ### Section 2: The Business (300 words max)
@@ -237,7 +237,7 @@ Compressed from memory-bank/01-hri-overview.md and sops/business-ops/hri-offer-l
 ### Section 3: The Team (300 words max)
 Compressed from memory-bank/03-team-directory.md and team-ops/01-team-directory.md:
 - Every active team member: name, role, one-line description, how to reach them
-- Key dynamics ([Your Mentor/Advisor] = product owner/closer, [Your AgentBuilder Partner] = delivery lead, [Your Name] = content + community + BD)
+- Key dynamics ([Your Mentor/Advisor] = product owner/closer, [Your AgentBuilder Partner] = delivery lead, {{USER_NAME}} = content + community + BD)
 - Current pain points (from team-ops/14-current-pain-points.md)
 
 ### Section 4: Active Clients (200 words max)
@@ -279,7 +279,7 @@ Compressed from content-audit/00-executive-summary.md and memory-bank/11-content
 
 Edit ~/Documents/Claude/PRISM/claude-code/CLAUDE.md to add this at the very top of the "ON SESSION START" section:
 
-"FAST CONTEXT LOAD: Start by reading ~/Documents/Claude/PRISM/CONTEXT.md — this is a compressed snapshot of [Your Name], his business, team, clients, strategy, and available SOPs. For most tasks this gives you enough context in under 30 seconds. Only read individual memory bank files or SOPs if you need deeper detail on a specific topic."
+"FAST CONTEXT LOAD: Start by reading ~/Documents/Claude/PRISM/CONTEXT.md — this is a compressed snapshot of {{USER_NAME}}, his business, team, clients, strategy, and available SOPs. For most tasks this gives you enough context in under 30 seconds. Only read individual memory bank files or SOPs if you need deeper detail on a specific topic."
 
 ## 3C: Build the Context Refresh Logic
 
@@ -330,7 +330,7 @@ cd ~/Documents/Claude/PRISM/sops && python3 convert_sops_to_docx.py
 - The Content Repurposing Pipeline SOP is the most important deliverable — it needs to be thorough enough that an apprentice could follow it.
 - CONTEXT.md must stay under 5,000 words. Compression is the whole point.
 - When refreshing the memory bank, never delete existing entries — only add or update.
-- All content produced through the pipeline must be in [Your Name]'s voice.
+- All content produced through the pipeline must be in {{USER_NAME}}'s voice.
 - Skip confidential/internal transcripts when running the pipeline (check the content audit's viability table).
 - If you hit Gmail rate limits during memory refresh, pause and retry.
 - Log everything.

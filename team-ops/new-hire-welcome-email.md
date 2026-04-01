@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 tags:
   - domain/teamops
@@ -5,7 +7,7 @@ tags:
   - type/template
 ---
 
-# [Your Content Specialist]'s Welcome Email
+# [New Hire Name]'s Welcome Email
 
 **Ready to send. Copy everything below the line.**
 
@@ -13,7 +15,7 @@ tags:
 
 **Subject:** Welcome to [Your Agency] — Here's What You Need to Know
 
-[Your Content Specialist],
+[New Hire Name],
 
 Welcome to [Your Agency Name]. I'm glad you're here and I'm going to be straight with you about what this looks like.
 
@@ -72,8 +74,8 @@ Founder | [Your Agency Name]
 
 ## See Also
 
-- [[sops/templates/team-ops/07-jackson-onboarding-kit|[Your Content Specialist] Onboarding Kit]]
-- [[sops/templates/team-ops/jackson-team-announcement|[Your Content Specialist] Team Announcement]]
+- [[sops/templates/team-ops/07-new-hire-onboarding-kit|[New Hire Name] Onboarding Kit]]
+- [[sops/templates/team-ops/new-hire-team-announcement|[New Hire Name] Team Announcement]]
 - [[sops/templates/team-ops/06-new-hire-onboarding-sop|New Hire Onboarding SOP]]
 - [[sops/templates/team-ops/09-tool-stack-and-access|Tool Stack & Access]]
 - [[memory-bank/05-team-and-roles|Team and Roles]]

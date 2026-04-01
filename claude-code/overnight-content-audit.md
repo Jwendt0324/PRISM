@@ -6,7 +6,7 @@ Copy everything below the line into Claude Code and let it run overnight.
 
 ---
 
-You are running an overnight content audit and backlog processing task for [Your Name]'s [Your Agency Name] business. This is a large, multi-hour task. Be thorough — [Your Name] will review results in the morning.
+You are running an overnight content audit and backlog processing task for {{USER_NAME}}'s {{AGENCY_NAME}} business. This is a large, multi-hour task. Be thorough — {{USER_NAME}} will review results in the morning.
 
 ## Context
 
@@ -21,7 +21,7 @@ Read these files first to understand the business, SOPs, and publishing targets:
 
 ## Phase 1: Local Media Inventory (30-60 min)
 
-Scan [Your Name]'s entire machine for raw content assets. Search these locations:
+Scan {{USER_NAME}}'s entire machine for raw content assets. Search these locations:
 - ~/Desktop/ (all subfolders)
 - ~/Downloads/
 - ~/Documents/
@@ -44,29 +44,29 @@ Create a master inventory at ~/Documents/Claude/PRISM/content-audit/01-local-med
 
 ## Phase 2: Online Presence Audit (60-90 min)
 
-Scrape and catalog [Your Name]'s existing published content across these channels. Use web search and direct URL fetching:
+Scrape and catalog {{USER_NAME}}'s existing published content across these channels. Use web search and direct URL fetching:
 
 ### YouTube
-- Search "[Your Name]" on YouTube — catalog all videos (title, date, views, URL)
-- Search "[Your Agency Name]" on YouTube — catalog all videos
-- Search "[Your Mentor/Advisor] [Your Name]" — find any collaboration content
+- Search "{{USER_NAME}}" on YouTube — catalog all videos (title, date, views, URL)
+- Search "{{AGENCY_NAME}}" on YouTube — catalog all videos
+- Search "[Your Mentor/Advisor] {{USER_NAME}}" — find any collaboration content
 
 ### Websites
 - Crawl [your-agency-domain.com] — catalog all published pages, blog posts, academy content
 - Crawl [your-username].com (if it exists) — catalog everything
-- Search [advisor-website.com] for any [Your Name] mentions/articles
-- Search [methodology-partner.com] for any [Your Name] content
-- Search [ops-partner-website.com] for [Your Name] mentions
+- Search [advisor-website.com] for any {{USER_NAME}} mentions/articles
+- Search [methodology-partner.com] for any {{USER_NAME}} content
+- Search [ops-partner-website.com] for {{USER_NAME}} mentions
 
 ### Social & Professional
-- Search LinkedIn for [Your Name] posts/articles (via web search)
-- Search SlideShare for [Your Name] decks
-- Search for any podcast appearances (via web search: "[Your Name] podcast" OR "[Your Name] interview")
+- Search LinkedIn for {{USER_NAME}} posts/articles (via web search)
+- Search SlideShare for {{USER_NAME}} decks
+- Search for any podcast appearances (via web search: "{{USER_NAME}} podcast" OR "{{USER_NAME}} interview")
 
 ### Press & Mentions
-- Search for "[Your Name]" + "[Your Agency Name]" across news/press
+- Search for "{{USER_NAME}}" + "{{AGENCY_NAME}}" across news/press
 - Search for any speaking engagements, conference mentions
-- Check for Google Knowledge Panel status for [Your Name]
+- Check for Google Knowledge Panel status for {{USER_NAME}}
 
 Create a master online inventory at ~/Documents/Claude/PRISM/content-audit/02-online-presence-audit.md with:
 - Platform
@@ -81,7 +81,7 @@ Create a master online inventory at ~/Documents/Claude/PRISM/content-audit/02-on
 Cross-reference the [Your Agency] Standalone Plan's publishing targets against what actually exists:
 
 ### Next 20 Videos to Make (from GTM plan):
-1. [Your Name]'s origin story
+1. {{USER_NAME}}'s origin story
 2. Parent explainer — "Why certification beats a semester"
 3. Student pitch — "Get your first paying client (your parents)"
 4. Descript demo — transcript → shorts → article
@@ -144,12 +144,12 @@ Based on everything discovered, create a realistic 4-week publishing calendar:
 
 For each week:
 - What can be published from drafted content (articles, posts, scripts)
-- What needs [Your Name] to film/record
+- What needs {{USER_NAME}} to film/record
 - What platforms each piece goes to
 - Suggested Dollar-a-Day test candidates ($1-5/day)
 
 Map to the cadence targets from the GTM plan:
-- Shorts: 3-5/week per channel ([Your Agency] + [Your Name] personal)
+- Shorts: 3-5/week per channel ([Your Agency] + {{USER_NAME}} personal)
 - Long-form: 1/week per channel
 - Lives/Webinars: 2/month
 
@@ -162,7 +162,7 @@ Create a morning briefing at ~/Documents/Claude/PRISM/content-audit/00-executive
 - Content pieces drafted overnight (by type)
 - Biggest gaps in the publishing calendar
 - Top 5 quick wins (things that can be published this week from existing material)
-- Top 5 things that require [Your Name] to film/record
+- Top 5 things that require {{USER_NAME}} to film/record
 - Recommended priority order for the next 7 days
 
 ## Phase 7: PRISM Updates

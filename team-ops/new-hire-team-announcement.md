@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 tags:
   - domain/teamops
@@ -5,17 +7,17 @@ tags:
   - type/template
 ---
 
-# Team Announcement — [Your Content Specialist] [Last Name]
+# Team Announcement — [New Hire Name] [Last Name]
 
 **Ready to send to team via Basecamp or email. Copy below the line.**
 
 ---
 
-**Subject:** New Team Member — [Your Content Specialist] [Last Name]
+**Subject:** New Team Member — [New Hire Name] [Last Name]
 
 Team,
 
-Quick note — [Your Content Specialist] [Last Name] has joined [Your Agency Name] as our Content Specialist.
+Quick note — [New Hire Name] [Last Name] has joined [Your Agency Name] as our Content Specialist.
 
 **What he's doing:**
 - Article writing from transcripts
@@ -33,7 +35,7 @@ Quick note — [Your Content Specialist] [Last Name] has joined [Your Agency Nam
 - [Your Ops Partner]: Help him get up to speed on MAA format and operational processes
 - [Your Ops Admin]: You've already handled his tool access — thank you
 
-[Your Content Specialist] is ramping up on our client work starting with [Client — Local Retail Business] content. If you're working on something that needs content support, loop me in and we'll get him assigned.
+[New Hire Name] is ramping up on our client work starting with [Client — Local Retail Business] content. If you're working on something that needs content support, loop me in and we'll get him assigned.
 
 Love Always,
 
@@ -44,8 +46,8 @@ Founder | [Your Agency Name]
 
 ## See Also
 
-- [[sops/templates/team-ops/07-jackson-onboarding-kit|[Your Content Specialist] Onboarding Kit]]
-- [[sops/templates/team-ops/jackson-welcome-email|[Your Content Specialist] Welcome Email]]
+- [[sops/templates/team-ops/07-new-hire-onboarding-kit|[New Hire Name] Onboarding Kit]]
+- [[sops/templates/team-ops/new-hire-welcome-email|[New Hire Name] Welcome Email]]
 - [[sops/templates/team-ops/01-team-directory|Team Directory]]
 - [[sops/templates/team-ops/06-new-hire-onboarding-sop|New Hire Onboarding SOP]]
 - [[memory-bank/05-team-and-roles|Team and Roles]]

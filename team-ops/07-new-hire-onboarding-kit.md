@@ -1,14 +1,16 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
-description: [Your Content Specialist] [Last Name]'s personalized onboarding kit with role
+description: [New Hire Name] [Last Name]'s personalized onboarding kit with role
   expectations, first-week schedule, and success metrics
-title: [Your Content Specialist] [Last Name] — Onboarding Kit
+title: [New Hire Name] [Last Name] — Onboarding Kit
 owner: [Your Name]
 created: 2026-03-18
 last_updated: 2026-03-18
 version: 1
 status: active
 category: team-ops
-for: [Your Content Specialist] [Last Name]
+for: [New Hire Name] [Last Name]
 role: Content Specialist
 start_date: 2026-02-25
 skill_linked: Yes
@@ -18,9 +20,9 @@ tags:
   - type/sop
 ---
 
-# [Your Content Specialist] — Welcome to the Team
+# [New Hire Name] — Welcome to the Team
 
-[Your Content Specialist] — welcome to [Your Agency Name]. You're here because I know you can do the work. Not because I needed a warm body. I picked you because when I gave you that test project — repurposing the Marketing Mechanic video into an article and a 1-minute clip — you delivered. That's the bar. Now we raise it.
+[New Hire Name] — welcome to [Your Agency Name]. You're here because I know you can do the work. Not because I needed a warm body. I picked you because when I gave you that test project — repurposing the Marketing Mechanic video into an article and a 1-minute clip — you delivered. That's the bar. Now we raise it.
 
 Here's everything you need to know to hit the ground running. Read this whole thing. Not skim — read. Then we'll talk.
 

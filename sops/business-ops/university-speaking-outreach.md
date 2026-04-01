@@ -32,7 +32,7 @@ Systematically land and deliver university speaking engagements that build [Your
 1. **Identify target university and department.** Focus on: marketing, business, communications, PR, or entrepreneurship departments. Prioritize schools where [Your Agency] has a warm connection.
 
 2. **Get a warm intro.** Cold outreach to professors is low-conversion. Use network contacts from the [[memory-bank/07-relationship-map|Relationship Map]]:
-   - George Paladichuk for CU Boulder connections
+   - [Client Name] for CU Boulder connections
    - [Your Mentor/Advisor]'s academic network
    - Existing professor relationships
    - Never cold-email a professor without exhausting warm intro options first.
@@ -86,7 +86,7 @@ Systematically land and deliver university speaking engagements that build [Your
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- 2026-03-18: SOP created. Active engagements: CU Boulder (George Paladichuk opening doors), UC Berkeley (pro bono). Key lesson from Dr. Flax: never let deliverables slip without proactive communication.
+- 2026-03-18: SOP created. Active engagements: CU Boulder ([Client Name] opening doors), UC Berkeley (pro bono). Key lesson from Dr. Flax: never let deliverables slip without proactive communication.
 
 ---
 

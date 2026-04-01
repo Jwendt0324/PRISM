@@ -31,7 +31,52 @@ else
     echo "[OK] Created .personal/CONTEXT.md from template"
 fi
 
-# Step 3: Create/update CLAUDE.md in ~/.claude/
+# Step 3: Personalize automation scripts
+echo ""
+echo "Personalizing your PRISM..."
+echo ""
+
+read -p "  Your name: " user_name
+read -p "  Your email: " user_email
+read -p "  Your company/agency name: " agency_name
+
+if [ -n "$user_name" ]; then
+    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
+        if grep -q '{{USER_NAME}}' "$file" 2>/dev/null; then
+            sed -i '' "s|{{USER_NAME}}|$user_name|g" "$file" 2>/dev/null || \
+            sed -i "s|{{USER_NAME}}|$user_name|g" "$file"
+        fi
+    done
+    echo "[OK] Set USER_NAME to: $user_name"
+else
+    echo "[SKIP] No name provided — {{USER_NAME}} placeholders left in place"
+fi
+
+if [ -n "$user_email" ]; then
+    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
+        if grep -q '[your-email@your-agency.com]' "$file" 2>/dev/null; then
+            sed -i '' "s|[your-email@your-agency.com]|$user_email|g" "$file" 2>/dev/null || \
+            sed -i "s|[your-email@your-agency.com]|$user_email|g" "$file"
+        fi
+    done
+    echo "[OK] Set USER_EMAIL to: $user_email"
+else
+    echo "[SKIP] No email provided — [your-email@your-agency.com] placeholders left in place"
+fi
+
+if [ -n "$agency_name" ]; then
+    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
+        if grep -q '{{AGENCY_NAME}}' "$file" 2>/dev/null; then
+            sed -i '' "s|{{AGENCY_NAME}}|$agency_name|g" "$file" 2>/dev/null || \
+            sed -i "s|{{AGENCY_NAME}}|$agency_name|g" "$file"
+        fi
+    done
+    echo "[OK] Set AGENCY_NAME to: $agency_name"
+else
+    echo "[SKIP] No company name provided — {{AGENCY_NAME}} placeholders left in place"
+fi
+
+# Step 4: Create/update CLAUDE.md in ~/.claude/
 echo ""
 echo "Setting up CLAUDE.md..."
 
@@ -75,11 +120,11 @@ else
     echo "[OK] Created ~/.claude/CLAUDE.md"
 fi
 
-# Step 4: Create logs directory
+# Step 5: Create logs directory
 mkdir -p "$PRISM_DIR/logs/sessions" "$PRISM_DIR/logs/actions" "$PRISM_DIR/logs/reports"
 echo "[OK] Logs directories ready"
 
-# Step 5: Summary
+# Step 6: Summary
 echo ""
 echo "========================================"
 echo "  SETUP COMPLETE"

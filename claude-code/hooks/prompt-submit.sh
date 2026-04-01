@@ -32,19 +32,19 @@ P=$(echo "$PROMPT" | tr '[:upper:]' '[:lower:]')
 # ============================================================
 CONFIDENTIAL=false
 
-if echo "$P" | grep -qE '(dennis|dylan).*(condescend|frustrat|upset|angry|weird|unfair|power dynamic|hypocrit)'; then
+if echo "$P" | grep -qE '(condescend|frustrat|upset|angry|unfair|power dynamic|hypocrit).*(partner|mentor|cofounder|co-founder)'; then
     CONFIDENTIAL=true
 fi
 if echo "$P" | grep -qE '(equity split|compensation|revenue share|overpaid|underpaid|give.*(all|back).*revenue)'; then
     CONFIDENTIAL=true
 fi
-if echo "$P" | grep -qE '(separate.*business|new llc|without dennis|on my own|dont tell|keep.*secret|between us)'; then
+if echo "$P" | grep -qE '(separate.*business|new llc|on my own|dont tell|keep.*secret|between us)'; then
     CONFIDENTIAL=true
 fi
 if echo "$P" | grep -qE '(confidential|off the record|private|dont share|don.t share)'; then
     CONFIDENTIAL=true
 fi
-if echo "$P" | grep -qE '(bad mentor|good mentor|is dennis|do you think dennis|what do you think.*(dennis|dylan))'; then
+if echo "$P" | grep -qE '(bad mentor|good mentor|what do you think.*(partner|mentor|cofounder))'; then
     CONFIDENTIAL=true
 fi
 

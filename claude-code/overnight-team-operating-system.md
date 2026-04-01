@@ -6,7 +6,7 @@ Copy everything below the line into Claude Code and let it run overnight.
 
 ---
 
-You are building a comprehensive Team Operating System for [Your Name]'s [Your Agency Name]. [Your Name] just hired [Your Content Specialist] and plans to grow the team further. This system needs to work for the current team ([Your Name], [Your Mentor/Advisor], [Your Ops Partner], [Your AgentBuilder Partner], [Your Ops Admin], [Your Content Specialist]) AND scale to 10+ people without breaking.
+You are building a comprehensive Team Operating System for {{USER_NAME}}'s {{AGENCY_NAME}}. {{USER_NAME}} just hired [Your Content Specialist] and plans to grow the team further. This system needs to work for the current team ({{USER_NAME}}, [Your Mentor/Advisor], [Your Ops Partner], [Your AgentBuilder Partner], [Your Ops Admin], [Your Content Specialist]) AND scale to 10+ people without breaking.
 
 **CRITICAL: Only scan the Gmail account [your-email@your-agency.com]. Do NOT access, read, or search any other Gmail account.**
 
@@ -27,12 +27,12 @@ If the memory bank exists, read it too:
 Use Gmail MCP tools to understand how the team currently works. Search [your-email@your-agency.com] for:
 
 ### Communication Patterns
-- "from:dennis" — How does [Your Mentor/Advisor] communicate with [Your Name]? Frequency, tone, topics, decisions
-- "to:dennis" — How does [Your Name] communicate with [Your Mentor/Advisor]? What does he escalate vs handle alone?
-- "from:sam" OR "to:sam" — [Your AgentBuilder Partner] McLeod delivery coordination patterns
-- "from:dylan" OR "to:dylan" — [Your Ops Partner] [Last Name] content ops patterns
-- "from:muzamil" OR "to:muzamil" — Ops/finance communication patterns
-- "from:jackson" OR "to:jackson" — Any early [Your Content Specialist] communications
+- "from:[advisor-name]" — How does [Your Mentor/Advisor] communicate with {{USER_NAME}}? Frequency, tone, topics, decisions
+- "to:[advisor-name]" — How does {{USER_NAME}} communicate with [Your Mentor/Advisor]? What does he escalate vs handle alone?
+- "from:[agent-partner-name]" OR "to:[agent-partner-name]" — [Your AgentBuilder Partner] McLeod delivery coordination patterns
+- "from:[partner-name]" OR "to:[partner-name]" — [Your Ops Partner] [Last Name] content ops patterns
+- "from:[admin-name]" OR "to:[admin-name]" — Ops/finance communication patterns
+- "from:[team-member-name]" OR "to:[team-member-name]" — Any early [Your Content Specialist] communications
 - Search for any team-wide emails (multiple recipients from the team)
 
 ### Project Coordination
@@ -43,7 +43,7 @@ Use Gmail MCP tools to understand how the team currently works. Search [your-ema
 - "blocked" OR "waiting on" OR "need from you" — Common blockers
 
 ### Handoffs & Delegation
-- "can you" OR "please handle" OR "take care of" — How [Your Name] delegates
+- "can you" OR "please handle" OR "take care of" — How {{USER_NAME}} delegates
 - "here's what I need" OR "deliverables" — How work gets scoped
 - "done" OR "finished" OR "completed" OR "shipped" — How completion gets communicated
 - "feedback" OR "revision" OR "changes" — Revision cycles and QA patterns
@@ -70,9 +70,9 @@ Create this structure:
 ├── 02-communication-protocol.md     ← Who gets looped on what, through which channel
 ├── 03-decision-rights-matrix.md     ← Who approves what, escalation paths
 ├── 04-meeting-cadence.md            ← All recurring meetings, agendas, templates
-├── 05-delegation-framework.md       ← What [Your Name] owns vs delegates, handoff protocols
+├── 05-delegation-framework.md       ← What {{USER_NAME}} owns vs delegates, handoff protocols
 ├── 06-new-hire-onboarding-sop.md    ← Generic onboarding SOP for ANY new hire
-├── 07-jackson-onboarding-kit.md     ← Specific onboarding for [Your Content Specialist] (immediate use)
+├── 07-new-hire-onboarding-kit.md     ← Specific onboarding for [Your Content Specialist] (immediate use)
 ├── 08-role-scorecards.md            ← KPIs and success metrics for every role
 ├── 09-tool-stack-and-access.md      ← Every tool, who has access, how to get access
 ├── 10-project-management-sop.md     ← How projects get tracked from intake to delivery
@@ -94,7 +94,7 @@ The master document. Write this as if handing it to a new team member who needs 
 - Link to every other doc in the team-ops folder
 
 ### 01-team-directory.md
-For every team member ([Your Name], [Your Mentor/Advisor], [Your Ops Partner], [Your AgentBuilder Partner], [Your Ops Admin], [Your Content Specialist], plus anyone else found in emails):
+For every team member ({{USER_NAME}}, [Your Mentor/Advisor], [Your Ops Partner], [Your AgentBuilder Partner], [Your Ops Admin], [Your Content Specialist], plus anyone else found in emails):
 - Full name
 - Role and title
 - Primary responsibilities
@@ -104,7 +104,7 @@ For every team member ([Your Name], [Your Mentor/Advisor], [Your Ops Partner], [
 - Best way to reach them (email, Basecamp, text — determine from email patterns)
 - Timezone and availability patterns (determine from email timestamps)
 - Strengths (observed from email content)
-- What they need from [Your Name] (observed from email requests)
+- What they need from {{USER_NAME}} (observed from email requests)
 
 ### 02-communication-protocol.md
 Based on what you observe in Gmail, define:
@@ -139,11 +139,11 @@ Define all recurring meetings:
 - Suggested additions based on gaps found in email (e.g., 1:1s, sprint retros)
 
 ### 05-delegation-framework.md
-Based on [Your Name]'s email patterns, define:
-- What [Your Name] should KEEP doing (based on his strengths: content, community, relationships)
-- What [Your Name] should DELEGATE (based on where he's bottlenecking the team)
+Based on {{USER_NAME}}'s email patterns, define:
+- What {{USER_NAME}} should KEEP doing (based on his strengths: content, community, relationships)
+- What {{USER_NAME}} should DELEGATE (based on where he's bottlenecking the team)
 - For each delegated area: who owns it, how handoff works, what "done" looks like
-- Task categories: Urgent/Important matrix for [Your Name]'s time
+- Task categories: Urgent/Important matrix for {{USER_NAME}}'s time
 - The "[Your Content Specialist] can handle this" list — things to immediately hand to [Your Content Specialist]
 
 ### 06-new-hire-onboarding-sop.md
@@ -159,16 +159,16 @@ Generic onboarding SOP that works for ANY future hire:
 - Required reading: which PRISM SOPs to read first by role
 - Communication setup: add to channels, meetings, distribution lists
 
-### 07-jackson-onboarding-kit.md
+### 07-new-hire-onboarding-kit.md
 Specific to [Your Content Specialist], ready to send immediately:
-- Welcome message (write in [Your Name]'s voice — confident, real, grounded)
+- Welcome message (write in {{USER_NAME}}'s voice — confident, real, grounded)
 - His specific role and what success looks like in 30/60/90 days
 - First week schedule with specific tasks
 - Which PRISM SOPs he should read first
 - Tool access he needs (list specific tools with who grants each)
 - Who he reports to and how to communicate with each team member
 - His first deliverable assignment
-- Questions to ask [Your Name] in their first 1:1
+- Questions to ask {{USER_NAME}} in their first 1:1
 - Common mistakes new hires make and how to avoid them
 
 ### 08-role-scorecards.md
@@ -248,19 +248,19 @@ For each pain point: what happened, root cause, recommended fix.
 Create ready-to-send documents:
 
 ### [Your Content Specialist]'s Welcome Email
-Save to ~/Documents/Claude/PRISM/team-ops/jackson-welcome-email.md
-- Write in [Your Name]'s voice
+Save to ~/Documents/Claude/PRISM/team-ops/new-hire-welcome-email.md
+- Write in {{USER_NAME}}'s voice
 - Include first week expectations
 - List tools he needs access to
 - Link to relevant SOPs
 - Set the tone: high expectations, real support, no BS
 
 ### Team Announcement
-Save to ~/Documents/Claude/PRISM/team-ops/jackson-team-announcement.md
+Save to ~/Documents/Claude/PRISM/team-ops/new-hire-team-announcement.md
 - Brief intro of [Your Content Specialist] to the team
 - His role and what he'll be working on
 - How to loop him in
-- Write in [Your Name]'s voice
+- Write in {{USER_NAME}}'s voice
 
 ## Step 4: Update the PRISM
 
@@ -281,7 +281,7 @@ Review all existing PRISM SOPs and flag:
 
 - This runs overnight. Be exhaustive.
 - [Your Content Specialist]'s onboarding kit should be ready to send by morning. That's the #1 priority.
-- Write everything in [Your Name]'s voice: confident, direct, grounded, no corporate jargon.
+- Write everything in {{USER_NAME}}'s voice: confident, direct, grounded, no corporate jargon.
 - When documenting pain points, be specific but constructive. This is about fixing systems, not blaming people.
 - The Team OS should make it possible for someone to join [Your Agency] and be productive within a week.
 - If you hit Gmail rate limits, pause briefly and continue.

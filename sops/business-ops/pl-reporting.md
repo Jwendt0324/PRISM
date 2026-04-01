@@ -53,7 +53,7 @@ Establish consistent monthly P&L tracking so [Your Mentor/Advisor], [Your Ops Pa
 
 ## Common Pitfalls
 - **Tool subscriptions add up fast.** ChatGPT alone was $13,947 over 6 months. Audit the full tool stack monthly — don't assume last month's number is still right.
-- **Refunds are expenses.** The Ed Strachar $1,494 refund must appear as an expense in the month it was processed, not hidden or netted against revenue.
+- **Refunds are expenses.** The [Client Name] [$Amount] refund must appear as an expense in the month it was processed, not hidden or netted against revenue.
 - **Mixing personal and business expenses.** Keep [Your Agency] expenses on the [Your Agency] card/account. If a personal card was used, log it immediately or it gets lost.
 - **[Your Ops Admin]'s cost is weekly, not monthly.** $674/week x number of weeks in the month. Some months have 5 pay periods.
 - **[Partner Platform] is functionally bankrupt.** Do not assume [Partner Platform] account balances cover obligations. Track [Partner Platform]-related revenue and expenses separately so the picture is clear.

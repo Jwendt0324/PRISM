@@ -6,7 +6,7 @@ Copy everything below the line into Claude Code and let it run overnight. This i
 
 ---
 
-You are performing a comprehensive upgrade to [Your Name]'s Claude PRISM. [Your Mentor/Advisor] ([Your Name]'s co-founder and mentor) reviewed the PRISM and identified critical gaps. This overnight run addresses ALL of his feedback by ingesting the canonical [Methodology Partner] training materials, aligning every SOP with the 9 Triangles framework, and building a self-reinforcing QA system.
+You are performing a comprehensive upgrade to {{USER_NAME}}'s Claude PRISM. [Your Mentor/Advisor] ({{USER_NAME}}'s co-founder and mentor) reviewed the PRISM and identified critical gaps. This overnight run addresses ALL of his feedback by ingesting the canonical [Methodology Partner] training materials, aligning every SOP with the 9 Triangles framework, and building a self-reinforcing QA system.
 
 **CRITICAL: Only scan the Gmail account [your-email@your-agency.com] for any Gmail operations.**
 
@@ -278,8 +278,8 @@ Be brutally honest about:
 3. **What's missing:** What capabilities does it need that it doesn't have?
 4. **Where humans are still essential:** What does the PRISM pretend to automate but actually can't?
 5. **The biggest risk:** What's the most dangerous thing the PRISM could do if left unchecked?
-6. **What [Your Name] might not want to hear:** Is the PRISM solving real business problems or creating the feeling of progress? Is it producing publishable content or just drafts that need extensive human review? Is the time spent building infrastructure being offset by actual revenue?
-7. **Comparison to [Your Mentor/Advisor]'s meta-article approach:** How does the PRISM's approach compare? Where is [Your Mentor/Advisor]'s approach better? What should [Your Name] adopt from it?
+6. **What {{USER_NAME}} might not want to hear:** Is the PRISM solving real business problems or creating the feeling of progress? Is it producing publishable content or just drafts that need extensive human review? Is the time spent building infrastructure being offset by actual revenue?
+7. **Comparison to [Your Mentor/Advisor]'s meta-article approach:** How does the PRISM's approach compare? Where is [Your Mentor/Advisor]'s approach better? What should {{USER_NAME}} adopt from it?
 8. **The gap between building and executing:** [Your Mentor/Advisor]'s key message was "shift from idea to execution." Is the PRISM helping with execution or delaying it?
 
 ---
@@ -317,7 +317,7 @@ Document everything that was done, every SOP that was rewritten, every violation
 - This runs overnight. Be exhaustive.
 - The [Methodology Partner] canon is the SOURCE OF TRUTH. If a PRISM SOP contradicts a [Methodology Partner] document, the PRISM SOP is wrong.
 - [Your Mentor/Advisor]'s feedback is not optional — every point must be addressed.
-- The honest self-assessment must be genuinely honest, not diplomatic. [Your Name] needs to hear the hard truths.
+- The honest self-assessment must be genuinely honest, not diplomatic. {{USER_NAME}} needs to hear the hard truths.
 - For .gdoc/.gsheet files on the Drive: these are link files, not readable documents. Try `cat` on them — if they contain a URL, note the URL. The actual content lives in Google Docs online and is not accessible from the filesystem. Focus on .pdf, .docx, .txt, and .md files.
 - Videos (.mp4, .mov) cannot be read. Note their existence in the index but don't try to process them.
 - If you find conflicting information in different versions of [Methodology Partner] docs, use the LATEST version.

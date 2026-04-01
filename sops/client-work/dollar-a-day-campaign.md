@@ -443,7 +443,7 @@ This keeps audience fresh while maintaining proven winners.
 | Blog #7 | $0.88 | 2.1% | 12 | Testing |
 
 ## Summary
-- Total Spend: $1,245 (on budget: $1,500)
+- Total Spend: $1,245 (on budget: [$Amount])
 - Total Conversions: 290
 - Avg CPA: $4.29
 - Avg ROAS: 2.9:1

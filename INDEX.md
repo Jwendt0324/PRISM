@@ -107,11 +107,11 @@ Key documents: Team directory, communication protocols, decision rights matrix, 
 | PostToolUse Hook | Every tool use | `~/.claude/settings.json` | **ACTIVE** | Logs tool name + session ID to `logs/tool-usage.log` |
 | Stop Hook | Every response | `~/.claude/settings.json` | **ACTIVE** | Injects systemMessage prompting Claude to write a session log |
 | SessionEnd Hook | Every session end | `~/.claude/settings.json` | **ACTIVE** | Calls `scripts/parse-session.py` to generate structured session logs |
-| Daily PRISM Sync | Mon-Fri 6:27 AM | launchd (`com.user.memory-refresh`) | **ACTIVE** | Reviews session logs, updates memory bank from local data, flags stale items. No Gmail. |
-| Weekly Briefing | Monday 8:17 AM | launchd (`com.user.weekly-briefing`) | **ACTIVE** | Full state-of-business snapshot. Emailed to [your-email@your-agency.com] via Apple Mail. |
-| Weekly SOP Health Check | Friday 7:07 AM | launchd (`com.user.sop-health-check`) | **ACTIVE** | Reviews session logs for SOP usage, checks freshness, identifies new SOP candidates. |
-| File Organizer | Nightly 11:47 PM | launchd (`com.user.organize-files`) | **ACTIVE** | Organizes Downloads/Desktop/Documents by file type. |
-| Monthly Log Rotation | 1st of month, 3:07 AM | launchd (`com.user.log-rotation`) | **ACTIVE** | Rotates large logs, archives old monthly dirs, cleans up old backups. |
+| Daily PRISM Sync | Mon-Fri [Schedule Time] | launchd (`com.yourname.memory-refresh`) | **ACTIVE** | Reviews session logs, updates memory bank from local data, flags stale items. No Gmail. |
+| Weekly Briefing | Monday [Schedule Time] | launchd (`com.yourname.weekly-briefing`) | **ACTIVE** | Full state-of-business snapshot. Emailed to [your-email@your-agency.com] via Apple Mail. |
+| Weekly SOP Health Check | Friday [Schedule Time] | launchd (`com.yourname.sop-health-check`) | **ACTIVE** | Reviews session logs for SOP usage, checks freshness, identifies new SOP candidates. |
+| File Organizer | Nightly [Schedule Time] | launchd (`com.yourname.organize-files`) | **ACTIVE** | Organizes Downloads/Desktop/Documents by file type. |
+| Monthly Log Rotation | 1st of month, [Schedule Time] | launchd (`com.yourname.log-rotation`) | **ACTIVE** | Rotates large logs, archives old monthly dirs, cleans up old backups. |
 | Gmail Memory Refresh | Manual | Prompt at `claude-code/scheduled-memory-refresh.md` | **MANUAL** | Full Gmail scan — requires interactive session. Say "refresh the memory bank" 2-3x/week. |
 | Google Drive Sync | Not implemented | `scripts/convert-all-to-docx.py` exists | **NOT IMPLEMENTED** | Script ready but not scheduled. |
 | Basecamp Scan | Not implemented | No prompt file exists | **NOT IMPLEMENTED** | Requires Basecamp API integration. |
@@ -149,9 +149,9 @@ Key documents: Team directory, communication protocols, decision rights matrix, 
 
 The Shared Memory Bank lives in `memory-bank/`. See [memory-bank/INDEX.md](memory-bank/INDEX.md) for the master index.
 
-**14 files** covering: [Your Name]'s personal profile, [Your Agency] company overview, [Methodology Partner] relationship, team directory (30+ people), client directory (13 engagements), vendor/partner map, deal history ($50K+ revenue), relationship map, communication patterns, project history (15 projects), financial context, content assets, strategic context, and Gmail insights.
+**14 files** covering: [Your Name]'s personal profile, [Your Agency] company overview, [Methodology Partner] relationship, team directory ([N people]), client directory ([N engagements]), vendor/partner map, deal history ([$Revenue] revenue), relationship map, communication patterns, project history ([N projects]), financial context, content assets, strategic context, and Gmail insights.
 
-**Built from:** Full Gmail scan of [your-email@your-agency.com] (9,693 messages / 4,061 threads), all PRISM SOPs, operating documents, and PDFs.
+**Built from:** Full Gmail scan of [your-email@your-agency.com] ([X messages] / [Y threads]), all PRISM SOPs, operating documents, and PDFs.
 
 **Refresh Protocol:** `memory-bank/refresh-protocol.md` — defines how the memory bank gets updated weekly. Last refresh: 2026-03-18.
 

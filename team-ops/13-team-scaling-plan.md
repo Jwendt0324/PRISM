@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 description: [Your Agency] team scaling plan from 5 to 10 people with revenue triggers,
   hire priorities, and org structure

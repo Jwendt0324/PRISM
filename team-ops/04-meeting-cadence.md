@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: Meeting Cadence
 owner: [Your Name]
@@ -64,7 +66,7 @@ No meeting is optional for required attendees unless you've cleared it with [You
 | **Day/Time** | Thursdays, 2:00 PM PST / 4:00 PM CST |
 | **Duration** | 60 minutes |
 | **Frequency** | Weekly |
-| **Location** | Zoom — https://us02web.zoom.us/s/89548847054 |
+| **Location** | Zoom — [Your Video Meeting URL] |
 
 **Required Attendees:** [Your Name], [Your Mentor/Advisor]
 **Optional:** [Your Ops Partner], current cohort apprentices, prospective students

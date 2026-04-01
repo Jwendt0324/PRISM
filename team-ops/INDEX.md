@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 tags:
   - domain/teamops
@@ -30,7 +32,7 @@ The Team OS is [Your Agency]'s operating manual. If you're new, start with 00 an
 | 04 | [meeting-cadence.md](04-meeting-cadence.md) | All recurring meetings, agendas, templates |
 | 05 | [delegation-framework.md](05-delegation-framework.md) | What [Your Name] owns vs delegates, handoff protocols |
 | 06 | [new-hire-onboarding-sop.md](06-new-hire-onboarding-sop.md) | Generic onboarding SOP for any new hire |
-| 07 | [jackson-onboarding-kit.md](07-jackson-onboarding-kit.md) | [Your Content Specialist] [Last Name]'s specific onboarding package |
+| 07 | [new-hire-onboarding-kit.md](07-new-hire-onboarding-kit.md) | [Your Content Specialist] [Last Name]'s specific onboarding package |
 | 08 | [role-scorecards.md](08-role-scorecards.md) | KPIs and success metrics for every role |
 | 09 | [tool-stack-and-access.md](09-tool-stack-and-access.md) | Every tool, who has access, how to get access |
 | 10 | [project-management-sop.md](10-project-management-sop.md) | KP Sprint delivery from intake to case study |
@@ -43,8 +45,8 @@ The Team OS is [Your Agency]'s operating manual. If you're new, start with 00 an
 
 | Document | Purpose |
 |----------|---------|
-| [jackson-welcome-email.md](jackson-welcome-email.md) | Welcome email for [Your Content Specialist] — ready to send |
-| [jackson-team-announcement.md](jackson-team-announcement.md) | Team announcement for [Your Content Specialist] — ready to send |
+| [new-hire-welcome-email.md](new-hire-welcome-email.md) | Welcome email for [Your Content Specialist] — ready to send |
+| [new-hire-team-announcement.md](new-hire-team-announcement.md) | Team announcement for [Your Content Specialist] — ready to send |
 
 ## Cross-Reference
 
@@ -77,7 +79,7 @@ The Team OS is [Your Agency]'s operating manual. If you're new, start with 00 an
 - [04 Meeting Cadence](04-meeting-cadence.md)
 - [05 Delegation Framework](05-delegation-framework.md)
 - [06 New Hire Onboarding SOP](06-new-hire-onboarding-sop.md)
-- [07 [Your Content Specialist] Onboarding Kit](07-jackson-onboarding-kit.md)
+- [07 [Your Content Specialist] Onboarding Kit](07-new-hire-onboarding-kit.md)
 - [08 Role Scorecards](08-role-scorecards.md)
 - [09 Tool Stack & Access](09-tool-stack-and-access.md)
 - [10 Project Management SOP](10-project-management-sop.md)

@@ -95,10 +95,10 @@ def scan_content_directories():
                     lower_path = fpath.lower()
                     client = "Unknown"
                     client_markers = {
-                        "acoustic": "[Client — Local Retail Business]",
-                        "discover-strength": "[Client — Fitness Brand]",
+                        "[client-name-1]": "[Client — Local Retail Business]",
+                        "[client-name-2]": "[Client — Fitness Brand]",
                         "[client-id]": "[Client — Appliance Repair]",
-                        "sloan": "[Client — Appliance Repair]",
+                        "[client-name-3]": "[Client — Appliance Repair]",
                         "ryan": "[Client Name]",
                         "blitz": "[Methodology Partner]",
                         "hri": "[Your Agency]",
@@ -153,10 +153,10 @@ def generate_report(date_str):
         task_lower = s["task"].lower()
         client = "General"
         client_markers = {
-            "acoustic": "[Client — Local Retail Business]",
-            "discover": "[Client — Fitness Brand]",
+            "[client-name-1]": "[Client — Local Retail Business]",
+            "[client-name-2]": "[Client — Fitness Brand]",
             "[client-id]": "[Client — Appliance Repair]",
-            "sloan": "[Client — Appliance Repair]",
+            "[client-name-3]": "[Client — Appliance Repair]",
             "ryan": "[Client Name]",
             "blitz": "[Methodology Partner]",
         }

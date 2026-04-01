@@ -41,7 +41,7 @@ Per memory: launchd + `claude -p` is NOT reliable. The PRISM has 5 manual tasks 
 
 | Old Method | Action |
 |-----------|--------|
-| `com.user.organize-files` launchd agent | Keep running (low risk, handles file cleanup) |
+| `com.yourname.organize-files` launchd agent | Keep running (low risk, handles file cleanup) |
 | Manual "run the daily sync" prompts | Replace with scheduled trigger |
 | Manual "run the weekly briefing" prompts | Replace with scheduled trigger |
 | Manual "refresh the memory bank" prompts | Replace with scheduled trigger |

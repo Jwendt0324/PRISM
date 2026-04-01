@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: [Your Agency] Team Directory
 version: 1
@@ -26,9 +28,9 @@ This is the master team directory for [[memory-bank/01-hri-overview|[Your Agency
 | **LinkedIn** | [your-linkedin-url] |
 | **Instagram** | [@your-instagram-handle] |
 | **Location** | Nashville, TN (originally Minnesota) |
-| **Company Registration** | Minnesota — 21220 Wellington Place, Lakeville, MN 55044 |
+| **Company Registration** | Minnesota — [Your Business Address] |
 | **Sign-off** | "Love Always, [Your Name]" |
-| **Compensation** | ~29.9% of [Your Agency] revenue (~$14,950.81 total through Mar 2026) |
+| **Compensation** | ~[$Percentage] of [Your Agency] revenue (~[$Amount] total through Mar 2026) |
 | **Best Way to Reach** | Email or Basecamp |
 | **Communication Style** | Direct, concise, action-oriented. Emails during business hours CST. |
 
@@ -196,7 +198,7 @@ These team members operate under [Methodology Partner] or Local Service Spotligh
 
 ---
 
-### [Your Local Agency Partner] Crowson
+### [Your Local Agency Partner] [Last Name]
 
 | Field | Details |
 |---|---|
@@ -223,7 +225,7 @@ These team members operate under [Methodology Partner] or Local Service Spotligh
 
 ---
 
-### [Your Team Member] Goodrich
+### [Your Team Member] [Last Name]
 
 | Field | Details |
 |---|---|
@@ -239,7 +241,7 @@ These team members operate under [Methodology Partner] or Local Service Spotligh
 
 | Field | Details |
 |---|---|
-| **Email ([Partner Platform])** | henry@[partner-platform.com] |
+| **Email ([Partner Platform])** | [contact]@[partner-platform.com] |
 | **Email (YCF)** | [content-monitor@content-platform.com] |
 
 **Role:**
@@ -256,7 +258,7 @@ These team members operate under [Methodology Partner] or Local Service Spotligh
 
 ---
 
-### Juan Martho [Last Name]
+### Juan [Last Name] [Last Name]
 
 | Field | Details |
 |---|---|
@@ -274,11 +276,11 @@ These are not [Your Agency] team members but are important contacts in [Your Nam
 
 | Name | Email | Context |
 |---|---|---|
-| **[Your Former Mentor] Guilliams** | caleb@betterwealth.com | [Your Name]'s former mentor, warm personal relationship |
-| **George Paladichuk** | george@usenail.com | CU Boulder connection |
-| **Dan Leibrandt** | dan@pestcontrolseo.com | Pest control SEO expert, Forge speaker |
-| **Marko Sipila** | marko@coatinglaunch.com | Coating Launch founder, Forge speaker |
-| **Zach Phillips** | zachp@namm.org | NAMM partnership contact |
+| **[Your Former Mentor] [Last Name]** | [contact]@[partner-website.com] | [Your Name]'s former mentor, warm personal relationship |
+| **[Client Name]** | [contact]@[client-website.com] | CU Boulder connection |
+| **[Client Name]** | [contact]@[client-website.com] | Pest control SEO expert, Forge speaker |
+| **[Client Name]** | [contact]@[client-website.com] | Coating Launch founder, Forge speaker |
+| **Zach Phillips** | [contact]@[industry-org.org] | NAMM partnership contact |
 
 ---
 

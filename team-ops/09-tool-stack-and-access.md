@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: Tool Stack & Access Directory
 owner: [Your Name]
@@ -42,7 +44,7 @@ Every tool we use, who owns it, who has access, and how to get in. If it's not o
 | Social Media | LinkedIn | [Your Name]'s profile, [Your Mentor/Advisor]'s profile | Individual owners | Self-managed |
 | Scheduling | Calendly | Discovery calls, AI Apprentice audits | [Your Name] / [Your Mentor/Advisor] | Self-managed; [Your Ops Admin] assists setup |
 | LMS / Training | Content Factory Academy | AI Apprentice coursework | [Your Ops Admin] | academy.[content-platform.com] |
-| Advertising | Google Ads | Paid campaigns (Dollar-a-Day, client) | [Your Name] / [Your Local Agency Partner] Crowson | Account-level access via Google |
+| Advertising | Google Ads | Paid campaigns (Dollar-a-Day, client) | [Your Name] / [Your Local Agency Partner] [Last Name] | Account-level access via Google |
 | Analytics | Google Search Console | SEO monitoring, indexing | [Your Name] | Google account access |
 | Analytics | SPP (Service Provider Pro) | Sales/revenue tracking, weekly reports | [Your Ops Admin] / [Your Automation Lead] | [Your Ops Admin] provisions |
 | Finance | Community Resource Bank | Revenue deposits ([Your Name]'s entity) | [Your Name] | [Your Name] manages directly |
@@ -211,8 +213,8 @@ Every tool we use, who owns it, who has access, and how to get in. If it's not o
 
 #### Google Ads
 - **What it does:** Paid advertising — Dollar-a-Day campaigns, client PMAX campaigns, search campaigns.
-- **Admin:** [Your Name] ([Your Agency] account), [Your Local Agency Partner] Crowson (client accounts like Plumbing Pros, Ardmor's)
-- **Who monitors:** [Your Ads Specialist] de Castro tracks keyword performance, CPC, ad spend, policy violations.
+- **Admin:** [Your Name] ([Your Agency] account), [Your Local Agency Partner] [Last Name] (client accounts like Plumbing Pros, Ardmor's)
+- **Who monitors:** [Your Ads Specialist] [Last Name] tracks keyword performance, CPC, ad spend, policy violations.
 - **Notes:** Ads getting disapproved for Google Ads policy issues (multiple incidents March 2026). [Your Ads Specialist] monitors and reports in EODs. [Your Local Agency Partner] sets up new campaigns and works directly with Google Ads reps.
 
 ---
@@ -243,7 +245,7 @@ Every tool we use, who owns it, who has access, and how to get in. If it's not o
 #### Zelle
 - **What it does:** Peer-to-peer payments for refunds and contractor payments.
 - **Who uses:** [Your Mentor/Advisor] (sends payments), [Your Ops Admin] (coordinates)
-- **Notes:** $1,000 daily sending limit to new accounts. Used for refunds (e.g., $1,494 refund processed via Zelle in March 2026).
+- **Notes:** $1,000 daily sending limit to new accounts. Used for refunds (e.g., [$Amount] refund processed via Zelle in March 2026).
 
 ---
 

@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 description: Playbook for handling escalations at [Your Agency] — unhappy clients, late
   deliverables, refunds, quality issues, and team conflicts

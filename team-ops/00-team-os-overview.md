@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: Team Operating System — Master Overview
 owner: [Your Name]
@@ -112,11 +114,11 @@ This is the engine. Every hire, every process, every system we build should make
 
 These team members operate within the broader [Methodology Partner] ecosystem and contribute to [Your Agency] projects:
 
-- **[Your Local Agency Partner] Crowson**
+- **[Your Local Agency Partner] [Last Name]**
 - **[Your Site Admin] [Last Name]**
 - **[Your Automation Lead] [Last Name]**
 - **[Your Content Monitor] [Last Name]**
-- **[Your Team Member] Goodrich**
+- **[Your Team Member] [Last Name]**
 - **[Your Repurposing Specialist] [Last Name]**
 
 See: [02-team-roster.md](./02-team-roster.md) for full contact info, roles, and availability.
@@ -245,7 +247,7 @@ This Team OS is a system of linked documents. Here's the full map:
 | [09-reporting-templates.md](./09-reporting-templates.md) | Reporting Templates | EOD, MAA, and Sprint report formats |
 | [10-tools-and-access.md](./10-tools-and-access.md) | Tools & Access | Software stack, login procedures, permissions |
 | [06-new-hire-onboarding-sop.md](06-new-hire-onboarding-sop.md) | New Hire Onboarding SOP | Complete onboarding process for any new hire |
-| [07-jackson-onboarding-kit.md](07-jackson-onboarding-kit.md) | [Your Content Specialist] [Last Name] Onboarding Kit | Role-specific onboarding for [Your Content Specialist] |
+| [07-new-hire-onboarding-kit.md](07-new-hire-onboarding-kit.md) | [Your Content Specialist] [Last Name] Onboarding Kit | Role-specific onboarding for [Your Content Specialist] |
 | [11-onboarding-checklist.md](./11-onboarding-checklist.md) | Onboarding Checklist | New team member setup, first-week tasks |
 | [12-sales-playbook.md](./12-sales-playbook.md) | Sales Playbook | How deals get closed |
 | [13-case-study-template.md](./13-case-study-template.md) | Case Study Template | Standard format for Sprint case studies |

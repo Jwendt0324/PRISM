@@ -44,20 +44,20 @@ This SOP defines what [Your Agency Name] sells, how it's priced, who does what, 
 - Open access, no human support
 - Purpose: top of funnel, build trust, demonstrate value
 
-### Tier 2: Certification — $2,500
+### Tier 2: Certification — [$Price]
 - Cohort-based + live Office Hours
 - Parent + student tracks with graded assignments
 - Outcome bar: Core 10 at >=90% QC, 2+ MAAs, SLA >=90%, mentor rating >=4.5 stars
 - Unlocks [Partner Platform] task eligibility (guardrails apply)
-- Payment options: $2,500 PIF / $1,350x2 / $700x4 (admin fee on extended)
+- Payment options: [$Price] PIF / [$Price]x2 / [$Price]x4 (admin fee on extended)
 - Refunds: 7-day cooling off; performance-based grace if no assignments started
 
 ### Tier 3: Agency Incubator (post-cert, optional)
 - Launch-with-one model (parents/family business as first client)
-- PAL (Platform Access License): $300/mo starter for micro-agencies (<5 clients)
+- PAL (Platform Access License): [$Price]/mo starter for micro-agencies (<5 clients)
 - Scale tiers added later
 
-### Tier 4: Knowledge Panel Accelerator — $6,000 DFY
+### Tier 4: Knowledge Panel Accelerator — [$Price] DFY
 - Qualification gate: LSA category, $100k+/mo revenue, 100+ 5-star reviews, willing to film
 - Deliverables: Spotlight Site build, podcast interview + setup, optional expert booklet, editorial features, entity/schema/citations clustering
 - Goal: Make clients the obvious local celebrity in their city
@@ -92,11 +92,11 @@ AI-first updates: Descript workflows, transcript-to-shorts/articles, DARIN-assis
 
 ### Channels
 - Events: DigimarCon regional + World (Las Vegas, Nov 2-5)
-- Webinars: "Fund your $2,500 certification with your first client" (bi-weekly)
-- Podcast: [Your Agency Name] Podcast — educators & local-service leaders
+- Webinars: "Fund your [$Price] certification with your first client" (bi-weekly)
+- Podcast: [Your Podcast] — educators & local-service leaders
 - Proof: University teaching (Johns Hopkins), case studies, testimonials
 - Creative: Parent-first LP, student-first LP, DFY KP one-pager + qualification quiz
-- Paid: $20/day always-on boosts for top clips, geo-targeted by upcoming event cities
+- Paid: [$Price]/day always-on boosts for top clips, geo-targeted by upcoming event cities
 
 ### YouTube Strategy
 - [Your Agency] brand channel: flagship explainers, webinar replays, DFY case studies, cohort promos
@@ -104,7 +104,7 @@ AI-first updates: Descript workflows, transcript-to-shorts/articles, DARIN-assis
 - Cadence: 3-5 shorts/week + 1 long-form/week per channel
 - End cards to Academy, playlists per curriculum module, community posts for AMAs
 
-### Ad Strategy ($20/day test)
+### Ad Strategy ([$Price]/day test)
 - Parent pain → webinar opt-in
 - Student freedom → certification checkout
 - DFY KP credibility → consult booking
@@ -114,14 +114,14 @@ AI-first updates: Descript workflows, transcript-to-shorts/articles, DARIN-assis
 
 > Full financial context and historical data: [[memory-bank/10-financial-context|Financial Context]]
 
-Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY KP/mo @ $6,000
+Assumptions: 2 students pre-paid; +5 new/mo @ [$Price]; +1 PAL/mo @ $300; +1 DFY KP/mo @ [$Price]
 
-- Tuition: 62 x $2,500 = $155,000
-- PAL: $300 x (1+2+...+12) = $23,400
-- DFY Knowledge Panel: 12 x $6,000 = $72,000
-- Gross [Your Agency] revenue (Year 1): ~$250,400
-- YCF rev-share: 20% x $155,000 = $31,000
-- Lean marketing costs: ~$2,000/mo (editor $1,200 + boosts $600 + tools $200)
+- Tuition: 62 x [$Price] = [$Revenue]
+- PAL: [$Price] x (1+2+...+12) = [$Revenue]
+- DFY Knowledge Panel: 12 x [$Price] = [$Revenue]
+- Gross [Your Agency] revenue (Year 1): ~[$Revenue]
+- YCF rev-share: 20% x [$Revenue] = [$Revenue]
+- Lean marketing costs: ~[$Price]/mo (editor [$Price] + boosts [$Price] + tools [$Price])
 
 ## KPIs & Dashboards
 
@@ -144,7 +144,7 @@ Assumptions: 2 students pre-paid; +5 new/mo @ $2,500; +1 PAL/mo @ $300; +1 DFY K
 - "Shitbaggers Rule the World" — [Your Name] solo. Contrarian career/ops companion
 
 ### Podcast
-- [Your Agency Name] Podcast: weekly interviews with educators & local-service leaders
+- [Your Podcast]: weekly interviews with educators & local-service leaders
 - Pull shorts/articles into [Your Agency] channels; syndicate widely
 
 ### Personal Brand Sites

@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 description: Standard onboarding process for every new hire at High Rise
   Influence, from pre-arrival through 60-day evaluation
@@ -297,6 +299,6 @@ _Updated as each onboarding teaches us something new._
 
 - [[sops/templates/team-ops/09-tool-stack-and-access|Tool Stack & Access]]
 - [[sops/templates/team-ops/08-role-scorecards|Role Scorecards]]
-- [[sops/templates/team-ops/07-jackson-onboarding-kit|[Your Content Specialist] Onboarding Kit]]
+- [[sops/templates/team-ops/07-new-hire-onboarding-kit|[Your Content Specialist] Onboarding Kit]]
 - [[memory-bank/05-team-and-roles|Team and Roles]]
 - [[blitzmetrics-canon/08-delegation-framework|Canon: Delegation Framework]]

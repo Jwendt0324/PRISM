@@ -188,14 +188,14 @@ def convert_transcript(transcript_path):
 
     # Auto-detect confidential conversations
     # Confidential signals — use phrases specific enough to avoid false positives
-    # "dennis" alone triggers on every operational conversation mentioning [Your Mentor/Advisor]
+    # A mentor's name alone triggers on every operational conversation mentioning [Your Mentor/Advisor]
     confidential_signals = [
         "power dynamic", "condescending", "mentor relationship",
         "equity split", "compensation dispute", "losing hope",
         "new llc", "separate business", "don't tell",
         "between us", "confidential", "off the record",
-        "not fair", "frustrated with dennis", "upset with dennis",
-        "frustrated with dylan", "upset with dylan",
+        "not fair", "frustrated with mentor", "upset with mentor",
+        "frustrated with partner", "upset with partner",
     ]
     all_text_lower = " ".join(t.lower() for _, t in conversation)
     is_confidential = any(signal in all_text_lower for signal in confidential_signals)

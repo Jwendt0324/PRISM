@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: Project Management SOP — Knowledge Panel Sprint Lifecycle
 owner: [Your Name]

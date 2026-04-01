@@ -57,7 +57,7 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 | Trigger | SOP | Path |
 |---------|-----|------|
 | New hire, onboarding a team member, tool provisioning, Day 1 setup | New Hire Onboarding SOP | team-ops/06-new-hire-onboarding-sop.md |
-| [Your Content Specialist] onboarding, [Your Content Specialist]'s tasks, [Your Content Specialist] success metrics | [Your Content Specialist] [Last Name] Onboarding Kit | team-ops/07-jackson-onboarding-kit.md |
+| [Your Content Specialist] onboarding, [Your Content Specialist]'s tasks, [Your Content Specialist] success metrics | [Your Content Specialist] [Last Name] Onboarding Kit | team-ops/07-new-hire-onboarding-kit.md |
 | KP Sprint project management, Sprint timeline, red/amber/green status | KP Sprint Project Management | team-ops/10-project-management-sop.md |
 | Client communication, Basecamp updates, client-facing messages | Client Communication | team-ops/11-client-communication-sop.md |
 | Escalation, client unhappy, late deliverable, team unresponsive, scope creep, quality issue | Escalation Playbook | team-ops/12-escalation-playbook.md |

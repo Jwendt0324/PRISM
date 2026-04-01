@@ -6,7 +6,7 @@ Copy everything below the line into Claude Code and let it run overnight. This i
 
 ---
 
-You are performing a complete overhaul of [Your Name]'s Claude PRISM. This run addresses everything identified in the honest assessment, the SOP audit report, and [Your Mentor/Advisor]'s feedback — AND shifts the system from infrastructure-building to revenue execution.
+You are performing a complete overhaul of {{USER_NAME}}'s Claude PRISM. This run addresses everything identified in the honest assessment, the SOP audit report, and [Your Mentor/Advisor]'s feedback — AND shifts the system from infrastructure-building to revenue execution.
 
 **CRITICAL: Only scan the Gmail account [your-email@your-agency.com] for any Gmail operations.**
 
@@ -93,7 +93,7 @@ Read ALL of these and compress into a single file under 5,000 words:
 - ~/Documents/Claude/PRISM/INDEX.md
 
 The new CONTEXT.md must include:
-- Section 1: Who [Your Name] Is (200 words)
+- Section 1: Who {{USER_NAME}} Is (200 words)
 - Section 2: The Business — [Your Agency] + [Methodology Partner] (300 words)
 - Section 3: The 9 Triangles (200 words — compressed summary of all 9)
 - Section 4: Content Factory 6 Stages (150 words)
@@ -110,42 +110,42 @@ Save to ~/Documents/Claude/PRISM/CONTEXT.md (overwrite existing)
 
 ---
 
-# PHASE 3: JACK'S PERSONAL BRAND CONTENT (2-3 hours)
+# PHASE 3: [YOUR NAME]'S PERSONAL BRAND CONTENT (2-3 hours)
 
-The honest assessment said: "378 articles for clients. ~15-20 for [Your Name]. The Content Factory isn't being applied to the person who needs it most."
+The honest assessment said: "378 articles for clients. ~15-20 for {{USER_NAME}}. The Content Factory isn't being applied to the person who needs it most."
 
-Fix this NOW. Apply the Content Factory to [Your Name]'s personal brand.
+Fix this NOW. Apply the Content Factory to {{USER_NAME}}'s personal brand.
 
-## Step 3A: Audit [Your Name]'s Current Content
+## Step 3A: Audit {{USER_NAME}}'s Current Content
 
-Search the web for [Your Name]'s existing published content:
-- Search: "[Your Name]" site:[your-agency-domain.com]
-- Search: "[Your Name]" site:[methodology-partner.com]
-- Search: "[Your Name]" site:[advisor-website.com]
-- Search: "[Your Name]" LinkedIn article OR post
-- Search: "[Your Name]" podcast OR interview
-- Search: "[Your Name]" SlideShare OR presentation
+Search the web for {{USER_NAME}}'s existing published content:
+- Search: "{{USER_NAME}}" site:[your-agency-domain.com]
+- Search: "{{USER_NAME}}" site:[methodology-partner.com]
+- Search: "{{USER_NAME}}" site:[advisor-website.com]
+- Search: "{{USER_NAME}}" LinkedIn article OR post
+- Search: "{{USER_NAME}}" podcast OR interview
+- Search: "{{USER_NAME}}" SlideShare OR presentation
 
 Create ~/Documents/Claude/PRISM/content-pipeline/[your-username]-content-audit.md with:
-- Everything published about or by [Your Name]
+- Everything published about or by {{USER_NAME}}
 - What topics are covered vs missing
 - What authority signals exist vs missing
 - Gap analysis against his media kit (from the [Your Agency] Standalone Plan)
 
-## Step 3B: Build [Your Name]'s Topic Wheel
+## Step 3B: Build {{USER_NAME}}'s Topic Wheel
 
 Using the canonical Topic Wheel methodology (blitzmetrics-canon/06-topic-wheel.md):
 
 Create ~/Documents/Claude/PRISM/content-pipeline/[your-username]-topic-wheel.md:
 
-**WHY (outer ring):** [Your Name]'s personal stories
-- Origin story (Nashville, BetterWealth, [Your Former Mentor] Guilliams)
+**WHY (outer ring):** {{USER_NAME}}'s personal stories
+- Origin story (Nashville, [Partner Website], [Your Former Mentor] [Last Name])
 - Military service (Army National Guard, aviation intelligence)
 - Why he skipped college
 - Why he started [Your Agency]
 - Co-created stories with [Your Mentor/Advisor]
 
-**HOW (middle ring):** [Your Name]'s expertise clusters
+**HOW (middle ring):** {{USER_NAME}}'s expertise clusters
 - Knowledge Panels for founders
 - Content Factory implementation
 - AI-powered marketing operations
@@ -159,16 +159,16 @@ Create ~/Documents/Claude/PRISM/content-pipeline/[your-username]-topic-wheel.md:
 - AI Apprentice Program
 - Agency Incubator / PAL
 
-## Step 3C: Write 20 Articles for [Your Name]'s Personal Brand
+## Step 3C: Write 20 Articles for {{USER_NAME}}'s Personal Brand
 
-Using the Content Repurposing Pipeline SOP and the Content Engine v5 principles, write 20 articles for [Your Name]'s personal brand. These should be published on [your-agency-domain.com] and/or [your-username].com.
+Using the Content Repurposing Pipeline SOP and the Content Engine v5 principles, write 20 articles for {{USER_NAME}}'s personal brand. These should be published on [your-agency-domain.com] and/or [your-username].com.
 
 **Source material:** Read these files for raw content:
-- ~/Documents/Claude/PRISM/memory-bank/00-[your-username].md ([Your Name]'s full profile)
+- ~/Documents/Claude/PRISM/memory-bank/00-[your-username].md ({{USER_NAME}}'s full profile)
 - ~/Documents/Claude/PRISM/memory-bank/01-hri-overview.md ([Your Agency] story)
 - ~/Documents/Claude/PRISM/sops/business-ops/hri-offer-ladder-and-gtm.md (offers and strategy)
 - ~/Documents/Claude/PRISM/sops/client-work/knowledge-panel-sprint.md (KP Sprint details)
-- Any transcripts in ~/passive_income_transcripts/ or ~/Documents/Claude/PRISM/content-audit/drafts/ that feature [Your Name]
+- Any transcripts in ~/passive_income_transcripts/ or ~/Documents/Claude/PRISM/content-audit/drafts/ that feature {{USER_NAME}}
 
 **Article topics (map to Topic Wheel):**
 
@@ -176,7 +176,7 @@ WHY articles (origin/story):
 1. Why I Skipped College and Flew to Nashville at 19
 2. What the Army National Guard Taught Me About Building Systems
 3. How Meeting [Your Mentor/Advisor] Changed Everything
-4. From BetterWealth to [Your Agency Name]: The Full Story
+4. From [Partner Website] to {{AGENCY_NAME}}: The Full Story
 5. Why I Believe the Apprenticeship Model Beats College
 
 HOW articles (expertise):
@@ -194,23 +194,23 @@ HOW articles (expertise):
 WHAT articles (offers/conversion):
 16. What the AI Apprentice Program Actually Teaches
 17. Inside the Knowledge Panel Sprint: $6,000, 30 Days, Fixed Scope
-18. Why [Your Agency Name] Is Not a Marketing Agency
+18. Why {{AGENCY_NAME}} Is Not a Marketing Agency
 19. The 6-Month Influence Blueprint: How We Build Authority
 20. How Parents Can Fund Their Child's $2,500 Certification With Their First Client
 
 **Article requirements:**
 - Follow the Content Engine v5 rules: banned words, banned patterns, burstiness, randomized structures
-- Write in [Your Name]'s first-person voice (confident, real, grounded, young but serious)
+- Write in {{USER_NAME}}'s first-person voice (confident, real, grounded, young but serious)
 - 800-1,200 words each
 - Include real specifics from the memory bank (names, dates, numbers, stories)
 - Run each through the [Methodology Partner] 18-step QA gate
-- Include JSON-LD Person schema for [Your Name]
+- Include JSON-LD Person schema for {{USER_NAME}}
 - Include internal link placeholders
 - Save each to ~/Documents/Claude/PRISM/content-pipeline/[your-username]-articles/
 
-## Step 3D: Write [Your Name]'s "About" Authority Page
+## Step 3D: Write {{USER_NAME}}'s "About" Authority Page
 
-Create a comprehensive "About [Your Name]" page designed for [your-username].com:
+Create a comprehensive "About {{USER_NAME}}" page designed for [your-username].com:
 - Save to ~/Documents/Claude/PRISM/content-pipeline/[your-username]-about-page.md
 - Entity-first architecture with schema markup
 - Bio (50/120/300 word versions from the Standalone Plan)
@@ -231,21 +231,21 @@ Create a comprehensive "About [Your Name]" page designed for [your-username].com
 
 Read the memory bank for context on the KP book:
 - ~/Documents/Claude/PRISM/memory-bank/11-content-assets.md
-- The [Your Agency] Standalone Plan mentions: "Ultimate Guide to Google Knowledge Panels — book + workbook (co-authors: [Your Mentor/Advisor], [Your Ops Partner] [Last Name], [Your Name])"
+- The [Your Agency] Standalone Plan mentions: "Ultimate Guide to Google Knowledge Panels — book + workbook (co-authors: [Your Mentor/Advisor], [Your Ops Partner] [Last Name], {{USER_NAME}})"
 
 Create ~/Documents/Claude/PRISM/content-pipeline/kp-book-outline.md:
 - Working title: "Ultimate Guide to Google Knowledge Panels"
-- Co-authors: [Your Mentor/Advisor], [Your Ops Partner] [Last Name], [Your Name]
+- Co-authors: [Your Mentor/Advisor], [Your Ops Partner] [Last Name], {{USER_NAME}}
 - Target audience: 7+ figure founders and local service business owners
 - 12-15 chapter outline with key topics per chapter
-- Which chapters [Your Name] can write vs [Your Mentor/Advisor] vs [Your Ops Partner]
+- Which chapters {{USER_NAME}} can write vs [Your Mentor/Advisor] vs [Your Ops Partner]
 - Content that already exists (from articles, SOPs, podcast transcripts) that can be repurposed into chapters
 - Timeline estimate
 - Publishing path (Amazon KDP per the Standalone Plan)
 
 ## Step 4B: Draft Chapter 1
 
-Write a complete first draft of Chapter 1 based on the outline. This should be the hook chapter — why knowledge panels matter, who they're for, and what the book will teach. Use [Your Name]'s voice. Pull real examples from client work documented in the memory bank.
+Write a complete first draft of Chapter 1 based on the outline. This should be the hook chapter — why knowledge panels matter, who they're for, and what the book will teach. Use {{USER_NAME}}'s voice. Pull real examples from client work documented in the memory bank.
 
 Save to ~/Documents/Claude/PRISM/content-pipeline/kp-book-chapter-1-draft.md
 
@@ -257,7 +257,7 @@ Save to ~/Documents/Claude/PRISM/content-pipeline/kp-book-chapter-1-draft.md
 
 Create ~/Documents/Claude/PRISM/sops/business-ops/pl-tracking-setup.md:
 - What needs to be tracked: revenue by client, revenue by product (Sprint, Certification, PAL), expenses, [Methodology Partner] revenue share (70%), YCF infrastructure share (20%), team comp
-- Tools needed: Stripe dashboard ([Your Name] has Stripe), Google Sheets for monthly P&L
+- Tools needed: Stripe dashboard ({{USER_NAME}} has Stripe), Google Sheets for monthly P&L
 - Template: monthly P&L spreadsheet structure
 - Process: who enters data, when, how it gets reported
 - KPIs: gross revenue, net margin, client acquisition cost, revenue per client
@@ -265,7 +265,7 @@ Create ~/Documents/Claude/PRISM/sops/business-ops/pl-tracking-setup.md:
 
 Also create a Google Sheets P&L template:
 Save to ~/Documents/Claude/PRISM/content-pipeline/hri-pl-template.csv with columns:
-Month, Gross Revenue, Revenue by Product (Sprint/Cert/PAL), [Methodology Partner] Share (70%), YCF Share (20%), Team Comp, Tools/Software, Marketing Spend, Net to [Your Agency], [Your Name] Take-Home
+Month, Gross Revenue, Revenue by Product (Sprint/Cert/PAL), [Methodology Partner] Share (70%), YCF Share (20%), Team Comp, Tools/Software, Marketing Spend, Net to [Your Agency], {{USER_NAME}} Take-Home
 
 ---
 
@@ -291,12 +291,12 @@ Save to ~/Documents/Claude/PRISM/content-pipeline/client-deliverables-prep.md
 ### Update INDEX.md
 - Update dates on all rewritten SOPs
 - Add any new SOPs created
-- Add content pipeline entries for [Your Name]'s articles and KP book
+- Add content pipeline entries for {{USER_NAME}}'s articles and KP book
 
 ### Update CLAUDE.md
 - Ensure canon compliance directive is present
 - Add reference to the 18-step QA gate as mandatory for all articles
-- Add [Your Name]'s Topic Wheel as reference for content decisions
+- Add {{USER_NAME}}'s Topic Wheel as reference for content decisions
 
 ### Regenerate All .docx Copies
 ```bash
@@ -325,7 +325,7 @@ Create ~/Documents/Claude/PRISM/content-pipeline/meta-article-PRISM-overhaul.md:
 - What did the agent handle autonomously?
 - What requires human input before it's "done"?
 - Effort and cost comparison (agent time vs human time)
-- Guidelines compliance scorecard for the 20 [Your Name] articles
+- Guidelines compliance scorecard for the 20 {{USER_NAME}} articles
 - What the agent cannot do (honest limitations)
 
 This meta-article itself should be publishable on [methodology-partner.com] or [your-agency-domain.com] — it demonstrates the Content Factory in action.
@@ -336,7 +336,7 @@ This meta-article itself should be publishable on [methodology-partner.com] or [
 
 - This is the biggest run the PRISM has ever done. Be thorough.
 - The [Methodology Partner] canon is the SOURCE OF TRUTH for all methodology.
-- [Your Name]'s 20 articles are the highest-priority output — these directly generate authority and inbound leads.
+- {{USER_NAME}}'s 20 articles are the highest-priority output — these directly generate authority and inbound leads.
 - Every article must pass the [Methodology Partner] 18-step QA gate.
 - The P&L prep and client deliverables are the second priority — [Your Mentor/Advisor] is watching.
 - When rewriting SOPs, preserve valid learnings. Only change what contradicts the canon.

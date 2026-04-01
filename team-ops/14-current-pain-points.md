@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 description: Documented friction points and systemic issues at [Your Agency] with root
   cause analysis and fixes
@@ -80,9 +82,9 @@ Last updated: 2026-03-18
 
 ---
 
-## 7. Refund Request (Ed Strachar)
+## 7. Refund Request ([Client Name])
 
-**What happened:** Ed Strachar emailed asking about a $1,500 refund. [Your Ops Admin] looped the team.
+**What happened:** [Client Name] emailed asking about a [$Amount] refund. [Your Ops Admin] looped the team.
 
 **Root cause:** The specifics vary, but the bigger issue is that we need clear, documented refund policy enforcement so these don't become ad hoc decisions every time.
 

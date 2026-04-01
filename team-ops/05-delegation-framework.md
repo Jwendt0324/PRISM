@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: Delegation Framework — What [Your Name] Touches vs. What [Your Name] Hands Off
 owner: [Your Name]

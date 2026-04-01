@@ -6,7 +6,7 @@
 
 ## Prompt
 
-You are generating [Your Name]'s Weekly Briefing for the Claude PRISM. This briefing gives [Your Name] a clear picture of what happened, what's coming, and what needs attention — all in one read.
+You are generating {{USER_NAME}}'s Weekly Briefing for the Claude PRISM. This briefing gives {{USER_NAME}} a clear picture of what happened, what's coming, and what needs attention — all in one read.
 
 **IMPORTANT:** This task may run in unattended mode without Gmail/Calendar MCP access. Work with whatever tools are available. If Gmail is not accessible, generate the briefing from local data and note the limitation.
 
@@ -71,7 +71,7 @@ Output the briefing in this format:
 [Any directives, feedback, or strategic signals from [Your Mentor/Advisor] in the last 7 days. [Your Mentor/Advisor]'s messages often contain important strategy shifts disguised as casual feedback.]
 
 ## Decisions Needed
-[Anything that requires [Your Name] to make a call this week]
+[Anything that requires {{USER_NAME}} to make a call this week]
 
 ## Content Pipeline Status
 - **Ready to publish:** [list pieces]
@@ -82,8 +82,8 @@ Output the briefing in this format:
 ### Step 5: Save the Briefing
 Save to `~/Documents/Claude/PRISM/logs/YYYY-MM/weekly-briefing-YYYYMMDD.md`
 
-### Step 6: Email the Briefing to [Your Name]
-After saving, email the briefing to [Your Name] using this Bash command (uses Apple Mail — no Gmail MCP needed):
+### Step 6: Email the Briefing to {{USER_NAME}}
+After saving, email the briefing to {{USER_NAME}} using this Bash command (uses Apple Mail — no Gmail MCP needed):
 
 ```bash
 BRIEFING_FILE="$HOME/Documents/Claude/PRISM/logs/$(date +%Y-%m)/weekly-briefing-$(date +%Y%m%d).md"

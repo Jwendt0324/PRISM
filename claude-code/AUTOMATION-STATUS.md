@@ -33,7 +33,7 @@ Last verified: 2026-03-30 (full audit + bug fixes)
 | Script | Status | Notes |
 |---|---|---|
 | `parse-session.py` | **WORKING** | Fixed: eliminated double call to enrich_from_actions_log. |
-| `export-conversation.py` | **WORKING** | Fixed: confidential detection no longer false-positives on "dennis" alone. |
+| `export-conversation.py` | **WORKING** | Fixed: confidential detection no longer false-positives on "[advisor-name]" alone. |
 | `generate-eod-report.py` | **WORKING** | Fixed: files_touched now checks both "target" and "file" keys. Fixed: learnings check now filters by target date (was showing entire month). |
 | `generate-weekly-report.py` | **WORKING** | Minor: has dead code in sessions_by_day counter, import inside function. Low priority. |
 | `convert-all-to-docx.py` | **WORKING** | Fixed: table cell font size no longer corrupts document-wide style. |
@@ -70,7 +70,7 @@ Smart reminders also fire: Monday → `/mission`, Friday → `/review`, Mon/Wed/
 | Content Pipeline Runner | [[claude-code/run-content-pipeline|run-content-pipeline.md]] | **REPLACED** by auto-report | N/A |
 | Google Drive Sync | `scripts/convert-all-to-docx.py` | **NOT SCHEDULED** | Never |
 | Basecamp Scan | No prompt file | **NOT IMPLEMENTED** | Never |
-| File Organizer | launchd (`com.user.organize-files`) | **LOADED, UNVERIFIED** | Unknown |
+| File Organizer | launchd (`com.yourname.organize-files`) | **LOADED, UNVERIFIED** | Unknown |
 
 ---
 
@@ -93,7 +93,7 @@ Smart reminders also fire: Monday → `/mission`, Friday → `/review`, Mon/Wed/
 12. **post-compact.sh** — Used nonexistent CLAUDE_SESSION_ID env var, session always "unknown". **FIXED.**
 
 ### Medium
-13. **export-conversation.py** — "dennis" keyword over-triggered CONFIDENTIAL classification. **FIXED.**
+13. **export-conversation.py** — "[advisor-name]" keyword over-triggered CONFIDENTIAL classification. **FIXED.**
 14. **post-tool-backup.sh** — Deleted old backups even if new backup copy failed. **FIXED.**
 15. **notify-telegram.sh** — curl -d didn't URL-encode, special chars broke POST. **FIXED.**
 16. **session-end.sh** — No null check on INPUT before piping to Python parser. **FIXED.**

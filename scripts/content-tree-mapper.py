@@ -113,10 +113,10 @@ def find_content_files(base_dir=None, client_filter=None):
                 lower_path = fpath.lower()
                 client = "Unknown"
                 markers = {
-                    "acoustic": "[Client — Local Retail Business]",
-                    "discover-strength": "[Client — Fitness Brand]",
+                    "[client-name-1]": "[Client — Local Retail Business]",
+                    "[client-name-2]": "[Client — Fitness Brand]",
                     "[client-id]": "[Client — Appliance Repair]",
-                    "sloan": "[Client — Appliance Repair]",
+                    "[client-name-3]": "[Client — Appliance Repair]",
                     "ryan": "[Client Name]",
                     "blitz": "[Methodology Partner]",
                     "hri": "[Your Agency]",

@@ -264,7 +264,7 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 
 | File | Type | Path | Description |
 |------|------|------|-------------|
-| Jake_Dennis_Asset-Library.gsheet | GSHEET | `/` | [Client Name] asset library |
+| [Client]_[Advisor]_Asset-Library.gsheet | GSHEET | `/` | [Client Name] asset library |
 | Jenene_Cherney_Asset-Library.gsheet | GSHEET | `/` | [Client Name] asset library |
 | [Methodology Partner] Asset Tracker.gsheet | GSHEET | `[Methodology Partner] Assets & Processes/` | [Methodology Partner] asset tracker |
 
@@ -377,7 +377,7 @@ To access: `https://docs.google.com/document/d/<ID>/edit` (swap `document` for `
 ### Client Personal Brand Managers ([Methodology Partner] Clients & Partners/Client PBM'S)
 
 Over 20 individual PBM documents for clients including:
-- Brad Lea, Ted McGrath, Susan Sly, [Your Former Mentor] Guilliams, George Leith, Jordan Paris, Glenn Vo, Barry Habib, Jeff Hunter, Phil Randazzo, Mitch Miller, Eric Mitchell, David Dinsmore, Matthew Januszek, Chris Quiocho, Balazs Kardos, Roxanne Ross, [Client Team Contact] Young, Mike Arce, Mark Wagner, Paul Halme, [Your Team Member] Herman, Welton Hong
+- [Industry Speaker], [Industry Speaker], [Industry Speaker], [Your Former Mentor] [Last Name], [Industry Speaker], [Industry Speaker], Glenn Vo, [Industry Speaker], Jeff Hunter, Phil Randazzo, Mitch Miller, Eric Mitchell, David Dinsmore, Matthew Januszek, Chris Quiocho, Balazs Kardos, Roxanne Ross, [Client Team Contact] Young, Mike Arce, Mark Wagner, Paul Halme, [Your Team Member] Herman, Welton Hong
 
 ---
 

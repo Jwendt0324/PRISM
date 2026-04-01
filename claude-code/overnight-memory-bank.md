@@ -6,9 +6,9 @@ Copy everything below the line into Claude Code and let it run overnight.
 
 ---
 
-You are building a comprehensive Shared Memory Bank for [Your Name]'s Claude PRISM. This is the single source of truth about [Your Name], his businesses, his team, his clients, his relationships, and his history. Every future Claude session (Code, Cowork, Chat) should be able to read this memory bank and immediately have full context without [Your Name] re-explaining anything.
+You are building a comprehensive Shared Memory Bank for {{USER_NAME}}'s Claude PRISM. This is the single source of truth about {{USER_NAME}}, his businesses, his team, his clients, his relationships, and his history. Every future Claude session (Code, Cowork, Chat) should be able to read this memory bank and immediately have full context without {{USER_NAME}} re-explaining anything.
 
-You also have access to [Your Name]'s Gmail via MCP tools. You will scan his ENTIRE inbox to extract context, relationships, deals, patterns, and institutional knowledge.
+You also have access to {{USER_NAME}}'s Gmail via MCP tools. You will scan his ENTIRE inbox to extract context, relationships, deals, patterns, and institutional knowledge.
 
 **CRITICAL: Only scan the Gmail account [your-email@your-agency.com]. Do NOT access, read, or search any other Gmail account. If the MCP connects to multiple accounts, ensure every gmail_search_messages and gmail_read_message call is scoped to [your-email@your-agency.com] only. Verify this before starting the scan.**
 
@@ -20,7 +20,7 @@ Read everything in the PRISM first so you don't duplicate what already exists:
 - All files in ~/Documents/Claude/PRISM/skills/
 - ~/Documents/Claude/PRISM/claude-code/CLAUDE.md
 
-Also read the operating documents on [Your Name]'s Desktop for business context:
+Also read the operating documents on {{USER_NAME}}'s Desktop for business context:
 - ~/Desktop/Operating Documents/ (all files)
 - ~/Desktop/PDFs/ (all files)
 
@@ -29,15 +29,15 @@ Also read the operating documents on [Your Name]'s Desktop for business context:
 Create this directory and file structure:
 ```
 ~/Documents/Claude/PRISM/memory-bank/
-├── 00-[your-username].md              ← Everything about [Your Name] personally
-├── 01-hri-overview.md            ← [Your Agency Name]: mission, structure, history
+├── 00-[your-username].md              ← Everything about {{USER_NAME}} personally
+├── 01-hri-overview.md            ← {{AGENCY_NAME}}: mission, structure, history
 ├── 02-blitzmetrics-overview.md   ← [Methodology Partner]: relationship, methodology, shared systems
-├── 03-team-directory.md          ← Every person, their role, comp, relationship to [Your Name]
+├── 03-team-directory.md          ← Every person, their role, comp, relationship to {{USER_NAME}}
 ├── 04-client-directory.md        ← Every client past and present, status, history
 ├── 05-vendor-and-partner-map.md  ← Tools, platforms, service providers, partnerships
 ├── 06-deal-history.md            ← Every deal/engagement: who, what, when, outcome
 ├── 07-relationship-map.md        ← Key relationships, how they started, current status
-├── 08-communication-patterns.md  ← How [Your Name] communicates, email habits, tone, preferences
+├── 08-communication-patterns.md  ← How {{USER_NAME}} communicates, email habits, tone, preferences
 ├── 09-project-history.md         ← Major projects, timelines, outcomes, lessons
 ├── 10-financial-context.md       ← Revenue, pricing, comp structures, projections (from docs)
 ├── 11-content-assets.md          ← Published content, speaking, books, podcasts, authority signals
@@ -48,16 +48,16 @@ Create this directory and file structure:
 
 ## Step 2: Gmail Deep Scan
 
-Use the Gmail MCP tools (gmail_search_messages, gmail_read_message, gmail_read_thread) to scan [Your Name]'s entire inbox. This is the most important and time-consuming phase.
+Use the Gmail MCP tools (gmail_search_messages, gmail_read_message, gmail_read_thread) to scan {{USER_NAME}}'s entire inbox. This is the most important and time-consuming phase.
 
 ### Scan Strategy (work through these searches systematically):
 
 **Business Relationships:**
-- Search: "from:dennis" OR "to:dennis" — Map the full [Your Mentor/Advisor] relationship, key decisions, project discussions
-- Search: "from:dylan" OR "to:dylan" — [Your Ops Partner] [Last Name] interactions, platform work, equity discussions
-- Search: "from:sam" OR "to:sam" — [Your AgentBuilder Partner] McLeod, delivery work, PM discussions
-- Search: "from:muzamil" OR "to:muzamil" — Ops/finance discussions
-- Search: "from:caleb" OR "to:caleb" — [Your Former Mentor] Guilliams / BetterWealth relationship
+- Search: "from:[advisor-name]" OR "to:[advisor-name]" — Map the full [Your Mentor/Advisor] relationship, key decisions, project discussions
+- Search: "from:[partner-name]" OR "to:[partner-name]" — [Your Ops Partner] [Last Name] interactions, platform work, equity discussions
+- Search: "from:[agent-partner-name]" OR "to:[agent-partner-name]" — [Your AgentBuilder Partner] McLeod, delivery work, PM discussions
+- Search: "from:[admin-name]" OR "to:[admin-name]" — Ops/finance discussions
+- Search: "from:[contact-name]" OR "to:[contact-name]" — [Your Former Mentor] [Last Name] / [partner-website] relationship
 
 **Clients & Deals:**
 - Search: "knowledge panel" — All KP Sprint discussions, client communications
@@ -99,7 +99,7 @@ Use the Gmail MCP tools (gmail_search_messages, gmail_read_message, gmail_read_t
 **Personal Context:**
 - Search: "army" OR "guard" OR "military" OR "drill" — Military service context
 - Search: "nashville" OR "minnesota" — Location context
-- Search: "betterwealth" OR "caleb" — Origin story and early career
+- Search: "[partner-website]" OR "[contact-name]" — Origin story and early career
 
 ### For each search:
 1. Use gmail_search_messages with maxResults=50 to get the messages
@@ -118,8 +118,8 @@ Use the Gmail MCP tools (gmail_search_messages, gmail_read_message, gmail_read_t
 ## Step 3: Build Each Memory File
 
 ### 00-[your-username].md
-Compile everything about [Your Name]:
-- Full background (Nashville move, BetterWealth, military service, [Your Agency] founding)
+Compile everything about {{USER_NAME}}:
+- Full background (Nashville move, [partner-website], military service, [Your Agency] founding)
 - Communication style and preferences
 - Strengths and focus areas (content + community per advisor note)
 - Current priorities and challenges
@@ -149,7 +149,7 @@ For EVERY person found in emails and documents:
 - Role and title
 - Compensation structure (if known from docs)
 - Email address
-- Relationship to [Your Name] (how they met, current dynamic)
+- Relationship to {{USER_NAME}} (how they met, current dynamic)
 - Key contributions
 - Communication style/preferences (observed from emails)
 - Current status (active, inactive, paused)
@@ -166,7 +166,7 @@ For EVERY client found in emails:
 - Any issues or notable interactions
 
 ### 05-vendor-and-partner-map.md
-- Every tool, platform, and service [Your Name]/[Your Agency] uses
+- Every tool, platform, and service {{USER_NAME}}/[Your Agency] uses
 - Every partner agency or referral relationship
 - Every contractor or freelancer
 - Login details and account ownership (who owns what)
@@ -178,14 +178,14 @@ For EVERY client found in emails:
 - Lessons learned
 
 ### 07-relationship-map.md
-- [Your Name]'s key relationships ranked by importance
+- {{USER_NAME}}'s key relationships ranked by importance
 - How each relationship started
 - Current status and health
 - What each person provides/receives
 - Any relationship dynamics to be aware of
 
 ### 08-communication-patterns.md
-- How [Your Name] typically communicates (email tone, response time, preferences)
+- How {{USER_NAME}} typically communicates (email tone, response time, preferences)
 - Common phrases and language patterns
 - How he handles conflict, negotiation, follow-ups
 - Email signature and formatting habits
@@ -215,13 +215,13 @@ For EVERY client found in emails:
 - Pending decisions that need to be made
 - Opportunities identified but not yet pursued
 - Risks or challenges on the horizon
-- What [Your Mentor/Advisor]/team are pushing for vs where [Your Name] is focused
+- What [Your Mentor/Advisor]/team are pushing for vs where {{USER_NAME}} is focused
 
 ### 13-gmail-insights.md
 - Key patterns discovered in the inbox
 - Important threads that are still open/unresolved
 - Recurring topics that come up
-- People [Your Name] emails most frequently
+- People {{USER_NAME}} emails most frequently
 - Time periods of high vs low activity
 - Any action items that appear to be dropped or forgotten
 
@@ -259,7 +259,7 @@ Save recommendations to ~/Documents/Claude/PRISM/memory-bank/sop-recommendations
 - Every file should be self-contained — someone reading just that file should get the full picture of its topic.
 - Cross-reference between files where relevant (e.g., "See 03-team-directory.md for [Your AgentBuilder Partner]'s full profile")
 - If you hit Gmail rate limits, pause briefly and continue. Don't skip sections.
-- The memory bank should make any future Claude session feel like it's been working with [Your Name] for months, not minutes.
+- The memory bank should make any future Claude session feel like it's been working with {{USER_NAME}} for months, not minutes.
 
 ---
 

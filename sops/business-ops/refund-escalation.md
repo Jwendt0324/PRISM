@@ -61,8 +61,8 @@ Ensure every refund request is handled quickly, documented properly, and analyze
 - [ ] Root cause documented and process improvement identified
 
 ## Common Pitfalls
-- **Delay kills trust.** Ed Strachar had to ask "what happened to my refund?" — that should never happen. Acknowledge immediately, even if you can't process immediately.
-- **Insufficient account balance.** [Partner Platform] had no money when the Ed Strachar refund was needed. [Your Mentor/Advisor] personally Zelle'd $1,494. Always check the balance **before** promising a timeline.
+- **Delay kills trust.** [Client Name] had to ask "what happened to my refund?" — that should never happen. Acknowledge immediately, even if you can't process immediately.
+- **Insufficient account balance.** [Partner Platform] had no money when the [Client Name] refund was needed. [Your Mentor/Advisor] personally Zelle'd [$Amount]. Always check the balance **before** promising a timeline.
 - **SPP/Stripe disconnect.** Transactions sometimes don't sync between SPP and Stripe. Check both systems to get the full picture.
 - **Not offering service recovery.** A refund is a failure. Offering to deliver the service anyway turns a negative into a potential save. Always offer.
 - **Forgetting to log it as an expense.** Every refund must appear in the monthly P&L report (see `pl-reporting.md`).
@@ -76,7 +76,7 @@ Ensure every refund request is handled quickly, documented properly, and analyze
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- 2026-03-18: SOP created based on Ed Strachar $1,494 refund incident. Key lesson: ad hoc handling creates confusion and delays. Formalize immediately.
+- 2026-03-18: SOP created based on [Client Name] [$Amount] refund incident. Key lesson: ad hoc handling creates confusion and delays. Formalize immediately.
 
 ---
 

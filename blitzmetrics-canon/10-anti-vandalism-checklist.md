@@ -80,7 +80,7 @@ When updating SOPs or processes:
 ### Rule 10: When in Doubt, Flag for Human Review
 - If unsure whether something contradicts the canon: FLAG IT
 - If unsure whether content duplicates existing material: CHECK FIRST
-- If unsure whether a process change is safe: ASK DENNIS
+- If unsure whether a process change is safe: ASK [YOUR MENTOR/ADVISOR]
 - The cost of pausing to verify is low. The cost of vandalism is high.
 
 ---

@@ -136,8 +136,8 @@ TAB_TITLE=""
 case "$CWD" in
     */PRISM*|*/PRISM*)    TAB_TITLE="PRISM" ;;
     */parts-agent*|*/parts_agent*) TAB_TITLE="Parts Agent" ;;
-    */acoustic*|*/Acoustic*)     TAB_TITLE="[Client — Local Retail Business]" ;;
-    */[client-id]*|*/[Client-ID]*|*/sloan*)      TAB_TITLE="[Client — Appliance Repair]" ;;
+    */[client-name-1]*|*/[Client-Name-1]*)     TAB_TITLE="[Client — Local Retail Business]" ;;
+    */[client-id]*|*/[Client-ID]*|*/[client-name-3]*)      TAB_TITLE="[Client — Appliance Repair]" ;;
     */hri*|*/high-rise*|*/highrise*) TAB_TITLE="[Your Agency]" ;;
     *)
         # Use the last 1-2 directory components as the title

@@ -2,7 +2,7 @@
 
 **Trigger:** Say "run the weekly review" or "Friday retrospective"
 **Duration:** 15-30 minutes
-**When:** Fridays (or whenever [Your Name] wants to review the week)
+**When:** Fridays (or whenever {{USER_NAME}} wants to review the week)
 
 This is the master workflow that combines everything into one session. It reads all conversations from the week, extracts everything important, generates the MAA report, updates SOPs, and produces a comprehensive weekly review. Nothing gets deleted — everything is archived and referenced.
 
@@ -28,7 +28,7 @@ Read all of these in parallel:
 
 **This week's conversations (THE MAIN SOURCE):**
 - Read every file in `~/Documents/Claude/PRISM/logs/conversations/YYYY-MM/` with a modification date in the last 7 days
-- These are the full readable conversations between [Your Name] and Claude
+- These are the full readable conversations between {{USER_NAME}} and Claude
 - Read ALL of them — do not skip any, do not skim
 
 **This week's session logs:**
@@ -56,21 +56,21 @@ Before extracting anything, classify each conversation into one of two categorie
 
 **OPERATIONAL** — Technical work, client deliverables, tool building, SOP creation, content production, system improvements. These are safe to reference in SOPs, memory bank, and shared files.
 
-**CONFIDENTIAL** — Personal strategy discussions, relationship dynamics ([Your Mentor/Advisor], partners, mentors), financial negotiations, equity/compensation discussions, emotional processing, business positioning that [Your Name] wouldn't want visible to team members or partners.
+**CONFIDENTIAL** — Personal strategy discussions, relationship dynamics ([Your Mentor/Advisor], partners, mentors), financial negotiations, equity/compensation discussions, emotional processing, business positioning that {{USER_NAME}} wouldn't want visible to team members or partners.
 
 **How to identify CONFIDENTIAL conversations:**
 - Discusses interpersonal dynamics with [Your Mentor/Advisor], [Your Ops Partner], or other partners by name
 - Contains financial analysis of the [Your Agency]/[Methodology Partner] relationship or power dynamics
-- Discusses [Your Name]'s personal strategy for independence, separation, or leverage
+- Discusses {{USER_NAME}}'s personal strategy for independence, separation, or leverage
 - Contains candid assessments of other people's behavior or motivations
 - Discusses equity splits, compensation negotiations, or deal structures
-- [Your Name] explicitly says something is private, off the record, or confidential
+- {{USER_NAME}} explicitly says something is private, off the record, or confidential
 - Contains draft emails or messages that haven't been sent yet
 
 **CONFIDENTIAL conversations get different treatment:**
-- Extract action items and decisions → put in the retrospective (these are [Your Name]'s eyes only)
+- Extract action items and decisions → put in the retrospective (these are {{USER_NAME}}'s eyes only)
 - Extract process improvements → can become SOPs IF the source context is stripped
-- NEVER quote [Your Name] directly from confidential conversations in any shared file
+- NEVER quote {{USER_NAME}} directly from confidential conversations in any shared file
 - NEVER reference relationship dynamics in SOPs, memory bank, or any file that could be shared
 - NEVER include confidential insights in the GitHub repo version of anything
 - The retrospective file itself lives in `logs/` which is gitignored — it's safe there
@@ -104,7 +104,7 @@ For CONFIDENTIAL conversations, extract only:
 **NEVER extract from confidential conversations:**
 - Relationship assessments or interpersonal analysis
 - Direct quotes about other people's behavior or motivations
-- [Your Name]'s strategic positioning relative to partners
+- {{USER_NAME}}'s strategic positioning relative to partners
 - Emotional context or personal processing
 
 ---
@@ -139,14 +139,14 @@ version: 1.0
 ## Decisions Made This Week
 | Decision | Context | Conversation | Status |
 |----------|---------|--------------|--------|
-| "Build parts agent as separate LLC" | Scott deal, separate from [Your Agency] | conversation-XXXX.md | In progress |
+| "Build parts agent as separate LLC" | [Client Contact] deal, separate from [Your Agency] | conversation-XXXX.md | In progress |
 | ... | ... | ... | ... |
 
 ## Action Items Tracker
 | Action Item | Committed In | Owner | Deadline | Status |
 |-------------|-------------|-------|----------|--------|
-| Sign agreement with Scott | conversation-XXXX.md | [Your Name] | This week | Not done |
-| Reply to [Your Mentor/Advisor]'s 7 threads | conversation-XXXX.md | [Your Name] | Today | Not done |
+| Sign agreement with [Client Contact] | conversation-XXXX.md | {{USER_NAME}} | This week | Not done |
+| Reply to [Your Mentor/Advisor]'s 7 threads | conversation-XXXX.md | {{USER_NAME}} | Today | Not done |
 | ... | ... | ... | ... | ... |
 
 ### Carried Over from Last Week
@@ -173,7 +173,7 @@ version: 1.0
 | Person | Status | Notable Events | Action Needed |
 |--------|--------|----------------|---------------|
 | [Your Mentor/Advisor] | Tense | 7 unanswered threads, P&L pressure | Reply to all threads |
-| Scott | Strong | Deal in progress, data extracted | Get agreement signed |
+| [Client Contact] | Strong | Deal in progress, data extracted | Get agreement signed |
 | ... | ... | ... | ... |
 
 ## Problems & Risks
@@ -242,9 +242,9 @@ Using the data from the retrospective, generate the weekly MAA report for each a
 
 ---
 
-### Phase 7: Summary to [Your Name]
+### Phase 7: Summary to {{USER_NAME}}
 
-After everything is written, give [Your Name] a verbal summary:
+After everything is written, give {{USER_NAME}} a verbal summary:
 - "Here's what you accomplished this week" (wins)
 - "Here's what fell through the cracks" (missed items)
 - "Here's what I recommend focusing on next week" (priorities)

@@ -1,14 +1,23 @@
 # Claude PRISM
 
-A plug-and-play operating system for Claude Code. SOPs, skills, frameworks, and automation — personalized to you through an identity scan.
+A plug-and-play operating system for Claude Code. Drop it into any business and Claude becomes a self-improving operator — not just an assistant.
 
 ## What This Is
 
-The PRISM gives Claude Code:
-- **Skills** — action-oriented prompts for common tasks (article writing, content repurposing, QA, etc.)
-- **SOPs** — step-by-step procedures for business operations
-- **Canon** — source-of-truth frameworks (Content Factory, Topic Wheel, Dollar-a-Day, etc.)
-- **Identity** — your personal context, auto-generated from scanning your environment
+The PRISM (Personal Reference & Intelligence System for Management) turns Claude Code from a blank-slate coding tool into a structured business operator. It gives Claude persistent memory, living SOPs, methodology frameworks, automation hooks, and a personal identity layer — all wired together so the system compounds over time.
+
+Every task Claude executes generates session logs. Those logs feed into living SOPs. Those SOPs are formatted as skills that Claude automatically loads on future tasks. The result: Claude gets measurably better at your work every time it works for you.
+
+## What You Get
+
+- **14 action-oriented skills** — Article writing, KP Sprints, content repurposing, Dollar-a-Day campaigns, prospect follow-up, influence audits, and more. Each is a Claude-loadable prompt with step-by-step execution logic.
+- **25+ SOPs** across client work, business ops, and file management — living documents that update themselves as Claude learns.
+- **15 canonical frameworks** — Content Factory (6-stage), Dollar-a-Day, Topic Wheel, Nine Triangles, MAA, GCT Discovery, LDT, and more. These are your methodology source of truth.
+- **12 automation hooks** — Pre-tool guards, session logging, file backups, confidentiality filters, and post-compaction preservation rules. All configured through Claude Code's native hook system.
+- **13+ utility scripts** — EOD reports, SOP health checks, content tree mapping, session parsing, log rotation, and memory bank refresh.
+- **Team operating system templates** — 19 files covering onboarding, roles, communication protocols, decision rights, delegation frameworks, and scaling plans.
+- **Identity scan** — An automated process that reads your local files, email, calendar, GitHub, and Drive to generate a personal context file. Claude knows who you are from the first message.
+- **Overnight automation prompts** — Deep analysis jobs you kick off before bed and review in the morning.
 
 ## Quick Start
 
@@ -25,9 +34,21 @@ chmod +x setup.sh
 ```
 
 The setup script will:
-1. Create your personal identity folder
-2. Generate a CLAUDE.md that tells Claude Code how to use the PRISM
-3. Prompt you to run the identity scan (optional but recommended)
+1. Create your personal identity folder (`.personal/`, gitignored)
+2. Generate a CONTEXT.md from the template
+3. Ask for your name, email, and company to personalize automation scripts
+4. Set up CLAUDE.md so Claude Code loads the PRISM on boot
+5. Prompt you to run the identity scan (optional but recommended)
+
+## How It Works
+
+The PRISM uses a two-layer architecture:
+
+**Shared layer** (version-controlled, synced across team) — Skills, SOPs, canon frameworks, hooks, scripts, and templates. This is the repo itself.
+
+**Personal layer** (`.personal/`, gitignored) — Your identity context, memory bank, and scan preferences. Created during setup, never shared.
+
+When Claude Code starts, it reads CLAUDE.md, which points to your personal CONTEXT.md. That file tells Claude who you are, what you do, and how your business works. From there, Claude routes tasks to the right skill or SOP automatically.
 
 ## Identity Scan
 
@@ -53,24 +74,25 @@ Then say: "Run the identity scan" or paste the contents of identity-scan.md
 
 ```
 PRISM/
-├── skills/              ← Claude-loadable action prompts (shared)
-├── sops/                ← Step-by-step procedures (shared)
+├── skills/              <- Claude-loadable action prompts (shared)
+├── sops/                <- Step-by-step procedures (shared)
 │   ├── client-work/
 │   ├── business-ops/
 │   ├── file-management/
 │   └── templates/
-├── blitzmetrics-canon/  ← Source-of-truth frameworks (shared)
-├── scripts/             ← Utility scripts (shared)
-├── team-ops/            ← Team operating docs (shared)
-├── claude-code/         ← Hooks, automation prompts (shared)
-├── .personal/           ← YOUR identity layer (gitignored)
-│   ├── CONTEXT.md       ← Auto-generated from identity scan
-│   ├── memory-bank/     ← Your personal knowledge base
-│   └── config.yml       ← Your scan preferences
-├── setup.sh             ← One-time setup
-├── identity-scan.md     ← Claude prompt for deep environment scan
-├── CONTEXT-TEMPLATE.md  ← Template for personal context
-└── CLAUDE.md            ← Instructions Claude loads on boot
+├── blitzmetrics-canon/  <- Source-of-truth frameworks (shared)
+├── scripts/             <- Utility scripts (shared)
+├── team-ops/            <- Team operating docs (shared, example data)
+├── claude-code/         <- Hooks, automation prompts (shared)
+├── .personal/           <- YOUR identity layer (gitignored)
+│   ├── CONTEXT.md       <- Auto-generated from identity scan
+│   ├── memory-bank/     <- Your personal knowledge base
+│   └── config.yml       <- Your scan preferences
+├── setup.sh             <- One-time setup
+├── identity-scan.md     <- Claude prompt for deep environment scan
+├── CONTEXT-TEMPLATE.md  <- Template for personal context
+├── CUSTOMIZATION.md     <- Guide to adapting the PRISM
+└── CLAUDE.md            <- Instructions Claude loads on boot
 ```
 
 ## For Teams
@@ -89,6 +111,10 @@ git add -p
 git commit -m "Update article-qa skill with new checklist item"
 git push
 ```
+
+## Customization
+
+See [CUSTOMIZATION.md](CUSTOMIZATION.md) for how to adapt the PRISM to your business — which files to edit, how template variables work, and how to add your own skills, SOPs, and hooks.
 
 ## Requirements
 

@@ -1,3 +1,5 @@
+> **EXAMPLE FILE** — This is a sample from a real agency. Replace all placeholders with your team's data. Delete files you don't need.
+
 ---
 title: Client Communication SOP — How We Talk to Clients at Every Stage
 owner: [Your Name]

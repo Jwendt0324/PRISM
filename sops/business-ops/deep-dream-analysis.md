@@ -43,7 +43,7 @@ Execute each mode sequentially, saving a report after each:
 
 7. **Mode 1 -- Business Health Scan:** Revenue/MRR, client health scorecard (GREEN/YELLOW/RED for each), pipeline status, parts agent deal status, cash flow projection. Save to `dream-business-health-{date}.md`.
 
-8. **Mode 2 -- Relationship Audit:** [Your Mentor/Advisor] (undelivered commitments, temperature), [Your Ops Partner], Scott/[Client-ID], each client (last contact, neglect risk), team (blocked?), prospects (cold?). Save to `dream-relationships-{date}.md`.
+8. **Mode 2 -- Relationship Audit:** [Your Mentor/Advisor] (undelivered commitments, temperature), [Your Ops Partner], [Client Contact]/[Client-ID], each client (last contact, neglect risk), team (blocked?), prospects (cold?). Save to `dream-relationships-{date}.md`.
 
 9. **Mode 3 -- Content & Delivery Audit:** Promised vs delivered per client, unpublished content, book progress, content gaps (personal brand, clients), Content Factory stage analysis (which stages are weak). Save to `dream-content-audit-{date}.md`.
 
@@ -86,7 +86,7 @@ Execute each mode sequentially, saving a report after each:
 - [ ] At least one iteration of cross-referencing was done (conversation logs or Basecamp live data)
 
 ## Common Pitfalls
-- **Assuming revenue is recurring.** Always verify one-time vs recurring. AI Apprentice enrollments are one-time at $7,500.
+- **Assuming revenue is recurring.** Always verify one-time vs recurring. AI Apprentice enrollments are one-time at [$Price].
 - **Not checking Basecamp live data.** Memory bank files can be 10+ days stale. The Basecamp MCP gives real-time truth. Use `basecamp_list_projects` and `basecamp_list_messages`.
 - **Treating all Basecamp projects as [Your Agency] clients.** Many are [Methodology Partner]/[Partner Platform] clients (Prosperity Thinkers, ChurchCandy, etc.). Check project creation dates and who is active on them.
 - **Missing conversation log data.** Conversation logs contain discovery call outcomes, payment confirmations, and deal updates that never made it to the memory bank.
