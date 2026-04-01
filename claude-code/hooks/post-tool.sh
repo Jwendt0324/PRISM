@@ -12,7 +12,9 @@ fi
 
 TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 TODAY=$(date -u +"%Y-%m-%d")
-LOG_DIR="$HOME/Documents/Claude/PRISM/logs/actions"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+LOG_DIR="$PRISM_DIR/logs/actions"
 mkdir -p "$LOG_DIR"
 
 # Use jq for fast JSON parsing

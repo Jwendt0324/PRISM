@@ -16,7 +16,8 @@ fi
 TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 TODAY=$(date +"%Y-%m-%d")
 DAY_OF_WEEK=$(date +"%A")
-PRISM_DIR="$HOME/Documents/Claude/PRISM"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 LOG_DIR="$PRISM_DIR/logs"
 mkdir -p "$LOG_DIR/actions" "$LOG_DIR/sessions/$(date +%Y-%m)" "$LOG_DIR/conversations/$(date +%Y-%m)"
 
@@ -67,8 +68,8 @@ if [ -z "$LAST_RETRO" ]; then
 fi
 
 # Check memory bank staleness
-if [ -f "$PRISM_DIR/CONTEXT.md" ]; then
-    CONTEXT_AGE=$(find "$PRISM_DIR/CONTEXT.md" -mtime +7 2>/dev/null)
+if [ -f "$PRISM_DIR/.personal/CONTEXT.md" ]; then
+    CONTEXT_AGE=$(find "$PRISM_DIR/.personal/CONTEXT.md" -mtime +7 2>/dev/null)
     if [ -n "$CONTEXT_AGE" ]; then
         URGENT="${URGENT}⚠ CONTEXT.md is stale (>7 days old). Run /refresh.\n"
     fi
@@ -93,7 +94,7 @@ fi
 
 # Memory bank staleness (Mon/Wed/Fri)
 if [ "$DAY_OF_WEEK" = "Monday" ] || [ "$DAY_OF_WEEK" = "Wednesday" ] || [ "$DAY_OF_WEEK" = "Friday" ]; then
-    MB_STALE=$(find "$PRISM_DIR/memory-bank" -name "00-[your-username].md" -mtime +5 2>/dev/null)
+    MB_STALE=$(find "$PRISM_DIR/.personal/memory-bank" -name "00-*.md" -mtime +5 2>/dev/null)
     if [ -n "$MB_STALE" ]; then
         URGENT="${URGENT}⚠ Memory bank stale (>5 days). Run /refresh.\n"
     fi
@@ -134,11 +135,8 @@ fi
 # Derive a short project descriptor from the working directory
 TAB_TITLE=""
 case "$CWD" in
-    */PRISM*|*/PRISM*)    TAB_TITLE="PRISM" ;;
+    */PRISM*) TAB_TITLE="PRISM" ;;
     */parts-agent*|*/parts_agent*) TAB_TITLE="Parts Agent" ;;
-    */[client-name-1]*|*/[Client-Name-1]*)     TAB_TITLE="[Client — Local Retail Business]" ;;
-    */[client-id]*|*/[Client-ID]*|*/[client-name-3]*)      TAB_TITLE="[Client — Appliance Repair]" ;;
-    */hri*|*/high-rise*|*/highrise*) TAB_TITLE="[Your Agency]" ;;
     *)
         # Use the last 1-2 directory components as the title
         LEAF=$(basename "$CWD")
@@ -187,6 +185,6 @@ fi
 
 echo ""
 echo "Slash commands: /review /refresh /briefing /eod /ship /health"
-echo "Remember: Load ~/Documents/Claude/PRISM/CONTEXT.md before any non-trivial task."
+echo "Remember: Load $PRISM_DIR/.personal/CONTEXT.md before any non-trivial task."
 
 exit 0

@@ -3,7 +3,9 @@
 # Added: 2026-03-30 (Iteration 6)
 # Trigger: PostCompact event (fires after context window compaction)
 
-LOG_DIR="$HOME/Documents/Claude/PRISM/logs/actions"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+LOG_DIR="$PRISM_DIR/logs/actions"
 LOG_FILE="$LOG_DIR/$(date +%Y-%m-%d).jsonl"
 mkdir -p "$LOG_DIR"
 

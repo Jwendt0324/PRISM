@@ -17,7 +17,9 @@ ERROR_TYPE=$(echo "$INPUT" | jq -r '.error // "unknown"' 2>/dev/null)
 ERROR_DETAILS=$(echo "$INPUT" | jq -r '.error_details // "no details"' 2>/dev/null)
 TIMESTAMP=$(date +%Y-%m-%dT%H:%M:%S)
 DATE=$(date +%Y-%m-%d)
-LOG_DIR="$HOME/Documents/Claude/PRISM/logs/actions"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+LOG_DIR="$PRISM_DIR/logs/actions"
 LOG_FILE="$LOG_DIR/$DATE.jsonl"
 
 # Log the failure (use jq for safe JSON encoding)

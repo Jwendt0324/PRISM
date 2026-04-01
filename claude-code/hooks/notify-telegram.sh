@@ -10,7 +10,9 @@ fi
 [ -z "$INPUT" ] && exit 0
 
 # Load Telegram config
-CONFIG_FILE="$HOME/Documents/Claude/PRISM/config/telegram.json"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+CONFIG_FILE="$PRISM_DIR/config/telegram.json"
 if [ ! -f "$CONFIG_FILE" ]; then
     exit 0  # Telegram not configured — silently skip
 fi

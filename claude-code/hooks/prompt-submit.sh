@@ -26,6 +26,7 @@ PROMPT=$(echo "$INPUT" | jq -r '.prompt // empty' 2>/dev/null)
 [ -z "$PROMPT" ] && exit 0
 
 P=$(echo "$PROMPT" | tr '[:upper:]' '[:lower:]')
+PRISM_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
 
 # ============================================================
 # PART 1: Confidentiality Guard
@@ -86,16 +87,16 @@ echo "$P" | grep -qE '(client.*status|client.*snapshot|what.*happening.*with|how
 echo "$P" | grep -qE '(content.*pipeline|production.*status|what.*in.*pipeline|content.*status)' && SKILLS="${SKILLS}Load /content-pipeline-status skill. "
 
 # PRISM-only skills (not auto-discovered)
-echo "$P" | grep -qE '(write.*article|article.*from.*transcript|batch.*write)' && SKILLS="${SKILLS}Load article-writer from ~/Documents/Claude/PRISM/skills/article-writer.md. "
-echo "$P" | grep -qE '(content factory|6.*stage|plumbing.*produce|produce.*process)' && SKILLS="${SKILLS}Load content-factory from ~/Documents/Claude/PRISM/skills/content-factory.md. "
-echo "$P" | grep -qE '(dollar.*day|\$1.*day|boost.*content|paid.*social|promote.*stage)' && SKILLS="${SKILLS}Load dollar-a-day from ~/Documents/Claude/PRISM/skills/dollar-a-day.md. "
-echo "$P" | grep -qE '(influence.*report|authority.*score|quick.*audit|presence.*audit)' && SKILLS="${SKILLS}Load influence-report-card from ~/Documents/Claude/PRISM/skills/influence-report-card.md. "
-echo "$P" | grep -qE '(repurpos|long.*form.*to.*short|multi.*platform|turn.*into.*posts)' && SKILLS="${SKILLS}Load content-repurposing from ~/Documents/Claude/PRISM/skills/content-repurposing.md. "
-echo "$P" | grep -qE '(personal.*brand.*site|wordpress.*build|kp.*site)' && SKILLS="${SKILLS}Load personal-brand-site from ~/Documents/Claude/PRISM/skills/personal-brand-site.md. "
-echo "$P" | grep -qE '(prospect|discovery.*call|qualify.*lead|new.*lead|follow.*up.*prospect)' && SKILLS="${SKILLS}Load prospect-followup from ~/Documents/Claude/PRISM/skills/prospect-followup.md. "
+echo "$P" | grep -qE '(write.*article|article.*from.*transcript|batch.*write)' && SKILLS="${SKILLS}Load article-writer from $PRISM_DIR/skills/article-writer.md. "
+echo "$P" | grep -qE '(content factory|6.*stage|plumbing.*produce|produce.*process)' && SKILLS="${SKILLS}Load content-factory from $PRISM_DIR/skills/content-factory.md. "
+echo "$P" | grep -qE '(dollar.*day|\$1.*day|boost.*content|paid.*social|promote.*stage)' && SKILLS="${SKILLS}Load dollar-a-day from $PRISM_DIR/skills/dollar-a-day.md. "
+echo "$P" | grep -qE '(influence.*report|authority.*score|quick.*audit|presence.*audit)' && SKILLS="${SKILLS}Load influence-report-card from $PRISM_DIR/skills/influence-report-card.md. "
+echo "$P" | grep -qE '(repurpos|long.*form.*to.*short|multi.*platform|turn.*into.*posts)' && SKILLS="${SKILLS}Load content-repurposing from $PRISM_DIR/skills/content-repurposing.md. "
+echo "$P" | grep -qE '(personal.*brand.*site|wordpress.*build|kp.*site)' && SKILLS="${SKILLS}Load personal-brand-site from $PRISM_DIR/skills/personal-brand-site.md. "
+echo "$P" | grep -qE '(prospect|discovery.*call|qualify.*lead|new.*lead|follow.*up.*prospect)' && SKILLS="${SKILLS}Load prospect-followup from $PRISM_DIR/skills/prospect-followup.md. "
 
 if [ -n "$SKILLS" ]; then
-    echo "[PRISM AUTO-ROUTER: ${SKILLS}Follow the skill instructions exactly. Use good-examples from ~/Documents/Claude/PRISM/skills/good-examples/ if available for this content type.]"
+    echo "[PRISM AUTO-ROUTER: ${SKILLS}Follow the skill instructions exactly. Use good-examples from $PRISM_DIR/skills/good-examples/ if available for this content type.]"
 fi
 
 exit 0

@@ -15,7 +15,9 @@ fi
 
 TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 TODAY=$(date +"%Y-%m-%d")
-LOG_DIR="$HOME/Documents/Claude/PRISM/logs"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+LOG_DIR="$PRISM_DIR/logs"
 TASK_LOG="$LOG_DIR/tasks/$TODAY.jsonl"
 mkdir -p "$LOG_DIR/tasks"
 

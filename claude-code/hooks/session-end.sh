@@ -15,7 +15,8 @@ fi
 [ -f "$HOME/.claude_tab_title_pid" ] && kill "$(cat "$HOME/.claude_tab_title_pid")" 2>/dev/null
 rm -f "$HOME/.claude_tab_title_pid" "$HOME/.claude_tab_title"
 
-PRISM_DIR="$HOME/Documents/Claude/PRISM"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 PARSER="$PRISM_DIR/scripts/parse-session.py"
 EXPORTER="$PRISM_DIR/scripts/export-conversation.py"
 

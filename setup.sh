@@ -109,7 +109,7 @@ if [ -f "$CLAUDE_DIR/CLAUDE.md" ]; then
     case $claude_choice in
         1)
             cp "$CLAUDE_DIR/CLAUDE.md" "$CLAUDE_DIR/CLAUDE.md.backup.$(date +%Y%m%d)"
-            cp "$PRISM_DIR/CLAUDE-TEMPLATE.md" "$CLAUDE_DIR/CLAUDE.md"
+            cp "$PRISM_DIR/claude-code/CLAUDE.md" "$CLAUDE_DIR/CLAUDE.md"
             # Replace placeholder with actual path
             sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
             sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
@@ -119,18 +119,18 @@ if [ -f "$CLAUDE_DIR/CLAUDE.md" ]; then
             echo "" >> "$CLAUDE_DIR/CLAUDE.md"
             echo "# --- PRISM INSTRUCTIONS (appended by setup) ---" >> "$CLAUDE_DIR/CLAUDE.md"
             echo "" >> "$CLAUDE_DIR/CLAUDE.md"
-            cat "$PRISM_DIR/CLAUDE-TEMPLATE.md" >> "$CLAUDE_DIR/CLAUDE.md"
+            cat "$PRISM_DIR/claude-code/CLAUDE.md" >> "$CLAUDE_DIR/CLAUDE.md"
             sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
             sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
             echo "[OK] PRISM instructions appended to existing CLAUDE.md"
             ;;
         3)
-            echo "[SKIP] Manual setup — copy CLAUDE-TEMPLATE.md to ~/.claude/CLAUDE.md"
+            echo "[SKIP] Manual setup — copy claude-code/CLAUDE.md to ~/.claude/CLAUDE.md"
             ;;
     esac
 else
     mkdir -p "$CLAUDE_DIR"
-    cp "$PRISM_DIR/CLAUDE-TEMPLATE.md" "$CLAUDE_DIR/CLAUDE.md"
+    cp "$PRISM_DIR/claude-code/CLAUDE.md" "$CLAUDE_DIR/CLAUDE.md"
     sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md" 2>/dev/null || \
     sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_DIR/CLAUDE.md"
     echo "[OK] Created ~/.claude/CLAUDE.md"
@@ -140,7 +140,40 @@ fi
 mkdir -p "$PRISM_DIR/logs/sessions" "$PRISM_DIR/logs/actions" "$PRISM_DIR/logs/reports"
 echo "[OK] Logs directories ready"
 
-# Step 7: Summary
+# Step 7: Install hooks into Claude Code settings
+echo ""
+echo "Installing automation hooks..."
+
+SETTINGS="$CLAUDE_DIR/settings.json"
+PRISM_SETTINGS="$PRISM_DIR/claude-code/settings.json"
+
+if [ -f "$PRISM_SETTINGS" ]; then
+    # Create resolved settings with actual PRISM path
+    RESOLVED_SETTINGS="/tmp/prism-settings-resolved.json"
+    sed "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$PRISM_SETTINGS" > "$RESOLVED_SETTINGS"
+
+    if [ -f "$SETTINGS" ]; then
+        # Merge with existing settings
+        if command -v jq &> /dev/null; then
+            SETTINGS_BACKUP="$CLAUDE_DIR/settings.json.backup.$(date +%Y%m%d)"
+            cp "$SETTINGS" "$SETTINGS_BACKUP"
+            jq -s '.[0] * .[1]' "$SETTINGS" "$RESOLVED_SETTINGS" > "$SETTINGS.tmp" && mv "$SETTINGS.tmp" "$SETTINGS"
+            echo "[OK] Hooks merged into existing settings.json (backup saved)"
+        else
+            echo "[WARN] jq not installed — cannot merge hooks automatically"
+            echo "       Install jq (brew install jq) and re-run, or manually merge:"
+            echo "       $PRISM_SETTINGS → $SETTINGS"
+        fi
+    else
+        cp "$RESOLVED_SETTINGS" "$SETTINGS"
+        echo "[OK] Installed settings.json with automation hooks"
+    fi
+    rm -f "$RESOLVED_SETTINGS"
+else
+    echo "[SKIP] No settings.json template found"
+fi
+
+# Step 8: Summary
 echo ""
 echo "========================================"
 echo "  SETUP COMPLETE"
