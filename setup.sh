@@ -76,7 +76,23 @@ else
     echo "[SKIP] No company name provided — {{AGENCY_NAME}} placeholders left in place"
 fi
 
-# Step 4: Create/update CLAUDE.md in ~/.claude/
+# Step 4: Auto-update preference
+echo ""
+read -p "Enable auto-updates? PRISM will quietly pull the latest improvements when you start Claude Code. [Y/n] " auto_update_choice
+auto_update_choice="${auto_update_choice:-Y}"
+
+if [[ "$auto_update_choice" =~ ^[Yy]$ ]]; then
+    touch "$PERSONAL_DIR/auto-update-enabled"
+    echo "[OK] Auto-updates enabled"
+    echo "     PRISM will run 'git pull' on session start (max 5s, silent if nothing new)"
+    echo "     Your .personal/ data is never affected (gitignored)"
+    echo "     To disable later: rm $PERSONAL_DIR/auto-update-enabled"
+else
+    echo "[SKIP] Auto-updates disabled"
+    echo "       To enable later: touch $PERSONAL_DIR/auto-update-enabled"
+fi
+
+# Step 5: Create/update CLAUDE.md in ~/.claude/
 echo ""
 echo "Setting up CLAUDE.md..."
 
@@ -120,11 +136,11 @@ else
     echo "[OK] Created ~/.claude/CLAUDE.md"
 fi
 
-# Step 5: Create logs directory
+# Step 6: Create logs directory
 mkdir -p "$PRISM_DIR/logs/sessions" "$PRISM_DIR/logs/actions" "$PRISM_DIR/logs/reports"
 echo "[OK] Logs directories ready"
 
-# Step 6: Summary
+# Step 7: Summary
 echo ""
 echo "========================================"
 echo "  SETUP COMPLETE"

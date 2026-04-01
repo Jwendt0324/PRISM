@@ -75,8 +75,36 @@ if [ -f "$SETTINGS" ]; then
         echo "      into: $SETTINGS"
     fi
 else
-    cp "$PRISM_DIR/claude-code/settings.json" "$SETTINGS"
-    echo "[3/4] Installed settings.json (fresh install)"
+    if [ -f "$PRISM_DIR/claude-code/settings.json" ]; then
+        cp "$PRISM_DIR/claude-code/settings.json" "$SETTINGS"
+        echo "[3/4] Installed settings.json (fresh install)"
+    else
+        echo "[3/4] No settings.json template found — skipping"
+    fi
+fi
+
+# ---- Step 3b: Ensure auto-update hook is registered in SessionStart ----
+# The auto-update hook should run on SessionStart alongside session-start.sh.
+# If settings.json exists and has jq available, add the auto-update hook.
+if [ -f "$SETTINGS" ] && command -v jq &> /dev/null; then
+    AUTO_UPDATE_HOOK="$PRISM_DIR/claude-code/hooks/auto-update.sh"
+    if [ -f "$AUTO_UPDATE_HOOK" ]; then
+        # Check if auto-update hook is already registered
+        if ! jq -e '.hooks.SessionStart[]? | select(.command | contains("auto-update.sh"))' "$SETTINGS" &>/dev/null; then
+            # Add auto-update as a SessionStart hook entry
+            jq '.hooks.SessionStart += [{"type": "command", "command": "bash '"$AUTO_UPDATE_HOOK"'"}]' "$SETTINGS" > "$SETTINGS.tmp" && mv "$SETTINGS.tmp" "$SETTINGS"
+            echo "      Auto-update hook registered in SessionStart"
+        else
+            echo "      Auto-update hook already registered"
+        fi
+    fi
+else
+    echo ""
+    echo "  NOTE: To enable auto-updates, add this to your ~/.claude/settings.json"
+    echo "  under hooks.SessionStart:"
+    echo ""
+    echo '    {"type": "command", "command": "bash '"$PRISM_DIR"'/claude-code/hooks/auto-update.sh"}'
+    echo ""
 fi
 
 # ---- Step 4: Verify ----
@@ -113,7 +141,7 @@ else
     PASS=false
 fi
 
-for HOOK in session-start.sh session-end.sh post-tool.sh; do
+for HOOK in session-start.sh session-end.sh post-tool.sh auto-update.sh; do
     if [ -x "$PRISM_DIR/claude-code/hooks/$HOOK" ]; then
         echo "  ✓ Hook script $HOOK is executable"
     else

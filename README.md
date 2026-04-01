@@ -112,6 +112,20 @@ git commit -m "Update article-qa skill with new checklist item"
 git push
 ```
 
+## Auto-Updates
+
+If you enabled auto-updates during setup, PRISM quietly pulls the latest improvements every time you start Claude Code. Your personal data in `.personal/` is never affected.
+
+To disable auto-updates:
+```bash
+rm ~/Documents/Claude/PRISM/.personal/auto-update-enabled
+```
+
+To re-enable:
+```bash
+touch ~/Documents/Claude/PRISM/.personal/auto-update-enabled
+```
+
 ## Customization
 
 See [CUSTOMIZATION.md](CUSTOMIZATION.md) for how to adapt the PRISM to your business — which files to edit, how template variables work, and how to add your own skills, SOPs, and hooks.
