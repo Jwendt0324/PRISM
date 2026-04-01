@@ -5,15 +5,18 @@
 #
 # What this does:
 # 1. Installs CLAUDE.md as global instructions (loaded every session)
-# 2. Merges hook configuration into Claude Code settings
-# 3. Verifies everything is connected
+# 2. Installs hook configuration into Claude Code settings
+# 3. Replaces {{PRISM_PATH}} placeholders with actual install path
+# 4. Verifies everything is connected
 #
-# Run this once: bash ~/Documents/Claude/PRISM/claude-code/install.sh
+# Run this once: bash claude-code/install.sh
 # ============================================================
 
 set -e
 
-PRISM_DIR="$HOME/Documents/Claude/PRISM"
+# Auto-detect PRISM root from script location
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PRISM_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 CLAUDE_DIR="$HOME/.claude"
 CLAUDE_MD="$CLAUDE_DIR/CLAUDE.md"
 SETTINGS="$CLAUDE_DIR/settings.json"
@@ -22,93 +25,112 @@ echo "=========================================="
 echo "  CLAUDE PRISM — INSTALLER"
 echo "=========================================="
 echo ""
+echo "  PRISM directory: $PRISM_DIR"
+echo ""
 
-# ---- Step 1: Ensure ~/.claude/ exists ----
+# ---- Step 1: Ensure directories exist ----
 mkdir -p "$CLAUDE_DIR"
-echo "[1/4] ~/.claude/ directory ready"
+mkdir -p "$PRISM_DIR/logs/sessions" "$PRISM_DIR/logs/actions" "$PRISM_DIR/logs/reports"
+echo "[1/5] Directories ready"
 
 # ---- Step 2: Install CLAUDE.md ----
+PRISM_CLAUDE="$PRISM_DIR/claude-code/CLAUDE.md"
+if [ ! -f "$PRISM_CLAUDE" ]; then
+    echo "[2/5] ERROR: $PRISM_CLAUDE not found"
+    exit 1
+fi
+
 if [ -f "$CLAUDE_MD" ]; then
-    # Back up existing CLAUDE.md
     BACKUP="$CLAUDE_DIR/CLAUDE.md.backup.$(date +%Y%m%d-%H%M%S)"
     cp "$CLAUDE_MD" "$BACKUP"
-    echo "[2/4] Backed up existing CLAUDE.md to $(basename $BACKUP)"
+    echo "[2/5] Backed up existing CLAUDE.md to $(basename "$BACKUP")"
 
-    # Check if PRISM instructions already present
     if grep -q "CLAUDE PRISM" "$CLAUDE_MD" 2>/dev/null; then
-        echo "      PRISM instructions already in CLAUDE.md — replacing..."
-        # Remove old PRISM block and replace
-        # Simple approach: prepend PRISM, then append non-PRISM content
-        EXISTING_NON_PRISM=$(sed '/# CLAUDE PRISM/,/^# [^C]/{ /^# [^C]/!d; }' "$CLAUDE_MD" 2>/dev/null || cat "$CLAUDE_MD")
+        echo "      PRISM already present — replacing with latest version..."
+        cp "$PRISM_CLAUDE" "$CLAUDE_MD"
+    else
+        # Prepend PRISM instructions, preserve existing content
+        cat "$PRISM_CLAUDE" > "$CLAUDE_MD.tmp"
+        echo "" >> "$CLAUDE_MD.tmp"
+        echo "---" >> "$CLAUDE_MD.tmp"
+        echo "" >> "$CLAUDE_MD.tmp"
+        echo "# PREVIOUS INSTRUCTIONS (preserved from before PRISM install)" >> "$CLAUDE_MD.tmp"
+        echo "" >> "$CLAUDE_MD.tmp"
+        cat "$BACKUP" >> "$CLAUDE_MD.tmp"
+        mv "$CLAUDE_MD.tmp" "$CLAUDE_MD"
+        echo "      PRISM instructions prepended (old instructions preserved)"
     fi
-
-    # Prepend PRISM instructions to existing content
-    cat "$PRISM_DIR/claude-code/CLAUDE.md" > "$CLAUDE_MD.tmp"
-    echo "" >> "$CLAUDE_MD.tmp"
-    echo "---" >> "$CLAUDE_MD.tmp"
-    echo "" >> "$CLAUDE_MD.tmp"
-    echo "# PREVIOUS INSTRUCTIONS (preserved from before PRISM install)" >> "$CLAUDE_MD.tmp"
-    echo "" >> "$CLAUDE_MD.tmp"
-    cat "$BACKUP" >> "$CLAUDE_MD.tmp"
-    mv "$CLAUDE_MD.tmp" "$CLAUDE_MD"
-    echo "      PRISM instructions prepended (old instructions preserved)"
 else
-    cp "$PRISM_DIR/claude-code/CLAUDE.md" "$CLAUDE_MD"
-    echo "[2/4] Installed CLAUDE.md (fresh install)"
+    cp "$PRISM_CLAUDE" "$CLAUDE_MD"
+    echo "[2/5] Installed CLAUDE.md (fresh install)"
 fi
+
+# Replace {{PRISM_PATH}} in CLAUDE.md
+sed -i '' "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_MD" 2>/dev/null || \
+sed -i "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$CLAUDE_MD"
+echo "      Replaced {{PRISM_PATH}} with: $PRISM_DIR"
 
 # ---- Step 3: Install hooks into settings.json ----
+PRISM_SETTINGS="$PRISM_DIR/claude-code/settings.json"
+if [ ! -f "$PRISM_SETTINGS" ]; then
+    echo "[3/5] ERROR: $PRISM_SETTINGS not found"
+    exit 1
+fi
+
+# Create a resolved copy of settings.json with actual paths
+RESOLVED_SETTINGS="/tmp/prism-settings-resolved.json"
+sed "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$PRISM_SETTINGS" > "$RESOLVED_SETTINGS"
+
 if [ -f "$SETTINGS" ]; then
-    # Back up existing settings
     SETTINGS_BACKUP="$CLAUDE_DIR/settings.json.backup.$(date +%Y%m%d-%H%M%S)"
     cp "$SETTINGS" "$SETTINGS_BACKUP"
-    echo "[3/4] Backed up existing settings.json to $(basename $SETTINGS_BACKUP)"
+    echo "[3/5] Backed up existing settings.json to $(basename "$SETTINGS_BACKUP")"
 
-    # Merge hooks — use jq to combine existing settings with PRISM hooks
     if command -v jq &> /dev/null; then
         # Deep merge: existing settings + PRISM hooks
-        jq -s '.[0] * .[1]' "$SETTINGS_BACKUP" "$PRISM_DIR/claude-code/settings.json" > "$SETTINGS"
+        # PRISM hooks override existing hook config for the same events
+        jq -s '.[0] * .[1]' "$SETTINGS_BACKUP" "$RESOLVED_SETTINGS" > "$SETTINGS"
         echo "      Hooks merged into existing settings"
     else
-        echo "      WARNING: jq not installed. Manually merge hooks from:"
-        echo "      $PRISM_DIR/claude-code/settings.json"
-        echo "      into: $SETTINGS"
+        echo "      WARNING: jq not installed — installing jq is recommended."
+        echo "      Copying PRISM settings directly (your existing settings are backed up)."
+        cp "$RESOLVED_SETTINGS" "$SETTINGS"
     fi
 else
-    if [ -f "$PRISM_DIR/claude-code/settings.json" ]; then
-        cp "$PRISM_DIR/claude-code/settings.json" "$SETTINGS"
-        echo "[3/4] Installed settings.json (fresh install)"
-    else
-        echo "[3/4] No settings.json template found — skipping"
-    fi
+    cp "$RESOLVED_SETTINGS" "$SETTINGS"
+    echo "[3/5] Installed settings.json (fresh install)"
 fi
 
-# ---- Step 3b: Ensure auto-update hook is registered in SessionStart ----
-# The auto-update hook should run on SessionStart alongside session-start.sh.
-# If settings.json exists and has jq available, add the auto-update hook.
-if [ -f "$SETTINGS" ] && command -v jq &> /dev/null; then
-    AUTO_UPDATE_HOOK="$PRISM_DIR/claude-code/hooks/auto-update.sh"
-    if [ -f "$AUTO_UPDATE_HOOK" ]; then
-        # Check if auto-update hook is already registered
-        if ! jq -e '.hooks.SessionStart[]? | select(.command | contains("auto-update.sh"))' "$SETTINGS" &>/dev/null; then
-            # Add auto-update as a SessionStart hook entry
-            jq '.hooks.SessionStart += [{"type": "command", "command": "bash '"$AUTO_UPDATE_HOOK"'"}]' "$SETTINGS" > "$SETTINGS.tmp" && mv "$SETTINGS.tmp" "$SETTINGS"
-            echo "      Auto-update hook registered in SessionStart"
+rm -f "$RESOLVED_SETTINGS"
+
+# ---- Step 4: Ensure auto-update hook is registered ----
+if [ -f "$PRISM_DIR/.personal/auto-update-enabled" ]; then
+    AUTO_UPDATE_CMD="/bin/bash $PRISM_DIR/claude-code/hooks/auto-update.sh"
+    if command -v jq &> /dev/null; then
+        # Check if auto-update is already in any SessionStart hook
+        if ! grep -q "auto-update.sh" "$SETTINGS" 2>/dev/null; then
+            # Add auto-update hook to the first SessionStart entry's hooks array
+            jq --arg cmd "$AUTO_UPDATE_CMD" \
+                '.hooks.SessionStart[0].hooks += [{"type": "command", "command": $cmd, "timeout": 10}]' \
+                "$SETTINGS" > "$SETTINGS.tmp" && mv "$SETTINGS.tmp" "$SETTINGS"
+            echo "[4/5] Auto-update hook registered"
         else
-            echo "      Auto-update hook already registered"
+            echo "[4/5] Auto-update hook already registered"
         fi
+    else
+        echo "[4/5] Skipped auto-update registration (jq required)"
     fi
 else
-    echo ""
-    echo "  NOTE: To enable auto-updates, add this to your ~/.claude/settings.json"
-    echo "  under hooks.SessionStart:"
-    echo ""
-    echo '    {"type": "command", "command": "bash '"$PRISM_DIR"'/claude-code/hooks/auto-update.sh"}'
-    echo ""
+    echo "[4/5] Auto-updates not enabled (run setup.sh first to opt in)"
 fi
 
-# ---- Step 4: Verify ----
-echo "[4/4] Verifying installation..."
+# ---- Step 5: Make hook scripts executable ----
+chmod +x "$PRISM_DIR/claude-code/hooks/"*.sh 2>/dev/null
+echo "[5/5] Hook scripts marked executable"
+
+# ---- Verify ----
+echo ""
+echo "Verifying installation..."
 echo ""
 
 PASS=true
@@ -120,32 +142,35 @@ else
     PASS=false
 fi
 
-if [ -f "$SETTINGS" ] && grep -q "SessionStart" "$SETTINGS"; then
-    echo "  ✓ SessionStart hook configured"
-else
-    echo "  ✗ SessionStart hook missing"
+# Check that {{PRISM_PATH}} was replaced (no remaining placeholders)
+if grep -q '{{PRISM_PATH}}' "$CLAUDE_MD" 2>/dev/null; then
+    echo "  ✗ CLAUDE.md still has unresolved {{PRISM_PATH}} placeholders"
     PASS=false
+else
+    echo "  ✓ CLAUDE.md paths resolved"
 fi
 
-if [ -f "$SETTINGS" ] && grep -q "PostToolUse" "$SETTINGS"; then
-    echo "  ✓ PostToolUse hook configured"
-else
-    echo "  ✗ PostToolUse hook missing"
+if grep -q '{{PRISM_PATH}}' "$SETTINGS" 2>/dev/null; then
+    echo "  ✗ settings.json still has unresolved {{PRISM_PATH}} placeholders"
     PASS=false
+else
+    echo "  ✓ settings.json paths resolved"
 fi
 
-if [ -f "$SETTINGS" ] && grep -q "SessionEnd" "$SETTINGS"; then
-    echo "  ✓ SessionEnd hook configured"
-else
-    echo "  ✗ SessionEnd hook missing"
-    PASS=false
-fi
-
-for HOOK in session-start.sh session-end.sh post-tool.sh auto-update.sh; do
-    if [ -x "$PRISM_DIR/claude-code/hooks/$HOOK" ]; then
-        echo "  ✓ Hook script $HOOK is executable"
+for EVENT in SessionStart PreToolUse PostToolUse UserPromptSubmit Stop SessionEnd StopFailure PostCompact; do
+    if [ -f "$SETTINGS" ] && grep -q "$EVENT" "$SETTINGS"; then
+        echo "  ✓ $EVENT hook configured"
     else
-        echo "  ✗ Hook script $HOOK missing or not executable"
+        echo "  ✗ $EVENT hook missing"
+        PASS=false
+    fi
+done
+
+for HOOK in session-start.sh session-end.sh post-tool.sh pre-tool-guard.sh prompt-submit.sh stop-summary.sh auto-update.sh; do
+    if [ -x "$PRISM_DIR/claude-code/hooks/$HOOK" ]; then
+        echo "  ✓ $HOOK is executable"
+    else
+        echo "  ✗ $HOOK missing or not executable"
         PASS=false
     fi
 done
@@ -172,12 +197,11 @@ if $PASS; then
     echo ""
     echo "  What happens now:"
     echo "  • Every Claude Code session auto-loads PRISM instructions"
-    echo "  • Every session auto-checks SOPs before starting work"
-    echo "  • Every session auto-logs what was done when it ends"
+    echo "  • SOPs are auto-matched to your tasks"
+    echo "  • Sessions are auto-logged when they end"
     echo "  • Tool usage is tracked for pattern detection"
-    echo "  • Weekly Retrospective (Cowork) processes logs into SOPs"
     echo ""
-    echo "  Next time you open Claude Code, it's already running."
+    echo "  Next time you open Claude Code, PRISM is already running."
 else
     echo "=========================================="
     echo "  INSTALL INCOMPLETE — check errors above"
