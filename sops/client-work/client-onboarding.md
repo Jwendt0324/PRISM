@@ -58,7 +58,7 @@ Ensure every new client is fully set up across all systems within the first week
 ## Common Pitfalls
 - **Forgetting the Internal thread.** Every Basecamp project needs a team-only Internal thread. If you skip it, sensitive strategy discussions end up in client-visible threads or get lost in Slack/DMs.
 - **Not setting the MAA cadence from day 1.** If you wait until "things settle in" to start reporting, weeks slip. Set the Friday cadence during onboarding and deliver the first MAA within 7 days.
-- **Client chasing for updates.** If the client has to ask "what's happening?" you've already failed. The Ryan D. Lee lesson: proactive communication prevents client anxiety. Post updates before they ask.
+- **Client chasing for updates.** If the client has to ask "what's happening?" you've already failed. The [Client Name] lesson: proactive communication prevents client anxiety. Post updates before they ask.
 
 ## Human Gates
 | Step | Gate Type | Reason |
@@ -80,11 +80,11 @@ Ensure every new client is fully set up across all systems within the first week
 - **Canon source:** 02-content-factory-process.md (Stage 0: Plumbing) — client onboarding IS the plumbing stage: setting up access, systems, and reporting before any content production begins
 - **Triangles served:** GCT (first step) — the GCT form IS Step 1 of the process, capturing Goals, Content inventory, and Targeting before anything else; CID — the entire process is Communicate (Basecamp threads, welcome emails), Iterate (initial analysis feeds first MAA), Delegate (access permissions, team assignments)
 - **Human checkpoints:** Client fills out GCT form personally; team access permissions verified by human; client invited to Basecamp and confirmed visible; first MAA delivered and reviewed within 1 week
-- **Anti-vandalism:** GCT form gates all downstream work (no form = no progress); Internal thread separated from client-visible threads prevents accidental exposure; MAA cadence set from Day 1 prevents reporting gaps; proactive communication prevents client anxiety (Ryan D. Lee lesson)
+- **Anti-vandalism:** GCT form gates all downstream work (no form = no progress); Internal thread separated from client-visible threads prevents accidental exposure; MAA cadence set from Day 1 prevents reporting gaps; proactive communication prevents client anxiety ([Client Name] lesson)
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on [Your Agency]/[Methodology Partner] onboarding patterns and documented lessons from Ryan D. Lee engagement.
+- *2026-03-18* — SOP created based on [Your Agency]/[Methodology Partner] onboarding patterns and documented lessons from [Client Name] engagement.
 
 ---
 

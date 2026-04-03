@@ -1,8 +1,8 @@
 ---
 name: Article Writer
-version: 1.2
+version: 1.3
 description: Write batches of SEO-optimized articles from transcripts using the
-  [Your Agency] Content Engine v5 pipeline
+  Content Engine pipeline
 triggers:
   - write articles
   - batch articles
@@ -27,13 +27,13 @@ tags:
 
 ## Phase 0: Load Good Examples (Every Batch)
 
-Before writing any articles, check `~/Documents/Claude/PRISM/skills/good-examples/articles/` for approved reference articles. If examples exist, read them all. Study the tone, structure, transitions, heading style, and depth. Your output should match or exceed the quality of these approved examples. If no examples exist yet, proceed with the guidelines below — but flag the first article [Your Name] approves as a candidate for the good-examples library.
+Before writing any articles, check your good-examples library for approved reference articles. If examples exist, read them all. Study the tone, structure, transitions, heading style, and depth. Your output should match or exceed the quality of these approved examples. If no examples exist yet, proceed with the guidelines below — but flag the first approved article as a candidate for the good-examples library.
 
 This skill follows the [[blitzmetrics-canon/02-content-factory-process|Content Factory]] methodology and the [[blitzmetrics-canon/03-article-guidelines|Article Guidelines]]. Articles are organized around the [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]].
 
 ## Phase 1: Setup (First Time Per Client)
 
-1. **Build voice profile.** Read 6-10 transcripts. Capture: sentence patterns, signature phrases, contraction usage, recurring analogies, anti-positions, named references. Save to `~/Documents/Claude/PRISM/content-pipeline/voice-profiles/voice-profile-[client].md`
+1. **Build voice profile.** Read 6-10 transcripts. Capture: sentence patterns, signature phrases, contraction usage, recurring analogies, anti-positions, named references. Save to your voice profiles directory.
 2. **Set up client config.** Author, site, revenue pages, internal link targets, existing content (for anti-cannibalization), Topic Wheel categories, default article length (typically 1,200-1,500 words)
 3. **Create .docx generator** using python-docx (Requires: `pip install python-docx`): SOURCE VIDEO block at top, meta description italic, H1 (16pt bold), H2s (14pt bold, verb-first), body (11pt, 1.15 spacing), bold key phrases, `[IMAGE: description]` placeholders
 
@@ -44,6 +44,11 @@ This skill follows the [[blitzmetrics-canon/02-content-factory-process|Content F
 3. **If article exists on topic:** ENHANCE existing, do not duplicate
 4. Rate transcripts: GREEN (1000+ words, substantive), YELLOW (mid-depth), RED (short, skip or brief framing)
 5. Identify E-E-A-T signals in each transcript: real stories, named people, credentials
+6. **SEO Tree classification:** For each article, determine its position in the content architecture:
+   - **Trunk:** Core concept definitive article (e.g., "What is Dollar-a-Day?"). One per major topic. Rarely created new -- enhance existing.
+   - **Branch:** Sub-topic definitive article (e.g., "3x3 Video Grid for Dollar-a-Day"). Links up to trunk.
+   - **Leaf:** Specific instance article, case study, or meta-article (e.g., "How We Built [Client Name]'s Video Funnel"). Links up to its branch AND trunk.
+   - Classification determines internal linking strategy: leaves link to branches, branches link to trunk, trunk links to other trunks.
 
 ## Phase 3: Writing
 
@@ -97,6 +102,21 @@ WRITING STYLE:
 - 2+ internal links with descriptive anchor text (3-6 words, never "click here")
 ```
 
+## Entity Linking Decision Tree (Canon 17 -- Apply to EVERY Article)
+
+For every person, business, concept, or organization mentioned, follow this tree to determine the link target:
+
+| Entity Type | Link To | NEVER Link To |
+|---|---|---|
+| **Person** (anyone with a personal brand site) | Their personal brand site (e.g., dennisyu.com) | LinkedIn, social media profiles, or articles ABOUT them |
+| **Network business/organization** | Their primary website | Case studies or articles about them |
+| **BlitzMetrics concept** (Content Factory, Dollar-a-Day, etc.) | The definitive article on blitzmetrics.com | Competitor articles or generic explainers |
+| **External concept or public figure** | Most authoritative source (official page, industry authority) | Wikipedia (unless literally no alternative), LinkedIn for people |
+
+**Rules:** Link on first meaningful mention only. Descriptive anchor text (3-6 words), never bare URLs. Don't re-link same entity in same section.
+
+**Sub-agents:** Copy the table above into every writing agent prompt alongside the banned words. Sub-agents cannot access canon files by path.
+
 ## Banned Words (Grep for These)
 
 delve, landscape, leverage (as verb), utilize, facilitate, paradigm, synergy, game-changer, revolutionize, cutting-edge, harness, streamline, robust, foster, spearhead, holistic, ecosystem, empower, pivot, disrupt, beacon, realm
@@ -129,7 +149,7 @@ Prepare handoff package:
 
 | After Writing | Skill | Purpose |
 |--------------|-------|---------|
-| QA each article | `/article-quality-gate` or `/qa` | Run 18-step [Methodology Partner] gate |
+| QA each article | `/article-quality-gate` or `/qa` | Run 18-step BlitzMetrics gate |
 | Document the process | `/meta-article` | Publishable process article with real metrics |
 | Prep for WordPress | `/wp-publisher` | Generate meta, schema, RankMath brief |
 | Optimize for AI search | `/geo-optimizer` | Check AI citability and entity signals |
@@ -144,7 +164,6 @@ Prepare handoff package:
 - [Full SOP: Article Writing](../sops/client-work/article-writing-from-transcripts.md)
 - [Article QA Skill](article-qa.md)
 - [Content Factory Skill](content-factory.md)
-- [Good Examples](good-examples/)
 - [Transcription Pipeline SOP](../sops/client-work/transcription-pipeline.md)
 
 ## See Also
@@ -154,6 +173,14 @@ Prepare handoff package:
 - [[blitzmetrics-canon/06-topic-wheel|Topic Wheel]]
 - [[skills/article-qa|Article QA]]
 - [[skills/content-repurposing|Content Repurposing]]
+
+## Post-Publish Tracking
+
+After articles are published, track performance via GA4 and GSC:
+- **GA4:** Monitor page sessions, engagement time, and organic traffic share for each article URL
+- **GSC:** Run `/gsc-insights` at 7 and 14 days post-publish to verify indexing, check target keyword impressions, clicks, CTR, and average position
+- Flag any article not indexed after 14 days — request indexing via GSC
+- Feed performance data back into the next batch: high-performing topics get more articles, low performers get diagnosed
 
 ## Known Pitfalls
 

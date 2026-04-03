@@ -64,12 +64,12 @@ Every tool we use, who owns it, who has access, and how to get in. If it's not o
 ### Project Management
 
 #### Basecamp
-- **URL:** basecamp.com/4057320
+- **URL:** basecamp.com/[project-id]
 - **What it does:** System of record for all project work. Task assignments, EOD reports, MAA reports, client-visible threads, internal threads, file sharing. Everything about a client or deliverable lives here.
 - **Admin:** [Your Mentor/Advisor], [Your Ops Admin] [Last Name]
 - **Who has access:** Full team — [Your Name], [Your Mentor/Advisor], [Your Ops Partner], [Your Ops Admin], [Your Content Specialist], [Your Site Admin], [Your Local Agency Partner], [Your Team Member], [Your Content Monitor], [Your Repurposing Specialist], [Your Automation Lead], [Your Client Specialist], [Your Content Ops Lead], [Your Ads Specialist], plus clients on their project threads
 - **How to get access:** Email [Your Ops Admin]. He creates accounts and assigns to projects.
-- **Key projects:** [Methodology Partner] HQ (team-wide), Local Service Spotlight ([Partner Platform] umbrella), individual client projects (e.g., "[Your Agency]'s Google Knowledge Panel: Ryan D. Lee"), AI Apprentice projects per student
+- **Key projects:** [Methodology Partner] HQ (team-wide), Local Service Spotlight ([Partner Platform] umbrella), individual client projects (e.g., "[Your Agency]'s Google Knowledge Panel: [Client Name]"), AI Apprentice projects per student
 - **Notes:** Basecamp sends email notifications from `notifications@3.basecamp.com`. All EOD and MAA reports are posted here. [Your Mentor/Advisor] is emphatic that project communication belongs in Basecamp, not email.
 
 ---
@@ -295,7 +295,7 @@ Every tool we use, who owns it, who has access, and how to get in. If it's not o
 - **What it does:** Team file sharing. Client content folders. Media assets.
 - **Admin:** [Your Ops Admin] manages access and folder structure.
 - **How to get access:** [Your Ops Admin] shares specific folders via Google Drive links.
-- **Notes:** Client-specific folders created during onboarding. AI Apprentice students get their own Google Drive folders for content uploads (e.g., Kayla Scovel folder created March 2026). [Your Mentor/Advisor] directs students to "get as much content, videos, proof, articles, etc into the Google Drive folder."
+- **Notes:** Client-specific folders created during onboarding. AI Apprentice students get their own Google Drive folders for content uploads (e.g., [Apprentice Name] folder created March 2026). [Your Mentor/Advisor] directs students to "get as much content, videos, proof, articles, etc into the Google Drive folder."
 
 #### Google Sheets — Team Roster
 - **URL:** [Team Roster]([Google Sheet URL])

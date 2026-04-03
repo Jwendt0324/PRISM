@@ -116,7 +116,7 @@ Equity does not equal authority. [Your Name] holds sole decision-making power. [
 
 | Role | RACI | Notes |
 |------|------|-------|
-| [Your Mentor/Advisor] | R | Handles client escalations directly (e.g., Ryan D. Lee, [Client — Local Retail Business]). First responder. |
+| [Your Mentor/Advisor] | R | Handles client escalations directly (e.g., [Client Name], [Client — Local Retail Business]). First responder. |
 | [Your Name] | A | Informed immediately. Steps in if the situation requires owner-level authority. |
 | [Your Ops Partner] [Last Name] | I | Informed for operational awareness. |
 

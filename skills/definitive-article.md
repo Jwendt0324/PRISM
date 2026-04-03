@@ -1,7 +1,7 @@
 ---
 name: Definitive Article Generator
 version: 1
-description: Create the canonical reference article for a [Methodology Partner]/[Your Agency]
+description: Create the canonical reference article for a BlitzMetrics/[Your Agency]
   concept — the SEO Tree "branch" that meta-articles link back to
 triggers:
   - definitive article
@@ -39,23 +39,23 @@ A definitive article is the single canonical reference for a concept, following 
 
 "The definitive article gives away the knowledge; the course sells the structure."
 
-**Source:** [methodology-partner.com]/definitive-article-guide/
+**Source:** blitzmetrics.com/definitive-article-guide/
 
 ---
 
 ## When to Run
 
 - When the meta-article tracker shows 5+ meta-articles covering similar work
-- When creating a new canonical resource for a [Methodology Partner]/[Your Agency] framework
+- When creating a new canonical resource for a BlitzMetrics framework
 - When consolidating scattered content about one topic into a single authoritative page
-- When [Your Name] says "we need a definitive article on [topic]"
+- When the owner says "we need a definitive article on [topic]"
 
 ---
 
 ## Phase 0: Load Good Examples + Research Existing
 
-1. Check `~/Documents/Claude/PRISM/skills/good-examples/definitive-articles/` for approved examples
-2. Study [methodology-partner.com]/dad (Dollar a Day — gold standard definitive article)
+1. Check your good-examples library for approved definitive article examples
+2. Study blitzmetrics.com/dad (Dollar a Day — gold standard definitive article)
 3. Search the target site for existing partial coverage: `site:[domain] [topic]`
 4. Read the meta-article tracker for related meta-articles to consolidate
 
@@ -94,7 +94,7 @@ Connect to other definitive articles covering adjacent topics. Creates an interc
 If training or execution services exist, link as conversion path. But the article gives away the knowledge freely.
 
 ### 6. Blog Posting Guidelines Compliance
-All [Methodology Partner] standards: title < 60 chars, meta description < 160 chars, keyword in first paragraph, H2/H3 structure, short paragraphs, active voice, no AI fluff, internal linking via entity decision tree.
+All BlitzMetrics standards: title < 60 chars, meta description < 160 chars, keyword in first paragraph, H2/H3 structure, short paragraphs, active voice, no AI fluff, internal linking via entity decision tree.
 
 ### 7. Dedicated Short URL
 Create a permanent redirect (e.g., `/dad` for Dollar a Day, `/cf` for Content Factory) that becomes the canonical address for all internal references.
@@ -154,9 +154,9 @@ Collect and include: media coverage, conference presentations, practitioner test
 ```
 
 ### Voice Rules
-- Same as all [Methodology Partner] content: zero banned words, zero AI patterns, active voice, contractions
+- Same as all BlitzMetrics content: zero banned words, zero AI patterns, active voice, contractions
 - Load voice profile if writing for a specific client
-- First-person if from [Your Mentor/Advisor] or the subject matter expert
+- First-person if from Dennis or the subject matter expert
 - Third-person if editorial/institutional
 
 ---
@@ -190,7 +190,7 @@ When consolidating 5+ meta-articles into a definitive article:
 
 ## Phase 6: QA Gate
 
-Run the full 18-step [Methodology Partner] QA gate (see [[skills/article-qa|Article QA]]) on the definitive article. Additionally check:
+Run the full 18-step BlitzMetrics QA gate (see [[skills/article-qa|Article QA]]) on the definitive article. Additionally check:
 
 - [ ] All 9 non-negotiable requirements met
 - [ ] 10+ linked examples with descriptions
@@ -208,7 +208,7 @@ Run the full 18-step [Methodology Partner] QA gate (see [[skills/article-qa|Arti
 ## Phase 7: Output
 
 1. **Generate .docx** — same formatting as regular articles
-2. **Save to:** `~/Documents/Claude/PRISM/content-pipeline/[client]/definitive-articles/definitive-[slug]-YYYY-MM-DD.docx`
+2. **Save to:** your content pipeline directory under `definitive-articles/definitive-[slug]-YYYY-MM-DD.docx`
 3. **Save markdown:** alongside as `.md`
 4. **Generate schema markup** in separate file: `schema-[slug].json`
 5. **Update meta-article tracker** — mark which meta-articles now link to this definitive article
@@ -218,15 +218,33 @@ Run the full 18-step [Methodology Partner] QA gate (see [[skills/article-qa|Arti
 
 ## Phase 8: Post-Publish Checklist (For Human)
 
-After [Your Name] publishes the definitive article:
+After publishing the definitive article:
 
-- [ ] Create short URL redirect (e.g., `/cf` → full URL)
+- [ ] Create short URL redirect (e.g., `/cf` -> full URL)
 - [ ] Update all meta-articles with links back to this definitive article
 - [ ] Update older articles that reference this concept to link here
 - [ ] Add to site navigation if it's a core concept
 - [ ] Submit to Google Search Console for indexing
 - [ ] Run `/social-content` for launch posts
 - [ ] Track in weekly MAA report
+
+## Phase 9: Post-Publish Ranking Verification (7/14/30 Day)
+
+Definitive articles target featured snippets and top-3 positions. Track aggressively via GSC and GA4:
+
+**GSC (via `/gsc-insights`):**
+- Confirm indexing within 48 hours (request indexing manually if not)
+- At 7 days: check impressions and average position for primary keyword
+- At 14 days: check if the article appears in featured snippet or PAA for target queries
+- At 30 days: full keyword report — which queries is this page ranking for, position, CTR
+- Compare against competing pages for the same keyword — if position is 4+, diagnose (thin content, missing schema, weak internal links)
+
+**GA4 (your analytics property):**
+- Track organic sessions to the definitive article URL at 7/14/30 days
+- Check engagement time — definitive articles should have above-average time on page (they're long-form reference content)
+- Monitor internal navigation — are readers clicking through to linked meta-articles and examples?
+
+Feed all ranking data into the weekly MAA report. If the definitive article isn't in the top 3 for its primary keyword by day 30, create an action item to strengthen it (more internal links, more examples, schema updates).
 
 ---
 
@@ -253,7 +271,7 @@ After [Your Name] publishes the definitive article:
 
 ## Examples to Study
 
-- [methodology-partner.com]/dad — Dollar a Day (gold standard)
-- [methodology-partner.com]/blog-posting-guidelines/ — Blog Posting Guidelines (68 inbound links)
-- [methodology-partner.com]/meta-article-prompt-template/ — Meta-Article Prompt (29 examples)
-- [methodology-partner.com]/definitive-article-guide/ — The definitive article about definitive articles
+- blitzmetrics.com/dad — Dollar a Day (gold standard)
+- blitzmetrics.com/blog-posting-guidelines/ — Blog Posting Guidelines (68 inbound links)
+- blitzmetrics.com/meta-article-prompt-template/ — Meta-Article Prompt (29 examples)
+- blitzmetrics.com/definitive-article-guide/ — The definitive article about definitive articles

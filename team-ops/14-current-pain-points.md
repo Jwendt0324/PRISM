@@ -146,7 +146,7 @@ Last updated: 2026-03-18
 
 ## 13. No Engagement Monitoring for AI Apprentices
 
-**What happened:** Variable participation across apprentices (Alea slow, Morgan inactive) with no systematic check-in cadence or engagement triggers.
+**What happened:** Variable participation across apprentices ([Apprentice A] slow, [Apprentice B] inactive) with no systematic check-in cadence or engagement triggers.
 
 **Root cause:** Onboarding exists but ongoing engagement monitoring does not. Apprentices drift without structured accountability.
 

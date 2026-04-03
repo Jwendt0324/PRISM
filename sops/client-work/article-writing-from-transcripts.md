@@ -276,19 +276,19 @@ Per `08-human-requirements.md`, these steps CANNOT be fully automated:
 
 ## Common Pitfalls
 
-- **Automated contraction scripts create broken words.** "you have" → "you've" can produce "you've a pile" (British-sounding) or "doesn'thing" (broken). Always audit contraction replacements and fix artifacts. The Ryan D. Lee project had 59 broken contractions from the automated fix.
-- **"Not because X, but because Y" slips through constantly.** This is the most common banned AI pattern. It appeared in 10 of 54 Ryan D. Lee articles despite explicit instructions. Add it to every QA audit.
-- **Duplicate opening sentences across articles.** Ryan D. Lee articles 5 and 50 both opened with "My father built our house by hand." Always check for duplicates across the full batch.
+- **Automated contraction scripts create broken words.** "you have" → "you've" can produce "you've a pile" (British-sounding) or "doesn'thing" (broken). Always audit contraction replacements and fix artifacts. The [Client Name] project had 59 broken contractions from the automated fix.
+- **"Not because X, but because Y" slips through constantly.** This is the most common banned AI pattern. It appeared in 10 of 54 [Client Name] articles despite explicit instructions. Add it to every QA audit.
+- **Duplicate opening sentences across articles.** [Client Name] articles 5 and 50 both opened with "My father built our house by hand." Always check for duplicates across the full batch.
 - **Agents use inconsistent file naming.** Different parallel agents may name files differently (e.g., `article-203-v5.docx` vs `203.docx` vs `article-203-slug.docx`). Run a normalization pass after all agents complete.
 - **Word count target vs. transcript length.** Short transcripts (under 500 words) cannot become 1,500-word articles without fabricating content. Classify these as RED tier and give them brief framing pieces, or archive them entirely. Fabricating content to hit word count violates E-E-A-T.
-- **Podbean episodes often duplicate YouTube content.** Cross-reference before writing. On the Ryan D. Lee project, 44 of 45 Podbean episodes were duplicates.
+- **Podbean episodes often duplicate YouTube content.** Cross-reference before writing. On the [Client Name] project, 44 of 45 Podbean episodes were duplicates.
 - **Skipping human review "because automated QA passed."** Automated QA catches mechanical issues (banned words, word count, links). It CANNOT catch voice authenticity, fabricated stories, or strategic misalignment. The human gate is mandatory per canon.
 - **Creating new articles on topics that already have published content.** Always run content tree verification first. Enhancing an existing article is better than cannibalizing it with a new one.
 - **E-E-A-T fabrication under pressure.** When a transcript is thin, agents may invent stories or credentials to fill space. This is worse than a short article. Archive the transcript or write a brief framing piece instead.
 
 ## Learnings Log
 
-- **2026-03-18 (Ryan D. Lee):** 54 articles written (50 YouTube + 4 guest appearances). 10 parallel agents produced all 50 YouTube articles simultaneously. QA audit caught 27 violations in first pass, reduced to 0 after two repair rounds.
+- **2026-03-18 ([Client Name]):** 54 articles written (50 YouTube + 4 guest appearances). 10 parallel agents produced all 50 YouTube articles simultaneously. QA audit caught 27 violations in first pass, reduced to 0 after two repair rounds.
 - **2026-03-18 ([Client — Local Retail Business]):** 378 articles from 400 transcripts. 98 archived for being under 750 words (all from performance/jam videos with minimal dialogue). Voice profile captured the brother dynamic (John sets up tech detail, Jeremy delivers opinion).
 - **2026-03-18:** The biggest QA issue is always banned AI patterns, not banned words. Words are easy to grep for. Patterns require sentence-level analysis. Build the QA script with regex patterns for every banned construction.
 - **2026-03-20 (v2.0 upgrade):** Added mandatory human review gate, [Methodology Partner] 18-step QA integration, E-E-A-T compliance requirements, content tree verification, meta-article generation, 9 Triangles mapping, Topic Wheel positioning, and MAA tracking feedback loop per SOP audit findings. Previous versions had a fully automated pipeline with no human checkpoint — this was a canon violation.

@@ -160,7 +160,7 @@ version: 1.0
 | Project | Status | Key Movement This Week | Next Step |
 |---------|--------|----------------------|-----------|
 | Parts Agent ([Client-ID]) | Building | Tested 10/10 on [Parts Distributor], server data extracted | Deploy to Vultr |
-| [Your Agency] Content | Maintaining | 378 articles [Client — Local Retail Business], 54 Ryan D. Lee | Publish RDL articles |
+| [Your Agency] Content | Maintaining | 378 articles [Client — Local Retail Business], 54 [Client Name] | Publish [Client Initials] articles |
 | ... | ... | ... | ... |
 
 ## Financial Summary

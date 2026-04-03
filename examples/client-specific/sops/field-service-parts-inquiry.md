@@ -82,8 +82,8 @@ Standardize how [Client — Appliance Repair] processes parts inquiry tickets in
 | Part Number(s) | The part(s) that need warranty ordering |
 | Part Quantity | Usually 1 per line |
 | Recipient Name | **[Client — Appliance Repair] - [ticket number]** (e.g., [Client — Appliance Repair] - 235934) |
-| Recipient Phone | **832-804-8980** |
-| Recipient Address | **32702 Walnut Creek Road, Magnolia, TX** |
+| Recipient Phone | **[555-000-0000]** |
+| Recipient Address | **[123 Example Street, City, ST]** |
 | Send Copy To | parts@[client-id]service.com |
 
 18. **Submit the form**.
@@ -135,9 +135,9 @@ Standardize how [Client — Appliance Repair] processes parts inquiry tickets in
 
 | Item | Value |
 |------|-------|
-| [Client-ID] Office Address | 32702 Walnut Creek Road, Magnolia, TX |
+| [Client-ID] Office Address | [123 Example Street, City, ST] |
 | [Client-ID] Parts Email | parts@[client-id]service.com |
-| [Client-ID] Office Phone | 832-804-8980 |
+| [Client-ID] Office Phone | [555-000-0000] |
 | Smartsheet URL | app.smartsheet.com (warranty part request form) |
 | [Parts Distributor] | [parts-distributor-url.com] |
 | Electrolux Parts Lookup | Electrolux Service Tips |

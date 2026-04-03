@@ -104,8 +104,8 @@ Document the full lifecycle of the automated parts pricing agent — from how it
 | SmartSheet API token | **BLOCKED** — waiting on [Client Contact] |
 | Vendor routing | In-stock = MA, Warehouse = [Client-ID], OOS = WCI |
 | Default hold_loc | OR |
-| SmartSheet static: phone | 832-804-8980 |
-| SmartSheet static: address | 32702 1-A Creek Road, Magnolia TX |
+| SmartSheet static: phone | [555-000-0000] |
+| SmartSheet static: address | [123 Example Street, City, ST] |
 | SmartSheet static: email | parts@[client-id]service.com |
 
 ### [Client — Appliance Repair] (Configured, Not Active)
@@ -213,8 +213,8 @@ All 12+ fields submitted for OOS parts:
 | part_number | Pipeline output | The OOS part |
 | quantity | PrtsPrcs record | Usually 1 |
 | recipient_name | Generated | Format: `[Client-ID]-{ticket_number}` |
-| phone | `clients.json` → smartsheet.static_fields | 832-804-8980 |
-| address | `clients.json` → smartsheet.static_fields | 32702 1-A Creek Road, Magnolia TX |
+| phone | `clients.json` → smartsheet.static_fields | [555-000-0000] |
+| address | `clients.json` → smartsheet.static_fields | [123 Example Street, City, ST] |
 
 ---
 
@@ -322,4 +322,4 @@ All 12+ fields submitted for OOS parts:
 ## Learnings Log
 
 - **2026-03-30:** Initial SOP created. v3 codebase has 16 modules and 103 passing tests. Vultr deploy package ready but blocked on two credentials from [Client Contact]. The manual SOP (`field-service-parts-inquiry.md`) documents the human process this agent replaces — read it for full context on what each automated step is doing.
-- **2026-03-30:** Address discrepancy noted: SmartSheet config says "32702 1-A Creek Road" but manual SOP says "32702 Walnut Creek Road." Verify correct address with [Client Contact] before first live SmartSheet submission.
+- **2026-03-30:** Address discrepancy noted: SmartSheet config says "[address variant A]" but manual SOP says "[address variant B]." Verify correct address with [Client Contact] before first live SmartSheet submission.

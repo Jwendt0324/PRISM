@@ -23,13 +23,24 @@ tags:
 
 ## Core Principle
 
-The MAA is analysis, not a task list. It implements the [[blitzmetrics-canon/05-maa-framework|MAA Framework]] and connects to the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]. "We published 3 articles" is a task. "The 3 articles targeting long-tail hearing aid keywords drove 340 new organic sessions, up from 180 last week" is analysis. [Your Mentor/Advisor] will push back on task-list-style reports every time.
+The MAA is analysis, not a task list. It implements the [[blitzmetrics-canon/05-maa-framework|MAA Framework]] and connects to the [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]. "We published 3 articles" is a task. "The 3 articles targeting long-tail hearing aid keywords drove 340 new organic sessions, up from 180 last week" is analysis. Dennis will push back on task-list-style reports every time.
+
+## Data Sources
+
+| Source | Property | Access | Data |
+|--------|----------|--------|------|
+| **GA4** | Your analytics property | analytics.google.com | Sessions, users, top pages, traffic sources, engagement, conversions |
+| **GSC** | Your verified property | search.google.com/search-console | Keywords, impressions, clicks, CTR, average position, indexing status |
+| **Social platforms** | Native analytics per platform | Platform logins | Engagement, followers, reach |
+| **Ad platforms** | Meta Ads Manager, etc. | Platform logins | Spend, conversions, CPL, ROAS |
+
+GA4 and GSC are linked. Use `/gsc-insights` for keyword and indexing data pulls. Pull GA4 data directly from the analytics property.
 
 ## Phase 1: Pull Metrics (Actual Numbers Only)
 
 1. **Gather from native platforms** — not automated dashboards alone:
-   - Website traffic: sessions, users, top pages (GA4)
-   - Search rankings: target keywords, position changes (SEMrush/Ahrefs)
+   - Website traffic: sessions, users, top pages, traffic sources (GA4)
+   - Search rankings: target keywords, position changes, CTR, impressions (GSC via `/gsc-insights`)
    - Content published: count, titles, platforms
    - Engagement: social likes, comments, shares, video views
    - Campaign KPIs: ad spend, conversions, CPL (if running ads)
@@ -75,15 +86,15 @@ Before posting, verify:
 ## Phase 4: Post & Distribute
 
 1. Post the MAA to the **Basecamp Updates thread** (client-visible)
-2. Client and [Your Mentor/Advisor] should see it without having to ask
+2. Client and advisor should see it without having to ask
 3. Due by **Friday EOD** every week for every active client
 
 ## Known Pitfalls
 
-- **Task list disguised as analysis.** The #1 failure. [Your Mentor/Advisor] catches this every time. Connect output to outcomes.
+- **Task list disguised as analysis.** The #1 failure. Dennis catches this every time. Connect output to outcomes.
 - **Missing a week without notice.** Post a note saying when the report will come. Going silent destroys trust faster than a bad report.
 - **Vague metrics.** "Traffic increased" is useless. Include the actual number and the comparison — always.
-- **Action items with no owner.** Every action needs a person's name and a date. "Improve SEO" is not an action item. "Publish 2 articles targeting [keyword] — [Your Name] — by Wednesday" is.
+- **Action items with no owner.** Every action needs a person's name and a date. "Improve SEO" is not an action item. "Publish 2 articles targeting [keyword] — [Owner] — by Wednesday" is.
 - **Ignoring the weakest area.** If organic traffic is flat but all your actions are about content, you are avoiding the problem. The Action section must address whatever is underperforming.
 
 ## Human Gates
@@ -91,8 +102,8 @@ Before posting, verify:
 - Analyst pulls metrics from native platforms (not automated dashboards alone)
 - Analysis section requires human judgment — connecting cause to effect
 - Action items require human assignment of owners and deadlines
-- [Your Mentor/Advisor] reviews MAA quality and pushes back on task-list-style reports
-- Posted to Basecamp for client and [Your Mentor/Advisor] visibility — human verifies content is client-appropriate
+- Dennis reviews MAA quality and pushes back on task-list-style reports
+- Posted to Basecamp for client and advisor visibility — human verifies content is client-appropriate
 
 ---
 
@@ -103,12 +114,9 @@ Before posting, verify:
 - [Influence Report Card Skill](influence-report-card.md)
 - [Content Factory Skill](content-factory.md)
 - [Dollar-a-Day Skill](dollar-a-day.md)
-- [Client Directory](../memory-bank/04-client-directory.md)
-- [Basecamp Status](../memory-bank/15-basecamp-status.md)
 
 ## See Also
 
 - [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
 - [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
 - [[skills/content-factory|Content Factory Skill]]
-- [[memory-bank/04-client-directory|Client Directory]]

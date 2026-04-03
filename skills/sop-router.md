@@ -23,7 +23,7 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 |---------|-------|------|-------------------|
 | Content Factory, content production, Topic Wheel, content strategy, monthly content cycle, plumbing setup | **Content Factory** | skills/content-factory.md | sops/client-work/content-factory-execution.md |
 | Write articles, batch articles, transcript to article, article writing, content engine | **Article Writer** | skills/article-writer.md | sops/client-work/article-writing-from-transcripts.md |
-| Article QA, compliance check, 18-step gate, proofread, [Your Mentor/Advisor] review | **Article QA** | skills/article-qa.md | sops/client-work/article-qa-blitzmetrics.md |
+| Article QA, compliance check, 18-step gate, proofread, Dennis review | **Article QA** | skills/article-qa.md | sops/client-work/article-qa-blitzmetrics.md |
 | Dollar-a-Day, $1/day ads, boosting content, paid social, Facebook/Instagram ads, promote content | **Dollar-a-Day** | skills/dollar-a-day.md | sops/client-work/dollar-a-day-campaign.md |
 | Content repurposing, repurpose video, long-form to short-form, content pipeline, multi-platform | **Content Repurposing** | skills/content-repurposing.md | sops/client-work/content-repurposing-pipeline.md |
 | MAA report, weekly report, metrics analysis action, Friday report | **Weekly MAA Report** | skills/weekly-maa-report.md | sops/client-work/weekly-maa-report.md |
@@ -46,10 +46,10 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 
 | Trigger | SOP | Path |
 |---------|-----|------|
-| [Your Agency] offer, pricing, GTM, go-to-market, service packages, offer ladder | [Your Agency] Offer Ladder & GTM Blueprint | sops/business-ops/hri-offer-ladder-and-gtm.md |
-| Event planning, [Your Speaker Event], in-person event, speaker event, conference | Event Planning ([Your Speaker Event]) | sops/business-ops/event-planning.md |
-| P&L, profit and loss, monthly financials, revenue reporting, Stripe revenue, expense tracking | P&L Reporting | sops/business-ops/pl-reporting.md |
-| Refund, client refund, payment dispute, chargeback, escalation to [Your Mentor/Advisor] | Refund & Escalation | sops/business-ops/refund-escalation.md |
+| Offer ladder, pricing, GTM, go-to-market, service packages | Offer Ladder & GTM Blueprint | sops/business-ops/offer-ladder-and-gtm.md |
+| Event planning, in-person event, speaker event, conference | Event Planning | sops/business-ops/event-planning.md |
+| P&L, profit and loss, monthly financials, revenue reporting, expense tracking | P&L Reporting | sops/business-ops/pl-reporting.md |
+| Refund, client refund, payment dispute, chargeback, escalation | Refund & Escalation | sops/business-ops/refund-escalation.md |
 | University speaking, guest lecture, professor outreach, academic engagement | University Speaking Outreach | sops/business-ops/university-speaking-outreach.md |
 
 ## Team Ops
@@ -57,12 +57,11 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 | Trigger | SOP | Path |
 |---------|-----|------|
 | New hire, onboarding a team member, tool provisioning, Day 1 setup | New Hire Onboarding SOP | team-ops/06-new-hire-onboarding-sop.md |
-| [Your Content Specialist] onboarding, [Your Content Specialist]'s tasks, [Your Content Specialist] success metrics | [Your Content Specialist] [Last Name] Onboarding Kit | team-ops/07-new-hire-onboarding-kit.md |
 | KP Sprint project management, Sprint timeline, red/amber/green status | KP Sprint Project Management | team-ops/10-project-management-sop.md |
 | Client communication, Basecamp updates, client-facing messages | Client Communication | team-ops/11-client-communication-sop.md |
 | Escalation, client unhappy, late deliverable, team unresponsive, scope creep, quality issue | Escalation Playbook | team-ops/12-escalation-playbook.md |
 | Hiring plan, scaling team, next hire, revenue triggers for hiring | Team Scaling Plan | team-ops/13-team-scaling-plan.md |
-| Pain points, friction, systemic issues, what's broken at [Your Agency] | Current Pain Points | team-ops/14-current-pain-points.md |
+| Pain points, friction, systemic issues, what's broken | Current Pain Points | team-ops/14-current-pain-points.md |
 
 ## File Management
 
@@ -93,7 +92,7 @@ When starting a task, match it against these triggers. **Load the SKILL first if
 - **SOPs** (in `sops/`) are the detailed reference documents with full context, learnings logs, common pitfalls, and edge cases. They are the source of truth.
 - When in doubt, start with the skill. Escalate to the SOP if you hit a situation the skill doesn't cover.
 
-All paths are relative to `~/Documents/Claude/PRISM/`.
+All paths are relative to your PRISM root directory.
 
 ---
 

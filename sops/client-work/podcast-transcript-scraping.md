@@ -61,11 +61,11 @@ Download and transcribe podcast episodes from RSS feeds as part of the [[blitzme
 
 ## Common Pitfalls
 
-- **ffmpeg not installed.** Whisper silently fails or throws opaque errors without it. Always `brew install ffmpeg` first. This cost 45 minutes of debugging on the Ryan D. Lee project.
+- **ffmpeg not installed.** Whisper silently fails or throws opaque errors without it. Always `brew install ffmpeg` first. This cost 45 minutes of debugging on the [Client Name] project.
 - **Whisper FP16 warning on CPU.** "FP16 is not supported on CPU; using FP32 instead" is normal and harmless. It just means slower processing. Ignore it.
 - **SSL cert errors behind VPN.** Add the `ssl._create_unverified_context` fix. This blocked the initial run of the [Client Podcast] scraper.
 - **RSS feed pagination.** Some Podbean feeds only return 20-50 episodes. Check if there are `<link rel="next">` pagination links. The [Client Podcast] feed returned all 45 episodes without pagination.
-- **Most podcast episodes duplicate YouTube content.** On the Ryan D. Lee project, 44 of 45 Podbean episodes matched existing YouTube video transcripts. Always cross-reference before writing articles to avoid SEO cannibalization.
+- **Most podcast episodes duplicate YouTube content.** On the [Client Name] project, 44 of 45 Podbean episodes matched existing YouTube video transcripts. Always cross-reference before writing articles to avoid SEO cannibalization.
 
 ## Human Gates
 | Step | Gate Type | Reason |

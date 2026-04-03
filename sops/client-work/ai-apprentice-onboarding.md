@@ -70,7 +70,7 @@ Ensure every new AI Apprentice is properly qualified, provisioned across all sys
 9. **Monitor MAA submissions weekly.** Track whether each apprentice is submitting their Friday MAA:
    - **1 week missed:** Ops team sends a follow-up message. Ask if they need help, identify blockers.
    - **2 weeks missed:** Escalate to [Your Name] or [Your Mentor/Advisor]. Direct outreach to the apprentice.
-   - **3+ months inactive:** Contact the apprentice's parent or sponsor if applicable. The Morgan Gopaul case: long-inactive apprentices do not self-recover — someone else needs to intervene.
+   - **3+ months inactive:** Contact the apprentice's parent or sponsor if applicable. The [Apprentice Name] case: long-inactive apprentices do not self-recover — someone else needs to intervene.
 
 ## Quality Checks
 - [ ] Qualification task completed with all 3 deliverables (article, video, Facebook post) — no exceptions
@@ -109,7 +109,7 @@ Ensure every new AI Apprentice is properly qualified, provisioned across all sys
 - **Last audited:** 2026-03-20 ([Methodology Partner] Canon Alignment run)
 
 ## Learnings Log
-- *2026-03-18* — SOP created based on AI Apprentice Program operations, [Your Content Specialist] qualification incident, and Morgan Gopaul engagement recovery case.
+- *2026-03-18* — SOP created based on AI Apprentice Program operations, [Your Content Specialist] qualification incident, and [Apprentice Name] engagement recovery case.
 
 ---
 

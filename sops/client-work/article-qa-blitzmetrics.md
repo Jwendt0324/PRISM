@@ -124,7 +124,7 @@ The `qa_audit.py` script scans every `.docx` file in a target folder. It checks 
 ```
 
 **CRITICAL — Post-contraction artifact scan:** After running contractions, scan for broken artifacts:
-- `"doesn'thing"` — broken from "does nothing" (happened 59 times in Ryan D. Lee batch)
+- `"doesn'thing"` — broken from "does nothing" (happened 59 times in [Client Name] batch)
 - `"you've a pile"` — sounds British; exclude "you have" when followed by a noun without "got"
 - Lowercase `"i "` at start of sentences
 - `"it'self"` or other mid-word breaks
@@ -143,7 +143,7 @@ Repeat until 0 BLOCK violations. Log the final scorecard.
 
 ### Mechanical Check Pitfalls (Learned the Hard Way)
 
-- **Contraction scripts break compound words.** "does nothing" → "doesn'thing." Always run artifact scan. (Ryan D. Lee project, 59 instances.)
+- **Contraction scripts break compound words.** "does nothing" → "doesn'thing." Always run artifact scan. ([Client Name] project, 59 instances.)
 - **"Not because X, but because Y" is the stealthiest pattern.** It reads naturally, so writers (human and AI) default to it. Appeared in 10/54 articles even with explicit instructions to avoid it.
 - **"Limited time" false positives.** "I don't have unlimited time" contains "limited time" as a substring but is legitimate. Check sentence context before flagging.
 - **Em dash check must catch all Unicode variants.** `—` (em dash), `–` (en dash), ` -- ` (double hyphen as em dash).
@@ -276,7 +276,7 @@ This is the most nuanced step. See the three-tier breakdown:
 - Generic filler sentences that add no information
 
 **STYLE — Author's Judgment (Not Scored):**
-- **Paragraph rhythm.** Vary it. One-sentence paragraphs for emphasis. Longer paragraphs for complex explanations. Don't flatten everything to a uniform length. The Ryan D. Lee example uses everything from one-line punches to six-line explanations — that's the rhythm of good writing.
+- **Paragraph rhythm.** Vary it. One-sentence paragraphs for emphasis. Longer paragraphs for complex explanations. Don't flatten everything to a uniform length. The [Client Name] example uses everything from one-line punches to six-line explanations — that's the rhythm of good writing.
 - **Single rhetorical questions.** A well-placed question can be the strongest line in the piece. "Is that number enough?" works. Three questions in a row doesn't.
 - **Passive voice.** Active voice is the default, but passive has legitimate uses. "The store was founded in 1985" is better than contorting the sentence to make it active when the founder isn't the point. Use passive when it serves clarity or emphasis.
 - **Sentence-ending prepositions.** Not a real grammar rule. Never was. Write naturally.
@@ -452,10 +452,10 @@ Per canon (`10-anti-vandalism-checklist.md`):
 
 ## Learnings Log
 
-- **2026-03-18 (Ryan D. Lee):** First audit found 27 violations across 54 articles. After two repair rounds: 0. Most common: "not because X, but because Y" (10 articles), word count under 1200 (11 articles).
+- **2026-03-18 ([Client Name]):** First audit found 27 violations across 54 articles. After two repair rounds: 0. Most common: "not because X, but because Y" (10 articles), word count under 1200 (11 articles).
 - **2026-03-18:** Mechanical fixes (contractions + banned words) should always run as a Python script first. Pattern and editorial fixes require agent-level reasoning. Don't automate pattern rewrites with regex.
 - **2026-03-18:** Running the QA audit as a Python script (not asking Claude to read each article) is dramatically faster. Build the script once, reuse across clients.
-- **2026-03-18:** Contraction scripts broke 59 instances of "does nothing" → "doesn'thing" in Ryan D. Lee batch. Post-contraction artifact scan is now mandatory.
+- **2026-03-18:** Contraction scripts broke 59 instances of "does nothing" → "doesn'thing" in [Client Name] batch. Post-contraction artifact scan is now mandatory.
 - **2026-03-21:** Consolidated mechanical checks SOP into this file. Single source of truth.
 - **2026-03-30:** v2.0 overhaul. Replaced binary PASS/FAIL with severity tiers (BLOCK/WARN/STYLE). Removed robotic rules that contradicted approved good examples: hard contraction counts, blanket rhetorical question ban, rigid paragraph length rules, sentence-ending preposition ban. Separated pre-publish gate (Steps 1-13) from post-publish workflow (Steps 14-18). Added voice profile integration.
 - **2026-03-30 (retro):** Session b7969ae9 ran 4 QA cycles on the "Uber of Digital Marketing" article rewrite. Key finding: multi-cycle QA (write → QA → refine → QA again) produces significantly better results than single-pass. Recommend standardizing at 2 QA passes minimum for client-facing articles. First pass catches BLOCK/WARN violations; second pass catches pattern-level issues that only emerge after mechanical fixes are applied.

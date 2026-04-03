@@ -88,11 +88,14 @@ This skill executes the [[blitzmetrics-canon/02-content-factory-process|Content 
 
 ## Stage 5: Perform (MAA)
 
-1. Weekly MAA every Friday: pull metrics from all platforms, analyze WHY, set actions with owners and deadlines
+1. Weekly MAA every Friday — pull metrics from GA4 and GSC as primary sources:
+   - **GA4** (your analytics property): sessions, users, top pages, traffic sources, engagement metrics, conversions
+   - **GSC** (your verified property) via `/gsc-insights`: keyword rankings, impressions, clicks, CTR, average position, indexing status
+   - Social and ad platform metrics from native dashboards
 2. Score content on 30-point authority scale: What (1-10) x Who (1-10) x Where (1-10)
 3. Winners (20+ score) go to evergreen promotion. Feed back into Process for repurposing
 4. Kill or rework losers. Feed insights into Produce priorities
-5. Monthly: full trend analysis, top 3 performers, Topic Wheel coverage gaps, client check-in
+5. Monthly: full trend analysis using GA4 for traffic trends and GSC for ranking movement, top 3 performers, Topic Wheel coverage gaps, client check-in
 6. **HUMAN GATE:** Analysis requires human judgment, strategic pivots are human decisions
 
 ## Weekly Cycle Quick Reference
@@ -125,7 +128,6 @@ This skill executes the [[blitzmetrics-canon/02-content-factory-process|Content 
 - [Content Repurposing Skill](content-repurposing.md)
 - [Dollar-a-Day Skill](dollar-a-day.md)
 - [Weekly MAA Report Skill](weekly-maa-report.md)
-- [Client Directory](../memory-bank/04-client-directory.md)
 
 ## See Also
 
@@ -135,3 +137,4 @@ This skill executes the [[blitzmetrics-canon/02-content-factory-process|Content 
 - [[skills/article-writer|Article Writer]]
 - [[skills/dollar-a-day|Dollar-a-Day]]
 - [[skills/weekly-maa-report|Weekly MAA Report]]
+- [[sops/client-work/content-factory-execution|Content Factory SOP]]

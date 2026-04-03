@@ -1,6 +1,6 @@
 ---
 name: Dollar-a-Day
-version: 1.1
+version: 1.2
 description: Set up and scale Dollar-a-Day paid social campaigns across 3 phases
 triggers:
   - dollar a day
@@ -30,16 +30,71 @@ tags:
 
 Test small ($1-5/day) > Scale winners ($5-20/day) > Rotate evergreen ($20-50/day). Never promote content that hasn't proven itself organically first. This skill follows the [[blitzmetrics-canon/04-dollar-a-day|Dollar-a-Day Canon]] and ties into the [[blitzmetrics-canon/05-maa-framework|MAA Framework]] for performance tracking.
 
+## Disqualification Criteria (Check BEFORE Starting)
+
+**Dollar-a-Day is NOT for:**
+- Beginners with no proven offers or happy customers
+- Businesses unwilling to record themselves or without testimonials they can obtain
+- People chasing quick wins over providing real value to customers
+
+**Dollar-a-Day IS for:** Small businesses with happy customers, growing personal brands, agencies, coaches, course sellers, SaaS, sports teams -- anyone with real content and real results to amplify.
+
+If the prospect fails these criteria, do not proceed. Route to Content Factory production first.
+
+## Cross-Platform Minimum Spend
+
+| Platform | Daily Minimum | Notes |
+|---|---|---|
+| Facebook | $1 | Via Business Manager, vertical video preferred |
+| Instagram | $1 | Managed through Facebook Ads Manager |
+| YouTube | $1 | Pre-roll / in-feed video ads |
+| LinkedIn | $10 | Professional targeting (job title, employer, industry) |
+| Snapchat | $5 | Higher minimum, younger demo |
+| TikTok | $20 | Use **Spark Ads** (boost existing organic TikTok posts as ads -- the TikTok equivalent of Dollar-a-Day boosting) |
+
+Plan budget accordingly. A true cross-platform $1/day test costs ~$38/day minimum across all six platforms.
+
+## Rule of 10
+
+Three heuristics that govern the entire DAD system:
+
+1. **10% engagement rate** -- Target benchmark. Content + audience hitting 10%+ = winner. Below 10% = diagnose using the troubleshooting framework below.
+2. **10 snippets per video** -- Every long-form video yields at least 10 short-form snippets (2 edification, 5 problem/solution, 3 hooks).
+3. **1 in 10 ads wins** -- Only 1 of 10 ads will perform. This is expected. Run 10, find the winner, kill the rest.
+
+## 3x3 Video Grid (Content Structure That Feeds DAD)
+
+Nine videos organized into three funnel stages. This is the content you are amplifying.
+
+| Stage | Videos | Content | Audience |
+|---|---|---|---|
+| **WHY** (1-3) | Founder stories, testimonials, endorsements | Emotional connection, trust | Cold (lookalikes, interests) |
+| **HOW** (4-6) | Teach solutions WITHOUT mentioning product | Demonstrate expertise | Warm (engaged with WHY 15+ sec) |
+| **WHAT** (7-9) | Services, pricing, results, direct CTA | Convert to customer | Hot (engaged with HOW 15+ sec) |
+
+### Retargeting Sequence
+- **Ad Set 1:** WHY videos to cold audiences, EXCLUDING WHAT video viewers
+- **Ad Set 2:** HOW videos to WHY engagers, EXCLUDING WHAT viewers
+- **Ad Set 3:** WHAT videos to HOW engagers, no exclusions
+- **Ad Set 4:** Continued WHAT until conversion
+
+Build custom audiences using Facebook "people who watched 15+ seconds" (ThruPlay). Create audiences from each video to enable stage progression.
+
+### Performance Benchmarks
+- $0.02 per video view | $3 per lead | $10 per conversion
+
 ## Phase 0: Pre-Campaign Assessment
 
 ### Organic Thresholds (MUST meet before any spend)
 
-| Content Type | Minimum Organic Performance |
-|---|---|
-| Video | 1,000+ views, 100+ engagements, 1+ min avg watch time |
-| Blog post | 500+ visitors, 50+ shares, 1+ min session duration |
-| Social post | 100+ reactions/comments/shares, 3%+ engagement rate |
-| Email | 25%+ open rate |
+| Content Type | Minimum Organic Performance | Where to Check |
+|---|---|---|
+| Video | 1,000+ views, 100+ engagements, 1+ min avg watch time | YouTube Analytics |
+| Blog post | 500+ visitors, 50+ shares, 1+ min avg session duration | **GA4** — filter by page path, check sessions, engagement time, and traffic source |
+| Social post | 100+ reactions/comments/shares, 3%+ engagement rate | Native platform analytics |
+| Email | 25%+ open rate | Email platform |
+
+**For blog posts:** Pull GA4 data directly — filter Pages report by the article URL. Check sessions (not just pageviews), average engagement time, and what percentage is organic search vs. referral. Also run `/gsc-insights` to check if the article is ranking for any keywords and pulling impressions.
 
 **If thresholds not met:** Put asset back in production. Do not spend money on unproven content.
 
@@ -147,11 +202,34 @@ When ready to automate Dollar-a-Day execution:
 
 **Canon reminder:** Human gates still required for budget scaling, Phase promotion, and kill decisions. Automation handles data pull and reporting; humans make the calls.
 
+## Troubleshooting Framework (When Engagement < 10%)
+
+Diagnose in this order. Fix the root cause, not the symptom.
+
+| # | Category | Diagnostic | Fix |
+|---|---|---|---|
+| 1 | **Authority not high enough** | Check 3 Components: Proof (certs, awards, case studies), People (who endorses you?), Properties (where does content live?) | Build authority FIRST via Content Factory. No amount of targeting fixes weak authority. |
+| 2 | **Weak/missing hook** | Are viewers dropping before 3 seconds? Check the 4-component one-minute video formula: Hook (0-3s), Pain/Pleasure (3-15s), Solution (15-50s), CTA (50-60s) | Re-cut video with stronger hook. No bumper, no name intro, get right to the point. |
+| 3 | **Production issues** | Poor audio, bad lighting, distracting background, unprofessional editing | Re-record or re-edit. This is a Process-stage fix. |
+| 4 | **Campaign setup** | Wrong objective, budget too low for audience size, incorrect placement, missing exclusions causing overlap | Audit campaign settings against the SAE Phase 5 checklist. |
+
 ## Three Ways Dollar-a-Day Fails
 
 1. **Impatience:** Scaling before Phase 1 learning is clear
 2. **Unclear thresholds:** No kill rules, hope-based decisions
 3. **Set-and-forget:** No monthly review or rotation
+
+## Case Study Reference Table
+
+| Client | Result | Strategy | Key Metric |
+|---|---|---|---|
+| Golden State Warriors | $38-40M ticket revenue from ~$1M spend | DAD retargeting, 3-stage funnel | $1 into $38 ROAS |
+| LA Lakers | 631 fans acquired | 3-stage funnel (Awareness > Commitment > Conversion) | < $1 per fan |
+| Bryan Eisenberg / Sears | 50% discount settlement | Targeted executives in HQ city (+/- 50 miles) with blog post | Pressure campaign |
+| Caleb Guillams | 38% link click rate | Content about audience targeted to people who know him | 200%+ above industry avg |
+| Jason Wiser | 1M+ software installs | DAD + light coaching | $0.01 per video view |
+| Dennis Yu | 651% ROI | Facebook ads, SiteTuners case study | Documented ROI |
+| Rosetta Stone | Scaled $1/day testing to $1M/day on Black Friday | DAD as testing methodology, then scale | Testing methodology proof |
 
 ---
 
@@ -170,3 +248,5 @@ When ready to automate Dollar-a-Day execution:
 - [[blitzmetrics-canon/02-content-factory-process|Content Factory]]
 - [[blitzmetrics-canon/05-maa-framework|MAA Framework]]
 - [[skills/weekly-maa-report|Weekly MAA Report]]
+- [[sops/client-work/dollar-a-day-campaign|Dollar-a-Day SOP]]
+- [[skills/content-factory|Content Factory Skill]]

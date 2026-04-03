@@ -17,7 +17,7 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 ## When to Use
 - A client's own channel transcripts have been exhausted
 - [Your Name] wants guest appearance articles for SEO/authority building
-- Building out the "Ryan D. Lee on [Podcast Name]" style recap articles
+- Building out the "[Client Name] on [Podcast Name]" style recap articles
 - Searching for third-party proof points and quotes for existing articles
 
 ## Process
@@ -52,7 +52,7 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 6. **Pull transcripts** using the same yt-dlp method from the YouTube Transcript Scraping SOP. Use the `fetch_transcript()` function with `cookiesfrombrowser: ("chrome",)`.
 
 7. **Write articles from guest transcripts.** These articles have a different angle than own-channel articles:
-   - Frame as "Ryan D. Lee on [Podcast Name]: [Key Insight]"
+   - Frame as "[Client Name] on [Podcast Name]: [Key Insight]"
    - Emphasize what the host asked and what the client revealed
    - Include the host's reactions and follow-up questions as social proof
    - Link to both the client's site AND the host's platform
@@ -67,8 +67,8 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 
 ## Common Pitfalls
 
-- **Clients have fewer guest appearances than expected.** Ryan D. Lee had only 4 YouTube guest appearances across 6 search queries. Most creators publish primarily on their own channels. Don't promise a specific number before searching.
-- **Some podcast appearances exist only on Spotify/Buzzsprout with no YouTube version.** The Erik Korem (Blueprint Podcast) and Ken Joslin (As The Leader Grows) episodes with Ryan D. Lee were audio-only. Flag these and offer to scrape audio via RSS if the client wants them.
+- **Clients have fewer guest appearances than expected.** [Client Name] had only 4 YouTube guest appearances across 6 search queries. Most creators publish primarily on their own channels. Don't promise a specific number before searching.
+- **Some podcast appearances exist only on Spotify/Buzzsprout with no YouTube version.** The [Guest Host] ([Podcast Name]) and [Guest Host] ([Podcast Name]) episodes with [Client Name] were audio-only. Flag these and offer to scrape audio via RSS if the client wants them.
 - **YouTube search results change with VPN.** Different VPN servers return different results. Run searches both with and without VPN for maximum coverage.
 - **Browser automation can trigger dialog boxes.** Avoid clicking anything that might trigger a JavaScript alert. Use `navigate` and `javascript_tool` instead of `computer` clicks when possible.
 
@@ -96,7 +96,7 @@ Find every YouTube and podcast guest appearance for a client, pull transcripts, 
 
 ## Learnings Log
 
-- **2026-03-18 (Ryan D. Lee):** Found 4 guest appearances: [Podcast Name], Bryan Dulaney, [Client Business], Kim D. H. Butler. All 4 transcripts pulled successfully via yt-dlp with Chrome cookies.
+- **2026-03-18 ([Client Name]):** Found 4 guest appearances: [Podcast Name], [Guest Host], [Client Business], [Guest Host]. All 4 transcripts pulled successfully via yt-dlp with Chrome cookies.
 - **2026-03-18:** Browser automation for YouTube search works but is slow (6 queries took ~5 minutes with waits). Web search (`WebSearch` tool) is faster for initial discovery, then confirm with direct YouTube URL checks.
 
 ---

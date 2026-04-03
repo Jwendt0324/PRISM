@@ -32,7 +32,7 @@ tags:
 - **Status:** CONNECTED — Synced to ~/Library/CloudStorage/
 - **Value:** Canonical framework source, client deliverables
 
-### Basecamp (basecamp.com/4057320)
+### Basecamp (basecamp.com/[project-id])
 - **Data:** Project threads, to-dos, client updates, MAA reports, team communication
 - **Access:** Basecamp email notifications → Gmail scan
 - **Status:** PARTIAL — Scanning email notifications, not direct API

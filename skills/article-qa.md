@@ -1,7 +1,7 @@
 ---
 name: Article QA
 version: 2
-description: Run the [Methodology Partner] article quality gate on any article
+description: Run the BlitzMetrics article quality gate on any article
 triggers:
   - article QA
   - article quality check
@@ -9,7 +9,7 @@ triggers:
   - quality gate
   - proofread article
   - article review
-  - [Your Mentor/Advisor] review
+  - Dennis review
 canon_source: blitzmetrics-canon/03-article-guidelines.md
 full_sop: sops/client-work/article-qa-blitzmetrics.md
 triangles:
@@ -36,7 +36,7 @@ tags:
 
 The goal is articles that read like a knowledgeable person wrote them — not articles that survived a compliance checklist. Rules catch AI slop. Judgment catches everything else. When a rule and a good example conflict, study the example. This skill enforces the [[blitzmetrics-canon/03-article-guidelines|Article Guidelines]] and [[blitzmetrics-canon/07-quality-standards|Quality Standards]].
 
-**Before running QA:** Load approved examples from `~/Documents/Claude/PRISM/skills/good-examples/articles/`. These are the real standard.
+**Before running QA:** Load approved examples from your good-examples library. These are the real standard.
 
 ---
 
@@ -97,6 +97,7 @@ These happen AFTER publishing. They do NOT block publication.
 | 16 | Dollar-a-Day Eval | Check organic performance (1,000 views OR 100+ engagements). Queue if qualifies. | YES — budget decisions |
 | 17 | MAA Tracking | Include in next weekly MAA report | No |
 | 18 | Iterate | Review after 2 weeks. Update, repurpose, or archive based on data. | YES — strategic judgment |
+| 19 | GA4/GSC Validation | After 7-14 days: check GA4 for article page sessions and engagement (avg time on page, bounce rate). Run `/gsc-insights` to verify target keywords are indexed, check impressions, clicks, CTR, and average position. Flag articles with zero impressions after 14 days for indexing issues. | No — data pull is automated |
 
 ---
 
@@ -136,7 +137,7 @@ This is where most QA gets too robotic. Here's how to think about it:
 ### STYLE — Author's Judgment
 
 - **Paragraph length variation.** One-sentence paragraphs for emphasis are good. Vary the rhythm. Don't flatten everything to the same length.
-- **Single rhetorical question.** One well-placed question in a 1000+ word article can be powerful. (See Ryan D. Lee example: "Is that number enough?")
+- **Single rhetorical question.** One well-placed question in a 1000+ word article can be powerful.
 - **Passive voice.** Default to active, but passive is fine when the subject isn't the point. "The store was founded in 1985" is better than forcing active.
 - **Sentence-ending prepositions.** This is not a real rule. Write naturally.
 - **Contraction density.** Use contractions the way the speaker would talk. Don't count them.
@@ -172,17 +173,17 @@ Decision:
 - 0 BLOCK + 0 WARN = Publish
 - 0 BLOCK + WARN present = Fix warnings or document why they're intentional, then publish
 - Any BLOCK = Must fix, cannot publish
-- NEEDS HUMAN = Route to [Your Name]
+- NEEDS HUMAN = Route to reviewer
 ```
 
 ---
 
 ## Self-Reinforcing Loop
 
-1. QA failures → `~/Documents/Claude/PRISM/content-pipeline/qa-failures.md`
-2. Weekly retrospective reads failures → identifies patterns
+1. QA failures get logged to a qa-failures tracker
+2. Weekly retrospective reads failures and identifies patterns
 3. Patterns become skill/SOP updates
-4. Better prompts → fewer failures → the loop compounds
+4. Better prompts result in fewer failures — the loop compounds
 
 ---
 
@@ -202,7 +203,6 @@ Decision:
 - [Canon: Quality Standards](../blitzmetrics-canon/07-quality-standards.md)
 - [Full SOP: Article QA](../sops/client-work/article-qa-blitzmetrics.md)
 - [Article Writer Skill](article-writer.md)
-- [Good Examples](good-examples/)
 
 ## See Also
 
@@ -211,3 +211,4 @@ Decision:
 - [[blitzmetrics-canon/10-anti-vandalism-checklist|Anti-Vandalism]]
 - [[skills/article-writer|Article Writer]]
 - [[blitzmetrics-canon/08-human-requirements|Human Requirements]]
+- [[sops/client-work/article-qa-blitzmetrics|Article QA SOP]]

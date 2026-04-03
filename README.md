@@ -23,7 +23,7 @@ Every task Claude executes generates session logs. Those logs feed into living S
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Jwendt0324/PRISM.git ~/Documents/Claude/PRISM
+git clone https://github.com/[your-username]/PRISM.git ~/Documents/Claude/PRISM
 
 # 2. Run setup
 cd ~/Documents/Claude/PRISM

@@ -30,7 +30,7 @@ Grade founder authority across 5 axes using objective rubrics and native platfor
 
 | Axis | Key Metrics |
 |------|-------------|
-| **Web Presence & SEO** | Monthly organic traffic, keywords top 10/50, Domain Authority, referring domains |
+| **Web Presence & SEO** | Monthly organic traffic (GA4), keyword positions + impressions + CTR (GSC), Domain Authority, referring domains |
 | **Public Speaking** | Engagements/year, venue quality, media mentions, testimonial videos |
 | **Publishing** | Blog posts/year, guest posts, blog traffic, LinkedIn followers + engagement |
 | **Podcasting** | Guest appearances/year, combined listener reach, owned podcast downloads |
@@ -48,7 +48,10 @@ Grade founder authority across 5 axes using objective rubrics and native platfor
 
 ## Phase 0: Baseline Assessment (First Time — 2-4 hours)
 
-1. Pull data from native platforms (GA4, SEMrush/Ahrefs, LinkedIn, podcast platforms, social analytics)
+1. Pull data from native platforms:
+   - **Web Presence & SEO:** Pull real organic traffic from GA4. Pull actual keyword positions, impressions, clicks, and CTR from GSC via `/gsc-insights`. Use these numbers directly — do not estimate organic traffic or guess at rankings.
+   - **Domain Authority & backlinks:** SEMrush/Ahrefs
+   - **Social, Speaking, Podcasting:** LinkedIn analytics, podcast platforms, social analytics
 2. Grade each axis against rubric
 3. Create 6-month blueprint with quarterly milestones (see template below)
 4. Set end-state vision for each axis (realistic: most clients move 1-2 grades in 6 months)
@@ -132,11 +135,9 @@ Review blueprint quarterly. Adjust targets based on actual progress. Keep it vis
 - [Full SOP: Influence Report Card](../sops/client-work/influence-report-card.md)
 - [KP Sprint Skill](kp-sprint.md)
 - [Weekly MAA Report Skill](weekly-maa-report.md)
-- [Client Directory](../memory-bank/04-client-directory.md)
 
 ## See Also
 
 - [[blitzmetrics-canon/01-nine-triangles|Nine Triangles]]
 - [[skills/kp-sprint|KP Sprint]]
-- [[memory-bank/04-client-directory|Client Directory]]
 - [[skills/prospect-followup|Prospect Follow-Up]]

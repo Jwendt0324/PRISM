@@ -59,8 +59,8 @@ URL strategy: `/about`, `/blog`, `/topic/how-systems`, `/services`, `/case-studi
 ## Phase 1: WordPress Setup
 
 1. **Domain:** Client's name (firstname.com or firstname-lastname.com). Avoid company domains.
-2. **Hosting:** [Methodology Partner] managed WP or WP Engine/Kinsta. SSL mandatory.
-3. **Theme:** [Methodology Partner] proprietary theme. Alternatives: Neve Pro, Astra Pro. Avoid heavy animated templates.
+2. **Hosting:** Managed WP or WP Engine/Kinsta. SSL mandatory.
+3. **Theme:** Clean, lightweight theme. Avoid heavy animated templates.
 4. **Essential plugins (install only these):**
    - SEO: Rank Math OR Yoast (one, not both)
    - Analytics: MonsterInsights (GA4)

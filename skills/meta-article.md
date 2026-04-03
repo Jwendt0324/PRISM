@@ -41,13 +41,13 @@ A meta-article documents exactly what an AI agent did during a specific task. It
 1. **SEO value** — publishable content proving the Content Factory works (leaves in the SEO Tree linking back to definitive article branches)
 2. **Recursive improvement** — process failures revealed in meta-articles feed back into SOP/skill updates
 
-**Source:** [Your Mentor/Advisor]'s meta-article framework at [methodology-partner.com]/meta-article-prompt-template/
+**Source:** Dennis Yu's meta-article framework at blitzmetrics.com/meta-article-prompt-template/
 
 ---
 
 ## Phase 0: Load Good Examples
 
-Before writing, check `~/Documents/Claude/PRISM/skills/good-examples/meta-articles/` for approved reference meta-articles. If examples exist, read them all. Study the tone, structure, and depth. Match or exceed.
+Before writing, check your good-examples library for approved reference meta-articles. If examples exist, read them all. Study the tone, structure, and depth. Match or exceed.
 
 ---
 
@@ -57,15 +57,11 @@ Before writing, check `~/Documents/Claude/PRISM/skills/good-examples/meta-articl
 
 ### Step 1A: Run the metrics extractor
 
-```bash
-python3 ~/Documents/Claude/PRISM/scripts/extract-session-metrics.py [SESSION_ID or --date YYYY-MM-DD]
-```
-
-This returns JSON with:
+If you have a session metrics extraction script, run it to get:
 - Exact tool call counts and breakdown
 - Files read/written/edited (full paths)
 - Web fetches and searches performed
-- Estimated tokens and cost (using real Opus pricing)
+- Estimated tokens and cost (using real pricing)
 - Pre-built effort comparison table (agent vs. human)
 - Session duration from timestamps
 
@@ -73,18 +69,14 @@ This returns JSON with:
 
 ### Step 1B: Load monthly cumulative stats
 
-```bash
-python3 ~/Documents/Claude/PRISM/scripts/extract-session-metrics.py --monthly
-```
-
 Add a "Monthly Context" callout to the meta-article:
-> "This month, the PRISM has produced X sessions, Y files, at an estimated cost of $Z — saving approximately $W compared to manual production."
+> "This month, the system has produced X sessions, Y files, at an estimated cost of $Z — saving approximately $W compared to manual production."
 
 ### Step 1C: Gather session context
 
 If running in the same session as the content work, you already have context. Otherwise:
-1. Read session logs from `~/Documents/Claude/PRISM/logs/sessions/YYYY-MM/`
-2. Read conversation exports from `~/Documents/Claude/PRISM/logs/conversations/YYYY-MM/`
+1. Read session logs from your logs directory
+2. Read conversation exports
 3. Reconstruct what happened from files created/modified
 
 ---
@@ -93,9 +85,9 @@ If running in the same session as the content work, you already have context. Ot
 
 Meta-articles are publishable content — they must match the client's voice.
 
-1. Check `~/Documents/Claude/PRISM/content-pipeline/voice-profiles/voice-profile-[client].md`
+1. Check for a voice profile for the client
 2. If a voice profile exists, apply it to the meta-article writing
-3. If writing for [Your Agency]/[Methodology Partner] (no specific client), use [Your Mentor/Advisor]'s voice: direct, specific, uses real names and numbers, conversational but authoritative
+3. If writing for BlitzMetrics (no specific client), use Dennis Yu's voice: direct, specific, uses real names and numbers, conversational but authoritative
 4. If no voice profile exists, use a neutral professional tone and note in the output that a voice profile should be created
 
 **Voice rules that always apply:**
@@ -145,7 +137,7 @@ Highlight 3-5 judgment calls with reasoning. Examples:
 
 | Task | Agent Time | Human Time | Agent Cost | Human Cost |
 |------|-----------|------------|------------|------------|
-| *(rows from extract-session-metrics.py effort_table)* |
+| *(rows from your metrics extraction)* |
 | **Total** | **Xmin** | **X.Xhrs** | **$X.XX** | **$XXX** |
 
 Add the monthly context callout below the table.
@@ -171,7 +163,7 @@ Pricing references:
 - Guidelines/SOPs loaded: list
 
 #### Section 7: Guidelines Compliance Scorecard
-**Run the actual QA gate on the meta-article itself.** Load `~/Documents/Claude/PRISM/skills/article-qa.md` and score:
+**Run the actual QA gate on the meta-article itself.** Load the Article QA skill and score:
 
 | # | Check | Status | Notes |
 |---|-------|--------|-------|
@@ -195,7 +187,7 @@ Generate for the meta-article itself:
 After writing, enhance with entity-aware linking:
 
 1. **Identify entities** mentioned in the meta-article (people, companies, tools, frameworks)
-2. **Check for existing definitive articles** on the client's site or [methodology-partner.com] that cover those entities
+2. **Check for existing definitive articles** on the client's site or blitzmetrics.com that cover those entities
 3. **Insert 3-5 internal links** using descriptive anchor text (3-6 words, never "click here")
 4. **Note external entity links** — if the meta-article mentions a person with a Knowledge Panel, link to their entity page
 5. **Suggest schema markup** — meta-articles can carry Article schema with author, datePublished, about entities
@@ -206,11 +198,11 @@ After writing, enhance with entity-aware linking:
 
 The meta-article is publishable content. It goes through the same quality gate as any article.
 
-1. Load the [[skills/article-qa|Article QA]] skill (`~/Documents/Claude/PRISM/skills/article-qa.md`)
+1. Load the [[skills/article-qa|Article QA]] skill
 2. Run the Pre-Publish Gate (Steps 1-13) on the meta-article
 3. Fix any BLOCK violations before outputting
 4. Document WARN violations in the compliance scorecard (Section 7)
-5. Note NEEDS HUMAN items for [Your Name]
+5. Note NEEDS HUMAN items for the reviewer
 
 **The meta-article must pass QA before being marked complete.**
 
@@ -226,14 +218,14 @@ The meta-article is publishable content. It goes through the same quality gate a
    - `[IMAGE: screenshot of process/tool]` placeholders
 
 2. **Save to client content directory:**
-   `~/Documents/Claude/PRISM/content-pipeline/[client]/meta-articles/meta-[slug]-YYYY-MM-DD.docx`
+   Your content pipeline under `meta-articles/meta-[slug]-YYYY-MM-DD.docx`
 
 3. **Save markdown version:**
-   `~/Documents/Claude/PRISM/content-pipeline/[client]/meta-articles/meta-[slug]-YYYY-MM-DD.md`
+   Your content pipeline under `meta-articles/meta-[slug]-YYYY-MM-DD.md`
 
 4. **Update tracking:**
    - Update ARTICLE_INDEX.csv if it exists
-   - Log to `~/Documents/Claude/PRISM/content-pipeline/meta-article-tracker.md`
+   - Log to your meta-article tracker
 
 ---
 
@@ -243,10 +235,10 @@ After completing the meta-article, execute these checks:
 
 ### 7A: SOP Gap Detection
 - Did the process reveal any SOP gaps or missing steps?
-- If yes: update the relevant SOP immediately (don't wait for permission — CLAUDE.md says auto-update)
+- If yes: update the relevant SOP immediately
 
 ### 7B: Pattern Detection
-- Read `~/Documents/Claude/PRISM/content-pipeline/meta-article-tracker.md`
+- Read the meta-article tracker
 - Has the agent made the same mistake or hit the same friction point as a previous meta-article?
 - If yes: update the root skill/SOP that caused the repeated issue
 
@@ -257,7 +249,7 @@ After completing the meta-article, execute these checks:
 - A definitive article needs: clear definition, complete process, 10+ linked examples (the meta-articles), cross-links, CTA, short URL, visual diagram
 
 ### 7D: Good Examples Check
-- If [Your Name] approves the meta-article, offer to save to `~/Documents/Claude/PRISM/skills/good-examples/meta-articles/`
+- If the owner approves the meta-article, offer to save to your good-examples library
 - Max 5-7 examples in the library — replace weakest if at capacity
 
 ---
@@ -274,16 +266,14 @@ After generating, update the meta-article tracker:
 | YYYY-MM-DD | Client | How We... | X articles | $X.XX | $XXX | XX% |
 ```
 
-Append to: `~/Documents/Claude/PRISM/content-pipeline/meta-article-tracker.md`
-
-This creates a running record of how much value the PRISM is producing — useful for client reports, [Your Mentor/Advisor] updates, and proving ROI.
+This creates a running record of how much value the system is producing — useful for client reports and proving ROI.
 
 ---
 
 ## Quality Gate (Final Checklist)
 
 - [ ] All 8 sections present and substantive
-- [ ] Cost/time data from `extract-session-metrics.py` (not estimated)
+- [ ] Cost/time data from metrics extraction (not estimated)
 - [ ] Monthly cumulative context included
 - [ ] Voice profile applied (or neutral + note to create one)
 - [ ] Entity links inserted (3-5 internal links minimum)
@@ -298,14 +288,21 @@ This creates a running record of how much value the PRISM is producing — usefu
 
 ---
 
+## Post-Publish Tracking
+
+After the meta-article is published, verify it's contributing to organic visibility:
+- **GSC:** Run `/gsc-insights` at 14 days to confirm indexing and check for impressions on the target keyword (typically "how we [action] [subject]" long-tail)
+- **GA4:** Check page sessions and traffic source — meta-articles should pull organic traffic over time as they accumulate internal links from related content
+- If the meta-article drives measurable organic traffic, flag it as a Dollar-a-Day candidate
+
 ## Examples to Study
 
-- [methodology-partner.com]/how-we-built-three-articles-three-youtube-videos/
-- [methodology-partner.com]/how-we-created-an-article-honoring-nathaniel-stevens/
-- [methodology-partner.com]/how-we-wrote-the-please-and-thank-you-article-using-ai/
-- [methodology-partner.com]/how-we-repurpose-a-marketing-mechanic-episode-into-a-definitive-article/
-- [methodology-partner.com]/meta-article-prompt-template/ (the prompt template itself)
-- [methodology-partner.com]/definitive-article-guide/ (how definitive articles work)
+- blitzmetrics.com/how-we-built-three-articles-three-youtube-videos/
+- blitzmetrics.com/how-we-created-an-article-honoring-nathaniel-stevens/
+- blitzmetrics.com/how-we-wrote-the-please-and-thank-you-article-using-ai/
+- blitzmetrics.com/how-we-repurpose-a-marketing-mechanic-episode-into-a-definitive-article/
+- blitzmetrics.com/meta-article-prompt-template/ (the prompt template itself)
+- blitzmetrics.com/definitive-article-guide/ (how definitive articles work)
 
 ## See Also
 
