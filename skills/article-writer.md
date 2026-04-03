@@ -108,7 +108,7 @@ For every person, business, concept, or organization mentioned, follow this tree
 
 | Entity Type | Link To | NEVER Link To |
 |---|---|---|
-| **Person** (anyone with a personal brand site) | Their personal brand site (e.g., dennisyu.com) | LinkedIn, social media profiles, or articles ABOUT them |
+| **Person** (anyone with a personal brand site) | Their personal brand site (e.g., [mentor-site].com) | LinkedIn, social media profiles, or articles ABOUT them |
 | **Network business/organization** | Their primary website | Case studies or articles about them |
 | **BlitzMetrics concept** (Content Factory, Dollar-a-Day, etc.) | The definitive article on blitzmetrics.com | Competitor articles or generic explainers |
 | **External concept or public figure** | Most authoritative source (official page, industry authority) | Wikipedia (unless literally no alternative), LinkedIn for people |
