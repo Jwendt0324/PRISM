@@ -10,11 +10,11 @@ Every task Claude executes generates session logs. Those logs feed into living S
 
 ## What You Get
 
-- **14 action-oriented skills** — Article writing, KP Sprints, content repurposing, Dollar-a-Day campaigns, prospect follow-up, influence audits, and more. Each is a Claude-loadable prompt with step-by-step execution logic.
-- **25+ SOPs** across client work, business ops, and file management — living documents that update themselves as Claude learns.
-- **15 canonical frameworks** — Content Factory (6-stage), Dollar-a-Day, Topic Wheel, Nine Triangles, MAA, GCT Discovery, LDT, and more. These are your methodology source of truth.
-- **12 automation hooks** — Pre-tool guards, session logging, file backups, confidentiality filters, and post-compaction preservation rules. All configured through Claude Code's native hook system.
-- **13+ utility scripts** — EOD reports, SOP health checks, content tree mapping, session parsing, log rotation, and memory bank refresh.
+- **15 action-oriented skills** — Article writing, KP Sprints, content repurposing, Dollar-a-Day campaigns, prospect follow-up, influence audits, and more. Each is a Claude-loadable prompt with step-by-step execution logic.
+- **34 SOPs** across client work, business ops, and file management — living documents that update themselves as Claude learns.
+- **26 canonical frameworks** — Content Factory (6-stage), Dollar-a-Day, Topic Wheel, Nine Triangles, MAA, GCT Discovery, LDT, and more. These are your methodology source of truth.
+- **13 automation hooks** — Pre-tool guards, session logging, file backups, confidentiality filters, and post-compaction preservation rules. All configured through Claude Code's native hook system.
+- **12 utility scripts** — EOD reports, SOP health checks, content tree mapping, session parsing, log rotation, and memory bank refresh.
 - **Team operating system templates** — 19 files covering onboarding, roles, communication protocols, decision rights, delegation frameworks, and scaling plans.
 - **Identity scan** — An automated process that reads your local files, email, calendar, GitHub, and Drive to generate a personal context file. Claude knows who you are from the first message.
 - **Overnight automation prompts** — Deep analysis jobs you kick off before bed and review in the morning.
