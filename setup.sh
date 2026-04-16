@@ -41,19 +41,24 @@ read -p "  Your email: " user_email
 read -p "  Your company/agency name: " agency_name
 
 if [ -n "$user_name" ]; then
-    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
+    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" \) 2>/dev/null | while read -r file; do
         if grep -q '{{USER_NAME}}' "$file" 2>/dev/null; then
             sed -i '' "s|{{USER_NAME}}|$user_name|g" "$file" 2>/dev/null || \
             sed -i "s|{{USER_NAME}}|$user_name|g" "$file"
         fi
     done
+    # Also personalize the repo-level INDEX.md
+    if [ -f "$PRISM_DIR/INDEX.md" ] && grep -q '{{USER_NAME}}' "$PRISM_DIR/INDEX.md" 2>/dev/null; then
+        sed -i '' "s|{{USER_NAME}}|$user_name|g" "$PRISM_DIR/INDEX.md" 2>/dev/null || \
+        sed -i "s|{{USER_NAME}}|$user_name|g" "$PRISM_DIR/INDEX.md"
+    fi
     echo "[OK] Set USER_NAME to: $user_name"
 else
     echo "[SKIP] No name provided — {{USER_NAME}} placeholders left in place"
 fi
 
 if [ -n "$user_email" ]; then
-    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
+    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" \) 2>/dev/null | while read -r file; do
         if grep -q '\[your-email@your-agency.com\]' "$file" 2>/dev/null; then
             sed -i '' "s|\[your-email@your-agency.com\]|$user_email|g" "$file" 2>/dev/null || \
             sed -i "s|\[your-email@your-agency.com\]|$user_email|g" "$file"
@@ -65,7 +70,7 @@ else
 fi
 
 if [ -n "$agency_name" ]; then
-    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" 2>/dev/null | while read -r file; do
+    find "$PRISM_DIR/claude-code" "$PERSONAL_DIR" -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.sh" \) 2>/dev/null | while read -r file; do
         if grep -q '{{AGENCY_NAME}}' "$file" 2>/dev/null; then
             sed -i '' "s|{{AGENCY_NAME}}|$agency_name|g" "$file" 2>/dev/null || \
             sed -i "s|{{AGENCY_NAME}}|$agency_name|g" "$file"
@@ -153,16 +158,28 @@ if [ -f "$PRISM_SETTINGS" ]; then
     sed "s|{{PRISM_PATH}}|$PRISM_DIR|g" "$PRISM_SETTINGS" > "$RESOLVED_SETTINGS"
 
     if [ -f "$SETTINGS" ]; then
-        # Merge with existing settings
+        # Merge with existing settings — requires jq
+        if ! command -v jq &> /dev/null; then
+            echo "[!] jq is required to merge hooks into your existing settings.json"
+            if command -v brew &> /dev/null; then
+                read -p "    Install jq now via Homebrew? [Y/n] " install_jq
+                install_jq="${install_jq:-Y}"
+                if [[ "$install_jq" =~ ^[Yy]$ ]]; then
+                    brew install jq
+                fi
+            else
+                echo "    Install Homebrew from https://brew.sh, then run: brew install jq"
+            fi
+        fi
+
         if command -v jq &> /dev/null; then
             SETTINGS_BACKUP="$CLAUDE_DIR/settings.json.backup.$(date +%Y%m%d)"
             cp "$SETTINGS" "$SETTINGS_BACKUP"
             jq -s '.[0] * .[1]' "$SETTINGS" "$RESOLVED_SETTINGS" > "$SETTINGS.tmp" && mv "$SETTINGS.tmp" "$SETTINGS"
             echo "[OK] Hooks merged into existing settings.json (backup saved)"
         else
-            echo "[WARN] jq not installed — cannot merge hooks automatically"
-            echo "       Install jq (brew install jq) and re-run, or manually merge:"
-            echo "       $PRISM_SETTINGS → $SETTINGS"
+            echo "[WARN] jq still unavailable — skipping hook merge"
+            echo "       Manually merge when ready: $PRISM_SETTINGS -> $SETTINGS"
         fi
     else
         cp "$RESOLVED_SETTINGS" "$SETTINGS"

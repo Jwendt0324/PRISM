@@ -134,4 +134,5 @@ See [CUSTOMIZATION.md](CUSTOMIZATION.md) for how to adapt the PRISM to your busi
 
 - [Claude Code CLI](https://claude.ai/claude-code) installed
 - macOS, Linux, or WSL
+- `jq` (setup.sh will offer to install it via Homebrew if missing) — required to merge hooks into an existing `~/.claude/settings.json`
 - Optional: `gh` CLI for GitHub scanning, Gmail/Calendar/Drive MCP servers for deeper identity scan

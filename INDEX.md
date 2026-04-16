@@ -1,8 +1,8 @@
 # CLAUDE PRISM — MASTER INDEX
 
-**Owner:** [Your Name]
+**Owner:** {{USER_NAME}}
 **Created:** 2026-03-18
-**Last Updated:** 2026-03-21 (Full overhaul: 5 new skills, 4 skills refined, Article QA consolidated, stale files cleaned, duplicates removed, routing updated)
+**Last Updated:** 2026-04-16 (Apprentice-ready pass: setup.sh executable, jq auto-install, stale counts fixed)
 
 ---
 
@@ -17,7 +17,7 @@ The PRISM is a self-improving knowledge system. Every task Claude executes gener
 ```
 PRISM/
 ├── CONTEXT.md           ← Compressed context file (all memory bank + SOPs in <5K words)
-├── skills/              ← Active SKILL.md files Claude loads automatically (12 files)
+├── skills/              ← Active SKILL.md files Claude loads automatically (15 files)
 │   ├── PRISM-core.md       ← System operations, logging, SOP management
 │   ├── sop-router.md           ← Routes tasks to correct SOP/skill
 │   ├── content-factory.md      ← 6-stage Content Factory execution
