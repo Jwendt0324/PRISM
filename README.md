@@ -21,16 +21,20 @@ Every task Claude executes generates session logs. Those logs feed into living S
 
 ## Quick Start
 
+**New to PRISM?** Read [APPRENTICE-QUICKSTART.md](APPRENTICE-QUICKSTART.md) — it's the 10-minute walkthrough.
+
+**One-liner install** (checks prereqs, clones, runs setup):
+
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-username]/PRISM.git ~/Documents/Claude/PRISM
+curl -fsSL https://raw.githubusercontent.com/Jwendt0324/PRISM/main/quick-install.sh | bash
+```
 
-# 2. Run setup
+**Manual install** (if you prefer to see each step):
+
+```bash
+git clone https://github.com/Jwendt0324/PRISM.git ~/Documents/Claude/PRISM
 cd ~/Documents/Claude/PRISM
-chmod +x setup.sh
 ./setup.sh
-
-# 3. Start Claude Code — it will find and use the PRISM automatically
 ```
 
 The setup script will:

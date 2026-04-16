@@ -14,6 +14,14 @@ echo "  CLAUDE PRISM — SETUP"
 echo "========================================"
 echo ""
 
+# Step 0: Prereq sanity check (soft — warn but don't block)
+if ! command -v claude &> /dev/null; then
+    echo "[!] Warning: Claude Code CLI ('claude') is not on your PATH."
+    echo "    PRISM will still install, but it won't do anything until you install Claude Code."
+    echo "    Download it from https://claude.ai/download"
+    echo ""
+fi
+
 # Step 1: Create personal directory
 if [ -d "$PERSONAL_DIR" ]; then
     echo "[OK] Personal directory already exists at .personal/"
